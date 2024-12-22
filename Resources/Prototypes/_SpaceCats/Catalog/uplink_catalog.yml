@@ -88,6 +88,6 @@
   description: uplink-invisible-cloak-desc
   productEntity: ClothingNeckInvisibleCloak
   cost:
-    Telecrystal: 5
+    Telecrystal: 10
   categories:
     - UplinkWearables

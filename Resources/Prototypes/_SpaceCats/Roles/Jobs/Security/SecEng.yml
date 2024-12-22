@@ -32,12 +32,12 @@
     jumpsuit: ClothingUniformJumpsuitSecEngineer
     back: ClothingBackpackSecurityEngineer
     shoes: ClothingShoesBootsJackSecEnginer
-    mask: ClothingHeadHatWeldingMaskFlame
     eyes: ClothingEyesHudSecEng
     gloves: ClothingHandsGlovesColorYellow
-    head: ClothingHeadHatHardhatYellow
+    head: ClothingHeadHatWeldingMaskFlame
     id: SecurityEngineerPDA
     outerClothing: ClothingOuterVestHazard
+    suitstorage: SecBreachingHammer
     ears: ClothingHeadsetSecurityEngineer
     belt: ClothingMilitaryWebbingSecEng
   storage:
@@ -48,4 +48,3 @@
     - LPPC4Low
     - LPPC4Low
     - BoxSurvivalSecurity
-    - SecBreachingHammer

@@ -374,7 +374,7 @@
     unlistedNumber: true
     requiresPower: false
   - type: Holopad
-  - type: StationAiWhitelist  
+  - type: StationAiWhitelist
   - type: UserInterface
     interfaces:
         enum.HolopadUiKey.AiRequestWindow:
@@ -512,7 +512,6 @@
   - type: Examiner
   - type: Actions
   - type: Alerts
-  - type: FTLSmashImmune
   - type: CargoSellBlacklist
   - type: StationAiVision
     range: 20

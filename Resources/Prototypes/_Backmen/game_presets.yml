@@ -5,9 +5,8 @@
   name: shipwrecked-title
   description: shipwrecked-description
   minPlayers: 1
-  maxPlayers: 40
-  showInVote: true
-  isMiniGame: true
+  showInVote: false
+  isMiniGame: false
   supportedMaps: ShipwreckedPool
   rules:
     - Shipwrecked
@@ -20,13 +19,14 @@
   name: vampires-title
   description: vampires-description
   showInVote: true
+  minPlayers: 10
   rules:
   - VampiresGameRule
   - BasicStationEventScheduler
   - WageScheduler #backmen: currency
   - SubGamemodesRule
-  - BasicRoundstartVariation
-  - MeteorSwarmScheduler
+  # - BasicRoundstartVariation
+  # - MeteorSwarmScheduler
 
 - type: gamePreset
   id: Blob
@@ -34,14 +34,15 @@
   - blab
   name: blob-title
   description: blob-description
-  showInVote: false
+  minPlayers: 10
+  showInVote: true
   rules:
   - BlobGameMode
-  - CalmStationEventScheduler
+  - BasicStationEventScheduler
   - WageScheduler #backmen: currency
-  - BasicRoundstartVariation
+  # - BasicRoundstartVariation
   - SubGamemodesRule
-  - CalmMeteorSwarmScheduler
+  # - MeteorSwarmScheduler
 
 - type: gamePreset
   id: XenoAgent
@@ -53,9 +54,9 @@
   - XenoAgentGameMode
   - CalmStationEventScheduler
   - WageScheduler #backmen: currency
-  - BasicRoundstartVariation
+#  - BasicRoundstartVariation
   - SubGamemodesRule
-  - CalmMeteorSwarmScheduler
+#  - CalmMeteorSwarmScheduler
 
 - type: gamePreset
   id: FleshCult
@@ -64,14 +65,15 @@
   - fs
   name: flesh-cult-title
   description: flesh-cult-description
-  showInVote: false
+  minPlayers: 10
+  showInVote: true
   rules:
   - FleshCult
-  - CalmStationEventScheduler
+  - BasicStationEventScheduler
   - WageScheduler #backmen: currency
-  - BasicRoundstartVariation
+  # - BasicRoundstartVariation
   - SubGamemodesRule
-  - CalmMeteorSwarmScheduler
+  # - MeteorSwarmScheduler
 
 - type: gamePreset
   id: FleshCultAndTraitor
@@ -85,9 +87,9 @@
   - FleshCult
   - Traitor
   - BasicStationEventScheduler
-  - WageScheduler #backmen: currency
-  - BasicRoundstartVariation
-  - MeteorSwarmScheduler
+  #  -  #backmen: currency
+  # - BasicRoundstartVariation
+  # - MeteorSwarmScheduler
 
 - type: gamePreset
   id: NukeopsFleshCult
@@ -101,9 +103,9 @@
     - Nukeops
     - FleshCult
     - BasicStationEventScheduler
-    - WageScheduler #backmen: currency
-    - BasicRoundstartVariation
-    - MeteorSwarmScheduler
+    #  -  #backmen: currency
+    # - BasicRoundstartVariation
+    # - MeteorSwarmScheduler
 
 - type: gamePreset
   id: RevolutionaryTraitor
@@ -119,9 +121,9 @@
     - Revolutionary
     - BasicStationEventScheduler
     - Traitor
-    - WageScheduler #backmen: currency
-    - BasicRoundstartVariation
-    - MeteorSwarmScheduler
+    #  -  #backmen: currency
+    # - BasicRoundstartVariation
+    # - MeteorSwarmScheduler
 
 - type: gamePreset
   id: RevolutionaryNukeops
@@ -137,9 +139,9 @@
     - Revolutionary
     - BasicStationEventScheduler
     - Nukeops
-    - WageScheduler #backmen: currency
-    - BasicRoundstartVariation
-    - MeteorSwarmScheduler
+    #  -  #backmen: currency
+    # - BasicRoundstartVariation
+    # - MeteorSwarmScheduler
 
 - type: gamePreset
   id: ZombieTraitor
@@ -156,10 +158,10 @@
   rules:
   - Zombie
   - BasicStationEventScheduler
-  - WageScheduler #backmen: currency
+  #  -  #backmen: currency
   - Traitor
-  - BasicRoundstartVariation
-  - MeteorSwarmScheduler
+  # - BasicRoundstartVariation
+  # - MeteorSwarmScheduler
 
 - type: gamePreset
   id: ZombieNukeops
@@ -176,10 +178,10 @@
   rules:
   - Zombie
   - BasicStationEventScheduler
-  - WageScheduler #backmen: currency
+  #  -  #backmen: currency
   - Nukeops
-  - BasicRoundstartVariation
-  - MeteorSwarmScheduler
+  # - BasicRoundstartVariation
+  # - MeteorSwarmScheduler
 
 - type: gamePreset
   id: NukeopsFleshCultTraitor
@@ -194,10 +196,10 @@
     - Nukeops
     - FleshCult
     - BasicStationEventScheduler
-    - WageScheduler #backmen: currency
+    #  -  #backmen: currency
     - Traitor
-    - BasicRoundstartVariation
-    - MeteorSwarmScheduler
+    # - BasicRoundstartVariation
+    # - MeteorSwarmScheduler
 
 - type: gamePreset
   id: SurvivalNukeops
@@ -210,10 +212,10 @@
   description: survival-nukeops-description
   rules:
     - RampingStationEventScheduler
-    - WageScheduler #backmen: currency
+    #  -  #backmen: currency
     - Nukeops
-    - BasicRoundstartVariation
-    - MeteorSwarmScheduler
+    # - BasicRoundstartVariation
+    # - MeteorSwarmScheduler
 
 
 - type: gamePreset
@@ -225,13 +227,14 @@
   name: changeling-gamemode-title
   description: changeling-gamemode-description
   showInVote: false
+  minPlayers: 5
   rules:
   - WageScheduler #backmen: currency
   - Changeling
   - SubGamemodesRule
   - BasicStationEventScheduler
-  - BasicRoundstartVariation
-  - MeteorSwarmScheduler
+  # - BasicRoundstartVariation
+  # - MeteorSwarmScheduler
 
 - type: gamePreset
   id: Traitorling
@@ -247,8 +250,8 @@
   - Traitor
   - SubGamemodesRule
   - BasicStationEventScheduler
-  - BasicRoundstartVariation
-  - MeteorSwarmScheduler
+  # - BasicRoundstartVariation
+  # - MeteorSwarmScheduler
 
 - type: gamePreset
   id: ExtendedThief
@@ -263,8 +266,8 @@
   - ExtendedThief
   - BasicStationEventScheduler
   - WageScheduler #backmen: currency
-  - BasicRoundstartVariation
-  - MeteorSwarmScheduler
+  # - BasicRoundstartVariation
+  # - MeteorSwarmScheduler
 
 - type: gamePreset
   id: Criminal
@@ -273,15 +276,15 @@
   - opg
   name: criminal-gamemode-title
   description: thief-extended-gamemode-description
-  showInVote: false
+  showInVote: true
   rules:
   - Revolutionary
   - ExtendedThief
   - Traitor
   - BasicStationEventScheduler
   - WageScheduler #backmen: currency
-  - BasicRoundstartVariation
-  - MeteorSwarmScheduler
+  # - BasicRoundstartVariation
+  # - MeteorSwarmScheduler
 
 - type: gamePreset
   id: SuperKessler
@@ -296,13 +299,11 @@
   rules:
   - BasicStationEventScheduler
   - WageScheduler #backmen: currency
-  - BasicRoundstartVariation
+#  # - BasicRoundstartVariation
   # Oh my god.
-  - KesslerSyndromeScheduler
-  - KesslerSyndromeScheduler
-  - KesslerSyndromeScheduler
-  - MeteorSwarmMildScheduler
-  - MeteorSwarmScheduler
+#  - KesslerSyndromeScheduler
+  # - MeteorSwarmMildScheduler
+  # - MeteorSwarmScheduler
   - RampingStationEventScheduler
 #  - SpaceTrafficControlEventScheduler
 #  - SpaceTrafficControlFriendlyEventScheduler
@@ -310,27 +311,25 @@
 - type: gamePreset
   id: Calm
   name: calm-title
-  showInVote: true
+  showInVote: false
   description: calm-description
   rules:
   - CalmStationEventScheduler
   - WageScheduler #backmen: currency
-  - CalmMeteorSwarmScheduler
-  - BasicRoundstartVariation
-
+#  - CalmMeteorSwarmScheduler
+  # - BasicRoundstartVariation
 
 - type: gamePreset
   id: BabelTower
   name: babelTower-title
   description: babelTower-description
   minPlayers: 5
-  showInVote: true
+  showInVote: false
   rules:
     - BabelTower
-    - CalmStationEventScheduler
+    - BasicStationEventScheduler
     - WageScheduler
-    - CalmMeteorSwarmScheduler
-    - BasicRoundstartVariation
+    # - BasicRoundstartVariation
 #    - SpaceTrafficControlEventScheduler
 #    - SpaceTrafficControlFriendlyEventScheduler
     - ExtendedThief

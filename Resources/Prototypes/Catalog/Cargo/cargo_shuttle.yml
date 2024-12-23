@@ -11,7 +11,7 @@
 - type: cargoProduct
   id: ShuttleGyroscope
   icon:
-    sprite: Structures/Shuttles/gyroscope.rsi
+    sprite: _SpaceCats/Structures/Shuttles/gyroscope.rsi # Cats edit
     state: base
   product: CrateEngineeringGyroscope
   cost: 4000

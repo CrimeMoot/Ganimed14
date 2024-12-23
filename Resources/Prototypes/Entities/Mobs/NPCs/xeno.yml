@@ -31,6 +31,7 @@
     groups:
       Flammable: [Touch]
       Extinguish: [Touch]
+  - type: VentCrawler
   - type: NpcFactionMember
     factions:
     - Xeno
@@ -123,10 +124,6 @@
     chance: -2
   - type: Psionic
     removable: false
-  - type: NightVision
-    isToggle: true
-    color: "#808080"
-    playSoundOn: false
   - type: LanguageSpeaker
     currentLanguage: Xeno
   - type: LanguageKnowledge #backmen: languages
@@ -388,6 +385,7 @@
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: purple_snake
+  - type: VentCrawler
   - type: DamageStateVisuals
     states:
       Alive:

@@ -1,0 +1,215 @@
+- type: entity
+  parent: Airlock
+  id: ChaplainAirlock
+  suffix: Chaplain
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Structures/Doors/Airlocks/Standard/chaplain.rsi
+
+- type: entity
+  parent: Airlock
+  id: KitchenAirlock
+  suffix: Kitchen
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Structures/Doors/Airlocks/Standard/kitchen.rsi
+
+- type: entity
+  parent: AirlockScience
+  id: RoboticsAirlock
+  suffix: Robotics
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Structures/Doors/Airlocks/Standard/robotics.rsi
+
+- type: entity
+  parent: AirlockCargo
+  id: SalvageAirlock
+  suffix: Salvage
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Structures/Doors/Airlocks/Standard/salvage.rsi
+
+- type: entity
+  parent: Airlock
+  id: TheatreAirlock
+  suffix: Theatre
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Structures/Doors/Airlocks/Standard/theatre.rsi
+
+- type: entity
+  parent: Airlock
+  id: BarAirlock
+  suffix: Bar
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Structures/Doors/Airlocks/Standard/bar.rsi
+
+- type: entity
+  parent: AirlockMedical
+  id: MorgueAirlock
+  suffix: Morgue
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Structures/Doors/Airlocks/Standard/morgue.rsi
+
+- type: entity
+  parent: Airlock
+  id: Bathroom
+  suffix: Bathroom
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Structures/Doors/Airlocks/Standard/bathroom.rsi
+
+- type: entity
+  parent: Airlock
+  id: CaptainAirlock
+  suffix: Captain
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Structures/Doors/Airlocks/Standard/cap.rsi
+  - type: WiresPanel
+  - type: WiresPanelSecurity
+    securityLevel: medSecurity
+  - type: Wires
+    boardName: wires-board-name-highsec
+    layoutId: HighSec
+
+- type: entity
+  parent: AirlockCommand
+  id: ChiefEngineerAirlock
+  suffix: CE
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Structures/Doors/Airlocks/Standard/ce.rsi
+
+- type: entity
+  parent: AirlockCommand
+  id: HeadOfPersonalAirlock
+  suffix: HOP
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Structures/Doors/Airlocks/Standard/hop.rsi
+
+- type: entity
+  parent: AirlockCommand
+  id: HeadOfSecurityAirlock
+  suffix: HOS
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Structures/Doors/Airlocks/Standard/hos.rsi
+
+- type: entity
+  parent: AirlockCommand
+  id: ChiefMedicalOfficerAirlock
+  suffix: CMO
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Structures/Doors/Airlocks/Standard/cmo.rsi
+
+- type: entity
+  parent: AirlockCommand
+  id: QuartiermeisterAirlock
+  suffix: QM
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Structures/Doors/Airlocks/Standard/qm.rsi
+
+- type: entity
+  parent: AirlockCommand
+  id: ResearchDirectorAirlock
+  suffix: RD
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Structures/Doors/Airlocks/Standard/rd.rsi
+
+# Window Door
+
+- type: entity
+  parent: AirlockGlass
+  id: ChaplainAirlockGlass
+  suffix: Chaplain
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Structures/Doors/Airlocks/Glass/chaplain.rsi
+
+- type: entity
+  parent: AirlockGlass
+  id: KitchenAirlockGlass
+  suffix: Kitchen
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Structures/Doors/Airlocks/Glass/kitchen.rsi
+
+- type: entity
+  parent: AirlockScienceGlass
+  id: RoboticsAirlockGlass
+  suffix: Robotics
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Structures/Doors/Airlocks/Glass/robotics.rsi
+
+- type: entity
+  parent: AirlockCargoGlass
+  id: SalvageAirlockGlass
+  suffix: Salvage
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Structures/Doors/Airlocks/Glass/salvage.rsi
+
+- type: entity
+  parent: AirlockGlass
+  id: TheatreAirlockGlass
+  suffix: Theatre
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Structures/Doors/Airlocks/Glass/theatre.rsi
+
+- type: entity
+  parent: AirlockGlass
+  id: BarAirlockGlass
+  suffix: Bar
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Structures/Doors/Airlocks/Glass/bar.rsi
+
+- type: entity
+  parent: AirlockCommandGlass
+  id: GlassChiefEngineerAirlock
+  suffix: CE
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Structures/Doors/Airlocks/Glass/ce.rsi
+
+- type: entity
+  parent: AirlockCommandGlass
+  id: GlassHeadOfSecurityAirlock
+  suffix: HOS
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Structures/Doors/Airlocks/Glass/hos.rsi
+
+- type: entity
+  parent: AirlockCommandGlass
+  id: GlassChiefMedicalOfficerAirlock
+  suffix: CMO
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Structures/Doors/Airlocks/Glass/cmo.rsi
+
+- type: entity
+  parent: AirlockCommandGlass
+  id: GlassQuartiermeisterAirlock
+  suffix: QM
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Structures/Doors/Airlocks/Glass/qm.rsi
+
+- type: entity
+  parent: AirlockCommandGlass
+  id: GlassResearchDirectorAirlock
+  suffix: RD
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Structures/Doors/Airlocks/Glass/rd.rsi

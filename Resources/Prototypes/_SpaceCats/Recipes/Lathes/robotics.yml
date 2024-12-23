@@ -1,0 +1,134 @@
+- type: latheRecipe
+  id: AsimovCircuitBoard
+  result: AsimovCircuitBoard
+  category: Robotics
+  completetime: 3
+  materials:
+    Steel: 500
+    Glass: 500
+    Plastic: 250
+    Gold: 50
+    Plasma: 50
+
+- type: latheRecipe
+  id: CorporateCircuitBoard
+  result: CorporateCircuitBoard
+  category: Robotics
+  completetime: 3
+  materials:
+    Steel: 500
+    Glass: 500
+    Plastic: 250
+    Gold: 50
+    Plasma: 50
+
+- type: latheRecipe
+  id: NTDefaultCircuitBoard
+  result: NTDefaultCircuitBoard
+  category: Robotics
+  completetime: 3
+  materials:
+    Steel: 500
+    Glass: 500
+    Plastic: 250
+    Gold: 50
+    Plasma: 50
+
+- type: latheRecipe
+  id: CommandmentCircuitBoard
+  result: CommandmentCircuitBoard
+  category: Robotics
+  completetime: 3
+  materials:
+    Steel: 500
+    Glass: 500
+    Plastic: 250
+    Gold: 50
+    Plasma: 50
+
+- type: latheRecipe
+  id: PaladinCircuitBoard
+  result: PaladinCircuitBoard
+  category: Robotics
+  completetime: 3
+  materials:
+    Steel: 500
+    Glass: 500
+    Plastic: 250
+    Gold: 50
+    Plasma: 50
+
+- type: latheRecipe
+  id: StationEfficiencyCircuitBoard
+  result: StationEfficiencyCircuitBoard
+  category: Robotics
+  completetime: 3
+  materials:
+    Steel: 500
+    Glass: 500
+    Plastic: 250
+    Gold: 50
+    Plasma: 50
+
+- type: latheRecipe
+  id: LiveLetLiveCircuitBoard
+  result: LiveLetLiveCircuitBoard
+  category: Robotics
+  completetime: 3
+  materials:
+    Steel: 500
+    Glass: 500
+    Plastic: 250
+    Gold: 50
+    Plasma: 50
+
+- type: latheRecipe
+  id: RobocopCircuitBoard
+  result: RobocopCircuitBoard
+  category: Robotics
+  completetime: 3
+  materials:
+    Steel: 500
+    Glass: 500
+    Plastic: 250
+    Gold: 50
+    Plasma: 50
+
+# Security Modules
+- type: latheRecipe
+  parent: BaseBorgModuleRecipe
+  id: BorgModuleNeutralization
+  result: BorgModuleNeutralization
+  materials:
+    Steel: 500
+    Glass: 800
+    Plastic: 250
+
+- type: latheRecipe
+  parent: BaseBorgModuleRecipe
+  id: BorgModuleNeutralizationAdvanced
+  result: BorgModuleNeutralizationAdvanced
+  materials:
+    Steel: 500
+    Glass: 800
+    Plastic: 250
+    Gold: 50
+
+- type: latheRecipe
+  parent: BaseBorgModuleRecipe
+  id: BorgModuleSecurityControlling
+  result: BorgModuleSecurityControlling
+  materials:
+    Steel: 500
+    Glass: 500
+    Plastic: 500
+
+- type: latheRecipe
+  parent: BaseBorgModuleRecipe
+  id: BorgModuleCombat
+  result: BorgModuleCombat
+  materials:
+    Steel: 1500
+    Glass: 1500
+    Plastic: 1000
+    Gold: 50

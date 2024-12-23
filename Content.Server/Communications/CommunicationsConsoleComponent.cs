@@ -57,6 +57,12 @@ namespace Content.Server.Communications
         public bool CanShuttle = true;
 
         /// <summary>
+        /// Shows the location of the console used. (Physical consoles only.)
+        /// </summary>
+        [DataField]
+        public bool ShowLocation = false;
+
+        /// <summary>
         /// Announce on all grids (for nukies)
         /// </summary>
         [DataField]
@@ -66,6 +72,6 @@ namespace Content.Server.Communications
         /// Announce sound file path
         /// </summary>
         [DataField]
-        public SoundSpecifier Sound = new SoundPathSpecifier("/Audio/Announcements/announce.ogg");
+        public SoundSpecifier Sound = new SoundPathSpecifier("/Audio/_Cats/StationEvents/announce_dig.ogg");  // Cats edit
     }
 }

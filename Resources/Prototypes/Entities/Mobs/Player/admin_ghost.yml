@@ -17,6 +17,7 @@
     context: "aghost"
   - type: Ghost
     canInteract: true
+    hideGhostWarp: true
   - type: GhostHearing
   - type: Hands
   - type: ComplexInteraction
@@ -84,6 +85,8 @@
   - type: SolutionScanner
   - type: IgnoreUIRange
   - type: ShowAntagIcons
+  - type: ShowJobIcons
+  - type: ShowMindShieldIcons
   - type: Inventory
     templateId: aghost
   - type: Loadout

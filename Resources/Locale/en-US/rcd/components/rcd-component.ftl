@@ -45,3 +45,7 @@ rcd-component-lighting = Lighting
 rcd-component-deconstruct = deconstruct
 rcd-component-floor-steel = steel tile
 rcd-component-plating = hull plate
+rcd-component-piping = Piping
+rcd-component-atmosphericutility = Atmospheric Utility
+rcd-component-pumps = Pumps & Valves
+rcd-component-vents = Vents

@@ -1,0 +1,120 @@
+- type: entity
+  id: BigRedButton
+  parent: SignalButton
+  name: big red button
+  description: Press it... if you dare.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Appearance
+  - type: Lock
+  - type: LockVisuals
+  - type: AccessReader
+  - type: Sprite
+    drawdepth: SmallObjects
+    sprite: _SpaceCats/Structures/Specific/big_red_button.rsi
+    layers:
+    - state: base
+    - state: locked
+      map: ["enum.LockVisualLayers.Lock"]
+  - type: WirelessNetworkConnection
+    range: 1000
+
+- type: entity
+  id: BigRedButtonCaptain
+  parent: BigRedButton
+  suffix: Captain
+  components:
+  - type: AccessReader
+    access: [["Captain"]]
+
+- type: entity
+  id: BigRedButtonHeadOfPersonnel
+  parent: BigRedButton
+  suffix: HeadOfPersonnel
+  components:
+  - type: AccessReader
+    access: [["HeadOfPersonnel"]]
+
+- type: entity
+  id: BigRedButtonChiefEngineer
+  parent: BigRedButton
+  suffix: ChiefEngineer
+  components:
+  - type: AccessReader
+    access: [["ChiefEngineer"]]
+
+- type: entity
+  id: BigRedButtonChiefMedicalOfficer
+  parent: BigRedButton
+  suffix: ChiefMedicalOfficer
+  components:
+  - type: AccessReader
+    access: [["ChiefMedicalOfficer"]]
+
+- type: entity
+  id: BigRedButtonHeadOfSecurity
+  parent: BigRedButton
+  suffix: HeadOfSecurity
+  components:
+  - type: AccessReader
+    access: [["HeadOfSecurity"]]
+
+- type: entity
+  id: BigRedButtonResearchDirector
+  parent: BigRedButton
+  suffix: ResearchDirector
+  components:
+  - type: AccessReader
+    access: [["ResearchDirector"]]
+
+- type: entity
+  id: BigRedButtonCommand
+  parent: BigRedButton
+  suffix: Command
+  components:
+  - type: AccessReader
+    access: [["Command"]]
+
+- type: entity
+  id: BigRedButtonSecurity
+  parent: BigRedButton
+  suffix: Security
+  components:
+  - type: AccessReader
+    access: [["Security"]]
+
+- type: entity
+  id: BigRedButtonRedCommand
+  parent: BigRedButton
+  name: code emergency button
+  description: Sets the alert level of the station to Code Red. Be careful!
+  components:
+  - type: Sprite
+    drawdepth: SmallObjects
+    sprite: _SpaceCats/Structures/Specific/big_red_button.rsi
+    layers:
+    - state: emergency
+    - state: locked
+      map: ["enum.LockVisualLayers.Lock"]
+  - type: AlertLevelOnPress
+    alertLevelOnActivate: red
+  - type: AccessReader
+    access: [["Command"]]
+
+- type: entity
+  id: BigRedButtonBlueCommand
+  parent: BigRedButtonRedCommand
+  description: Sets the alert level of the station to Code Blue. Be careful!
+  suffix: Command, blue
+  components:
+  - type: AlertLevelOnPress
+    alertLevelOnActivate: blue
+
+- type: entity
+  id: BigRedButtonGreenCommand
+  parent: BigRedButtonRedCommand
+  description: Sets the alert level of the station to Code Green. Be careful!
+  suffix: Command, Green
+  components:
+  - type: AlertLevelOnPress
+    alertLevelOnActivate: green

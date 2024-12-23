@@ -10,4 +10,4 @@
   - !type:DepartmentTimeRequirement
     department: Security
     time: 18000 # 5h
-  discordRequired: true # backmen: antag
+  discordRequired: false # backmen: antag

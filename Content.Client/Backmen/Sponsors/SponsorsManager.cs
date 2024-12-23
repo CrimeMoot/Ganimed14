@@ -47,10 +47,12 @@ public sealed class SponsorsManager : ISharedSponsorsManager
         Reset();
 
 #if DEBUG
+
         foreach (var ghostProto in IoCManager.Resolve<Robust.Shared.Prototypes.IPrototypeManager>().EnumeratePrototypes<Shared.Backmen.GhostTheme.GhostThemePrototype>())
         {
             Prototypes.Add(ghostProto.ID);
         }
+
 #endif
 
         if (message.Info == null)

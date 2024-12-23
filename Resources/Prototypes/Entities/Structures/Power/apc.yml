@@ -36,26 +36,21 @@
     - state: display-charging
       shader: unshaded
       map: ["enum.ApcVisualLayers.ChargeState"]
-    - state: lock0-locked
+    - state: lock0-unlocked
       shader: unshaded
       map: ["enum.ApcVisualLayers.InterfaceLock"]
-      visible: false
-    - state: lock1-locked
+    - state: lock1-unlocked
       shader: unshaded
       map: ["enum.ApcVisualLayers.PanelLock"]
-      visible: false
-    - state: lock1-locked #when these are implemented get actual sprites.
+    - state: channel0-auto_on
       shader: unshaded
       map: ["enum.ApcVisualLayers.Equipment"]
-      visible: false
-    - state: lock1-locked
+    - state: channel1-auto_on
       shader: unshaded
       map: ["enum.ApcVisualLayers.Lighting"]
-      visible: false
-    - state: lock1-locked
+    - state: channel2-auto_on
       shader: unshaded
       map: ["enum.ApcVisualLayers.Environment"]
-      visible: false
   - type: Appearance
   - type: ApcVisuals
   - type: Battery
@@ -91,6 +86,7 @@
         type: ApcBoundUserInterface
   - type: ActivatableUI
     inHandsOnly: false
+    singleUser: true
     key: enum.ApcUiKey.Key
   - type: Construction
     graph: APC
@@ -204,7 +200,7 @@
 - type: entity
   parent: BaseAPC
   id: APCBasic
-  suffix: Basic, 50kJ
+  suffix: Basic, 50kW
   components:
   - type: Battery
     maxCharge: 50000
@@ -213,7 +209,7 @@
 - type: entity
   parent: BaseAPC
   id: APCHighCapacity
-  suffix: High Capacity, 100kJ
+  suffix: High Capacity, 100kW
   components:
   - type: Battery
     maxCharge: 100000
@@ -222,7 +218,7 @@
 - type: entity
   parent: BaseAPC
   id: APCSuperCapacity
-  suffix: Super Capacity, 150kJ
+  suffix: Super Capacity, 150kW
   components:
   - type: Battery
     maxCharge: 150000
@@ -231,7 +227,7 @@
 - type: entity
   parent: BaseAPC
   id: APCHyperCapacity
-  suffix: Hyper Capacity, 200kJ
+  suffix: Hyper Capacity, 200kW
   components:
   - type: Battery
     maxCharge: 200000

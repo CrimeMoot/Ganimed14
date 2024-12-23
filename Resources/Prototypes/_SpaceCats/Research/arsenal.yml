@@ -1,0 +1,23 @@
+- type: technology
+  id: NightVisionTech
+  name: research-technology-night-vision
+  icon:
+    sprite: _SpaceCats/Clothing/Eyes/Goggles/nightvision.rsi
+    state: icon
+  discipline: Arsenal
+  tier: 2
+  cost: 10000
+  recipeUnlocks:
+  - ClothingEyesNightVisionGoggles
+
+- type: technology
+  id: ThermalVisionTech
+  name: research-technology-thermal-vision
+  icon:
+    sprite: _SpaceCats/Clothing/Eyes/Goggles/thermal.rsi
+    state: icon
+  discipline: Arsenal
+  tier: 2
+  cost: 20000
+  recipeUnlocks:
+  - ClothingEyesThermalVisionGoggles

@@ -33,7 +33,7 @@
     speechVerb: Reptilian
     allowedEmotes: ['Thump']
   - type: TypingIndicator
-    proto: lizard
+    proto: lizards
   - type: Vocal
     sounds:
       Male: MaleReptilian

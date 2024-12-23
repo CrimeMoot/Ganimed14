@@ -169,8 +169,9 @@ public sealed class TraitorRuleSystem : GameRuleSystem<TraitorRuleComponent>
         _npcFaction.AddFaction(traitor, component.SyndicateFaction);
 
         RaiseLocalEvent(traitor, new MoodEffectEvent("TraitorFocused")); // backmen: mood
-        
+   
         Log.Debug($"MakeTraitor {ToPrettyString(traitor)} - Finished");
+
         return true;
     }
 

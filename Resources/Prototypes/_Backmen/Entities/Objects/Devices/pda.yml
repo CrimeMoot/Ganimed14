@@ -126,6 +126,13 @@
         map: [ "enum.PdaVisualLayers.IdLight" ]
         shader: "unshaded"
         visible: false
+    - type: CartridgeLoader
+      uiKey: enum.PdaUiKey.Key
+      preinstalled:
+        - CrewManifestCartridge
+        - NotekeeperCartridge
+        - NewsReaderCartridge
+        - MedTekCartridge
     - type: Pda
       id: BlueShieldIDCard
       state: pda-blue

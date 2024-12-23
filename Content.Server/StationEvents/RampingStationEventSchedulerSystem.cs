@@ -31,8 +31,8 @@ public sealed class RampingStationEventSchedulerSystem : GameRuleSystem<RampingS
         // Worlds shittiest probability distribution
         // Got a complaint? Send them to
         component.MaxChaos = _random.NextFloat(component.AverageChaos - component.AverageChaos / 4, component.AverageChaos + component.AverageChaos / 4);
-        // This is in minutes, so *60 for seconds (for the chaos calc)
-        component.EndTime = _random.NextFloat(component.AverageEndTime - component.AverageEndTime / 4, component.AverageEndTime + component.AverageEndTime / 4) * 60f;
+        // This is in minutes, so *120 for seconds (for the chaos calc)
+        component.EndTime = _random.NextFloat(component.AverageEndTime - component.AverageEndTime / 4, component.AverageEndTime + component.AverageEndTime / 4) * 120f;
         component.StartingChaos = component.MaxChaos / 10;
 
         PickNextEventTime(uid, component);

@@ -12,6 +12,9 @@ ghost-target-window-current-button = Телепорт в: { $name }
 ghost-target-window-warp-to-most-followed = Телепорт к самому следуемому
 ghost-roles-window-title = Роли призраков
 ghost-roles-window-available-button = Доступно ({ $rolesCount })
+ghost-target-category-ghost-role = Роль призрака
+ghost-target-window-player-warp-name = {$entityName} ({$jobName})
+ghost-target-warp-role = Призрак
 ghost-roles-window-join-raffle-button = Участвовать в лотерее
 ghost-roles-window-raffle-in-progress-button =
     Участвовать в лотерее (Осталось { $time }, { $players ->

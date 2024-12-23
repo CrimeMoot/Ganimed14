@@ -4,12 +4,12 @@
   - svs
   name: svs-title
   description: svs-description
-  showInVote: true
-  isMiniGame: true
+  showInVote: false
+  isMiniGame: false
   supportedMaps: ShipVsShipMapPool
   rules:
   - ShipVsShip
-  - BasicRoundstartVariation
+#  - BasicRoundstartVariation
 
 - type: gamePreset
   id: SecretSVS
@@ -17,11 +17,11 @@
   name: secret-title
   showInVote: false
   description: secret-description
-  isMiniGame: true
+  isMiniGame: false
   supportedMaps: ShipVsShipMapPool
   rules:
   - ShipVsShip
-  - BasicRoundstartVariation
+#  - BasicRoundstartVariation
 
 - type: gameMapPool
   id: ShipVsShipMapPool

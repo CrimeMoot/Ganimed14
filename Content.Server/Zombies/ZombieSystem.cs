@@ -226,6 +226,7 @@ namespace Content.Server.Zombies
 
         private void OnMeleeHit(EntityUid uid, ZombieComponent component, MeleeHitEvent args)
         {
+
             if (!TryComp<ZombieComponent>(args.User, out _))
                 return;
 

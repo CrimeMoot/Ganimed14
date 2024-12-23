@@ -12,6 +12,9 @@
             "name": "Detective"
         },
         {
+            "name": "SecurityEngineer"
+        },
+        {
             "name": "QuarterMaster"
         },
         {
@@ -31,6 +34,9 @@
         },
         {
             "name": "Prisoner"
+        },
+        {
+            "name": "BridgeOfficer"
         },
         {
             "name": "Janitor"
@@ -191,6 +197,9 @@
         },
         {
             "name": "Visitor"
+        },
+        {
+            "name": "Maid"
         },
         {
             "name": "InitialInfected"

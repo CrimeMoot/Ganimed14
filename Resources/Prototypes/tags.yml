@@ -28,6 +28,9 @@
   id: ArtifactFragment
 
 - type: Tag
+  id: ArtificialBluespaceCrystal
+
+- type: Tag
   id: ATVKeys
 
 - type: Tag
@@ -98,6 +101,9 @@
 
 - type: Tag
   id: BorgModuleCargo
+
+- type: Tag
+  id: BorgModuleSec
 
 - type: Tag
   id: BorgModuleEngineering
@@ -214,6 +220,9 @@
   id: Carpet
 
 - type: Tag
+  id: Card
+
+- type: Tag
   id: CarpetBlack
 
 - type: Tag
@@ -254,6 +263,9 @@
 
 - type: Tag
   id: Cartridge
+
+- type: Tag
+  id: AutoinjectorCartridge
 
 - type: Tag
   id: CartridgeAntiMateriel
@@ -513,6 +525,9 @@
   id: Enzyme
 
 - type: Tag
+  id: EnergySword
+
+- type: Tag
   id: ExplosivePassable
 
 - type: Tag
@@ -730,7 +745,7 @@
 
 - type: Tag
   id: Igniter
-
+  
 - type: Tag
   id: Ingredient
 
@@ -1027,6 +1042,9 @@
   id: Powerdrill
 
 - type: Tag
+  id: PockerChips
+
+- type: Tag
   id: PrisonUniform
 
 - type: Tag
@@ -1100,6 +1118,9 @@
   id: SecBeltEquip
 
 - type: Tag
+  id: BrigmedicBeltEquip
+
+- type: Tag
   id: SecurePlasmaWindoor
 
 - type: Tag
@@ -1167,6 +1188,9 @@
 
 - type: Tag
   id: Spear
+
+- type: Tag
+  id: SpearRatvar
 
 - type: Tag
   id: SpeedLoaderCap

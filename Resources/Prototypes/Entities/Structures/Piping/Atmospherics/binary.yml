@@ -22,6 +22,7 @@
         !type:PipeNode
         nodeGroupID: Pipe
         pipeDirection: South
+  - type: StationAiWhitelist
 
 - type: entity
   parent: GasBinaryBase
@@ -75,7 +76,14 @@
       path: /Audio/Ambience/Objects/gas_pump.ogg
   - type: AtmosMonitoringConsoleDevice
     navMapBlip: GasFlowRegulator
-    
+  - type: VentCrawTube
+    containerId: VentCrawTube
+    connected: true
+  - type: VentCrawTransit
+  - type: ContainerContainer
+    containers:
+      VentCrawTube: !type:Container
+
 - type: entity
   parent: GasBinaryBase
   id: GasVolumePump
@@ -134,7 +142,14 @@
     - type: WiredNetworkConnection
     - type: AtmosMonitoringConsoleDevice
       navMapBlip: GasFlowRegulator
-    
+    - type: VentCrawTube
+      containerId: VentCrawTube
+      connected: true
+    - type: VentCrawTransit
+    - type: ContainerContainer
+      containers:
+        VentCrawTube: !type:Container
+
 - type: entity
   parent: GasBinaryBase
   id: GasPassiveGate
@@ -165,7 +180,14 @@
         path: /Audio/Ambience/Objects/gas_hiss.ogg
     - type: AtmosMonitoringConsoleDevice
       navMapBlip: GasValve
-      
+    - type: VentCrawTube
+      containerId: VentCrawTube
+      connected: true
+    - type: VentCrawTransit
+    - type: ContainerContainer
+      containers:
+        VentCrawTube: !type:Container
+
 - type: entity
   parent: GasBinaryBase
   id: GasValve
@@ -215,7 +237,15 @@
         path: /Audio/Ambience/Objects/gas_hiss.ogg
     - type: AtmosMonitoringConsoleDevice
       navMapBlip: GasValve
-      
+
+    - type: VentCrawTube
+      containerId: VentCrawTube
+      connected: true
+    - type: VentCrawTransit
+    - type: ContainerContainer
+      containers:
+        VentCrawTube: !type:Container
+
 - type: entity
   parent: GasBinaryBase
   id: SignalControlledValve
@@ -276,7 +306,14 @@
       path: /Audio/Ambience/Objects/gas_hiss.ogg
   - type: AtmosMonitoringConsoleDevice
     navMapBlip: GasValve
-      
+  - type: VentCrawTube
+    containerId: VentCrawTube
+    connected: true
+  - type: VentCrawTransit
+  - type: ContainerContainer
+    containers:
+      VentCrawTube: !type:Container
+
 - type: entity
   parent: GasBinaryBase
   id: GasPort
@@ -307,7 +344,16 @@
       node: port
     - type: AtmosMonitoringConsoleDevice
       navMapBlip: GasVentOpening
-      
+    - type: VentCrawTube
+      containerId: VentCrawTube
+      connected: true
+    - type: VentCrawJunction
+      degrees:
+        - 0
+    - type: ContainerContainer
+      containers:
+        VentCrawTube: !type:Container
+
 - type: entity
   parent: GasVentPump
   id: GasDualPortVentPump
@@ -317,6 +363,7 @@
     mode: SnapgridCenter
   components:
     - type: Sprite
+      noRot: true
       drawdepth: FloorObjects
       sprite: Structures/Piping/Atmospherics/vent.rsi
       layers:
@@ -365,7 +412,7 @@
       enabled: true
     - type: AtmosMonitoringConsoleDevice
       navMapBlip: GasVentOpening
-      
+
 - type: entity
   parent: [ BaseMachine, ConstructibleMachine ]
   id: GasRecycler
@@ -429,7 +476,7 @@
     board: GasRecyclerMachineCircuitboard
   - type: AtmosMonitoringConsoleDevice
     navMapBlip: GasValve
-    
+
 - type: entity
   parent: GasBinaryBase
   id: HeatExchanger

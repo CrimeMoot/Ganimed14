@@ -1,0 +1,33 @@
+- type: entity
+  parent: ClothingHeadset
+  id: ClothingBlackHeadset
+  name: гарнитура офицера
+  description: Это выглядит довольно внушительно.
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeySecurity
+      - EncryptionKeyCommon
+      - EncryptionKeyCommand
+  - type: Sprite
+    sprite: _SpaceCats/BridgeOfficer/BOHeadset.rsi
+  - type: Clothing
+    sprite: _SpaceCats/BridgeOfficer/BOHeadset.rsi
+
+- type: entity
+  parent: ClothingHeadset
+  id: ClothingHeadsetSecurityEngineer
+  name: гарнитура полевого инженера
+  description: Это используется вашими элитными силами безопасности.
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeySecurity
+      - EncryptionKeyEngineering
+      - EncryptionKeyCommon
+  - type: Sprite
+    sprite: _SpaceCats/Clothing/Ears/security.rsi
+  - type: Clothing
+    sprite: _SpaceCats/Clothing/Ears/security.rsi

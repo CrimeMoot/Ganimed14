@@ -195,8 +195,4 @@
     - type: PyrokinesisPower
       fireStacks: 2
     - type: TelegnosisPower
-    - type: NightVision
-      isToggle: true
-      color: "#808080"
-      playSoundOn: false
 #    - type: PsychokinesisPower #too overpower

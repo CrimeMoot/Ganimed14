@@ -1,0 +1,10 @@
+- type: latheRecipe
+  id: HypoExperement
+  result: HypoExperement
+  completetime: 2
+  materials:
+    Steel: 500
+    Glass: 500
+    Plastic: 250
+    Gold: 50
+    Plasma: 50

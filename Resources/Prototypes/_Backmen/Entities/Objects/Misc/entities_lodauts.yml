@@ -52,14 +52,15 @@
 #blueshield
 
 - type: entity
-  id: BlueShieldSetLoadouts
+  id: BlueShieldSetMedical
   parent: ArmySetLoadouts
   components:
   - type: ThiefUndeterminedBackpack
     maxSelectedSets: 1
     possibleSets:
-    - UTAPMk1Set
-    - ShotgunGuardian17Set
+    - Heal-Set1
+    - Heal-Set2
+    - Heal-Set3
 
 #backpack sets
 

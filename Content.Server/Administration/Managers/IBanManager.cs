@@ -64,3 +64,4 @@ public interface IBanManager
     /// <param name="pSession">Player's session</param>
     public void SendRoleBans(ICommonSession pSession);
 }
+

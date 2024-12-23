@@ -38,3 +38,7 @@ rcd-component-lighting = Освещение
 rcd-component-deconstruct = демонтаж
 rcd-component-floor-steel = стальной пол
 rcd-component-plating = корпусное покрытие
+rcd-component-piping = Трубопроводы  
+rcd-component-atmosphericutility = Атмосферные утилиты  
+rcd-component-pumps = Насосы и клапаны  
+rcd-component-vents = Вентиляционные отверстия  

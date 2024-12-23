@@ -1,0 +1,8 @@
+- type: entity
+  parent: ClothingShoesBootsJack
+  id: ClothingShoesBootsJackSecEnginer
+  components:
+    - type: Sprite
+      sprite: _SpaceCats/Clothing/Shoes/Boots/jackboots_sec_enginer.rsi
+    - type: Clothing
+      sprite: _SpaceCats/Clothing/Shoes/Boots/jackboots_sec_enginer.rsi

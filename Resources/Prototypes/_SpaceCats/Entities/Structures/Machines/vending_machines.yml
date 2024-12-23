@@ -1,0 +1,70 @@
+- type: entity
+  parent: VendingMachine
+  id: SpaceCatsVendingMachineSponsor
+  suffix: Sponsor
+  components:
+  - type: VendingMachine
+    pack: BoozeOMatInventory
+    dispenseOnHitChance: 0.00001
+    dispenseOnHitThreshold: 5000
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+  - type: Advertise
+    pack: AmmoVendAds
+  - type: Sprite
+    sprite: _SpaceCats/Structures/Machines/VendingMachines/nabormat.rsi
+    snapCardinals: false
+    noRot: true
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Store
+    categories:
+      - PlushiesSponsor
+      - Nabor
+      - Accessories
+      - Daki
+    currencyWhitelist:
+      - SpaceCash
+    balance:
+      SpaceCash: 0
+  - type: ActivatableUI
+    key: enum.StoreUiKey.Key
+    singleUser: true
+  - type: ActivatableUIRequiresPower
+  - type: UserInterface
+    interfaces:
+      enum.StoreUiKey.Key:
+        type: StoreBoundUserInterface
+
+- type: entity
+  parent: VendingMachine
+  id: CaptainDrobe
+  name: CaptainDrobe
+  description: Stylish uniform, for a strong leader!
+  components:
+  - type: VendingMachine
+    pack: CaptainDrobeInventory
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+  - type: Sprite
+    sprite: _SpaceCats/Structures/Machines/VendingMachines/captaindrobe.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: PointLight
+    color: "#05DAF2"
+  - type: AccessReader
+    access: [["Captain"]]

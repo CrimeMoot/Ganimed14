@@ -325,8 +325,9 @@
     sprite: Clothing/Mask/muzzle.rsi
   - type: Clothing
     sprite: Clothing/Mask/muzzle.rsi
-    equipDelay: 3
-    unequipDelay: 3
+    stripDelay: 5
+    equipDelay: 5 # to avoid accidentally falling into the trap associated with SelfUnremovableClothing
+  - type: SelfUnremovableClothing
   - type: IngestionBlocker
   - type: AddAccentClothing
     accent: ReplacementAccent

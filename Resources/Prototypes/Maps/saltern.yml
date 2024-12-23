@@ -61,10 +61,14 @@
             Musician: [ 1, 1 ]
             # backmen
             Brigmedic: [ 0, 1 ] # backmen-Brigmedic
-            #BKBPLATech: [0, 3] # backmen-BPLA-Silicons
-            #BKBPLAMED: [0, 3] # backmen-BPLAMED-Silicons
+            BKBPLATech: [0, 3] # backmen-BPLA-Silicons
+            BKBPLAMED: [0, 3] # backmen-BPLAMED-Silicons
             Deliveryman: [ 0, 1 ]
             Prisoner: [ 2, 2]
+            # Cats
+            Maid: [ 0, 1]
+            BridgeOfficer: [ 0, 1 ]
+            BlueShield: [0, 1] # backmen-BlueShield
         # backmen blob-config-start SMALL+
         - type: StationBlobConfig
           stageBegin: 25

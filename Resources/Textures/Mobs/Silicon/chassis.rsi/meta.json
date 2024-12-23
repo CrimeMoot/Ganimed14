@@ -334,7 +334,40 @@
     {
       "name": "synd_engi_l",
       "directions": 4
+    },
+    {
+     "name": "sec",
+     "directions": 4
+    },
+    {
+     "name": "sec_e",
+     "directions": 4
+    },
+    {
+     "name": "sec_l",
+     "directions": 4
+    },
+    {
+     "name": "sec_e_r",
+     "directions": 4
+    },
+    {
+      "name": "scince",
+      "directions": 4
+    },
+	  {
+      "name": "scince_e",
+      "directions": 4
+    },
+    {
+      "name": "scince_e_r",
+      "directions": 4
+    },
+    {
+      "name": "scince_l",
+      "directions": 4
     }
+
 
   ]
 }

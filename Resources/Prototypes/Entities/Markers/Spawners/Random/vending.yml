@@ -33,4 +33,5 @@
       - BackmenVendingMachineSpaceUp
       - BackmenVendingLootBox
       - PrizeCounter # Ataraxia
+      - SpaceCatsVendingMachineSponsor # cats
     chance: 1

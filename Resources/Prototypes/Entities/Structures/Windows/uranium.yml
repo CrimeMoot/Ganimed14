@@ -41,7 +41,7 @@
     node: uraniumWindow
   - type: Appearance
   - type: DamageVisuals
-    thresholds: [5, 10, 20]
+    thresholds: [4, 8, 12]
     damageDivisor: 3
     trackAllDamage: true
     damageOverlay:
@@ -72,7 +72,7 @@
     node: uraniumWindowDirectional
   - type: Appearance
   - type: DamageVisuals
-    thresholds: [5, 10, 20]
+    thresholds: [4, 8, 12]
     damageDivisor: 1.5
     trackAllDamage: true
     damageOverlay:

@@ -1,0 +1,1 @@
+loadout-group-blueshield-backpack = Blushield, рюкзак

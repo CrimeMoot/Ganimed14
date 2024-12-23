@@ -75,6 +75,17 @@ namespace Content.IntegrationTests.Tests
             "Core",
             "Marathon",
             "MeteorArena",
+            //start-spacecats
+            "PearlSC",
+            "BagelSC",
+            "BoxSC",
+            "ClusterSC",
+            "CogSC",
+            "OmegaSC",
+            "PackedSC",
+            "ReachSC",
+            "AspidSC",
+            //end-spacecats
             //start-backmen
             "CentCommv2",
             "CentCommv3",
@@ -90,6 +101,8 @@ namespace Content.IntegrationTests.Tests
             "BargeVsShip",
             "BackmenDelta",
             //end-backmen
+            "Cluster", 
+            "Europa",
             "Saltern",
             "Reach",
             "Train",

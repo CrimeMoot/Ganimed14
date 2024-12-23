@@ -17,7 +17,13 @@
       "name": "admin"
     },
     {
+      "name": "idsecurityenginer"
+    },
+    {
       "name": "ert_chaplain"
+    },
+    {
+      "name": "idbridgeofficer"
     },
     {
       "name": "ert_commander"
@@ -180,6 +186,9 @@
     },
     {
       "name": "idadmin"
+    },
+    {
+      "name": "idmaid"
     },
     {
       "name": "orange"

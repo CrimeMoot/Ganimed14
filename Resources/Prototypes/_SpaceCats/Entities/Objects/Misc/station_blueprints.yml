@@ -1,0 +1,15 @@
+- type: entity
+  parent: BaseItem
+  id: StationBlueprints
+  name: станционные чертежи
+  description: Точные чертежи станции содержат информацию обо всех помещениях станции. Вы можете увидеть пометку "Конфиденциально, хранить вечно".
+  components:
+  - type: Sprite
+    sprite: Objects/Tools/blueprint.rsi
+    layers:
+      - state: icon
+  - type: Tag
+    tags:
+      - HighRiskItem
+  - type: StealTarget
+    stealGroup: StationBlueprints

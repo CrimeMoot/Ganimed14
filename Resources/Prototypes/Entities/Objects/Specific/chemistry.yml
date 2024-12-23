@@ -51,7 +51,7 @@
     solution: beaker
   - type: Appearance
   - type: SolutionContainerVisuals
-    maxFillLevels: 6
+    maxFillLevels: 9
     fillBaseName: beaker
   - type: Damageable
     damageContainer: Inorganic
@@ -147,7 +147,7 @@
     solution: beaker
   - type: Appearance
   - type: SolutionContainerVisuals
-    maxFillLevels: 6
+    maxFillLevels: 9
     fillBaseName: beaker
   - type: Damageable
     damageContainer: Inorganic
@@ -170,7 +170,7 @@
     materialComposition:
       Glass: 50
   - type: SolutionContainerVisuals
-    maxFillLevels: 6
+    maxFillLevels: 9
     fillBaseName: beaker
     inHandsMaxFillLevels: 3
     inHandsFillBaseName: -fill-
@@ -214,7 +214,7 @@
         maxVol: 100
   - type: Appearance
   - type: SolutionContainerVisuals
-    maxFillLevels: 6
+    maxFillLevels: 9
     fillBaseName: beakerlarge
     inHandsMaxFillLevels: 4
     inHandsFillBaseName: -fill-
@@ -593,3 +593,18 @@
       tags:
       - Pill
   - type: Dumpable
+  - type: RandomSprite
+    available:
+      - 0:
+          pill_black: ""
+          pill_blue: ""
+          pill_canister: ""
+          pill_dred: ""
+          pill_green: ""
+          pill_lred: ""
+          pill_orange: ""
+          pill_pink: ""
+          pill_rainbow: ""
+          pill_red: ""
+          pill_white: ""
+          pill_yellow: ""

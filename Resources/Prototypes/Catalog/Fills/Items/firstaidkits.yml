@@ -10,6 +10,7 @@
       - id: Ointment
       - id: Gauze
       - id: PillCanisterTricordrazine
+      - id: EmergencyMedipen #cats edit
       # see https://github.com/tgstation/blob/master/code/game/objects/items/storage/firstaid.dm for example contents
 
 - type: entity
@@ -83,8 +84,10 @@
     contents:
       - id: MedicatedSuture
       - id: RegenerativeMesh
-      - id: Bloodpack
-        amount: 2
+      - id: SyringeSaline
+      - id: MedipenDylovene #cats edit
+      - id: MeraDermInjector #cats edit
+        amount: 2 # cats
 
 - type: entity
   id: MedkitCombatFilled
@@ -93,10 +96,10 @@
   components:
   - type: StorageFill
     contents:
-      - id: MedicatedSuture
-      - id: RegenerativeMesh
       - id: SyringeEphedrine
       - id: SyringeSaline
+      - id: ReliableContainerBruteFilled  # cats
+      - id: ReliableContainerBurnFilled   # cats
       - id: BruteAutoInjector
       - id: BurnAutoInjector
 

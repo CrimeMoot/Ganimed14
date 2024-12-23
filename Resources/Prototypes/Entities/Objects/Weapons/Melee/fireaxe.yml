@@ -41,7 +41,6 @@
   - type: Tool
     qualities:
       - Prying
-      - AdvancedPrying # White Dream
   - type: ToolTileCompatible
   - type: Prying
   - type: UseDelay

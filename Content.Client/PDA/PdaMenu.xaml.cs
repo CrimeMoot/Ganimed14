@@ -32,6 +32,11 @@ namespace Content.Client.PDA
         private string _stationName = Loc.GetString("comp-pda-ui-unknown");
         private string _alertLevel = Loc.GetString("comp-pda-ui-unknown");
         private string _instructions = Loc.GetString("comp-pda-ui-unknown");
+
+        // cats-start
+        private TimeSpan? _evacShuttleTime;
+        private EvacShuttleStatus _evacShuttleStatus;
+        // cats-end
         
 
         private int _currentView;
@@ -136,6 +141,11 @@ namespace Content.Client.PDA
         {
             FlashLightToggleButton.IsActive = state.FlashlightEnabled;
 
+            // cats-start
+            _evacShuttleTime = state.PdaOwnerInfo.EvacShuttleTime;
+            _evacShuttleStatus = state.PdaOwnerInfo.EvacShuttleStatus;
+            // cats-end
+
             if (state.PdaOwnerInfo.ActualOwnerName != null)
             {
                 _pdaOwner = state.PdaOwnerInfo.ActualOwnerName;
@@ -166,6 +176,18 @@ namespace Content.Client.PDA
 
             StationTimeLabel.SetMarkup(Loc.GetString("comp-pda-ui-station-time",
                 ("time", stationTime.ToString("hh\\:mm\\:ss"))));
+
+            // cats-start
+            var remaining = TimeSpan.Zero;
+
+            if (state.PdaOwnerInfo.EvacShuttleTime != null)
+                remaining = TimeSpan.FromSeconds(Math.Max((state.PdaOwnerInfo.EvacShuttleTime.Value - _gameTiming.CurTime).TotalSeconds, 0));
+
+            var statusText = EvacShuttleTitle(_evacShuttleStatus);
+
+            ShuttleTimeLabel.SetMarkup(Loc.GetString(statusText,
+                ("time", remaining.ToString("hh\\:mm\\:ss"))));
+            // cats-end
 
             var alertLevel = state.PdaOwnerInfo.StationAlertLevel;
             var alertColor = state.PdaOwnerInfo.StationAlertColor;
@@ -332,6 +354,23 @@ namespace Content.Client.PDA
             }
         }
 
+        // cats-start
+        private string EvacShuttleTitle(EvacShuttleStatus status)
+        {
+            switch (status)
+            {
+                case EvacShuttleStatus.WaitingToLaunch:
+                    return "comp-pda-ui-shuttle-launch-time";
+                case EvacShuttleStatus.WaitingToArrival:
+                    return "comp-pda-ui-shuttle-arrival-time";
+                case EvacShuttleStatus.WaitingToCall:
+                    return "comp-pda-ui-shuttle-call-time";
+                default:
+                    return "comp-pda-ui-shuttle-call-time";
+            }
+        }
+        // cats-end
+
         protected override void Draw(DrawingHandleScreen handle)
         {
             base.Draw(handle);
@@ -340,6 +379,18 @@ namespace Content.Client.PDA
 
             StationTimeLabel.SetMarkup(Loc.GetString("comp-pda-ui-station-time",
                 ("time", stationTime.ToString("hh\\:mm\\:ss"))));
+
+            // catsstart
+            var remaining = TimeSpan.Zero;
+
+            if (_evacShuttleTime != null)
+                remaining = TimeSpan.FromSeconds(Math.Max((_evacShuttleTime.Value - _gameTiming.CurTime).TotalSeconds, 0));
+
+            var statusText = EvacShuttleTitle(_evacShuttleStatus);
+
+            ShuttleTimeLabel.SetMarkup(Loc.GetString(statusText,
+                ("time", remaining.ToString("hh\\:mm\\:ss"))));
+            // caats-end
         }
     }
 }

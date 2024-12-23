@@ -211,7 +211,7 @@
   id: AmePartFlatpack
   name: steal-target-groups-ame-part-flatpack
   sprite:
-    sprite: Objects/Devices/flatpack.rsi
+    sprite: _SpaceCats/Objects/Devices/flatpack.rsi # Cats edit
     state: ame-part
 
 - type: stealTargetGroup

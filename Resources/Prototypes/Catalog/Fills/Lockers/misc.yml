@@ -141,6 +141,10 @@
     children:
     - id: StrangePill
       prob: 0.20
+    - id: PersonalNecoAI # Cats edit
+      prob: 0.10
+    - id: SyndicatePersonalNecoAI # Cats edit
+      prob: 0.05
     # Tools
     - !type:NestedSelector
       tableId: MaintToolsTable

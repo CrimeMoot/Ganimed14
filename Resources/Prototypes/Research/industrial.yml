@@ -60,7 +60,7 @@
   id: IndustrialEngineering
   name: research-technology-industrial-engineering
   icon:
-    sprite: Structures/Machines/protolathe_hypercon.rsi
+    sprite: _SpaceCats/Structures/Machines/protolathe_hypercon.rsi
     state: building
   discipline: Industrial
   tier: 1
@@ -127,7 +127,7 @@
   id: Shuttlecraft
   name: research-technology-shuttlecraft
   icon:
-    sprite: Structures/Shuttles/gyroscope.rsi
+    sprite: _SpaceCats/Structures/Shuttles/gyroscope.rsi # Cats edit
     state: base
   discipline: Industrial
   tier: 2
@@ -165,8 +165,8 @@
   cost: 10000
   recipeUnlocks:
     - WelderExperimental
-    - PowerDrill
-    - JawsOfLife
+    - RnDPowerDrill
+    - RnDJawsOfLife
     - BorgModuleAdvancedTool
 
 - type: technology

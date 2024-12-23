@@ -1,0 +1,49 @@
+- type: entity
+  parent: FoodEggBase
+  id: DragonEgg
+  name: яйцо дракона
+  description: Скольких ты убил только для того, чтобы заполучить одно из этих яиц?
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Objects/Consumable/Food/dragon_egg.rsi
+    state: icon
+  - type: Item
+    sprite: _SpaceCats/Objects/Consumable/Food/dragon_egg.rsi
+    size: Large
+  - type: MultiHandedItem
+  - type: DamageOnHighSpeedImpact
+    minimumSpeed: 0.1
+    damage:
+      types:
+        Blunt: 1
+  - type: Damageable
+    damageContainer: Biological
+  - type: Destructible
+    thresholds:
+    - trigger:
+       !type:DamageTrigger
+       damage: 1
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: desecration
+      - !type:SpillBehavior
+        solution: food
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 36
+        reagents:
+        - data: null
+          ReagentId: Egg
+          Quantity: 12
+        - data: null
+          ReagentId: Ichor
+          Quantity: 12
+        - data: null
+          ReagentId: Vitamin
+          Quantity: 12
+  - type: StaticPrice
+    price: 20000

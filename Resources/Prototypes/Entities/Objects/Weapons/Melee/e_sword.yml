@@ -120,6 +120,13 @@
       map: [ "blade" ]
   - type: Item
     sprite: Objects/Weapons/Melee/e_sword-inhands.rsi
+  - type: Construction # CATS EDIT
+    deconstructionTarget: null
+    graph: EnergyDoubleSwordGraph
+    node: esword
+  - type: Tag # CATS EDIT
+    tags:
+    - EnergySword
 
 - type: entity
   name: energy dagger
@@ -390,9 +397,15 @@
   - type: Item
     size: Small
     sprite: Objects/Weapons/Melee/e_sword_double-inhands.rsi
-  - type: Reflect
-    reflectProb: .75
+  - type: Reflect # CATS EDIT
+    reflectProb: .6
     spread: 75
+    reflects:
+      - Energy
+  - type: Construction # CATS EDIT
+    deconstructionTarget: null
+    graph: EnergyDoubleSwordGraph
+    node: desword
   # Corvax-HiddenDesc-Start
   - type: HiddenDescription
     entries:

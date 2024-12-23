@@ -1,0 +1,14 @@
+- type: entity
+  name: Implant dead box
+  parent: BoxCardboard
+  id: BoxImpantsDead
+  description: A box full of dead implants.
+  components:
+  - type: StorageFill
+    contents:
+      - id: ChemicalImplanterTriggerDead
+        amount: 3
+  - type: Sprite
+    layers:
+      - state: box_medical # Corvax-Resprite
+      - state: syringe

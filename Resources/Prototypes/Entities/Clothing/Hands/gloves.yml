@@ -448,6 +448,11 @@
   - type: Clothing
     sprite: Clothing/Hands/Gloves/forensic.rsi
   - type: FingerprintMask
+  - type: Tag
+    tags:
+      - HighRiskItem
+  - type: StealTarget
+    stealGroup: GlovesForensic
   - type: GuideHelp
     guides:
     - Forensics

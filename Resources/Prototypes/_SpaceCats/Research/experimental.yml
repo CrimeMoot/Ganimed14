@@ -1,0 +1,38 @@
+- type: technology
+  id: Bluespace
+  name: research-technology-bluespace
+  icon:
+    sprite: Objects/Misc/stock_parts.rsi
+    state: ansible_crystal
+  discipline: Experimental
+  tier: 2
+  cost: 25000
+  recipeUnlocks:
+  - ArtificialBluespaceCrystal
+  - MachineBluespaceTransitorCircuitboard
+
+- type: technology
+  id: HypoImplant
+  name: research-technology-hypo
+  icon:
+    sprite: _SpaceCats/Objects/Specific/Medical/hypocivial.rsi
+    state: medivend_hypo
+  discipline: Experimental
+  tier: 2
+  cost: 10000
+  recipeUnlocks:
+  - HypoExperement
+
+- type: technology
+  id: BluespaceMining
+  name: research-technology-bluespace-mining
+  icon:
+    sprite: Objects/Misc/stock_parts.rsi
+    state: ansible_crystal
+  discipline: Experimental
+  tier: 3
+  cost: 30000
+  recipeUnlocks:
+  - MachineBluespaceHarvesterCircuitboard
+  technologyPrerequisites:
+  - Bluespace

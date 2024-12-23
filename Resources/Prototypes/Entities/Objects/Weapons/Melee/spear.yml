@@ -124,6 +124,7 @@
   id: SpearReinforced
   description: A spear with a reinforced glass shard as a tip.
   components:
+  - type: BackStab
   - type: Sprite
     sprite: Objects/Weapons/Melee/reinforced_spear.rsi
   - type: MeleeWeapon
@@ -144,6 +145,7 @@
   id: SpearPlasma
   description: A spear with a plasma shard as a tip.
   components:
+  - type: BackStab
   - type: Sprite
     sprite: Objects/Weapons/Melee/plasma_spear.rsi
   - type: MeleeWeapon
@@ -164,6 +166,7 @@
   id: SpearUranium
   description: A spear with a uranium shard as a tip.
   components:
+  - type: BackStab
   - type: Sprite
     sprite: Objects/Weapons/Melee/uranium_spear.rsi
   - type: MeleeWeapon
@@ -186,6 +189,7 @@
   id: SpearBone
   description: A spear made of bones.
   components:
+  - type: BackStab
   - type: Sprite
     sprite: Objects/Weapons/Melee/bone_spear.rsi
   - type: Construction

@@ -1,0 +1,27 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from impstation Sprite by AftrLite(Github)",
+    "size": {
+      "x": 32,
+      "y": 32
+    },
+    "states": [
+      {
+        "name": "sleeper_0",
+        "directions": 4
+      },
+      {
+        "name": "sleeper_0-overlay",
+        "directions": 4
+      },
+      {
+        "name": "sleeper_1",
+        "directions": 4
+      },
+      {
+        "name": "sleeper_1-overlay",
+        "directions": 4
+      }
+    ]
+  }

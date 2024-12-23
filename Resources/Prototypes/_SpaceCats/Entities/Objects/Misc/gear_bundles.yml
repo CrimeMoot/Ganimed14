@@ -1,0 +1,314 @@
+# Parents
+- type: entity
+  id: gearbundlebase
+  name: gear bundle
+  description: A box that seems to fit inside more than its size suggests.
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Objects/Misc/gear_bundle.rsi
+    layers:
+    - state: base
+    - state: lights
+      shader: unshaded
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,3,3
+
+- type: entity
+  id: gearbundletoolbeltfilled
+  parent: [BaseItem, gearbundlebase]
+  name: engineering tool kit
+  description: A box that seems to fit inside more than its size suggests.
+  components:
+  - type: Sprite
+    layers:
+    - state: bundle-tools
+    - state: lights
+      shader: unshaded
+  - type: Item
+    heldPrefix: tools
+  - type: SpawnItemsOnUse
+    items:
+      - id: ClothingBeltUtilityEngineering
+    sound:
+      path: /Audio/Effects/teleport_arrival.ogg
+  - type: StaticPrice
+    price: 170
+
+- type: entity
+  id: gearbundleeva
+  parent: [BaseItem, gearbundlebase]
+  name: EVA kit
+  description: A box that seems to fit inside more than its size suggests.
+  components:
+  - type: Sprite
+    layers:
+    - state: bundle-hardsuit
+    - state: lights
+      shader: unshaded
+  - type: Item
+    heldPrefix: hardsuit
+  - type: SpawnItemsOnUse
+    items:
+      - id: ClothingHeadHelmetEVA
+      - id: ClothingOuterHardsuitEVA
+      - id: AirTankFilled
+      - id: ClothingShoesBootsMag
+      - id: JetpackMiniFilled
+      - id: HandheldGPSBasic
+    sound:
+      path: /Audio/Effects/teleport_arrival.ogg
+  - type: StaticPrice
+    price: 470
+
+- type: entity
+  id: gearbundlehardsuitbasic
+  parent: gearbundleeva
+  name: basic hardsuit kit
+  description: A box that seems to fit inside more than its size suggests.
+  components:
+  - type: SpawnItemsOnUse
+    items:
+      - id: ClothingOuterHardsuitBasic
+      - id: AirTankFilled
+      - id: ClothingShoesBootsMag
+      - id: JetpackMiniFilled
+      - id: HandheldGPSBasic
+    sound:
+      path: /Audio/Effects/teleport_arrival.ogg
+  - type: StaticPrice
+    price: 525
+
+- type: entity
+  id: gearbundlehardsuitspatio
+  parent: gearbundleeva
+  name: spationaut hardsuit kit
+  description: A box that seems to fit inside more than its size suggests.
+  components:
+  - type: SpawnItemsOnUse
+    items:
+      - id: ClothingOuterHardsuitSpatio
+      - id: AirTankFilled
+      - id: ClothingShoesBootsMag
+      - id: JetpackMiniFilled
+      - id: HandheldGPSBasic
+    sound:
+      path: /Audio/Effects/teleport_arrival.ogg
+  - type: StaticPrice
+    price: 645
+
+- type: entity
+  id: gearbundlehardsuitpilot
+  parent: gearbundleeva
+  name: pilot hardsuit kit
+  description: A box that seems to fit inside more than its size suggests.
+  components:
+  - type: SpawnItemsOnUse
+    items:
+      - id: AirTankFilled
+      - id: ClothingShoesBootsMag
+      - id: JetpackMiniFilled
+      - id: HandheldGPSBasic
+    sound:
+      path: /Audio/Effects/teleport_arrival.ogg
+  - type: StaticPrice
+    price: 600
+
+- type: entity
+  id: gearbundlehardsuitparamedic
+  parent: gearbundleeva
+  name: paramedic void suit kit
+  description: A box that seems to fit inside more than its size suggests.
+  components:
+  - type: SpawnItemsOnUse
+    items:
+      - id: ClothingOuterHardsuitVoidParamed
+      - id: AirTankFilled
+      - id: ClothingShoesBootsMag
+      - id: JetpackMiniFilled
+      - id: HandheldGPSBasic
+      - id: CrowbarRed
+      - id: FlashlightLantern
+    sound:
+      path: /Audio/Effects/teleport_arrival.ogg
+  - type: StaticPrice
+    price: 470
+
+- type: entity
+  id: gearbundlemedic
+  parent: [BaseItem, gearbundlebase]
+  name: doctor kit
+  description: A box that seems to fit inside more than its size suggests.
+  components:
+  - type: Sprite
+    layers:
+    - state: bundle-medical
+    - state: lights
+      shader: unshaded
+  - type: Item
+    heldPrefix: medical
+  - type: SpawnItemsOnUse
+    items:
+      - id: ClothingHeadsetMedical
+      - id: ClothingEyesHudMedical
+      - id: ClothingBeltMedicalFilled
+      - id: HandheldHealthAnalyzer
+      - id: Syringe
+      - id: EpinephrineChemistryBottle
+    sound:
+      path: /Audio/Effects/teleport_arrival.ogg
+  - type: StaticPrice
+    price: 550
+
+- type: entity
+  parent: PillCanister
+  id: pillcanisterfirstaid
+  suffix: Generalized
+  components:
+  - type: StorageFill
+    contents:
+    - id: PillCharcoal
+      amount: 1
+    - id: PillDylovene
+      amount: 1
+    - id: PillTricordrazine
+      amount: 1
+    - id: PillIron
+      amount: 1
+    - id: PillCopper
+      amount: 1
+    - id: PillHyronalin
+      amount: 1
+    - id: PillDexalin
+      amount: 1
+
+- type: entity
+  id: gearbundlefirstaid
+  parent: gearbundlemedic
+  name: first aid kit
+  description: A box that seems to fit inside more than its size suggests.
+  components:
+  - type: SpawnItemsOnUse
+    items:
+      - id: Brutepack
+      - id: Ointment
+      - id: Gauze
+      - id: pillcanisterfirstaid
+    sound:
+      path: /Audio/Effects/teleport_arrival.ogg
+  - type: StaticPrice
+    price: 205
+
+- type: entity
+  id: gearbundlesalvagerbasic
+  parent: [BaseItem, gearbundlebase]
+  name: basic salvager kit
+  description: A box that seems to fit inside more than its size suggests.
+  components:
+  - type: Sprite
+    layers:
+    - state: bundle-salvage
+    - state: lights
+      shader: unshaded
+  - type: Item
+    heldPrefix: salvage
+  - type: SpawnItemsOnUse
+    items:
+      - id: Pickaxe
+      - id: OreBag
+      - id: WeaponCrusherDagger
+      - id: WeaponProtoKineticAccelerator
+      - id: AirTankFilled
+      - id: AppraisalTool
+    sound:
+      path: /Audio/Effects/teleport_arrival.ogg
+  - type: StaticPrice
+    price: 575
+
+- type: entity
+  id: gearbundlesalvageradvanced
+  parent: gearbundlesalvagerbasic
+  name: salvager kit
+  description: A box that seems to fit inside more than its size suggests.
+  components:
+  - type: SpawnItemsOnUse
+    items:
+      - id: WeaponCrusherGlaive
+      - id: OreBag
+      - id: WeaponProtoKineticAccelerator
+      - id: ExtendedEmergencyOxygenTankFilled
+      - id: ClothingBeltSalvageWebbing
+      - id: AppraisalTool
+    sound:
+      path: /Audio/Effects/teleport_arrival.ogg
+  - type: StaticPrice
+    price: 925
+
+- type: entity
+  id: gearbundlebotanist
+  parent: [BaseItem, gearbundlebase]
+  name: botanist kit
+  description: A box that seems to fit inside more than its size suggests.
+  components:
+  - type: Sprite
+    layers:
+    - state: bundle-hydro
+    - state: lights
+      shader: unshaded
+  - type: Item
+    heldPrefix: hydro
+  - type: SpawnItemsOnUse
+    items:
+      - id: PlantBag
+      - id: BoxMouthSwab
+      - id: ClothingBeltPlantFilled
+      - id: Bucket
+    sound:
+      path: /Audio/Effects/teleport_arrival.ogg
+  - type: StaticPrice
+    price: 320
+
+- type: entity
+  id: gearbundleshotgun
+  parent: [BaseItem, gearbundlebase]
+  name: shotgun kit
+  description: A box that seems to fit inside more than its size suggests..
+  components:
+  - type: Sprite
+    layers:
+    - state: bundle-mercenary
+    - state: lights
+      shader: unshaded
+  - type: Item
+    heldPrefix: mercenary
+  - type: SpawnItemsOnUse
+    items:
+      - id: WeaponShotgunDoubleBarreled
+      - id: BoxLethalshot
+      - id: BoxLethalshot
+      - id: BoxLethalshot
+      - id: BoxLethalshot
+    sound:
+      path: /Audio/Effects/teleport_arrival.ogg
+  - type: StaticPrice
+    price: 480
+
+- type: entity
+  id: gearbundlemosin
+  parent: gearbundleshotgun
+  name: kardashev-mosin kit
+  description: A box that seems to fit inside more than its size suggests.
+  components:
+  - type: SpawnItemsOnUse
+    items:
+      - id: WeaponSniperMosin
+      - id: MagazineBoxLightRifle
+      - id: MagazineBoxLightRifle
+      - id: MagazineBoxLightRifle
+      - id: MagazineBoxLightRifle
+    sound:
+      path: /Audio/Effects/teleport_arrival.ogg
+  - type: StaticPrice
+    price: 325

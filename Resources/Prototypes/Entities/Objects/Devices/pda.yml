@@ -170,6 +170,12 @@
   - type: Pda
     id: TechnicalAssistantIDCard
     state: pda-interntech
+    penSlot:
+      startingItem: PenEngineering
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: PdaBorderColor
     borderColor: "#717059"
     accentVColor: "#949137"
@@ -180,11 +186,17 @@
   parent: BaseMedicalPDA
   id: MedicalInternPDA
   name: medical intern PDA
-  description: Why isn't it white?
+  description: Why isn't it white? Has a built-in health analyzer.
   components:
   - type: Pda
     id: MedicalInternIDCard
     state: pda-internmed
+    penSlot:
+      startingItem: PenMedical2
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: PdaBorderColor
     borderColor: "#717059"
     accentVColor: "#447987"
@@ -203,6 +215,12 @@
   - type: Pda
     id: SecurityCadetIDCard
     state: pda-interncadet
+    penSlot:
+      startingItem: PenSecurityRed
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: PdaBorderColor
     borderColor: "#717059"
     accentVColor: "#A32D26"
@@ -218,6 +236,12 @@
   - type: Pda
     id: ResearchAssistantIDCard
     state: pda-internsci
+    penSlot:
+      startingItem: PenScience
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: PdaBorderColor
     borderColor: "#717059"
     accentVColor: "#8900c9"
@@ -233,6 +257,12 @@
   - type: Pda
     id: ServiceWorkerIDCard
     state: pda-internservice
+    penSlot:
+      startingItem: PenGreen
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: PdaBorderColor
     borderColor: "#717059"
     accentVColor: "#00cc35"
@@ -264,6 +294,12 @@
   - type: Pda
     id: BotanistIDCard
     state: pda-hydro
+    penSlot:
+      startingItem: PenHydroponics
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: PdaBorderColor
     borderColor: "#44843c"
     accentVColor: "#00cc35"
@@ -282,7 +318,6 @@
     penSlot:
       startingItem: CrayonOrange # no pink crayon?!?
       # ^ Still unacceptable.
-      # ^ I would have to concur.
       ejectSound: /Audio/Items/bikehorn.ogg
       priority: -1
       whitelist:
@@ -292,7 +327,9 @@
     borderColor: "#C18199"
   - type: Icon
     state: pda-clown
-  - type: Slippery # secretly made of bananium
+  - type: Slippery
+    paralyzeTime: 4
+    launchForwardsMultiplier: 1.5
   - type: StepTrigger
   - type: CollisionWake
     enabled: false
@@ -332,6 +369,12 @@
   components:
   - type: Pda
     id: MimeIDCard
+    penSlot:
+      startingItem: PenMime
+      priority: -1
+      whitelist:
+        tags:
+        - Write
     state: pda-mime
     idSlot: #  rewrite without sound because mime
       name: ID Card
@@ -353,6 +396,12 @@
   components:
   - type: Pda
     id: ChaplainIDCard
+    penSlot:
+      startingItem: PenChaplain
+      priority: -1
+      whitelist:
+        tags:
+        - Write
     state: pda-chaplain
   - type: PdaBorderColor
     borderColor: "#333333"
@@ -377,6 +426,12 @@
   - type: Pda
     id: QuartermasterIDCard
     state: pda-qm
+    penSlot:
+      startingItem: PenCargo1QM
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: PdaBorderColor
     borderColor: "#e39751"
     accentVColor: "#a23e3e"
@@ -392,6 +447,12 @@
   - type: Pda
     id: CargoIDCard
     state: pda-cargo
+    penSlot:
+      startingItem: PenCargo
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: PdaBorderColor
     borderColor: "#e39751"
   - type: Icon
@@ -406,6 +467,12 @@
   - type: Pda
     id: SalvageIDCard
     state: pda-miner
+    penSlot:
+      startingItem: PenCargo
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: PdaBorderColor
     borderColor: "#af9366"
     accentVColor: "#8900c9"
@@ -428,6 +495,12 @@
   - type: Pda
     id: BartenderIDCard
     state: pda-bartender
+    penSlot:
+      startingItem: PenBooze
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: PdaBorderColor
     borderColor: "#333333"
   - type: Icon
@@ -490,6 +563,14 @@
   - type: Pda
     id: VisitorIDCard
     state: pda-lawyer
+    penSlot:
+      startingItem: BlackFountainPen
+      priority: -1
+      whitelist:
+        tags:
+        - Write
+  - type: PdaBorderColor
+    borderColor: "#50645c"
 
 - type: entity
   parent: BasePDA
@@ -500,6 +581,12 @@
   - type: Pda
     id: JanitorIDCard
     state: pda-janitor
+    penSlot:
+      startingItem: PenJanitor
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: PdaBorderColor
     borderColor: "#5D2D56"
   - type: Icon
@@ -555,6 +642,12 @@
   - type: Pda
     id: CEIDCard
     state: pda-ce
+    penSlot:
+      startingItem: PenEngineeringCE
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: PdaBorderColor
     borderColor: "#949137"
     accentHColor: "#447987"
@@ -570,6 +663,12 @@
   - type: Pda
     id: EngineeringIDCard
     state: pda-engineer
+    penSlot:
+      startingItem: PenEngineering
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: PdaBorderColor
     borderColor: "#949137"
     accentVColor: "#A32D26"
@@ -580,11 +679,17 @@
   parent: BaseMedicalPDA
   id: CMOPDA
   name: chief medical officer PDA
-  description: Extraordinarily shiny and sterile.
+  description: Extraordinarily shiny and sterile. Has a built-in health analyzer.
   components:
   - type: Pda
     id: CMOIDCard
     state: pda-cmo
+    penSlot:
+      startingItem: PenMedica1CMO
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: PdaBorderColor
     borderColor: "#d7d7d0"
     accentHColor: "#447987"
@@ -596,11 +701,17 @@
   parent: BaseMedicalPDA
   id: MedicalPDA
   name: medical PDA
-  description: Shiny and sterile.
+  description: Shiny and sterile. Has a built-in health analyzer.
   components:
   - type: Pda
     id: MedicalIDCard
     state: pda-medical
+    penSlot:
+      startingItem: PenMedical1
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: PdaBorderColor
     borderColor: "#d7d7d0"
     accentVColor: "#447987"
@@ -623,11 +734,17 @@
   parent: BaseMedicalPDA
   id: ParamedicPDA
   name: paramedic PDA
-  description: Shiny and sterile.
+  description: Shiny and sterile. Has a built-in rapid health analyzer.
   components:
   - type: Pda
     id: ParamedicIDCard
     state: pda-paramedic
+    penSlot:
+      startingItem: PenMedical1
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: PdaBorderColor
     borderColor: "#d7d7d0"
     accentVColor: "#2a4b5b"
@@ -643,6 +760,12 @@
   - type: Pda
     id: ChemistIDCard
     state: pda-chemistry
+    penSlot:
+      startingItem: PenChemist
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: PdaBorderColor
     borderColor: "#d7d7d0"
     accentVColor: "#B34200"
@@ -658,6 +781,12 @@
   - type: Pda
     id: RDIDCard
     state: pda-rd
+    penSlot:
+      startingItem: PenScienceFountain
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: PdaBorderColor
     borderColor: "#d7d7d0"
     accentHColor: "#447987"
@@ -674,6 +803,12 @@
   - type: Pda
     id: ResearchIDCard
     state: pda-science
+    penSlot:
+      startingItem: PenScience
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: PdaBorderColor
     borderColor: "#d7d7d0"
     accentVColor: "#8900c9"
@@ -689,6 +824,12 @@
   - type: Pda
     id: HoSIDCard
     state: pda-hos
+    penSlot:
+      startingItem: PenSecurityFountainMetallic
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: PdaBorderColor
     borderColor: "#A32D26"
     accentHColor: "#447987"
@@ -711,6 +852,12 @@
   - type: Pda
     id: WardenIDCard
     state: pda-warden
+    penSlot:
+      startingItem: PenSecurityFountain
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: PdaBorderColor
     borderColor: "#A32D26"
     accentVColor: "#949137"
@@ -726,6 +873,12 @@
   - type: Pda
     id: SecurityIDCard
     state: pda-security
+    penSlot:
+      startingItem: PenSecurityBlack
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: PdaBorderColor
     borderColor: "#A32D26"
   - type: Icon
@@ -734,7 +887,7 @@
 - type: entity
   parent: BaseSecurityPDA
   id: CentcomPDA
-  name: CentComm PDA
+  name: CentCom PDA
   description: Light green sign of walking bureaucracy.
   components:
   - type: Pda
@@ -791,6 +944,12 @@
   components:
   - type: Pda
     id: CentcomIDCardDeathsquad
+    penSlot:
+      startingItem: BlackFountainPen
+      priority: -1
+      whitelist:
+        tags:
+        - Write
 
 - type: entity
   parent: BasePDA
@@ -829,6 +988,12 @@
   - type: Pda
     id: AtmosIDCard
     state: pda-atmos
+    penSlot:
+      startingItem: PenAtmos
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: PdaBorderColor
     borderColor: "#949137"
     accentVColor: "#447987"
@@ -874,6 +1039,14 @@
     uiKey: enum.PdaUiKey.Key
     preinstalled:
       - NotekeeperCartridge
+    cartridgeSlot:
+      priority: -1
+      name: Cartridge
+      ejectSound: /Audio/Machines/id_swipe.ogg
+      insertSound: /Audio/Machines/id_insert.ogg
+      whitelist:
+        components:
+          - Cartridge
 
 - type: entity
   parent: BaseSecurityPDA
@@ -885,6 +1058,12 @@
   - type: Pda
     id: ERTLeaderIDCard
     state: pda-ert
+    penSlot:
+      startingItem: BlackFountainPen
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: PdaBorderColor
     borderColor: "#A32D26"
     accentHColor: "#447987"
@@ -937,10 +1116,14 @@
   id: ERTMedicPDA
   name: ERT Medic PDA
   suffix: Medic
-  description: Red for firepower, it's shiny and sterile.
+  description: Red for firepower, it's shiny and sterile. Has a built-in rapid health analyzer.
   components:
   - type: Pda
     id: ERTMedicIDCard
+  - type: HealthAnalyzer
+    scanDelay: 1
+    scanningEndSound:
+      path: "/Audio/Items/Medical/healthscanner.ogg"
 
 - type: entity
   parent: ERTLeaderPDA
@@ -960,6 +1143,13 @@
   components:
   - type: Pda
     id: CBURNIDcard
+    state: pda-ert
+    penSlot:
+      startingItem: BlackFountainPen
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: PdaBorderColor
     borderColor: "#A32D26"
     accentHColor: "#447987"
@@ -974,6 +1164,12 @@
   - type: Pda
     id: PsychologistIDCard
     state: pda-medical
+    penSlot:
+      startingItem: PenMedical1
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: PdaBorderColor
     borderColor: "#d7d7d0"
     accentVColor: "#447987"
@@ -1038,6 +1234,12 @@
   - type: Pda
     id: DetectiveIDCard
     state: pda-detective
+    penSlot:
+      startingItem: PenSecurityBlack
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: PdaBorderColor
     borderColor: "#774705"
   - type: Icon
@@ -1054,11 +1256,17 @@
   parent: BaseMedicalPDA
   id: BrigmedicPDA
   name: brigmedic PDA
-  description: I wonder whose pulse is on the screen? I hope it doesn't stop...
+  description: I wonder whose pulse is on the screen? I hope he doesnt stop... PDA has a built-in health analyzer.
   components:
   - type: Pda
     id: BrigmedicIDCard
     state: pda-brigmedic
+    penSlot:
+      startingItem: PenBrigmedic
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: PdaBorderColor
     borderColor: "#A32D26"
     accentHColor: "#d7d7d0"
@@ -1105,6 +1313,12 @@
   - type: Pda
     id: SeniorEngineerIDCard
     state: pda-seniorengineer
+    penSlot:
+      startingItem: PenEngineering
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: PdaBorderColor
     borderColor: "#949137"
     accentVColor: "#CD6900"
@@ -1120,6 +1334,12 @@
   - type: Pda
     id: SeniorResearcherIDCard
     state: pda-seniorresearcher
+    penSlot:
+      startingItem: PenScienceOverpriced
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: PdaBorderColor
     borderColor: "#d7d7d0"
     accentHColor: "#8900c9"
@@ -1131,11 +1351,17 @@
   parent: BaseMedicalPDA
   id: SeniorPhysicianPDA
   name: senior physician PDA
-  description: Smells faintly like iron and chemicals.
+  description: Smells faintly like iron and chemicals. Has a built-in health analyzer.
   components:
   - type: Pda
     id: SeniorPhysicianIDCard
     state: pda-seniorphysician
+    penSlot:
+      startingItem: PenMedical1
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: PdaBorderColor
     borderColor: "#d7d7d0"
     accentHColor: "#447987"
@@ -1152,6 +1378,12 @@
   - type: Pda
     id: SeniorOfficerIDCard
     state: pda-seniorofficer
+    penSlot:
+      startingItem: PenSecurityRed
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: PdaBorderColor
     borderColor: "#A32D26"
     accentVColor: "#DFDFDF"
@@ -1187,4 +1419,12 @@
     uiKey: enum.PdaUiKey.Key
     preinstalled:
       - NotekeeperCartridge
-      - MedTekCartridge
+      - MedTekCartridge      
+    cartridgeSlot:
+      priority: -1
+      name: Cartridge
+      ejectSound: /Audio/Machines/id_swipe.ogg
+      insertSound: /Audio/Machines/id_insert.ogg
+      whitelist:
+        components:
+          - Cartridge

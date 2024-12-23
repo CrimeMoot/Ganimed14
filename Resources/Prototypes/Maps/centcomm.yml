@@ -1,8 +1,9 @@
 - type: gameMap
   id: CentComm
   mapName: 'Central Command'
-  mapPath: /Maps/centcomm.yml
-  minPlayers: 10
+  mapPath: /Maps/centcomm.yml 
+  #mapPath: /Maps/SpaceCats/CentralCommand.yml  # Space Cats
+  minPlayers: 5
   stations:
     centcomm:
       stationProto: NanotrasenCentralCommand
@@ -11,15 +12,15 @@
           mapNameTemplate: '{0} Central Command {1}'
           nameGenerator:
             !type:NanotrasenCentComNameGenerator
-            prefixCreator: 'TG'
+            prefixCreator: 'SC'
         - type: StationJobs
           availableJobs:
-            BKCCOperator: [ 0, 0]
-            BKCCSecGavna: [ 0, 0]
-            BKCCCargo: [ 0, 0]
-            BKCCSecOfficer: [ 0, 0]
-            BKCCAssistant: [ 0, 1]
-            BKCCAdmiral: [ 0, 0]
+            BKCCOperator: [ 1, 1]
+            BKCCSecGavna: [ 1, 1]
+            BKCCCargo: [ 1, 2]
+            BKCCSecOfficer: [ 2, 2]
+            BKCCAssistant: [ 2, 4]
+            BKCCAdmiral: [ 1, 1]
 
 - type: gameMap
   id: CentCommv2
@@ -35,14 +36,14 @@
         nameGenerator:
           !type:NanotrasenCentComNameGenerator
           prefixCreator: 'CX'
-#      - type: StationJobs
-#        availableJobs:
-#          BKCCOperator: [ 1, 1]
-#          BKCCSecGavna: [ 1, 1]
-#          BKCCCargo: [ 1, 2]
-#          BKCCSecOfficer: [ 2, 2]
-#          BKCCAssistant: [ 2, 4]
-#          BKCCAdmiral: [ 0, 0]
+      - type: StationJobs
+        availableJobs:
+          BKCCOperator: [ 1, 1]
+          BKCCSecGavna: [ 1, 1]
+          BKCCCargo: [ 1, 2]
+          BKCCSecOfficer: [ 2, 2]
+          BKCCAssistant: [ 2, 4]
+          BKCCAdmiral: [ 1, 1]
 
 - type: gameMap
   id: CentCommv3
@@ -58,13 +59,13 @@
         nameGenerator:
           !type:NanotrasenCentComNameGenerator
           prefixCreator: 'B'
-#      - type: StationJobs
-#        availableJobs:
-#          BKCCOfficial: [ 1, 1]
-#          BKCCOperator: [ 1, 1]
-#          BKCCSecGavna: [ 1, 1]
-#          BKCCCargo: [ 1, 2]
-#          BKCCSecOfficer: [ 2, 3]
-#          BKCCAssistant: [ 2, 4]
-#          BKCCAdmiral: [ 0, 0]
+      - type: StationJobs
+        availableJobs:
+          BKCCOfficial: [ 1, 1]
+          BKCCOperator: [ 1, 1]
+          BKCCSecGavna: [ 1, 1]
+          BKCCCargo: [ 1, 2]
+          BKCCSecOfficer: [ 2, 3]
+          BKCCAssistant: [ 2, 4]
+          BKCCAdmiral: [ 1, 1]
 

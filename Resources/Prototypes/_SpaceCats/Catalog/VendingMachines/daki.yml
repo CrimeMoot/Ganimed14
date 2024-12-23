@@ -1,0 +1,439 @@
+- type: listing
+  id: Daki1
+  productEntity: AuroraPillow
+  cost:
+    SpaceCash: 100
+  categories:
+    - Daki
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 5
+
+- type: listing
+  id: Daki2
+  productEntity: CalliePillow
+  cost:
+    SpaceCash: 100
+  categories:
+    - Daki
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 5
+
+- type: listing
+  id: Daki3
+  productEntity: CascaPillow
+  cost:
+    SpaceCash: 100
+  categories:
+    - Daki
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 5
+
+- type: listing
+  id: Daki4
+  productEntity: ChaikaPillow
+  cost:
+    SpaceCash: 100
+  categories:
+    - Daki
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 5
+
+- type: listing
+  id: Daki5
+  productEntity: ElisabethPillow
+  cost:
+    SpaceCash: 100
+  categories:
+    - Daki
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 5
+
+- type: listing
+  id: Daki6
+  productEntity: FoxyGranpaPillow
+  cost:
+    SpaceCash: 100
+  categories:
+    - Daki
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 5
+
+- type: listing
+  id: Daki7
+  productEntity: HarukoPillow
+  cost:
+    SpaceCash: 100
+  categories:
+    - Daki
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 5
+
+- type: listing
+  id: Daki8
+  productEntity: HoloPillow
+  cost:
+    SpaceCash: 100
+  categories:
+    - Daki
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 5
+
+- type: listing
+  id: Daki9
+  productEntity: IanPillow
+  cost:
+    SpaceCash: 100
+  categories:
+    - Daki
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 5
+
+- type: listing
+  id: Daki10
+  productEntity: ImeraPillow
+  cost:
+    SpaceCash: 100
+  categories:
+    - Daki
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 5
+
+- type: listing
+  id: Daki11
+  productEntity: JolynePillow
+  cost:
+    SpaceCash: 100
+  categories:
+    - Daki
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 5
+
+- type: listing
+  id: Daki12
+  productEntity: KurisuPillow
+  cost:
+    SpaceCash: 100
+  categories:
+    - Daki
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 5
+
+- type: listing
+  id: Daki13
+  productEntity: MariePillow
+  cost:
+    SpaceCash: 100
+  categories:
+    - Daki
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 5
+
+- type: listing
+  id: Daki14
+  productEntity: YokoPillow
+  cost:
+    SpaceCash: 100
+  categories:
+    - Daki
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 5
+
+- type: listing
+  id: Daki15
+  productEntity: MugiPillow
+  cost:
+    SpaceCash: 100
+  categories:
+    - Daki
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 5
+
+- type: listing
+  id: Daki16
+  productEntity: NagaPillow
+  cost:
+    SpaceCash: 100
+  categories:
+    - Daki
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 5
+
+- type: listing
+  id: Daki17
+  productEntity: NarsiePillow
+  cost:
+    SpaceCash: 100
+  categories:
+    - Daki
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 5
+
+- type: listing
+  id: Daki18
+  productEntity: NukiePillow
+  cost:
+    SpaceCash: 100
+  categories:
+    - Daki
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 5
+
+- type: listing
+  id: Daki19
+  productEntity: PatchouliPillow
+  cost:
+    SpaceCash: 100
+  categories:
+    - Daki
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 5
+
+- type: listing
+  id: Daki20
+  productEntity: PlutiaPillow
+  cost:
+    SpaceCash: 100
+  categories:
+    - Daki
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 5
+
+- type: listing
+  id: Daki21
+  productEntity: RedPillow
+  cost:
+    SpaceCash: 100
+  categories:
+    - Daki
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 5
+
+- type: listing
+  id: Daki22
+  productEntity: ReiPillow
+  cost:
+    SpaceCash: 100
+  categories:
+    - Daki
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 5
+
+- type: listing
+  id: Daki23
+  productEntity: ReisenPillow
+  cost:
+    SpaceCash: 100
+  categories:
+    - Daki
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 5
+
+- type: listing
+  id: Daki24
+  productEntity: RockerPillow
+  cost:
+    SpaceCash: 100
+  categories:
+    - Daki
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 5
+
+- type: listing
+  id: Daki25
+  productEntity: SisaPillow
+  cost:
+    SpaceCash: 100
+  categories:
+    - Daki
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 5
+
+- type: listing
+  id: Daki26
+  productEntity: SlarshaPillow
+  cost:
+    SpaceCash: 100
+  categories:
+    - Daki
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 5
+
+- type: listing
+  id: Daki27
+  productEntity: SquidPillow
+  cost:
+    SpaceCash: 100
+  categories:
+    - Daki
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 5
+
+- type: listing
+  id: Daki28
+  productEntity: SquigglyPillow
+  cost:
+    SpaceCash: 100
+  categories:
+    - Daki
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 5
+
+- type: listing
+  id: Daki29
+  productEntity: SueBowchiefPillow
+  cost:
+    SpaceCash: 100
+  categories:
+    - Daki
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 5
+
+- type: listing
+  id: Daki30
+  productEntity: TomokoPillow
+  cost:
+    SpaceCash: 100
+  categories:
+    - Daki
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 5
+
+- type: listing
+  id: Daki31
+  productEntity: TorielPillow
+  cost:
+    SpaceCash: 100
+  categories:
+    - Daki
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 5
+
+- type: listing
+  id: Daki32
+  productEntity: UmaruPillow
+  cost:
+    SpaceCash: 100
+  categories:
+    - Daki
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 5
+
+- type: listing
+  id: Daki33
+  productEntity: YaranaikaPillow
+  cost:
+    SpaceCash: 100
+  categories:
+    - Daki
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 5
+
+- type: listing
+  id: Daki34
+  productEntity: KirravaPillow
+  cost:
+    SpaceCash: 100
+  categories:
+    - Daki
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 5
+
+- type: listing
+  id: Daki35
+  productEntity: NaaLeyPillow
+  cost:
+    SpaceCash: 100
+  categories:
+    - Daki
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 5
+
+- type: listing
+  id: Daki36
+  productEntity: Pillow2
+  cost:
+    SpaceCash: 100
+  categories:
+    - Daki
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 5
+
+- type: listing
+  id: Daki37
+  productEntity: Pillow3
+  cost:
+    SpaceCash: 100
+  categories:
+    - Daki
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 5
+
+- type: listing
+  id: Daki38
+  productEntity: Pillow4
+  cost:
+    SpaceCash: 100
+  categories:
+    - Daki
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 5
+
+- type: listing
+  id: Daki39
+  productEntity: Pillow5
+  cost:
+    SpaceCash: 100
+  categories:
+    - Daki
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 5
+
+- type: listing
+  id: Daki40
+  productEntity: Pillow6
+  cost:
+    SpaceCash: 100
+  categories:
+    - Daki
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 5

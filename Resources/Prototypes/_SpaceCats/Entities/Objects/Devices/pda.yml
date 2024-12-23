@@ -1,0 +1,49 @@
+- type: entity
+  parent: BasePDA
+  id: BridgeOfficerPDA
+  name: PDA офицера мостика
+  description: Поднять щиты!
+  components:
+  - type: Pda
+    id: BridgeOfficerIDCard
+    state: pda-bridgeofficer
+    penSlot:
+      startingItem: PenCap
+      priority: -1
+      whitelist:
+        tags:
+        - Write
+  - type: PdaBorderColor
+    borderColor: "#7C5D00"
+  - type: Icon
+    state: pda-bridgeofficer
+
+- type: entity
+  parent: BasePDA
+  id: MaidPDA
+  name: PDA горничной
+  description: Сияющая от своей собственной чистоты.
+  components:
+  - type: Pda
+    id: MaidIDCard
+    state: pda-maid
+
+- type: entity
+  parent: BasePDA
+  id: SecurityEngineerPDA
+  name: кпк полевого инженера
+  description: Красный, чтобы скрыть пятна крови пассажира.
+  components:
+  - type: Pda
+    id: SecurityEngineerIDCard
+    state: pda-security-enginer
+  - type: PdaBorderColor
+    borderColor: "#9b2b2a"
+  - type: Icon
+    state: pda-security
+  - type: CartridgeLoader
+    preinstalled:
+      - CrewManifestCartridge
+      - NotekeeperCartridge
+      - NewsReaderCartridge
+      - WantedListCartridge

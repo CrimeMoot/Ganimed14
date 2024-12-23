@@ -1,0 +1,36 @@
+- type: entity
+  id: ComputerShipyardTSpecialist
+  parent: ComputerShipyard
+  name: консоль верфи снабжения
+  description: Консоль с возможностью заказа шаттлов. Если бы вы знали о их состоянии...
+  components:
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.25,-0.35,0.25,0.35"
+        density: 1000
+        mask:
+        - AllMask
+        layer:
+        - WallLayer
+  - type: AccessReader
+    access: [["Quartermaster"], ["Salvage"]]
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: StructuralMetallicStrong
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GlassBreak
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: ShipyardConsole
+    allowedGroup:
+    - Salvage

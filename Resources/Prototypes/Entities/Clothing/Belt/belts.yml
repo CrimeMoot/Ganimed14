@@ -462,7 +462,7 @@
   description: Can hold security gear like handcuffs and flashes.
   components:
   - type: Sprite
-    sprite: Clothing/Belt/security.rsi
+    sprite: _SpaceCats/Clothing/Belt/security.rsi #<-- cats
   - type: Clothing
     sprite: Clothing/Belt/security.rsi
   - type: ExplosionResistance
@@ -538,7 +538,7 @@
           tags:
           - CaptainSabre
   - type: Appearance
-  
+
 - type: entity # backmen
   parent: [ClothingBeltBase, ClothingSlotBase]
   id: ClothingBeltYamato
@@ -570,7 +570,7 @@
           tags:
           - YamatoSabre
   - type: Appearance
-  
+
 - type: entity # backmen
   id: ClothingBeltYamatoFilled
   parent: ClothingBeltYamato
@@ -661,9 +661,9 @@
   description: Unique and versatile chest rig, can hold security gear.
   components:
   - type: Sprite
-    sprite: Clothing/Belt/securitywebbing.rsi
+    sprite: _SpaceCats/Clothing/Belt/securitywebbing.rsi # cats
   - type: Clothing
-    sprite: Clothing/Belt/securitywebbing.rsi
+    sprite: _SpaceCats/Clothing/Belt/securitywebbing.rsi # cats
 
 - type: entity
   parent: [ ClothingBeltStorageBase, BaseSecurityCargoContraband ]

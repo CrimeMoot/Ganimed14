@@ -1,0 +1,31 @@
+- type: entity
+  id: ChemicalsImplanter
+  parent: BaseImplantOnlyImplanter
+  suffix: Chemical
+  components:
+    - type: Implanter
+      implant: ChemicalImplant
+
+- type: entity
+  id: StimulantsImplanter
+  parent: BaseImplantOnlyImplanterSyndi
+  suffix: Stimulants
+  components:
+    - type: Implanter
+      implant: StimulantsImplant
+
+- type: entity
+  id: ChemicalImplanterTriggerDead
+  parent: BaseImplantOnlyImplanter
+  suffix: Chemical, Auto
+  components:
+    - type: Implanter
+      implant: ChemicalImplantTriggerDead
+
+- type: entity
+  id: ChemicalImplanterTrigger
+  parent: BaseImplantOnlyImplanter
+  suffix: Toxin
+  components:
+    - type: Implanter
+      implant: ChemicalImplantTrigger

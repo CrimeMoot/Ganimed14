@@ -22,10 +22,10 @@
   - External
   - Cryogenics
   #start-backmen: currency
-  minBankBalance: 150
+  minBankBalance: 100
   maxBankBalance: 250
   wageDepartment: Security
-  wage: 25
+  wage: 50
   #end-backmen: currency
   special:
   - !type:AddImplantSpecial
@@ -39,7 +39,6 @@
     id: SecurityCadetPDA
     ears: ClothingHeadsetSecurity
     belt: ClothingBeltSecurityFilled
-    pocket1: WeaponPistolMk58
     pocket2: BookSpaceLaw # Corvax-HyperLink
   storage:
     back:

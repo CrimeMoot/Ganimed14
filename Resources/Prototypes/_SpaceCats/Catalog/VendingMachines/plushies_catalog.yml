@@ -1,0 +1,54 @@
+- type: listing
+  id: lushiesSponsornventory
+  productEntity: PlushieLolyItsMyLife
+  cost:
+    SpaceCash: 120
+  categories:
+    - PlushiesSponsor
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 5
+
+- type: listing
+  id: lushiesSponsorInventory2
+  productEntity: PlushieAcolyte16
+  cost:
+    SpaceCash: 120
+  categories:
+    - PlushiesSponsor
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 5
+
+- type: listing
+  id: lushiesSponsorInventory3
+  productEntity: PlushieFirefly
+  cost:
+    SpaceCash: 120
+  categories:
+    - PlushiesSponsor
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 5
+
+- type: listing
+  id: lushiesSponsorInventory4
+  productEntity: PlushieFejet
+  cost:
+    SpaceCash: 120
+  categories:
+    - PlushiesSponsor
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 5
+
+- type: listing
+  id: lushiesSponsorInventory5
+  productEntity: PlushieSilver
+  cost:
+    SpaceCash: 120
+  categories:
+    - PlushiesSponsor
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 5

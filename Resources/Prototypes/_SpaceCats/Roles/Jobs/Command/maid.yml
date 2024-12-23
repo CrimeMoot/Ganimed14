@@ -1,0 +1,41 @@
+- type: job
+  id: Maid
+  name: job-name-maid
+  description: job-description-maid
+  playTimeTracker: JobMaid
+  requirements:
+  - !type:DepartmentTimeRequirement
+    department: Command
+    time: 12000
+  - !type:OverallPlaytimeRequirement
+    time: 24000
+  - !type:AgeRequirement
+    requiredAge: 18
+  weight: 20
+  icon: "JobIconMaid"
+  startingGear: MaidGear
+  supervisors: job-supervisors-hop
+  canBeAntag: false
+  joinNotifyCrew: true
+  access:
+  - Maintenance
+  - Command
+  - Service
+  - Janitor
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+  minBankBalance: 300
+  maxBankBalance: 600
+  wageDepartment: CentCom
+  wage: 200
+
+- type: startingGear
+  id: MaidGear
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtMaid
+    back: ClothingBackpackSatchel
+    shoes: ClothingShoesTourist
+    ears: ClothingHeadsetCommand
+    id: MaidPDA
+    pocket1: PersonalNecoAI

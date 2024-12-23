@@ -215,6 +215,11 @@
     pocket1: WeaponPistolMk58
 
 - type: loadout
+  id: WeaponEnergyGunDominator
+  equipment:
+    pocket1: WeaponEnergyGunDominator
+
+- type: loadout
   id: WeaponPistolG22
   equipment:
     pocket1: WeaponPistolG22

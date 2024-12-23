@@ -79,7 +79,7 @@
   - type: UnpoweredFlashlight
   - type: PointLight
     enabled: false
-    mask: /Textures/Effects/LightMasks/cone.png
+    mask: /Textures/_SpaceCats/Effects/LightMasks/cone.png # Cats edit
     autoRot: true
     radius: 6
     netsync: false

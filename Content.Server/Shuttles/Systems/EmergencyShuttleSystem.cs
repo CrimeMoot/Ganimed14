@@ -39,6 +39,7 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
+using Content.Server.GameTicking;
 
 namespace Content.Server.Shuttles.Systems;
 
@@ -75,6 +76,8 @@ public sealed partial class EmergencyShuttleSystem : EntitySystem
 
     private const float ShuttleSpawnBuffer = 1f;
 
+    public TimeSpan? DockTime;
+
     private bool _emergencyShuttleEnabled;
 
     [ValidatePrototypeId<TagPrototype>]
@@ -95,7 +98,13 @@ public sealed partial class EmergencyShuttleSystem : EntitySystem
         SubscribeLocalEvent<EmergencyShuttleComponent, FTLStartedEvent>(OnEmergencyFTL);
         SubscribeLocalEvent<EmergencyShuttleComponent, FTLCompletedEvent>(OnEmergencyFTLComplete);
         SubscribeNetworkEvent<EmergencyShuttleRequestPositionMessage>(OnShuttleRequestPosition);
+        SubscribeLocalEvent<RoundEndTextAppendEvent>(OnRoundEnded);
         InitializeEmergencyConsole();
+    }
+
+    private void OnRoundEnded(RoundEndTextAppendEvent ev)
+    {
+        DockTime = null;
     }
 
     private void OnRoundStart(RoundStartingEvent ev)
@@ -275,6 +284,8 @@ public sealed partial class EmergencyShuttleSystem : EntitySystem
         }
 
         var targetGrid = _station.GetLargestGrid(Comp<StationDataComponent>(stationUid));
+
+        DockTime = _timing.CurTime;
 
         // UHH GOOD LUCK
         if (targetGrid == null)

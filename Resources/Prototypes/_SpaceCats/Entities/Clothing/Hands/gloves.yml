@@ -1,0 +1,54 @@
+- type: entity
+  parent: ClothingHandsGlovesCaptain
+  id: ClothingHandsGlovesCaptainWhite
+  name: white captain gloves
+  description: Royal white gloves with gold trim. Gorgeous.
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Clothing/Hands/white_captain_gloves.rsi
+  - type: Clothing
+    sprite: _SpaceCats/Clothing/Hands/white_captain_gloves.rsi
+
+- type: entity
+  parent: ClothingHandsGlovesCaptain
+  id: ClothingHandsGlovesSheriff
+  name: sheriff gloves
+  description: Gloves with an ergonomic shape designed to hold a revolver.
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Clothing/Hands/sheriff_gloves.rsi
+  - type: Clothing
+    sprite: _SpaceCats/Clothing/Hands/sheriff_gloves.rsi
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsGlovesKravMaga
+  name: перчатки крав-мага
+  description: Эти перчатки позволяют их владельцам наносить удары в солнечное сплетение, легкие и горло с профессиональным достоинством.
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Clothing/Hands/Gloves/krav.rsi
+  - type: Clothing
+    sprite: _SpaceCats/Clothing/Hands/Gloves/krav.rsi
+  - type: MeleeWeapon
+    attackRate: 1.6
+    damage:
+      types:
+       Blunt: 6
+    soundHit:
+      collection: Punch
+    animation: WeaponArcFist
+  - type: Fiber
+    fiberMaterial: fibers-durathread
+    fiberColor: fibers-red
+  - type: FingerprintMask
+  - type: StaticPrice
+    price: 1200
+  - type: Insulated
+  - type: Tag
+    tags:
+    - HighRiskItem
+  - type: StaminaDamageOnHit
+    damage: 29
+  - type: StealTarget
+    stealGroup: KravMaga

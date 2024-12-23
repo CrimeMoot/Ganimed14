@@ -12,7 +12,7 @@
       - state: burning
   - type: PointLight
     radius: 5
-    energy: 3
+    energy: 2.5
     color: "#FFC90C"
   - type: Damageable
     damageContainer: StructuralInorganic
@@ -31,6 +31,11 @@
     sound:
       path: /Audio/Ambience/Objects/fireplace.ogg
   - type: AlwaysHot
+  # Start ADT tweak
+  - type: Construction
+    graph: ADTBonfire
+    node: bonfire
+  # End ADT tweak
 
 - type: entity
   id: LegionnaireBonfire

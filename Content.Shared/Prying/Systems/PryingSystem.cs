@@ -136,12 +136,7 @@ public sealed class PryingSystem : EntitySystem
         RaiseLocalEvent(target, ref modEv);
 
         // BACKMEN EDIT START
-        var time = modEv.BaseTime * modEv.PryTimeModifier / toolModifier;
-
-        if (time <= modEv.Neglect)
-            time = 0;
-
-        var doAfterArgs = new DoAfterArgs(EntityManager, user, TimeSpan.FromSeconds(time), new DoorPryDoAfterEvent(), target, target, tool) // WD EDIT END
+        var doAfterArgs = new DoAfterArgs(EntityManager, user, TimeSpan.FromSeconds(modEv.BaseTime * modEv.PryTimeModifier / toolModifier), new DoorPryDoAfterEvent(), target, target, tool)
         {
             BreakOnDamage = true,
             BreakOnMove = true,
@@ -176,7 +171,7 @@ public sealed class PryingSystem : EntitySystem
         }
 
 
-        if (args.Used != null && comp != null && door.State is not DoorState.Closing and not DoorState.Opening) // BACKMEN EDIT
+        if (args.Used != null && comp != null)
         {
             _audioSystem.PlayPredicted(comp.UseSound, args.Used.Value, args.User);
         }

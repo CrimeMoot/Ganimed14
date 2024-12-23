@@ -48,7 +48,7 @@
     node: reinforcedPlasmaWindow
   - type: Appearance
   - type: DamageVisuals
-    thresholds: [5, 10, 20]
+    thresholds: [4, 8, 12]
     damageDivisor: 6
     trackAllDamage: true
     damageOverlay:
@@ -77,7 +77,7 @@
     node: plasmaReinforcedWindowDirectional
   - type: Appearance
   - type: DamageVisuals
-    thresholds: [5, 10, 20]
+    thresholds: [4, 8, 12]
     damageDivisor: 3
     trackAllDamage: true
     damageOverlay:

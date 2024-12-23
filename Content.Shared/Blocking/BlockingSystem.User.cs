@@ -20,6 +20,7 @@ public sealed partial class BlockingSystem
         SubscribeLocalEvent<BlockingUserComponent, ContainerGettingInsertedAttemptEvent>(OnInsertAttempt);
         SubscribeLocalEvent<BlockingUserComponent, AnchorStateChangedEvent>(OnAnchorChanged);
         SubscribeLocalEvent<BlockingUserComponent, EntityTerminatingEvent>(OnEntityTerminating);
+    
     }
 
     private void OnParentChanged(EntityUid uid, BlockingUserComponent component, ref EntParentChangedMessage args)

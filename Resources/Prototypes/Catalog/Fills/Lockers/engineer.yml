@@ -94,6 +94,7 @@
       - id: GasAnalyzer
       - id: MedkitOxygenFilled
       - id: HolofanProjector
+      - id: RPD # Cats
       - id: RCD
       - id: RCDAmmo
 
@@ -110,7 +111,8 @@
       - id: GasAnalyzer
       - id: MedkitOxygenFilled
       - id: HolofanProjector
-      - id: RCD
+      - id: RPD
+      - id: RCD # Cats
       - id: RCDAmmo
 
 - type: entity

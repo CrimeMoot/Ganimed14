@@ -31,6 +31,7 @@ public sealed class GhostThemeSystem : EntitySystem
             if (!_sponsorsMgr.TryGetServerPrototypes(args.Player.UserId, out var items))
             {
                 items = new List<string>();
+                
                 foreach (var ghostProto in IoCManager.Resolve<IPrototypeManager>().EnumeratePrototypes<GhostThemePrototype>())
                 {
                     items.Add(ghostProto.ID);

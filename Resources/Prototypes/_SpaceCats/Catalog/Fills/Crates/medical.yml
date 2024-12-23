@@ -1,0 +1,24 @@
+- type: entity
+  id: MedkitsCrate
+  parent: [ CrateWeaponSecure, BaseRestrictedContraband ]
+  name: набор полевого медика
+  description: Содержит всё для реанимации бойца и оказания первой медицинской помощи.
+  components:
+  - type: StorageFill
+    contents:
+      - id: MedkitEmergencyMedipenSecurity
+      - id: MedkitEmergencyMercenary
+      - id: Defibrillator
+      - id: RollerBedSpawnFolded
+      - id: Brutepack
+        amount: 3
+
+- type: entity
+  id: CrateEmergencyMedipenSecurity
+  parent: CrateMedical
+  name: набор иньекторов суфентанила
+  description: 8 иньекторов суфентанила.
+  components:
+  - type: StorageFill
+    contents:
+      - id: MedkitEmergencyMedipenSecurity

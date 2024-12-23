@@ -1,0 +1,131 @@
+- type: entity
+  parent: ClothingBeltStorageBase
+  id: ClothingBeltMilitaryWebbingCMO
+  name: chief medical officer's chest rig
+  description: A medical chest rig with deep pockets, for use by paramedics and health professionals.
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Clothing/Belt/cmowebbing.rsi
+  - type: Clothing
+    sprite: _SpaceCats/Clothing/Belt/cmowebbing.rsi
+  - type: Item
+    size: Large
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,2,1
+    - 4,0,7,1
+  - type: StorageFill
+    contents:
+      - id: Brutepack
+        amount: 2
+      - id: Ointment
+        amount: 1
+      - id: Gauze
+      - id: EmergencyMedipenSecurity
+        amount: 2
+      - id: SyringeSaline
+      - id: SyringeEphedrine
+      - id: Cautery
+
+- type: entity
+  parent: [ClothingBeltMedical,ClothingBeltSecurity]
+  id: ClothingBeltMilitaryWebbingCorpsman
+  name: РПС бригмедика
+  description: Медицинская ременно-плечевая система с множеством мелких и стерильных карманов и подсумков.
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Clothing/Belt/corpsman.rsi
+  - type: Clothing
+    sprite: _SpaceCats/Clothing/Belt/corpsman.rsi
+  - type: Storage
+    whitelist:
+      tags:
+        - SecBeltEquip
+        - BrigmedicBeltEquip
+        - CigPack
+        - Taser
+        - Wrench
+        - Bottle
+        - Spray
+        - Brutepack
+        - Bloodpack
+        - Gauze
+        - Ointment
+        - PillCanister
+        - Radio
+        - DiscreteHealthAnalyzer
+        - SurgeryTool
+        - Dropper
+      components:
+        - Stunbaton
+        - FlashOnTrigger
+        - SmokeOnTrigger
+        - Flash
+        - Handcuff
+        - BallisticAmmoProvider
+        - Ammo
+        - Hypospray
+        - Injector
+        - Pill
+        - HandLabeler
+  - type: StorageFill
+    contents:
+      - id: Stunbaton
+      - id: Handcuffs
+      - id: Brutepack
+      - id: Ointment
+      - id: Gauze
+
+- type: entity
+  parent: ClothingBeltSheath
+  id: ClothingBeltWhiteSheath
+  name: white sabre sheath
+  description: Style, shine, everything for the best sabers in the universe.
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Clothing/Belt/white_sheath.rsi
+    state: sheath
+  - type: Clothing
+    sprite: _SpaceCats/Clothing/Belt/white_sheath.rsi
+
+- type: entity
+  parent: ClothingBeltSheath
+  id: ClothingBeltSheriffSheath
+  name: sheriff sabre sheath
+  description: Practicality, durability, the saber will definitely not end up in your leg.
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Clothing/Belt/sheriff_sheath.rsi
+    state: sheath
+  - type: Clothing
+    sprite: _SpaceCats/Clothing/Belt/sheriff_sheath.rsi
+
+- type: entity
+  parent: ClothingBeltSecurityWebbingFilled
+  id: ClothingBlackWebbing
+  name: РПС офицера мостика
+  description: Это довольно удобный и не стесняющий движений РПС.
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/BridgeOfficer/BOWebbing.rsi
+  - type: Clothing
+    sprite: _SpaceCats/BridgeOfficer/BOWebbing.rsi
+
+- type: entity
+  id: ClothingMilitaryWebbingSecEng
+  parent: ClothingBeltMilitaryWebbing
+  name: инженерный рпс полевого инженера
+  description: Лямка с большим количеством ремней для инженера по безопасности.
+  suffix: Security
+  components:
+  - type: StorageFill
+    contents:
+    - id: JawsOfLife
+    - id: Wrench
+    - id: Screwdriver
+    - id: WelderIndustrial
+    - id: Multitool
+    - id: NetworkConfigurator
+  - type: ExplosionResistance
+    damageCoefficient: 0.5

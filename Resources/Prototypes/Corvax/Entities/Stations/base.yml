@@ -22,6 +22,7 @@
       - Botany
       - Bunker
       - Survive
+      - BluespaceHarvest
 
 - type: entity
   id: BaseStationSiliconLawNTDefault

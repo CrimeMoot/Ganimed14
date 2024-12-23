@@ -6,6 +6,7 @@
     mode: SnapgridCenter
   components:
     - type: AtmosDevice
+    - type: StationAiWhitelist
     - type: Tag
       tags:
         - Unstackable
@@ -72,7 +73,18 @@
         path: /Audio/Ambience/Objects/gas_hiss.ogg
     - type: AtmosMonitoringConsoleDevice
       navMapBlip: GasFlowRegulator
-      
+    - type: VentCrawTube
+      containerId: VentCrawTube
+      connected: true
+    - type: VentCrawJunction
+      degrees:
+        - 0
+        - -90
+        - 180
+    - type: ContainerContainer
+      containers:
+        VentCrawTube: !type:Container
+
 - type: entity
   parent: GasFilter
   id: GasFilterFlipped
@@ -116,6 +128,17 @@
         !type:PipeNode
         nodeGroupID: Pipe
         pipeDirection: North
+  - type: VentCrawTube
+    containerId: VentCrawTube
+    connected: true
+  - type: VentCrawJunction
+    degrees:
+      - 0
+      - -90
+      - 180
+  - type: ContainerContainer
+    containers:
+      VentCrawTube: !type:Container
 
 - type: entity
   parent: GasTrinaryBase
@@ -162,7 +185,18 @@
         path: /Audio/Ambience/Objects/gas_hiss.ogg
     - type: AtmosMonitoringConsoleDevice
       navMapBlip: GasFlowRegulator
-      
+    - type: VentCrawTube
+      containerId: VentCrawTube
+      connected: true
+    - type: VentCrawJunction
+      degrees:
+        - 0
+        - -90
+        - 180
+    - type: ContainerContainer
+      containers:
+        VentCrawTube: !type:Container
+
 - type: entity
   parent: GasMixer
   id: GasMixerFlipped
@@ -205,6 +239,17 @@
         pipeDirection: North
   - type: Construction
     node: mixerflipped
+  - type: VentCrawTube
+    containerId: VentCrawTube
+    connected: true
+  - type: VentCrawJunction
+    degrees:
+      - 0
+      - -90
+      - 180
+  - type: ContainerContainer
+    containers:
+      VentCrawTube: !type:Container
 
 - type: entity
   parent: GasPipeBase
@@ -263,3 +308,14 @@
       node: pneumaticvalve
     - type: AtmosMonitoringConsoleDevice
       navMapBlip: GasFlowRegulator
+    - type: VentCrawTube
+      containerId: VentCrawTube
+      connected: true
+    - type: VentCrawJunction
+      degrees:
+        - 0
+        - -90
+        - 180
+    - type: ContainerContainer
+      containers:
+        VentCrawTube: !type:Container

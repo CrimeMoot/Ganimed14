@@ -1,0 +1,121 @@
+- type: listing
+  id: NaborSponsornventory
+  productEntity: gearbundletoolbeltfilled
+  cost:
+    SpaceCash: 1500
+  categories:
+    - Nabor
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 2
+
+- type: listing
+  id: NaborSponsornventory1
+  productEntity: gearbundleeva
+  cost:
+    SpaceCash: 1500
+  categories:
+    - Nabor
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 2
+
+- type: listing
+  id: NaborSponsornventory2
+  productEntity: gearbundlehardsuitbasic
+  cost:
+    SpaceCash: 1500
+  categories:
+    - Nabor
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 2
+
+- type: listing
+  id: NaborSponsornventory3
+  productEntity: gearbundlehardsuitspatio
+  cost:
+    SpaceCash: 1500
+  categories:
+    - Nabor
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 2
+
+- type: listing
+  id: NaborSponsornventory4
+  productEntity: gearbundlehardsuitpilot
+  cost:
+    SpaceCash: 1500
+  categories:
+    - Nabor
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 2
+
+- type: listing
+  id: NaborSponsornventory5
+  productEntity: gearbundlehardsuitparamedic
+  cost:
+    SpaceCash: 1500
+  categories:
+    - Nabor
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 2
+
+- type: listing
+  id: NaborSponsornventory6
+  productEntity: gearbundlemedic
+  cost:
+    SpaceCash: 1500
+  categories:
+    - Nabor
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 2
+
+- type: listing
+  id: NaborSponsornventory7
+  productEntity: gearbundlefirstaid
+  cost:
+    SpaceCash: 1000
+  categories:
+    - Nabor
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 2
+
+- type: listing
+  id: NaborSponsornventory8
+  productEntity: gearbundlesalvagerbasic
+  cost:
+    SpaceCash: 1000
+  categories:
+    - Nabor
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 2
+
+- type: listing
+  id: NaborSponsornventory9
+  productEntity: gearbundlesalvageradvanced
+  cost:
+    SpaceCash: 1500
+  categories:
+    - Nabor
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 2
+
+- type: listing
+  id: NaborSponsornventory10
+  productEntity: gearbundlebotanist
+  cost:
+    SpaceCash: 1000
+  categories:
+    - Nabor
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 2
+

@@ -19,6 +19,11 @@
   - type: PipeAppearance
   - type: Anchorable
   - type: Rotatable
+  - type: RCDDeconstructable
+    cost: 0.5
+    delay: 2
+    fx: EffectRCDDeconstruct2
+    rpd: true
   - type: Destructible
     thresholds:
     - trigger: # for nukes
@@ -63,6 +68,21 @@
     bodyType: static
   - type: StaticPrice
     price: 30
+  - type: ContainerContainer
+    containers:
+      VentCrawTube: !type:Container
+
+- type: entity
+  id: VentCrawHolder
+  categories: [ HideSpawnMenu ]
+  name: vent craw holder
+  components:
+    - type: VentCrawHolder
+    - type: InputMover
+    - type: ContainerContainer
+      containers:
+        VentCrawHolderComponent: !type:Container
+
 
 #Note: The PipeDirection of the PipeNode should be the south-facing version, because the entity starts at an angle of 0 (south)
 
@@ -96,6 +116,13 @@
         !type:PipeNode
         nodeGroupID: Pipe
         pipeDirection: Longitudinal
+  - type: VentCrawTube
+    containerId: VentCrawTube
+    connected: true
+  - type: VentCrawTransit
+  - type: ContainerContainer
+    containers:
+      VentCrawTube: !type:Container
   - type: Sprite
     layers:
       - state: pipeStraight
@@ -129,6 +156,13 @@
         !type:PipeNode
         nodeGroupID: Pipe
         pipeDirection: SWBend
+  - type: VentCrawTube
+    containerId: VentCrawTube
+    connected: true
+  - type: VentCrawBend
+  - type: ContainerContainer
+    containers:
+      VentCrawTube: !type:Container
   - type: Sprite
     layers:
       - state: pipeBend
@@ -193,6 +227,17 @@
         Blunt: 10
     soundHit:
       collection: MetalThud
+  - type: VentCrawTube
+    containerId: VentCrawTube
+    connected: true
+  - type: VentCrawJunction
+    degrees:
+      - 0
+      - 90
+      - -90
+  - type: ContainerContainer
+    containers:
+      VentCrawTube: !type:Container
 
 - type: entity
   parent: GasPipeBase
@@ -214,6 +259,18 @@
   - type: Construction
     graph: GasPipe
     node: fourway
+  - type: VentCrawTube
+    containerId: VentCrawTube
+    connected: true
+  - type: VentCrawJunction
+    degrees:
+      - 0
+      - 90
+      - -90
+      - 180
+  - type: ContainerContainer
+    containers:
+      VentCrawTube: !type:Container
   - type: Item
     size: Normal
     shape:

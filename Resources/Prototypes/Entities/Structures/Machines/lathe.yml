@@ -584,6 +584,7 @@
       - JukeboxCircuitBoard
       - SalvageExpeditionsComputerCircuitboard # Corvax-Cringe
       - SMESAdvancedMachineCircuitboard
+      - MachineBluespaceTransitorCircuitboard # Cats
       - MachineBluespaceHarvesterCircuitboard # Cats
   - type: EmagLatheRecipes
     emagDynamicRecipes:

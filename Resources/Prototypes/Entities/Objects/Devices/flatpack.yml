@@ -3,13 +3,13 @@
   id: BaseFlatpack
   name: base flatpack
   description: A flatpack used for constructing something.
-  categories:
-  - HideSpawnMenu
+#  categories:
+#  - HideSpawnMenu
   components:
   - type: Item
     size: Large
   - type: Sprite
-    sprite: Objects/Devices/flatpack.rsi
+    sprite: _SpaceCats/Objects/Devices/flatpack.rsi # Cats edit
     layers:
     - state: base
     - state: overlay

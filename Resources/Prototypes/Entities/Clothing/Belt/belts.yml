@@ -456,7 +456,7 @@
   - type: Appearance
 
 - type: entity
-  parent: [ClothingBeltStorageBase, BaseRestrictedContraband]
+  parent: [ClothingBeltStorageBase, ContentsExplosionResistanceBase, BaseRestrictedContraband]
   id: ClothingBeltSecurity
   name: security belt
   description: Can hold security gear like handcuffs and flashes.
@@ -464,7 +464,9 @@
   - type: Sprite
     sprite: _SpaceCats/Clothing/Belt/security.rsi #<-- cats
   - type: Clothing
-    sprite: Clothing/Belt/security.rsi #<-- cats
+    sprite: Clothing/Belt/security.rsi
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
   - type: Storage
     whitelist:
       tags:
@@ -536,7 +538,7 @@
           tags:
           - CaptainSabre
   - type: Appearance
-  
+
 - type: entity # backmen
   parent: [ClothingBeltBase, ClothingSlotBase]
   id: ClothingBeltYamato
@@ -568,7 +570,7 @@
           tags:
           - YamatoSabre
   - type: Appearance
-  
+
 - type: entity # backmen
   id: ClothingBeltYamatoFilled
   parent: ClothingBeltYamato

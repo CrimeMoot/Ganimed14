@@ -76,6 +76,8 @@
       range: 5
       sound:
         path: /Audio/Ambience/Objects/gas_vent.ogg
+    - type: AtmosMonitoringConsoleDevice
+      navMapBlip: GasVentOpening
 
 - type: entity
   parent: GasUnaryBase
@@ -100,6 +102,8 @@
     - type: Construction
       graph: GasUnary
       node: passivevent
+    - type: AtmosMonitoringConsoleDevice
+      navMapBlip: GasVentOpening
 
 - type: entity
   parent: [GasUnaryBase, AirSensorBase]
@@ -158,6 +162,8 @@
       range: 5
       sound:
         path: /Audio/Ambience/Objects/gas_vent.ogg
+    - type: AtmosMonitoringConsoleDevice
+      navMapBlip: GasVentScrubber
 
 - type: entity
   parent: GasUnaryBase
@@ -197,6 +203,8 @@
       visibleLayers:
       - enum.SubfloorLayers.FirstLayer
       - enum.LightLayers.Unshaded
+    - type: AtmosMonitoringConsoleDevice
+      navMapBlip: GasVentOpening
     - type: VentCrawTube
       containerId: VentCrawTube
       connected: true
@@ -250,6 +258,8 @@
       examinableAddress: true
     - type: WiredNetworkConnection
     - type: PowerSwitch
+    - type: AtmosMonitoringConsoleDevice
+      navMapBlip: Thermoregulator
     - type: StationAiWhitelist
 
 - type: entity
@@ -456,3 +466,5 @@
   - type: ExaminableSolution
     solution: tank
   - type: PowerSwitch
+  - type: AtmosMonitoringConsoleDevice
+    navMapBlip: Thermoregulator

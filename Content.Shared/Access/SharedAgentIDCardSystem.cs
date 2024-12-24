@@ -28,7 +28,7 @@ namespace Content.Shared.Access.Systems
         public string CurrentName { get; }
         public string CurrentJob { get; }
         public string CurrentJobIconId { get; }
-        ublic uint? CurrentNumber { get; } // Cats-PDAChat
+        public uint? CurrentNumber { get; } // Cats-PDAChat
 
         public AgentIDCardBoundUserInterfaceState(string currentName, string currentJob, string currentJobIconId, uint? currentNumber = null) // Cats-PDAChat - Added currentNumber
         {

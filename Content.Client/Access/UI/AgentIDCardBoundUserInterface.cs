@@ -26,7 +26,7 @@ namespace Content.Client.Access.UI
             _window.OnNameChanged += OnNameChanged;
             _window.OnJobChanged += OnJobChanged;
             _window.OnJobIconChanged += OnJobIconChanged;
-            window.OnNumberChanged += OnNumberChanged; // Cats-PDAChat
+            _window.OnNumberChanged += OnNumberChanged; // Cats-PDAChat
         }
 
         // Cats-PDAChat-Start

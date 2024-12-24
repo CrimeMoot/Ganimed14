@@ -25,6 +25,7 @@
     - WhitelistChameleon
   - type: StealTarget
     stealGroup: IDCard
+  - type: NanoChatCard # Cats-PDAChat
 
 #IDs with layers
 
@@ -835,3 +836,5 @@
     - NuclearOperative
     - SyndicateAgent
     - Wizard
+  - type: NanoChatCard # Cats-PDAChat
+    notificationsMuted: true

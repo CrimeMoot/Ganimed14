@@ -712,6 +712,8 @@
       types:
         Blunt: 40 #intentionally shit so people realize that going into combat with the ripley is usually a bad idea.
         Structural: 15
+  - type: AccessReader
+    access: [["Armory"], ["HeadOfSecurity"]]
   - type: MovementSpeedModifier
     baseWalkSpeed: 3.2
     baseSprintSpeed: 4.2

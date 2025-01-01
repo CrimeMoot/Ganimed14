@@ -170,7 +170,7 @@ public abstract class SharedNanoChatSystem : EntitySystem
     /// </summary>
     public bool GetNotificationsMuted(Entity<NanoChatCardComponent?> card)
     {
-        if (!Resolve(card, ref card.Comp) || card.Comp.NotificationsMuted == muted)
+        if (!Resolve(card, ref card.Comp))
             return false;
 
         return card.Comp.NotificationsMuted;
@@ -181,7 +181,7 @@ public abstract class SharedNanoChatSystem : EntitySystem
     /// </summary>
     public void SetNotificationsMuted(Entity<NanoChatCardComponent?> card, bool muted)
     {
-        if (!Resolve(card, ref card.Comp))
+        if (!Resolve(card, ref card.Comp) || card.Comp.NotificationsMuted == muted)
             return;
 
         card.Comp.NotificationsMuted = muted;

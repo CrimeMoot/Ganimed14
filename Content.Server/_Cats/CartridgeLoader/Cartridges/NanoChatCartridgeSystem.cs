@@ -399,7 +399,6 @@ public sealed class NanoChatCartridgeSystem : EntitySystem
 
         _nanoChat.AddMessage((recipient, recipient.Comp), senderNumber.Value, message with { DeliveryFailed = false });
 
-
         if (recipient.Comp.IsClosed || _nanoChat.GetCurrentChat((recipient, recipient.Comp)) != senderNumber)
             HandleUnreadNotification(recipient, message);
 

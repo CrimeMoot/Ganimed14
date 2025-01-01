@@ -66875,35 +66875,35 @@ entities:
     - type: Transform
       pos: 77.78009,6.9345493
       parent: 82
-- proto: ClothingUnderChristmas_knee
+- proto: ClothingHeadHatAnimalCat
   entities:
   - uid: 26772
     components:
     - type: Transform
       pos: -24.25359,-18.182907
       parent: 82
-- proto: ClothingUnderChristmas_norm
+- proto: ClothingHeadHatAnimalCat
   entities:
   - uid: 26770
     components:
     - type: Transform
       pos: -24.612965,-18.339157
       parent: 82
-- proto: ClothingUnderChristmas_thigh
+- proto: ClothingHeadHatAnimalCat
   entities:
   - uid: 26761
     components:
     - type: Transform
       pos: -24.519926,-18.77912
       parent: 82
-- proto: ClothingUnderSocksBee
+- proto: ClothingHeadHatAnimalCat
   entities:
   - uid: 25105
     components:
     - type: Transform
       pos: -42.533257,-22.523739
       parent: 82
-- proto: ClothingUnderSocksCoder
+- proto: ClothingHeadHatAnimalCat
   entities:
   - uid: 15487
     components:

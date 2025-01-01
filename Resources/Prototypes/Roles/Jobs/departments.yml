@@ -13,7 +13,7 @@
   id: Civilian
   name: department-Civilian
   description: department-Civilian-description
-  color: "#9FED58"
+  color: "#06D515"
   weight: -10
   roles:
   - Bartender
@@ -64,6 +64,8 @@
   accountNumber: 1317 #backmen: currency
   roles:
   - Captain
+  - BlueShield # Backmen
+  - BridgeOfficer # Cats
   - IAA # Corvax-IAA
   - ChiefEngineer
   - ChiefMedicalOfficer
@@ -71,6 +73,7 @@
   - HeadOfSecurity
   - ResearchDirector
   - Quartermaster
+  - Maid # Cats
   #- CentralCommandOfficial
   - CBURN
   - ERTLeader
@@ -110,6 +113,15 @@
   accountNumber: 1319 #backmen: currency
 
 - type: department
+  id: Silicon
+  name: department-Silicon
+  description: department-Silicon-description
+  color: "#D381C9"
+  roles:
+  - Borg
+  - StationAi
+
+- type: department
   id: Security
   name: department-Security
   description: department-Security-description
@@ -123,6 +135,7 @@
   - Detective
   - Warden
   - Brigmedic #backmen
+  - SecurityEngineer # Cats
   accountNumber: 1320  #backmen: currency
 
 - type: department
@@ -136,15 +149,6 @@
   - Scientist
   - ResearchAssistant
   accountNumber: 1321  #backmen: currency
-
-- type: department
-  id: Silicon
-  name: department-Silicon
-  description: department-Silicon-description
-  color: "#D381C9"
-  roles:
-  - Borg
-  - StationAi
 
 - type: department
   id: Specific

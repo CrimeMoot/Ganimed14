@@ -40,7 +40,7 @@
         - BoxHandcuff
         - BoxFlashbang
         - TearGasGrenade
-        - WeaponDisabler
+        - WeaponEnergyGunDominator
         - Stunbaton
       rareChance: 0.05
       prototypes:
@@ -84,7 +84,7 @@
         - ClothingOuterArmorRiot
         - ClothingOuterArmorBulletproof
 #        - WeaponSubMachineGunWt550
-        - WeaponDisabler
+        - WeaponEnergyGunDominator
         - WeaponPistolMk58
         - WeaponRifleLecter
         - WeaponSubMachineGunDrozd
@@ -111,7 +111,7 @@
       rareChance: 0.05
       prototypes:
 #        - WeaponSubMachineGunWt550
-        - WeaponDisabler
+        - WeaponEnergyGunDominator
         - WeaponPistolMk58
         - WeaponRifleLecter
         - WeaponSubMachineGunDrozd

@@ -172,6 +172,10 @@
       shader: unshaded
   - type: Clothing
     sprite: Objects/Weapons/Guns/Battery/makeshift.rsi
+  - type: Gun
+    fireRate: 1.7
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
   - type: HitscanBatteryAmmoProvider
     proto: RedLaser
     fireCost: 62.5
@@ -485,6 +489,20 @@
     - Antagonists
 
 - type: entity
+  name: disabler-MK3
+  parent: WeaponDisabler
+  id: WeaponDisablerROW
+  description: A self-defense weapon that exhausts organic targets, weakening them until they collapse.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Battery
+    maxCharge: 500
+    startingCharge: 500
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 15
+
+- type: entity
   name: disabler SMG
   parent: [ BaseWeaponBattery, BaseRestrictedContraband ]
   id: WeaponDisablerSMG
@@ -600,6 +618,30 @@
     flavorKind: station-event-random-sentience-flavor-inanimate
     weight: 0.0002 # 5,000 times less likely than 1 regular animal
     # not putting a BlockMovement component here cause that's funny.
+
+- type: entity
+  name: disabler-SMG+
+  parent: WeaponDisablerSMG
+  id: WeaponDisablerSMGROW
+  description: Advanced weapon that exhausts organic targets, weakening them until they collapse.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Gun
+    minAngle: 2
+    maxAngle: 8
+    selectedMode: FullAuto
+    fireRate: 4
+    availableModes:
+      - SemiAuto
+      - FullAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/taser2.ogg
+  - type: Battery
+    maxCharge: 330
+    startingCharge: 330
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 8
 
 - type: entity
   name: advanced laser pistol

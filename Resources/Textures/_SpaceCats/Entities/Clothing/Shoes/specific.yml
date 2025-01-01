@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ClothingShoesMaid
+  name: обувь служанки
+  description: Туфли горничной. Блестящий.
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Clothing/Shoes/Specific/maidshoes.rsi
+  - type: Clothing
+    sprite: _SpaceCats/Clothing/Shoes/Specific/maidshoes.rsi

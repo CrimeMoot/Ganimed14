@@ -95,6 +95,7 @@ namespace Content.Server.Forensics
 
         private void OnMeleeHit(EntityUid uid, ForensicsComponent component, MeleeHitEvent args)
         {
+
             if ((args.BaseDamage.DamageDict.TryGetValue("Blunt", out var bluntDamage) && bluntDamage.Value > 0) ||
                 (args.BaseDamage.DamageDict.TryGetValue("Slash", out var slashDamage) && slashDamage.Value > 0) ||
                 (args.BaseDamage.DamageDict.TryGetValue("Piercing", out var pierceDamage) && pierceDamage.Value > 0))
@@ -279,7 +280,7 @@ namespace Content.Server.Forensics
             return DNA;
         }
 
-        private void ApplyEvidence(EntityUid user, EntityUid target)
+        public void ApplyEvidence(EntityUid user, EntityUid target) // Cats-DoorForensics
         {
             if (HasComp<IgnoresFingerprintsComponent>(target))
                 return;

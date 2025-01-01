@@ -1,0 +1,94 @@
+- type: entity
+  parent: BaseSubdermalImplant
+  id: ChemicalImplant
+  name: Chemical implant
+  description: Inject chemicats to blood stream from small capsules in itself
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: SubdermalImplant
+    implantAction: ActionChemicalCapsule
+  - type: SolutionContainerManager
+  - type: TriggerImplantAction
+  - type: InjectOnTrigger
+  - type: Tag
+    tags:
+    - SubdermalImplant
+    - HideContextMenu
+
+- type: entity
+  parent: BaseSubdermalImplant
+  id: ChemicalImplantTrigger
+  name: Auto chemical implant
+  description: Inject chemicats to blood stream from small capsules in itself
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: SubdermalImplant
+  - type: SolutionContainerManager
+  - type: InjectOnTrigger
+  - type: TriggerOnMobstateChange
+    mobState:
+    - Critical
+  - type: Tag
+    tags:
+    - SubdermalImplant
+    - HideContextMenu
+
+- type: entity
+  parent: ChemicalImplant
+  id: ChemicalImplantTriggerDead
+  name: ChemicalImplant
+  suffix: Toxin
+  description: Inject chemicats to blood stream from small capsules in itself
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TriggerOnSignal
+  - type: DeviceLinkSink
+    ports:
+      - Trigger
+  - type: StationLimitedNetwork
+  - type: WirelessNetworkConnection
+    range: 500
+  - type: SolutionContainerManager
+    solutions:
+      container1:
+        reagents:
+        - ReagentId: Toxin
+          Quantity: 20
+        maxVol: 20
+  - type: InjectOnTrigger
+    solutions:
+    - name: container1
+      transferAmount: 20
+
+- type: entity
+  parent: ChemicalImplant
+  id: StimulantsImplant
+  name: Stimulants implant
+  description: Inject stimulants to blood stream from small capsules in itself
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      container1:
+        reagents:
+        - ReagentId: Stimulants
+          Quantity: 16
+        maxVol: 16
+      container2:
+        reagents:
+        - ReagentId: Stimulants
+          Quantity: 16
+        maxVol: 16
+      container3:
+        reagents:
+        - ReagentId: Stimulants
+          Quantity: 16
+        maxVol: 16
+  - type: InjectOnTrigger
+    solutions:
+    - name: container1
+      transferAmount: 16
+    - name: container2
+      transferAmount: 16
+    - name: container3
+      transferAmount: 16

@@ -229,6 +229,12 @@ namespace Content.Server.Lathe
                 if (comp.CurrentRecipe.Result is { } resultProto)
                 {
                     var result = Spawn(resultProto, Transform(uid).Coordinates);
+
+                    // Cats edit start
+                    var ev = new LatheResultSpawnEvent(uid);
+                    RaiseLocalEvent(result, ref ev);
+                    // Cats edit End
+                    
                     _stack.TryMergeToContacts(result);
                 }
 

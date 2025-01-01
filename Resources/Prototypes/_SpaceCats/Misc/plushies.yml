@@ -1,0 +1,100 @@
+- type: entity
+  parent: BasePlushie
+  id: PlushieLolyItsMyLife
+  name: плюшевая Элина Сазонова
+  description: Пахнет похотью и котятами. Милашка.
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Misc/loly.rsi
+    state: plushie_elina
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Animals/cat_meow.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Animals/cat_meow.ogg
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Animals/cat_meow.ogg
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieAcolyte16
+  name: плюшевый Тэнчу Рикимару
+  description: Пахнет сигаретами марки Nomads. На рукаве правой руки пришита бирка с надписью "НУ КАКОЙ ТЕБЕ МК58, АНРОБУСТ ,Я ТВОЮ КУКЛУ СЕЙЧАС СО СТЕЧКИНА УБЬЮ"
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Misc/tenchu.rsi
+    state: plushie_tenchu
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Nyanotrasen/Voice/Felinid/cat_meow1.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Nyanotrasen/Voice/Felinid/cat_meow1.ogg
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Nyanotrasen/Voice/Felinid/cat_meow1.ogg
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieFirefly
+  name: плюшевая Лаура Игнатова
+  description: Явно не любит когда ее тискают
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Misc/Firefly.rsi
+    state: firefly_toy
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Backmen/Voice/Felinid/cat_hiss1.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Backmen/Voice/Felinid/cat_hiss2.ogg
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Backmen/Voice/Felinid/cat_growl1.ogg
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieFejet
+  name: плюшевая Сабина Колонтарёва
+  description: Пахнет рисом с едва заметным запахом трифторида хлора. На рукаве правой руки пришита бирка с надписью "<Не вижу здесь никакого бога> - Юрий Гагарин".
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Misc/fejet.rsi
+    state: plushie_fejet
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Animals/fox_squeak.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Animals/fox_squeak.ogg
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Animals/fox_squeak.ogg
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieSilver
+  name: плюшевый Сильвер Соул
+  description: "А бикаридин это же от кислотных?"
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Misc/silver.rsi
+    state: plushie_silver
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Effects/Chemistry/bubbles.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Effects/Chemistry/bubbles.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/Effects/Chemistry/bubbles.ogg
+  - type: EmitSoundOnTrigger
+    sound:
+      path: /Audio/Effects/Chemistry/bubbles.ogg
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Effects/Chemistry/bubbles.ogg

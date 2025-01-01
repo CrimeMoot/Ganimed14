@@ -28,6 +28,15 @@
   placement:
     mode: SnapgridCenter
   components:
+    - type: Weldable
+      time: 3
+    - type: VentCrawTube
+      containerId: VentCrawTube
+      connected: true
+    - type: VentCrawEntry
+    - type: ContainerContainer
+      containers:
+        VentCrawTube: !type:Container
     - type: ApcPowerReceiver
     - type: ExtensionCableReceiver
     - type: DeviceNetwork
@@ -67,10 +76,9 @@
       range: 5
       sound:
         path: /Audio/Ambience/Objects/gas_vent.ogg
-    - type: Weldable
     - type: AtmosMonitoringConsoleDevice
       navMapBlip: GasVentOpening
-      
+
 - type: entity
   parent: GasUnaryBase
   id: GasPassiveVent
@@ -96,7 +104,7 @@
       node: passivevent
     - type: AtmosMonitoringConsoleDevice
       navMapBlip: GasVentOpening
-      
+
 - type: entity
   parent: [GasUnaryBase, AirSensorBase]
   id: GasVentScrubber
@@ -105,6 +113,15 @@
   placement:
     mode: SnapgridCenter
   components:
+    - type: Weldable
+      time: 3
+    - type: VentCrawTube
+      containerId: VentCrawTube
+      connected: true
+    - type: VentCrawEntry
+    - type: ContainerContainer
+      containers:
+        VentCrawTube: !type:Container
     - type: ApcPowerReceiver
     - type: ExtensionCableReceiver
     - type: DeviceNetwork
@@ -114,6 +131,7 @@
         - GasScrubber
         - Unstackable
     - type: Sprite
+      noRot: true
       drawdepth: FloorObjects
       sprite: Structures/Piping/Atmospherics/scrubber.rsi
       layers:
@@ -144,10 +162,9 @@
       range: 5
       sound:
         path: /Audio/Ambience/Objects/gas_vent.ogg
-    - type: Weldable
     - type: AtmosMonitoringConsoleDevice
       navMapBlip: GasVentScrubber
-      
+
 - type: entity
   parent: GasUnaryBase
   id: GasOutletInjector
@@ -188,7 +205,16 @@
       - enum.LightLayers.Unshaded
     - type: AtmosMonitoringConsoleDevice
       navMapBlip: GasVentOpening
-      
+    - type: VentCrawTube
+      containerId: VentCrawTube
+      connected: true
+    - type: VentCrawJunction
+      degrees:
+        - 0
+    - type: ContainerContainer
+      containers:
+        VentCrawTube: !type:Container
+
 - type: entity
   parent: [ BaseMachinePowered, ConstructibleMachine ]
   id: BaseGasThermoMachine
@@ -234,7 +260,8 @@
     - type: PowerSwitch
     - type: AtmosMonitoringConsoleDevice
       navMapBlip: Thermoregulator
-      
+    - type: StationAiWhitelist
+
 - type: entity
   parent: BaseGasThermoMachine
   id: GasThermoMachineFreezer

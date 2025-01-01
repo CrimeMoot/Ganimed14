@@ -1,0 +1,23 @@
+- type: entity
+  parent: MarkerBase
+  id: HalloweenPosterRandom
+  name: random helloween wall decor spawner
+  #decription: random helloween wall decor spawner
+  suffix: Halloween
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _SpaceCats/Structures/Wallmounts/poster_helloween.rsi
+        state: spider
+  - type: RandomSpawner
+    offset: 0
+    prototypes:
+      - PosterHalloweenSpooky
+      - PosterHalloweenYummy
+      - PosterHalloweenSpider
+      - PosterHalloweenSpiderWeb1
+      - PosterHalloweenSpiderWeb2
+      - PosterHappyHalloween
+      - PosterTayarHalloween
+    chance: 1

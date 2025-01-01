@@ -1,0 +1,153 @@
+- type: vessel
+  id: SalvageStamp
+  name: NT-Mail-"Марка" №4522
+  description: Почтовый шаттл для быстрых, однодневных полетов. В открытом космосе его осмелится пилотировать только настоящий авантюрист. Тип питания-неавтономный - М.И.Н.И.П.А.К.М.А.Н
+  price: 5000
+  category: Small
+  group: Salvage
+  shuttlePath: /Maps/SpaceCats/Shuttles/SalvageStamp.yml
+
+- type: vessel
+  id: SalvageHearse
+  name: NT-Salv-"Катафалк" №3
+  description: Маленькая ошибка производства, выкупленная и выставленная на продажу. Тип питания-неавтономный - П.А.К.М.А.Н
+  price: 9000
+  category: Small
+  group: Salvage
+  shuttlePath: /Maps/SpaceCats/Shuttles/SalvageHearse.yml
+
+- type: vessel
+  id: SalvageDeclarant
+  name: NT-Carg-"Декларант" №9382
+  description: Маленький, но быстрый шаттл для перевозки грузов небольшими партиями. Тип питания-неавтономный - П.А.К.М.А.Н
+  price: 10000
+  category: Small
+  group: Salvage
+  shuttlePath: /Maps/SpaceCats/Shuttles/SalvageDeclarant.yml
+
+- type: vessel
+  id: SalvageTrawl
+  name: NT-Carg-"Трал" №19
+  description: Маленький, но быстрый шаттл для перевозки грузов небольшими партиями. Тип питания-неавтономный - П.А.К.М.А.Н
+  price: 10000
+  category: Small
+  group: Salvage
+  shuttlePath: /Maps/SpaceCats/Shuttles/SalvageTrawl.yml
+
+- type: vessel
+  id: SalvagePawn
+  name: NT-Carg-"Пешка" №3422
+  description: Небольшой шаттл для перевозки рабочего персонала. Однако, этот шаттл пользуется популярностью и у утилизаторов, которые постоянно перестраивают его под свои нужды. Тип питания-полуавтономный - ВСУ, М.И.Н.И.П.А.К.М.А.Н
+  price: 13000
+  category: Small
+  group: Salvage
+  shuttlePath: /Maps/SpaceCats/Shuttles/SalvagePawn.yml
+
+- type: vessel
+  id: SalvageShell
+  name: NT-Salv-"Обушок" №5
+  description: Маленький шаттл старого образца для утилизации обломков. Не забудьте взять йод и противорадиационные костюмы. Тип питания-автономный - РИТЭГ/ВСУ
+  price: 15000
+  category: Small
+  group: Salvage
+  shuttlePath: /Maps/SpaceCats/Shuttles/SalvageShell.yml
+
+- type: vessel
+  id: SalvageCalendula
+  name: NT-Carg-"Календула" №22
+  description: Небольшой "грузовой" шаттл, с запасом семян "совершенно легальных растений" и ботаническим инвентарем. Тип питания-неавтономный - П.А.К.М.А.Н
+  price: 17000
+  category: Medium
+  group: Salvage
+  shuttlePath: /Maps/SpaceCats/Shuttles/SalvageCalendula.yml
+
+- type: vessel
+  id: SalvageSmuggler
+  name: NT-Carg-"Контрабандист" №2
+  description: В прошлом этот небольшой медицинский шаттл служил полевым госпиталем. С другой стороны-он и сейчас может выполнять эту функцию, но теперь медикаменты на борту совсем, "другого" вида. Тип питания-полуавтономный - РИТЭГ/М.И.Н.И.П.А.К.М.А.Н
+  price: 20000
+  category: Medium
+  group: Salvage
+  shuttlePath: /Maps/SpaceCats/Shuttles/SalvageSmuggler.yml
+
+- type: vessel
+  id: SalvageAlbatross
+  name: IA-Carg-"Альбатрос" №6
+  description: Средний шаттл, в основные задачи которого входят деловые переговоры и прочие собрания, так же шаттл известен довольно хорошей скоростью и мобильностью. Тип питания-неавтономный - П.А.К.М.А.Н
+  price: 22000
+  category: Medium
+  group: Salvage
+  shuttlePath: /Maps/SpaceCats/Shuttles/SalvageAlbatross.yml
+
+- type: vessel
+  id: SalvageSantaMaria
+  name: AI-Carg-"Санта-Мария" №1492
+  description: Средний грузовой шаттл, известный своим небольшим тиражом и неповоротливостью. Тип питания-полуавтономный - П.А.К.М.А.Н/Термоэлектрический генератор
+  price: 25000
+  category: Medium
+  group: Salvage
+  shuttlePath: /Maps/SpaceCats/Shuttles/SalvageSantaMaria.yml
+
+- type: vessel
+  id: SalvagePostmaster
+  name: NT-Mail-"Почтмейстер" №5
+  description: Средний почтовый шаттл, расчитанный на долгие перелеты, и, как следствие, снабжённый жилым отсеком. Тип питания-полуавтономный - С.У.П.Е.Р.П.А.К.М.А.Н/СМЭС
+  price: 33000
+  category: Medium
+  group: Salvage
+  shuttlePath: /Maps/SpaceCats/Shuttles/SalvagePostmaster.yml
+
+- type: vessel
+  id: SalvageGiant
+  name: ST-Carg-"Исполин" №11
+  description: Обычно пираты очень редко берут на абордаж большие шаттлы NT, IA или ST. Однако, иногда, такое происходит. Тип питания-неавтономный - С.У.П.Е.Р.П.А.К.М.А.Н"
+  price: 38000
+  category: Medium
+  group: Salvage
+  shuttlePath: /Maps/SpaceCats/Shuttles/SalvageGiant.yml
+
+- type: vessel
+  id: SalvageForeman
+  name: NT-Salv-"Бригадир" №9
+  description: Большой утилизационный корабль, предназначенный, в основном, для работы с волонтёрами благодаря дополнительной базовой экипировке отдела снабжения. Тип питания-автономный - РИТЭГ/Термоэлектрический генератор
+  price: 45000
+  category: Large
+  group: Salvage
+  shuttlePath: /Maps/SpaceCats/Shuttles/SalvageForeman.yml
+
+- type: vessel
+  id: SalvageMarkShader
+  name: IA-Salv-"МаркШейдер" №1
+  description: Большое, тяжёлое, старое шахтёрское судно, которое побывало ни в одном десятке рук до вас. Тип питания-автономный - РИТЭГ/Термоэлектрический генератор/СМЭС
+  price: 48000
+  category: Large
+  group: Salvage
+  shuttlePath: /Maps/SpaceCats/Shuttles/SalvageMarkShader.yml
+
+- type: vessel
+  id: SalvageAtlant
+  name: NT-Carg-"Атлант" №2
+  description: Перед вами настоящий мастер грузоперевозок! Будучи шаттлом огромного размера, он оснащён зоной отдыха и почтовым отделением. Тип питания-полуавтономный - П.А.К.М.А.Н/Солнечные батареи/СМЭС
+  price: 50000
+  category: Large
+  group: Salvage
+  shuttlePath: /Maps/SpaceCats/Shuttles/SalvageAtlant.yml
+
+
+#- type: vessel
+#  id: SalvageDreadnought
+#  name: ST-Salv-"Дредноут" №4
+#  description: Огромное шахтёрское судно прошлого века. Вы даже близко не можете представить, какие события происходили на его борту за все это время. Тип питания-полуавтономный - С.У.П.Е.Р.П.А.К.М.А.Н/РИТЭГ/Термоэлектрический генератор
+#  price: 67000
+#  category: Special
+#  group: Salvage
+#  shuttlePath: /Maps/SpaceCats/Shuttles/SalvageDreadnought.yml
+
+- type: vessel
+  id: SalvageColossus
+  name: IA-Carg-"Колосс" №1
+  description: Один из флагманов Izo Aeronautics. Этот шаттл колоссального размера, в сути своей, является мобильным отделом снабжения, возможность продавать грузы тоже присутствует. Убедительная просьба-не устраивать Каргонию на нем. Тип питания-полуавтономный - ДАМ, СМЭС
+  price: 90000
+  category: Special
+  group: Salvage
+  shuttlePath: /Maps/SpaceCats/Shuttles/SalvageColossus.yml

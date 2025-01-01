@@ -6,7 +6,6 @@
   - type: StorageFill
     contents:
       - id: FlashlightSeclite
-      - id: WeaponDisabler
       - id: ClothingBeltSecurityFilled
       - id: Flash
       - id: ClothingEyesGlassesSecurity
@@ -29,6 +28,9 @@
         amount: 2
       - id: RemoteSignaller
         amount: 2
+      - id: ClothingHeadCageSec # cats
+        amount: 3
+      - id: BoxImpantsDead # cats
 
 - type: entity
   id: LockerWardenFilled
@@ -38,8 +40,6 @@
   - type: StorageFill
     contents:
       - id: FlashlightSeclite
-      - id: WeaponDisabler
-        prob: 0.3
       - id: ClothingHeadHatWarden
       - id: ClothingHeadHatBeretWarden
       - id: ClothingHeadHatCapWardenAlt # Corvax-SecFashion
@@ -63,6 +63,9 @@
         amount: 2
       - id: RemoteSignaller
         amount: 2
+      - id: ClothingHeadCageSec # cats
+        amount: 3
+      - id: ClothingHandsGlovesKravMaga # cats
 
 - type: entity
   id: LockerSecurityFilled
@@ -74,7 +77,6 @@
       - id: Eftpos # backmen
       - id: FlashlightSeclite
         prob: 0.8
-      - id: WeaponDisabler
       - id: ClothingUniformJumpsuitSecGrey
         prob: 0.3
       - id: ClothingHeadHelmetBasic
@@ -105,7 +107,6 @@
   - type: StorageFill
     contents:
       - id: ClothingEyesGlassesSecurity
-      - id: WeaponDisabler
       - id: TrackingImplanter
         amount: 2
       - id: ClothingOuterHardsuitBrigmedic
@@ -117,6 +118,7 @@
       - id: ClothingUniformJumpskirtOfLife
         prob: 0.1
       - id: MedkitFilled
+      - id: MedkitEmergencyMedipenSecurity #поднимите их из крита!!
       - id: MedkitCombatFilled
       - id: MedkitAdvancedFilled
       - id: MedkitOxygenFilled
@@ -124,7 +126,6 @@
       - id: MedkitBruteFilled
         prob: 0.4
       - id: MedkitToxinFilled
-        prob: 0.4
       - id: MedkitBurnFilled
         prob: 0.4
       - id: ClothingHeadCage # backmen
@@ -156,6 +157,7 @@
       - id: HoloprojectorSecurity
       - id: BoxEvidenceMarkers
       - id: HandLabeler
+      - id: HandHeldCriminalRecords # Cats
 
 - type: entity
   id: ClosetBombFilled
@@ -182,7 +184,7 @@
   - type: StorageFill
     contents:
     - id: WeaponDisabler
-      amount: 5
+      amount: 2
 
 - type: entity
   parent: [GunSafeBaseSecure, BaseRestrictedContraband]

@@ -100,7 +100,6 @@
       - DoorBumpOpener
       - FootstepSound
       - CanPilot
-  - type: FootPrints
 
 - type: entity
   id: MobBaseNpcSalvage

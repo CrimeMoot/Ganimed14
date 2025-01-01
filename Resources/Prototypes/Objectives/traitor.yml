@@ -252,11 +252,21 @@
   parent: BaseTraitorStealObjective
   id: BaseCaptainObjective
   components:
+  - type: NotCommandRequirement
   - type: Objective
     # sorry ce but your jordans are not as high security as the caps gear
     difficulty: 3.5
   - type: NotJobRequirement
     job: Captain
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseCaptainObjective
+  id: CaptainSabreObjective
+  components:
+  - type: StealCondition
+    stealGroup: CaptainSabre
+    owner: job-name-captain
 
 - type: entity
   parent: BaseCaptainObjective
@@ -279,6 +289,19 @@
   - type: StealCondition
     stealGroup: WeaponAntiqueLaser
     owner: job-name-captain
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseTraitorStealObjective
+  id: CriminalGloves
+  components:
+  - type: Objective
+    difficulty: 3
+  - type: NotJobRequirement
+    job: Detective
+  - type: StealCondition
+    stealGroup: GlovesForensic
+    owner: job-name-detective
 
 # Corvax-MRP-Start: Make nuke disk objective separate
 # - type: entity

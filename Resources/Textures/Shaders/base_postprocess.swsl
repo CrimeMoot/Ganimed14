@@ -1,0 +1,33 @@
+uniform sampler2D SCREEN_TEXTURE;
+
+const highp float RANGE = 0.003;    // Длина свечения
+const highp float STEPS = 0.001;    // Шаг выборки текстуры
+const highp float THRESHOLD = 0.97; // Порог цвета (0-1)
+const highp int ANGLE_STEPS = 16;   // Количество направлений для свечения
+
+void fragment() {
+    highp vec4 baseColor = texture(SCREEN_TEXTURE, UV);
+
+    highp vec4 glowColor = vec4(0.0);
+
+    for (int i = 0; i < ANGLE_STEPS; i++) {
+        // Угол текущего луча
+        highp float angle = float(i) / float(ANGLE_STEPS) * 6.283185; // Полный круг (2 * PI)
+
+        highp vec2 direction = vec2(cos(angle), sin(angle));
+
+        for (highp float offset = 0.0; offset < RANGE; offset += STEPS) {
+            // Расчет смещения
+            highp vec2 sampleUV = UV + direction * offset;
+
+            highp float falloff = pow(1.0 - (offset / RANGE), 2.0);
+
+            highp vec4 sampleColor = texture(SCREEN_TEXTURE, sampleUV);
+            glowColor += max(vec4(0.0), sampleColor - vec4(THRESHOLD)) * falloff;
+        }
+    }
+
+    highp vec4 finalColor = baseColor + vec4(vec3(glowColor) * 3.0, glowColor.a);
+
+    COLOR = finalColor;
+}

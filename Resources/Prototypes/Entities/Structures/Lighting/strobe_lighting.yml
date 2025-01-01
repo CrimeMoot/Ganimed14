@@ -31,9 +31,9 @@
       shader: unshaded
     state: base
   - type: PointLight
-    mask: /Textures/Effects/LightMasks/double_cone.png
+    mask: /Textures/_SpaceCats/Effects/LightMasks/double_cone.png # Cats edit
     color: "#FFE4CE"
-    energy: 5
+    energy: 2.5
     radius: 10
     softness: 1
     offset: "0, 0.35"
@@ -136,7 +136,7 @@
     volume: 0
     range: 10
     sound:
-      path: "/Audio/Misc/gamma.ogg"
+      path: "/Audio/Misc/siren.ogg"
 
 - type: entity
   id: PoweredStrobeLightEpsilon

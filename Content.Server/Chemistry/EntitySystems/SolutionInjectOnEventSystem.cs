@@ -29,8 +29,8 @@ public sealed class SolutionInjectOnCollideSystem : EntitySystem
         base.Initialize();
         SubscribeLocalEvent<SolutionInjectOnProjectileHitComponent, ProjectileHitEvent>(HandleProjectileHit);
         SubscribeLocalEvent<SolutionInjectOnEmbedComponent, EmbedEvent>(HandleEmbed);
-        SubscribeLocalEvent<MeleeChemicalInjectorComponent, MeleeHitEvent>(HandleMeleeHit);
         SubscribeLocalEvent<SolutionInjectWhileEmbeddedComponent, InjectOverTimeEvent>(OnInjectOverTime);
+        SubscribeLocalEvent<MeleeChemicalInjectorComponent, MeleeHitEvent>(HandleMeleeHit);
     }
 
     private void HandleProjectileHit(Entity<SolutionInjectOnProjectileHitComponent> entity, ref ProjectileHitEvent args)
@@ -45,6 +45,7 @@ public sealed class SolutionInjectOnCollideSystem : EntitySystem
 
     private void HandleMeleeHit(Entity<MeleeChemicalInjectorComponent> entity, ref MeleeHitEvent args)
     {
+
         // MeleeHitEvent is weird, so we have to filter to make sure we actually
         // hit something and aren't just examining the weapon.
         if (args.IsHit)

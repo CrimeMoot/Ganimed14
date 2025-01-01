@@ -1,0 +1,34 @@
+- type: stealTargetGroup
+  id: AnomalyPinpointer
+  name: name-steal-maf
+  sprite:
+    sprite: Objects/Devices/pinpointer.rsi
+    state: pinpointer-anomaly
+
+- type: stealTargetGroup
+  id: CaptainSabre
+  name: name-steal-sablecaptain
+  sprite:
+    sprite: Objects/Weapons/Melee/captain_sabre.rsi
+    state: icon
+
+- type: stealTargetGroup
+  id: StationBlueprints
+  name: name-steal-blueprint
+  sprite:
+    sprite: Objects/Tools/blueprint.rsi
+    state: icon
+
+- type: stealTargetGroup
+  id: KravMaga
+  name: name-steal-gravmaga
+  sprite:
+    sprite: _SpaceCats/Clothing/Hands/Gloves/krav.rsi
+    state: icon
+
+- type: stealTargetGroup
+  id: GlovesForensic
+  name: name-steal-glovesforencis
+  sprite:
+    sprite: Clothing/Hands/Gloves/forensic.rsi
+    state: icon

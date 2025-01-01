@@ -39,3 +39,47 @@
   name: PigeonBeans - Sunset
   path:
     path: /Audio/Jukebox/sunset.ogg
+
+# Cats edit
+
+- type: jukebox
+  id: ScientificTopic
+  name: Scientific Topic
+  path:
+    path: /Audio/_Cats/Admin_Abuse/Научная-тема.ogg
+
+- type: jukebox
+  id: IronNanny
+  name: Iron Nanny
+  path:
+    path: /Audio/_Cats/Admin_Abuse/железная-няня.ogg
+
+- type: jukebox
+  id: MysteriousTheme
+  name: Mysterious Theme
+  path:
+    path: /Audio/_Cats/Admin_Abuse/загадочная-тема.ogg
+
+- type: jukebox
+  id: TheChase
+  name: The Chase
+  path:
+    path: /Audio/_Cats/Admin_Abuse/погоня.ogg
+
+- type: jukebox
+  id: TheThemeIsChildhood
+  name: The Theme Is Childhood
+  path:
+    path: /Audio/_Cats/Admin_Abuse/тема-детства.ogg
+
+- type: jukebox
+  id: TheThemeIsDeserts.
+  name: The Theme Is Deserts.
+  path:
+    path: /Audio/_Cats/Admin_Abuse/тема-пустыни.ogg
+
+- type: jukebox
+  id: JustTheTwoOfUs
+  name: Just The Two Of Us
+  path:
+    path: /Audio/_Cats/Admin_Abuse/Just-The-Two-Of-Us.ogg

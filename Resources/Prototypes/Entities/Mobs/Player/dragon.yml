@@ -120,6 +120,8 @@
     spawned:
     - id: FoodMeatDragon
       amount: 2
+    - id: DragonEgg # baby dragon
+      amount: 1 # baby dragon
   - type: InteractionPopup
     successChance: 0.25 # It's no goose, but you better smell like carp.
     interactSuccessString: petting-success-dragon
@@ -150,10 +152,6 @@
     tags:
     - CannotSuicide
     - DoorBumpOpener
-  - type: NightVision #backmen: night vision
-    isToggle: true
-    color: "#808080"
-    playSoundOn: false
   - type: LanguageSpeaker #backmen: languages
     currentLanguage: Carp
   - type: LanguageKnowledge #backmen: languages
@@ -220,10 +218,6 @@
       0: Alive
       200: Dead
   # less meat spawned since it's a lot easier to kill
-  - type: Butcherable
-    spawned:
-    - id: FoodMeatDragon
-      amount: 1
   - type: MeleeWeapon
     damage:
       groups:

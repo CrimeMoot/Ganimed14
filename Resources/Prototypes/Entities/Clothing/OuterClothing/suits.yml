@@ -158,16 +158,27 @@
         Slash: 0.8
         Piercing: 0.8
         Heat: 0.8
-  # phase cloak
   - type: ToggleClothing
-    action: ActionTogglePhaseCloak
-    disableOnUnequip: true
-  - type: ComponentToggler
-    parent: true
-    components:
-    - type: Stealth
-      minVisibility: 0.1
-      lastVisibility: 0.1
+    action: ActionsToggleCloak # Cats edit
+  - type: ThermalCloak
+    opacity: 0.08
+    cooldown: 7
+    restrictWeapons: true
+    ninjaSuit: true
+    cloakedHideLayers:
+    - Hair
+    - HeadTop
+    - HeadSide
+    - Tail
+    - Snout # I don't know if this is hugely problematic but better safe than sorry
+    cloakSound:
+      path: /Audio/_Cats/Effects/Cloak/cloak_scout_on.ogg
+      params:
+        variation: 0.09
+    uncloakSound:
+      path: /Audio/_Cats/Effects/Cloak/cloak_scout_off.ogg
+      params:
+        variation: 0.09
   - type: PowerCellDraw
     drawRate: 1.8 # 200 seconds on the default cell
   - type: ToggleCellDraw

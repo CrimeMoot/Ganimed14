@@ -1,0 +1,30 @@
+- type: entity
+  name: C4Low
+  description: Взрывчатка предназначена для быстрого разрушения воздушных шлюзов или стен, но ее взрыв довольно слабый с точки зрения радиуса действия. Вы можете увидеть этикетку (прикрепите ее непосредственно к объекту).
+  parent: BasePlasticExplosive
+  id: LPPC4Low
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Objects/Weapons/Bombs/C4Low.rsi
+    state: icon
+  - type: OnUseTimerTrigger
+    delay: 5
+    delayOptions: [5, 10, 15, 20]
+    initialBeepDelay: 0
+    beepSound:
+      path: /Audio/Effects/Cargo/buzz_two.ogg
+      params:
+        volume: -6
+    startOnStick: false
+    canToggleStartOnStick: true
+  - type: TriggerOnSignal
+  - type: DeviceLinkSink
+    ports:
+    - Trigger
+  - type: Explosive
+    explosionType: DemolitionCharge
+    totalIntensity: 10
+    intensitySlope: 10
+    maxIntensity: 10
+    canCreateVacuum: false
+  - type: ExplodeOnTrigger

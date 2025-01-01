@@ -7,6 +7,7 @@ using Content.Shared.Whitelist;
 using Robust.Client.Graphics;
 using Robust.Client.Player;
 using Robust.Shared.Configuration;
+using Content.Shared._RMC14.Stealth; // Cats edit
 
 namespace Content.Client.StatusIcon;
 
@@ -83,6 +84,9 @@ public sealed class StatusIconSystem : SharedStatusIconSystem
             return false;
 
         if (data.HideOnStealth && TryComp<StealthComponent>(ent, out var stealth) && stealth.Enabled)
+            return false;
+
+        if (data.HideOnStealth && HasComp<EntityActiveInvisibleComponent>(ent)) // Cats edit
             return false;
 
         if (data.ShowTo != null && !_entityWhitelist.IsValid(data.ShowTo, viewer))

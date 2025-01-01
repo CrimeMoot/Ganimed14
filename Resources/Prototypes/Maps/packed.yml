@@ -64,10 +64,14 @@
             Borg: [ 1, 1 ]
             # backmen
             Brigmedic: [ 0, 1 ] # backmen-Brigmedic
+            # Cats
+            Maid: [ 0, 1]
+            BridgeOfficer: [ 0, 1 ]    
+            BlueShield: [0, 1] # backmen-BlueShield      
             #BKBPLATech: [ 0, 1 ] # backmen-BPLA-Silicons
             #BKBPLAMED: [ 0, 1 ] # backmen-BPLAMED-Silicons
-            Deliveryman: [ 0, 1 ]
-            Prisoner: [ 2, 3 ]
+#            Deliveryman: [ 0, 1 ]
+#            Prisoner: [ 2, 3 ]
         # backmen blob-config-start SMALL+
         - type: StationBlobConfig
           stageBegin: 25

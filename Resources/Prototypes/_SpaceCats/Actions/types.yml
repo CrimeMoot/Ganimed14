@@ -1,0 +1,28 @@
+- type: entity
+  id: ActionToggleNinjaNightVision
+  name: Переключить ночное зрение
+  description: Я тебя вижу!
+  components:
+  - type: InstantAction
+    icon:
+      sprite: Clothing/Eyes/Glasses/ninjavisor.rsi
+      state: icon
+    iconOn:
+      sprite: Clothing/Eyes/Glasses/ninjavisor.rsi
+      state: icon
+    event: !type:ToggleActionEvent
+    useDelay: 0.25
+
+- type: entity
+  id: ToggleThermalVision
+  name: Переключить термальное зрение
+  description: Я тебя вижу!
+  components:
+  - type: InstantAction
+    itemIconStyle: BigAction
+    priority: -20
+    icon:
+      sprite: _SpaceCats/Clothing/Eyes/Goggles/thermal.rsi
+      state: icon
+    event: !type:ToggleThermalVisionEvent
+    useDelay: 0.25

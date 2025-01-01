@@ -4,6 +4,7 @@ using Content.Shared.Humanoid.Prototypes;
 using Content.Shared.Preferences;
 using Content.Shared.Verbs;
 using Robust.Shared.GameObjects.Components.Localization;
+using Content.Server.Forensics; // Cats edit
 
 namespace Content.Server.Humanoid;
 
@@ -50,6 +51,12 @@ public sealed partial class HumanoidAppearanceSystem : SharedHumanoidAppearanceS
         if (TryComp<GrammarComponent>(target, out var grammar))
         {
             grammar.Gender = sourceHumanoid.Gender;
+        }
+
+        if (TryComp<DnaComponent>(targetHumanoid.Owner, out var targetDNAComp) &&
+            TryComp<DnaComponent>(sourceHumanoid.Owner, out var sourceDNAComp))
+        {
+            targetDNAComp.DNA = sourceDNAComp.DNA; // Cats edit
         }
 
         Dirty(target, targetHumanoid);

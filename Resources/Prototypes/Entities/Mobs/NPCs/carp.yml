@@ -96,9 +96,6 @@
       interactFailureString: petting-failure-carp
       interactFailureSound:
         path: /Audio/Effects/bite.ogg
-    - type: NightVision
-      isToggle: true
-      color: "#808080"
     # start-backmen: surgery
     - type: Body
       prototype: Carp

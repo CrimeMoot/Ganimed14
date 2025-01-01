@@ -186,7 +186,7 @@
     enabled: false
     radius: 3.5
     softness: 1
-    mask: /Textures/Effects/LightMasks/cone.png
+    mask: /Textures/_SpaceCats/Effects/LightMasks/cone.png # Cats edit
     autoRot: true
   - type: Tag
     tags:

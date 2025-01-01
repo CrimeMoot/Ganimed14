@@ -1,0 +1,185 @@
+- type: entity
+  parent: BaseItem
+  id: HolyHypo
+  name: золотая Игла
+  description: Этот гипоспрей, известный как 'Игла' вручается священникам, доказавшим свою преданность в охоте на демонические сущности и защиту невинных. Наполненный освящённой эссенцией, он способен не только лечить раны, но и временно ослаблять демонические силы, очищая тело и душу от тёмного влияния
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Objects/Specific/Medical/hypospray.rsi
+    state: hypo
+  - type: Item
+    sprite: _SpaceCats/Objects/Specific/Medical/hypospray.rsi
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 15
+  - type: RefillableSolution
+    solution: hypospray
+  - type: ExaminableSolution
+    solution: hypospray
+  - type: Hypospray
+    onlyAffectsMobs: false
+  - type: UseDelay
+    delay: 0.5
+
+- type: entity
+  name: гипоспрей эксперементальный
+  parent: HolyHypo
+  id: HypoExperement
+  description: Коммерческий гипоспрей, впервые разработанный компанией Nanotrasen Chemical Supply. Он имеет две встроенные функции безопасности для потребительского рынка - небольшой резервуар для химикатов и задержку впрыска.
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Objects/Specific/Medical/hypocivial.rsi
+    state: medivend_hypo
+  - type: Item
+    sprite: Objects/Specific/Medical/hypospray.rsi
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 15
+  - type: RefillableSolution
+    solution: hypospray
+  - type: ExaminableSolution
+    solution: hypospray
+  - type: Hypospray
+    onlyAffectsMobs: false
+  - type: UseDelay
+    delay: 1.1
+  - type: StaticPrice
+    price: 550
+
+- type: entity
+  name: инъектор химикатов
+  parent: [BaseItem, BaseRestrictedContraband]
+  description: Используется для быстрого введения лекарств. Используются картриджи, которые можно распечатать в лаборатории технологий медицины и безопасности.
+  id: SecHypo
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Objects/Specific/Medical/security_hypo.rsi
+    state: icon
+  - type: Item
+    sprite: _SpaceCats/Objects/Specific/Medical/security_hypo.rsi
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 10
+  - type: ExaminableSolution
+    solution: hypospray
+  - type: Hypospray
+    solutionName: hypospray
+    transferAmount: 10
+    onlyAffectsMobs: false
+    injectOnly: true
+  - type: HyposprayBlockNonMobInjection
+  - type: UseDelay
+    delay: 15 # up this later if its too low
+  - type: SolutionCartridgeReceiver
+    tag: AutoinjectorCartridge
+
+- type: entity
+  name: картридж для автоинъектора
+  parent: [BaseItem, BaseRestrictedContraband]
+  description: Используется в автоинъекторе картриджа.
+  id: BaseCartridgeAutoinjector
+  components:
+  - type: Item
+    size: Tiny
+  - type: Sprite
+    sprite: _SpaceCats/Objects/Specific/Medical/cartridge.rsi
+    state: cartridge
+  - type: SolutionCartridge
+    targetSolution: hypospray
+    solution:
+      maxVol: 10
+  - type: Tag
+    tags:
+      - AutoinjectorCartridge
+
+- type: entity
+  name: картридж с эпинифрином
+  parent: BaseCartridgeAutoinjector
+  description: Содержит 10 ед адреналина, используемого в картриджном автоинъекторе.
+  id: CartridgeEpinephrine
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Objects/Specific/Medical/cartridge.rsi
+    state: cartridge-epinephrine
+  - type: SolutionCartridge
+    targetSolution: hypospray
+    solution:
+      maxVol: 10
+      reagents:
+      - ReagentId: Epinephrine
+        Quantity: 10
+
+- type: entity
+  name: картридж для мех-повреждений
+  parent: BaseCartridgeAutoinjector
+  description: Содержит 7 единиц бикаридина и 3 единицы транексамовой кислоты, которые используются в автоинъекторе в картриджах.
+  id: CartridgeBicaridine
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Objects/Specific/Medical/cartridge.rsi
+    state: cartridge-bicaridine
+  - type: SolutionCartridge
+    targetSolution: hypospray
+    solution:
+      maxVol: 10
+      reagents:
+      - ReagentId: Bicaridine
+        Quantity: 7
+      - ReagentId: TranexamicAcid
+        Quantity: 3
+
+- type: entity
+  name: картридж для ожогов
+  parent: BaseCartridgeAutoinjector
+  description: Содержит 10 единиц дермалина, используемого в картриджном автоинъекторе.
+  id: CartridgeDermaline
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Objects/Specific/Medical/cartridge.rsi
+    state: cartridge-dermaline
+  - type: SolutionCartridge
+    targetSolution: hypospray
+    solution:
+      maxVol: 10
+      reagents:
+      - ReagentId: Dermaline
+        Quantity: 10
+
+- type: entity
+  name: картридж эфедрином
+  parent: BaseCartridgeAutoinjector
+  description: Содержит 10 единиц эфедрина, используемого в картриджном автоинъекторе.
+  id: CartridgeEphedrine
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Objects/Specific/Medical/cartridge.rsi
+    state: cartridge-ephedrine
+  - type: SolutionCartridge
+    targetSolution: hypospray
+    solution:
+      maxVol: 10
+      reagents:
+      - ReagentId: Ephedrine
+        Quantity: 10
+
+- type: entity
+  name: картридж пунктуразы
+  parent: BaseCartridgeAutoinjector
+  description: Содержит 7 единиц пунктуразы и 3 единицы транексамовой кислоты, которые используются в картриджах автоинъекторов.
+  id: CartridgeIchor
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Objects/Specific/Medical/cartridge.rsi
+    state: cartridge-ichor # not bothering to make a sprite for it
+  - type: SolutionCartridge
+    targetSolution: hypospray
+    solution:
+      maxVol: 10
+      reagents:
+      - ReagentId: Puncturase
+        Quantity: 7
+      - ReagentId: TranexamicAcid
+        Quantity: 3

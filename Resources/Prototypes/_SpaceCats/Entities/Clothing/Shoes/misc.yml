@@ -1,0 +1,27 @@
+- type: entity
+  parent: ClothingShoesBase
+  id: ClothingShoesFlippersRubber
+  name: тапочки
+  description: Пара резиновых тапочек. Носки в комплект не входят.
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Clothing/Shoes/Misc/flippers.rsi
+  - type: Clothing
+    sprite: _SpaceCats/Clothing/Shoes/Misc/flippers.rsi
+
+- type: entity
+  parent: ClothingShoesBootsMag
+  id: ClothingShoesBootsMagCaptain
+  name: магнитные сапоги капитана
+  description: Тёмно-синие магнитные сапоги с золотыми украшениями. Великолепно!
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Clothing/Shoes/Boots/captain_magboots.rsi
+    state: icon
+  - type: Clothing
+    sprite: _SpaceCats/Clothing/Shoes/Boots/captain_magboots.rsi
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
+  - type: StaticPrice
+    price: 750

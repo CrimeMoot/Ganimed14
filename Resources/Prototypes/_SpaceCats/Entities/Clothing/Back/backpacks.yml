@@ -1,0 +1,26 @@
+- type: entity
+  parent: ClothingBackpackSecurity
+  id: ClothingBlueshieldBackpack
+  name: blueshield's backpack
+  description: criminalst backpack
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Clothing/Back/blueshieldbackpack.rsi
+
+- type: entity
+  parent: ClothingBackpack
+  id: ClothingBlackBackpack
+  name: рюкзак офицера
+  description: Рюкзак для переноски голов врагов корпорации.
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/BridgeOfficer/BOBackpack.rsi
+
+- type: entity
+  parent: ClothingBackpack
+  id: ClothingBackpackSecurityEngineer
+  name: рюкзак полевого инженера
+  description: В два раза больше наручников!
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Clothing/Back/Backpacks/securityEngineer.rsi

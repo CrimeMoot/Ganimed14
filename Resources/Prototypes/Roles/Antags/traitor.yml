@@ -8,7 +8,7 @@
   requirements:
   - !type:OverallPlaytimeRequirement
     time: 108000 # 30h # Corvax-RoleTime
-  discordRequired: true # backmen: antag
+  discordRequired: false # backmen: antag
 
 - type: antag
   id: TraitorSleeper
@@ -17,7 +17,7 @@
   setPreference: true
   objective: roles-antag-syndicate-agent-sleeper-objective
   guides: [ Traitors ]
-  discordRequired: true # backmen: antag
+  discordRequired: false # backmen: antag
   requirements:
   - !type:OverallPlaytimeRequirement
     time: 18000 # 5h

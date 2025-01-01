@@ -1,0 +1,131 @@
+- type: listing
+  id: AccessoriesSponsornventory
+  productEntity: ClothingHeadHatBunny
+  cost:
+    SpaceCash: 300
+  categories:
+    - Accessories
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 2
+
+- type: listing
+  id: AccessoriesSponsornventory1
+  productEntity: ClothingHeadHatCatEars
+  cost:
+    SpaceCash: 1200
+  categories:
+    - Accessories
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 2
+
+- type: listing
+  id: AccessoriesSponsornventory3
+  productEntity: ClothingHeadHatSkub
+  cost:
+    SpaceCash: 300
+  categories:
+    - Accessories
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 2
+
+- type: listing
+  id: AccessoriesSponsornventory4
+  productEntity: ClothingHeadHatDogEars
+  cost:
+    SpaceCash: 1200
+  categories:
+    - Accessories
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 2
+
+- type: listing
+  id: AccessoriesSponsornventory5
+  productEntity: ClothingHeadHatSquid
+  cost:
+    SpaceCash: 400
+  categories:
+    - Accessories
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 2
+
+- type: listing
+  id: AccessoriesSponsornventory6
+  productEntity: ClothingHeadHatRedRacoon
+  cost:
+    SpaceCash: 500
+  categories:
+    - Accessories
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 2
+
+- type: listing
+  id: AccessoriesSponsornventory7
+  productEntity: ClothingHeadHatFancyCrown 
+  cost:
+    SpaceCash: 2000
+  categories:
+    - Accessories
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 2
+
+- type: listing
+  id: AccessoriesSponsornventory8
+  productEntity: ClothingNeckCloakHerald  
+  cost:
+    SpaceCash: 600
+  categories:
+    - Accessories
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 2
+
+- type: listing
+  id: AccessoriesSponsornventory9
+  productEntity: ClothingNeckCloakMiner  
+  cost:
+    SpaceCash: 600
+  categories:
+    - Accessories
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 2
+
+- type: listing
+  id: AccessoriesSponsornventory10
+  productEntity: ClothingNeckCloakMoth  
+  cost:
+    SpaceCash: 600
+  categories:
+    - Accessories
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 2
+
+- type: listing
+  id: AccessoriesSponsornventory11
+  productEntity: ClothingNeckCloakVoid 
+  cost:
+    SpaceCash: 900
+  categories:
+    - Accessories
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 2
+
+- type: listing
+  id: AccessoriesSponsornventory12
+  productEntity: ClothingNeckCloakTrans  
+  cost:
+    SpaceCash: 1200
+  categories:
+    - Accessories
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 2

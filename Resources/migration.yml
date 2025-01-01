@@ -654,16 +654,9 @@ PresentRandomAsh: PresentRandomCoal
 # 2024-11-19
 CrateCrewMonitoringBoards: CrateCrewMonitoring
 
-# 2024-11-23 backmen
-# Computer that by idea let's you call cargo shuttle is replaced
-# with console that let's you buy any shuttle.
-ComputerCargoShuttle: ComputerShipyard
-CargoShuttleComputerCircuitboard: ShipyardComputerCircuitboard
-
 # 2024-11-25
 CrateSlimepersonLifeSupport: CrateNitrogenInternals
 
-# 2024-12-01
 DungeonMasterCircuitBoard: GameMasterCircuitBoard
 
 # 2024-12-12
@@ -715,3 +708,18 @@ LightTree03: LightTree
 LightTree04: LightTree
 LightTree05: LightTree
 LightTree06: LightTree
+
+# 2024-11-16 - Space Cats
+SpawnPointCargoBorg: null
+SpawnPointEngenerBorg: null
+SpawnPointJanitorBorg: null
+SpawnPointMedIcalBorg: null
+SpawnPointServiceBorg: null
+SpawnPointSecurityBorg: null
+
+# 2024-11-24 - Space Cats
+DresserCaptainFilled: CaptainDrobe
+
+# 2024-12-05 - Space Cats
+ClothingEyesVision: null
+ClothingEyesVisionNuki: null

@@ -1,0 +1,32 @@
+- type: entity
+  parent: ClothingUniformJumpskirtCaptain
+  id: ClothingUniformJumpskirtWhiteCaptain
+  name: white captain jumpskirt
+  description: White captain jumpsuit skirt symbolizing that your salary clearly exceeds the norm.
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Clothing/Uniforms/Jumpskirt/white_captain.rsi
+  - type: Clothing
+    sprite: _SpaceCats/Clothing/Uniforms/Jumpskirt/white_captain.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtMaid
+  name: спортивная юбка горничной
+  description: Элегантное платье горничной. В нем вы будете чувствовать себя комфортно, в безопасности и чистоте.
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Clothing/Uniforms/Jumpskirt/maid.rsi
+  - type: Clothing
+    sprite: _SpaceCats/Clothing/Uniforms/Jumpskirt/maid.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtMaidMini
+  name: мини-юбка горничной
+  description: Элегантное укороченное платье горничной. Здесь вы будете чувствовать себя комфортно, в безопасности и чистоте. Этот вид расширяет горизонты в ваших глазах.
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Clothing/Uniforms/Jumpskirt/maidmini.rsi
+  - type: Clothing
+    sprite: _SpaceCats/Clothing/Uniforms/Jumpskirt/maidmini.rsi

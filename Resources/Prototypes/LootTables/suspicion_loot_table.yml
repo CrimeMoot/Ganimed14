@@ -90,9 +90,6 @@
   - id: WeaponXrayCannon
     amount: 0
     maxAmount: 2
-  - id: WeaponDisabler
-    amount: 0
-    maxAmount: 4
 
   - id: WeaponLauncherChinaLake
     prob: 0.30

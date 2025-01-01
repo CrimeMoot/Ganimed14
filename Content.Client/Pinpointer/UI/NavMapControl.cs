@@ -229,7 +229,7 @@ public partial class NavMapControl : MapGridControl
             {
                 if (!blip.Selectable)
                     continue;
-
+                
                 var currentDistance = (_transformSystem.ToMapCoordinates(blip.Coordinates).Position - worldPosition).Length();
 
                 if (closestDistance < currentDistance || currentDistance * MinimapScale > MaxSelectableDistance)

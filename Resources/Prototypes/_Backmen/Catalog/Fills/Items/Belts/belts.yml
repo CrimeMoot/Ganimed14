@@ -147,7 +147,7 @@
     - type: StorageFill
       contents:
         - id: MedkitAdvancedRXBZZ
-        - id: WeaponDisabler
+        - id: WeaponEnergyGunDominator
         - id: WeaponLauncherM81
         - id: GrenadeFrag
           amount: 2

@@ -1,0 +1,35 @@
+- type: entity
+  parent: PassengerIDCard
+  id: BridgeOfficerIDCard
+  name: ID карта офицера мостика
+  components:
+  - type: PresetIdCard
+    job: BridgeOfficer
+  - type: Sprite
+    layers:
+    - state: silver
+    - state: idbridgeofficer
+
+- type: entity
+  parent: IDCardStandard
+  id: MaidIDCard
+  name: ID карта горничной
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+    - state: idmaid
+  - type: PresetIdCard
+    job: Maid
+
+- type: entity
+  parent: IDCardStandard
+  id: SecurityEngineerIDCard
+  name: карта полевого инженера
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: idsecurityenginer
+  - type: PresetIdCard
+    job: SecurityEngineer

@@ -1,0 +1,470 @@
+- type: reagent
+  id: Meraline
+  name: reagent-meridine
+  group: Medicine
+  desc: reagent-meridine-desc
+  physicalDesc: psychicalDesc-reagent-red
+  flavor: medicine
+  color: "#ff8680"
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:HealthChange
+        damage:
+          groups:
+            Brute: -3
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentThreshold
+          min: 10
+        damage:
+          groups:
+            Toxin: 3
+            Brute: -6
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentThreshold
+          min: 30
+        damage:
+          groups:
+            Toxin: 6
+            Brute: -1
+      - !type:ModifyBleedAmount
+        amount: -0.25
+
+- type: reaction
+  id: Meraline
+  reactants:
+    SpaceDrugs:
+      amount: 1
+    Bicaridine:
+      amount: 1
+    Milk:
+      amount: 1
+  products:
+    Meraline: 2
+
+- type: reaction
+  id: MeridPuncturase # чтобы не смешивали пунктураз и меридин вместе,ибо будет космическое лечение в секунду
+  impact: Medium
+  reactants:
+    Puncturase:
+      amount: 1
+    Meraline:
+      amount: 1
+  products:
+    Razorium: 2
+
+- type: reagent
+  id: Dirozine
+  name: reagent-dirozine
+  group: Medicine
+  desc: reagent-dirozine-desc
+  physicalDesc: psychicalDesc-reagent-silver
+  flavor: medicine
+  color: "#d9d9d9"
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:HealthChange
+        conditions:
+        - !type:TotalDamage
+          max: 100
+        damage:
+          groups:
+            Brute: -1
+          types:
+            Poison: 1 ## отравляет ценой лечения всего. Варится кустарно.
+            Heat: -1
+            Shock: -1
+            Cold: -1
+
+- type: reaction
+  id: DirozineDylovene
+  impact: Medium
+  reactants:
+    Dirozine:
+      amount: 1
+    Dylovene:
+      amount: 1
+  products:
+    Tricordrazine: 1
+
+- type: reaction
+  id: Dirozine
+  impact: Medium
+  reactants:
+    Tricordrazine:
+      amount: 1
+    Potassium:
+      amount: 1
+    Silicon:
+      amount: 1
+  products:
+    Dirozine: 3
+
+- type: reagent
+  id: PainKillUltra
+  name: reagent-painkillultra
+  group: Medicine
+  desc: reagent-painkillultra-desc
+  physicalDesc: psychicalDesc-reagent-killcool
+  flavor: medicine
+  color: "#f80000"
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:HealthChange
+        conditions:
+        damage:
+          groups:
+            Brute: -3
+          types:
+            Cellular: 0.75 # При смешивании с фалангимином создаст ноозин. - мощный токсин,вызывающий остановку сердца
+            Heat: -2.5
+            Poison: -2
+            Bloodloss: -3
+      - !type:GenericStatusEffect
+        key: Adrenaline # убирает боль(позволит эффективнее сражаться.)
+        component: IgnoreSlowOnDamage
+        time: 10 # увы?
+    Narcotic:
+      effects:
+      - !type:MovespeedModifier
+        walkSpeedModifier: 1.25
+        sprintSpeedModifier: 1.25
+      - !type:GenericStatusEffect
+        key: Stun
+        time: 2
+        type: Remove
+      - !type:GenericStatusEffect
+        key: KnockedDown
+        time: 2
+        type: Remove
+      - !type:PopupMessage
+        visualType: Medium
+        messages: ["Выглядит неспокойно", "Слегка трясётся", "Кажется бодрым"]
+        type: Local
+        probability: 0.2
+
+- type: reaction
+  id: PainKillUltra
+  impact: Medium
+  minTemp: 360
+  reactants:
+    Ephedrine:
+      amount: 1
+    Dermaline:
+      amount: 1
+    Whiskey:
+      amount: 1
+    Sugar:
+      amount: 1
+  products:
+    PainKillUltra: 4
+
+- type: reagent
+  id: Noozine
+  name: reagent-noozine
+  group: Medicine
+  desc: reagent-noozine-desc
+  physicalDesc: psychicalDesc-reagent-death
+  flavor: medicine
+  color: "#f19cbb"
+  metabolisms:
+    Poison:
+      effects:
+      - !type:HealthChange
+        conditions:
+        damage:
+          groups:
+            Airloss: 10
+
+- type: reaction
+  id: PainPhalanx
+  impact: Medium
+  reactants:
+    Phalanximine:
+      amount: 1
+    PainKillUltra:
+      amount: 1
+  products:
+   Noozine: 1
+
+- type: reaction
+  id: PainEphedro
+  impact: Medium
+  reactants:
+    Ephedrine:
+      amount: 1
+    PainKillUltra:
+      amount: 1
+  products:
+   Noozine: 1
+
+- type: reaction
+  id: PainEpinep #ну по рофлу.
+  impact: Medium
+  reactants:
+    Epinephrine:
+      amount: 1
+    PainKillUltra:
+      amount: 1
+  products:
+   Noozine: 1
+
+- type: reaction
+  id: PainDesoxy
+  impact: Medium
+  reactants:
+    Desoxyephedrine:
+      amount: 1
+    PainKillUltra:
+      amount: 1
+  products:
+   Noozine: 1
+
+# часть два.
+- type: reagent
+  id: Sufentanil #для медиков ОБР,бригмедика и экстренных наборов СБ
+  name: reagent-sufentanil
+  group: Medicine
+  desc: reagent-sufentanil-desc
+  physicalDesc: reagent-psychicalDesc-sufentanil
+  flavor: medicine
+  color: "#dc143c"
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:HealthChange
+        conditions:
+        - !type:MobStateCondition
+          mobstate: Critical
+        damage:
+          groups:
+            Brute: -3
+            Airloss: -4
+          types:
+            Heat: -2
+            Poison: -2
+            Bloodloss: -4
+      - !type:Drunk # побочка
+        boozePower: 5
+      - !type:ModifyBleedAmount
+        amount: -0.25
+      - !type:GenericStatusEffect
+        key: SeeingRainbows
+        component: SeeingRainbows
+        type: Add
+        time: 3
+        refresh: false
+      - !type:GenericStatusEffect
+        key: PressureImmunity
+        component: PressureImmunity
+      - !type:GenericStatusEffect
+        key: Adrenaline # убирает боль(позволит эффективнее сражаться.)
+        component: IgnoreSlowOnDamage
+        time: 60 # суфентанил-мощный опиоидный анальгетик. Глушит боль надолго.
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentThreshold
+          min: 10
+        damage:
+          types:
+            Asphyxiation: 0.5
+            Poison: 1.5
+
+- type: reaction
+  id: Sufentanil
+  impact: Medium
+  minTemp: 380
+  reactants:
+    Epinephrine:
+      amount: 1
+    SpaceDrugs:
+      amount: 1
+    Bicaridine:
+      amount: 1
+    Dirozine:
+      amount: 1
+  products:
+    Sufentanil: 4
+
+- type: reagent
+  id: Tramadol #пиразин,но на механический урон
+  name: reagent-tramadol
+  group: Medicine
+  desc: reagent-tramadol-desc
+  physicalDesc: reagent-psychicalDesc-tramadol
+  flavor: medicine
+  color: "#ffc0cb"
+  metabolisms:
+    Medicine:
+      metabolismRate: 0.1
+      effects:
+      - !type:HealthChange
+        conditions:
+        damage:
+          groups:
+            Brute: -0.5
+          types:
+            Bloodloss: -0.5
+      - !type:Drunk # побочка
+        boozePower: 5
+      - !type:GenericStatusEffect
+        key: SeeingRainbows
+        component: SeeingRainbows
+        type: Add
+        time: 3
+        refresh: false
+      - !type:GenericStatusEffect
+        key: Adrenaline # убирает боль(позволит эффективнее сражаться.)
+        component: IgnoreSlowOnDamage
+        time: 2.5 # трамадол должен убирать боль и медленно лечить мех. урон.
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentThreshold
+          min: 10
+        damage:
+          types:
+            Asphyxiation: 0.5
+            Poison: 1
+      - !type:ModifyBleedAmount
+        amount: -0.25
+
+- type: reaction
+  id: Tramadol #долгое,но эффективное лечение
+  impact: Medium
+  minTemp: 450
+  reactants:
+    SpaceDrugs:
+      amount: 1
+    Bicaridine:
+      amount: 1
+  products:
+    Tramadol: 4
+
+- type: reagent
+  id: Nanomachines #лечат долго и медленно.
+  name: reagent-nanomachines
+  group: Medicine
+  desc: reagent-nanomachines-desc
+  physicalDesc: reagent-psychicalDesc-nanomachines
+  flavor: metallic
+  color: "#f80000"
+  metabolisms:
+    Medicine:
+      metabolismRate: 0.001
+      effects:
+      - !type:HealthChange
+        conditions:
+        damage:
+          groups:
+            Brute: -0.3
+            Toxin: -0.2
+          types:
+            Heat: -0.2
+            Bloodloss: 0.2
+      - !type:ModifyBleedAmount
+        amount: -0.5
+
+- type: entity
+  name: продвинутый экстренный иньектор
+  parent: EmergencyMedipen
+  id: EmergencyMedipenSecurity
+  description: Содержит дозу суфентанила и дирозина,способную поднять из критического состояния и частично закрыть раны. Не забудьте обратиться к квалифицированному врачу после использования.
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Objects/Specific/Medical/medipen.rsi
+    layers:
+    - state: security
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: security_empty
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 30
+        reagents:
+        - ReagentId: Sufentanil
+          Quantity: 10
+        - ReagentId: Dirozine
+          Quantity: 20
+
+- type: entity
+  name: иньектор наномашин
+  parent: EmergencyMedipen
+  id: MedipenNanomachines
+  description: Содержит дозу медицинских нанитов,расчитанных на работу в течении 15 минут за каждый иньектор.
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Objects/Specific/Medical/medipen.rsi
+    layers:
+    - state: nanomachines
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: nanomachines_empty
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 1
+        reagents:
+        - ReagentId: Nanomachines
+          Quantity: 1
+
+- type: entity
+  name: иньектор диловена
+  parent: EmergencyMedipen
+  id: MedipenDylovene
+  description: Содержит дозу диловена.
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Objects/Specific/Medical/medipen.rsi
+    layers:
+    - state: dylopen
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: dylopen_empty
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 20
+        reagents:
+        - ReagentId: Dylovene
+          Quantity: 20
+
+- type: entity
+  name: продвинутый боевой иньектор
+  parent: EmergencyMedipen
+  id: MeraDermInjector
+  description: Содержит дозу мералина и дермалина,способную быстро закрыть большинство ран.
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Objects/Specific/Medical/medipen.rsi
+    layers:
+    - state: combat
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: combat_empty
+  - type: Hypospray
+    solutionName: pen
+    transferAmount: 20
+    onlyAffectsMobs: false
+    injectOnly: false
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 20
+        reagents:
+        - ReagentId: Meraline
+          Quantity: 10
+        - ReagentId: Dermaline
+          Quantity: 10

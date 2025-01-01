@@ -1,0 +1,62 @@
+- type: entity
+  id: SecRCD
+  parent: [ BaseItem, BaseEngineeringContraband ]
+  name: охранный РСУ
+  description: Устройство rapid construction можно использовать для быстрой установки и демонтажа различных конструкций и приспособлений станции. Для работы требуется спрессованный материал.
+  components:
+  - type: RCD
+    availablePrototypes:
+    - WallSolid
+    - FloorSteel
+    - Plating
+    - Catwalk
+    - Grille
+    - Window
+    - WindowDirectional
+    - WindowReinforcedDirectional
+    - ReinforcedWindow
+    - Airlock
+    - AirlockGlass
+    - Firelock
+    - TubeLight
+    - BulbLight
+    - LVCable
+    - MVCable
+    - HVCable
+    - CableTerminal
+    - Deconstruct
+  - type: LimitedCharges
+    maxCharges: 40
+    charges: 40
+  - type: UseDelay
+  - type: Sprite
+    sprite: _SpaceCats/Objects/Tools/rcd.rsi
+    state: icon
+  - type: Item
+    size: Normal
+  - type: Clothing
+    sprite: _SpaceCats/Objects/Tools/rcd.rsi
+    quickEquip: false
+    slots:
+    - Belt
+  - type: PhysicalComposition
+    materialComposition:
+      Steel: 600
+      Plastic: 100
+  - type: StaticPrice
+    price: 110
+  - type: UserInterface
+    interfaces:
+      enum.RcdUiKey.Key:
+        type: RCDMenuBoundUserInterface
+  - type: ActivatableUI
+    inHandsOnly: true
+    key: enum.RcdUiKey.Key
+
+- type: entity
+  id: SecRCDEmpty
+  parent: SecRCD
+  suffix: Empty
+  components:
+  - type: LimitedCharges
+    charges: 0

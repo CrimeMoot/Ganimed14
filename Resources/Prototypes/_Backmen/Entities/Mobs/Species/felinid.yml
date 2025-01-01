@@ -49,10 +49,12 @@
     naturalImmunities:
     - OwOnavirus
   - type: Thieving
-    stealthy: true
-    stripTimeReduction: 1
+    stealthy: false
+    stripTimeReduction: 0.9
   - type: Speech
     speechSounds: Alto
+  - type: TypingIndicator
+    proto: felinid
   - type: DamageOnHighSpeedImpact
     damage:
       types:

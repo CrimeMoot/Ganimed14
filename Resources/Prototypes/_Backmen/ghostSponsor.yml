@@ -137,3 +137,89 @@
       layers:
       - state: animated_kaiju
         shader: unshaded
+
+############################ space cats gost
+
+- type: ghostTheme
+  name: sponsor-win-manager-ghost-tier09
+  id: tier09  
+  components:
+    - type: Sprite
+      noRot: true
+      overrideContainerOcclusion: true # Ghosts always show up regardless of where they're contained.
+      drawdepth: Ghosts
+      sprite: _SpaceCats/Mobs/Ghost/glist_ghost.rsi
+      color: "#fff8"
+      layers:
+      - state: animated
+        shader: unshaded
+
+- type: ghostTheme
+  id: tier10
+  name: sponsor-win-manager-ghost-tier10
+  components:
+    - type: Sprite
+      noRot: true
+      overrideContainerOcclusion: true # Ghosts always show up regardless of where they're contained.
+      drawdepth: Ghosts
+      sprite: _SpaceCats/Mobs/Ghost/ghost_dark.rsi
+      color: "#fff8"
+      layers:
+      - state: endr_animet
+        shader: unshaded
+
+- type: ghostTheme
+  id: tier11
+  name: sponsor-win-manager-ghost-tier11
+  components:
+    - type: Sprite
+      noRot: true
+      overrideContainerOcclusion: true # Ghosts always show up regardless of where they're contained.
+      drawdepth: Ghosts
+      sprite: _SpaceCats/Mobs/Ghost/ghost_dark.rsi
+      color: "#fff8"
+      layers:
+      - state: Kotovasu
+        shader: unshaded
+
+- type: ghostTheme
+  id: tier12
+  name: sponsor-win-manager-ghost-tier12
+  components:
+    - type: Sprite
+      noRot: true
+      overrideContainerOcclusion: true # Ghosts always show up regardless of where they're contained.
+      drawdepth: Ghosts
+      sprite: _SpaceCats/Mobs/Ghost/ghost_dark.rsi
+      color: "#fff8"
+      layers:
+      - state: kvasik
+        shader: unshaded
+
+- type: ghostTheme
+  id: tier13
+  name: sponsor-win-manager-ghost-tier13
+  components:
+    - type: Sprite
+      noRot: true
+      overrideContainerOcclusion: true # Ghosts always show up regardless of where they're contained.
+      drawdepth: Ghosts
+      sprite: _SpaceCats/Mobs/Ghost/ghosts.rsi
+      color: "#fff8"
+      layers:
+      - state: endr_animet
+        shader: unshaded
+
+- type: ghostTheme
+  id: tier14
+  name: sponsor-win-manager-ghost-tier14
+  components:
+    - type: Sprite
+      noRot: true
+      overrideContainerOcclusion: true # Ghosts always show up regardless of where they're contained.
+      drawdepth: Ghosts
+      sprite: _SpaceCats/Mobs/Ghost/ghosts.rsi
+      color: "#fff8"
+      layers:
+      - state: kidz
+        shader: unshaded

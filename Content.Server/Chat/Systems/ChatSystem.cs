@@ -79,8 +79,8 @@ public sealed partial class ChatSystem : SharedChatSystem
     // public const int WhisperClearRange = 2; // how far whisper goes while still being understandable, in world units
     // public const int WhisperMuffledRange = 5; // how far whisper goes at all, in world units
     // Corvax-TTS-End
-    public const string DefaultAnnouncementSound = "/Audio/Corvax/Announcements/announce.ogg"; // Corvax-Announcements
-    public const string CentComAnnouncementSound = "/Audio/Corvax/Announcements/centcomm.ogg"; // Corvax-Announcements
+    public const string DefaultAnnouncementSound = "/Audio/_Cats/StationEvents/announce_dig.ogg"; // Cats edit
+    public const string CentComAnnouncementSound = "/Audio/_Cats/StationEvents/announce_dig.ogg"; // CCats edit
     //start-backmen: languages
     public const float DefaultObfuscationFactor = 0.2f; // Percentage of symbols in a whispered message that can be seen even by "far" listeners
     public readonly Color DefaultSpeakColor = Color.White;

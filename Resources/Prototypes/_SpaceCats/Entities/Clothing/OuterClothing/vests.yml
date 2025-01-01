@@ -1,0 +1,27 @@
+- type: entity
+  parent: ClothingOuterArmorBasic
+  id: ClothingOuterReactiveArmor
+  name: reactive armor
+  description: Reactive armor.
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Clothing/OuterClothing/reactive.rsi
+  - type: Clothing
+    sprite: _SpaceCats/Clothing/OuterClothing/reactive.rsi
+  - type: ExplosionResistance
+    damageCoefficient: 0.65
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+        Radiation: 0.9
+        Caustic: 0.9
+  - type: Reflect
+    reflectProb: .50
+    spread: 360
+  - type: ClothingGrant
+    component:
+    - type: DamageTeleport

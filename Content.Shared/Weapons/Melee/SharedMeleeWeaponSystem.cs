@@ -565,6 +565,7 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
 
         var damage = GetDamage(meleeUid, user, component);
         var entities = GetEntityList(ev.Entities);
+        
 
         entities = entities.Where(e => !_tagSystem.HasTag(e, "IgnoreMelee")).ToList(); // cats-shield
 

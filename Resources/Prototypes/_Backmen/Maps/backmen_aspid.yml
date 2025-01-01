@@ -66,6 +66,7 @@
 #            BKBPLAMED: [0, 3] # backmen-BPLAMED-Silicons
             Prisoner: [ 2, 3]
             BlueShield: [1, 1] # backmen-BlueShield
+            StationAi: [ 1, 1 ]
             # Cats
             Maid: [ 0, 1]
             BridgeOfficer: [ 0, 1 ]

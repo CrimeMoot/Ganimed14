@@ -26,6 +26,7 @@ using Robust.Shared.Network;
 using Robust.Shared.Player;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
+using Content.Server.Preferences.Managers; // Cats edit
 
 namespace Content.Server.Administration.Systems
 {
@@ -671,7 +672,24 @@ namespace Content.Server.Administration.Systems
             }
             else if (senderAdmin is not null && senderAdmin.HasFlag(AdminFlags.Adminhelp))
             {
-                bwoinkText = $"[color=red]{adminPrefix}{senderSession.Name}[/color]";
+                // Cats edit-Start: Now the colors set by setadminooc will also color the nickname with the prefix in f1.
+                Color? colorOverride = null;
+                var prefs = _preferencesManager.GetPreferences(senderSession.UserId);
+                colorOverride = prefs.AdminOOCColor;
+                if (colorOverride.HasValue)
+                {
+                    var colorString = $"#"
+                    + $"{(int)(colorOverride.Value.R * 255):X2}"
+                    + $"{(int)(colorOverride.Value.G * 255):X2}"
+                    + $"{(int)(colorOverride.Value.B * 255):X2}"
+                    + $"{(int)(colorOverride.Value.A * 255):X2}";
+                    bwoinkText = $"[color={colorString}]{adminPrefix}{senderSession.Name}[/color]";
+                }
+                else
+                {
+                    bwoinkText = $"[color=red]{adminPrefix}{senderSession.Name}[/color]";
+                }
+                // Cats-edit-End
             }
             else
             {

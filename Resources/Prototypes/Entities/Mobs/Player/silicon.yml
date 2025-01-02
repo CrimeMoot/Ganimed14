@@ -436,6 +436,7 @@
   - type: Speech
     speechVerb: Robotic
     speechSounds: Borg
+  - type: TurretController # Cats-TurretControl
   - type: Tag
     tags:
     - HideContextMenu

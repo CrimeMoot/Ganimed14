@@ -437,6 +437,8 @@
     speechVerb: Robotic
     speechSounds: Borg
   - type: TurretController # Cats-TurretControl
+    requiredComponents:
+    - type: StationAiHeld
   - type: Tag
     tags:
     - HideContextMenu

@@ -222,15 +222,15 @@
   id: BorgHealth
   category: Health
   icons:
-  - sprite: /Textures/Interface/Alerts/borg_alive.rsi
+  - sprite: /Textures/_SpaceCats/Interface/Alerts/borg_alive.rsi # Cats edit
     state: health0
-  - sprite: /Textures/Interface/Alerts/borg_alive.rsi
+  - sprite: /Textures/_SpaceCats/Interface/Alerts/borg_alive.rsi # Cats edit
     state: health1
-  - sprite: /Textures/Interface/Alerts/borg_alive.rsi
+  - sprite: /Textures/_SpaceCats/Interface/Alerts/borg_alive.rsi # Cats edit
     state: health2
-  - sprite: /Textures/Interface/Alerts/borg_alive.rsi
+  - sprite: /Textures/_SpaceCats/Interface/Alerts/borg_alive.rsi # Cats edit
     state: health3
-  - sprite: /Textures/Interface/Alerts/borg_alive.rsi
+  - sprite: /Textures/_SpaceCats/Interface/Alerts/borg_alive.rsi # Cats edit
     state: health4
   name: alerts-health-name
   description: alerts-health-desc
@@ -241,7 +241,7 @@
   id: BorgCrit
   category: Health
   icons:
-  - sprite: /Textures/Interface/Alerts/borg_critical.rsi
+  - sprite: /Textures/_SpaceCats/Interface/Alerts/borg_critical.rsi # Cats edit
     state: critical
   name: alerts-crit-name
   description: alerts-crit-desc
@@ -250,7 +250,7 @@
   id: BorgDead
   category: Health
   icons:
-  - sprite: /Textures/Interface/Alerts/borg_dead.rsi
+  - sprite: /Textures/_SpaceCats/Interface/Alerts/borg_dead.rsi # Cats edit
     state: dead
   name: alerts-dead-name
   description: alerts-dead-desc
@@ -259,27 +259,27 @@
   id: BorgBattery
   category: Battery
   icons:
-  - sprite: /Textures/Interface/Alerts/battery.rsi
+  - sprite: /Textures/_SpaceCats/Interface/Alerts/battery.rsi # Cats edit
     state: battery0
-  - sprite: /Textures/Interface/Alerts/battery.rsi
+  - sprite: /Textures/_SpaceCats/Interface/Alerts/battery.rsi # Cats edit
     state: battery1
-  - sprite: /Textures/Interface/Alerts/battery.rsi
+  - sprite: /Textures/_SpaceCats/Interface/Alerts/battery.rsi # Cats edit
     state: battery2
-  - sprite: /Textures/Interface/Alerts/battery.rsi
+  - sprite: /Textures/_SpaceCats/Interface/Alerts/battery.rsi # Cats edit
     state: battery3
-  - sprite: /Textures/Interface/Alerts/battery.rsi
+  - sprite: /Textures/_SpaceCats/Interface/Alerts/battery.rsi # Cats edit
     state: battery4
-  - sprite: /Textures/Interface/Alerts/battery.rsi
+  - sprite: /Textures/_SpaceCats/Interface/Alerts/battery.rsi # Cats edit
     state: battery5
-  - sprite: /Textures/Interface/Alerts/battery.rsi
+  - sprite: /Textures/_SpaceCats/Interface/Alerts/battery.rsi # Cats edit
     state: battery6
-  - sprite: /Textures/Interface/Alerts/battery.rsi
+  - sprite: /Textures/_SpaceCats/Interface/Alerts/battery.rsi # Cats edit
     state: battery7
-  - sprite: /Textures/Interface/Alerts/battery.rsi
+  - sprite: /Textures/_SpaceCats/Interface/Alerts/battery.rsi # Cats edit
     state: battery8
-  - sprite: /Textures/Interface/Alerts/battery.rsi
+  - sprite: /Textures/_SpaceCats/Interface/Alerts/battery.rsi # Cats edit
     state: battery9
-  - sprite: /Textures/Interface/Alerts/battery.rsi
+  - sprite: /Textures/_SpaceCats/Interface/Alerts/battery.rsi # Cats edit
     state: battery10
   name: alerts-battery-name
   description: alerts-battery-desc
@@ -290,7 +290,7 @@
   id: BorgBatteryNone
   category: Battery
   icons:
-  - sprite: /Textures/Interface/Alerts/battery.rsi
+  - sprite: /Textures/_SpaceCats/Interface/Alerts/battery.rsi # Cats edit
     state: battery-none
   name: alerts-no-battery-name
   description: alerts-no-battery-desc

@@ -41,7 +41,7 @@
     malus: 0.225
   - type: MeleeWeapon
     angle: 0
-    attackRate: 1.2
+    attackRate: 1.1
     wideAnimationRotation: -135
     damage:
       types:
@@ -53,7 +53,7 @@
         Blunt: 1.5
     deactivatedSecret: true
   - type: StaminaDamageOnHit
-    damage: 16
+    damage: 23
     sound: /Audio/Weapons/boxingpunch1.ogg
   - type: UseDelay
     delay: 0.4

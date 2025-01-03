@@ -5,21 +5,21 @@
   id: ShadowkinPower
   category: ShadowkinPower
   icons:
-  - sprite: /Textures/Backmen/Interface/Alerts/shadowkin_power.rsi
+  - sprite: /Textures/_SpaceCats/Interface/Alerts/shadowkin_power.rsi # Cats edit
     state: power0
-  - sprite: /Textures/Backmen/Interface/Alerts/shadowkin_power.rsi
+  - sprite: /Textures/_SpaceCats/Interface/Alerts/shadowkin_power.rsi # Cats edit
     state: power1
-  - sprite: /Textures/Backmen/Interface/Alerts/shadowkin_power.rsi
+  - sprite: /Textures/_SpaceCats/Interface/Alerts/shadowkin_power.rsi # Cats edit
     state: power2
-  - sprite: /Textures/Backmen/Interface/Alerts/shadowkin_power.rsi
+  - sprite: /Textures/_SpaceCats/Interface/Alerts/shadowkin_power.rsi # Cats edit
     state: power3
-  - sprite: /Textures/Backmen/Interface/Alerts/shadowkin_power.rsi
+  - sprite: /Textures/_SpaceCats/Interface/Alerts/shadowkin_power.rsi # Cats edit
     state: power4
-  - sprite: /Textures/Backmen/Interface/Alerts/shadowkin_power.rsi
+  - sprite: /Textures/_SpaceCats/Interface/Alerts/shadowkin_power.rsi # Cats edit
     state: power5
-  - sprite: /Textures/Backmen/Interface/Alerts/shadowkin_power.rsi
+  - sprite: /Textures/_SpaceCats/Interface/Alerts/shadowkin_power.rsi # Cats edit
     state: power6
-  - sprite: /Textures/Backmen/Interface/Alerts/shadowkin_power.rsi
+  - sprite: /Textures/_SpaceCatsI/nterface/Alerts/shadowkin_power.rsi # Cats edit
     state: power7
   name: alerts-shadowkin-power-name
   description: alerts-shadowkin-power-desc

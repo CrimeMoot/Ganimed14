@@ -207,7 +207,7 @@
     state: health0
   - sprite: /Textures/_SpaceCats/Interface/Alerts/human_alive.rsi # Cats edit
     state: health1
-  - sprite: /Textures/_SpaceCats/nterface/Alerts/human_alive.rsi # Cats edit
+  - sprite: /Textures/_SpaceCats/Interface/Alerts/human_alive.rsi # Cats edit
     state: health2
   - sprite: /Textures/_SpaceCats/Interface/Alerts/human_alive.rsi # Cats edit
     state: health3
@@ -380,13 +380,13 @@
 
 - type: alert
   id: Muted
-  icons: [ /Textures/Interface/Alerts/Abilities/silenced.png ]
+  icons: [ /Textures/_SpaceCats/Interface/Alerts/Abilities/silenced.png ] # Cats edit
   name: alerts-muted-name
   description: alerts-muted-desc
 
 - type: alert
   id: VowOfSilence
-  icons: [ /Textures/Interface/Alerts/Abilities/silenced.png ]
+  icons: [ /Textures/_SpaceCats/Interface/Alerts/Abilities/silenced.png ] # Cats edit
   name: alerts-vow-silence-name
   clickEvent: !type:BreakVowAlertEvent
   description: alerts-vow-silence-desc
@@ -453,7 +453,7 @@
 - type: alert
   id: Adrenaline
   icons:
-  - sprite: Mobs/Species/Human/organs.rsi
+  - sprite: _SpaceCats/Mobs/Species/Human/organs.rsi  # Cats edit
     state: heart-on
   name: alerts-adrenaline-name
   description: alerts-adrenaline-desc

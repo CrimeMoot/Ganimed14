@@ -68,5 +68,6 @@
     quickEquip: false
     slots:
       - Belt
+      - suitStorage # Cats edit
   - type: StaticPrice
     price: 350

@@ -355,7 +355,7 @@
   id: Starving
   category: Hunger
   icons:
-  - sprite: /Textures/_SpaceCats/nterface/Alerts/hunger.rsi # Cats edit
+  - sprite: /Textures/_SpaceCats/Interface/Alerts/hunger.rsi # Cats edit
     state: starving
   name: alerts-starving-name
   description: alerts-starving-desc
@@ -454,7 +454,7 @@
   id: Adrenaline
   icons:
   - sprite: _SpaceCats/Mobs/Species/Human/organs.rsi  # Cats edit
-    state: heart-on
+    state: heart-off
   name: alerts-adrenaline-name
   description: alerts-adrenaline-desc
 

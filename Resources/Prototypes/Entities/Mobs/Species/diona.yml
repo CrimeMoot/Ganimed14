@@ -72,6 +72,7 @@
         visualType: Large
         messages: [ "diona-hurt-by-herbicide-popup" ]
         probability: 0.66
+  - type: NoSlip
   - type: Fixtures
     fixtures:
       fix1:
@@ -124,6 +125,7 @@
     understands:
     - TauCetiBasic
     - RootSpeak
+  - type: FTLKnockdownImmune # Cats edit
 
 - type: entity
   parent: BaseSpeciesDummy

@@ -1,6 +1,7 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Numerics;
+using Content.Server._Cats.FTLKnockdownImmune;
 using Content.Server.Shuttles.Components;
 using Content.Server.Shuttles.Events;
 using Content.Server.Station.Events;
@@ -621,7 +622,10 @@ public sealed partial class ShuttleSystem
                 if (!_statusQuery.TryGetComponent(child, out var status))
                     continue;
 
-                _stuns.TryParalyze(child, _hyperspaceKnockdownTime, true, status);
+                // Cats edit diona start
+                if (!HasComp<FTLKnockdownImmuneComponent>(child))
+                    _stuns.TryParalyze(child, _hyperspaceKnockdownTime, true, status);
+                // Cats edit diona end
 
                 // If the guy we knocked down is on a spaced tile, throw them too
                 if (grid != null)

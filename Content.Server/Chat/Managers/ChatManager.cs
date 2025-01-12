@@ -270,6 +270,14 @@ internal sealed partial class ChatManager : IChatManager
         }
         // Corvax-Sponsors-End
 
+        // Cats-OOC-admin-start
+        var adminData = _adminManager.GetAdminData(player);
+        if (adminData != null && adminData.Title != null)
+        {
+            wrappedMessage = Loc.GetString("chat-manager-send-ooc-admin-wrap-message", ("patronTitle", $"\\[{adminData.Title}\\] "),("playerName", player.Name), ("message", FormattedMessage.EscapeText(message)));
+        }
+        // Cats-OOC-admin-end
+
         //TODO: player.Name color, this will need to change the structure of the MsgChatMessage
         ChatMessageToAll(ChatChannel.OOC, message, wrappedMessage, EntityUid.Invalid, hideChat: false, recordReplay: true, colorOverride: colorOverride, author: player.UserId);
         _mommiLink.SendOOCMessage(player.Name, message.Replace("@", "\\@").Replace("<", "\\<").Replace("/", "\\/")); // @ and < are both problematic for discord due to pinging. / is sanitized solely to kneecap links to murder embeds via blunt force
@@ -309,9 +317,8 @@ internal sealed partial class ChatManager : IChatManager
             return;  
         var senderName = player.Name;
         if (!string.IsNullOrEmpty(senderAdmin.Title))
-        {
+
             senderName += $"\\[{senderAdmin.Title}\\]";
-        }
 
         var clients = _adminManager.ActiveAdmins.Select(p => p.Channel);
         var wrappedMessage = Loc.GetString("chat-manager-send-admin-chat-wrap-message",

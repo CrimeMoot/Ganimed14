@@ -33,6 +33,7 @@ public sealed class ZombieRuleSystem : GameRuleSystem<ZombieRuleComponent>
     [Dependency] private readonly StationSystem _station = default!;
     [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly ZombieSystem _zombie = default!;
+	[Dependency] private readonly GameTicker _gameTicker = default!; // Cats edit
 
     public override void Initialize()
     {
@@ -84,7 +85,7 @@ public sealed class ZombieRuleSystem : GameRuleSystem<ZombieRuleComponent>
                 ("username", data.UserName)));
         }
 
-        var healthy = GetHealthyHumans();
+        var healthy = GetHealthyHumans(true); // Cats edit
         // Gets a bunch of the living players and displays them if they're under a threshold.
         // InitialInfected is used for the threshold because it scales with the player count well.
         if (healthy.Count <= 0 || healthy.Count > 2 * antags.Count)
@@ -159,7 +160,7 @@ public sealed class ZombieRuleSystem : GameRuleSystem<ZombieRuleComponent>
     /// <param name="includeOffStation">Include healthy players that are not on the station grid</param>
     /// <param name="includeDead">Should dead zombies be included in the count</param>
     /// <returns></returns>
-    private float GetInfectedFraction(bool includeOffStation = true, bool includeDead = false)
+    private float GetInfectedFraction(bool includeOffStation = false, bool includeDead = true) // Cats edit
     {
         var players = GetHealthyHumans(includeOffStation);
         var zombieCount = 0;
@@ -179,14 +180,14 @@ public sealed class ZombieRuleSystem : GameRuleSystem<ZombieRuleComponent>
     /// Flying off via a shuttle disqualifies you.
     /// </summary>
     /// <returns></returns>
-    private List<EntityUid> GetHealthyHumans(bool includeOffStation = true)
+    private List<EntityUid> GetHealthyHumans(bool includeOffStation = false) // Cats edit
     {
         var healthy = new List<EntityUid>();
 
         var stationGrids = new HashSet<EntityUid>();
         if (!includeOffStation)
         {
-            foreach (var station in _station.GetStationsSet())
+            foreach (var station in _gameTicker.GetSpawnableStations()) // Cats edit
             {
                 if (TryComp<StationDataComponent>(station, out var data) && _station.GetLargestGrid(data) is { } grid)
                     stationGrids.Add(grid);
@@ -195,21 +196,15 @@ public sealed class ZombieRuleSystem : GameRuleSystem<ZombieRuleComponent>
 
         var players = AllEntityQuery<HumanoidAppearanceComponent, ActorComponent, MobStateComponent, TransformComponent>();
         var zombers = GetEntityQuery<ZombieComponent>();
-        var centcom = GetEntityQuery<ZombieComponent>(); // backmen: centcom
         while (players.MoveNext(out var uid, out _, out _, out var mob, out var xform))
         {
-            if (!_mobState.IsAlive(uid, mob))
-                continue;
-
-            if (zombers.HasComponent(uid))
-                continue;
-
-            // start-backmen: centcom
-            if (centcom.HasComponent(uid))
-                continue;
-            // end-backmen: centcom
-
-            if (!includeOffStation && !stationGrids.Contains(xform.GridUid ?? EntityUid.Invalid))
+			// Cats edit-Start
+            if (!_mobState.IsAlive(uid, mob)
+                || HasComp<PendingZombieComponent>(uid) //Do not include infected players in the "Healthy players" list.
+                || HasComp<ZombifyOnDeathComponent>(uid)
+                || zombers.HasComponent(uid)
+                || !includeOffStation && !stationGrids.Contains(xform.GridUid ?? EntityUid.Invalid))
+			// Cats edit-End
                 continue;
 
             healthy.Add(uid);

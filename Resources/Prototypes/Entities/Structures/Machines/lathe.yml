@@ -340,6 +340,7 @@
       - ClothingShoesBootsMagSci
       - ClothingShoesBootsMoon
       - ClothingShoesBootsSpeed
+      - ClothingShoesBootsJump
       - NodeScanner
       - HolofanProjector
       - BluespaceBeaker
@@ -535,7 +536,6 @@
       - SolarControlComputerCircuitboard
       - SolarTrackerElectronics
       - TurboItemRechargerCircuitboard
-      - PowerComputerCircuitboard
       - AutolatheHyperConvectionMachineCircuitboard
       - ProtolatheHyperConvectionMachineCircuitboard
       - CircuitImprinterHyperConvectionMachineCircuitboard
@@ -582,8 +582,8 @@
       - ShipyardCircuitboard # backmen
       - ReagentGrinderIndustrialMachineCircuitboard
       - JukeboxCircuitBoard
-      - SalvageExpeditionsComputerCircuitboard # Corvax-Cringe
       - SMESAdvancedMachineCircuitboard
+      - SalvageExpeditionsComputerCircuitboard # Corvax-Cringe
       - MachineBluespaceTransitorCircuitboard # Cats
       - MachineBluespaceHarvesterCircuitboard # Cats
   - type: EmagLatheRecipes

@@ -122,10 +122,10 @@
   components:
   - type: LightBulb
     bulb: Bulb
-    color: "#be885e" 
-    lightEnergy: 2
+    color: "#FFD1A3" # 4000K color temp
+    lightEnergy: 1.0
     lightRadius: 6
-    lightSoftness: 1
+    lightSoftness: 1.1
   - type: Tag
     tags:
     - LightBulb
@@ -215,9 +215,9 @@
   description: A light fixture.
   components:
   - type: LightBulb
-    color: "#bac9d6" 
-    lightEnergy: 0.6
-    lightRadius: 7
+    color: "#FFE4CE" # 5000K color temp
+    lightEnergy: 0.8
+    lightRadius: 10
     lightSoftness: 1
     PowerUse: 25
 

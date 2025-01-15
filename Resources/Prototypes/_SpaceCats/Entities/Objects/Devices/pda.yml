@@ -12,6 +12,11 @@
       whitelist:
         tags:
         - Write
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       pda-bridgeofficer
   - type: PdaBorderColor
     borderColor: "#7C5D00"
   - type: Icon
@@ -25,8 +30,11 @@
   components:
   - type: Pda
     id: MaidIDCard
-  - type: Icon
-    state: pda-maid
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       pda-maid
 
 - type: entity
   parent: BasePDA
@@ -36,9 +44,13 @@
   components:
   - type: Pda
     id: SecurityEngineerIDCard
-    state: pda-security-enginer
   - type: PdaBorderColor
     borderColor: "#9b2b2a"
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       pda-security-enginer
   - type: Icon
     state: pda-security
   - type: CartridgeLoader

@@ -25,6 +25,7 @@
   components:
   - type: Pda
     id: MaidIDCard
+  - type: Icon
     state: pda-maid
 
 - type: entity

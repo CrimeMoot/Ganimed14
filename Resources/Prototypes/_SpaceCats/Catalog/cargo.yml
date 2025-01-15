@@ -12,8 +12,8 @@
 - type: entity
   id: CrateCloakerHardsuit
   parent: [ CrateWeaponSecure, BaseRestrictedContraband ]
-  name: ящик скафандра снайпера ОПЗ
-  description: Содержит специальный скафандр сил ОПЗ с маскировочной сетью. Дорогой!
+  name: ящик скафандра снайпера ТСФ
+  description: Содержит специальный скафандр сил ТСФ с маскировочной сетью. Дорогой!
   components:
   - type: StorageFill
     contents:

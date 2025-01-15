@@ -1,8 +1,8 @@
 - type: entity
   parent: ClothingOuterHardsuitBase
   id: CloakerHardsuit
-  name: РИГ снайпера ОПЗ
-  description: Легкобронированный композитный скафандр снайперов ОПЗ,дополненный прибором термального видения. Медленно скрывает своего носителя,если не двигаться,но одно движение полностью сломает маскировку!
+  name: РИГ снайпера ТСФ
+  description: Легкобронированный композитный скафандр снайперов ТСФ,дополненный прибором термального видения. Медленно скрывает своего носителя,если не двигаться,но одно движение полностью сломает маскировку!
   components:
   - type: Sprite
     sprite: _SpaceCats/Clothing/OuterClothing/Hardsuits/cloaker.rsi
@@ -35,7 +35,7 @@
   parent: ClothingHeadHardsuitBase
   id: CloakerHardsuitHelmet
   name: шлем РИГ снайпера
-  description: Легкобронированный шлем снайперов ОПЗ,дополненный ПНВ и маскировочной сетью.
+  description: Легкобронированный шлем снайперов ТСФ,дополненный ПНВ и маскировочной сетью.
   components:
   - type: Sprite
     sprite: _SpaceCats/Clothing/Head/Hardsuits/cloaker.rsi

@@ -82,7 +82,7 @@
   parent: PosterBase
   id: PosterLegitEarthGovMC
   name: Агитационный плакат EarthGov
-  description: Вступай в корпус морской пехоты ОПЗ!
+  description: Вступай в корпус морской пехоты ТСФ!
   components:
   - type: Sprite
     sprite: Backmen/Structures/Wallmounts/Posters/UEG.rsi
@@ -92,7 +92,7 @@
   parent: PosterLegitEarthGovMC
   id: PosterLegitEarthGov
   name: плакат EarthGov
-  description: Плакат объеденненого правительства земли. На плакате изображен герб ОПЗ.
+  description: Плакат объеденненого правительства земли. На плакате изображен герб ТСФ.
   components:
   - type: Sprite
     state: poster2
@@ -110,7 +110,7 @@
   parent: PosterLegitEarthGovMC
   id: PosterLegitEarthGov3
   name: Земле нужен ты
-  description: Агитационный плакат с призывом вступить в федеральные структуры ОПЗ.
+  description: Агитационный плакат с призывом вступить в федеральные структуры ТСФ.
   components:
   - type: Sprite
     state: poster4
@@ -128,7 +128,7 @@
   parent: PosterLegitEarthGovMC
   id: PosterLegitEarthGov5
   name: Вступай!
-  description: Запешитесь в резерв армейского спецназа ОПЗ! Станьте героем, о котором знает вся галактика!
+  description: Запешитесь в резерв армейского спецназа ТСФ! Станьте героем, о котором знает вся галактика!
   components:
   - type: Sprite
     state: poster6
@@ -174,8 +174,8 @@
 - type: entity
   parent: PosterLegitEarthGovMC
   id: PosterLegitEarthGov10
-  name: агитационная брошура ОПЗ
-  description: На плакате написано "ОПЗ был основан на земле, нашими великими отцами основателями, тогда человечество стало едино и смогло подчинить себе всю галактику!"
+  name: агитационная брошура ТСФ
+  description: На плакате написано "ТСФ был основан на земле, нашими великими отцами основателями, тогда человечество стало едино и смогло подчинить себе всю галактику!"
   components:
   - type: Sprite
     state: poster11
@@ -192,8 +192,8 @@
 - type: entity
   parent: PosterLegitEarthGovMC
   id: PosterLegitEarthGov12
-  name: рекомендация ОПЗ
-  description: СССП стали часто проникать на космические станции, рекомендуется при обнаружении коммуниста, немедленно сообщать в местное отделение государственных структур ОПЗ.
+  name: рекомендация ТСФ
+  description: Активность диверсантов СССП растёт с каждым днём. При обнаружении диверсанта, рекомендуется немедленно сообщить об этом в местное отделение государственных структур ТСФ.
   components:
   - type: Sprite
     state: poster13

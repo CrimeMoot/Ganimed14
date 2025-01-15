@@ -2,8 +2,8 @@
   name: начальник депо
   id: MobUEGKosmoportCaptain
   parent: MobBaseNpc
-  suffix: suppa ОПЗ
-  description: Глава местного депо, одет в стандартную командную форму транспортных сил ОПЗ.
+  suffix: suppa ТСФ
+  description: Глава местного депо, одет в стандартную командную форму транспортных сил ТСФ.
   components:
   - type: HTN
     rootTask:
@@ -23,8 +23,8 @@
   name: сотрудник депо
   id: MobUEGKosmoportService
   parent: MobBaseNpc
-  suffix: suppa ОПЗ
-  description: Сотрудница депо ОПЗ, ведет отчетную деятельность и руководит местными силами охраны.
+  suffix: suppa ТСФ
+  description: Сотрудница депо ТСФ, ведет отчетную деятельность и руководит местными силами охраны.
   components:
   - type: HTN
     rootTask:
@@ -44,7 +44,7 @@
   name: пилот
   id: MobUEGPilot
   parent: MobBaseNpc
-  suffix: suppa ОПЗ Пилот
+  suffix: suppa ТСФ Пилот
   description: Пилот, управляет почти всеми видами космического транспорта, в данный момент отдыхает, смотря на шлюз.
   components:
   - type: HTN
@@ -65,7 +65,7 @@
   name: Полицеский
   id: MobPoliceUEG
   parent: MobBaseNpc
-  suffix: suppa ОПЗ Полиция
+  suffix: suppa ТСФ Полиция
   description: Мужчина, одет в полевую форму полиции, на нашивке виднеется символ МВД и надпись "Транспортная Дивизия МВД".
   components:
   - type: MeleeWeapon
@@ -97,7 +97,7 @@
 - type: entity
   id: MobGuardPoliceUEG
   parent: MobPoliceUEG
-  suffix: suppa Guard ОПЗ Полиция
+  suffix: suppa Guard ТСФ Полиция
   components:
   - type: HTN
     rootTask:
@@ -107,7 +107,7 @@
   name: Полицеский
   id: MobPoliceUEGPistol
   parent: MobBaseNpc
-  suffix: suppa ОПЗ Полиция Pistol
+  suffix: suppa ТСФ Полиция Pistol
   description: Мужчина, одет в полевую форму полиции и вооружен табельным g22, на нашивке виднеется символ МВД и надпись "Транспортная Дивизия МВД".
   components:
   - type: HTN
@@ -148,7 +148,7 @@
 - type: entity
   id: MobGuardPoliceUEGPistol
   parent: MobPoliceUEGPistol
-  suffix: suppa Guard ОПЗ Полиция Pistol
+  suffix: suppa Guard ТСФ Полиция Pistol
   components:
   - type: HTN
     rootTask:
@@ -158,7 +158,7 @@
   name: Спецназ
   id: MobPoliceUEGShotgun
   parent: MobBaseNpc
-  suffix: suppa ОПЗ Полиция Дробовик
+  suffix: suppa ТСФ Полиция Дробовик
   description: Мужчина одетый в полевую форму полиции и в снаряжении спецназа, на нашивке виднеется символ МВД и надпись "Транспортная Дивизия МВД".
   components:
   - type: HTN
@@ -194,7 +194,7 @@
 - type: entity
   id: MobGuardPoliceUEGShotgun
   parent: MobPoliceUEGShotgun
-  suffix: suppa Guard ОПЗ Полиция Дробовик
+  suffix: suppa Guard ТСФ Полиция Дробовик
   components:
   - type: HTN
     rootTask:

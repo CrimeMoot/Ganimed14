@@ -110,8 +110,8 @@
 - type: entity
   parent: BookLoreBase
   id: BookShips
-  name: Классификация кораблей ОПЗ
-  description: Данная книга показывает классификацию флотов в ОПЗ.
+  name: Классификация кораблей ТСФ
+  description: Данная книга показывает классификацию флотов в ТСФ.
   components:
     - type: Sprite
       layers:

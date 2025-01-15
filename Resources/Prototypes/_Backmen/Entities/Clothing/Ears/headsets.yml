@@ -33,8 +33,8 @@
 - type: entity
   parent: ClothingHeadset
   id: ClothingHeadsetUEG
-  name: Гарнитура ОПЗ
-  description: Гарнитура используемая представителями ОПЗ
+  name: Гарнитура ТСФ
+  description: Гарнитура используемая представителями ТСФ
   components:
   - type: ContainerFill
     containers:
@@ -49,8 +49,8 @@
 - type: entity
   parent: ClothingHeadset
   id: ClothingHeadsetUEGofficer
-  name: Гарнитура охраны ОПЗ
-  description: Гарнитура используемая офицерами ОПЗ
+  name: Гарнитура охраны ТСФ
+  description: Гарнитура используемая офицерами ТСФ
   components:
   - type: ContainerFill
     containers:

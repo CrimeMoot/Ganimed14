@@ -22,8 +22,8 @@ ent-ClothingNeckCloakarbitr = плащ Арбитра
 ent-ClothingNeckLeatherCoat = кожаный плащ
     .desc = Как у дедушки...
 
-ent-ClothingNeckCloakUEG = плащ ОПЗ
-    .desc = Выдаётся только верхушке ОПЗ.
+ent-ClothingNeckCloakUEG = плащ ТСФ
+    .desc = Выдаётся только верхушке ТСФ.
 
 ent-ClothingNeckCloakROE = плащ кровавой пустоты
     .desc = Завораживающий плащ, в этой пустоте явно что то есть!

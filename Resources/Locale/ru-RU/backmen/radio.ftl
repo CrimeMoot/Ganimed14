@@ -18,7 +18,7 @@ bkm-radio-fleet = Флот
 
 bkm-radio-flesh = Культ Плоти
 
-bkm-radio-UEG = ОПЗ
+bkm-radio-UEG = ТСФ
 
 bkm-radio-AID = ИИ Дроны
 bkm-radio-AIMALF = МАЛФ

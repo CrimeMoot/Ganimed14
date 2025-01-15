@@ -111,7 +111,7 @@
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
   id: ClothingHeadHelmetHardsuitUEG
-  name: Шлем скафандра охраны ОПЗ
+  name: Шлем скафандра охраны ТСФ
   description: Этот шлем был нагло скопирован с шлема лидера ОБР NanoTrasen
   components:
   - type: Sprite
@@ -238,7 +238,7 @@
   parent: ClothingHeadHelmetHardsuitERTOperativeAlpha1
   id: ClothingHeadHelmetHardsuitBlueShield
   name: шлем скафандра Синего Щита
-  description: Модифицированный шлем скафандра разведчиков ОПЗ, специализирован для ведения разведки на дальних расстояниях, оснащен устройством ночного видиния.
+  description: Модифицированный шлем скафандра разведчиков ТСФ, специализирован для ведения разведки на дальних расстояниях, оснащен устройством ночного видиния.
   components:
   - type: Sprite
     sprite: Backmen/Clothing/Head/Hardsuits/bluehardhelmet.rsi

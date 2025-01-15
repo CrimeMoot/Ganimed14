@@ -24,5 +24,5 @@ ent-EncryptionKey_GROUPS_8 = Ключ шифрования группы 8
     .desc = { "Особый ключ шифрования, нужный для доступа к выделенной частоте группы 8" }
 ent-EncryptionKey_GROUPS_9 = Ключ шифрования группы 9
     .desc = { "Особый ключ шифрования, нужный для доступа к выделенной частоте группы 9" }
-ent-EncryptionKeyUEG = Ключ шифрования ОПЗ
+ent-EncryptionKeyUEG = Ключ шифрования ТСФ
     .desc = { ent-EncryptionKey.desc }

@@ -342,7 +342,7 @@
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitUEG
-  name: Водолазка представителя ОПЗ
+  name: Водолазка представителя ТСФ
   description: Лёгкая и комфортная водолазка
   components:
   - type: Sprite
@@ -353,7 +353,7 @@
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitUEGofficer
-  name: Униформа офицера ОПЗ
+  name: Униформа офицера ТСФ
   description: Униформа с безполезным камуфляжем. Лучше не связыватся с её обладателями
   components:
   - type: Sprite

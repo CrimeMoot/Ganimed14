@@ -4,7 +4,7 @@ ent-RubberStampCSH = Печать CSH
     .desc = { ent-RubberStampRd.desc }
 ent-PaperManifestPassenger = манифест пассажиров
     .desc = Список сведений о том, кто зарегистрирован на конкретном маршруте.
-ent-RubberStampUEG = Печать ОПЗ
+ent-RubberStampUEG = Печать ТСФ
     .desc = { ent-RubberStampBase.desc }
 
 stamp-component-stamped-name-RO = Красный орден

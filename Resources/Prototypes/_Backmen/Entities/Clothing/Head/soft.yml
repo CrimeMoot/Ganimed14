@@ -51,8 +51,8 @@
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadHatMVDCap
-  name: кепка полиции ОПЗ
-  description: Кепка полиции ОПЗ, имеет какарду министерства внутренних дел ОПЗ.
+  name: кепка полиции ТСФ
+  description: Кепка полиции ТСФ, имеет какарду министерства внутренних дел ТСФ.
   components:
   - type: Sprite
     sprite: Backmen/Clothing/Head/Soft/mvdcap.rsi

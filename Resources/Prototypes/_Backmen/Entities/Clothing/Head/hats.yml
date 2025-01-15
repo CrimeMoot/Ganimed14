@@ -289,8 +289,8 @@
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadHatMVDBeret
-  name: берет полиции ОПЗ
-  description: Берет офицеров полиции ОПЗ, имеет эмблему министерства внутренних дел ОПЗ.
+  name: берет полиции ТСФ
+  description: Берет офицеров полиции ТСФ, имеет эмблему министерства внутренних дел ТСФ.
   components:
   - type: Sprite
     sprite: Backmen/Clothing/Head/Hats/mvdberet.rsi
@@ -300,8 +300,8 @@
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadHatMVDOfficerCap
-  name: фуражка ОПЗ
-  description: Фуражка полиции ОПЗ, имеет какарду с винками министерства внутренних дел ОПЗ.
+  name: фуражка ТСФ
+  description: Фуражка полиции ТСФ, имеет какарду с винками министерства внутренних дел ТСФ.
   components:
   - type: Sprite
     sprite: Backmen/Clothing/Head/Hats/mvdcapofficer.rsi

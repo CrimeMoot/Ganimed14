@@ -137,7 +137,7 @@
   parent: ClothingOuterHardsuitBase
   id: ClothingOuterHardsuitUEG
   name: Скафандр С.О.Н
-  description: Обычный скафандр С.О.Н который выдаётся оперативникам С.О.Н и некоторым офицерам ОПЗ
+  description: Обычный скафандр С.О.Н который выдаётся оперативникам С.О.Н и некоторым офицерам ТСФ
   components:
   - type: Sprite
     sprite: Backmen/Clothing/OuterClothing/Hardsuits/ueg-hardsuit.rsi
@@ -422,7 +422,7 @@
   parent: ClothingOuterHardsuitSecurityRed
   id: ClothingOuterHardsuitBlueShield
   name: боевой скафандр Синего Щита
-  description: Модицифированный военный скафандр разведки ОПЗ, имеет литые тяжелые бронеплиты и гидро-экзоскелет, в разы увеличивает физические способности, а так же морской камуфляж, который позволяет прятаться в море.
+  description: Модицифированный военный скафандр разведки ТСФ, имеет литые тяжелые бронеплиты и гидро-экзоскелет, в разы увеличивает физические способности, а так же морской камуфляж, который позволяет прятаться в море.
   components:
   - type: Sprite
     sprite: Backmen/Clothing/OuterClothing/Hardsuits/bluehardsuit.rsi

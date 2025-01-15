@@ -74,8 +74,8 @@
 - type: entity
   parent: ClothingNeckBase
   id: ClothingNeckCloakUEG
-  name: Плащ ОПЗ
-  description: Выдаётся только верхушке ОПЗ.
+  name: Плащ ТСФ
+  description: Выдаётся только верхушке ТСФ.
   components:
   - type: Sprite
     sprite: Backmen/Clothing/Neck/Cloaks/eug-cloak.rsi

@@ -10,8 +10,8 @@ issuer-Donk-Pocket-Corp = [color=DarkRed]Donk Pocket Corp[/color]
 objective-issuer-Donk-Pocket-Corp = [color=DarkRed]Donk Pocket Corp[/color]
 
 issuer-Gorlex-Marauders = [color=Red]Gorlex Confederation[/color]
-      Мы объявлены в ОПЗ как террористическая организация, нам наплевать на то, как нас будут освещать общественность.
-      Просто убейте всех, даже других агентов синдиката, мы не имеем союзных отношений с кем-то, кроме нас самих.
+      Мы объявлены в ТСФ спонсорами терроризма, нам наплевать на то, как нас будут освещать общественность.
+      Просто убейте всех, даже других агентов синдиката, всяко наши "партнёры" останутся в неведении.
 objective-issuer-Gorlex-Marauders = [color=Red]Gorlex Confederation[/color]
 
 issuer-Interdyne-Pharmaceutics = [color=LightBlue]Interdyne Pharmaceutics[/color]

@@ -22,10 +22,10 @@ ent-IdCardRO = Id карта Красного Ордена
 ent-DeliveryIDCard = ID карта доставщика
     .desc = { ent-IDCardStandard.desc }
 
-ent-UEGrepIDCard = ID карта представителя ОПЗ
+ent-UEGrepIDCard = ID карта представителя ТСФ
     .desc = { ent-IDCardStandard.desc }
 
-ent-UEGoffIDCard = ID карта офицера ОПЗ
+ent-UEGoffIDCard = ID карта офицера ТСФ
     .desc = { ent-IDCardStandard.desc }
 
 ent-IdCardIOG = ID карта сотрудника ИОГ.

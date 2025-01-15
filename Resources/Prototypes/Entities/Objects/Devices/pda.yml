@@ -177,7 +177,6 @@
   components:
   - type: Pda
     id: TechnicalAssistantIDCard
-    state: pda-interntech
     penSlot:
       startingItem: PenEngineering
       priority: -1
@@ -203,7 +202,6 @@
   components:
   - type: Pda
     id: MedicalInternIDCard
-    state: pda-internmed
     penSlot:
       startingItem: PenMedical2
       priority: -1
@@ -232,7 +230,6 @@
   components:
   - type: Pda
     id: SecurityCadetIDCard
-    state: pda-interncadet
     penSlot:
       startingItem: PenSecurityRed
       priority: -1
@@ -258,7 +255,6 @@
   components:
   - type: Pda
     id: ResearchAssistantIDCard
-    state: pda-internsci
     penSlot:
       startingItem: PenScience
       priority: -1
@@ -284,7 +280,6 @@
   components:
   - type: Pda
     id: ServiceWorkerIDCard
-    state: pda-internservice
     penSlot:
       startingItem: PenGreen
       priority: -1
@@ -330,7 +325,6 @@
   components:
   - type: Pda
     id: BotanistIDCard
-    state: pda-hydro
     penSlot:
       startingItem: PenHydroponics
       priority: -1
@@ -423,7 +417,6 @@
       whitelist:
         tags:
         - Write
-    state: pda-mime
     idSlot: #  rewrite without sound because mime
       name: ID Card
       whitelist:
@@ -455,7 +448,6 @@
       whitelist:
         tags:
         - Write
-    state: pda-chaplain
   - type: Appearance
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
@@ -485,7 +477,6 @@
   components:
   - type: Pda
     id: QuartermasterIDCard
-    state: pda-qm
     penSlot:
       startingItem: PenCargo1QM
       priority: -1
@@ -511,7 +502,6 @@
   components:
   - type: Pda
     id: CargoIDCard
-    state: pda-cargo
     penSlot:
       startingItem: PenCargo
       priority: -1
@@ -536,7 +526,6 @@
   components:
   - type: Pda
     id: SalvageIDCard
-    state: pda-miner
     penSlot:
       startingItem: PenCargo
       priority: -1
@@ -570,7 +559,6 @@
   components:
   - type: Pda
     id: BartenderIDCard
-    state: pda-bartender
     penSlot:
       startingItem: PenBooze
       priority: -1
@@ -653,7 +641,6 @@
   components:
   - type: Pda
     id: VisitorIDCard
-    state: pda-lawyer
     penSlot:
       startingItem: BlackFountainPen
       priority: -1
@@ -674,7 +661,6 @@
   components:
   - type: Pda
     id: JanitorIDCard
-    state: pda-janitor
     penSlot:
       startingItem: PenJanitor
       priority: -1
@@ -748,7 +734,6 @@
   components:
   - type: Pda
     id: CEIDCard
-    state: pda-ce
     penSlot:
       startingItem: PenEngineeringCE
       priority: -1
@@ -774,7 +759,6 @@
   components:
   - type: Pda
     id: EngineeringIDCard
-    state: pda-engineer
     penSlot:
       startingItem: PenEngineering
       priority: -1
@@ -800,7 +784,6 @@
   components:
   - type: Pda
     id: CMOIDCard
-    state: pda-cmo
     penSlot:
       startingItem: PenMedica1CMO
       priority: -1
@@ -827,7 +810,6 @@
   components:
   - type: Pda
     id: MedicalIDCard
-    state: pda-medical
     penSlot:
       startingItem: PenMedical1
       priority: -1
@@ -867,7 +849,6 @@
   components:
   - type: Pda
     id: ParamedicIDCard
-    state: pda-paramedic
     penSlot:
       startingItem: PenMedical1
       priority: -1
@@ -893,7 +874,6 @@
   components:
   - type: Pda
     id: ChemistIDCard
-    state: pda-chemistry
     penSlot:
       startingItem: PenChemist
       priority: -1
@@ -919,7 +899,6 @@
   components:
   - type: Pda
     id: RDIDCard
-    state: pda-rd
     penSlot:
       startingItem: PenScienceFountain
       priority: -1
@@ -946,7 +925,6 @@
   components:
   - type: Pda
     id: ResearchIDCard
-    state: pda-science
     penSlot:
       startingItem: PenScience
       priority: -1
@@ -972,7 +950,6 @@
   components:
   - type: Pda
     id: HoSIDCard
-    state: pda-hos
     penSlot:
       startingItem: PenSecurityFountainMetallic
       priority: -1
@@ -1005,7 +982,6 @@
   components:
   - type: Pda
     id: WardenIDCard
-    state: pda-warden
     penSlot:
       startingItem: PenSecurityFountain
       priority: -1
@@ -1031,7 +1007,6 @@
   components:
   - type: Pda
     id: SecurityIDCard
-    state: pda-security
     penSlot:
       startingItem: PenSecurityBlack
       priority: -1
@@ -1169,7 +1144,6 @@
   components:
   - type: Pda
     id: AtmosIDCard
-    state: pda-atmos
     penSlot:
       startingItem: PenAtmos
       priority: -1
@@ -1254,7 +1228,6 @@
   components:
   - type: Pda
     id: ERTLeaderIDCard
-    state: pda-ert
     penSlot:
       startingItem: BlackFountainPen
       priority: -1
@@ -1346,7 +1319,6 @@
   components:
   - type: Pda
     id: CBURNIDcard
-    state: pda-ert
     penSlot:
       startingItem: BlackFountainPen
       priority: -1
@@ -1366,7 +1338,6 @@
   components:
   - type: Pda
     id: PsychologistIDCard
-    state: pda-medical
     penSlot:
       startingItem: PenMedical1
       priority: -1
@@ -1453,7 +1424,6 @@
   components:
   - type: Pda
     id: DetectiveIDCard
-    state: pda-detective
     penSlot:
       startingItem: PenSecurityBlack
       priority: -1
@@ -1485,7 +1455,6 @@
   components:
   - type: Pda
     id: BrigmedicIDCard
-    state: pda-brigmedic
     penSlot:
       startingItem: PenBrigmedic
       priority: -1
@@ -1546,7 +1515,6 @@
   components:
   - type: Pda
     id: SeniorEngineerIDCard
-    state: pda-seniorengineer
     penSlot:
       startingItem: PenEngineering
       priority: -1
@@ -1572,7 +1540,6 @@
   components:
   - type: Pda
     id: SeniorResearcherIDCard
-    state: pda-seniorresearcher
     penSlot:
       startingItem: PenScienceOverpriced
       priority: -1
@@ -1599,7 +1566,6 @@
   components:
   - type: Pda
     id: SeniorPhysicianIDCard
-    state: pda-seniorphysician
     penSlot:
       startingItem: PenMedical1
       priority: -1
@@ -1626,7 +1592,6 @@
   components:
   - type: Pda
     id: SeniorOfficerIDCard
-    state: pda-seniorofficer
     penSlot:
       startingItem: PenSecurityRed
       priority: -1

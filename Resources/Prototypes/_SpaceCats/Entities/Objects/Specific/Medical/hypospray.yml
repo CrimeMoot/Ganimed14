@@ -46,7 +46,7 @@
   - type: UseDelay
     delay: 1.1
   - type: StaticPrice
-    price: 550
+    price: 255
 
 - type: entity
   name: инъектор химикатов

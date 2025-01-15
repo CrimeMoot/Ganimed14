@@ -33,13 +33,17 @@ public sealed class AdminWhoCommand : IConsoleCommand
         var adminList = new List<string>();
         foreach (var admin in adminMgr.ActiveAdmins)
         {
-           var sb = new StringBuilder(); 
+            var sb = new StringBuilder();
 
             var adminData = adminMgr.GetAdminData(admin)!;
             DebugTools.AssertNotNull(adminData);
 
             if (adminData.Stealth && !seeStealth)
                 continue;
+
+            if (!first)
+                sb.Append('\n');
+            first = false;
 
             sb.Append(admin.Name);
             if (adminData.Title is { } title)

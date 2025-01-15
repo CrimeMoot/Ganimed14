@@ -6,7 +6,6 @@
   components:
   - type: Pda
     id: BridgeOfficerIDCard
-    state: pda-bridgeofficer
     penSlot:
       startingItem: PenCap
       priority: -1

@@ -21,7 +21,7 @@ CHAN_TOKEN      = os.environ["CHAN_TOKEN"]
 DISCORD_SPLIT_LIMIT = 2000
 DISCORD_WEBHOOK_URL = os.environ.get("DISCORD_WEBHOOK_URL")
 
-CHANGELOG_FILES = ["Resources/Changelog/Changelog.yml", "Resources/Changelog/ChangelogSyndie.yml", "Resources/Changelog/ChangelogBkm.yml"] # Corvax-MultiChangelog
+CHANGELOG_FILES = ["Resources/Changelog/Changelog.yml", "Resources/Changelog/ChangelogSyndie.yml", "Resources/Changelog/ChangelogBkm.yml", "Resources/Changelog/ChangelogGanimed.yml"] # Corvax-MultiChangelog
 
 TYPES_TO_EMOJI = {
     "Fix":    "🐛",

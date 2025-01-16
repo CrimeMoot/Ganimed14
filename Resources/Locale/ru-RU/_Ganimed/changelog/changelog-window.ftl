@@ -1,0 +1,1 @@
+changelog-tab-title-ChangelogGanimed = Обновления Enterprise

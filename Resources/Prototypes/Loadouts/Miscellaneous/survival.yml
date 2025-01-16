@@ -19,6 +19,14 @@
     - Moth
     - Reptilian
     - Vulpkanin # Corvax-MRP
+    # Ganimed-start
+    - ArachneClassic
+    - Felinid
+    - HumanoidFoxes
+    - Harpy
+    - Oni
+    - Shadowkin
+    # Ganimed-stop
 
 - type: loadoutEffectGroup
   id: EffectSpeciesVox

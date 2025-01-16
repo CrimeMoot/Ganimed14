@@ -47,7 +47,7 @@
         - Unstackable
     - type: Sprite
       drawdepth: FloorObjects
-      sprite: Structures/Piping/Atmospherics/vent.rsi
+      sprite: _Ganimed/Structures/Piping/Atmospherics/vent.rsi # Ganimed edit
       layers:
         - sprite: Structures/Piping/Atmospherics/pipe.rsi
           state: pipeHalf
@@ -89,7 +89,7 @@
   components:
     - type: Sprite
       drawdepth: FloorObjects
-      sprite: Structures/Piping/Atmospherics/vent.rsi
+      sprite: _Ganimed/Structures/Piping/Atmospherics/vent.rsi # Ganimed edit
       layers:
         - sprite: Structures/Piping/Atmospherics/pipe.rsi
           state: pipeHalf
@@ -133,7 +133,7 @@
     - type: Sprite
       noRot: true
       drawdepth: FloorObjects
-      sprite: Structures/Piping/Atmospherics/scrubber.rsi
+      sprite: _Ganimed/Structures/Piping/Atmospherics/scrubber.rsi # Ganimed edit
       layers:
         - sprite: Structures/Piping/Atmospherics/pipe.rsi
           state: pipeHalf

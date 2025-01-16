@@ -492,6 +492,7 @@ public sealed partial class LobbyUIController : UIController, IOnStateEntered<Lo
             if (_prototypeManager.HasIndex<RoleLoadoutPrototype>(LoadoutSystem.GetJobPrototype(job.ID)))
             {
                 var loadout = humanoid.GetLoadoutOrDefault(LoadoutSystem.GetJobPrototype(job.ID), _playerManager.LocalSession, humanoid.Species, EntityManager, _prototypeManager);
+
                 GiveDummyLoadout(dummyEnt, loadout);
             }
         }

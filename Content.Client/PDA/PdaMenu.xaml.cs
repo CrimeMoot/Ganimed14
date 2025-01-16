@@ -33,10 +33,10 @@ namespace Content.Client.PDA
         private string _alertLevel = Loc.GetString("comp-pda-ui-unknown");
         private string _instructions = Loc.GetString("comp-pda-ui-unknown");
 
-        // cats-start
+        // Ganimed-start
         private TimeSpan? _evacShuttleTime;
         private EvacShuttleStatus _evacShuttleStatus;
-        // cats-end
+        // Ganimed-end
         
 
         private int _currentView;
@@ -141,10 +141,10 @@ namespace Content.Client.PDA
         {
             FlashLightToggleButton.IsActive = state.FlashlightEnabled;
 
-            // cats-start
+            // Ganimed-start
             _evacShuttleTime = state.PdaOwnerInfo.EvacShuttleTime;
             _evacShuttleStatus = state.PdaOwnerInfo.EvacShuttleStatus;
-            // cats-end
+            // Ganimed-end
 
             if (state.PdaOwnerInfo.ActualOwnerName != null)
             {
@@ -182,7 +182,7 @@ namespace Content.Client.PDA
             StationTimeLabel.SetMarkup(Loc.GetString("comp-pda-ui-station-time",
                 ("time", stationTime.ToString("hh\\:mm\\:ss"))));
 
-            // cats-start
+            // Ganimed-start
             var remaining = TimeSpan.Zero;
 
             if (state.PdaOwnerInfo.EvacShuttleTime != null)
@@ -192,7 +192,7 @@ namespace Content.Client.PDA
 
             ShuttleTimeLabel.SetMarkup(Loc.GetString(statusText,
                 ("time", remaining.ToString("hh\\:mm\\:ss"))));
-            // cats-end
+            // Ganimed-end
 
             var alertLevel = state.PdaOwnerInfo.StationAlertLevel;
             var alertColor = state.PdaOwnerInfo.StationAlertColor;
@@ -359,7 +359,7 @@ namespace Content.Client.PDA
             }
         }
 
-        // cats-start
+        // Ganimed-start
         private string EvacShuttleTitle(EvacShuttleStatus status)
         {
             switch (status)
@@ -374,7 +374,7 @@ namespace Content.Client.PDA
                     return "comp-pda-ui-shuttle-call-time";
             }
         }
-        // cats-end
+        // Ganimed-end
 
         protected override void Draw(DrawingHandleScreen handle)
         {
@@ -385,7 +385,7 @@ namespace Content.Client.PDA
             StationTimeLabel.SetMarkup(Loc.GetString("comp-pda-ui-station-time",
                 ("time", stationTime.ToString("hh\\:mm\\:ss"))));
 
-            // catsstart
+            // Ganimedstart
             var remaining = TimeSpan.Zero;
 
             if (_evacShuttleTime != null)

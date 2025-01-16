@@ -3,7 +3,7 @@ using Content.Server.Speech.Components;
 using Content.Shared.EntityEffects;
 using Content.Shared.Mind.Components;
 using Robust.Shared.Prototypes;
-using Content.Shared.Humanoid; // Cats
+using Content.Shared.Humanoid; // Ganimed
 
 namespace Content.Server.EntityEffects.Effects;
 

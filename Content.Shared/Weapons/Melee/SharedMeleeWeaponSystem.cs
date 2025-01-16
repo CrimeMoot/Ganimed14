@@ -48,7 +48,7 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
     [Dependency] private   readonly SharedPhysicsSystem     _physics         = default!;
     [Dependency] private   readonly IPrototypeManager       _protoManager    = default!;
     [Dependency] private   readonly StaminaSystem           _stamina         = default!;
-    [Dependency] private   readonly TagSystem               _tagSystem       = default!; // cats-shield
+    [Dependency] private   readonly TagSystem               _tagSystem       = default!; // Ganimed-shield
 
     private const int AttackMask = (int) (CollisionGroup.MobMask | CollisionGroup.Opaque);
 
@@ -567,7 +567,7 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
         var entities = GetEntityList(ev.Entities);
         
 
-        entities = entities.Where(e => !_tagSystem.HasTag(e, "IgnoreMelee")).ToList(); // cats-shield
+        entities = entities.Where(e => !_tagSystem.HasTag(e, "IgnoreMelee")).ToList(); // Ganimed-shield
 
         if (entities.Count == 0)
         {

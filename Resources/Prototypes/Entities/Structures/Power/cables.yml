@@ -55,11 +55,11 @@
   description: An orange high voltage power cable.
   components:
   - type: Sprite
-    sprite: _SpaceCats/Structures/Power/Cables/hv_cable.rsi # Cats edit
+    sprite: _Ganimed/Structures/Power/Cables/hv_cable.rsi # Cats edit
     state: hvcable_0
     drawdepth: ThickWire
   - type: Icon
-    sprite: _SpaceCats/Structures/Power/Cables/hv_cable.rsi # Cats edit
+    sprite: _Ganimed/Structures/Power/Cables/hv_cable.rsi # Cats edit
     state: hvcable_4
   - type: NodeContainer
     nodes:
@@ -74,7 +74,7 @@
     damageDivisor: 3.333
     trackAllDamage: true
     damageOverlay:
-      sprite: _SpaceCats/Structures/Power/Cables/hv_cable_damage.rsi # Cats edit
+      sprite: _Ganimed/Structures/Power/Cables/hv_cable_damage.rsi # Cats edit
   - type: Destructible
     thresholds:
     - trigger:
@@ -120,11 +120,11 @@
   components:
   - type: Sprite
     color: Yellow
-    sprite: _SpaceCats/Structures/Power/Cables/mv_cable.rsi # Cats edit
+    sprite: _Ganimed/Structures/Power/Cables/mv_cable.rsi # Cats edit
     state: mvcable_0
   - type: Icon
     color: Yellow
-    sprite: _SpaceCats/Structures/Power/Cables/mv_cable.rsi # Cats edit
+    sprite: _Ganimed/Structures/Power/Cables/mv_cable.rsi # Cats edit
     state: mvcable_4
   - type: NodeContainer
     nodes:
@@ -172,11 +172,11 @@
   components:
   - type: Sprite
     color: Green
-    sprite: _SpaceCats/Structures/Power/Cables/lv_cable.rsi # Cats edit
+    sprite: _Ganimed/Structures/Power/Cables/lv_cable.rsi # Cats edit
     state: lvcable_0
   - type: Icon
     color: Green
-    sprite: _SpaceCats/Structures/Power/Cables/lv_cable.rsi # Cats edit
+    sprite: _Ganimed/Structures/Power/Cables/lv_cable.rsi # Cats edit
     state: lvcable_4
   - type: NodeContainer
     nodes:

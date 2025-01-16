@@ -172,11 +172,11 @@
     - Tail
     - Snout # I don't know if this is hugely problematic but better safe than sorry
     cloakSound:
-      path: /Audio/_Cats/Effects/Cloak/cloak_scout_on.ogg
+      path: /Audio/_Ganimed/Effects/Cloak/cloak_scout_on.ogg
       params:
         variation: 0.09
     uncloakSound:
-      path: /Audio/_Cats/Effects/Cloak/cloak_scout_off.ogg
+      path: /Audio/_Ganimed/Effects/Cloak/cloak_scout_off.ogg
       params:
         variation: 0.09
   - type: PowerCellDraw

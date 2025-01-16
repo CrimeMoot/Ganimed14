@@ -148,7 +148,7 @@
       noRot: true
       overrideContainerOcclusion: true # Ghosts always show up regardless of where they're contained.
       drawdepth: Ghosts
-      sprite: _SpaceCats/Mobs/Ghost/glist_ghost.rsi
+      sprite: _Ganimed/Mobs/Ghost/glist_ghost.rsi
       color: "#fff8"
       layers:
       - state: animated
@@ -162,7 +162,7 @@
       noRot: true
       overrideContainerOcclusion: true # Ghosts always show up regardless of where they're contained.
       drawdepth: Ghosts
-      sprite: _SpaceCats/Mobs/Ghost/ghost_dark.rsi
+      sprite: _Ganimed/Mobs/Ghost/ghost_dark.rsi
       color: "#fff8"
       layers:
       - state: endr_animet
@@ -176,7 +176,7 @@
       noRot: true
       overrideContainerOcclusion: true # Ghosts always show up regardless of where they're contained.
       drawdepth: Ghosts
-      sprite: _SpaceCats/Mobs/Ghost/ghost_dark.rsi
+      sprite: _Ganimed/Mobs/Ghost/ghost_dark.rsi
       color: "#fff8"
       layers:
       - state: Kotovasu
@@ -190,7 +190,7 @@
       noRot: true
       overrideContainerOcclusion: true # Ghosts always show up regardless of where they're contained.
       drawdepth: Ghosts
-      sprite: _SpaceCats/Mobs/Ghost/ghost_dark.rsi
+      sprite: _Ganimed/Mobs/Ghost/ghost_dark.rsi
       color: "#fff8"
       layers:
       - state: kvasik
@@ -204,7 +204,7 @@
       noRot: true
       overrideContainerOcclusion: true # Ghosts always show up regardless of where they're contained.
       drawdepth: Ghosts
-      sprite: _SpaceCats/Mobs/Ghost/ghosts.rsi
+      sprite: _Ganimed/Mobs/Ghost/ghosts.rsi
       color: "#fff8"
       layers:
       - state: endr_animet
@@ -218,7 +218,7 @@
       noRot: true
       overrideContainerOcclusion: true # Ghosts always show up regardless of where they're contained.
       drawdepth: Ghosts
-      sprite: _SpaceCats/Mobs/Ghost/ghosts.rsi
+      sprite: _Ganimed/Mobs/Ghost/ghosts.rsi
       color: "#fff8"
       layers:
       - state: kidz

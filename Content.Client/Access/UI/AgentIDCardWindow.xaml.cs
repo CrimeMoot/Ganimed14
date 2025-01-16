@@ -21,12 +21,12 @@ namespace Content.Client.Access.UI
 
         private const int JobIconColumnCount = 10;
 
-        private const int MaxNumberLength = 4; // Cats-PDAChat - Same as NewChatPopup
+        private const int MaxNumberLength = 4; // Ganimed-PDAChat - Same as NewChatPopup
 
         public event Action<string>? OnNameChanged;
         public event Action<string>? OnJobChanged;
 
-        public event Action<uint>? OnNumberChanged; // Cats-PDAChat - Add event for number changes
+        public event Action<uint>? OnNumberChanged; // Ganimed-PDAChat - Add event for number changes
 
         public event Action<ProtoId<JobIconPrototype>>? OnJobIconChanged;
 
@@ -42,11 +42,11 @@ namespace Content.Client.Access.UI
             JobLineEdit.OnTextEntered += e => OnJobChanged?.Invoke(e.Text);
             JobLineEdit.OnFocusExit += e => OnJobChanged?.Invoke(e.Text);
 
-            // Cats-PDAChat - Add handlers for number changes
+            // Ganimed-PDAChat - Add handlers for number changes
             NumberLineEdit.OnTextEntered += OnNumberEntered;
             NumberLineEdit.OnFocusExit += OnNumberEntered;
 
-            // Cats-PDAChat - Filter to only allow digits
+            // Ganimed-PDAChat - Filter to only allow digits
             NumberLineEdit.OnTextChanged += args =>
             {
                 if (args.Text.Length > MaxNumberLength)
@@ -61,14 +61,14 @@ namespace Content.Client.Access.UI
             };
         }
 
-        // Cats-PDAChat - Add number validation and event
+        // Ganimed-PDAChat - Add number validation and event
         private void OnNumberEntered(LineEdit.LineEditEventArgs args)
         {
             if (uint.TryParse(args.Text, out var number) && number > 0)
                 OnNumberChanged?.Invoke(number);
         }
 
-        // Cats-PDAChat - Add setter for current number
+        // Ganimed-PDAChat - Add setter for current number
         public void SetCurrentNumber(uint? number)
         {
             NumberLineEdit.Text = number?.ToString("D4") ?? "";

@@ -4,7 +4,7 @@ using Content.Shared.Humanoid.Prototypes;
 using Content.Shared.Preferences;
 using Content.Shared.Verbs;
 using Robust.Shared.GameObjects.Components.Localization;
-using Content.Server.Forensics; // Cats edit
+using Content.Server.Forensics; // Ganimed edit
 
 namespace Content.Server.Humanoid;
 
@@ -56,7 +56,7 @@ public sealed partial class HumanoidAppearanceSystem : SharedHumanoidAppearanceS
         if (TryComp<DnaComponent>(targetHumanoid.Owner, out var targetDNAComp) &&
             TryComp<DnaComponent>(sourceHumanoid.Owner, out var sourceDNAComp))
         {
-            targetDNAComp.DNA = sourceDNAComp.DNA; // Cats edit
+            targetDNAComp.DNA = sourceDNAComp.DNA; // Ganimed edit
         }
 
         Dirty(target, targetHumanoid);

@@ -9,7 +9,7 @@
   - type: Item
     size: Large
   - type: Sprite
-    sprite: _SpaceCats/Objects/Devices/flatpack.rsi # Cats edit
+    sprite: _Ganimed/Objects/Devices/flatpack.rsi # Cats edit
     layers:
     - state: base
     - state: overlay

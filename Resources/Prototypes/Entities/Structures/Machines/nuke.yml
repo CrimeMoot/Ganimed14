@@ -66,7 +66,7 @@
     radius: 4
     energy: 2.0
     color: "#FF4020"
-    mask: /Textures/_SpaceCats/Effects/LightMasks/double_cone.png # Cats edit
+    mask: /Textures/_Ganimed/Effects/LightMasks/double_cone.png # Cats edit
   - type: RotatingLight
     speed: 120
   - type: NavMapBeacon

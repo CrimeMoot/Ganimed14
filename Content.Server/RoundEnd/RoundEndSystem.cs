@@ -369,7 +369,7 @@ namespace Content.Server.RoundEnd
             }
         }
 
-        // cats-start
+        // Ganimed-start
         public TimeSpan TimeToCallShuttle()
         {
             var autoCalledBefore = _autoCalledBefore
@@ -377,7 +377,7 @@ namespace Content.Server.RoundEnd
                 : _cfg.GetCVar(CCVars.EmergencyShuttleAutoCallTime);
             return AutoCallStartTime + TimeSpan.FromMinutes(autoCalledBefore);
         }
-        // cats-end
+        // Ganimed-end
     }
 
     public sealed class RoundEndSystemChangedEvent : EntityEventArgs

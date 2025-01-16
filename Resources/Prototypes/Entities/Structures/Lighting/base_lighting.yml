@@ -446,7 +446,7 @@
     energy: 0.6
     offset: "0, 0.4"
     color: "#7CFC00"
-    mask: /Textures/_SpaceCats/Effects/LightMasks/double_cone.png # Cats edit
+    mask: /Textures/_Ganimed/Effects/LightMasks/double_cone.png # Cats edit
   - type: ApcPowerReceiver
   - type: ExtensionCableReceiver
   - type: Battery

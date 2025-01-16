@@ -93,10 +93,10 @@ public sealed partial class BiomeSystem : SharedBiomeSystem
         SubscribeLocalEvent<ShuttleFlattenEvent>(OnShuttleFlatten);
         Subs.CVar(_configManager, CVars.NetMaxUpdateRange, SetLoadRange, true);
         InitializeCommands();
-        SubscribeLocalEvent<TransformComponent, EntityTerminatingEvent>(OnEntityRemove); // cats
+        SubscribeLocalEvent<TransformComponent, EntityTerminatingEvent>(OnEntityRemove); // Ganimed
     }
 
-    // cats start
+    // Ganimed start
     private void OnEntityRemove(EntityUid uid, TransformComponent transform, ref EntityTerminatingEvent ev)
     {
         // this is needed for clearing entities from BiomeComponent.LoadedEntities when they're getting deleted or else the biome cannot be saved
@@ -131,7 +131,7 @@ public sealed partial class BiomeSystem : SharedBiomeSystem
             biome.ModifiedTiles.Add(vector, new() { modifiedTileCords });
         }
     }
-    // cats end
+    // Ganimed end
 
     private void ProtoReload(PrototypesReloadedEventArgs obj)
     {

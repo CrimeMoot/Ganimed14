@@ -86,6 +86,6 @@ namespace Content.Shared.Verbs
 
         public static readonly VerbCategory PowerLevel = new("verb-categories-power-level", null);
 
-        public static readonly VerbCategory TurretControlMode = new("verb-categories-turret-control-mode", null); // Cats-edit-TurretControl
+        public static readonly VerbCategory TurretControlMode = new("verb-categories-turret-control-mode", null); // Ganimed-edit-TurretControl
     }
 }

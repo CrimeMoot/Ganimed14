@@ -112,7 +112,7 @@
     color: red
     enabled: false
     radius: 6.5
-    mask: /Textures/_SpaceCats/Effects/LightMasks/cone.png # Cats edit
+    mask: /Textures/_Ganimed/Effects/LightMasks/cone.png # Cats edit
     autoRot: true
   - type: Pullable
   - type: MovementIgnoreGravity

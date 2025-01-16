@@ -230,10 +230,10 @@ namespace Content.Server.Lathe
                 {
                     var result = Spawn(resultProto, Transform(uid).Coordinates);
 
-                    // Cats edit start
+                    // Ganimed edit start
                     var ev = new LatheResultSpawnEvent(uid);
                     RaiseLocalEvent(result, ref ev);
-                    // Cats edit End
+                    // Ganimed edit End
                     
                     _stack.TryMergeToContacts(result);
                 }

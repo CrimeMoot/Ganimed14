@@ -36,7 +36,7 @@ namespace Content.Server.Chemistry.EntitySystems
         [Dependency] private readonly UserInterfaceSystem _userInterfaceSystem = default!;
         [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
         [Dependency] private readonly OpenableSystem _openable = default!;
-        [Dependency] private readonly LabelSystem _label = default!; // Cats-Labeler
+        [Dependency] private readonly LabelSystem _label = default!; // Ganimed-Labeler
 
         public override void Initialize()
         {
@@ -44,14 +44,14 @@ namespace Content.Server.Chemistry.EntitySystems
 
             SubscribeLocalEvent<ReagentDispenserComponent, ComponentStartup>(SubscribeUpdateUiState);
             SubscribeLocalEvent<ReagentDispenserComponent, SolutionContainerChangedEvent>(SubscribeUpdateUiState);
-            SubscribeLocalEvent<ReagentDispenserComponent, EntInsertedIntoContainerMessage>(OnEntInserted); // Cats-Labeler: SubscribeUpdateUiState < OnEntInserted
+            SubscribeLocalEvent<ReagentDispenserComponent, EntInsertedIntoContainerMessage>(OnEntInserted); // Ganimed-Labeler: SubscribeUpdateUiState < OnEntInserted
             SubscribeLocalEvent<ReagentDispenserComponent, EntRemovedFromContainerMessage>(SubscribeUpdateUiState);
             SubscribeLocalEvent<ReagentDispenserComponent, BoundUIOpenedEvent>(SubscribeUpdateUiState);
 
-            // Cats-Labeler-Start
+            // Ganimed-Labeler-Start
             SubscribeLocalEvent<ReagentDispenserComponent, GetVerbsEvent<AlternativeVerb>>(OnAlternateVerb);
             SubscribeLocalEvent<ReagentDispenserComponent, ExaminedEvent>(OnExamined);
-            // Cats-Labeler-End
+            // Ganimed-Labeler-End
 
             SubscribeLocalEvent<ReagentDispenserComponent, ReagentDispenserSetDispenseAmountMessage>(OnSetDispenseAmountMessage);
             SubscribeLocalEvent<ReagentDispenserComponent, ReagentDispenserDispenseReagentMessage>(OnDispenseReagentMessage);
@@ -65,7 +65,7 @@ namespace Content.Server.Chemistry.EntitySystems
             UpdateUiState(ent);
         }
 
-        // Cats-Labeler-Start
+        // Ganimed-Labeler-Start
         private void OnEntInserted(Entity<ReagentDispenserComponent> ent, ref EntInsertedIntoContainerMessage ev)
         {
             if (ent.Comp.AutoLabel && _solutionContainerSystem.TryGetDrainableSolution(ev.Entity, out _, out var sol))
@@ -118,7 +118,7 @@ namespace Content.Server.Chemistry.EntitySystems
             else
                 args.PushMarkup(Loc.GetString("reagent-dispenser-component-examine-auto-label-off"));
         }
-        // Cats-Labeler-End
+        // Ganimed-Labeler-End
 
         private void UpdateUiState(Entity<ReagentDispenserComponent> reagentDispenser)
         {

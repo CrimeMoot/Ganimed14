@@ -180,8 +180,8 @@
   - type: InstantAction
     checkCanInteract: false
     checkConsciousness: false
-    icon: _SpaceCats/Interface/Actions/harmOff.png # Cats edit
-    iconOn: _SpaceCats/Interface/Actions/harm.png # Cats edit
+    icon: _Ganimed/Interface/Actions/harmOff.png # Cats edit
+    iconOn: _Ganimed/Interface/Actions/harm.png # Cats edit
     event: !type:ToggleCombatActionEvent
     priority: -100
 

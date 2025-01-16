@@ -1,6 +1,6 @@
 - type: uiTheme # Cats edit
   id: SS14DefaultTheme
-  path: /Textures/_SpaceCats/Interface/CatsUI/
+  path: /Textures/_Ganimed/Interface/CatsUI/
   colors:
     whiteText: "#fcfeff"
     slotSelectedGold: "#7bc2b2"

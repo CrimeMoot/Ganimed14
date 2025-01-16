@@ -28,18 +28,18 @@ namespace Content.Shared.Access.Systems
         public string CurrentName { get; }
         public string CurrentJob { get; }
         public string CurrentJobIconId { get; }
-        public uint? CurrentNumber { get; } // Cats-PDAChat
+        public uint? CurrentNumber { get; } // Ganimed-PDAChat
 
-        public AgentIDCardBoundUserInterfaceState(string currentName, string currentJob, string currentJobIconId, uint? currentNumber = null) // Cats-PDAChat - Added currentNumber
+        public AgentIDCardBoundUserInterfaceState(string currentName, string currentJob, string currentJobIconId, uint? currentNumber = null) // Ganimed-PDAChat - Added currentNumber
         {
             CurrentName = currentName;
             CurrentJob = currentJob;
             CurrentJobIconId = currentJobIconId;
-            CurrentNumber = currentNumber; // Cats-PDAChat
+            CurrentNumber = currentNumber; // Ganimed-PDAChat
         }
     }
 
-    // Cats-PDAChat - Add number change message
+    // Ganimed-PDAChat - Add number change message
     [Serializable, NetSerializable]
     public sealed class AgentIDCardNumberChangedMessage : BoundUserInterfaceMessage
     {

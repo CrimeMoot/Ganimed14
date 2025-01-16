@@ -270,13 +270,13 @@ internal sealed partial class ChatManager : IChatManager
         }
         // Corvax-Sponsors-End
 
-        // Cats-OOC-admin-start
+        // Ganimed-OOC-admin-start
         var adminData = _adminManager.GetAdminData(player);
         if (adminData != null && adminData.Title != null)
         {
             wrappedMessage = Loc.GetString("chat-manager-send-ooc-admin-wrap-message", ("patronTitle", $"\\[{adminData.Title}\\] "),("playerName", player.Name), ("message", FormattedMessage.EscapeText(message)));
         }
-        // Cats-OOC-admin-end
+        // Ganimed-OOC-admin-end
 
         //TODO: player.Name color, this will need to change the structure of the MsgChatMessage
         ChatMessageToAll(ChatChannel.OOC, message, wrappedMessage, EntityUid.Invalid, hideChat: false, recordReplay: true, colorOverride: colorOverride, author: player.UserId);

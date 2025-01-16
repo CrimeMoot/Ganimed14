@@ -4,34 +4,34 @@
   levels:
     green:
       announcement: alert-level-green-announcement
-      sound: /Audio/_Cats/AlertLevels/green.ogg # Cats edit
+      sound: /Audio/_Ganimed/AlertLevels/green.ogg # Cats edit
       color: Green
       emergencyLightColor: LawnGreen
       shuttleTime: 600
     blue:
       announcement: alert-level-blue-announcement
-      sound: /Audio/_Cats/AlertLevels/blue.ogg # Cats edit
+      sound: /Audio/_Ganimed/AlertLevels/blue.ogg # Cats edit
       color: DodgerBlue
       forceEnableEmergencyLights: true
       emergencyLightColor: DodgerBlue
       shuttleTime: 600
     violet:
       announcement: alert-level-violet-announcement
-      sound: /Audio/_Cats/AlertLevels/violet.ogg # Cats edit
+      sound: /Audio/_Ganimed/AlertLevels/violet.ogg # Cats edit
       color: Violet
       emergencyLightColor: Violet
       forceEnableEmergencyLights: true
       shuttleTime: 600
     yellow:
       announcement: alert-level-yellow-announcement
-      sound: /Audio/_Cats/AlertLevels/yellow.ogg # Cats edit
+      sound: /Audio/_Ganimed/AlertLevels/yellow.ogg # Cats edit
       color: Yellow
       emergencyLightColor: Goldenrod
       forceEnableEmergencyLights: true
       shuttleTime: 600
     red:
       announcement: alert-level-red-announcement
-      sound: /Audio/_Cats/AlertLevels/red.ogg # Cats edit
+      sound: /Audio/_Ganimed/AlertLevels/red.ogg # Cats edit
       color: Red
       emergencyLightColor: Red
       forceEnableEmergencyLights: true
@@ -39,7 +39,7 @@
     gamma:
       announcement: alert-level-gamma-announcement
       selectable: false
-      sound: /Audio/_Cats/AlertLevels/gamma.ogg # Cats edit
+      sound: /Audio/_Ganimed/AlertLevels/gamma.ogg # Cats edit
       disableSelection: true
       color: PaleVioletRed
       emergencyLightColor: PaleVioletRed
@@ -47,7 +47,7 @@
     sierra:
       announcement: alert-level-sierra-announcement
       selectable: false
-      sound: /Audio/_Cats/AlertLevels/sierra.ogg # Cats edit
+      sound: /Audio/_Ganimed/AlertLevels/sierra.ogg # Cats edit
       disableSelection: true
       color: LightSeaGreen
       emergencyLightColor: LightSeaGreen
@@ -55,7 +55,7 @@
     enigma:
       announcement: alert-level-enigma-announcement
       selectable: false
-      sound: /Audio/_Cats/AlertLevels/enigma.ogg # Cats edit
+      sound: /Audio/_Ganimed/AlertLevels/enigma.ogg # Cats edit
       disableSelection: true
       color: '#EF7200'
       emergencyLightColor: '#EF7200'
@@ -63,7 +63,7 @@
     delta:
       announcement: alert-level-delta-announcement
       selectable: false
-      sound: /Audio/_Cats/AlertLevels/delta.ogg # Cats edit
+      sound: /Audio/_Ganimed/AlertLevels/delta.ogg # Cats edit
       disableSelection: true
       color: DarkRed
       emergencyLightColor: Orange
@@ -72,7 +72,7 @@
     epsilon:
       announcement: alert-level-epsilon-announcement
       selectable: false
-      sound: /Audio/_Cats/AlertLevels/epsilon.ogg # Cats edit
+      sound: /Audio/_Ganimed/AlertLevels/epsilon.ogg # Cats edit
       disableSelection: true
       color: DarkViolet
       emergencyLightColor: DarkViolet

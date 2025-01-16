@@ -462,7 +462,7 @@
   description: Can hold security gear like handcuffs and flashes.
   components:
   - type: Sprite
-    sprite: _SpaceCats/Clothing/Belt/security.rsi #<-- cats
+    sprite: _Ganimed/Clothing/Belt/security.rsi #<-- cats
   - type: Clothing
     sprite: Clothing/Belt/security.rsi
   - type: ExplosionResistance
@@ -661,9 +661,9 @@
   description: Unique and versatile chest rig, can hold security gear.
   components:
   - type: Sprite
-    sprite: _SpaceCats/Clothing/Belt/securitywebbing.rsi # cats
+    sprite: _Ganimed/Clothing/Belt/securitywebbing.rsi # cats
   - type: Clothing
-    sprite: _SpaceCats/Clothing/Belt/securitywebbing.rsi # cats
+    sprite: _Ganimed/Clothing/Belt/securitywebbing.rsi # cats
 
 - type: entity
   parent: [ ClothingBeltStorageBase, BaseSecurityCargoContraband ]

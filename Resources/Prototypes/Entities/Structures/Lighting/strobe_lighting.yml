@@ -31,7 +31,7 @@
       shader: unshaded
     state: base
   - type: PointLight
-    mask: /Textures/_SpaceCats/Effects/LightMasks/double_cone.png # Cats edit
+    mask: /Textures/_Ganimed/Effects/LightMasks/double_cone.png # Cats edit
     color: "#FFE4CE"
     energy: 2.5
     radius: 10

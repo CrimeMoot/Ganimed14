@@ -1,6 +1,6 @@
 ﻿- type: typingIndicator
   id: default
-  spritePath: _SpaceCats/Typing.rsi
+  spritePath: _Ganimed/Typing.rsi
   typingState: people0
   idleState: people3
 

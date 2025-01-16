@@ -1,5 +1,5 @@
 #license: CLA
-#copyright: https://github.com/ss14-_SpaceCats/Ganimed/ENT14-Master/blob/master/CLA.txt
+#copyright: https://github.com/ss14-_Ganimed/Ganimed/ENT14-Master/blob/master/CLA.txt
 
 - type: entity
   parent: ClothingUniformBase
@@ -8,9 +8,9 @@
   description: It looks technologically advanced.
   components:
   - type: Sprite
-    sprite: _SpaceCats/Ganimed/Clothing/Uniforms/tsf/tsf.rsi
+    sprite: _Ganimed/Ganimed/Clothing/Uniforms/tsf/tsf.rsi
   - type: Clothing
-    sprite: _SpaceCats/Ganimed/Clothing/Uniforms/tsf/tsf.rsi
+    sprite: _Ganimed/Ganimed/Clothing/Uniforms/tsf/tsf.rsi
   - type: Tag
     tags:
     - WhitelistChameleon
@@ -22,9 +22,9 @@
   description: It looks technologically advanced.
   components:
   - type: Sprite
-    sprite: _SpaceCats/Ganimed/Clothing/Uniforms/tsf/tsf_captain.rsi
+    sprite: _Ganimed/Ganimed/Clothing/Uniforms/tsf/tsf_captain.rsi
   - type: Clothing
-    sprite: _SpaceCats/Ganimed/Clothing/Uniforms/tsf/tsf_captain.rsi
+    sprite: _Ganimed/Ganimed/Clothing/Uniforms/tsf/tsf_captain.rsi
   - type: Tag
     tags:
     - WhitelistChameleon

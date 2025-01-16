@@ -9,7 +9,7 @@ using Robust.Server.GameObjects;
 using Robust.Shared.Prototypes;
 using Content.Shared.Roles;
 using System.Diagnostics.CodeAnalysis;
-using Content.Shared._Cats.NanoChat;
+using Content.Shared._Ganimed.NanoChat;
 
 namespace Content.Server.Access.Systems
 {

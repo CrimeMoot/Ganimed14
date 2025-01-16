@@ -6,7 +6,7 @@
   components:
   - type: Sprite
     noRot: true
-    sprite: _SpaceCats/Structures/cryostorage.rsi # Cats edit
+    sprite: _Ganimed/Structures/cryostorage.rsi # Cats edit
     layers:
     - state: sleeper_0
       map: ["base"]

@@ -34,7 +34,7 @@ public sealed class BlobRuleSystem : GameRuleSystem<BlobRuleComponent>
     [Dependency] private readonly AlertLevelSystem _alertLevelSystem = default!;
     [Dependency] private readonly IChatManager _chatManager = default!;
 
-    private static readonly SoundPathSpecifier BlobDetectAudio = new ("/Audio/_Cats/StationEvents/announce_dig.ogg");
+    private static readonly SoundPathSpecifier BlobDetectAudio = new ("/Audio/_Ganimed/StationEvents/announce_dig.ogg");
 
     public override void Initialize()
     {

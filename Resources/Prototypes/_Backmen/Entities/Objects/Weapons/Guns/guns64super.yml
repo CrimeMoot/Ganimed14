@@ -55,7 +55,7 @@
   - type: UnpoweredFlashlight
   - type: PointLight
     enabled: false
-    mask: /Textures/_SpaceCats/Effects/LightMasks/cone.png # Cats edit
+    mask: /Textures/_Ganimed/Effects/LightMasks/cone.png # Cats edit
     autoRot: true
     radius: 8
 
@@ -88,7 +88,7 @@
   - type: UnpoweredFlashlight
   - type: PointLight
     enabled: false
-    mask: /Textures/_SpaceCats/Effects/LightMasks/cone.png # Cats edit
+    mask: /Textures/_Ganimed/Effects/LightMasks/cone.png # Cats edit
     autoRot: true
     radius: 8
 
@@ -149,7 +149,7 @@
   - type: UnpoweredFlashlight
   - type: PointLight
     enabled: false
-    mask: /Textures/_SpaceCats/Effects/LightMasks/cone.png # Cats edit
+    mask: /Textures/_Ganimed/Effects/LightMasks/cone.png # Cats edit
     autoRot: true
     radius: 8
   - type: UseDelay
@@ -179,7 +179,7 @@
   - type: UnpoweredFlashlight
   - type: PointLight
     enabled: false
-    mask: /Textures/_SpaceCats/Effects/LightMasks/cone.png # Cats edit
+    mask: /Textures/_Ganimed/Effects/LightMasks/cone.png # Cats edit
     autoRot: true
     radius: 8
 

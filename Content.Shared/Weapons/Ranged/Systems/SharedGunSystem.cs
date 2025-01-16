@@ -35,7 +35,7 @@ using Robust.Shared.Random;
 using Robust.Shared.Serialization;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
-using Content.Shared._Cats.DNAGunLocker;
+using Content.Shared._Ganimed.DNAGunLocker;
 using Content.Shared.Electrocution;
 using Content.Shared.CombatMode;
 

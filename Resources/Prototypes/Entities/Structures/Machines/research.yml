@@ -5,7 +5,7 @@
   description: Contains the collective knowledge of the station's scientists. Destroying it would send them back to the stone age. You don't want that do you?
   components:
   - type: Sprite
-    sprite: _SpaceCats/Structures/Machines/rendsearcserver.rsi
+    sprite: _Ganimed/Structures/Machines/rendsearcserver.rsi
     snapCardinals: true
     layers:
     - state: icon

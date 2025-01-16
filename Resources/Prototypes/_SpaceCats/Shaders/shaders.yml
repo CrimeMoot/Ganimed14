@@ -1,4 +1,0 @@
-- type: shader
-  id: NightVision
-  kind: source
-  path: "/Textures/_SpaceCats/Shaders/nightvision.swsl"

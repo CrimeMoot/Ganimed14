@@ -1,4 +1,4 @@
-using Content.Server._Cats.Radio;
+using Content.Server._Ganimed.Radio;
 using Content.Server.Administration.Logs;
 using Content.Server.Backmen.Language;
 using Content.Server.Chat.Systems;

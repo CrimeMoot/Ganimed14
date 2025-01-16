@@ -92,7 +92,7 @@
   description: It produces basic items using metal and glass. Has the ability to process blueprints to print new recipes.
   components:
   - type: Sprite
-    sprite: _SpaceCats/Structures/Machines/autolathe.rsi
+    sprite: _Ganimed/Structures/Machines/autolathe.rsi
     snapCardinals: true
     layers:
     - state: icon
@@ -254,7 +254,7 @@
   description: A highly-experimental autolathe that harnesses the power of extreme heat to slowly create objects more cost-effectively.
   components:
   - type: Sprite
-    sprite: _SpaceCats/Structures/Machines/autolathe_hypercon.rsi
+    sprite: _Ganimed/Structures/Machines/autolathe_hypercon.rsi
   - type: Machine
     board: AutolatheHyperConvectionMachineCircuitboard
 
@@ -265,7 +265,7 @@
   description: Converts raw materials into advanced items.
   components:
   - type: Sprite
-    sprite: _SpaceCats/Structures/Machines/protolathe.rsi
+    sprite: _Ganimed/Structures/Machines/protolathe.rsi
     snapCardinals: true
     layers:
     - state: icon
@@ -453,7 +453,7 @@
   description: A highly-experimental protolathe that harnesses the power of extreme heat to slowly create objects more cost-effectively.
   components:
   - type: Sprite
-    sprite: _SpaceCats/Structures/Machines/protolathe_hypercon.rsi
+    sprite: _Ganimed/Structures/Machines/protolathe_hypercon.rsi
   - type: Machine
     board: ProtolatheHyperConvectionMachineCircuitboard
 
@@ -619,7 +619,7 @@
   description: Creates parts for robotics and other mechanical needs.
   components:
   - type: Sprite
-    sprite: _SpaceCats/Structures/Machines/exosuit_fabricator.rsi # Cats edit
+    sprite: _Ganimed/Structures/Machines/exosuit_fabricator.rsi # Cats edit
     layers:
     - state: fab-idle
       map: ["enum.LatheVisualLayers.IsRunning"]
@@ -892,7 +892,7 @@
     dynamicRecipes:
       - BorgModuleCombat # Cats: Security Borg
       - BorgModuleSecurityControlling # Cats: Security Borg
-      - BorgModuleNeutralizationAdvanced # _Cats: Security Borg
+      - BorgModuleNeutralizationAdvanced # _Ganimed: Security Borg
       - BoxBeanbag
       - BoxShotgunIncendiary
       - BoxShotgunUranium

@@ -3,7 +3,7 @@ using Content.Shared.Audio;
 using Content.Shared.CartridgeLoader;
 using Content.Shared.CartridgeLoader.Cartridges;
 using Content.Shared.Popups;
-using Content.Shared._Cats.NanoChat;
+using Content.Shared._Ganimed.NanoChat;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Random;
 

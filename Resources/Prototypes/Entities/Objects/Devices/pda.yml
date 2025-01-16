@@ -64,7 +64,7 @@
   - type: UnpoweredFlashlight
   - type: ShadowkinLight
   - type: PointLight
-    mask: /Textures/_SpaceCats/Effects/LightMasks/cone.png # Cats edit
+    mask: /Textures/_Ganimed/Effects/LightMasks/cone.png # Cats edit
     enabled: false
     radius: 1.8 # Cats edit
     softness: 5

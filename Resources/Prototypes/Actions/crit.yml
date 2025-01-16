@@ -25,7 +25,7 @@
     checkCanInteract: false
     checkConsciousness: false
     icon:
-      sprite: _SpaceCats/Interface/actions_crit.rsi # Cats edit
+      sprite: _Ganimed/Interface/actions_crit.rsi # Cats edit
       state: fakedeath
     event: !type:CritFakeDeathEvent
     useDelay: 30
@@ -40,7 +40,7 @@
     checkCanInteract: false
     checkConsciousness: false
     icon:
-      sprite: _SpaceCats/Interface/actions_crit.rsi # Cats edit
+      sprite: _Ganimed/Interface/actions_crit.rsi # Cats edit
       state: lastwords
     event: !type:CritLastWordsEvent
     startDelay: true

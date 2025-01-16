@@ -61,7 +61,7 @@
   id: IndustrialEngineering
   name: research-technology-industrial-engineering
   icon:
-    sprite: _SpaceCats/Structures/Machines/protolathe_hypercon.rsi
+    sprite: _Ganimed/Structures/Machines/protolathe_hypercon.rsi
     state: building
   discipline: Industrial
   tier: 1
@@ -127,7 +127,7 @@
   id: Shuttlecraft
   name: research-technology-shuttlecraft
   icon:
-    sprite: _SpaceCats/Structures/Shuttles/gyroscope.rsi # Cats edit
+    sprite: _Ganimed/Structures/Shuttles/gyroscope.rsi # Cats edit
     state: base
   discipline: Industrial
   tier: 2

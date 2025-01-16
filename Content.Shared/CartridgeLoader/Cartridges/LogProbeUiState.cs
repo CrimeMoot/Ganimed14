@@ -1,4 +1,4 @@
-﻿using Content.Shared._Cats.CartridgeLoader.Cartridges;
+﻿using Content.Shared._Ganimed.CartridgeLoader.Cartridges;
 using Robust.Shared.Serialization;
 
 namespace Content.Shared.CartridgeLoader.Cartridges;

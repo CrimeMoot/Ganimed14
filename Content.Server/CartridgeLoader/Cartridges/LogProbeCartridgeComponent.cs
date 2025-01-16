@@ -1,5 +1,5 @@
 ﻿using Content.Shared.CartridgeLoader.Cartridges;
-using Content.Shared._Cats.CartridgeLoader.Cartridges;
+using Content.Shared._Ganimed.CartridgeLoader.Cartridges;
 using Robust.Shared.Audio;
 
 namespace Content.Server.CartridgeLoader.Cartridges;

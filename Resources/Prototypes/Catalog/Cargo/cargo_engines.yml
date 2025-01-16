@@ -63,7 +63,7 @@
 - type: cargoProduct
   id: EngineSolar
   icon:
-    sprite: _SpaceCats/Objects/Devices/flatpack.rsi # Cats edit
+    sprite: _Ganimed/Objects/Devices/flatpack.rsi # Cats edit
     state: solar-assembly-part
   product: CrateEngineeringSolar
   cost: 1250

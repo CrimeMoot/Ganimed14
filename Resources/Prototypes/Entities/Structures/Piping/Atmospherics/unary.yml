@@ -47,7 +47,7 @@
         - Unstackable
     - type: Sprite
       drawdepth: FloorObjects
-      sprite: _Ganimed/Structures/Piping/Atmospherics/vent.rsi Resources/Prototypes/Entities/Structures/Piping/Atmospherics/unary.yml
+      sprite: _Ganimed/Structures/Piping/Atmospherics/vent.rsi # Ganimed edit
       layers:
         - sprite: Structures/Piping/Atmospherics/pipe.rsi
           state: pipeHalf

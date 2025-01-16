@@ -49,9 +49,9 @@
   description: Make them loins buzz!
   components:
   - type: Sprite
-    sprite: _Ganimed/Ganimed/Clothing/Under/Socks/socks.rsi
+    sprite: _Ganimed/Clothing/Under/Socks/socks.rsi
   - type: Clothing
-    sprite: _Ganimed/Ganimed/Clothing/Under/Socks/socks.rsi
+    sprite: _Ganimed/Clothing/Under/Socks/socks.rsi
     clothingVisuals:
       socks:
         - state: equipped-FEET
@@ -63,10 +63,10 @@
   description: Make them loins buzz!
   components:
   - type: Sprite
-    sprite: _Ganimed/Ganimed/Clothing/Under/Socks/socks.rsi
+    sprite: _Ganimed/Clothing/Under/Socks/socks.rsi
     color: "#3f3f3f"
   - type: Clothing
-    sprite: _Ganimed/Ganimed/Clothing/Under/Socks/socks.rsi
+    sprite: _Ganimed/Clothing/Under/Socks/socks.rsi
     clothingVisuals:
       socks:
         - state: equipped-FEET
@@ -79,10 +79,10 @@
   description: Make them loins buzz!
   components:
   - type: Sprite
-    sprite: _Ganimed/Ganimed/Clothing/Under/Socks/socks.rsi
+    sprite: _Ganimed/Clothing/Under/Socks/socks.rsi
     color: "#0089EF"
   - type: Clothing
-    sprite: _Ganimed/Ganimed/Clothing/Under/Socks/socks.rsi
+    sprite: _Ganimed/Clothing/Under/Socks/socks.rsi
     clothingVisuals:
       socks:
         - state: equipped-FEET
@@ -95,10 +95,10 @@
   description: Make them loins buzz!
   components:
   - type: Sprite
-    sprite: _Ganimed/Ganimed/Clothing/Under/Socks/socks.rsi
+    sprite: _Ganimed/Clothing/Under/Socks/socks.rsi
     color: "#723A02"
   - type: Clothing
-    sprite: _Ganimed/Ganimed/Clothing/Under/Socks/socks.rsi
+    sprite: _Ganimed/Clothing/Under/Socks/socks.rsi
     clothingVisuals:
       socks:
         - state: equipped-FEET
@@ -111,10 +111,10 @@
   description: Make them loins buzz!
   components:
   - type: Sprite
-    sprite: _Ganimed/Ganimed/Clothing/Under/Socks/socks.rsi
+    sprite: _Ganimed/Clothing/Under/Socks/socks.rsi
     color: "#5ABF2F"
   - type: Clothing
-    sprite: _Ganimed/Ganimed/Clothing/Under/Socks/socks.rsi
+    sprite: _Ganimed/Clothing/Under/Socks/socks.rsi
     clothingVisuals:
       socks:
         - state: equipped-FEET
@@ -127,10 +127,10 @@
   description: Make them loins buzz!
   components:
   - type: Sprite
-    sprite: _Ganimed/Ganimed/Clothing/Under/Socks/socks.rsi
+    sprite: _Ganimed/Clothing/Under/Socks/socks.rsi
     color: "#940000"
   - type: Clothing
-    sprite: _Ganimed/Ganimed/Clothing/Under/Socks/socks.rsi
+    sprite: _Ganimed/Clothing/Under/Socks/socks.rsi
     clothingVisuals:
       socks:
         - state: equipped-FEET
@@ -143,10 +143,10 @@
   description: Make them loins buzz!
   components:
   - type: Sprite
-    sprite: _Ganimed/Ganimed/Clothing/Under/Socks/socks.rsi
+    sprite: _Ganimed/Clothing/Under/Socks/socks.rsi
     color: "#EBE216"
   - type: Clothing
-    sprite: _Ganimed/Ganimed/Clothing/Under/Socks/socks.rsi
+    sprite: _Ganimed/Clothing/Under/Socks/socks.rsi
     clothingVisuals:
       socks:
         - state: equipped-FEET
@@ -159,9 +159,9 @@
   description: Make them loins buzz!
   components:
   - type: Sprite
-    sprite: _Ganimed/Ganimed/Clothing/Under/Socks/stockings/bee.rsi
+    sprite: _Ganimed/Clothing/Under/Socks/stockings/bee.rsi
   - type: Clothing
-    sprite: _Ganimed/Ganimed/Clothing/Under/Socks/stockings/bee.rsii
+    sprite: _Ganimed/Clothing/Under/Socks/stockings/bee.rsii
     clothingVisuals:
       socks:
         - state: equipped-FEET          
@@ -173,9 +173,9 @@
   description: Forces your feet to act according to standard operating procedures.
   components:
   - type: Sprite
-    sprite: _Ganimed/Ganimed/Clothing/Under/Socks/stockings/Centcom.rsi
+    sprite: _Ganimed/Clothing/Under/Socks/stockings/Centcom.rsi
   - type: Clothing
-    sprite: _Ganimed/Ganimed/Clothing/Under/Socks/stockings/Centcom.rsi
+    sprite: _Ganimed/Clothing/Under/Socks/stockings/Centcom.rsi
     clothingVisuals:
       socks:
         - state: equipped-FEET
@@ -187,9 +187,9 @@
   description: Make them loins buzz!
   components:
   - type: Sprite
-    sprite: _Ganimed/Ganimed/Clothing/Under/Socks/stockings/dark.rsi
+    sprite: _Ganimed/Clothing/Under/Socks/stockings/dark.rsi
   - type: Clothing
-    sprite: _Ganimed/Ganimed/Clothing/Under/Socks/stockings/dark.rsi
+    sprite: _Ganimed/Clothing/Under/Socks/stockings/dark.rsi
     clothingVisuals:
       socks:
         - state: equipped-FEET         
@@ -201,9 +201,9 @@
   description: Make them loins buzz!
   components:
   - type: Sprite
-    sprite: _Ganimed/Ganimed/Clothing/Under/Socks/stockings/fishnets.rsi
+    sprite: _Ganimed/Clothing/Under/Socks/stockings/fishnets.rsi
   - type: Clothing
-    sprite: _Ganimed/Ganimed/Clothing/Under/Socks/stockings/fishnets.rsi
+    sprite: _Ganimed/Clothing/Under/Socks/stockings/fishnets.rsi
     clothingVisuals:
       socks:
         - state: equipped-FEET           
@@ -215,9 +215,9 @@
   description: Turns you into a femboy...
   components:
   - type: Sprite
-    sprite: _Ganimed/Ganimed/Clothing/Under/Socks/stockings/safno.rsi
+    sprite: _Ganimed/Clothing/Under/Socks/stockings/safno.rsi
   - type: Clothing
-    sprite: _Ganimed/Ganimed/Clothing/Under/Socks/stockings/safno.rsi
+    sprite: _Ganimed/Clothing/Under/Socks/stockings/safno.rsi
     clothingVisuals:
       socks:
         - state: equipped-FEET
@@ -229,9 +229,9 @@
   description: Make them loins buzz!
   components:
   - type: Sprite
-    sprite: _Ganimed/Ganimed/Clothing/Under/Socks/stockings/white.rsi
+    sprite: _Ganimed/Clothing/Under/Socks/stockings/white.rsi
   - type: Clothing
-    sprite: _Ganimed/Ganimed/Clothing/Under/Socks/stockings/white.rsi
+    sprite: _Ganimed/Clothing/Under/Socks/stockings/white.rsi
     clothingVisuals:
       socks:
         - state: equipped-FEET
@@ -243,9 +243,9 @@
   description: Make them loins buzz!
   components:
   - type: Sprite
-    sprite: _Ganimed/Ganimed/Clothing/Under/Socks/stockings/sky.rsi
+    sprite: _Ganimed/Clothing/Under/Socks/stockings/sky.rsi
   - type: Clothing
-    sprite: _Ganimed/Ganimed/Clothing/Under/Socks/stockings/sky.rsi
+    sprite: _Ganimed/Clothing/Under/Socks/stockings/sky.rsi
     clothingVisuals:
       socks:
         - state: equipped-FEET        
@@ -257,9 +257,9 @@
   description: Make them loins buzz!
   components:
   - type: Sprite
-    sprite: _Ganimed/Ganimed/Clothing/Under/Socks/stockings/cat.rsi
+    sprite: _Ganimed/Clothing/Under/Socks/stockings/cat.rsi
   - type: Clothing
-    sprite: _Ganimed/Ganimed/Clothing/Under/Socks/stockings/cat.rsi
+    sprite: _Ganimed/Clothing/Under/Socks/stockings/cat.rsi
     clothingVisuals:
       socks:
         - state: equipped-FEET 
@@ -271,9 +271,9 @@
   description: Make them loins buzz!
   components:
   - type: Sprite
-    sprite: _Ganimed/Ganimed/Clothing/Under/Socks/longSocks/Dark.rsi
+    sprite: _Ganimed/Clothing/Under/Socks/longSocks/Dark.rsi
   - type: Clothing
-    sprite: _Ganimed/Ganimed/Clothing/Under/Socks/stockings/Dark.rsi
+    sprite: _Ganimed/Clothing/Under/Socks/stockings/Dark.rsi
     clothingVisuals:
       socks:
         - state: equipped-FEET
@@ -285,9 +285,9 @@
   description: Make them loins buzz!
   components:
   - type: Sprite
-    sprite: _Ganimed/Ganimed/Clothing/Under/Socks/longSocks/White.rsi
+    sprite: _Ganimed/Clothing/Under/Socks/longSocks/White.rsi
   - type: Clothing
-    sprite: _Ganimed/Ganimed/Clothing/Under/Socks/stockings/White.rsi
+    sprite: _Ganimed/Clothing/Under/Socks/stockings/White.rsi
     clothingVisuals:
       socks:
         - state: equipped-FEET

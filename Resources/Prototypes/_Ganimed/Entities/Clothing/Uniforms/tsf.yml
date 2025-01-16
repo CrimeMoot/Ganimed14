@@ -8,9 +8,9 @@
   description: It looks technologically advanced.
   components:
   - type: Sprite
-    sprite: _Ganimed/Ganimed/Clothing/Uniforms/tsf/tsf.rsi
+    sprite: _Ganimed/Clothing/Uniforms/tsf/tsf.rsi
   - type: Clothing
-    sprite: _Ganimed/Ganimed/Clothing/Uniforms/tsf/tsf.rsi
+    sprite: _Ganimed/Clothing/Uniforms/tsf/tsf.rsi
   - type: Tag
     tags:
     - WhitelistChameleon
@@ -22,9 +22,9 @@
   description: It looks technologically advanced.
   components:
   - type: Sprite
-    sprite: _Ganimed/Ganimed/Clothing/Uniforms/tsf/tsf_captain.rsi
+    sprite: _Ganimed/Clothing/Uniforms/tsf/tsf_captain.rsi
   - type: Clothing
-    sprite: _Ganimed/Ganimed/Clothing/Uniforms/tsf/tsf_captain.rsi
+    sprite: _Ganimed/Clothing/Uniforms/tsf/tsf_captain.rsi
   - type: Tag
     tags:
     - WhitelistChameleon

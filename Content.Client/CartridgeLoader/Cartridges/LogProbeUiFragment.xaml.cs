@@ -16,7 +16,7 @@ public sealed partial class LogProbeUiFragment : BoxContainer
         RobustXamlLoader.Load(this);
     }
 
-    // Cats-PDAChat-Start - Update to handle both types of data
+    // Ganimed-PDAChat-Start - Update to handle both types of data
     public void UpdateState(LogProbeUiState state)
     {
         ProbedDeviceContainer.RemoveAllChildren();
@@ -117,9 +117,9 @@ public sealed partial class LogProbeUiFragment : BoxContainer
             }
         }
     }
-    // Cats-PDAChat-End
+    // Ganimed-PDAChat-End
 
-    // Cats-PDAChat - Handle this in a separate method
+    // Ganimed-PDAChat - Handle this in a separate method
     private void DisplayAccessLogs(List<PulledAccessLog> logs)
     {
 

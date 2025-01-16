@@ -46,7 +46,7 @@ namespace Content.Server.GameTicking
         // Mainly to avoid allocations.
         private readonly List<EntityCoordinates> _possiblePositions = new();
 
-        public List<EntityUid> GetSpawnableStations() // Cats edit
+        public List<EntityUid> GetSpawnableStations() // Ganimed edit
         {
             var spawnableStations = new List<EntityUid>();
             var query = EntityQueryEnumerator<StationJobsComponent, StationSpawningComponent>();

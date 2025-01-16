@@ -9,7 +9,7 @@ using Robust.Shared.Random;
 
 namespace Content.Server.CartridgeLoader.Cartridges;
 
-public sealed partial class LogProbeCartridgeSystem : EntitySystem // Cats-PDAChat - Made partial
+public sealed partial class LogProbeCartridgeSystem : EntitySystem // Ganimed-PDAChat - Made partial
 {
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly CartridgeLoaderSystem? _cartridgeLoaderSystem = default!;
@@ -19,7 +19,7 @@ public sealed partial class LogProbeCartridgeSystem : EntitySystem // Cats-PDACh
     public override void Initialize()
     {
         base.Initialize();
-        InitializeNanoChat(); // Cats-PDAChat
+        InitializeNanoChat(); // Ganimed-PDAChat
         SubscribeLocalEvent<LogProbeCartridgeComponent, CartridgeUiReadyEvent>(OnUiReady);
         SubscribeLocalEvent<LogProbeCartridgeComponent, CartridgeAfterInteractEvent>(AfterInteract);
     }
@@ -35,14 +35,14 @@ public sealed partial class LogProbeCartridgeSystem : EntitySystem // Cats-PDACh
         if (args.InteractEvent.Handled || !args.InteractEvent.CanReach || args.InteractEvent.Target is not { } target)
             return;
 
-        // Cats-PDAChat-Start - Add NanoChat card scanning
+        // Ganimed-PDAChat-Start - Add NanoChat card scanning
         if (TryComp<NanoChatCardComponent>(target, out var nanoChatCard))
         {
             ScanNanoChatCard(ent, args, target, nanoChatCard);
             args.InteractEvent.Handled = true;
             return;
         }
-        // Cats-PDAChat-End
+        // Ganimed-PDAChat-End
 
         if (!TryComp(target, out AccessReaderComponent? accessReaderComponent))
             return;
@@ -52,7 +52,7 @@ public sealed partial class LogProbeCartridgeSystem : EntitySystem // Cats-PDACh
         _popupSystem.PopupCursor(Loc.GetString("log-probe-scan", ("device", target)), args.InteractEvent.User);
 
         ent.Comp.PulledAccessLogs.Clear();
-                ent.Comp.ScannedNanoChatData = null; // Cats-PDAChat - Clear any previous NanoChat data
+                ent.Comp.ScannedNanoChatData = null; // Ganimed-PDAChat - Clear any previous NanoChat data
 
         foreach (var accessRecord in accessReaderComponent.AccessLog)
         {
@@ -77,7 +77,7 @@ public sealed partial class LogProbeCartridgeSystem : EntitySystem // Cats-PDACh
 
     private void UpdateUiState(Entity<LogProbeCartridgeComponent> ent, EntityUid loaderUid)
     {
-        var state = new LogProbeUiState(ent.Comp.PulledAccessLogs, ent.Comp.ScannedNanoChatData); // Cats-PDAChat - NanoChat support
+        var state = new LogProbeUiState(ent.Comp.PulledAccessLogs, ent.Comp.ScannedNanoChatData); // Ganimed-PDAChat - NanoChat support
         _cartridgeLoaderSystem?.UpdateCartridgeUiState(loaderUid, state);
     }
 }

@@ -72,6 +72,6 @@ namespace Content.Server.Communications
         /// Announce sound file path
         /// </summary>
         [DataField]
-        public SoundSpecifier Sound = new SoundPathSpecifier("/Audio/_Ganimed/StationEvents/announce_dig.ogg");  // Cats edit
+        public SoundSpecifier Sound = new SoundPathSpecifier("/Audio/_Ganimed/StationEvents/announce_dig.ogg");  // Ganimed edit
     }
 }

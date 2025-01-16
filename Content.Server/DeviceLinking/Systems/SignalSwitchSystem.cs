@@ -38,10 +38,10 @@ public sealed class SignalSwitchSystem : EntitySystem
             _deviceLink.SendSignal(uid, comp.StatusPort, comp.State);
         }
 
-        // CATS EDIT START
+        // Ganimed EDIT START
         var ev = new SwitchPressedEvent();
         RaiseLocalEvent(uid, ref ev);
-        // CATS EDIT END
+        // Ganimed EDIT END
 
         _audio.PlayPvs(comp.ClickSound, uid, AudioParams.Default.WithVariation(0.125f).WithVolume(8f));
 
@@ -49,10 +49,10 @@ public sealed class SignalSwitchSystem : EntitySystem
     }
 }
 
-// CATS EDIT START
+// Ganimed EDIT START
 [ByRefEvent]
 /// <summary>
 /// Event to inform any other systems that may want to know that the signal switch was pressed
 /// </summary>
 public record struct SwitchPressedEvent();
-// CATS EDIT END
+// Ganimed EDIT END

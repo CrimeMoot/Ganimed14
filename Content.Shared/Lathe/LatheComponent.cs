@@ -98,7 +98,7 @@ namespace Content.Shared.Lathe
     [ByRefEvent]
     public readonly record struct LatheStartPrintingEvent(LatheRecipePrototype Recipe);
 
-    /// Cats start 
+    /// Ganimed start 
     /// <summary>
     /// Event is called when the lathe creates something.
     /// </summary>
@@ -112,5 +112,5 @@ namespace Content.Shared.Lathe
             Lathe = lathe;
         }
     }
-    // Cats end
+    // Ganimed end
 }

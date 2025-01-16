@@ -308,7 +308,7 @@ namespace Content.Server.PDA
             pda.StationName = station is null ? null : Name(station.Value);
         }
 
-        // cats-start
+        // Ganimed-start
         private void UpdateEvacShuttle(EntityUid uid, PdaComponent pda)
         {
             TimeSpan? shuttleTime;
@@ -338,7 +338,7 @@ namespace Content.Server.PDA
             pda.ShuttleStatus = shuttleStatus;
             pda.ShuttleTime = shuttleTime;
         }
-        // cats-end
+        // Ganimed-end
 
         private void UpdateAlertLevel(EntityUid uid, PdaComponent pda)
         {

@@ -129,7 +129,7 @@ public sealed class RadioSystem : EntitySystem
         RaiseLocalEvent(messageSource, evt);
 
         var name = evt.VoiceName;
-        // CATS EDIT RADIO START
+        // Ganimed EDIT RADIO START
         // Если из-за отображений должностей что-то сломается после какого-то обновления, то расскоментируйте данный код и закомментируйте код ниже, который я укажу. Данные действия просто вернут старый код
         // name = FormattedMessage.EscapeText(name);
 
@@ -138,7 +138,7 @@ public sealed class RadioSystem : EntitySystem
         string? newName = _jobPlayer.CompletedJobAndPlayer(messageSource, name);
         // Тут уже мы делаем необходимый name
         name = newName;
-        // CATS EDIT RADIO END
+        // Ganimed EDIT RADIO END
 
         SpeechVerbPrototype speech;
         if (evt.SpeechVerb != null && _prototype.TryIndex(evt.SpeechVerb, out var evntProto))
@@ -217,7 +217,7 @@ public sealed class RadioSystem : EntitySystem
             RaiseLocalEvent(receiver, ref ev);
         }
 
-        if ((name != Name(messageSource)) && (name != newName)) // CATS EDIT RADIO
+        if ((name != Name(messageSource)) && (name != newName)) // Ganimed EDIT RADIO
             _adminLogger.Add(LogType.Chat, LogImpact.Low, $"Radio message from {ToPrettyString(messageSource):user} as {name} on {channel.LocalizedName}: {message}");
         else
             _adminLogger.Add(LogType.Chat, LogImpact.Low, $"Radio message from {ToPrettyString(messageSource):user} on {channel.LocalizedName}: {message}");

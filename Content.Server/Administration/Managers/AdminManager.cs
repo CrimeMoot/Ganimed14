@@ -38,7 +38,7 @@ namespace Content.Server.Administration.Managers
         [Dependency] private readonly IChatManager _chat = default!;
         [Dependency] private readonly ToolshedManager _toolshed = default!;
         [Dependency] private readonly ILogManager _logManager = default!;
-        [Dependency] private readonly DiscordWebhook _discord = default!;  // Cats admin log
+        [Dependency] private readonly DiscordWebhook _discord = default!;  // Ganimed admin log
 
         private readonly Dictionary<ICommonSession, AdminReg> _admins = new();
         private readonly HashSet<NetUserId> _promotedPlayers = new();
@@ -79,7 +79,7 @@ namespace Content.Server.Administration.Managers
             return null;
         }
 
-        public async void DeAdmin(ICommonSession session) // Cats admin log
+        public async void DeAdmin(ICommonSession session) // Ganimed admin log
         {
             if (!_admins.TryGetValue(session, out var reg))
             {
@@ -100,7 +100,7 @@ namespace Content.Server.Administration.Managers
 
             SendPermsChangedEvent(session);
             UpdateAdminStatus(session);
-            // Cats admin log - start
+            // Ganimed admin log - start
             if (!string.IsNullOrEmpty(_cfg.GetCVar(CCVars.DiscordAdminchatWebhook)))
             {
                 var webhookUrl = _cfg.GetCVar(CCVars.DiscordAdminchatWebhook);
@@ -114,7 +114,7 @@ namespace Content.Server.Administration.Managers
                 };
                 var identifier = webhookData.ToIdentifier();
                 await _discord.CreateMessage(identifier, payload);
-            // Cats admin log - end
+            // Ganimed admin log - end
             }
         }
 
@@ -156,7 +156,7 @@ namespace Content.Server.Administration.Managers
             _chat.SendAdminAnnouncement(Loc.GetString("admin-manager-self-disable-stealth", ("exStealthAdminName", session.Name)), flagWhitelist: AdminFlags.Stealth);
         }
 
-        public async void ReAdmin(ICommonSession session) // Cats admin log
+        public async void ReAdmin(ICommonSession session) // Ganimed admin log
         {
             if (!_admins.TryGetValue(session, out var reg))
             {
@@ -187,7 +187,7 @@ namespace Content.Server.Administration.Managers
 
             SendPermsChangedEvent(session);
             UpdateAdminStatus(session);
-            // Cats admin log - start
+            // Ganimed admin log - start
             if (!string.IsNullOrEmpty(_cfg.GetCVar(CCVars.DiscordAdminchatWebhook)))
             {
                 var webhookUrl = _cfg.GetCVar(CCVars.DiscordAdminchatWebhook);
@@ -202,7 +202,7 @@ namespace Content.Server.Administration.Managers
                 var identifier = webhookData.ToIdentifier();
                 await _discord.CreateMessage(identifier, payload);
             }
-            // Cats admin log - end
+            // Ganimed admin log - end
         }
 
         public async void ReloadAdmin(ICommonSession player)
@@ -388,14 +388,14 @@ namespace Content.Server.Administration.Managers
                     }
                     else
                     {
-                        DisconnectedAdminMaybe(e.Session); // Cats admin log
+                        DisconnectedAdminMaybe(e.Session); // Ganimed admin log
                         _chat.SendAdminAnnouncement(Loc.GetString("admin-manager-admin-logout-message",
                             ("name", e.Session.Name)));
                     }
                 }
             }
         }
-        // Cats admin log - start
+        // Ganimed admin log - start
         private async void DisconnectedAdminMaybe(ICommonSession session)
         {
             if (!string.IsNullOrEmpty(_cfg.GetCVar(CCVars.DiscordAdminchatWebhook)))
@@ -412,7 +412,7 @@ namespace Content.Server.Administration.Managers
                 await _discord.CreateMessage(identifier, payload);
             }
         }
-        // Cats admin log - end
+        // Ganimed admin log - end
         
         private async void LoginAdminMaybe(ICommonSession session)
         {
@@ -452,7 +452,7 @@ namespace Content.Server.Administration.Managers
                     {
                         _chat.SendAdminAnnouncement(Loc.GetString("admin-manager-admin-login-message",
                             ("name", session.Name)));
-                        // Cats admin log - start
+                        // Ganimed admin log - start
                         if (!string.IsNullOrEmpty(_cfg.GetCVar(CCVars.DiscordAdminchatWebhook)))
                         {
                             var webhookUrl = _cfg.GetCVar(CCVars.DiscordAdminchatWebhook);
@@ -471,7 +471,7 @@ namespace Content.Server.Administration.Managers
                             var identifier = webhookData.ToIdentifier();
                             await _discord.CreateMessage(identifier, payload);
                         }
-                        // Cats admin log - end
+                        // Ganimed admin log - end
                     }
                 }
 

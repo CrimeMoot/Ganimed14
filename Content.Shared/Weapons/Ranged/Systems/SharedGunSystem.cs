@@ -69,13 +69,13 @@ public abstract partial class SharedGunSystem : EntitySystem
     [Dependency] protected readonly ThrowingSystem ThrowingSystem = default!;
     [Dependency] private   readonly UseDelaySystem _useDelay = default!;
     [Dependency] private readonly EntityWhitelistSystem _whitelistSystem = default!;
-    // CATS-personale_gun-Start
+    // Ganimed-personale_gun-Start
     [Dependency] private readonly SharedAudioSystem _audio = default!;
     [Dependency] private readonly SharedElectrocutionSystem _electrocutionSystem = default!;
     [Dependency] private readonly SharedPopupSystem _popup = default!;
     [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly SharedCombatModeSystem _combatModeOff = default!;
-    // CATS-personale_gun-End
+    // Ganimed-personale_gun-End
 
     private const float InteractNextFire = 0.3f;
     private const double SafetyNextFire = 0.5;

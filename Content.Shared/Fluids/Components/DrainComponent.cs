@@ -59,7 +59,7 @@ public sealed partial class DrainComponent : Component
     /// If the EntityQuery seems a bit unperformant this can be increased.
     /// </summary>
     [DataField("drainFrequency")]
-    public float DrainFrequency = 3f; // cats
+    public float DrainFrequency = 3f; // Ganimed
 
     /// <summary>
     /// How much time it takes to unclog it with a plunger

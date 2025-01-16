@@ -1,9 +1,8 @@
 ﻿- type: entity
   parent: CombatKnife
   id: AntiPsychicKnife
-  name: Анти-психический нож
-  suffix: Псионика
-  description: Специальный нож, предназначенный для убийства псиоников(НЕТ,ОН НЕ НАНОСИТ БОЛЬШЕ УРОНА ПСИОНИКАМ).
+  name: Anti-psychic Knife
+  description: It's over
   components:
     - type: MeleeWeapon
       attackRate: 1.5

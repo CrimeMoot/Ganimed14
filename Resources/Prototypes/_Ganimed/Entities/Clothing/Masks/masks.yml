@@ -1,0 +1,18 @@
+- type: entity
+  parent: ClothingMaskGasSyndicate
+  id: ClothingMaskGasBlueshields
+  name: противогаз офицера синего щита
+  description: Элитный противогаз офицера синего щита.
+  components:
+  - type: Sprite
+    sprite: _Ganimed/blueshield/blueshield-mask.rsi
+  - type: Clothing
+    sprite: _Ganimed/blueshield/blueshield-mask.rsi
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - Snout
+    hideOnToggle: true

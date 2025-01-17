@@ -92,3 +92,14 @@
         Piercing: 0.9
   - type: Item
     size: Normal
+
+- type: entity
+  parent: [ClothingNeckBase, BaseCommandContraband]
+  id: ClothingNeckCloakBlueshields
+  name: плащ офицера синего щита
+  description: Величественный черный плащ, символизирующий офицера синего щита.
+  components:
+  - type: Sprite
+    sprite: _Ganimed/blueshield/blueshield-cloack.rsi
+  - type: StealTarget
+    stealGroup: HeadCloak

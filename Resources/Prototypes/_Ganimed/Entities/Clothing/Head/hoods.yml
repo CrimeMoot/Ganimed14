@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingHeadHatHoodWinterBase
+  id: ClothingHeadHatHoodWinterBlueshields
+  categories: [ HideSpawnMenu ]
+  name: капюшон куртки офицера синего щита
+  components:
+  - type: Sprite
+    sprite: _Ganimed/blueshield/hood-blueshield.rsi
+  - type: Clothing
+    sprite: _Ganimed/blueshield/hood-blueshield.rsi

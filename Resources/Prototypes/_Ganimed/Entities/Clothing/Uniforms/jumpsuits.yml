@@ -76,3 +76,84 @@
     sprite: _Ganimed/Clothing/Uniforms/Sec/Engineer/securityEngineerJumpSuit.rsi
   - type: Clothing
     sprite: _Ganimed/Clothing/Uniforms/Sec/Engineer/securityEngineerJumpSuit.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitBlueshields
+  name: костюм офицера синего щита
+  description: Тот, кто носит это, говорит о деле.
+  components:
+  - type: Sprite
+    sprite: _Ganimed/blueshield/blueshild-jumpsuit.rsi
+  - type: Clothing
+    sprite: _Ganimed/blueshield/blueshild-jumpsuit.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitTSF
+  name: Fleet jumpsuit
+  description: It looks technologically advanced.
+  components:
+  - type: Sprite
+    sprite: _Ganimed/Clothing/Uniforms/tsf/tsf.rsi
+  - type: Clothing
+    sprite: _Ganimed/Clothing/Uniforms/tsf/tsf.rsi
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitTSFCommander
+  name: Commander jumpsuit
+  description: It looks technologically advanced.
+  components:
+  - type: Sprite
+    sprite: _Ganimed/Clothing/Uniforms/tsf/tsf_captain.rsi
+  - type: Clothing
+    sprite: _Ganimed/Clothing/Uniforms/tsf/tsf_captain.rsi
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitUSSP
+  name: USSP jumpsuit
+  description: It looks like something communist.
+  components:
+  - type: Sprite
+    sprite: _Ganimed/Clothing/Uniforms/ussp/ussp_form.rsi
+  - type: Clothing
+    sprite: _Ganimed/Clothing/Uniforms/ussp/ussp_form.rsi
+  - type: Tag
+    tags:
+    - WhitelistChameleon  
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Heat: 0.95        
+        Piercing: 0.95
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitUSSPCommander
+  name: USSP commander jumpsuit
+  description: It looks like something very communist.
+  components:
+  - type: Sprite
+    sprite: _Ganimed/Clothing/Uniforms/ussp/ussp_form_commander.rsi
+  - type: Clothing
+    sprite: _Ganimed/Clothing/Uniforms/ussp/ussp_form_commander.rsi
+  - type: Tag
+    tags:
+    - WhitelistChameleon  
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.85
+        Slash: 0.85
+        Heat: 0.9        
+        Piercing: 0.9

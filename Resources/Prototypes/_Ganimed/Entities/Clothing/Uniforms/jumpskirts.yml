@@ -30,3 +30,14 @@
     sprite: _Ganimed/Clothing/Uniforms/Jumpskirt/maidmini.rsi
   - type: Clothing
     sprite: _Ganimed/Clothing/Uniforms/Jumpskirt/maidmini.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtBlueshields
+  name: платье офицера синего щита
+  description: Тот, кто носит это, говорит о деле.
+  components:
+  - type: Sprite
+    sprite: _Ganimed/blueshield/blueshield-jumpskirt.rsi
+  - type: Clothing
+    sprite: _Ganimed/blueshield/blueshield-jumpskirt.rsi

@@ -1,18 +1,18 @@
 ﻿# Tier 2
 
-- type: technology
-  id: PsionicCountermeasures
-  name: research-technology-psionic-countermeasures
-  icon:
-    sprite: /Textures/Objects/Devices/hand_teleporter.rsi
-    state: icon
-  discipline: Experimental
-  tier: 2
-  cost: 7500
-  recipeUnlocks:
-    - ClothingHeadHelmetInsulated
-    - InsulativeHeadcage
-    - ShellSoulbreaker
+#- type: technology
+#  id: PsionicCountermeasures
+#  name: research-technology-psionic-countermeasures
+#  icon:
+#    sprite: /Textures/Objects/Devices/hand_teleporter.rsi
+#    state: icon
+#  discipline: Experimental
+#  tier: 2
+#  cost: 7500
+#  recipeUnlocks:
+#    - ClothingHeadHelmetInsulated
+#    - InsulativeHeadcage
+#    - ShellSoulbreaker
 
 - type: technology
   id: Metempsychosis

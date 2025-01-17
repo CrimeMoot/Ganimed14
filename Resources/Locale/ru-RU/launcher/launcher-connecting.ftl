@@ -1,6 +1,6 @@
 ### Connecting dialog when you start up the game
 
-connecting-title = Space Cats and 1984
+connecting-title = Enterprise
 connecting-exit = Выйти
 connecting-retry = Повторить
 connecting-reconnect = Переподключиться

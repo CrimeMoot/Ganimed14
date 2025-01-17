@@ -164,7 +164,7 @@ public sealed class AutoPsiSystem : EntitySystem
                 return;
             }
         }
-*/ Disable Psi-
+*/
         args.SpawnResult = _stationSpawning.SpawnPlayerMob(spawnLoc.Pos, args.Job, args.HumanoidCharacterProfile, args.Station);
     }
 

@@ -3,9 +3,6 @@
   table: !type:AllSelector
     children:
     - id: GlimmerWispSpawn
-    - id: NoosphericZap
-    - id: NoosphericFry
-    - id: PsionicCatGotYourTongue
 #    - id: MassMindSwap
     - id: GlimmerWispSpawn
     - id: FreeProberEarly
@@ -21,7 +18,6 @@
       tableId: PsiBackmenEventsTable
 #    - id: EvilTwinSpawn
     - id: FugitiveSpawn
-    - id: NoosphericStorm
     - id: BluespaceGoat
     - id: SpiderSpiderVampireSpawn
 #    - id: DiseaseOutbreak
@@ -73,16 +69,6 @@
     - type: WageSchedulerRule
 
 ## Regular station events
-- type: entity
-  id: NoosphericStorm
-  parent: BaseGameRule
-  categories: [ HideSpawnMenu ]
-  components:
-    - type: StationEvent
-      startAnnouncement: station-event-noospheric-storm-announcement
-      weight: 5
-      earliestStart: 15
-    - type: NoosphericStormRule
 
 - type: entity
   id: BluespaceGoat
@@ -108,36 +94,6 @@
     - type: GlimmerEvent
 
 ## Glimmer events
-- type: entity
-  id: NoosphericZap
-  parent: BaseGlimmerEvent
-  categories: [ HideSpawnMenu ]
-  components:
-    - type: GlimmerEvent
-    - type: NoosphericZapRule
-
-- type: entity
-  id: NoosphericFry
-  parent: BaseGlimmerEvent
-  categories: [ HideSpawnMenu ]
-  components:
-    - type: GlimmerEvent
-      minimumGlimmer: 300
-      maximumGlimmer: 900
-    - type: NoosphericFryRule
-
-
-- type: entity
-  id: PsionicCatGotYourTongue
-  parent: BaseGlimmerEvent
-  categories: [ HideSpawnMenu ]
-  components:
-    - type: GlimmerEvent
-      minimumGlimmer: 200
-      maximumGlimmer: 500
-      glimmerBurnLower: 18
-      glimmerBurnUpper: 40
-    - type: PsionicCatGotYourTongueRule
 
 #- type: entity
 #  id: MassMindSwap

@@ -137,6 +137,8 @@ public sealed class AutoPsiSystem : EntitySystem
 
         var spawnLoc = _random.Pick(GetPrisonersSpawningEntities(args.Station).ToList());
 
+
+/* Disable Psi-
         if (_random.Prob(
 #if DEBUG
                 1f
@@ -162,7 +164,7 @@ public sealed class AutoPsiSystem : EntitySystem
                 return;
             }
         }
-
+*/ Disable Psi-
         args.SpawnResult = _stationSpawning.SpawnPlayerMob(spawnLoc.Pos, args.Job, args.HumanoidCharacterProfile, args.Station);
     }
 

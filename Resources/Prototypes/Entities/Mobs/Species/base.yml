@@ -259,6 +259,14 @@
   - type: Absorbable # Changeling
   - type: DiseaseCarrier # backmen
   - type: Targeting # backmen: surgery
+  # Ganimed Edit start
+  - type: CritHeartbeat
+    heartbeatSound:
+      path: /Audio/_Ganimed/Effects/heartbeat.ogg
+      params:
+        volume: -3
+        loop: True
+  # Ganimed Edit end
   - type: Barotrauma
     damage:
       types:

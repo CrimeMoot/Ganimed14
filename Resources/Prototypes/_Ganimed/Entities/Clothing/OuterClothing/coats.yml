@@ -1,4 +1,36 @@
-#Зимняя куртка ведущего врача
+- type: entity
+  parent: ClothingOuterStorageFoldableBase
+  id: ClothingOuterCoatBlueshields
+  name: бомбер офицера синего щита
+  description: Неероятно удобный бомбер для защитника глав станции, усиленный специальным сплавом для дополнительной защиты и придания стиля тем, у кого внушительный вид.
+  components:
+  - type: Sprite
+    sprite: _Ganimed/blueshield/blueshield-coat.rsi
+  - type: Clothing
+    sprite: _Ganimed/blueshield/blueshield-coat.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.7
+        Heat: 0.7
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+
+- type: entity
+  parent: [ClothingOuterArmorWarden, ClothingOuterWinterCoatToggleable]
+  id: ClothingOuterWinterBlueshields
+  name: зимняя бронекуртка офицерасинего щита
+  description: Зимняя куртка, усиленная специальным сплавом для дополнительной защиты и придания стиля тем, у кого внушительный вид.
+  components:
+  - type: Sprite
+    sprite: _Ganimed/blueshield/blueshield-winter-armor-coat.rsi
+  - type: Clothing
+    sprite: _Ganimed/blueshield/blueshield-winter-armor-coat.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHatHoodWinterBlueshields
+
 - type: entity
   parent: ClothingOuterWinterCoatToggleable
   id: ClothingOuterWinterSeniorPhysician
@@ -17,9 +49,7 @@
     priceMultiplier: 0.15
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHatHoodWinterSci
-
-
-#Зимняя куртка ведущего учёного
+  
 - type: entity
   parent: ClothingOuterWinterCoatToggleable
   id: ClothingOuterWinterSeniorResearcher
@@ -38,8 +68,6 @@
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHatHoodWinterSci
 
-
-#Зимняя куртка ведущего инженера
 - type: entity
   parent: ClothingOuterWinterCoatToggleable
   id: ClothingOuterWinterSeniorEngineer
@@ -58,8 +86,6 @@
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHatHoodWinterEngineer
 
-
-#Зимняя куртка инструктора службы безопастности
 - type: entity
   parent: ClothingOuterWinterCoatToggleable
   id: ClothingOuterWinterSeniorOfficer

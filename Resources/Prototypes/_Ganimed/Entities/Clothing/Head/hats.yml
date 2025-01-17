@@ -1,5 +1,21 @@
 - type: entity
   parent: ClothingHeadBase
+  id: ClothingHeadHatBeretChiefEngineering
+  name: берет старшего инженера
+  description: Белый берет с эмблемой инженерного отдела. Для старших инженеров, которые предпочитают стиль безопасности.
+  components:
+  - type: Sprite
+    sprite: _Ganimed/chiefengineerberet.rsi
+  - type: Clothing
+    sprite: _Ganimed/chiefengineerberet.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - HamsterWearable
+    - WhitelistChameleon
+
+- type: entity
+  parent: ClothingHeadBase
   id: ClothingHeadHatBeretCaptainWhite
   name: white captain beret
   description: A white captain beret, an icon of style.

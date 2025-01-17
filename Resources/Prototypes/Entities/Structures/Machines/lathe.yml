@@ -228,12 +228,12 @@
       - RiotShield
       - SpeedLoaderMagnum
       - SpeedLoaderMagnumEmpty
-      - CartridgeEpinephrine # Cats
-      - CartridgeBicaridine # Cats
-      - CartridgeDermaline # Cats
-      - CartridgeEphedrine # Cats
-      - CartridgeIchor # Cats
-      - SecHypo # Cats
+      - CartridgeEpinephrine # Ganimed 
+      - CartridgeBicaridine # Ganimed 
+      - CartridgeDermaline # Ganimed 
+      - CartridgeEphedrine # Ganimed 
+      - CartridgeIchor # Ganimed 
+      - SecHypo # Ganimed 
   - type: BlueprintReceiver
     whitelist:
       tags:
@@ -295,7 +295,7 @@
     - Dropper
     - ClothingEyesGlassesChemical
     dynamicRecipes:
-      - PlantAnalyzer # Cats-PlantAnalyzer
+      - PlantAnalyzer # Ganimed -PlantAnalyzer
       - RnDPowerDrill
       - MiningDrill
       - MiningDrillDiamond
@@ -353,7 +353,7 @@
       - ClothingBackpackSatchelHolding
       - ClothingBackpackDuffelHolding
       - WelderExperimental
-      - RnDJawsOfLife  # cats
+      - RnDJawsOfLife  # Ganimed 
       - ClothingEyesGlassesChemical
       - CoreSilver
       #- QSI
@@ -367,9 +367,9 @@
       - FauxTileAstroSnow
       - OreBagOfHolding
       - DeviceQuantumSpinInverter
-      - EnergyDomeDirectionalTurtle # cats-shield energy_barrier
-      - HypoExperement # Cats
-      - ClothingEyesNightVisionGoggles # Cats
+      - EnergyDomeDirectionalTurtle # Ganimed -shield energy_barrier
+      - HypoExperement # Ganimed 
+      - ClothingEyesNightVisionGoggles # Ganimed 
 # start-backmen: languages
       - CanilunztTranslator
       - BubblishTranslator
@@ -401,7 +401,7 @@
       - EnergyScalpel # Shitmed Change
       - EnergyCautery # Shitmed Change
       - AdvancedRetractor # Shitmed Change
-      - ArtificialBluespaceCrystal # Cats
+      - ArtificialBluespaceCrystal # Ganimed 
   - type: EmagLatheRecipes
     emagDynamicRecipes:
       - BoxBeanbag
@@ -584,8 +584,8 @@
       - JukeboxCircuitBoard
       - SMESAdvancedMachineCircuitboard
       - SalvageExpeditionsComputerCircuitboard # Corvax-Cringe
-      - MachineBluespaceTransitorCircuitboard # Cats
-      - MachineBluespaceHarvesterCircuitboard # Cats
+      - MachineBluespaceTransitorCircuitboard # Ganimed 
+      - MachineBluespaceHarvesterCircuitboard # Ganimed 
       - HolopadMachineCircuitboard
   - type: EmagLatheRecipes
     emagDynamicRecipes:
@@ -619,7 +619,7 @@
   description: Creates parts for robotics and other mechanical needs.
   components:
   - type: Sprite
-    sprite: _Ganimed/Structures/Machines/exosuit_fabricator.rsi # Cats edit
+    sprite: _Ganimed/Structures/Machines/exosuit_fabricator.rsi # Ganimed  edit
     layers:
     - state: fab-idle
       map: ["enum.LatheVisualLayers.IsRunning"]
@@ -883,16 +883,16 @@
       - WeaponFlareGunSecurity
       - WeaponLaserCarbinePractice
       - Zipties
-      - CartridgeEpinephrine # Cats
-      - CartridgeBicaridine # Cats
-      - CartridgeDermaline # Cats
-      - CartridgeIchor # Cats
-      - SecHypo # Cats
-      - BorgModuleNeutralization # Cats Security Borg
+      - CartridgeEpinephrine # Ganimed 
+      - CartridgeBicaridine # Ganimed 
+      - CartridgeDermaline # Ganimed 
+      - CartridgeIchor # Ganimed 
+      - SecHypo # Ganimed 
+      - BorgModuleNeutralization # Ganimed Security Borg
     dynamicRecipes:
-      - BorgModuleCombat # Cats: Security Borg
-      - BorgModuleSecurityControlling # Cats: Security Borg
-      - BorgModuleNeutralizationAdvanced # _Ganimed: Security Borg
+      - BorgModuleCombat # Ganimed: Security Borg
+      - BorgModuleSecurityControlling # Ganimed: Security Borg
+      - BorgModuleNeutralizationAdvanced # Ganimed: Security Borg
       - BoxBeanbag
       - BoxShotgunIncendiary
       - BoxShotgunUranium
@@ -950,7 +950,7 @@
       - WeaponXrayCannon
       - SecurityCyberneticEyes # Shitmed Change
       - MedicalCyberneticEyes # Shitmed Change
-      - ClothingEyesThermalVisionGoggles # Cats
+      - ClothingEyesThermalVisionGoggles # Ganimed 
   - type: MaterialStorage
     whitelist:
       tags:
@@ -1071,8 +1071,8 @@
       - ClothingEyesGlassesChemical
       - WhiteCane
     dynamicRecipes:
-      - ChemicalImplanterTrigger # cats
-      - ChemicalsImplanter # cats
+      - ChemicalImplanterTrigger # Ganimed 
+      - ChemicalsImplanter # Ganimed 
       - ChemicalPayload
       - CryostasisBeaker
       - BluespaceBeaker

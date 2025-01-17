@@ -302,8 +302,8 @@
     - id: RubberStampRd
     - id: ClothingHeadCage # backmen
     - id: PrinterDocFlatpack # Corvax-Printer
-    - id: FlatpackOracle # backmen
-    - id: FlatpackSophie # backmen
+#    - id: FlatpackOracle # backmen
+#    - id: FlatpackSophie # backmen
     - id: AnomalyPinpointer # cats
     - id: ClothingOuterReactiveArmor # cats
     - id: TelescopicBaton # Cats

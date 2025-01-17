@@ -33,4 +33,4 @@
         acts: [ "Destruction" ]
   - type: ShipyardConsole
     allowedGroup:
-    - Salvages
+    - Salvage

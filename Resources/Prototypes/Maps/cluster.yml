@@ -1,24 +1,26 @@
-﻿- type: gameMap
+- type: gameMap
   id: Cluster
   mapName: 'Cluster'
   mapPath: /Maps/cluster.yml
-  minPlayers: 0
+  minPlayers: 10
+  maxPlayers: 35
   stations:
     Cluster:
       stationProto: StandardNanotrasenStation
       components:
         - type: StationEmergencyShuttle
-          emergencyShuttlePath: /Maps/Shuttles/emergency_cluster.yml
+          emergencyShuttlePath: /Maps/Shuttles/emergency_omega.yml
         - type: StationNameSetup
-          mapNameTemplate: '{0} Cluster Station {1}'
+          mapNameTemplate: '{0} Кластер {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
-            prefixCreator: '14'
+            prefixCreator: 'ИСН'
+        - type: StationCargoShuttle
+          path: /Maps/Shuttles/cargo_small.yml
         - type: StationJobs
           availableJobs:
             #service
             Captain: [ 1, 1 ]
-            IAA: [ 1, 1 ] # Corvax-IAA
             HeadOfPersonnel: [ 1, 1 ]
             Bartender: [ 1, 1 ]
             Botanist: [ 2, 2 ]
@@ -26,7 +28,7 @@
             Janitor: [ 1, 1 ]
             Chaplain: [ 1, 1 ]
             Librarian: [ 1, 1 ]
-            #Lawyer: [ 1, 1 ] # Corvax-IAA
+            Lawyer: [ 1, 1 ]
             ServiceWorker: [ 1, 1 ]
             #engineering
             ChiefEngineer: [ 1, 1 ]
@@ -58,16 +60,9 @@
             Clown: [ 1, 1 ]
             Mime: [ 1, 1 ]
             Musician: [ 1, 1 ]
-            # backmen
-            Brigmedic: [ 0, 1 ] # backmen-Brigmedic
-            BKBPLATech: [0, 3] # backmen-BPLA-Silicons
-            BKBPLAMED: [0, 3] # backmen-BPLAMED-Silicons
-            Deliveryman: [ 0, 1 ]
+            #ent
+            BlueShield: [ 0, 1 ]
+            Roboticist: [ 0, 1 ]
+            Brigmedic: [ 0, 1 ]
+            BridgeOfficer: [ 0, 1 ]
             Prisoner: [ 2, 2]
-            
-        # backmen blob-config-start SMALL+
-        - type: StationBlobConfig
-          stageBegin: 25
-          stageCritical: 350
-          stageTheEnd: 700
-        # backmen blob-config-end

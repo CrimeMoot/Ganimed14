@@ -11,6 +11,9 @@
     time: 24000
   - !type:AgeRequirement
     requiredAge: 18
+  - !type:SexRequirement
+    allowedSex:
+    - Female
   weight: 20
   icon: "JobIconMaid"
   startingGear: MaidGear

@@ -15,10 +15,6 @@ public sealed partial class FrezonCoolantReaction : IGasReactionEffect
     {
         var oldHeatCapacity = atmosphereSystem.GetHeatCapacity(mixture, true);
 
-        var initialHyperNoblium = mixture.GetMoles(Gas.HyperNoblium);
-        if (initialHyperNoblium >= 5.0f && mixture.Temperature > 20f)
-            return ReactionResult.NoReaction;
-
         var temperature = mixture.Temperature;
 
         var energyModifier = 1f;

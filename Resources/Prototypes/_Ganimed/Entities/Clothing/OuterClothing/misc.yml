@@ -1,0 +1,12 @@
+- type: entity
+  parent: ClothingOuterBase
+  id: ClothingOuterCardborgOriginal
+  name: blocky cardborg costume
+  description: An ordinary cardboard box with holes cut in the sides.
+  components:
+  - type: Sprite
+    sprite: _Ganimed/Clothing/Original/OuterClothing/Misc/original_cardborg.rsi
+  - type: Clothing
+    sprite: _Ganimed/Clothing/Original/OuterClothing/Misc/original_cardborg.rsi
+  - type: TypingIndicatorClothing
+    proto: robot

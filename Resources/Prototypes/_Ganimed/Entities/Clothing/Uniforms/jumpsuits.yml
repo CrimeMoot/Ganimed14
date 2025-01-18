@@ -274,6 +274,7 @@
     sprite: _Ganimed/Clothing/Original/Uniforms/Jumpsuit/original_ert_janitor.rsi
   - type: Armor
     modifiers:
+      coefficients:
         Stun: 0.9 
         
         
@@ -307,6 +308,7 @@
     sprite: _Ganimed/Clothing/Original/Uniforms/Jumpsuit/original_ert_medic.rsi
   - type: Armor
     modifiers:
+      coefficients:
         Stun: 0.9      
 
 - type: entity

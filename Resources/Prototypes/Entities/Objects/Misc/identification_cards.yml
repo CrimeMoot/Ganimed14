@@ -840,7 +840,6 @@
     - NuclearOperative
     - SyndicateAgent
     - Wizard
-    notificationsMuted: true
   - type: Tag #  Ignore Chameleon tags
     tags:
     - DoorBumpOpener

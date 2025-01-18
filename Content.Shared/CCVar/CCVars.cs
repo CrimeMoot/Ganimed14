@@ -46,4 +46,11 @@ public sealed partial class CCVars : CVars
     public static readonly CVarDef<bool> UseDynamicHostname =
         CVarDef.Create("game.use_dynamic_hostname", false, CVar.SERVERONLY);
 
+    /// Ganimed Edit
+    /// <summary>
+    ///     When true, you have to press the change speed button to sprint.
+    /// </summary>
+    public static readonly CVarDef<bool> GamePressToSprint =
+        CVarDef.Create("game.press_to_sprint", true, CVar.REPLICATED);
+
 }

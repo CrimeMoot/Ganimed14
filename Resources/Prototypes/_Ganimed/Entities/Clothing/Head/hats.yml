@@ -119,3 +119,14 @@
     sprite: _Ganimed/BridgeOfficer/BOBeret.rsi
   - type: Clothing
     sprite: _Ganimed/BridgeOfficer/BOBeret.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatWardenOriginal
+  name: warden's cap
+  description: A police officer's Hat. This hat emphasizes that you are THE LAW
+  components:
+  - type: Sprite
+    sprite: _Ganimed/Clothing/Original/Head/Hats/original_warden.rsi
+  - type: Clothing
+    sprite: _Ganimed/Clothing/Original/Head\Hats/original_warden.rsi

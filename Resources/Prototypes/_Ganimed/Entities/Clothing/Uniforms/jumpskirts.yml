@@ -41,3 +41,36 @@
     sprite: _Ganimed/blueshield/blueshield-jumpskirt.rsi
   - type: Clothing
     sprite: _Ganimed/blueshield/blueshield-jumpskirt.rsi
+    
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtHoSOriginal
+  name: head of security's colorful jumpskirt
+  description: It's even redder and even crisper, perfect for a not-so-cheerful head.
+  components:
+  - type: Sprite
+    sprite: _Ganimed/Clothing/Original/Uniforms/Jumpskirt/original_hos.rsi
+  - type: Clothing
+    sprite: _Ganimed/Clothing/Original/Uniforms/Jumpskirt/original_hos.rsi
+    
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtBrigmedicOriginal
+  name: medical-security jumpskirt
+  description: This simple in design uniform is issued to personal with affinities to both medical and security. Strange choice of patterns nonetheless.
+  components:
+  - type: Sprite
+    sprite: _Ganimed/Clothing/Original/Uniforms/Jumpskirt/original_brigmedic.rsi
+  - type: Clothing
+    sprite: _Ganimed/Clothing/Original/Uniforms/Jumpskirt/original_brigmedic.rsi
+    
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtScientistOriginal
+  name: scientist's plain jumpskirt
+  description: It's a less decorated scientist jumpskirt. It has minor markings that denote the wearer as a scientist.
+  components:
+  - type: Sprite
+    sprite: _Ganimed/Clothing/Original/Uniforms/Jumpskirt/original_scientist.rsi
+  - type: Clothing
+    sprite: _Ganimed/Clothing/Original/Uniforms/Jumpskirt/original_scientist.rsi

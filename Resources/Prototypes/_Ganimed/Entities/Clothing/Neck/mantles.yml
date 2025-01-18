@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckMantleRDOriginal
+  name: royal mantle
+  description: A mantle of royal purple. No other royal thing about it, though.
+  components:
+  - type: Sprite
+    sprite: _Ganimed/Clothing/Original/Neck/Mantles/original_rdmantle.rsi
+  - type: Clothing
+    sprite: _Ganimed/Clothing/Original/Neck/Mantles/original_rdmantle.rsi

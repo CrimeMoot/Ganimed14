@@ -155,7 +155,6 @@
       - CrewManifestCartridge
       - NotekeeperCartridge
       - NewsReaderCartridge
-
       - MedTekCartridge
 
 - type: entity

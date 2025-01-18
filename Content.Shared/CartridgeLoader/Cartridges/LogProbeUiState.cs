@@ -1,5 +1,4 @@
-﻿using Content.Shared._Ganimed.CartridgeLoader.Cartridges;
-using Robust.Shared.Serialization;
+﻿using Robust.Shared.Serialization;
 
 namespace Content.Shared.CartridgeLoader.Cartridges;
 
@@ -11,15 +10,9 @@ public sealed class LogProbeUiState : BoundUserInterfaceState
     /// </summary>
     public List<PulledAccessLog> PulledLogs;
 
-    /// <summary>
-    /// Ganimed-PDAChat: The NanoChat data if a card was scanned, null otherwise
-    /// </summary>
-    public NanoChatData? NanoChatData { get; }
-
-    public LogProbeUiState(List<PulledAccessLog> pulledLogs, NanoChatData? nanoChatData = null) // Ganimed-PDAChat - NanoChat support
+    public LogProbeUiState(List<PulledAccessLog> pulledLogs)
     {
         PulledLogs = pulledLogs;
-                NanoChatData = nanoChatData; // Ganimed-PDAChat
     }
 }
 

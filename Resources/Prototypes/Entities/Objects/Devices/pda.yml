@@ -155,7 +155,7 @@
       - CrewManifestCartridge
       - NotekeeperCartridge
       - NewsReaderCartridge
-      - NanoChatCartridge # Cats-PDAChat
+
       - MedTekCartridge
 
 - type: entity
@@ -548,7 +548,6 @@
       - CrewManifestCartridge
       - NotekeeperCartridge
       - NewsReaderCartridge
-      - NanoChatCartridge # Cats-PDAChat
       - AstroNavCartridge
 
 - type: entity
@@ -1051,7 +1050,6 @@
       - CrewManifestCartridge
       - NotekeeperCartridge
       - NewsReaderCartridge
-      - NanoChatCartridge # Cats-PDAChat
       - MedTekCartridge
       - WantedListCartridge
       - LogProbeCartridge
@@ -1076,7 +1074,6 @@
       - CrewManifestCartridge
       - NotekeeperCartridge
       - NewsReaderCartridge
-      - NanoChatCartridge # Cats-PDAChat
       - LogProbeCartridge
       - WantedListCartridge
       - MedTekCartridge
@@ -1251,7 +1248,6 @@
       - CrewManifestCartridge
       - NotekeeperCartridge
       - NewsReaderCartridge
-      - NanoChatCartridge # Cats-PDAChat
       - MedTekCartridge
       - WantedListCartridge
       - LogProbeCartridge

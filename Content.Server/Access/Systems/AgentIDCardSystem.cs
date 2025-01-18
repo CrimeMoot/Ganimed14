@@ -9,8 +9,6 @@ using Robust.Server.GameObjects;
 using Robust.Shared.Prototypes;
 using Content.Shared.Roles;
 using System.Diagnostics.CodeAnalysis;
-using Content.Shared._Ganimed.NanoChat;
-
 namespace Content.Server.Access.Systems
 {
     public sealed class AgentIDCardSystem : SharedAgentIdCardSystem
@@ -30,17 +28,7 @@ namespace Content.Server.Access.Systems
             SubscribeLocalEvent<AgentIDCardComponent, AgentIDCardNameChangedMessage>(OnNameChanged);
             SubscribeLocalEvent<AgentIDCardComponent, AgentIDCardJobChangedMessage>(OnJobChanged);
             SubscribeLocalEvent<AgentIDCardComponent, AgentIDCardJobIconChangedMessage>(OnJobIconChanged);
-            SubscribeLocalEvent<AgentIDCardComponent, AgentIDCardNumberChangedMessage>(OnNumberChanged); // Ganimed-PDAChat
-        }
 
-        // Ganimed-PDAChat - Add number change handler
-        private void OnNumberChanged(Entity<AgentIDCardComponent> ent, ref AgentIDCardNumberChangedMessage args)
-        {
-            if (!TryComp<NanoChatCardComponent>(ent, out var comp))
-                return;
-
-            _nanoChat.SetNumber((ent, comp), args.Number);
-            Dirty(ent, comp);
         }
 
         private void OnAfterInteract(EntityUid uid, AgentIDCardComponent component, AfterInteractEvent args)
@@ -54,34 +42,6 @@ namespace Content.Server.Access.Systems
             var beforeLength = access.Tags.Count;
             access.Tags.UnionWith(targetAccess.Tags);
             var addedLength = access.Tags.Count - beforeLength;
-
-            // Ganimed-PDAChat-Start - Copy NanoChat data if available
-            if (TryComp<NanoChatCardComponent>(args.Target, out var targetNanoChat) &&
-                TryComp<NanoChatCardComponent>(uid, out var agentNanoChat))
-            {
-                // First clear existing data
-                _nanoChat.Clear((uid, agentNanoChat));
-
-                // Copy the number
-                if (_nanoChat.GetNumber((args.Target.Value, targetNanoChat)) is { } number)
-                    _nanoChat.SetNumber((uid, agentNanoChat), number);
-
-                // Copy all recipients and their messages
-                foreach (var (recipientNumber, recipient) in _nanoChat.GetRecipients((args.Target.Value, targetNanoChat)))
-                {
-                    _nanoChat.SetRecipient((uid, agentNanoChat), recipientNumber, recipient);
-
-                    if (_nanoChat.GetMessagesForRecipient((args.Target.Value, targetNanoChat), recipientNumber) is not
-                        { } messages)
-                        continue;
-
-                    foreach (var message in messages)
-                    {
-                        _nanoChat.AddMessage((uid, agentNanoChat), recipientNumber, message);
-                    }
-                }
-            }
-            // Ganimed-PDAChat-End
 
             if (addedLength == 0)
             {
@@ -108,16 +68,7 @@ namespace Content.Server.Access.Systems
             if (!TryComp<IdCardComponent>(uid, out var idCard))
                 return;
 
-            // Ganimed-PDAChat-Start - Get current number if it exists
-            uint? currentNumber = null;
-            if (TryComp<NanoChatCardComponent>(uid, out var comp))
-                currentNumber = comp.Number;
-
-            var state = new AgentIDCardBoundUserInterfaceState(
-                idCard.FullName ?? "",
-                idCard.LocalizedJobTitle ?? "",
-                idCard.JobIcon,
-                currentNumber); // Ganimed-PDAChat-End - Pass current number
+            var state = new AgentIDCardBoundUserInterfaceState(idCard.FullName ?? "", idCard.LocalizedJobTitle ?? "", idCard.JobIcon);
             _uiSystem.SetUiState(uid, AgentIDCardUiKey.Key, state);
         }
 

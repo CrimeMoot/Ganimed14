@@ -49,16 +49,6 @@
 
 - type: entity
   parent: PosterBases
-  id: PosterLegitOktoberfest
-  name: Oktoberfest!
-  description: "A poster with a tayaran advertising the traditional October beer festival."
-  suffix: Oktoberfest
-  components:
-  - type: Sprite
-    state: poster_adtoktoberfest_legit #Спрайт от Празата
-
-- type: entity
-  parent: PosterBases
   id: PosterLegitOktoberfest2
   name: Oktoberfest!
   description: "A poster with a beer mug advertising the traditional October beer festival."
@@ -68,15 +58,6 @@
     state: poster_adtoktoberfest2_legit #Спрайт от Празата
 
 #контрабандные постеры
-
-- type: entity
-  parent: PosterBases
-  id: PosterContrabandLustTayaran
-  name: Lusty Tayaran
-  description: "A poster with tayaran women of attractive appearance and in a provocative suit. Tayarans can also be beautiful!"
-  components:
-  - type: Sprite
-    state: poster_adtlusttayaran_contraband #Спрайт от Празата
 
 - type: entity
   parent: PosterBases
@@ -95,24 +76,6 @@
   components:
   - type: Sprite
     state: poster_adtsilence_contraband #Спрайт от Иллюми
-
-- type: entity
-  parent: PosterBases
-  id: PosterContrabandLustUma
-  name: Lusty Uma
-  description: "A poster with vulpcanine women of attractive appearance and in a provocative suit."
-  components:
-  - type: Sprite
-    state: poster_adtlustuma_contraband #Спрайт от Празата
-
-- type: entity
-  parent: PosterBases
-  id: PosterContrabandLustArDeco
-  name: Tayaran ArDeco
-  description: "A poster with tayaran women of attractive appearance and in ar deco suit."
-  components:
-  - type: Sprite
-    state: poster_adtlustardeco_contraband #Спрайт от Празата
 
 #Анимированные постеры
 

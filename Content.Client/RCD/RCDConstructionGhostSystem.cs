@@ -14,7 +14,7 @@ public sealed class RCDConstructionGhostSystem : EntitySystem
     [Dependency] private readonly IPlayerManager _playerManager = default!;
     [Dependency] private readonly RCDSystem _rcdSystem = default!;
     [Dependency] private readonly IPlacementManager _placementManager = default!;
-    
+
     private string _placementMode = typeof(AlignRCDConstruction).Name;
     private Direction _placementDirection = default;
 
@@ -55,9 +55,8 @@ public sealed class RCDConstructionGhostSystem : EntitySystem
             RaiseNetworkEvent(new RCDConstructionGhostRotationEvent(GetNetEntity(heldEntity.Value), _placementDirection));
         }
 
-         // If the placer has not changed, exit
+        // If the placer has not changed, exit
         _rcdSystem.UpdateCachedPrototype(heldEntity.Value, rcd);
-        var useProto = (_useMirrorPrototype && !string.IsNullOrEmpty(rcd.CachedPrototype.MirrorPrototype)) ? rcd.CachedPrototype.MirrorPrototype : rcd.CachedPrototype.Prototype;
 
         if (heldEntity == placerEntity && rcd.CachedPrototype.Prototype == placerProto)
             return;

@@ -103,7 +103,7 @@ public sealed class BlobRuleSystem : GameRuleSystem<BlobRuleComponent>
     }
 
     private const string StationGamma = "gamma";
-    private const string StationSierra = "sierra";
+    private const string StationSierra = "delta";
 
     private void CheckChangeStage(
         Entity<StationBlobConfigComponent?> stationUid,

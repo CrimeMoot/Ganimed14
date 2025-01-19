@@ -74,3 +74,31 @@
     sprite: _Ganimed/Clothing/Original/Uniforms/Jumpskirt/original_scientist.rsi
   - type: Clothing
     sprite: _Ganimed/Clothing/Original/Uniforms/Jumpskirt/original_scientist.rsi
+    
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtBrigmedicBlackOriginal
+  name: black brigmedic jumpskirt
+  description: Total overhaul vastly different from the usual brigmedic uniform. It is generally a bad idea to be bright if you are on a battlefield.
+  components:
+  - type: Sprite
+    sprite: _Ganimed/Clothing/Original/Uniforms/Jumpskirt/original_blackbrigmedic.rsi  
+  - type: Clothing
+    sprite: _Ganimed/Clothing/Original/Uniforms/Jumpskirt/original_blackbrigmedic.rsi 
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+    
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtCoronerBlackOriginal
+  name: black coroner jumpskirt
+  description: Total overhaul vastly different from the usual coroner uniform. Personel freak out when they can't see you from the shadows.
+  components:
+  - type: Sprite
+    sprite: _Ganimed/Clothing/Original/Uniforms/Jumpskirt/original_blackcoroner.rsi
+  - type: Clothing
+    sprite: _Ganimed/Clothing/Original/Uniforms/Jumpskirt/original_blackcoroner.rsi
+  - type: Tag
+    tags:
+    - WhitelistChameleon

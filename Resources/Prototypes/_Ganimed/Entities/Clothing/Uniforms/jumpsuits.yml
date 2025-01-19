@@ -328,3 +328,31 @@
         Slash: 0.8
         Piercing: 0.8
         Stun: 0.9  
+        
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitCoronerBlackOriginal
+  name: black coroner jumpsuit
+  description: Total overhaul vastly different from the usual coroner uniform. Personel freak out when they can't see you from the shadows.
+  components:
+  - type: Sprite
+    sprite: _Ganimed/Clothing/Original/Uniforms/Jumpsuit/original_blackcoroner.rsi
+  - type: Clothing
+    sprite: _Ganimed/Clothing/Original/Uniforms/Jumpsuit/original_blackcoroner.rsi
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+    
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitBrigmedicBlackOriginal
+  name: black brigmedic jumpsuit
+  description: Total overhaul vastly different from the usual brigmedic uniform. It is generally a bad idea to be bright if you are on a battlefield.
+  components:
+  - type: Sprite
+    sprite: _Ganimed/Clothing/Original/Uniforms/Jumpsuit/original_blackbrigmedic.rsi
+  - type: Clothing
+    sprite: _Ganimed/Clothing/Original/Uniforms/Jumpsuit/original_blackbrigmedic.rsi
+  - type: Tag
+    tags:
+    - WhitelistChameleon

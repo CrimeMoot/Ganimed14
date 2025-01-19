@@ -129,7 +129,6 @@ public sealed class HeadsetSystem : SharedHeadsetSystem
         }
 
         // end-backmen: language
-
     }
 
     private void OnEmpPulse(EntityUid uid, HeadsetComponent component, ref EmpPulseEvent args)

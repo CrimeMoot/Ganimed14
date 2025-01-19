@@ -191,16 +191,23 @@
     sprite: Backmen/Objects/Weapons/Gunsx64/Pistols/glock22/big.rsi
   - type: Item
     sprite: Backmen/Objects/Weapons/Gunsx64/Pistols/glock22/tiny.rsi
-  - type: Gun
-    angleDecay: 7
-    angleIncrease: 2
+  - type: Gun #Ganimed
+    fireRate: 5
+    angleDecay: 4
+    angleIncrease: 3.5
     cameraRecoilScalar: 0.5
-    maxAngle: 15
+    maxAngle: 9
     minAngle: 1
     soundGunshot:
-      path: /Audio/Weapons/Guns64/Pistols/beretta_shot.ogg
+      path: /Audio/Weapons/Guns/Gunshots/mk58.ogg
     soundEmpty:
       path: /Audio/Weapons/Guns64/Pistols/beretta_empty.ogg
+  - type: Clothing
+    sprite: Backmen/Objects/Weapons/Gunsx64/Pistols/glock22/tiny.rsi
+    quickEquip: false
+    slots:
+    - suitStorage
+    - Belt
   - type: ItemSlots
     slots:
       gun_magazine:

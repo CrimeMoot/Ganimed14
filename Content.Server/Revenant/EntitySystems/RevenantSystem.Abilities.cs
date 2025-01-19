@@ -43,7 +43,6 @@ public sealed partial class RevenantSystem
     [Dependency] private readonly TileSystem _tile = default!;
     [Dependency] private readonly EntityWhitelistSystem _whitelistSystem = default!;
     [Dependency] private readonly SharedTransformSystem _transformSystem = default!;
-    [Dependency] private readonly RevenantAnimatedSystem _revenantAnimated = default!;
     [Dependency] private readonly SharedMapSystem _mapSystem = default!;
 
     private void InitializeAbilities()
@@ -56,7 +55,6 @@ public sealed partial class RevenantSystem
         SubscribeLocalEvent<RevenantComponent, RevenantOverloadLightsActionEvent>(OnOverloadLightsAction);
         SubscribeLocalEvent<RevenantComponent, RevenantBlightActionEvent>(OnBlightAction);
         SubscribeLocalEvent<RevenantComponent, RevenantMalfunctionActionEvent>(OnMalfunctionAction);
-        SubscribeLocalEvent<RevenantComponent, RevenantAnimateEvent>(OnAnimateAction);
     }
 
     private void OnInteract(EntityUid uid, RevenantComponent component, UserActivateInWorldEvent args)
@@ -360,12 +358,4 @@ public sealed partial class RevenantSystem
         }
     }
 
-    private void OnAnimateAction(EntityUid uid, RevenantComponent comp, RevenantAnimateEvent args)
-    {
-        if (args.Handled)
-            return;
-
-        if (_revenantAnimated.CanAnimateObject(args.Target) && TryUseAbility(uid, comp, comp.AnimateCost, comp.AnimateDebuffs))
-            _revenantAnimated.TryAnimateObject(args.Target, comp.AnimateTime, (uid, comp));
-    }
 }

@@ -436,17 +436,6 @@
   - UplinkAmmo
 
 - type: listing
-  id: UplinkNightVisionDevice
-  name: прибор ночного видения
-  description: Ты можешь смотреть в темноте...
-  icon: { sprite: Clothing/Eyes/Glasses/ninjavisor.rsi, state: icon }
-  productEntity: ClothingEyesVisionNuki
-  cost:
-    Telecrystal: 2
-  categories:
-  - UplinkWearables
-
-- type: listing
   id: UplinkSniperSR127Bundle
   name: uplink-sniper-bundle-name
   description: uplink-sniper-bundle-desc

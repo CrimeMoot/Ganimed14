@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from Citadel-Station-13 at https://github.com/Citadel-Station-13/Citadel-Station-13/blob/c65285bb6dc3f2d2888885e4719176dd4cef60b8/icons/obj/tools.dmi",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "icon"
+    },
+    {
+      "name": "ammo"
+    },
+    {
+      "name": "ammo-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "ammo-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "equipped-BELT",
+      "directions": 4
+    },
+    {
+      "name": "inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "inhand-right",
+      "directions": 4
+    }
+  ]
+}

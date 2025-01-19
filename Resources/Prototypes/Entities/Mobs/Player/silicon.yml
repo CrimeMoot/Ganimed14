@@ -123,7 +123,7 @@
         # anyway it's just a quality of life thing.
         showEnts: True
 
-# Boards
+# Boardss
 - type: entity
   id: AsimovCircuitBoard
   parent: BaseElectronics
@@ -439,6 +439,9 @@
   - type: Speech
     speechVerb: Robotic
     speechSounds: Borg
+  - type: TurretController # Cats-TurretControl
+    requiredComponents:
+    - type: StationAiHeld
   - type: Tag
     tags:
     - HideContextMenu
@@ -492,7 +495,6 @@
   categories: [ HideSpawnMenu ]
   suffix: DO NOT MAP
   components:
-  - type: NoFTL
   - type: WarpPoint
     follow: true
   - type: Eye
@@ -523,7 +525,6 @@
   - type: Examiner
   - type: Actions
   - type: Alerts
-  - type: FTLSmashImmune
   - type: CargoSellBlacklist
   - type: StationAiVision
     range: 20

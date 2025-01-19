@@ -11,9 +11,6 @@
       damageRecovery:
         types:
           Asphyxiation: -1.0
-    - type: FootPrints
-      leftBarePrint: "footprint-left-bare-diona"
-      rightBarePrint: "footprint-right-bare-diona"
 
 # Reformed Diona
 - type: entity

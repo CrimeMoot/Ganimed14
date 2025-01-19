@@ -1,0 +1,106 @@
+[log]
+path = "logs"
+format = "log_%(date)s-%(time)s.txt"
+level = 1
+enabled = false
+
+[net]
+tickrate = 29
+port = 1212
+bindto = "::,0.0.0.0"
+max_connections = 60
+
+[status]
+enabled = true
+
+[game]
+hostname = "[RU][MRP] × Space Cats \U0001F30C"
+desc = """
+🌟 Space Cats — новый сервер, созданный на основе билда Backmen, где лайт-медиум отыгрыш сочетаются с увлекательным игровым процессом.
+Сейчас мы активно набираем новых администраторов и разработчиков. Присоединяйтесь к нам и станьте частью нашего уникального проекта!
+───────────────────────────────────────────────────────────────────────
+📚 ┋ Открытый сервер с дружелюбными требованиями к ролевому отыгрышу, лайт-медиум.
+🚀 ┋ Режим боя на баржах — эпические космические сражения ждут вас!
+👻 ┋ Встречайте новых антагонистов: Блоб, культисты плоти, злые близнецы и другие!
+🏠 ┋ ЦентКомм теперь доступен для игроков. Вершите славу NanoTrasen!
+💰 ┋ Экономическая система: заработные платы и банковские счета.
+🔮 ┋ Псионики — откройте возможности для вашего персонажа и используйте их с умом.
+🌱 ┋ Множество уникальных рас с особыми способностями.
+✨ ┋ Искусственный Интеллект, борги и уникальные к ним особенности.
+───────────────────────────────────────────────────────────────────────
+💬 「Почему выбрать именно нас?」 📚
+♠ ╏ Наша отзывчивая администрация всегда готова помочь вам освоиться.
+♥ ╏ Мы постоянно работаем над улучшением игрового процесса и создаем удобные QoL наработки.
+♣ ╏ Мы стремимся к сотрудничеству, как с игроками, так и с другими проектами.
+"""
+fallbackenabled = true
+map_rotation = false
+maxplayers = 50
+soft_max_players = 40
+map_pool = "SpaceCatsDefaultMapPool"
+contraband_examine = false
+use_dynamic_hostname = true
+
+[mapping]
+autosave = false
+
+[hub]
+advertise = true
+tags = "region:eu_e, lang:ru, rp:low, rp:med"
+server_url = "*"
+hub_urls = "https://hub.spacestation14.com/"
+
+[infolinks]
+bug_report = "https://discord.gg/vYFHfrdQQC"
+discord  = "https://discord.gg/vYFHfrdQQC"
+patreon = "https://boosty.to/spacecats"
+wiki = "https://wiki.backmen.ru"
+
+[server]
+rules_file = "SpaceCatsRuleset"
+
+[ahelp]
+admin_prefix = true
+admin_prefix_webhook = true
+
+[admin]
+role_ban_default_severity = "high"
+new_player_threshold = 80
+server_ban_use_last_details = true
+new_player_join_sound = true
+
+[atmos]
+excited_groups = false
+monstermos_equalization = false
+
+[shuttle]
+arrivals = true
+arrivals_map = "/Maps/Misc/kosmoport.yml"
+arrivals_returns = true
+auto_call_time = 150
+auto_call_extension_time = 70
+emergency_dock_time = 280
+emergency_authorize_time = 30
+emergency_early_launch_allowed = true
+arrivals_planet = false
+
+[ic]
+flavor_text = true
+
+[chat]
+rate_limit_count = 5
+
+[vote]
+map_autovote_enabled = true
+preset_autovote_enabled = true
+restart_not_allowed_when_admin_online = false
+restart_max_players = 50
+preset_enabled = true
+map_enabled = true
+restart_ghost_percentage = 40
+restart_required_ratio = 0.7
+same_type_timeout = 240
+timermap = 40
+timerrestart = 60
+timerpreset = 30
+timeralone = 30

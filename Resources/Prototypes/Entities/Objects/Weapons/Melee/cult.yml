@@ -4,6 +4,7 @@
   id: RitualDagger
   description: A strange dagger used by sinister groups for rituals and sacrifices.
   components:
+  - type: BackStab
   - type: Sharp
   - type: Sprite
     sprite: Objects/Weapons/Melee/cult_dagger.rsi
@@ -28,6 +29,7 @@
   id: EldritchBlade
   description: A sword humming with unholy energy.
   components:
+  - type: BackStab
   - type: Sharp
   - type: Sprite
     sprite: Objects/Weapons/Melee/cult_blade.rsi
@@ -52,6 +54,7 @@
   id: UnholyHalberd
   description: A poleaxe that seems to be linked to its wielder.
   components:
+  - type: BackStab
   - type: Tag
     tags:
     - FireAxe

@@ -6,8 +6,7 @@
   canBeAntag: false
   requireAdminNotify: true
   joinNotifyCrew: true
-  whitelisted: true
-  discordRequired: true
+  discordRequired: false
   requirements:
     - !type:RoleTimeRequirement
       role: JobHeadOfSecurity
@@ -26,6 +25,8 @@
       time: 14400
     - !type:OverallPlaytimeRequirement
       time: 86400
+    - !type:AgeRequirement
+      requiredAge: 21 # cats
   special:
     - !type:AddImplantSpecial
       implants: [ MindShieldImplant ]
@@ -48,7 +49,7 @@
   minBankBalance: 900
   maxBankBalance: 1600
   wageDepartment: CentCom
-  wage: 50
+  wage: 200
   #end-backmen: currency
 
 - type: startingGear
@@ -58,11 +59,12 @@
     gloves: ClothingHandsGlovesCombat
     ears: ClothingHeadsetAltCommand
     shoes: ClothingShoesBootsCombat
-    back: ClothingBackpackSatchelLeather
-    neck: CombatKnifeSpetsnaz
+    back: ClothingBlueshieldBackpack # cats
     belt: ClothingBeltSecurityCentComSecurity
-    pocket1: WeaponPistolUCS
-    pocket2: RadioBlueShieldSupplyPod
+    pocket1: PistolBlueShield # cats
   storage:
     back:
-    - BlueShieldSetLoadouts
+  #  - BlueShieldLoadout
+    - BlueShieldSetMedical
+    - CombatKnifeSpetsnaz
+    - SecHypo

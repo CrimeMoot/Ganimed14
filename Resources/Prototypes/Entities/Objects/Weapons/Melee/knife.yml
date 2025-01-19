@@ -50,6 +50,7 @@
     state: icon
   - type: Item
     sprite: Objects/Weapons/Melee/kitchen_knife.rsi
+  - type: BackStab
   - type: GuideHelp
     guides:
     - Chef
@@ -74,6 +75,7 @@
     damage:
       types:
         Slash: 13
+  - type: BackStab
   - type: Item
     size: Normal
     sprite: Objects/Weapons/Melee/cleaver.rsi
@@ -92,6 +94,7 @@
   id: CombatKnife
   description: A deadly knife intended for melee confrontations.
   components:
+  - type: BackStab
   - type: Tag
     tags:
     - CombatKnife
@@ -129,6 +132,7 @@
   id: SurvivalKnife
   description: Weapon of first and last resort for combatting space carp.
   components:
+  - type: BackStab
   - type: Sprite
     sprite: Objects/Weapons/Melee/survival_knife.rsi
     state: icon
@@ -144,6 +148,7 @@
   id: KukriKnife
   description: Professionals have standards. Be polite. Be efficient. Have a plan to kill everyone you meet.
   components:
+  - type: BackStab
   - type: Sprite
     sprite: Objects/Weapons/Melee/kukri_knife.rsi
     state: icon
@@ -163,6 +168,7 @@
   description: Fashionable for both the working class and old man Jenkins. It has glass shards hidden in the brim.
   suffix: Bladed
   components:
+  - type: BackStab
   - type: Construction
     graph: BladedFlatcapGrey
     node: icon

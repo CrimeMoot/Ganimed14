@@ -1,18 +1,18 @@
 - type: accessLevel
   id: EarthGovCommand
-  name: ОПЗ Командующий
+  name: ТСФ Командующий
 
 - type: accessLevel
   id: EarthGovSpecialits
-  name: ОПЗ Специальный
+  name: ТСФ Специальный
 
 - type: accessLevel
   id: EarthGovMedic
-  name: ОПЗ Медицинский
+  name: ТСФ Медицинский
 
 - type: accessLevel
   id: EarthGov
-  name: ОПЗ Общий
+  name: ТСФ Общий
 
 - type: accessGroup
   id: EarthGov

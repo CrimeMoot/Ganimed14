@@ -51,6 +51,7 @@
     understands:
     - TauCetiBasic
     - SpaceMob
+  - type: CanEscapeMech # ADT tweak
 
 - type: entity
   save: false

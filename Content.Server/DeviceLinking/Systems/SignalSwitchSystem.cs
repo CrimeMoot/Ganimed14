@@ -38,8 +38,21 @@ public sealed class SignalSwitchSystem : EntitySystem
             _deviceLink.SendSignal(uid, comp.StatusPort, comp.State);
         }
 
+        // Ganimed EDIT START
+        var ev = new SwitchPressedEvent();
+        RaiseLocalEvent(uid, ref ev);
+        // Ganimed EDIT END
+
         _audio.PlayPvs(comp.ClickSound, uid, AudioParams.Default.WithVariation(0.125f).WithVolume(8f));
 
         args.Handled = true;
     }
 }
+
+// Ganimed EDIT START
+[ByRefEvent]
+/// <summary>
+/// Event to inform any other systems that may want to know that the signal switch was pressed
+/// </summary>
+public record struct SwitchPressedEvent();
+// Ganimed EDIT END

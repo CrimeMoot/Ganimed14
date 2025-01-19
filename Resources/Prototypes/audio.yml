@@ -82,8 +82,6 @@
     collection: AmbienceMining
   rules: OnMapGrid
   fadeIn: true
-  interruptable: true
-  priority: 1
 
 ## Fallback if nothing else found
 - type: ambientMusic
@@ -261,7 +259,7 @@
     - !type:InSpaceRule
     - !type:GridInRangeRule
       inverted: true
-      range: 3
+      range: 2.5
 
 # TODO
 - type: rules

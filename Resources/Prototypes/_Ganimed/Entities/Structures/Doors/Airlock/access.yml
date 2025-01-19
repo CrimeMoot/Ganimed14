@@ -1,0 +1,17 @@
+- type: entity
+  parent: RoboticsAirlock
+  id: RoboticsAirlockLocked
+  suffix: Robotics, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsRobotics ]
+
+- type: entity
+  parent: RoboticsAirlockGlass
+  id: RoboticsAirlockGlassLocked
+  suffix: Robotics, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsRobotics ]

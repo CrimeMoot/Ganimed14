@@ -93,6 +93,15 @@
       - PosterContrabandInterdyne
       - PosterContrabandWaffleCorp
       - PosterContrabandMissingSpacepen
+      - PosterContrabandFearThem 
+      - PosterContrabandSilence
+      - PosterDontSitDown
+      - PosterTayarHalloween
+      - PosterLustyMoth
+      - PosterWatchOutChem
+      - PosterPanem
+      - PosterGasAttack
+      - PosterNoGood
     chance: 1
 
 - type: entity
@@ -170,4 +179,20 @@
       - PosterLegitSafetyMothHardhat
       - PosterLegitSafetyMothSSD
       - PosterLegitOppenhopper
+      # Cats start
+      - PosterLegitEfficiency
+      - PosterLegitGreatFood
+      - PosterLegitTurnOnSensors 
+      - PosterLegitOktoberfest2 
+      - PosterPassTheBanana
+      - PosterSingoPizza
+      - PosterPapersPlease
+      - PosterDontTalkToArty
+      - PosterWorkUnderWay
+      - PosterPlasmaMan
+      - PosterError
+      - PosterNoBad
+      - PosterWhatDVLegit
+      - PosterUnclePrazLegit
+      # Cats end
     chance: 1

@@ -1,0 +1,104 @@
+- type: entity
+  parent: ClothingUniformJumpskirtCaptain
+  id: ClothingUniformJumpskirtWhiteCaptain
+  name: white captain jumpskirt
+  description: White captain jumpsuit skirt symbolizing that your salary clearly exceeds the norm.
+  components:
+  - type: Sprite
+    sprite: _Ganimed/Clothing/Uniforms/Jumpskirt/white_captain.rsi
+  - type: Clothing
+    sprite: _Ganimed/Clothing/Uniforms/Jumpskirt/white_captain.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtMaid
+  name: спортивная юбка горничной
+  description: Элегантное платье горничной. В нем вы будете чувствовать себя комфортно, в безопасности и чистоте.
+  components:
+  - type: Sprite
+    sprite: _Ganimed/Clothing/Uniforms/Jumpskirt/maid.rsi
+  - type: Clothing
+    sprite: _Ganimed/Clothing/Uniforms/Jumpskirt/maid.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtMaidMini
+  name: мини-юбка горничной
+  description: Элегантное укороченное платье горничной. Здесь вы будете чувствовать себя комфортно, в безопасности и чистоте. Этот вид расширяет горизонты в ваших глазах.
+  components:
+  - type: Sprite
+    sprite: _Ganimed/Clothing/Uniforms/Jumpskirt/maidmini.rsi
+  - type: Clothing
+    sprite: _Ganimed/Clothing/Uniforms/Jumpskirt/maidmini.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtBlueshields
+  name: платье офицера синего щита
+  description: Тот, кто носит это, говорит о деле.
+  components:
+  - type: Sprite
+    sprite: _Ganimed/blueshield/blueshield-jumpskirt.rsi
+  - type: Clothing
+    sprite: _Ganimed/blueshield/blueshield-jumpskirt.rsi
+    
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtHoSOriginal
+  name: head of security's colorful jumpskirt
+  description: It's even redder and even crisper, perfect for a not-so-cheerful head.
+  components:
+  - type: Sprite
+    sprite: _Ganimed/Clothing/Original/Uniforms/Jumpskirt/original_hos.rsi
+  - type: Clothing
+    sprite: _Ganimed/Clothing/Original/Uniforms/Jumpskirt/original_hos.rsi
+    
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtBrigmedicOriginal
+  name: medical-security jumpskirt
+  description: This simple in design uniform is issued to personal with affinities to both medical and security. Strange choice of patterns nonetheless.
+  components:
+  - type: Sprite
+    sprite: _Ganimed/Clothing/Original/Uniforms/Jumpskirt/original_brigmedic.rsi
+  - type: Clothing
+    sprite: _Ganimed/Clothing/Original/Uniforms/Jumpskirt/original_brigmedic.rsi
+    
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtScientistOriginal
+  name: scientist's plain jumpskirt
+  description: It's a less decorated scientist jumpskirt. It has minor markings that denote the wearer as a scientist.
+  components:
+  - type: Sprite
+    sprite: _Ganimed/Clothing/Original/Uniforms/Jumpskirt/original_scientist.rsi
+  - type: Clothing
+    sprite: _Ganimed/Clothing/Original/Uniforms/Jumpskirt/original_scientist.rsi
+    
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtBrigmedicBlackOriginal
+  name: black brigmedic jumpskirt
+  description: Total overhaul vastly different from the usual brigmedic uniform. It is generally a bad idea to be bright if you are on a battlefield.
+  components:
+  - type: Sprite
+    sprite: _Ganimed/Clothing/Original/Uniforms/Jumpskirt/original_blackbrigmedic.rsi  
+  - type: Clothing
+    sprite: _Ganimed/Clothing/Original/Uniforms/Jumpskirt/original_blackbrigmedic.rsi 
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+    
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtCoronerBlackOriginal
+  name: black coroner jumpskirt
+  description: Total overhaul vastly different from the usual coroner uniform. Personel freak out when they can't see you from the shadows.
+  components:
+  - type: Sprite
+    sprite: _Ganimed/Clothing/Original/Uniforms/Jumpskirt/original_blackcoroner.rsi
+  - type: Clothing
+    sprite: _Ganimed/Clothing/Original/Uniforms/Jumpskirt/original_blackcoroner.rsi
+  - type: Tag
+    tags:
+    - WhitelistChameleon

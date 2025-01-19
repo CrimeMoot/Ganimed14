@@ -712,7 +712,7 @@
       - !type:HealthChange
         damage:
           types:
-            Poison: 2
+            Poison: 1
       - !type:GenericStatusEffect
         key: Stun
         time: 3.0
@@ -1170,7 +1170,7 @@
         conditions:
         - !type:ReagentThreshold
           min: 12
-          
+
 - type: reagent
   id: Opporozidone #Name based of an altered version of the startreck chem "Opporozine"
   name: reagent-name-opporozidone

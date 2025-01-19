@@ -1,0 +1,48 @@
+- type: job
+  id: BridgeOfficer
+  name: job-name-bridgeofficer
+  description: job-description-bridgeofficer
+  playTimeTracker: JobBridgeOfficer
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 64000
+    - !type:DepartmentTimeRequirement
+      department: Security
+      time: 21600
+  startingGear: BridgeOfficerGear
+  icon: "JobIconBridgeOfficer"
+  supervisors: job-supervisors-command
+  canBeAntag: false
+  access:
+  - Command
+  - Maintenance
+  - External
+  - Security
+  - Brig
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: CommandStaff
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+  minBankBalance: 300
+  maxBankBalance: 600
+  wageDepartment: CentCom
+  wage: 200
+
+- type: startingGear
+  id: BridgeOfficerGear
+  equipment:
+    jumpsuit: ClothingBlackJumpsuit
+    back: ClothingBlackBackpack
+    shoes: ClothingShoesBootsJack
+    eyes: ClothingEyesGlassesSunglasses
+    gloves: ClothingHandsGlovesCombat
+    id: BridgeOfficerPDA
+    ears: ClothingBlackHeadset
+    neck: ClothingNeckBlackMantle
+    belt: ClothingBlackWebbing
+    head: ClothingBlackBeret
+    pocket1: WeaponEnergyGunDominator
+
+

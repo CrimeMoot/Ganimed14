@@ -8,6 +8,12 @@
   },
   "states": [
     {
+      "name": "pda-bridgeofficer"
+    },
+    {
+      "name": "pda-maid"
+    },
+    {
       "name": "id_overlay"
     },
     {
@@ -87,6 +93,9 @@
     },
     {
       "name": "pda-janitor"
+    },
+    {
+      "name": "pda-security-enginer"
     },
     {
       "name": "pda-lawyer"

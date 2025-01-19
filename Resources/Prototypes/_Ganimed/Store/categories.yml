@@ -1,0 +1,15 @@
+- type: storeCategory
+  id: PlushiesSponsor
+  name: store-category-vending-plushies
+
+- type: storeCategory
+  id: Nabor
+  name: store-category-vending-nabor
+
+- type: storeCategory
+  id: Accessories
+  name: store-category-vending-accessories
+
+- type: storeCategory
+  id: Daki
+  name: store-category-vending-daki

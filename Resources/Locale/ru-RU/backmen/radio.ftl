@@ -10,6 +10,7 @@ bkm-radio-group7 = Группа 7
 bkm-radio-group8 = Группа 8
 bkm-radio-group9 = Группа 9
 
+cats-radio-swar = Рой
 
 
 bkm-radio-csh = CSH
@@ -17,7 +18,7 @@ bkm-radio-fleet = Флот
 
 bkm-radio-flesh = Культ Плоти
 
-bkm-radio-UEG = ОПЗ
+bkm-radio-UEG = ТСФ
 
 bkm-radio-AID = ИИ Дроны
 bkm-radio-AIMALF = МАЛФ

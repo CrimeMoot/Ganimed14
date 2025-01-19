@@ -79,8 +79,8 @@ public sealed partial class ChatSystem : SharedChatSystem
     // public const int WhisperClearRange = 2; // how far whisper goes while still being understandable, in world units
     // public const int WhisperMuffledRange = 5; // how far whisper goes at all, in world units
     // Corvax-TTS-End
-    public const string DefaultAnnouncementSound = "/Audio/Corvax/Announcements/announce.ogg"; // Corvax-Announcements
-    public const string CentComAnnouncementSound = "/Audio/Corvax/Announcements/centcomm.ogg"; // Corvax-Announcements
+    public const string DefaultAnnouncementSound = "/Audio/_Ganimed/StationEvents/announce_dig.ogg"; // Ganimed edit
+    public const string CentComAnnouncementSound = "/Audio/_Ganimed/StationEvents/announce_dig.ogg"; // CCats edit
     //start-backmen: languages
     public const float DefaultObfuscationFactor = 0.2f; // Percentage of symbols in a whispered message that can be seen even by "far" listeners
     public readonly Color DefaultSpeakColor = Color.White;
@@ -689,7 +689,29 @@ private void SendEntityWhisper(
 
         if (checkEmote)
             TryEmoteChatInput(source, action);
-        SendInVoiceRange(ChatChannel.Emotes, name, action, wrappedMessage, obfuscated: "", obfuscatedWrappedMessage: "", source, range, author);
+            
+        // Taken more or less from whispering
+        // Get all people who could receive the message in normal speaking range
+        foreach (var (session, data) in GetRecipients(source, VoiceRange))
+        {
+            EntityUid listener;
+
+            if (session.AttachedEntity is not { Valid: true } playerEntity)
+                continue;
+
+            listener = session.AttachedEntity.Value;
+
+            // If recipient is too far, won't get logged to chat, and ghosts are too far away to see the pop-up, so we just won't send it to them.
+            if (MessageRangeCheck(session, data, range) != MessageRangeCheckResult.Full)
+                continue;
+
+            // If recipient can see the entity performing the emote, show them a popup and send them a chat message with the emote
+            if (_examineSystem.InRangeUnOccluded(source, listener, VoiceRange))
+            {
+                _chatManager.ChatMessageToOne(ChatChannel.Emotes, action, wrappedMessage, source, false, session.Channel);
+            }
+        }
+
         if (!hideLog)
             if (name != Name(source))
                 _adminLogger.Add(LogType.Chat, LogImpact.Low, $"Emote from {ToPrettyString(source):user} as {name}: {action}");

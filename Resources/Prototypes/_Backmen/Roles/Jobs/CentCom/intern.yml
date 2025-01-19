@@ -11,17 +11,22 @@
   weight: 1
   requireAdminNotify: true
   joinNotifyCrew: true
-  discordRequired: true
+  discordRequired: false
   requirements:
     - !type:DepartmentTimeRequirement
       department: Engineering
-      time: 108000
+#      time: 108000
+      time: 23000    #cats
     - !type:DepartmentTimeRequirement
       department: Medical
-      time: 108000
+#      time: 108000
+      time: 23000   #cats
+    - !type:AgeRequirement
+      requiredAge: 21 # cats
     - !type:DepartmentTimeRequirement
       department: Civilian
-      time: 108000
+#      time: 108000
+      time: 23000   #cats
   access:
     - CentralCommand
     - Service
@@ -39,8 +44,6 @@
         - type: NpcFactionMember
           factions:
             - CentralCommand
-        - type: PsionicBonusChance
-          multiplier: 3
         - type: AntagImmune
   minBankBalance: 100
   maxBankBalance: 250

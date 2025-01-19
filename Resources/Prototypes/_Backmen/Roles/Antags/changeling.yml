@@ -5,7 +5,7 @@
   setPreference: true
   objective: roles-antag-changeling-description
   guides: [ Changelings ]
-  discordRequired: true # backmen: antag
+  discordRequired: false # backmen: antag
   requirements:
   - !type:OverallPlaytimeRequirement
     time: 18000 # 5h

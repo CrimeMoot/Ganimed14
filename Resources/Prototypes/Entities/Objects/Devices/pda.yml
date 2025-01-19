@@ -64,8 +64,9 @@
   - type: UnpoweredFlashlight
   - type: ShadowkinLight
   - type: PointLight
+    mask: /Textures/_Ganimed/Effects/LightMasks/cone.png # Cats edit
     enabled: false
-    radius: 1.5
+    radius: 1.8 # Cats edit
     softness: 5
     autoRot: true
   - type: Ringer
@@ -175,6 +176,12 @@
   components:
   - type: Pda
     id: TechnicalAssistantIDCard
+    penSlot:
+      startingItem: PenEngineering
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: Appearance
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
@@ -190,10 +197,16 @@
   parent: BaseMedicalPDA
   id: MedicalInternPDA
   name: medical intern PDA
-  description: Why isn't it white?
+  description: Why isn't it white? Has a built-in health analyzer.
   components:
   - type: Pda
     id: MedicalInternIDCard
+    penSlot:
+      startingItem: PenMedical2
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: Appearance
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
@@ -216,6 +229,12 @@
   components:
   - type: Pda
     id: SecurityCadetIDCard
+    penSlot:
+      startingItem: PenSecurityRed
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: Appearance
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
@@ -235,6 +254,12 @@
   components:
   - type: Pda
     id: ResearchAssistantIDCard
+    penSlot:
+      startingItem: PenScience
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: Appearance
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
@@ -254,6 +279,12 @@
   components:
   - type: Pda
     id: ServiceWorkerIDCard
+    penSlot:
+      startingItem: PenGreen
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: Appearance
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
@@ -293,6 +324,12 @@
   components:
   - type: Pda
     id: BotanistIDCard
+    penSlot:
+      startingItem: PenHydroponics
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: Appearance
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
@@ -315,7 +352,6 @@
     penSlot:
       startingItem: CrayonOrange # no pink crayon?!?
       # ^ Still unacceptable.
-      # ^ I would have to concur.
       ejectSound: /Audio/Items/bikehorn.ogg
       priority: -1
       whitelist:
@@ -330,7 +366,9 @@
     borderColor: "#C18199"
   - type: Icon
     state: pda-clown
-  - type: Slippery # secretly made of bananium
+  - type: Slippery
+    paralyzeTime: 4
+    launchForwardsMultiplier: 1.5
   - type: StepTrigger
   - type: CollisionWake
     enabled: false
@@ -421,6 +459,12 @@
   components:
   - type: Pda
     id: ChaplainIDCard
+    penSlot:
+      startingItem: PenChaplain
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: Appearance
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
@@ -450,6 +494,12 @@
   components:
   - type: Pda
     id: QuartermasterIDCard
+    penSlot:
+      startingItem: PenCargo1QM
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: Appearance
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
@@ -469,6 +519,12 @@
   components:
   - type: Pda
     id: CargoIDCard
+    penSlot:
+      startingItem: PenCargo
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: Appearance
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
@@ -487,6 +543,12 @@
   components:
   - type: Pda
     id: SalvageIDCard
+    penSlot:
+      startingItem: PenCargo
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: Appearance
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
@@ -513,6 +575,12 @@
   components:
   - type: Pda
     id: BartenderIDCard
+    penSlot:
+      startingItem: PenBooze
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: Appearance
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
@@ -589,6 +657,14 @@
   components:
   - type: Pda
     id: VisitorIDCard
+    penSlot:
+      startingItem: BlackFountainPen
+      priority: -1
+      whitelist:
+        tags:
+        - Write
+  - type: PdaBorderColor
+    borderColor: "#50645c"
   - type: Tag #  Ignore Chameleon tags
     tags:
     - DoorBumpOpener
@@ -601,6 +677,12 @@
   components:
   - type: Pda
     id: JanitorIDCard
+    penSlot:
+      startingItem: PenJanitor
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: Appearance
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
@@ -668,6 +750,12 @@
   components:
   - type: Pda
     id: CEIDCard
+    penSlot:
+      startingItem: PenEngineeringCE
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: Appearance
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
@@ -687,6 +775,12 @@
   components:
   - type: Pda
     id: EngineeringIDCard
+    penSlot:
+      startingItem: PenEngineering
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: Appearance
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
@@ -702,10 +796,16 @@
   parent: BaseMedicalPDA
   id: CMOPDA
   name: chief medical officer PDA
-  description: Extraordinarily shiny and sterile.
+  description: Extraordinarily shiny and sterile. Has a built-in health analyzer.
   components:
   - type: Pda
     id: CMOIDCard
+    penSlot:
+      startingItem: PenMedica1CMO
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: Appearance
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
@@ -722,10 +822,16 @@
   parent: BaseMedicalPDA
   id: MedicalPDA
   name: medical PDA
-  description: Shiny and sterile.
+  description: Shiny and sterile. Has a built-in health analyzer.
   components:
   - type: Pda
     id: MedicalIDCard
+    penSlot:
+      startingItem: PenMedical1
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: Appearance
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
@@ -755,10 +861,16 @@
   parent: BaseMedicalPDA
   id: ParamedicPDA
   name: paramedic PDA
-  description: Shiny and sterile.
+  description: Shiny and sterile. Has a built-in rapid health analyzer.
   components:
   - type: Pda
     id: ParamedicIDCard
+    penSlot:
+      startingItem: PenMedical1
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: Appearance
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
@@ -778,6 +890,12 @@
   components:
   - type: Pda
     id: ChemistIDCard
+    penSlot:
+      startingItem: PenChemist
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: Appearance
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
@@ -797,6 +915,12 @@
   components:
   - type: Pda
     id: RDIDCard
+    penSlot:
+      startingItem: PenScienceFountain
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: Appearance
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
@@ -817,6 +941,12 @@
   components:
   - type: Pda
     id: ResearchIDCard
+    penSlot:
+      startingItem: PenScience
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: Appearance
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
@@ -836,6 +966,12 @@
   components:
   - type: Pda
     id: HoSIDCard
+    penSlot:
+      startingItem: PenSecurityFountainMetallic
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: Appearance
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
@@ -862,6 +998,12 @@
   components:
   - type: Pda
     id: WardenIDCard
+    penSlot:
+      startingItem: PenSecurityFountain
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: Appearance
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
@@ -881,6 +1023,12 @@
   components:
   - type: Pda
     id: SecurityIDCard
+    penSlot:
+      startingItem: PenSecurityBlack
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: Appearance
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
@@ -894,7 +1042,7 @@
 - type: entity
   parent: BaseSecurityPDA
   id: CentcomPDA
-  name: CentComm PDA
+  name: CentCom PDA
   description: Light green sign of walking bureaucracy.
   components:
   - type: Pda
@@ -958,6 +1106,12 @@
   components:
   - type: Pda
     id: CentcomIDCardDeathsquad
+    penSlot:
+      startingItem: BlackFountainPen
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: Tag #  Ignore Chameleon tags
     tags:
     - DoorBumpOpener
@@ -1004,6 +1158,12 @@
   components:
   - type: Pda
     id: AtmosIDCard
+    penSlot:
+      startingItem: PenAtmos
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: Appearance
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
@@ -1064,6 +1224,14 @@
     uiKey: enum.PdaUiKey.Key
     preinstalled:
       - NotekeeperCartridge
+    cartridgeSlot:
+      priority: -1
+      name: Cartridge
+      ejectSound: /Audio/Machines/id_swipe.ogg
+      insertSound: /Audio/Machines/id_insert.ogg
+      whitelist:
+        components:
+          - Cartridge
 
 - type: entity
   parent: BaseSecurityPDA
@@ -1074,6 +1242,12 @@
   components:
   - type: Pda
     id: ERTLeaderIDCard
+    penSlot:
+      startingItem: BlackFountainPen
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: Appearance
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
@@ -1131,10 +1305,14 @@
   id: ERTMedicPDA
   name: ERT Medic PDA
   suffix: Medic
-  description: Red for firepower, it's shiny and sterile.
+  description: Red for firepower, it's shiny and sterile. Has a built-in rapid health analyzer.
   components:
   - type: Pda
     id: ERTMedicIDCard
+  - type: HealthAnalyzer
+    scanDelay: 1
+    scanningEndSound:
+      path: "/Audio/Items/Medical/healthscanner.ogg"
 
 - type: entity
   parent: ERTLeaderPDA
@@ -1154,6 +1332,12 @@
   components:
   - type: Pda
     id: CBURNIDcard
+    penSlot:
+      startingItem: BlackFountainPen
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: PdaBorderColor
     borderColor: "#A32D26"
     accentHColor: "#447987"
@@ -1167,6 +1351,12 @@
   components:
   - type: Pda
     id: PsychologistIDCard
+    penSlot:
+      startingItem: PenMedical1
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: Appearance
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
@@ -1247,6 +1437,12 @@
   components:
   - type: Pda
     id: DetectiveIDCard
+    penSlot:
+      startingItem: PenSecurityBlack
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: Appearance
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
@@ -1268,10 +1464,16 @@
   parent: BaseMedicalPDA
   id: BrigmedicPDA
   name: brigmedic PDA
-  description: I wonder whose pulse is on the screen? I hope it doesn't stop...
+  description: I wonder whose pulse is on the screen? I hope he doesnt stop... PDA has a built-in health analyzer.
   components:
   - type: Pda
     id: BrigmedicIDCard
+    penSlot:
+      startingItem: PenBrigmedic
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: Appearance
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
@@ -1326,6 +1528,12 @@
   components:
   - type: Pda
     id: SeniorEngineerIDCard
+    penSlot:
+      startingItem: PenEngineering
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: Appearance
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
@@ -1345,6 +1553,12 @@
   components:
   - type: Pda
     id: SeniorResearcherIDCard
+    penSlot:
+      startingItem: PenScienceOverpriced
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: Appearance
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
@@ -1361,10 +1575,16 @@
   parent: BaseMedicalPDA
   id: SeniorPhysicianPDA
   name: senior physician PDA
-  description: Smells faintly like iron and chemicals.
+  description: Smells faintly like iron and chemicals. Has a built-in health analyzer.
   components:
   - type: Pda
     id: SeniorPhysicianIDCard
+    penSlot:
+      startingItem: PenMedical1
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: Appearance
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
@@ -1385,6 +1605,12 @@
   components:
   - type: Pda
     id: SeniorOfficerIDCard
+    penSlot:
+      startingItem: PenSecurityRed
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: Appearance
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
@@ -1434,6 +1660,14 @@
     preinstalled:
       - NotekeeperCartridge
       - MedTekCartridge
+    cartridgeSlot:
+      priority: -1
+      name: Cartridge
+      ejectSound: /Audio/Machines/id_swipe.ogg
+      insertSound: /Audio/Machines/id_insert.ogg
+      whitelist:
+        components:
+          - Cartridge
 
 - type: entity
   parent: BasePDA

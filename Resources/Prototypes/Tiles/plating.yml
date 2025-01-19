@@ -4,7 +4,6 @@
   sprite: /Textures/Tiles/plating.png
   baseTurf: Lattice
   isSubfloor: true
-  deconstructTools: [ AdvancedPrying ] # White Dream
   footstepSounds:
     collection: FootstepPlating
   friction: 0.3
@@ -21,7 +20,6 @@
   - 1.0
   baseTurf: Lattice
   isSubfloor: true
-  deconstructTools: [ AdvancedPrying ] # White Dream
   footstepSounds:
     collection: FootstepPlating
   friction: 0.3

@@ -43,8 +43,8 @@
   id: MobHumanRXBZZ
   components:
   - type: GhostRole
-    name: Оперативник РХБЗЗ ОПЗ
-    description: Отделение ВС ОПЗ по борьбе с радиационно, химическо, биологическоми и зомби опасностями.
+    name: Оперативник РХБЗЗ ТСФ
+    description: Отделение ВС ТСФ по борьбе с радиационно, химическо, биологическоми и зомби опасностями.
     raffle:
       settings: default
     requirements:
@@ -64,7 +64,7 @@
   components:
   - type: GhostRole
     name: Медик РХБЗЗ
-    description: Отделение ВС ОПЗ по борьбе с радиационно, химическо, биологическоми и зомби опасностями.
+    description: Отделение ВС ТСФ по борьбе с радиационно, химическо, биологическоми и зомби опасностями.
     raffle:
       settings: default
     requirements:
@@ -87,7 +87,7 @@
   components:
   - type: GhostRole
     name: Специалист РХБЗЗ
-    description: Отделение ВС ОПЗ по борьбе с радиационно, химическо, биологическоми и зомби опасностями.
+    description: Отделение ВС ТСФ по борьбе с радиационно, химическо, биологическоми и зомби опасностями.
     raffle:
       settings: default
     requirements:
@@ -107,7 +107,7 @@
   components:
   - type: GhostRole
     name: Лидер РХБЗЗ
-    description: Отделение ВС ОПЗ по борьбе с радиационно, химическо, биологическоми и зомби опасностями.
+    description: Отделение ВС ТСФ по борьбе с радиационно, химическо, биологическоми и зомби опасностями.
     raffle:
       settings: default
     requirements:

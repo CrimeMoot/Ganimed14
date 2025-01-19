@@ -181,7 +181,7 @@ public sealed class CCVars
      */
 
     public static readonly CVarDef<bool> ImmersiveEnabled =
-        CVarDef.Create("immersive.enabled", true, CVar.SERVERONLY);
+        CVarDef.Create("immersive.enabled", false, CVar.SERVERONLY);
 
     /*
      * Bind Standing - Ataraxia
@@ -262,13 +262,13 @@ public sealed class CCVars
     #region Mood System
 
     public static readonly CVarDef<bool> MoodEnabled =
-        CVarDef.Create("mood.enabled", true, CVar.SERVER);
+        CVarDef.Create("mood.enabled", false, CVar.SERVER);
 
     public static readonly CVarDef<bool> MoodIncreasesSpeed =
-        CVarDef.Create("mood.increases_speed", true, CVar.SERVER);
+        CVarDef.Create("mood.increases_speed", false, CVar.SERVER);
 
     public static readonly CVarDef<bool> MoodDecreasesSpeed =
-        CVarDef.Create("mood.decreases_speed", true, CVar.SERVER);
+        CVarDef.Create("mood.decreases_speed", false, CVar.SERVER);
 
     public static readonly CVarDef<bool> MoodModifiesThresholds =
         CVarDef.Create("mood.modify_thresholds", false, CVar.SERVER);

@@ -61,5 +61,14 @@ namespace Content.Server.Chemistry.Components
 
         [ViewVariables(VVAccess.ReadWrite)]
         public ReagentDispenserDispenseAmount DispenseAmount = ReagentDispenserDispenseAmount.U10;
+
+        // Ganimed-Labeler-Start
+        [DataField]
+        public bool CanAutoLabel;
+
+        [ViewVariables]
+        public bool AutoLabel;
+        // GanimedLabeler-End
+        
     }
 }

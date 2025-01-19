@@ -72,6 +72,7 @@
         visualType: Large
         messages: [ "diona-hurt-by-herbicide-popup" ]
         probability: 0.66
+  - type: NoSlip
   - type: Fixtures
     fixtures:
       fix1:
@@ -95,6 +96,10 @@
   - type: BodyEmotes
     soundsId: DionaBodyEmotes
   - type: Pacified # Corvax-DionaPacifist
+  - type: NpcFactionMember
+    factions:
+      - NanoTrasen
+      - Diona
   - type: IgnoreKudzu
   - type: IgniteOnHeatDamage
     fireStacks: 1
@@ -120,6 +125,7 @@
     understands:
     - TauCetiBasic
     - RootSpeak
+  - type: FTLKnockdownImmune # Cats edit
 
 - type: entity
   parent: BaseSpeciesDummy

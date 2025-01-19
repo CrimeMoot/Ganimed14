@@ -101,8 +101,8 @@
   - type: ToggleClothing
     action: ActionToggleSpeedBoots
   - type: ClothingSpeedModifier
-    walkModifier: 1.5
-    sprintModifier: 1.5
+    walkModifier: 1.2
+    sprintModifier: 1.2
   - type: Appearance
   - type: GenericVisualizer
     visuals:
@@ -148,3 +148,29 @@
     price: 75
   - type: Tag
     tags: [ ]
+
+- type: entity
+  parent: ClothingShoesBase
+  id: ClothingShoesBootsJump
+  name: прыжковые ботинки
+  description: Высокотехнологичные ботинки, используемые исследователями новых миров, чтобы избежать нежелательных препятствий.
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/Boots/jumpboots.rsi
+    layers:
+    - state: icon
+  - type: Clothing
+    sprite: Clothing/Shoes/Boots/jumpboots.rsi
+  - type: JumpAbility
+    jumpDistance: 4
+    jumpSound: /Audio/Effects/stealthoff.ogg
+  - type: ActionGrant
+    actions:
+    - ActionGravityJump 
+  - type: ItemActionGrant
+    actions:
+    - ActionGravityJump 
+  - type: StaticPrice
+    price: 220
+  - type: Tag
+    tags: []

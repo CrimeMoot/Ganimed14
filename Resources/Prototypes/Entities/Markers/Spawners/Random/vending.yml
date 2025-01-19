@@ -34,6 +34,7 @@
       - BackmenVendingLootBox
       - PrizeCounter # Ataraxia
       - VendingMachineSmite
+      - SpaceCatsVendingMachineSponsor # cats
     chance: 1
 
 

@@ -89,6 +89,8 @@ namespace Content.IntegrationTests.Tests
             "BargeVsShip",
             "BackmenDelta",
             //end-backmen
+            "Cluster", 
+            "Europa",
             "Saltern",
             "Reach",
             "Train",

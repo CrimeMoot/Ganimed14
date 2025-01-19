@@ -18,4 +18,5 @@ public sealed partial class LogProbeCartridgeComponent : Component
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
     public SoundSpecifier SoundScan = new SoundPathSpecifier("/Audio/Machines/scan_finish.ogg");
+
 }

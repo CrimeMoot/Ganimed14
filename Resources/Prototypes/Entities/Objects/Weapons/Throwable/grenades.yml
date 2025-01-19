@@ -94,7 +94,7 @@
     - type: PointLight
       enabled: true
       radius: 5
-      energy: 8
+      energy: 4
       netsync: false
     - type: LightFade
       duration: 0.5
@@ -224,7 +224,7 @@
       - type: PointLight
         enabled: true
         color: "#ffaa44"
-        energy: 8
+        energy: 4
         radius: 6
         softness: 1
         offset: "0, 0"
@@ -271,7 +271,7 @@
       - type: PointLight
         enabled: true
         color: "#ffffff"
-        energy: 8
+        energy: 4
         radius: 6
         softness: 1
         offset: "0, 0"
@@ -399,7 +399,7 @@
     proto: ExplosionEffectGrenadeShockWave
   - type: PointLight
     radius: 7
-    energy: 3
+    energy: 1
     netsync: false
   - type: TimerTriggerVisuals
     primingSound:

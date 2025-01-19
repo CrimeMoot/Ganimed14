@@ -133,13 +133,12 @@
 - type: entity
   parent: IDCardStandard
   id: UEGrepIDCard
-  name: ID карта представителя ОПЗ
+  name: ID карта представителя ТСФ
   components:
-    - type: Sprite
-      sprite: Backmen/Objects/Misc/id_cards.rsi
-      layers:
-        - state: default
-        - state: idueg
+  - type: Sprite
+    layers:
+    - state: default
+    - state: idtsf
     - type: Access
       groups:
         - AllAccess
@@ -150,13 +149,12 @@
 - type: entity
   parent: IDCardStandard
   id: UEGoffIDCard
-  name: ID карта офицера ОПЗ
+  name: ID карта офицера ТСФ
   components:
-    - type: Sprite
-      sprite: Backmen/Objects/Misc/id_cards.rsi
-      layers:
-        - state: default
-        - state: iduegofficer
+  - type: Sprite
+    layers:
+    - state: gold
+    - state: idtsf
     - type: Access
       groups:
         - AllAccess

@@ -27,6 +27,7 @@ public sealed class RCDConstructionGhostRotationEvent : EntityEventArgs
     }
 }
 
+
 [Serializable, NetSerializable]
 public enum RcdUiKey : byte
 {

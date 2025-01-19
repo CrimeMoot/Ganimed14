@@ -1,0 +1,35 @@
+- type: npcFaction
+  id: TurretPassive
+
+- type: npcFaction
+  id: TurretPeace
+  hostile:
+  - Dragon
+  - SimpleHostile
+  - Xeno
+  - Blob
+  - Flesh
+  - Zombie
+
+- type: npcFaction
+  id: TurretHostile
+  hostile:
+  - Dragon
+  - NanoTrasen
+  - Mouse
+  - Passive
+  - PetsNT
+  - SimpleHostile
+  - SimpleNeutral
+  - Syndicate
+  - Xeno
+  - Zombie
+  - Revolutionary
+  - Blob
+  - SuperZloy
+  - Spanish
+  - Britan
+  - SpecialForce
+  - CombineForce
+  - CentralCommand
+  - Flesh

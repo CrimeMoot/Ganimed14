@@ -43,7 +43,7 @@
     base: mwindow
   - type: Appearance
   - type: DamageVisuals
-    thresholds: [5, 10, 20]
+    thresholds: [4, 8, 12]
     damageDivisor: 4
     trackAllDamage: true
     damageOverlay:

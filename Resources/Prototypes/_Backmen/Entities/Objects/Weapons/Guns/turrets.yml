@@ -11,7 +11,7 @@
   parent: BaseStructure
   id: WeaponTurretBaseLaser
   name: laser turret
-  description: Automatic turret of laser destruction, with a self-charging battery inside.
+  description: Автоматическая турель лазерного поражения с самозарядной батареей внутри.
   abstract: true
   components:
     - type: Clickable
@@ -139,7 +139,7 @@
   parent: BaseWeaponTurret
   id: UEGWeaponTurret
   name: UA-580 point defense sentry
-  description: Стандартная турель точечной защиты, используется военными формированиями ОПЗ.
+  description: Стандартная турель точечной защиты, используется военными формированиями ТСФ.
   components:
     - type: Physics
       bodyType: Static

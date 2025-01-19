@@ -20,6 +20,7 @@ public sealed partial class FrezonCoolantReaction : IGasReactionEffect
         //ADT-Gas-End
 
         var oldHeatCapacity = atmosphereSystem.GetHeatCapacity(mixture, true);
+
         var temperature = mixture.Temperature;
 
         var energyModifier = 1f;

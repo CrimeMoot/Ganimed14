@@ -92,6 +92,7 @@
     access:
     - [ Command ]
   - type: EmergencyShuttleConsole
+  - type: StationAiWhitelist
   - type: ActivatableUI
     key: enum.EmergencyConsoleUiKey.Key
   - type: UserInterface
@@ -115,6 +116,7 @@
   abstract: true
   components:
   - type: ShuttleConsole
+  - type: StationAiWhitelist
   - type: ActivatableUI
     key: enum.ShuttleConsoleUiKey.Key
   - type: UserInterface
@@ -654,6 +656,7 @@
   - type: AccessReader
     access: [[ "Command" ]]
   - type: CommunicationsConsole
+    showLocation: true
     title: comms-console-announcement-title-station
   - type: DeviceNetwork
     transmitFrequencyId: ShuttleTimer

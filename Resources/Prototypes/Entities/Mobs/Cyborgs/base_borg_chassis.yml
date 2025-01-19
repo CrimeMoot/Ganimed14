@@ -6,6 +6,7 @@
   save: false
   abstract: true
   components:
+  - type: ThermalInvisibility # Cats edit
   - type: Reactive
     groups:
       Acidic: [Touch]
@@ -155,6 +156,7 @@
   - type: Vocal
     sounds:
       Unsexed: UnisexSilicon
+    screamAction: null
   - type: UnblockableSpeech
   - type: FootstepModifier
     footstepSoundCollection:
@@ -222,7 +224,7 @@
   - type: ToggleableLightVisuals
   - type: PointLight
     enabled: false
-    mask: /Textures/Effects/LightMasks/cone.png
+    mask: /Textures/_Ganimed/Effects/LightMasks/cone.png # Cats edit
     autoRot: true
     radius: 4
     netsync: false
@@ -268,24 +270,6 @@
     receiveFrequencyId: CyborgControl
     transmitFrequencyId: RoboticsConsole
     savableAddress: false
-  - type: OnUseTimerTrigger
-    delay: 10
-    examinable: false
-    beepSound:
-      path: /Audio/Effects/Cargo/buzz_two.ogg
-      params:
-        volume: -4
-  # prevent any funnies if someone makes a cyborg item...
-  - type: AutomatedTimer
-  - type: ExplodeOnTrigger
-  # explosion does most of its damage in the center and less at the edges
-  - type: Explosive
-    explosionType: Minibomb
-    deleteAfterExplosion: false # let damage threshold gib the borg
-    totalIntensity: 30
-    intensitySlope: 20
-    maxIntensity: 20
-    canCreateVacuum: false # its for killing the borg not the station
 
 - type: entity
   id: BaseBorgChassisNT

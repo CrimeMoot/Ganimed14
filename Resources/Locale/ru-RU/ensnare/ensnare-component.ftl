@@ -4,3 +4,4 @@ ensnare-component-try-free-fail = Вам не удаётся освободит�
 ensnare-component-try-free-complete-other = Вы успешно освобождаете { $user } от { $ensnare }!
 ensnare-component-try-free-fail-other = Вам не удаётся освободить { $user } от { $ensnare }!
 ensnare-component-try-free-other = Вы пытаетесь освободить ноги { $user } от { $ensnare }!
+ensnare-component-try-free-verb = Попытаться освободить

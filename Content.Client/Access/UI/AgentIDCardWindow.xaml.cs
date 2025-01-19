@@ -21,8 +21,10 @@ namespace Content.Client.Access.UI
 
         private const int JobIconColumnCount = 10;
 
+
         public event Action<string>? OnNameChanged;
         public event Action<string>? OnJobChanged;
+
 
         public event Action<ProtoId<JobIconPrototype>>? OnJobIconChanged;
 
@@ -37,6 +39,7 @@ namespace Content.Client.Access.UI
 
             JobLineEdit.OnTextEntered += e => OnJobChanged?.Invoke(e.Text);
             JobLineEdit.OnFocusExit += e => OnJobChanged?.Invoke(e.Text);
+
         }
 
         public void SetAllowedIcons(string currentJobIconId)

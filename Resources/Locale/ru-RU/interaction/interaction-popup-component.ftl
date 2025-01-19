@@ -24,6 +24,7 @@ petting-success-sloth = Вы гладите { $target } по { POSS-ADJ($target)
 petting-success-space-cat = Вы гладите { $target } по { POSS-ADJ($target) } куполообразному стеклянному шлему.
 petting-success-tarantula = Вы гладите { $target } по { POSS-ADJ($target) } маленькой волосатой голове.
 petting-success-holo = Вы гладите { $target } по { POSS-ADJ($target) } металлической шипастой голове.
+petting-success-security-cyborg = Вы гладите { $target } по { POSS-ADJ($target) } бронированной металлической голове.
 petting-success-dragon = Уворачиваясь от клыков, когтей, и пламени, вы гладите { $target } по { POSS-ADJ($target) } огромной чешуйчатой голове.
 petting-success-hamster = Вы гладите { $target } по { POSS-ADJ($target) } маленькой пушистой голове.
 petting-success-bear = Вы нерешительно гладите { $target } по { POSS-ADJ($target) } таинственной голове.

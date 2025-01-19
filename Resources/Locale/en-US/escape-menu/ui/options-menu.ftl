@@ -96,6 +96,11 @@ ui-options-parallax-low-quality = Low-quality Parallax (background)
 ui-options-fps-counter = Show FPS counter
 ui-options-vp-width = Viewport width:
 ui-options-hud-layout = HUD layout:
+ui-options-postprocess = Cosmetic Post-processing
+ui-options-postprocess-tooltip = When enabled, cosmetic post-processing effects such as
+                                 additive lighting will be present. This does not control
+                                 post-process effects that affect the game or otherwise
+                                 carry some form of gameplay-related meaning.
 
 ## Controls menu
 
@@ -119,13 +124,13 @@ ui-options-header-dev = Development
 ui-options-header-general = General
 
 ui-options-hotkey-keymap = Use US QWERTY Keys
-ui-options-hotkey-toggle-walk = Toggle Walk
+ui-options-hotkey-toggle-walk = Toggle Speed
 
 ui-options-function-move-up = Move Up
 ui-options-function-move-left = Move Left
 ui-options-function-move-down = Move Down
 ui-options-function-move-right = Move Right
-ui-options-function-walk = Walk
+ui-options-function-walk = Change Speed
 
 ui-options-function-camera-rotate-left = Rotate left
 ui-options-function-camera-rotate-right = Rotate right

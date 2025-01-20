@@ -359,20 +359,21 @@
     radius: 6
 
 - type: entity
-  name: M-1911
+  name: M1911
   parent: BaseWeaponPistol
   id: WeaponPistolM1911
   suffix: Пистолет
-  description: М-1911 с патронником 35-го калибра был архаичным оружием, но его популярный и чрезвычайно надежный механизм послужил образцом для многих будущих полуавтоматических пистолетов.
+  description: Немного неаккуратный, но надежный пистолет .45 калибра на основе М1911. Его калибр обеспечивает высокое останавливающее действие, однако патронов не так много.
   components:
   - type: Sprite
     sprite: Backmen/Objects/Weapons/Gunsx64/Pistols/m1911/big.rsi
   - type: Item
     sprite: Backmen/Objects/Weapons/Gunsx64/Pistols/m1911/tiny.rsi
   - type: Gun
-    angleDecay: 15
-    angleIncrease: 5
-    cameraRecoilScalar: 0.5
+    fireRate: 4
+    angleDecay: 6
+    angleIncrease: 4.5
+    cameraRecoilScalar: 0.7
     maxAngle: 15
     minAngle: 1
     selectedMode: SemiAuto
@@ -390,11 +391,10 @@
         priority: 2
         whitelist:
           tags:
-            - MagazinePistol
-            - MagazinePistolHighCapacity
+            - MagazinePistol45ACP
       gun_chamber:
         name: Chamber
-        startingItem: CartridgePistol
+        startingItem: CartridgePistol45ACP
         priority: 1
         whitelist:
           tags:

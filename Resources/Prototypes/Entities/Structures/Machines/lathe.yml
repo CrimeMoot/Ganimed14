@@ -92,7 +92,7 @@
   description: It produces basic items using metal and glass. Has the ability to process blueprints to print new recipes.
   components:
   - type: Sprite
-    sprite: _Ganimed/Structures/Machines/autolathe.rsi
+    sprite: Structures/Machines/autolathe.rsi
     snapCardinals: true
     layers:
     - state: icon
@@ -265,7 +265,7 @@
   description: Converts raw materials into advanced items.
   components:
   - type: Sprite
-    sprite: _Ganimed/Structures/Machines/protolathe.rsi
+    sprite: Structures/Machines/protolathe.rsi
     snapCardinals: true
     layers:
     - state: icon

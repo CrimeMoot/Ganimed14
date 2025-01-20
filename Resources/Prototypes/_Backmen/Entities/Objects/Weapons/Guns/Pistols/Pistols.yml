@@ -185,7 +185,7 @@
   parent: BaseWeaponPistol
   id: WeaponPistolG22
   suffix: Пистолет
-  description: Популярное полицейское огнестрельное оружие в наши дни. Патрон 9х19 мм.
+  description: Надежный и недорогой пистолет под .35 калибр. Эта версия выпускается дочерним оружейным предприятием Nanotrasen специально для службы безопасности и отличается улучшенной эрогонимикой, ночным прицелом, а также уменьшенным весом.
   components:
   - type: Sprite
     sprite: Backmen/Objects/Weapons/Gunsx64/Pistols/glock22/big.rsi

@@ -1,7 +1,6 @@
 using Content.Shared.Charges.Components;
 using Content.Shared.Charges.Systems;
 using Content.Shared.Examine;
-using Content.Shared.FixedPoint;
 using Content.Shared.Interaction;
 using Content.Shared.Popups;
 using Content.Shared.RCD.Components;
@@ -44,7 +43,7 @@ public sealed class RCDAmmoSystem : EntitySystem
 
         var user = args.User;
         args.Handled = true;
-        var count = FixedPoint2.Min(charges.MaxCharges - charges.Charges,comp.Charges);
+        var count = Math.Min(charges.MaxCharges - charges.Charges, comp.Charges);
         if (count <= 0)
         {
             _popup.PopupClient(Loc.GetString("rcd-ammo-component-after-interact-full"), target, user);

@@ -53,15 +53,14 @@ namespace Content.IntegrationTests.Tests
 			"CorvaxMaus",
 			"CorvaxIshimura",
 			"CorvaxPaper",
+			"CorvaxCute",
             "CorvaxPilgrim",
             "CorvaxSplit",
             "CorvaxTerra",
             "CorvaxFrame",
             "CorvaxPearl",
             "CorvaxTushkan",
-            //"CorvaxGlacier",
             "CorvaxAwesome",
-            "Origin",
             // Corvax-End
             "Dev",
             "TestTeg",
@@ -100,6 +99,7 @@ namespace Content.IntegrationTests.Tests
             "Gate",
             "Amber",
             "Loop",
+            "Plasma",
             "Elkridge"
 
 

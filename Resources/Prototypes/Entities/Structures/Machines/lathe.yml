@@ -228,12 +228,12 @@
       - RiotShield
       - SpeedLoaderMagnum
       - SpeedLoaderMagnumEmpty
-      - CartridgeEpinephrine # Ganimed 
-      - CartridgeBicaridine # Ganimed 
-      - CartridgeDermaline # Ganimed 
-      - CartridgeEphedrine # Ganimed 
-      - CartridgeIchor # Ganimed 
-      - SecHypo # Ganimed 
+      - CartridgeEpinephrine # Ganimed
+      - CartridgeBicaridine # Ganimed
+      - CartridgeDermaline # Ganimed
+      - CartridgeEphedrine # Ganimed
+      - CartridgeIchor # Ganimed
+      - SecHypo # Ganimed
   - type: BlueprintReceiver
     whitelist:
       tags:
@@ -353,7 +353,7 @@
       - ClothingBackpackSatchelHolding
       - ClothingBackpackDuffelHolding
       - WelderExperimental
-      - RnDJawsOfLife  # Ganimed 
+      - RnDJawsOfLife  # Ganimed
       - ClothingEyesGlassesChemical
       - CoreSilver
       #- QSI
@@ -368,8 +368,8 @@
       - OreBagOfHolding
       - DeviceQuantumSpinInverter
       - EnergyDomeDirectionalTurtle # Ganimed -shield energy_barrier
-      - HypoExperement # Ganimed 
-      - ClothingEyesNightVisionGoggles # Ganimed 
+      - HypoExperement # Ganimed
+      - ClothingEyesNightVisionGoggles # Ganimed
 # start-backmen: languages
       - CanilunztTranslator
       - BubblishTranslator
@@ -401,7 +401,7 @@
       - EnergyScalpel # Shitmed Change
       - EnergyCautery # Shitmed Change
       - AdvancedRetractor # Shitmed Change
-      - ArtificialBluespaceCrystal # Ganimed 
+      - ArtificialBluespaceCrystal # Ganimed
   - type: EmagLatheRecipes
     emagDynamicRecipes:
       - BoxBeanbag
@@ -504,7 +504,6 @@
     - SodaDispenserMachineCircuitboard
     - SpaceHeaterMachineCircuitBoard
     - CutterMachineCircuitboard
-    - StationAnchorCircuitboard
     - SalvageMagnetMachineCircuitboard
     dynamicRecipes:
       - AsimovCircuitBoard
@@ -584,9 +583,10 @@
       - JukeboxCircuitBoard
       - SMESAdvancedMachineCircuitboard
       - SalvageExpeditionsComputerCircuitboard # Corvax-Cringe
-      - MachineBluespaceTransitorCircuitboard # Ganimed 
-      - MachineBluespaceHarvesterCircuitboard # Ganimed 
+      - MachineBluespaceTransitorCircuitboard # Ganimed
+      - MachineBluespaceHarvesterCircuitboard # Ganimed
       - HolopadMachineCircuitboard
+      - SalvageExpeditionsComputerCircuitboard # Corvax-Cringe
   - type: EmagLatheRecipes
     emagDynamicRecipes:
       - ShuttleGunDusterCircuitboard
@@ -883,11 +883,11 @@
       - WeaponFlareGunSecurity
       - WeaponLaserCarbinePractice
       - Zipties
-      - CartridgeEpinephrine # Ganimed 
-      - CartridgeBicaridine # Ganimed 
-      - CartridgeDermaline # Ganimed 
-      - CartridgeIchor # Ganimed 
-      - SecHypo # Ganimed 
+      - CartridgeEpinephrine # Ganimed
+      - CartridgeBicaridine # Ganimed
+      - CartridgeDermaline # Ganimed
+      - CartridgeIchor # Ganimed
+      - SecHypo # Ganimed
       - BorgModuleNeutralization # Ganimed Security Borg
     dynamicRecipes:
       - BorgModuleCombat # Ganimed: Security Borg
@@ -950,7 +950,7 @@
       - WeaponXrayCannon
       - SecurityCyberneticEyes # Shitmed Change
       - MedicalCyberneticEyes # Shitmed Change
-      - ClothingEyesThermalVisionGoggles # Ganimed 
+      - ClothingEyesThermalVisionGoggles # Ganimed
   - type: MaterialStorage
     whitelist:
       tags:
@@ -1071,8 +1071,8 @@
       - ClothingEyesGlassesChemical
       - WhiteCane
     dynamicRecipes:
-      - ChemicalImplanterTrigger # Ganimed 
-      - ChemicalsImplanter # Ganimed 
+      - ChemicalImplanterTrigger # Ganimed
+      - ChemicalsImplanter # Ganimed
       - ChemicalPayload
       - CryostasisBeaker
       - BluespaceBeaker
@@ -1260,6 +1260,25 @@
       - CarpetPurple
       - CarpetCyan
       - CarpetWhite
+      # Bedsheets
+      - BedsheetBlack
+      - BedsheetBlue
+      - BedsheetBrown
+      - BedsheetGreen
+      - BedsheetGrey
+      - BedsheetOrange
+      - BedsheetPurple
+      - BedsheetRed
+      - BedsheetWhite
+      - BedsheetYellow
+      - BedsheetClown
+      - BedsheetCosmos
+      - BedsheetIan
+      - BedsheetMedical
+      - BedsheetMime
+      - BedsheetNT
+      - BedsheetRainbow
+      - BedsheetBrigmedic
       # Corvax-Clothing-Start
       - ClothingHeadHatCapHoS
       - ClothingHeadHatBeretSecurityMedic
@@ -1275,6 +1294,7 @@
       # Corvax-Clothing-End
   - type: EmagLatheRecipes
     emagStaticRecipes:
+      # Clothing
       - ClothingHeadHatCentcomcap
       - ClothingHeadHatCentcom
       - ClothingUniformJumpsuitCentcomAgent
@@ -1297,6 +1317,8 @@
       - ClothingOuterWinterCentcom
       - ClothingOuterWinterSyndie
       - ClothingOuterWinterSyndieCap
+      # Bedsheets
+      - BedsheetSyndie
   - type: MaterialStorage
     whitelist:
       tags:

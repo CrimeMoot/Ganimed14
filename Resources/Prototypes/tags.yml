@@ -290,6 +290,9 @@
 
 - type: Tag
   id: CartridgePistol
+  
+- type: Tag
+  id: CartridgePistol45ACP
 
 - type: Tag
   id: CartridgeRifle
@@ -828,6 +831,9 @@
 
 - type: Tag
   id: MagazinePistol
+  
+- type: Tag
+  id: MagazinePistol45ACP
 
 - type: Tag
   id: MagazinePistolCaselessRifle

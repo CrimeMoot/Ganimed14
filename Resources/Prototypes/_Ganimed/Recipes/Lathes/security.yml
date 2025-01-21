@@ -53,3 +53,24 @@
     Plasma: 500
     Gold: 500
     Silver: 500
+ 
+- type: latheRecipe
+  parent: BaseEmptyAmmoRecipe
+  id: MagazinePistol45ACPEmpty
+  result: MagazinePistol45ACPEmpty
+  materials:
+    Steel: 25
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: MagazinePistol45ACP
+  result: MagazinePistol45ACP
+  materials:
+    Steel: 165
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: MagazineBoxPistol45ACP
+  result: MagazineBoxPistol45ACP
+  materials:
+    Steel: 600 

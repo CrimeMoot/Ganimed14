@@ -190,7 +190,7 @@
   components:
   - type: StorageFill
     contents:
-    - id: WeaponPistolACP14
+    - id: WeaponPistolG22 #ganimed
       amount: 4
     - id: MagazinePistol
       amount: 8
@@ -263,5 +263,5 @@
   components:
   - type: StorageFill
     contents:
-    - id: WeaponEarthGovLaserRifle
+    - id: WeaponLaserCarbine
       amount: 3

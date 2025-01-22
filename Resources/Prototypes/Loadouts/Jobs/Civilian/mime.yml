@@ -30,6 +30,13 @@
   equipment:
     mask: ClothingMaskScaredMime
 
+# Neck, Ganimed
+
+- type: loadout # TODO: Whitelist restriction
+  id: ScarfZebra
+  equipment:
+    neck: ClothingNeckScarfStripedZebra
+
 # Jumpsuit
 - type: loadout
   id: MimeJumpsuit

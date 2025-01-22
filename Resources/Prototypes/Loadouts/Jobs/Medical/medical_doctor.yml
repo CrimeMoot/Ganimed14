@@ -114,6 +114,26 @@
   equipment:
     jumpsuit: UniformScrubsColorPurple
 
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: GeneticsJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitGenetics
+
+- type: loadout # Ganimed
+  id: GeneticsJumpskirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtGenetics
+
+- type: loadout # Ganimed
+  id: VirologyJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitVirology
+
+- type: loadout # Ganimed
+  id: VirologyJumpskirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtVirology
+
 # Back
 - type: loadout
   id: MedicalDoctorBackpack
@@ -130,6 +150,36 @@
   equipment:
     back: ClothingBackpackDuffelMedical
 
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: GeneticsBackpack
+  equipment:
+    back: ClothingBackpackGenetics
+
+- type: loadout # Ganimed
+  id: GeneticsSatchel
+  equipment:
+    back: ClothingBackpackSatchelGenetics
+
+- type: loadout # Ganimed
+  id: GeneticsDuffel
+  equipment:
+    back: ClothingBackpackDuffelGenetics
+
+- type: loadout # Ganimed
+  id: VirologyBackpack
+  equipment:
+    back: ClothingBackpackVirology
+
+- type: loadout # Ganimed
+  id: VirologySatchel
+  equipment:
+    back: ClothingBackpackSatchelVirology
+
+- type: loadout # Ganimed
+  id: VirologyDuffel
+  equipment:
+    back: ClothingBackpackDuffelVirology
+
 # OuterClothing
 - type: loadout
   id: MedicalDoctorWintercoat
@@ -143,7 +193,35 @@
     proto: SeniorPhysician
   equipment:
     outerClothing: ClothingOuterCoatLabSeniorPhysician
-    
+
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: GeneticsLabCoat
+  equipment:
+    outerClothing: ClothingOuterCoatLabGene
+
+- type: loadout # Ganimed
+  id: VirologyLabCoat
+  equipment:
+    outerClothing: ClothingOuterCoatLabViro
+
+- type: loadout # Ganimed
+  id: GeneticsWintercoat
+  equipment:
+    outerClothing: ClothingOuterWinterGen
+
+- type: loadout # Ganimed
+  id: VirologyWintercoat
+  equipment:
+    outerClothing: ClothingOuterWinterViro
+
+- type: loadout # Ganimed
+  id: VirologyBioSuit
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MedicalHeadMirrorTimer
+  equipment:
+    outerClothing: ClothingOuterBioVirology
+
 # Shoes
 - type: loadout
   id: MedicalWinterBoots

@@ -57,6 +57,17 @@
   equipment:
     shoes: ClothingShoesJester
 
+- type: loadout # Ganimed
+  id: LargeClownShoes
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobClown
+      time: 180000 # 50hr
+  equipment:
+    shoes: ClothingShoesClownLarge
+
 # Outer clothing
 - type: loadout
   id: ClownRobes

@@ -193,6 +193,7 @@
   - GroupTankHarness
   - MimeHead
   - MimeMask
+  - MimeNeck # Ganimed
   - MimeJumpsuit
   - MimeBackpack
   - MimeOuterClothing
@@ -258,6 +259,7 @@
   - GroupTankHarness
   - SalvageSpecialistBackpack
   - SalvageSpecialistOuterClothing
+  - SalvageSpecialistBelt # Ganimed
   - SalvageSpecialistShoes
   - Glasses
   - Medals #backmen
@@ -593,6 +595,7 @@
   id: JobBoxer
   groups:
   - GroupTankHarness
+  - BoxerHead #Ganimed
   - BoxerJumpsuit
   - BoxerGloves
   - CommonBackpack

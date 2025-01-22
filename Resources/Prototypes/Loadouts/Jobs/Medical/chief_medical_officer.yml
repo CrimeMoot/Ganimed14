@@ -70,3 +70,7 @@
   equipment:
     outerClothing: ClothingOuterWinterCMO
 
+- type: loadout # Ganimed
+  id: ChiefMedicalOfficerBioSuit
+  equipment:
+    outerClothing: ClothingOuterBioCmo

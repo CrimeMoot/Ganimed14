@@ -46,6 +46,26 @@
   - !type:GroupLoadoutEffect
     proto: SeniorEngineering
 
+- type: loadout # Ganimed
+  id: WeldingMask
+  equipment:
+    head: ClothingHeadHatWelding
+
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: WeldingMaskPainted
+  equipment:
+    head: ClothingHeadHatWeldingMaskPainted
+
+- type: loadout # Ganimed
+  id: WeldingMaskFlame
+  equipment:
+    head: ClothingHeadHatWeldingMaskFlame
+
+- type: loadout # Ganimed
+  id: WeldingMaskBlueFlame
+  equipment:
+    head: ClothingHeadHatWeldingMaskFlameBlue
+
 # Jumpsuit
 - type: loadout
   id: StationEngineerJumpsuit
@@ -77,6 +97,11 @@
     proto: SeniorEngineering
   equipment:
     jumpsuit: ClothingUniformJumpskirtSeniorEngineer
+
+- type: loadout # Ganimed
+  id: StationEngineerNTRepairmanJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitRepairmanNT
 
 # Back
 - type: loadout
@@ -115,6 +140,17 @@
   id: EngineeringWinterBoots
   equipment:
     shoes: ClothingShoesBootsWinterEngi
+
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: EngineeringMagBoots
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:DepartmentTimeRequirement
+      department: Engineering
+      time: 108000 # 30 hrs
+  equipment:
+    shoes: ClothingShoesBootsMag
 
 # ID
 - type: loadout

@@ -6,7 +6,7 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobLibrarian
-      time: 3600 # 1 hour of being the biggest nerd on the station
+      time: 7200 # 2 hours of being the biggest nerd on the station
 
 - type: loadoutEffectGroup
   id: JensenTimer
@@ -24,6 +24,18 @@
   equipment:
     eyes: ClothingEyesGlasses
 
+# Cheap Sunglasses, Ganimed
+- type: loadout
+  id: CheapSunglasses
+  equipment:
+    eyes: ClothingEyesGlassesCheapSunglasses
+
+# Eyepatch, Ganimed
+- type: loadout
+  id: Eyepatch
+  equipment:
+    eyes: ClothingEyesEyepatch
+
 # Special options
 # Jamjar
 - type: loadout
@@ -34,6 +46,15 @@
   equipment:
     eyes: ClothingEyesGlassesJamjar
 
+# Binoclard Lenses, Ganimed
+- type: loadout
+  id: GlassesBinoclard
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: JamjarTimer
+  equipment:
+    eyes: ClothingEyesBinoclardLenses
+
 # Jensen
 - type: loadout
   id: GlassesJensen
@@ -42,3 +63,39 @@
     proto: JensenTimer
   equipment:
     eyes: ClothingEyesGlassesJensen
+
+# Salesman, Ganimed
+- type: loadout
+  id: GlassesSalesman
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: JensenTimer
+  equipment:
+    eyes: ClothingEyesSalesman
+
+# Gar, Ganimed TODO: Whitelist restriction
+- type: loadout
+  id: GlassesGar
+#  effects:
+#  - !type:GroupLoadoutEffect
+#    proto: 
+  equipment:
+    eyes: ClothingEyesGlassesGar
+
+# Gar Orange, Ganimed
+- type: loadout
+  id: GlassesGarOrange
+#  effects:
+#  - !type:GroupLoadoutEffect
+#    proto: 
+  equipment:
+    eyes: ClothingEyesGlassesGarOrange
+
+# Gar Giga, Ganimed
+- type: loadout
+  id: GlassesGarGiga
+#  effects:
+#  - !type:GroupLoadoutEffect
+#    proto: 
+  equipment:
+    eyes: ClothingEyesGlassesGarGiga

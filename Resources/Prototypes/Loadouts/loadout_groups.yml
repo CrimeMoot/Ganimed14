@@ -43,7 +43,7 @@
   - ClothingNeckUSSPPin
   - ClothingNeckSyndicakePin
   # backmen-pins-end
-   # Corvax-Loadouts-Start
+  # Corvax-Loadouts-Start
   - ClothingNeckAtharaPin
   - ClothingNeckCorvaxPin
   - ClothingNeckEchoPin
@@ -54,7 +54,14 @@
   - ClothingNeckSolarisPin
   - ClothingNeckWhiteListPin
   # Corvax-Loadouts-End
+  # Ganimed-Loadouts-Start
+  - GlowstickBase
+  - GlowstickYellow
+  - GlowstickRed
+  - GlowstickPurple
+  - GlowstickBlue
   - TowelColorBlack
+  # Ganimed-Loadouts-End
   - TowelColorDarkBlue
   - TowelColorDarkGreen
   - TowelColorGold
@@ -77,8 +84,15 @@
   minLimit: 0
   loadouts:
   - Glasses
+  - CheapSunglasses # Ganimed
+  - Eyepatch # Ganimed
   - GlassesJamjar
+  - GlassesBinoclard # Ganimed
   - GlassesJensen
+  - GlassesSalesman # Ganimed
+  - GlassesGar # Ganimed
+  - GlassesGarOrange # Ganimed
+  - GlassesGarGiga # Ganimed
 
 - type: loadoutGroup
   id: GroupTankHarness
@@ -122,6 +136,7 @@
   loadouts:
   - CaptainHead
   - CaptainCap
+  - CaptainHat # Ganimed
 
 - type: loadoutGroup
   id: CaptainJumpsuit
@@ -201,6 +216,7 @@
   minLimit: 0
   loadouts:
   - HoPWintercoat
+  - HoPCoat # Ganimed
 
 # Civilian
 - type: loadoutGroup
@@ -211,6 +227,7 @@
   - GreyJumpskirt
   - AncientJumpsuit
   - RainbowJumpsuit
+  - RecruitJumpsuit # Ganimed
 
 - type: loadoutGroup
   id: PassengerFace
@@ -429,6 +446,12 @@
   loadouts:
   - BotanistHead
   - BotanistBandana
+  # Ganimed-Loadouts-Start
+  - BotanistStrawHat
+  - BotanistPoppy
+  - BotanistAmbrosia
+  - BotanistFlowerWreath
+  # Ganimed-Loadouts-End
 
 - type: loadoutGroup
   id: BotanistJumpsuit
@@ -437,6 +460,7 @@
   - BotanistJumpsuit
   - BotanistJumpskirt
   - BotanistOveralls
+  - Overalls
 
 - type: loadoutGroup
   id: BotanistBackpack
@@ -493,6 +517,7 @@
   loadouts:
   - ClownShoes
   - JesterShoes
+  - LargeClownShoes # Ganimed
 
 - type: loadoutGroup
   id: SurvivalClown
@@ -520,6 +545,13 @@
   - MimeMask
   - MimeMaskSad
   - MimeMaskScared
+
+- type: loadoutGroup # Ganimed
+  id: MimeNeck
+  name: loadout-group-mime-neck
+  minLimit: 0
+  loadouts:
+  - ScarfZebra
 
 - type: loadoutGroup
   id: MimeJumpsuit
@@ -701,6 +733,14 @@
   loadouts:
   - SalvageSpecialistWintercoat
 
+- type: loadoutGroup # Ganimed
+  id: SalvageSpecialistBelt
+  name: loadout-group-salvage-specialist-outerclothing
+  minLimit: 0
+  loadouts:
+  - SalvageWebbing
+  - SalvageOreBag
+
 - type: loadoutGroup
   id: SalvageSpecialistShoes
   name: loadout-group-salvage-specialist-shoes
@@ -717,6 +757,7 @@
   - ChiefEngineerHead
   - ChiefEngineerBeret
   - ClothingHeadHatBeretChiefEngineering  # cats
+  - ArmoredHarthat # Ganimed
 
 - type: loadoutGroup
   id: ChiefEngineerJumpsuit
@@ -726,6 +767,7 @@
   - ChiefEngineerJumpskirt
   - ChiefEngineerTurtleneck
   - ChiefEngineerTurtleneckSkirt
+  - ChiefEngineerNTJumpsuit # Ganimed
 
 - type: loadoutGroup
   id: ChiefEngineerNeck
@@ -764,8 +806,13 @@
   - StationEngineerHardhatYellow
   - StationEngineerHardhatOrange
   - StationEngineerHardhatRed
-  - ClothingHeadHatBeretChiefEngineering  # cats
   - SeniorEngineerBeret
+  # Ganimed-Loadouts-Start
+  - WeldingMask
+  - WeldingMaskPainted
+  - WeldingMaskFlame
+  - WeldingMaskBlueFlame
+  # Ganimed-Loadouts-End
 
 - type: loadoutGroup
   id: StationEngineerJumpsuit
@@ -776,6 +823,7 @@
   - StationEngineerHazardsuit
   - SeniorEngineerJumpsuit
   - SeniorEngineerJumpskirt
+  - StationEngineerNTRepairmanJumpsuit # Ganimed
 
 - type: loadoutGroup
   id: StationEngineerBackpack
@@ -815,6 +863,7 @@
   - AtmosphericTechnicianJumpsuit
   - AtmosphericTechnicianJumpskirt
   - AtmosphericTechnicianJumpsuitCasual
+  - AtmosphericTechnicianJumpsuitCasualOriginal # Ganimed
 
 - type: loadoutGroup
   id: AtmosphericTechnicianOuterClothing
@@ -907,6 +956,7 @@
   minLimit: 0
   loadouts:
   - ScientistTie
+  - ScientistCloak # Ganimed
 
 - type: loadoutGroup
   id: ScientistJumpsuit
@@ -918,6 +968,9 @@
   - RoboticistJumpskirt
   - SeniorResearcherJumpsuit
   - SeniorResearcherJumpskirt
+  - OriginalScientistJumpsuit # Ganimed
+  - OriginalScientistJumpskirt # Ganimed
+  - FormalScientistJumpsuit # Ganimed
 
 - type: loadoutGroup
   id: ScientistBackpack
@@ -994,6 +1047,7 @@
   - HeadofSecurityJumpsuitBlack
   - HeadofSecurityJumpskirtBlack
   # Corvax-Loadouts-End
+  - HeadofSecurityJumpsuitOld # Ganimed
 
 - type: loadoutGroup
   id: HeadofSecurityNeck
@@ -1009,6 +1063,8 @@
   loadouts:
   - HeadofSecurityCoat
   - HeadofSecurityWinterCoat
+  - HeadofSecurityUnarmoredWinterCoat # Ganimed
+  - HeadofSecurityTrenchCoat # Ganimed
 
 - type: loadoutGroup #Backmen
   id: SecurityOfficerPocket
@@ -1038,6 +1094,7 @@
   loadouts:
   - WardenHead
   - WardenBeret
+  - WardenCapAlt # Ganimed
 
 - type: loadoutGroup
   id: WardenJumpsuit
@@ -1052,6 +1109,8 @@
   loadouts:
   - WardenCoat
   - WardenArmoredWinterCoat
+  - WardenUnarmoredWinterCoat # Ganimed
+  - WardenCoatAlt # Ganimed
 
 - type: loadoutGroup
   id: SecurityHead
@@ -1220,6 +1279,7 @@
   - ChiefMedicalOfficerLabCoat
   - ChiefMedicalOfficerWintercoat
   - ClothingOuterWinterSeniorPhysician  # cats
+  - ChiefMedicalOfficerBioSuit # Ganimed
 
 - type: loadoutGroup
   id: ChiefMedicalOfficerNeck
@@ -1260,6 +1320,12 @@
   - MedicalBlueScrubs
   - MedicalGreenScrubs
   - MedicalPurpleScrubs
+  # Ganimed-Loadouts-Start
+  - GeneticsJumpsuit
+  - GeneticsJumpskirt
+  - VirologyJumpsuit
+  - VirologyJumpskirt
+  # Ganimed-Loadouts-End
 
 - type: loadoutGroup
   id: MedicalDoctorOuterClothing
@@ -1270,6 +1336,13 @@
   - MedicalDoctorWintercoat
   - SeniorPhysicianLabCoat
   - ClothingOuterWinterSeniorPhysician  # cats
+  # Ganimed-Loadouts-Start
+  - GeneticsLabCoat
+  - VirologyLabCoat
+  - GeneticsWintercoat
+  - VirologyWintercoat
+  - VirologyBioSuit
+  # Ganimed-Loadouts-End
 
 - type: loadoutGroup
   id: MedicalBackpack
@@ -1278,6 +1351,14 @@
   - MedicalDoctorBackpack
   - MedicalDoctorSatchel
   - MedicalDoctorDuffel
+  # Ganimed-Loadouts-Start
+  - GeneticsBackpack
+  - GeneticsSatchel
+  - GeneticsDuffel
+  - VirologyBackpack
+  - VirologySatchel
+  - VirologyDuffel
+  # Ganimed-Loadouts-End
 
 - type: loadoutGroup
   id: MedicalShoes
@@ -1402,6 +1483,8 @@
   loadouts:
   - BoxerShorts
   - BoxerShortsWithTop
+  - Kimono # Ganimed
+  - Gladiator # Ganimed
 
 - type: loadoutGroup
   id: BoxerGloves
@@ -1411,6 +1494,14 @@
   - BlueBoxingGloves
   - GreenBoxingGloves
   - YellowBoxingGloves
+
+- type: loadoutGroup # Ganimed
+  id: BoxerHead
+  name: loadout-group-boxer-head
+  loadouts:
+  - TacticalHeadband
+  - Casa
+  - GladiatorHelmet
 
 # Other
 - type: loadoutGroup

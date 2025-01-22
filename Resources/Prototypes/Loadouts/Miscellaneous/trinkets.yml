@@ -286,6 +286,62 @@
     - ClothingNeckSyndicakePin
 # backmen: loadouts-end
 
+# Ganimed: Glowsticks  TODO: Whitelist restriction
+- type: loadout
+  id: GlowstickBase
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:OverallPlaytimeRequirement
+      time: 36000 # 10hr
+  storage:
+    back:
+    - GlowstickBase
+
+- type: loadout
+  id: GlowstickYellow
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:OverallPlaytimeRequirement
+      time: 36000 # 10hr
+  storage:
+    back:
+    - GlowstickYellow
+
+- type: loadout
+  id: GlowstickRed
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:OverallPlaytimeRequirement
+      time: 36000 # 10hr
+  storage:
+    back:
+    - GlowstickRed
+
+- type: loadout
+  id: GlowstickPurple
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:OverallPlaytimeRequirement
+      time: 36000 # 10hr
+  storage:
+    back:
+    - GlowstickPurple
+
+- type: loadout
+  id: GlowstickBlue
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:OverallPlaytimeRequirement
+      time: 36000 # 10hr
+  storage:
+    back:
+    - GlowstickBlue
+
 # Towels
 - type: loadout
   id: TowelColorWhite

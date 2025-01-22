@@ -3,13 +3,9 @@
   equipment:
     shoes: ClothingShoesBootsJackSec # Corvax-Resprite
     gloves: ClothingHandsGlovesNitrile
-    ears: ClothingHeadsetSecurity
-    mask: ClothingMaskBreathMedicalSecurity
     eyes: ClothingEyesGlassesBrigmedic
-    neck: ClothingNeckTieRed
     pocket2: HandheldBrigmedicCrewMonitor # Cats
     pocket1: SecHypo
-    outerClothing: ClothingOuterCoatAMG
     id: BrigmedicPDA
     belt: ClothingBeltMilitaryWebbingCorpsman
 
@@ -23,6 +19,16 @@
   id: ClothingUniformJumpskirtBrigmedic
   equipment:
     jumpsuit: ClothingUniformJumpskirtBrigmedic
+
+- type: loadout # Ganimed
+  id: OriginalBrigmedicJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitBrigmedicOriginal
+
+- type: loadout # Ganimed
+  id: OriginalBrigmedicJumpskirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtBrigmedicOriginal
 
 - type: loadout
   id: ClothingUniformJumpskirtOfLife
@@ -82,6 +88,11 @@
   equipment:
     outerClothing: ClothingOuterCoatLabSecurityMedic
 
+- type: loadout # Ganimed
+  id: SecurityBioSuit
+  equipment:
+    outerClothing: ClothingOuterBioSecurity
+
 #ears
 - type: loadout
   id: ClothingHeadsetBrigmedic
@@ -108,3 +119,9 @@
   id: ClothingMaskGasSecurity
   equipment:
     mask: ClothingMaskGasSecurity
+
+# Shoes, Ganimed
+- type: loadout
+  id: RedShoes
+  equipment:
+    shoes: ClothingShoesColorRed

@@ -9,6 +9,26 @@
   equipment:
     head: ClothingHeadBandBotany
 
+- type: loadout # Ganimed
+  id: BotanistStrawHat
+  equipment:
+    head: ClothingHeadHatStrawHat
+
+- type: loadout # Ganimed
+  id: BotanistPoppy
+  equipment:
+    head: FoodPoppy
+
+- type: loadout # Ganimed
+  id: BotanistAmbrosia
+  equipment:
+    head: FoodAmbrosiaVulgaris
+
+- type: loadout # Ganimed
+  id: BotanistFlowerWreath
+  equipment:
+    head: ClothingHeadHatFlowerWreath
+
 # Jumpsuit
 - type: loadout
   id: BotanistJumpsuit
@@ -21,9 +41,14 @@
     jumpsuit: ClothingUniformJumpskirtHydroponics
 
 - type: loadout
-  id: BotanistOveralls
+  id: Overalls
   equipment:
     jumpsuit: ClothingUniformOveralls
+
+- type: loadout # Ganimed
+  id: BotanistOveralls
+  equipment:
+    jumpsuit: ClothingUniformOverallsOriginal
 
 # Back
 - type: loadout

@@ -68,3 +68,8 @@
   id: HoPWintercoat
   equipment:
     outerClothing: ClothingOuterWinterHoP
+
+- type: loadout # Ganimed
+  id: HoPCoat
+  equipment:
+    outerClothing: ClothingOuterCoatHOP

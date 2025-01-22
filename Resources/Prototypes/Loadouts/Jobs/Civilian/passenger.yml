@@ -57,6 +57,15 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitAncient
 
+# Recruit, Ganimed
+- type: loadout
+  id: RecruitJumpsuit
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: GreyTider
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitRecruitNT
+
 # Neck
 - type: loadout
   id: Mantle

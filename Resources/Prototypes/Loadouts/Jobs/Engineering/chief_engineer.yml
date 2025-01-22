@@ -29,6 +29,11 @@
   equipment:
     jumpsuit: ClothingUniformJumpskirtChiefEngineerTurtle
 
+- type: loadout # Ganimed
+  id: ChiefEngineerNTJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitChiefEngineerNT
+
 # Head
 - type: loadout
   id: ChiefEngineerHead
@@ -39,6 +44,14 @@
   id: ClothingHeadHatBeretChiefEngineering
   equipment:
     head: ClothingHeadHatBeretChiefEngineering   # cats
+
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: ArmoredHarthat
+  equipment:
+    head: ClothingHeadHatHardhatArmored
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MasterCE
 
 - type: loadout
   id: ChiefEngineerBeret

@@ -118,6 +118,8 @@
   loadouts:
   - ClothingUniformJumpsuitBrigmedic
   - ClothingUniformJumpskirtBrigmedic
+  - OriginalBrigmedicJumpsuit # Ganimed
+  - OriginalBrigmedicJumpskirt # Ganimed
   - ClothingUniformJumpskirtOfLife
 
 - type: loadoutGroup
@@ -145,6 +147,7 @@
   - ClothingOuterCoatAMG
   - ClothingOuterVestSecurityMedic
   - ClothingOuterCoatLabSecurityMedic
+  - SecurityBioSuit # Ganimed
 
 - type: loadoutGroup
   id: ClothingEarBrigmedic
@@ -161,6 +164,14 @@
   - ClothingMaskBreathMedicalSecurity
   - ClothingMaskSterile
   - ClothingMaskGasSecurity
+
+- type: loadoutGroup # Ganimed
+  id: ClothingShoesBrigmedic
+  name: loadout-group-brigmedic-ear
+  loadouts:
+  - JackSecBoots
+  - SecurityWinterBoots
+  - RedShoes
 
 # Miscellaneous
 - type: loadoutGroup

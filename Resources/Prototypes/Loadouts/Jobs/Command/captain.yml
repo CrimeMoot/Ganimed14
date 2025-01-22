@@ -40,6 +40,11 @@
   equipment:
     head: ClothingHeadHatCapcap
 
+- type: loadout # Ganimed
+  id: CaptainHat
+  equipment:
+    head: ClothingHeadCaptainHat
+
 # Neck
 - type: loadout
   id: CaptainCloak

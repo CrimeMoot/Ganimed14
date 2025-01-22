@@ -39,6 +39,11 @@
   equipment:
     jumpsuit: ClothingUniformJumpskirtHosFormal
 
+- type: loadout # Ganimed
+  id: HeadofSecurityJumpsuitOld
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitHoSOld
+
 # Head
 - type: loadout
   id: HeadofSecurityHead
@@ -84,6 +89,16 @@
   id: ClothingOuterWinterSeniorOfficer
   equipment:
     outerClothing: ClothingOuterWinterSeniorOfficer  # cats
+
+- type: loadout # Ganimed
+  id: HeadofSecurityUnarmoredWinterCoat
+  equipment:
+    outerClothing: ClothingOuterWinterHoSUnarmored
+
+- type: loadout # Ganimed
+  id: HeadofSecurityTrenchCoat
+  equipment:
+    outerClothing: Clothinghoscoat
 
 # Pocket #Backmen
 

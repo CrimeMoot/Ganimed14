@@ -49,6 +49,11 @@
   equipment:
     jumpsuit: ClothingUniformJumpskirtLawyerGood
 
+- type: loadout # Ganimed
+  id: JumpsuitNanotrasen
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitNanotrasen
+
 # Neck
 - type: loadout
   id: LawyerNeck

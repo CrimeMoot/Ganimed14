@@ -57,6 +57,16 @@
   equipment:
     outerClothing: ClothingOuterCoatDetectiveLoadout
 
+- type: loadout # Ganimed
+  id: DetectiveCoatOriginal
+  equipment:
+    outerClothing: ClothingOuterCoatDetectiveOriginal
+
+- type: loadout # Ganimed
+  id: DetectiveCoatDark
+  equipment:
+    outerClothing: ClothingOuterCoatDetectiveDark
+
 # Weapon #Backmen
 - type: loadout
   id: WeaponRevolverCMB

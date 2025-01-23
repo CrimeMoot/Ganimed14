@@ -1,3 +1,36 @@
+# Timer, Ganimed
+- type: loadoutEffectGroup
+  id: MasterSalvager
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobSalvageSpecialist
+      time: 72000 #20 hrs
+
+# Neck, Ganimed
+- type: loadout # TODO: Whitelist restriction
+  id: MinerCloak
+  equipment:
+    neck: ClothingNeckCloakMiner
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MasterSalvager
+
+# Headset, Ganimed
+- type: loadout
+  id: HeadsetCargo
+  equipment:
+    ears: ClothingHeadsetCargo
+
+- type: loadout # TODO: Whitelist restriction
+  id: HeadsetMining
+  equipment:
+    ears: ClothingHeadsetMining
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MedicalHeadSalvager
+
 # Back
 - type: loadout
   id: SalvageSpecialistBackpack

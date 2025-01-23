@@ -69,6 +69,14 @@
   equipment:
     neck: ClothingNeckMantleCap
 
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: CaptainCloakLong
+  equipment:
+    neck: ClothingLongCloakCap
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MasterCap
+
 # Back
 - type: loadout
   id: CaptainBackpack

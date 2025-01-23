@@ -15,6 +15,16 @@
   equipment:
     jumpsuit: ClothingUniformJumpskirtCargo
 
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: CargoTechnicianJumpsuitPostal
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCargoPostal
+
+- type: loadout # Ganimed
+  id: CargoTechnicianJumpskirtPostal
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCargoPostal
+
 # Back
 - type: loadout
   id: CargoTechnicianBackpack

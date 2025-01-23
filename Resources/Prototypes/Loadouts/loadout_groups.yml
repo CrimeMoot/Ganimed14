@@ -159,6 +159,7 @@
   - CaptainCloak
   - CaptainCloakFormal
   - CaptainMantle
+  - CaptainCloakLong # Ganimed
 
 - type: loadoutGroup
   id: CaptainBackpack
@@ -200,6 +201,7 @@
   loadouts:
   - HoPCloak
   - HoPMantle
+  - HoPCloakLong # Ganimed
 
 - type: loadoutGroup
   id: HoPBackpack
@@ -250,6 +252,7 @@
   - CommonBackpack
   - CommonSatchel
   - CommonDuffel
+  - LeatherSatchel # Ganimed
 
 - type: loadoutGroup
   id: PassengerNeck
@@ -350,6 +353,7 @@
   - LawyerJumpskirtRed
   - LawyerJumpsuitGood
   - LawyerJumpskirtGood
+  - JumpsuitNanotrasen # Ganimed
 
 - type: loadoutGroup
   id: LawyerNeck
@@ -519,6 +523,30 @@
   - JesterShoes
   - LargeClownShoes # Ganimed
 
+- type: loadoutGroup # Ganimed
+  id: TheatricalAttire
+  name: loadout-group-theatrical-attire
+  minLimit: 0
+  maxLimit: 2
+  loadouts:
+  - TheatreSantaHat
+  - TheatreSantaSuit
+  - TheatreWitchHat
+  - TheatreWitchHat1
+  - TheatreWitchRobes
+  - TheatreCarpSuit
+  - TheatreCardborgHead
+  - TheatreCardborgSuit
+  - TheatreChickenHead
+  - TheatreChickenSuit
+  - TheatreMonkeyHat
+  - TheatreMonkeySuit
+  - TheatreRedRacoonHat
+  - TheatreRedRacoonSuit
+  - TheatreGhostSheet
+  - TheatreMothCloak
+  - TheatrePumpkinHat
+
 - type: loadoutGroup
   id: SurvivalClown
   name: loadout-group-survival-clown
@@ -667,6 +695,7 @@
   loadouts:
   - QuartermasterCloak
   - QuartermasterMantle
+  - QuartermasterCloakLong # Ganimed
 
 - type: loadoutGroup
   id: QuartermasterOuterClothing
@@ -695,6 +724,8 @@
   loadouts:
   - CargoTechnicianJumpsuit
   - CargoTechnicianJumpskirt
+  - CargoTechnicianJumpsuitPostal # Ganimed
+  - CargoTechnicianJumpskirtPostal # Ganimed
 
 - type: loadoutGroup
   id: CargoTechnicianBackpack
@@ -776,6 +807,7 @@
   loadouts:
   - ChiefEngineerCloak
   - ChiefEngineerMantle
+  - ChiefEngineerCloakLong # Ganimed
 
 - type: loadoutGroup
   id: ChiefEngineerOuterClothing
@@ -856,6 +888,13 @@
   - StationEngineerPDA
   - SeniorEngineerPDA
 
+- type: loadoutGroup # Ganimed
+  id: AtmosphericTechnicianNeck
+  name: loadout-group-atmospheric-technician-neck
+  minLimit: 0
+  loadouts:
+  - AtmosianCloak
+
 - type: loadoutGroup
   id: AtmosphericTechnicianJumpsuit
   name: loadout-group-atmospheric-technician-jumpsuit
@@ -872,6 +911,7 @@
   loadouts:
   - AtmosphericTechnicianWintercoat
   - ClothingOuterWinterSeniorEngineer # cats
+  - AtmosphericTechnicianBomberJacket # Ganimed
 
 - type: loadoutGroup
   id: AtmosphericTechnicianBackpack
@@ -913,6 +953,7 @@
   loadouts:
   - ResearchDirectorMantle
   - ResearchDirectorCloak
+  - ResearchDirectorCloakLong # Ganimed
 
 - type: loadoutGroup
   id: ResearchDirectorJumpsuit
@@ -957,6 +998,13 @@
   loadouts:
   - ScientistTie
   - ScientistCloak # Ganimed
+
+- type: loadoutGroup # Ganimed
+  id: ScientistHeadset
+  name: loadout-group-scientist-headset
+  loadouts:
+  - HeadsetScience
+  - HeadsetMedicalScience
 
 - type: loadoutGroup
   id: ScientistJumpsuit
@@ -1048,6 +1096,8 @@
   - HeadofSecurityJumpskirtBlack
   # Corvax-Loadouts-End
   - HeadofSecurityJumpsuitOld # Ganimed
+  - HeadofSecurityJumpsuitGrey # Ganimed
+  - HeadofSecurityJumpsuitBlue # Ganimed
 
 - type: loadoutGroup
   id: HeadofSecurityNeck
@@ -1056,6 +1106,7 @@
   loadouts:
   - HeadofSecurityCloak
   - HeadofSecurityMantle
+  - HeadofSecurityCloakLong # Ganimed
 
 - type: loadoutGroup
   id: HeadofSecurityOuterClothing
@@ -1124,6 +1175,14 @@
   - ClothingHeadHatPilotkaSec #Backmen
   - TrooperHat
 
+- type: loadoutGroup # Ganimed
+  id: SecurityHead
+  name: loadout-group-security-head
+  minLimit: 0
+  loadouts: 
+  - SecurityWhistle
+  - SecurityCloak
+
 - type: loadoutGroup
   id: SecurityJumpsuit
   name: loadout-group-security-jumpsuit
@@ -1133,6 +1192,7 @@
   - SeniorOfficerJumpsuit
   - SeniorOfficerJumpskirt
   - TrooperUniform
+  - BlueSecurityUniform # Ganimed
 
 - type: loadoutGroup
   id: SecurityBackpack
@@ -1218,6 +1278,8 @@
   - DetectiveArmorVest
   - DetectiveCoat
   - DetectiveCoatGrey
+  - DetectiveCoatOriginal # Ganimed
+  - DetectiveCoatDark # Ganimed
 
 - type: loadoutGroup #Backmen
   id: DetectiveRevolver
@@ -1233,6 +1295,8 @@
   id: SecurityCadetJumpsuit
   name: loadout-group-security-cadet-jumpsuit
   loadouts:
+  - RedJumpsuit
+  - RedJumpskirt
   - SecurityJumpsuitGrey #Backmen
   - SecurityJumpskirtGrey #Backmen
 
@@ -1288,6 +1352,7 @@
   loadouts:
   - ChiefMedicalOfficerCloak
   - ChiefMedicalOfficerMantle
+  - ChiefMedicalOfficerCloakLong # Ganimed
 
 - type: loadoutGroup
   id: ChiefMedicalOfficerShoes
@@ -1308,6 +1373,21 @@
   - GreenSurgeryCap
   - PurpleSurgeryCap
   - NurseHat
+
+- type: loadoutGroup # Ganimed
+  id: MedicalDoctorNeck
+  name: loadout-group-medical-doctor-neck
+  minLimit: 0
+  loadouts:
+  - ClothingNeckStethoscope
+  - ClothingCloakMed
+
+- type: loadoutGroup # Ganimed
+  id: MedicalDoctorNeck
+  name: loadout-group-medical-doctor-headset
+  loadouts:
+  - HeadsetMedical
+  - HeadsetMedicalScience
 
 - type: loadoutGroup
   id: MedicalDoctorJumpsuit
@@ -1435,6 +1515,7 @@
   loadouts:
   - ParamedicJumpsuit
   - ParamedicJumpskirt
+  - ParamedicNTJumpsuit # Ganimed
 
 - type: loadoutGroup
   id: ParamedicOuterClothing
@@ -1494,6 +1575,7 @@
   - BlueBoxingGloves
   - GreenBoxingGloves
   - YellowBoxingGloves
+  - BoxingHandBandage # Ganimed
 
 - type: loadoutGroup # Ganimed
   id: BoxerHead

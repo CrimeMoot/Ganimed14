@@ -1,0 +1,593 @@
+# Spare clothes, Ganimed
+# Timers
+- type: loadoutEffectGroup
+  id: Security
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:DepartmentTimeRequirement
+      department: Security
+      time: 3600 # 1 hour
+
+- type: loadoutEffectGroup
+  id: Engineer
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:DepartmentTimeRequirement
+      department: Engineering
+      time: 3600 # 1 hour
+
+- type: loadoutEffectGroup
+  id: Doctor
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:DepartmentTimeRequirement
+      department: Medical
+      time: 3600 # 1 hour
+
+- type: loadoutEffectGroup
+  id: Researcher
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:DepartmentTimeRequirement
+      department: Science
+      time: 3600 # 1 hour
+
+- type: loadoutEffectGroup
+  id: Service
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:DepartmentTimeRequirement
+      department: Civilian
+      time: 3600 # 1 hour
+
+- type: loadoutEffectGroup
+  id: Cargonian
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:DepartmentTimeRequirement
+      department: Cargo
+      time: 3600 # 1 hour
+
+- type: loadoutEffectGroup
+  id: Atmos
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobAtmosphericTechnician
+      time: 3600 # 1 hour
+
+# Jumpsuits/Uniform
+# Color
+- type: loadout
+  id: JumpsuitColorBlack
+  storage:
+    back:
+    - ClothingUniformJumpsuitColorBlack
+
+- type: loadout
+  id: JumpskirtColorBlack
+  storage:
+    back:
+    - ClothingUniformJumpskirtColorBlack
+
+- type: loadout
+  id: JumpsuitColorGray
+  storage:
+    back:
+    - ClothingUniformJumpsuitColorGray
+
+- type: loadout
+  id: JumpskirtColorGray
+  storage:
+    back:
+    - ClothingUniformJumpskirtColorGray
+
+- type: loadout
+  id: JumpsuitColorWhite
+  storage:
+    back:
+    - ClothingUniformJumpsuitColorWhite
+
+- type: loadout
+  id: JumpskirtColorWhite
+  storage:
+    back:
+    - ClothingUniformJumpskirtColorWhite
+
+- type: loadout
+  id: JumpsuitColorLightBrown
+  storage:
+    back:
+    - ClothingUniformJumpsuitColorLightBrown
+
+- type: loadout
+  id: JumpskirtColorLightBrown
+  storage:
+    back:
+    - ClothingUniformJumpskirtColorLightBrown
+
+- type: loadout
+  id: JumpsuitColorBrown
+  storage:
+    back:
+    - ClothingUniformJumpsuitColorBrown
+
+- type: loadout
+  id: JumpskirtColorBrown
+  storage:
+    back:
+    - ClothingUniformJumpskirtColorBrown
+
+- type: loadout
+  id: JumpsuitColorRed
+  storage:
+    back:
+    - ClothingUniformJumpsuitColorRed
+
+- type: loadout
+  id: JumpskirtColorRed
+  storage:
+    back:
+    - ClothingUniformJumpskirtColorRed
+
+- type: loadout
+  id: JumpsuitColorOrange
+  storage:
+    back:
+    - ClothingUniformJumpsuitColorOrange
+
+- type: loadout
+  id: JumpskirtColorOrange
+  storage:
+    back:
+    - ClothingUniformJumpskirtColorOrange
+
+- type: loadout
+  id: JumpsuitColorYellow
+  storage:
+    back:
+    - ClothingUniformJumpsuitColorYellow
+
+- type: loadout
+  id: JumpskirtColorYellow
+  storage:
+    back:
+    - ClothingUniformJumpskirtColorYellow
+
+- type: loadout
+  id: JumpsuitColorGreen
+  storage:
+    back:
+    - ClothingUniformJumpsuitColorGreen
+
+- type: loadout
+  id: JumpskirtColorGreen
+  storage:
+    back:
+    - ClothingUniformJumpskirtColorGreen
+
+- type: loadout
+  id: JumpsuitColorDarkGreen
+  storage:
+    back:
+    - ClothingUniformJumpsuitColorDarkGreen
+
+- type: loadout
+  id: JumpskirtColorDarkGreen
+  storage:
+    back:
+    - ClothingUniformJumpskirtColorDarkGreen
+
+- type: loadout
+  id: JumpsuitColorTeal
+  storage:
+    back:
+    - ClothingUniformJumpsuitColorTeal
+
+- type: loadout
+  id: JumpskirtColorTeal
+  storage:
+    back:
+    - ClothingUniformJumpskirtColorTeal
+
+- type: loadout
+  id: JumpsuitColorBlue
+  storage:
+    back:
+    - ClothingUniformJumpsuitColorBlue
+
+- type: loadout
+  id: JumpskirtColorBlue
+  storage:
+    back:
+    - ClothingUniformJumpskirtColorBlue
+
+- type: loadout
+  id: JumpsuitColorDarkBlue
+  storage:
+    back:
+    - ClothingUniformJumpsuitColorDarkBlue
+
+- type: loadout
+  id: JumpskirtColorDarkBlue
+  storage:
+    back:
+    - ClothingUniformJumpskirtColorDarkBlue
+
+- type: loadout
+  id: JumpsuitColorPurple
+  storage:
+    back:
+    - ClothingUniformJumpsuitColorPurple
+
+- type: loadout
+  id: JumpskirtColorPurple
+  storage:
+    back:
+    - ClothingUniformJumpskirtColorPurple
+
+- type: loadout
+  id: JumpsuitColorMaroon
+  storage:
+    back:
+    - ClothingUniformJumpsuitColorMaroon
+
+- type: loadout
+  id: JumpskirtColorMaroon
+  storage:
+    back:
+    - ClothingUniformJumpskirtColorMaroon
+
+- type: loadout
+  id: JumpsuitColorPink
+  storage:
+    back:
+    - ClothingUniformJumpsuitColorPink
+
+- type: loadout
+  id: JumpskirtColorPink
+  storage:
+    back:
+    - ClothingUniformJumpskirtColorPink
+
+# Casual
+- type: loadout
+  id: RedCasualJumpsuit
+  storage:
+    back:
+    - ClothingUniformJumpsuitCasualRed
+
+- type: loadout
+  id: RedCasualJumpskirt
+  storage:
+    back:
+    - ClothingUniformJumpskirtCasualRed
+
+- type: loadout
+  id: GreenCasualJumpsuit
+  storage:
+    back:
+    - ClothingUniformJumpsuitCasualGreen
+
+- type: loadout
+  id: GreenCasualJumpskirt
+  storage:
+    back:
+    - ClothingUniformJumpskirtCasualGreen
+
+- type: loadout
+  id: BlueCasualJumpsuit
+  storage:
+    back:
+    - ClothingUniformJumpsuitCasualBlue
+
+- type: loadout
+  id: BlueCasualJumpskirt
+  storage:
+    back:
+    - ClothingUniformJumpskirtCasualBlue
+
+- type: loadout
+  id: PurpleCasualJumpsuit
+  storage:
+    back:
+    - ClothingUniformJumpsuitCasualPurple
+
+- type: loadout
+  id: PurpleCasualJumpskirt
+  storage:
+    back:
+    - ClothingUniformJumpskirtCasualPurple
+
+# Unique
+- type: loadout
+  id: JumpsuitFlannel
+  storage:
+    back:
+    - ClothingUniformJumpsuitFlannel
+
+- type: loadout
+  id: JumpsuitRandom
+  storage:
+    back:
+    - ClothingUniformRandomStandard
+
+- type: loadout
+  id: JumpsuitRandomShirt
+  storage:
+    back:
+    - ClothingUniformRandomShirt
+
+# Hands/Gloves
+- type: loadout
+  id: GlovesFingerless
+  storage:
+    back:
+    - ClothingHandsGlovesFingerless
+
+- type: loadout
+  id: GlovesColorBlack
+  storage:
+    back:
+    - ClothingHandsGlovesColorBlack
+
+- type: loadout
+  id: GlovesColorGray
+  storage:
+    back:
+    - ClothingHandsGlovesColorGray
+
+- type: loadout
+  id: GlovesColorWhite
+  storage:
+    back:
+    - ClothingHandsGlovesColorWhite
+
+- type: loadout
+  id: GlovesColorLightBrown
+  storage:
+    back:
+    - ClothingHandsGlovesColorLightBrown
+
+- type: loadout
+  id: GlovesColorBrown
+  storage:
+    back:
+    - ClothingHandsGlovesColorBrown
+
+- type: loadout
+  id: GlovesColorRed
+  storage:
+    back:
+    - ClothingHandsGlovesColorRed
+
+- type: loadout
+  id: GlovesColorOrange
+  storage:
+    back:
+    - ClothingHandsGlovesColorOrange
+
+- type: loadout
+  id: GlovesColorGreen
+  storage:
+    back:
+    - ClothingHandsGlovesColorGreen
+
+- type: loadout
+  id: GlovesColorTeal
+  storage:
+    back:
+    - ClothingHandsGlovesColorTeal
+
+- type: loadout
+  id: GlovesColorBlue
+  storage:
+    back:
+    - ClothingHandsGlovesColorBlue
+
+- type: loadout
+  id: GlovesColorPurple
+  storage:
+    back:
+    - ClothingHandsGlovesColorPurple
+
+# Neck
+- type: loadout
+  id: RedTie
+  storage:
+    back:
+    - ClothingNeckTieRed
+
+- type: loadout
+  id: DetTie
+  storage:
+    back:
+    - ClothingNeckTieDet
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: Security
+
+- type: loadout
+  id: BlackScarf
+  storage:
+    back:
+    - ClothingNeckScarfStripedBlack
+
+- type: loadout
+  id: BrownScarf
+  storage:
+    back:
+    - ClothingNeckScarfStripedBrown
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: Cargonian
+
+- type: loadout
+  id: RedScarf
+  storage:
+    back:
+    - ClothingNeckScarfStripedRed
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: Security
+
+- type: loadout
+  id: OrangeScarf
+  storage:
+    back:
+    - ClothingNeckScarfStripedOrange
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: Engineer
+
+- type: loadout
+  id: GreenScarf
+  storage:
+    back:
+    - ClothingNeckScarfStripedGreen
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: Service
+
+- type: loadout
+  id: LightBlueScarf
+  storage:
+    back:
+    - ClothingNeckScarfStripedLightBlue
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: Atmos
+
+- type: loadout
+  id: BlueScarf
+  storage:
+    back:
+    - ClothingNeckScarfStripedBlue
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: Doctor
+
+- type: loadout
+  id: PurpleScarf
+  storage:
+    back:
+    - ClothingNeckScarfStripedPurple
+    effects:
+  - !type:GroupLoadoutEffect
+    proto: Researcher
+
+- type: loadout # TODO: Whitelist restriction
+  id: HieroglyphicCloak
+  storage:
+    back:
+    - ClothingNeckCloakHieroglyphics
+
+- type: loadout # TODO: Whitelist restriction
+  id: OrangeCloak
+  storage:
+    back:
+    - ClothingNeckCloakOrange
+
+- type: loadout # TODO: Whitelist restriction
+  id: Bling
+  storage:
+    back:
+    - ClothingNeckBling
+
+# Outer clothing
+- type: loadout
+  id: RedFlannelJacket
+  storage:
+    back:
+    - ClothingOuterFlannelRed
+
+- type: loadout
+  id: GreenFlannelJacket
+  storage:
+    back:
+    - ClothingOuterFlannelGreen
+
+- type: loadout
+  id: BlueFlannelJacket
+  storage:
+    back:
+    - ClothingOuterFlannelBlue
+
+- type: loadout
+  id: BomberJacket
+  storage:
+    back:
+    - ClothingOuterCoatBomber
+
+- type: loadout
+  id: BlackBomber
+  storage:
+    back:
+    - ClothingOuterCoatBlackViF
+
+- type: loadout
+  id: GentleCoat
+  storage:
+    back:
+    - ClothingOuterCoatGentle
+
+- type: loadout
+  id: JensenCoat
+  storage:
+    back:
+    - ClothingOuterCoatJensen
+
+- type: loadout
+  id: BlackHoodie
+  storage:
+    back:
+    - ClothingOuterHoodieBlack
+
+- type: loadout
+  id: GrayHoodie
+  storage:
+    back:
+    - ClothingOuterHoodieGray
+
+- type: loadout
+  id: Vest
+  storage:
+    back:
+    - ClothingOuterVest
+
+- type: loadout
+  id: TrenchCoat
+  storage:
+    back:
+    - ClothingOuterCoatTrench
+
+- type: loadout
+  id: ClassicPoncho
+  storage:
+    back:
+    - ClothingOuterPonchoClassic
+
+- type: loadout
+  id: Apron
+  storage:
+    back:
+    - ClothingOuterApron
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: Service
+
+- type: loadout # TODO: Whitelist restriction
+  id: HospitalGown
+  storage:
+    back:
+    - ClothingOuterHospitalGown
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: Doctor

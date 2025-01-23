@@ -1,3 +1,22 @@
+# Timer, Ganimed
+- type: loadoutEffectGroup
+  id: MasterAtmosian
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobAtmosphericTechnician
+      time: 72000 #20 hrs
+
+# Neck, Ganimed TODO: Whitelist restriction
+- type: loadout
+  id: AtmosianCloak
+  equipment:
+    neck: ClothingCloakAtmosian
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MasterAtmosian
+
 # Jumpsuit
 - type: loadout
   id: AtmosphericTechnicianJumpsuit
@@ -40,6 +59,14 @@
   id: AtmosphericTechnicianWintercoat
   equipment:
     outerClothing: ClothingOuterWinterAtmos
+
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: AtmosphericTechnicianBomberJacket
+  equipment:
+    outerClothing: ClothingOuterAtmosianBomberJacket
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MasterAtmosian
 
 # Shoes
 - type: loadout

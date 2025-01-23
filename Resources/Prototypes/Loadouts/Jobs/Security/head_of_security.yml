@@ -44,6 +44,16 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitHoSOld
 
+- type: loadout # Ganimed
+  id: HeadofSecurityJumpsuitGrey
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitHoSGrey
+
+- type: loadout # Ganimed
+  id: HeadofSecurityJumpsuitBlue
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitHoSBlue
+
 # Head
 - type: loadout
   id: HeadofSecurityHead
@@ -73,6 +83,14 @@
   id: HeadofSecurityMantle
   equipment:
     neck: ClothingNeckMantleHOS
+
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: HeadofSecurityCloakLong
+  equipment:
+    neck: ClothingLongCloakHOS
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MasterHoS
 
 # OuterClothing
 - type: loadout

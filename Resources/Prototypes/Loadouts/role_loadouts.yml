@@ -184,6 +184,7 @@
   - Glasses
   - Medals #backmen
   - SurvivalClown
+  - TheatricalAttire # Ganimed
   - Trinkets
   - Inventory # Corvax-Loadouts
 
@@ -292,7 +293,6 @@
   - TechnicalAssistantJumpsuit
   - StationEngineerBackpack
   - Medals #backmen
-  - Trinkets
   - SurvivalExtended
   - Trinkets
   - GroupSpeciesBreathTool
@@ -309,7 +309,6 @@
   - StationEngineerShoes
   - StationEngineerID
   - Medals #backmen
-  - Trinkets
   - SurvivalExtended
   - Trinkets
   - GroupSpeciesBreathTool
@@ -319,6 +318,7 @@
   id: JobAtmosphericTechnician
   groups:
   - GroupTankHarness
+  - AtmosphericTechnicianNeck # Ganimed
   - AtmosphericTechnicianJumpsuit
   - AtmosphericTechnicianBackpack
   - AtmosphericTechnicianOuterClothing
@@ -354,6 +354,7 @@
   - GroupTankHarness
   - ScientistHead
   - ScientistNeck
+  - ScientistHeadset # Ganimed
   - ScientistJumpsuit
   - ScientistBackpack
   - ScientistOuterClothing
@@ -490,6 +491,8 @@
   - GroupTankHarness
   - MedicalDoctorHead
   - MedicalMask
+  - MedicalDoctorNeck # Ganimed
+  - MedicalDoctorHeadset # Ganimed
   - MedicalDoctorJumpsuit
   - MedicalGloves
   - MedicalBackpack

@@ -67,6 +67,23 @@
   equipment:
     head: ClothingHeadHatSecurityTrooper
 
+# Neck, Ganimed
+- type: loadout # TODO: Whitelist restriction
+  id: SecurityWhistle
+  equipment:
+    neck: SecurityWhistle
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: SeniorOfficer
+
+- type: loadout # TODO: Whitelist restriction
+  id: SecurityCloak
+  equipment:
+    neck: ClothingCloakSec
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: SeniorOfficer
+
 # Jumpsuit
 - type: loadout
   id: SecurityJumpsuit
@@ -108,6 +125,11 @@
     proto: SeniorOfficer
   equipment:
     jumpsuit: ClothingUniformJumpskirtSeniorOfficer
+
+- type: loadout # Ganimed
+  id: BlueSecurityUniform
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSecBlue
 
 # Back
 - type: loadout

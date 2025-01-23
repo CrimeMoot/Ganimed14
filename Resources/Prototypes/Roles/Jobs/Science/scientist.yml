@@ -23,7 +23,7 @@
 - type: startingGear
   id: ScientistGear
   equipment:
-    ears: ClothingHeadsetScience
+    #ears: ClothingHeadsetScience
   #storage:
     #back:
     #- Stuff

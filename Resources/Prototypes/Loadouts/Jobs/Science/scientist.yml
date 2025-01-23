@@ -32,7 +32,6 @@
     head: ClothingHeadBandSkull
 
 # Neck
-
 - type: loadout
   id: ScientistTie
   equipment:
@@ -45,6 +44,22 @@
     proto: SeniorResearcher
   equipment:
     neck: ClothingNeckCloakRdOriginal
+
+# Headset, Ganimed
+- type: loadout
+  id: HeadsetScience
+  equipment:
+    ears: ClothingHeadsetScience
+
+- type: loadout
+  id: HeadsetMedicalScience
+  equipment:
+    ears: ClothingHeadsetMedicalScience
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: SeniorResearcher
+  - !type:GroupLoadoutEffect
+    proto: SeniorPhysician
 
 # Jumpsuit
 - type: loadout

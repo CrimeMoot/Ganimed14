@@ -64,6 +64,14 @@
   equipment:
     neck: ClothingNeckMantleQM
 
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: QuartermasterCloakLong
+  equipment:
+    neck: ClothingLongCloakQM
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MasterQM
+
 # OuterClothing
 - type: loadout
   id: QuartermasterWintercoat

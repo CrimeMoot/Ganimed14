@@ -32,6 +32,14 @@
   equipment:
     neck: ClothingNeckCloakRd
 
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: ResearchDirectorCloakLong
+  equipment:
+    neck: ClothingLongCloakRD
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MasterRD
+
 # Jumpsuit
 - type: loadout
   id: ResearchDirectorJumpsuit

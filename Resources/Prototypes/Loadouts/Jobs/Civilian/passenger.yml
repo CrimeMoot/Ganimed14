@@ -96,6 +96,11 @@
   equipment:
     back: ClothingBackpackDuffel
 
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: LeatherSatchel
+  equipment:
+    back: ClothingBackpackSatchelLeather
+
 # Gloves
 - type: loadout
   id: PassengerGloves

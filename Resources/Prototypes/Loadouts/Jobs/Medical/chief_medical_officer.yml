@@ -59,6 +59,14 @@
   equipment:
     neck: ClothingNeckMantleCMO
 
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: ChiefMedicalOfficerCloakLong
+  equipment:
+    neck: ClothingLongCloakCMO
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MasterCMO
+
 # Outer clothing
 - type: loadout
   id: ChiefMedicalOfficerLabCoat

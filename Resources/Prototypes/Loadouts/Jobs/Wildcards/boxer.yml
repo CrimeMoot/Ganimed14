@@ -86,3 +86,8 @@
   id: YellowBoxingGloves
   equipment:
     gloves: ClothingHandsGlovesBoxingYellow
+
+- type: loadout # Ganimed
+  id: BoxingHandBandage
+  equipment:
+    gloves: ClothingHandsBint

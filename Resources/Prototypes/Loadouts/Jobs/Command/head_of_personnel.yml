@@ -54,6 +54,14 @@
   equipment:
     neck: ClothingNeckMantleHOP
 
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: HoPCloakLong
+  equipment:
+    neck: ClothingLongCloakHOP
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MasterHoP
+
 # Back
 - type: loadout
   id: HoPBackpackIan

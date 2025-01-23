@@ -76,6 +76,14 @@
   equipment:
     neck: ClothingNeckMantleCE
 
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: ChiefEngineerCloakLong
+  equipment:
+    neck: ClothingLongCloakCE
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MasterCE
+
 # OuterClothing
 - type: loadout
   id: ChiefEngineerWintercoat

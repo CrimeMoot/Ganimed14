@@ -19,7 +19,6 @@
       time: 216000 # 60 hrs
 
 # Other Timers
-
 - type: loadoutEffectGroup
   id: MedicalHeadMirrorTimer
   effects:
@@ -30,7 +29,6 @@
       time: 108000 #30 hrs
 
 # Head
-
 - type: loadout
   id: SeniorPhysicianBeret
   effects:
@@ -71,6 +69,26 @@
   id: NurseHat
   equipment:
     head: ClothingHeadNurseHat
+
+# Neck, Ganimed
+- type: loadout
+  id: Stethoscope
+  equipment:
+    neck: ClothingNeckStethoscope
+
+- type: loadout
+  id: MedicalCloak
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: SeniorPhysician
+  equipment:
+    neck: ClothingCloakMed
+
+# Headset, Ganimed
+- type: loadout
+  id: HeadsetMedical
+  equipment:
+    ears: ClothingHeadsetMedical
 
 # Jumpsuit
 - type: loadout
@@ -247,6 +265,9 @@
   id: NitrileGloves
   equipment:
     gloves: ClothingHandsGlovesNitrile
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: Doctor
 
 #Masks
 - type: loadout

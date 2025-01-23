@@ -1,0 +1,21 @@
+# Underwear, Ganimed
+# Shirts
+- type: loadout
+  id: Shirt
+  storage:
+    undershirt:
+    - ClothingUnderShirtWhite
+
+# Pants
+- type: loadout
+  id: Pants
+  storage:
+    underpants:
+    - ClothingUnderPantsWhite
+
+# Socks
+- type: loadout
+  id: Socks
+  storage:
+    socks:
+    - ClothingSocksWhite

@@ -421,6 +421,7 @@
   id: JobSecurityOfficer
   groups:
   - SecurityHead
+  - SecurityNeck # Ganimed
   - SecurityJumpsuit
   - SecurityBackpack
   - SecurityOuterClothing

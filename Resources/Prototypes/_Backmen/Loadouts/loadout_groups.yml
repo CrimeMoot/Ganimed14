@@ -143,8 +143,8 @@
   id: ClothingOuterBrigmedic
   name: loadout-group-brigmedic-outer
   loadouts:
-  - ClothingOuterVestArmorMedSec
   - ClothingOuterCoatAMG
+  - ClothingOuterVestArmorMedSec
   - ClothingOuterVestSecurityMedic
   - ClothingOuterCoatLabSecurityMedic
   - SecurityBioSuit # Ganimed

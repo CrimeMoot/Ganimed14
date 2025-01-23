@@ -167,8 +167,8 @@
     outerClothing: ClothingOuterCoatLabSeniorResearcher
 
 - type: loadout # Ganimed TODO: Whitelist restriction
-  id: 
-    effects:
+  id: ScientistBioSuit
+  effects:
   - !type:JobRequirementLoadoutEffect
     requirement:
       !type:DepartmentTimeRequirement
@@ -178,8 +178,8 @@
     outerClothing: ClothingOuterBioScientist
 
 - type: loadout # Ganimed
-  id: 
-    effects:
+  id: RadSuit
+  effects:
   - !type:JobRequirementLoadoutEffect
     requirement:
       !type:DepartmentTimeRequirement
@@ -189,8 +189,8 @@
     outerClothing: ClothingOuterSuitRad
 
 - type: loadout # Ganimed
-  id: 
-    effects:
+  id: BombSuit
+  effects:
   - !type:JobRequirementLoadoutEffect
     requirement:
       !type:DepartmentTimeRequirement

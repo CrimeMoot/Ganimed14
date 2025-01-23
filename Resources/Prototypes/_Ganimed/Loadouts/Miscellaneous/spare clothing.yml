@@ -479,7 +479,7 @@
   storage:
     back:
     - ClothingNeckScarfStripedPurple
-    effects:
+  effects:
   - !type:GroupLoadoutEffect
     proto: Researcher
 

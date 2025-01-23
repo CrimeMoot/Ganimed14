@@ -69,14 +69,14 @@
 
 #outerClothing
 - type: loadout
-  id: ClothingOuterVestArmorMedSec
-  equipment:
-    outerClothing: ClothingOuterVestArmorMedSec
-
-- type: loadout
   id: ClothingOuterCoatAMG
   equipment:
     outerClothing: ClothingOuterCoatAMG
+
+- type: loadout
+  id: ClothingOuterVestArmorMedSec
+  equipment:
+    outerClothing: ClothingOuterVestArmorMedSec
 
 - type: loadout
   id: ClothingOuterVestSecurityMedic

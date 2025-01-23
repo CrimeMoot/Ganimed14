@@ -766,7 +766,7 @@
 
 - type: loadoutGroup # Ganimed
   id: SalvageSpecialistBelt
-  name: loadout-group-salvage-specialist-outerclothing
+  name: loadout-group-salvage-specialist-belt
   minLimit: 0
   loadouts:
   - SalvageWebbing
@@ -1040,6 +1040,9 @@
   - RoboticistWintercoat
   - SeniorResearcherLabCoat
   - ClothingOuterWinterSeniorResearcher
+  - ScientistBioSuit
+  - RadSuit
+  - BombSuit
 
 - type: loadoutGroup
   id: ScientistShoes
@@ -1176,8 +1179,8 @@
   - TrooperHat
 
 - type: loadoutGroup # Ganimed
-  id: SecurityHead
-  name: loadout-group-security-head
+  id: SecurityNeck
+  name: loadout-group-security-neck
   minLimit: 0
   loadouts: 
   - SecurityWhistle
@@ -1379,11 +1382,11 @@
   name: loadout-group-medical-doctor-neck
   minLimit: 0
   loadouts:
-  - ClothingNeckStethoscope
-  - ClothingCloakMed
+  - Stethoscope
+  - MedicalCloak
 
 - type: loadoutGroup # Ganimed
-  id: MedicalDoctorNeck
+  id: MedicalDoctorHeadset
   name: loadout-group-medical-doctor-headset
   loadouts:
   - HeadsetMedical

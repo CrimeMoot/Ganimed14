@@ -178,8 +178,5 @@
   components:
   - type: Sprite
     sprite: _Ganimed/Clothing/Original/OuterClothing/Coats/labcoat_coroner.rsi
-    heldPrefix: open
-    state: icon-open
   - type: Clothing
     sprite: _Ganimed/Clothing/Original/OuterClothing/Coats/labcoat_coroner.rsi
-    equippedPrefix: open

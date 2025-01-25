@@ -1,7 +1,7 @@
 - type: gameMap
   id: ENTRCluster
   mapName: 'ENTRcluster'
-  mapPath: Maps/Ganimed/ENTRcluster.yml
+  mapPath: /Maps/Ganimed/ENTRcluster.yml
   minPlayers: 4
   maxPlayers: 35
   stations:

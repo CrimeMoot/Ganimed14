@@ -356,3 +356,18 @@
   - type: Tag
     tags:
     - WhitelistChameleon
+    
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitMilitary
+  name: military jumpsuit
+  description: An outdated tactical camouflage suit. They say designs like this are of common use with the socialists.
+  components:
+  - type: Sprite
+    sprite: _Ganimed/Clothing/Uniforms/military.rsi
+  - type: Clothing
+    sprite: _Ganimed/Clothing/Uniforms/military.rsi
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+    

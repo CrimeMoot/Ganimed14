@@ -1,5 +1,5 @@
 - type: gameMap
-  id: Saltern
+  id: ENTRSaltern
   mapName: 'ENTRsaltern'
   mapPath: /Maps/Ganimed/ENTRsaltern.yml
   # Corvax-start
@@ -12,10 +12,10 @@
       stationProto: StandardNanotrasenStation
       components:
         - type: StationNameSetup
-          mapNameTemplate: '{0} Saltern {1}'
+          mapNameTemplate: '{0} Салтерн {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
-            prefixCreator: '14'
+            prefixCreator: 'ИСН'
         - type: StationEmergencyShuttle
           emergencyShuttlePath: /Maps/Shuttles/emergency.yml
         - type: StationJobs

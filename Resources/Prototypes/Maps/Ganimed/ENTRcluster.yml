@@ -1,5 +1,5 @@
 - type: gameMap
-  id: Cluster
+  id: ENTRCluster
   mapName: 'ENTRcluster'
   mapPath: Maps/Ganimed/ENTRcluster.yml
   minPlayers: 4

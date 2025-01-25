@@ -67,6 +67,11 @@
   - !type:GroupLoadoutEffect
     proto: MasterCMO
 
+- type: loadout # Ganimed
+  id: ChiefMedicalOfficerBedsheet
+  equipment:
+    neck: BedsheetCMO
+
 # Outer clothing
 - type: loadout
   id: ChiefMedicalOfficerLabCoat

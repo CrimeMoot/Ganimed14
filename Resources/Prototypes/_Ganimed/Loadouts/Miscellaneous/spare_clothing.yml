@@ -63,6 +63,177 @@
       role: JobAtmosphericTechnician
       time: 3600 # 1 hour
 
+
+# Head/Hats
+
+- type: loadout
+  id: BlackCap
+  storage:
+    back:
+    - ClothingHeadHatBlacksoft
+
+- type: loadout
+  id: GreyCap
+  storage:
+    back:
+    - ClothingHeadHatGreysoft
+
+- type: loadout
+  id: RedCap
+  storage:
+    back:
+    - ClothingHeadHatRedsoft
+
+- type: loadout
+  id: OrangeCap
+  storage:
+    back:
+    - ClothingHeadHatOrangesoft
+
+- type: loadout
+  id: YellowCap
+  storage:
+    back:
+    - ClothingHeadHatYellowsoft
+
+- type: loadout
+  id: GreenCap
+  storage:
+    back:
+    - ClothingHeadHatGreensoft
+
+- type: loadout
+  id: BlueCap
+  storage:
+    back:
+    - ClothingHeadHatBluesoft
+
+- type: loadout
+  id: GreyFlatCap
+  storage:
+    back:
+    - ClothingHeadHatGreyFlatcap
+
+- type: loadout
+  id: BrownFlatCap
+  storage:
+    back:
+    - ClothingHeadHatBrownFlatcap
+
+- type: loadout
+  id: BlackBandana
+  storage:
+    back:
+    - ClothingHeadBandBlack
+
+- type: loadout
+  id: GreyBandana
+  storage:
+    back:
+    - ClothingHeadBandGrey
+
+- type: loadout
+  id: BrownBandana
+  storage:
+    back:
+    - ClothingHeadBandBrown
+
+- type: loadout
+  id: RedBandana
+  storage:
+    back:
+    - ClothingHeadBandRed
+
+- type: loadout # TODO: Whitelist restriction
+  id: GoldBandana
+  storage:
+    back:
+    - ClothingHeadBandGold
+
+- type: loadout
+  id: GreenBandana
+  storage:
+    back:
+    - ClothingHeadBandGreen
+
+- type: loadout
+  id: BlueBandana
+  storage:
+    back:
+    - ClothingHeadBandBlue
+
+- type: loadout
+  id: Ushanka
+  storage:
+    back:
+    - ClothingHeadHatUshanka
+
+- type: loadout
+  id: HetmanHat
+  storage:
+    back:
+    - ClothingHeadHatHetmanHat
+
+- type: loadout
+  id: Sombrero
+  storage:
+    back:
+    - ClothingHeadHatSombrero
+
+- type: loadout
+  id: BlackCatHat
+  storage:
+    back:
+    - ClothingHeadHatAnimalCatBlack
+
+- type: loadout
+  id: GreyCatHat
+  storage:
+    back:
+    - ClothingHeadHatAnimalCat
+
+- type: loadout
+  id: BrownCatHat
+  storage:
+    back:
+    - ClothingHeadHatAnimalCatBrown
+
+- type: loadout
+  id: HeadslimeHat
+  storage:
+    back:
+    - ClothingHeadHatAnimalHeadslime
+
+- type: loadout
+  id: WaterCupPartyHat
+  storage:
+    back:
+    - ClothingHeadHatPartyWaterCup
+
+- type: loadout
+  id: RedPartyHat
+  storage:
+    back:
+    - ClothingHeadHatPartyRed
+
+- type: loadout
+  id: YellowPartyHat
+  storage:
+    back:
+    - ClothingHeadHatPartyYellow
+
+- type: loadout
+  id: GreenPartyHat
+  storage:
+    back:
+    - ClothingHeadHatPartyGreen
+
+- type: loadout
+  id: BluePartyHat
+  storage:
+    back:
+    - ClothingHeadHatPartyBlue
+
 # Jumpsuits/Uniform
 # Color
 - type: loadout
@@ -78,16 +249,16 @@
     - ClothingUniformJumpskirtColorBlack
 
 - type: loadout
-  id: JumpsuitColorGray
+  id: JumpsuitColorGrey
   storage:
     back:
-    - ClothingUniformJumpsuitColorGray
+    - ClothingUniformJumpsuitColorGrey
 
 - type: loadout
-  id: JumpskirtColorGray
+  id: JumpskirtColorGrey
   storage:
     back:
-    - ClothingUniformJumpskirtColorGray
+    - ClothingUniformJumpskirtColorGrey
 
 - type: loadout
   id: JumpsuitColorWhite
@@ -308,6 +479,12 @@
 
 # Unique
 - type: loadout
+  id: SpareOveralls
+  storage:
+    back:
+    - ClothingUniformOveralls
+
+- type: loadout
   id: JumpsuitFlannel
   storage:
     back:
@@ -324,6 +501,12 @@
   storage:
     back:
     - ClothingUniformRandomShirt
+
+- type: loadout
+  id: CossackSuit
+  storage:
+    back:
+    - ClothingUniformJumpsuitCossack
 
 # Hands/Gloves
 - type: loadout
@@ -404,6 +587,12 @@
   storage:
     back:
     - ClothingNeckTieRed
+
+- type: loadout
+  id: BlueTie
+  storage:
+    back:
+    - ClothingNeckTieBlueShield
 
 - type: loadout
   id: DetTie
@@ -521,6 +710,72 @@
     - ClothingOuterFlannelBlue
 
 - type: loadout
+  id: BlackWintercoat
+  storage:
+    back:
+    - ClothingOuterWinterColorBlack
+
+- type: loadout
+  id: GrayWintercoat
+  storage:
+    back:
+    - ClothingOuterWinterColorGray
+
+- type: loadout
+  id: WhiteWintercoat
+  storage:
+    back:
+    - ClothingOuterWinterColorWhite
+
+- type: loadout
+  id: LightBrownWintercoat
+  storage:
+    back:
+    - ClothingOuterWinterColorLightBrown
+
+- type: loadout
+  id: BrownWintercoat
+  storage:
+    back:
+    - ClothingOuterWinterColorBrown
+
+- type: loadout
+  id: RedWintercoat
+  storage:
+    back:
+    - ClothingOuterWinterColorRed
+
+- type: loadout
+  id: OrangeWintercoat
+  storage:
+    back:
+    - ClothingOuterWinterColorOrange
+
+- type: loadout
+  id: YellowWintercoat
+  storage:
+    back:
+    - ClothingOuterWinterColorYellow
+
+- type: loadout
+  id: GreenWintercoat
+  storage:
+    back:
+    - ClothingOuterWinterColorGreen
+
+- type: loadout
+  id: BlueWintercoat
+  storage:
+    back:
+    - ClothingOuterWinterColorBlue
+
+- type: loadout
+  id: PurpleWintercoat
+  storage:
+    back:
+    - ClothingOuterWinterColorPurple
+
+- type: loadout
   id: BomberJacket
   storage:
     back:
@@ -551,10 +806,10 @@
     - ClothingOuterHoodieBlack
 
 - type: loadout
-  id: GrayHoodie
+  id: GreyHoodie
   storage:
     back:
-    - ClothingOuterHoodieGray
+    - ClothingOuterHoodieGrey
 
 - type: loadout
   id: Vest
@@ -591,3 +846,16 @@
   effects:
   - !type:GroupLoadoutEffect
     proto: Doctor
+
+# Shoes/Feet
+- type: loadout
+  id: 
+  storage:
+    back:
+    - 
+
+- type: loadout
+  id: Slippers
+  storage:
+    back:
+    - ClothingShoesSlippers

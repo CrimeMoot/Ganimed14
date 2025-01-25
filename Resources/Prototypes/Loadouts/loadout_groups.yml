@@ -12,6 +12,12 @@
   - PlushieLizard
   - PlushieSpaceLizard
   - ThreeCandles
+  # Ganimed-Loadouts-Start
+  - AmongPequeno
+  - RubberDuck
+  - XmasCrown
+  - WarningCone
+  # Ganimed-Loadouts-End
   - Lighter
   - CigPackGreen
   - CigPackRed
@@ -19,6 +25,7 @@
   - CigPackBlack
   - CigarCase
   - CigarGold
+  - SmokingPipe # Ganimed
   - ClothingNeckLGBTPin
   - ClothingNeckAromanticPin
   - ClothingNeckAsexualPin
@@ -160,6 +167,7 @@
   - CaptainCloakFormal
   - CaptainMantle
   - CaptainCloakLong # Ganimed
+  - CaptainBedsheet # Ganimed
 
 - type: loadoutGroup
   id: CaptainBackpack
@@ -202,6 +210,7 @@
   - HoPCloak
   - HoPMantle
   - HoPCloakLong # Ganimed
+  - HoPBedsheet # Ganimed
 
 - type: loadoutGroup
   id: HoPBackpack
@@ -696,6 +705,7 @@
   - QuartermasterCloak
   - QuartermasterMantle
   - QuartermasterCloakLong # Ganimed
+  - QuartermasterBedsheet # Ganimed
 
 - type: loadoutGroup
   id: QuartermasterOuterClothing
@@ -808,6 +818,7 @@
   - ChiefEngineerCloak
   - ChiefEngineerMantle
   - ChiefEngineerCloakLong # Ganimed
+  - ChiefEngineerBedsheet # Ganimed
 
 - type: loadoutGroup
   id: ChiefEngineerOuterClothing
@@ -954,6 +965,7 @@
   - ResearchDirectorMantle
   - ResearchDirectorCloak
   - ResearchDirectorCloakLong # Ganimed
+  - ResearchDirectorBedsheet # Ganimed
 
 - type: loadoutGroup
   id: ResearchDirectorJumpsuit
@@ -1110,6 +1122,7 @@
   - HeadofSecurityCloak
   - HeadofSecurityMantle
   - HeadofSecurityCloakLong # Ganimed
+  - HeadofSecurityBedsheet # Ganimed
 
 - type: loadoutGroup
   id: HeadofSecurityOuterClothing
@@ -1356,6 +1369,7 @@
   - ChiefMedicalOfficerCloak
   - ChiefMedicalOfficerMantle
   - ChiefMedicalOfficerCloakLong # Ganimed
+  - ChiefMedicalOfficerBedsheet # Ganimed
 
 - type: loadoutGroup
   id: ChiefMedicalOfficerShoes

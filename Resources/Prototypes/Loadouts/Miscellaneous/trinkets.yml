@@ -50,6 +50,30 @@
     - CandleBlue
     - CandleGreenSmall
 
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: AmongPequeno
+  storage:
+    back:
+    - ToyAmongPequeno
+
+- type: loadout # Ganimed
+  id: RubberDuck
+  storage:
+    back:
+    - ToyRubberDuck
+
+- type: loadout # Ganimed
+  id: XmasCrown
+  storage:
+    back:
+    - ClothingHeadHatXmasCrown
+
+- type: loadout # Ganimed
+  id: WarningCone
+  storage:
+    back:
+    - ClothingHeadHatCone
+
 # Smokeables
 - type: loadout
   id: Lighter
@@ -98,6 +122,12 @@
   storage:
     back:
     - CigarGold
+
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: SmokingPipe
+  storage:
+    back:
+    - SmokingPipeFilledTobacco
 
 # Pins
 - type: loadout

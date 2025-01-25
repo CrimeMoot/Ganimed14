@@ -84,6 +84,11 @@
   - !type:GroupLoadoutEffect
     proto: MasterCE
 
+- type: loadout # Ganimed
+  id: ChiefEngineerBedsheet
+  equipment:
+    neck: BedsheetCE
+
 # OuterClothing
 - type: loadout
   id: ChiefEngineerWintercoat

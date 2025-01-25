@@ -51,6 +51,7 @@
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
@@ -186,6 +187,7 @@
   - SurvivalClown
   - TheatricalAttire # Ganimed
   - Trinkets
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout

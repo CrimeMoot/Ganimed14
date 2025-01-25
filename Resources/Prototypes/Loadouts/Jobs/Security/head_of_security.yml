@@ -92,6 +92,11 @@
   - !type:GroupLoadoutEffect
     proto: MasterHoS
 
+- type: loadout # Ganimed
+  id: HeadofSecurityBedsheet
+  equipment:
+    neck: BedsheetHOS
+
 # OuterClothing
 - type: loadout
   id: HeadofSecurityCoat

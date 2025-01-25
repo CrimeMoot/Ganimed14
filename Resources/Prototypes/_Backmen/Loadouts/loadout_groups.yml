@@ -120,6 +120,8 @@
   - ClothingUniformJumpskirtBrigmedic
   - OriginalBrigmedicJumpsuit # Ganimed
   - OriginalBrigmedicJumpskirt # Ganimed
+  - BlackBrigmedicJumpsuit # Ganimed
+  - BlackBrigmedicJumpskirt # Ganimed
   - ClothingUniformJumpskirtOfLife
 
 - type: loadoutGroup

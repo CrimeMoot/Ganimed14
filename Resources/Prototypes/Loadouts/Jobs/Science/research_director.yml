@@ -40,6 +40,11 @@
   - !type:GroupLoadoutEffect
     proto: MasterRD
 
+- type: loadout # Ganimed
+  id: ResearchDirectorBedsheet
+  equipment:
+    neck: BedsheetRD
+
 # Jumpsuit
 - type: loadout
   id: ResearchDirectorJumpsuit

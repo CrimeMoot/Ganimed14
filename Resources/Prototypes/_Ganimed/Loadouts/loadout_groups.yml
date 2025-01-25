@@ -5,15 +5,44 @@
   minLimit: 0
   maxLimit: 3
   loadouts:
+  - BlackCap # Head
+  - GreyCap
+  - RedCap
+  - OrangeCap
+  - YellowCap
+  - GreenCap
+  - BlueCap
+  - GreyFlatCap
+  - BrownFlatCap
+  - BlackBandana
+  - GreyBandana
+  - BrownBandana
+  - RedBandana
+  - GoldBandana
+  - GreenBandana
+  - BlueBandana
+  - Ushanka
+  - HetmanHat
+  - Sombrero
+  - BlackCatHat
+  - GreyCatHat
+  - BrownCatHat
+  - HeadslimeHat
+  - WaterCupPartyHat
+  - RedPartyHat
+  - YellowPartyHat
+  - GreenPartyHat
+  - BluePartyHat
+  - 
   # Jumpsuits
   - JumpsuitColorBlack
   - JumpskirtColorBlack
-  - JumpsuitColorGray
-  - JumpskirtColorGray
+  - JumpsuitColorGrey
+  - JumpskirtColorGrey
   - JumpsuitColorWhite
   - JumpskirtColorWhite
-  - JumpsuitColorLightBown
-  - JumpskirtColorLightBown
+  - JumpsuitColorLightBrown
+  - JumpskirtColorLightBrown
   - JumpsuitColorBrown
   - JumpskirtColorBrown
   - JumpsuitColorRed
@@ -46,9 +75,11 @@
   - BlueCasualJumpskirt
   - PurpleCasualJumpsuit
   - PurpleCasualJumpskirt
+  - SpareOveralls
   - JumpsuitFlannel
   - JumpsuitRandom
   - JumpsuitRandomShirt
+  - CossackSuit
   # Gloves
   - GlovesFingerless
   - GlovesColorBlack
@@ -65,6 +96,7 @@
   # Neck
   - RedTie
   - DetTie
+  - BlueTie
   - BlackScarf
   - BrownScarf
   - RedScarf
@@ -72,24 +104,42 @@
   - GreenScarf
   - LightBlueScarf
   - BlueScarf
+  - PurpleScarf
   - HieroglyphicCloak
   - OrangeCloak
   - Bling
-  - PurpleScarf
   # Outer clothing
   - RedFlannelJacket
   - GreenFlannelJacket
   - BlueFlannelJacket
+  - BlackWintercoat
+  - GrayWintercoat
+  - WhiteWintercoat
+  - LightBrownWintercoat
+  - BrownWintercoat
+  - RedWintercoat
+  - OrangeWintercoat
+  - YellowWintercoat
+  - GreenWintercoat
+  - BlueWintercoat
+  - PurpleWintercoat
   - BomberJacket
+  - BlackBomber
   - GentleCoat
-  - BlackBomber
   - JensenCoat
-  - BlackBomber
   - BlackHoodie
-  - GrayHoodie
+  - GreyHoodie
   - Vest
   - TrenchCoat
-  - Apron
   - ClassicPoncho
+  - Apron
   - HospitalGown
 
+# Miscellaneous, Undergarments, Ganimed
+- type: loadoutGroup
+  id: Underwear
+  name: loadout-group-underwear
+  minLimit: 0
+  maxLimit: 3
+  loadouts:
+  - JumpsuitColorBlack

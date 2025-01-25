@@ -30,6 +30,16 @@
   equipment:
     jumpsuit: ClothingUniformJumpskirtBrigmedicOriginal
 
+- type: loadout # Ganimed
+  id: BlackBrigmedicJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitBrigmedicBlack
+
+- type: loadout # Ganimed
+  id: BlackBrigmedicJumpskirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtBrigmedicBlack
+
 - type: loadout
   id: ClothingUniformJumpskirtOfLife
   equipment:

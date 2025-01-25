@@ -77,6 +77,11 @@
   - !type:GroupLoadoutEffect
     proto: MasterCap
 
+- type: loadout # Ganimed
+  id: CaptainBedsheet
+  equipment:
+    neck: BedsheetCaptain
+
 # Back
 - type: loadout
   id: CaptainBackpack

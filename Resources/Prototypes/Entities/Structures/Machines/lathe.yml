@@ -195,7 +195,6 @@
       - SubstationMachineCircuitboard
       - WallmountSubstationElectronics
       - CellRechargerCircuitboard
-      - BorgChargerCircuitboard
       - WeaponCapacitorRechargerCircuitboard
       - HandheldStationMap
       - ClothingHeadHatWelding
@@ -505,6 +504,7 @@
     - SpaceHeaterMachineCircuitBoard
     - CutterMachineCircuitboard
     - SalvageMagnetMachineCircuitboard
+    - BorgChargerCircuitboard
     dynamicRecipes:
       - AsimovCircuitBoard
       - CorporateCircuitBoard
@@ -889,6 +889,7 @@
       - CartridgeIchor # Ganimed
       - SecHypo # Ganimed
       - BorgModuleNeutralization # Ganimed Security Borg
+      - SyringeGun #Goobstation
     dynamicRecipes:
       - BorgModuleCombat # Ganimed: Security Borg
       - BorgModuleSecurityControlling # Ganimed: Security Borg
@@ -948,6 +949,7 @@
       - ClothingHeadHelmetInsulated
       - ShellSoulbreaker
       - WeaponXrayCannon
+      - RapidSyringeGun # Goobstation
       - SecurityCyberneticEyes # Shitmed Change
       - MedicalCyberneticEyes # Shitmed Change
       - ClothingEyesThermalVisionGoggles # Ganimed
@@ -1070,6 +1072,7 @@
       - Hemostat
       - ClothingEyesGlassesChemical
       - WhiteCane
+      - SyringeGun # backmen
     dynamicRecipes:
       - ChemicalImplanterTrigger # Ganimed
       - ChemicalsImplanter # Ganimed
@@ -1079,12 +1082,14 @@
       - SyringeBluespace
       - SyringeCryostasis
       - BluespacePillCanister # backmen
-      # Shitmed Change
+      - RapidSyringeGun # backmen
+      # Shitmed Change start
       - EnergyScalpel
       - EnergyCautery
       - AdvancedRetractor
       - OmnimedTool
       - MedicalCyberneticEyes
+      # Shitmed Change end
   - type: Machine
     board: MedicalTechFabCircuitboard
   - type: StealTarget

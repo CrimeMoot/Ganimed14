@@ -45,7 +45,7 @@
     - id: ClothingHeadsetAltCommand
 #    - id: ClothingOuterArmorCaptainCarapace # cats edit
     - id: CommsComputerCircuitboard
-    - id: DoorRemoteCommand 
+    - id: DoorRemoteCommand
 #    - id: MedalCase # cats edit
     - id: NukeDisk
     - id: PinpointerNuclear
@@ -248,6 +248,8 @@
     - id: MedTekCartridge
 #    - id: genguns # space cats
     - id: TelescopicBaton # Cats
+    - id: RapidSyringeGun # backmen
+    - id: BoxSyringePax # backmen
 
 # Hardsuit table, used for suit storage as well
 - type: entityTable

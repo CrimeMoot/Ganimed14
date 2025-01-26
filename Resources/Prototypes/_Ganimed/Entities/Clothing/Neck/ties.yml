@@ -1,0 +1,15 @@
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckTieBlueShield
+  name: blue-tie
+  description: A neosilk clip-on deep sea blue tie.
+  components:
+  - type: Sprite
+    sprite: _Ganimed/Clothing/Original/Neck/Ties/blueshieldtie.rsi
+  - type: Clothing
+    sprite: _Ganimed/Clothing/Original/Neck/Ties/blueshieldtie.rsi
+  - type: Tag
+    tags:
+    - HamsterWearable
+    - WhitelistChameleon
+    - ClothMade

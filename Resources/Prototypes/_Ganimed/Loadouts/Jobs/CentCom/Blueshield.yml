@@ -1,4 +1,4 @@
-#Suit
+# Jumpsuit
 - type: loadout
   id: ClothingUniformJumpsuitBlueshields
   equipment:
@@ -15,13 +15,13 @@
   equipment:
     mask: ClothingMaskGasBlueshields
 
-#Head
+# Head
 - type: loadout
   id: ClothingHeadHatBeretBlueshields
   equipment:
     head: ClothingHeadHatBeretBlueshields
 
-#outerClothing
+# outerClothing
 - type: loadout
   id: ClothingOuterCoatBlueshields
   equipment:
@@ -47,7 +47,7 @@
   equipment:
     back: ClothingBackpackDuffelBlueshield
 
-#cloak
+# Neck
 - type: loadout
   id: BlueshieldCloak
   equipment:
@@ -72,3 +72,8 @@
   id: ClothingNeckCloakBlueshields
   equipment:
     neck: ClothingNeckCloakBlueshields
+
+- type: loadout # Ganimed
+  id: BlueShieldTie
+  equipment:
+    neck: ClothingNeckTieBlueShield

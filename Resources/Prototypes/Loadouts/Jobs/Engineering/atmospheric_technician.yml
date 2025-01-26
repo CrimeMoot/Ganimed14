@@ -8,6 +8,17 @@
       role: JobAtmosphericTechnician
       time: 72000 #20 hrs
 
+# Head, Ganimed
+- type: loadout
+  id: StationEngineerHardhatYellowDark
+  equipment:
+    head: ClothingHeadHatHardhatYellowDark
+
+- type: loadout
+  id: StationEngineerHardhatBlue
+  equipment:
+    head: ClothingHeadHatHardhatBlue
+
 # Neck, Ganimed TODO: Whitelist restriction
 - type: loadout
   id: AtmosianCloak

@@ -67,6 +67,11 @@
   equipment:
     head: ClothingHeadHatSecurityTrooper
 
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: BountyHunterCowboyHat
+  equipment:
+    head: ClothingHeadHatCowboyBountyHunter
+
 # Neck, Ganimed
 - type: loadout # TODO: Whitelist restriction
   id: SecurityWhistle
@@ -158,6 +163,11 @@
   equipment:
     belt: ClothingBeltSecurityWebbingFilled
 
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: AssaultBelt
+  equipment:
+    belt: ClothingBeltAssault
+
 # Outerclothing
 - type: loadout
   id: ArmorVest
@@ -215,6 +225,11 @@
   id: SecurityWinterBoots
   equipment:
     shoes: ClothingShoesBootsWinterSecFilled
+
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: BlackCowboyBoots
+  equipment:
+    shoes: ClothingShoesBootsCowboyBlackFilled
 
 # PDA
 - type: loadout

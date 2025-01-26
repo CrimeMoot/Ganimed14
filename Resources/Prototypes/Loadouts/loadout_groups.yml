@@ -300,6 +300,14 @@
   - BartenderJumpskirt
   - BartenderJumpsuitPurple
 
+- type: loadoutGroup # Ganimed
+  id: BartenderBelt
+  name: loadout-group-bartender-belt
+  minLimit: 0
+  loadouts:
+  - WaistBag
+  - Bandolier
+
 - type: loadoutGroup
   id: BartenderOuterClothing
   name: loadout-group-bartender-outerclothing
@@ -339,6 +347,13 @@
   - ChefJacket
   - ChefWintercoat
 
+- type: loadoutGroup # Ganimed
+  id: ChefShoes
+  name: loadout-group-chef-shoes
+  loadouts:
+  - BlackShoes
+  - ChefShoes
+
 - type: loadoutGroup
   id: LibrarianJumpsuit
   name: loadout-group-librarian-jumpsuit
@@ -347,6 +362,14 @@
   - LibrarianJumpskirt
   - CuratorJumpsuit
   - CuratorJumpskirt
+
+- type: loadoutGroup # Ganimed
+  id: LibrarianBelt
+  name: loadout-group-librarian-belt
+  minLimit: 0
+  loadouts:
+  - BooksBag
+  - WaistBag
 
 - type: loadoutGroup
   id: LawyerJumpsuit
@@ -381,6 +404,7 @@
   - ChaplainPlagueHat
   - ChaplainWitchHat
   - ChaplainWitchHatAlt
+  - ChaplainWitchHunterHat # Ganimed
 
 - type: loadoutGroup
   id: ChaplainMask
@@ -407,6 +431,7 @@
   - ChaplainNunRobe
   - ChaplainBlackHoodie
   - ChaplainHoodie
+  - ChaplainWitchHunterSuit # Ganimed
 
 - type: loadoutGroup
   id: ChaplainNeck
@@ -414,6 +439,13 @@
   minLimit: 0
   loadouts:
   - ChaplainNeck
+
+- type: loadoutGroup # Ganimed
+  id: ChaplainShoes
+  name: loadout-group-chaplain-shoes
+  loadouts:
+  - BlackShoes
+  - CultShoes
 
 - type: loadoutGroup
   id: JanitorHead
@@ -727,6 +759,7 @@
   minLimit: 0
   loadouts:
   - CargoTechnicianHead
+  - CargoTechnicianPostalCap # Ganimed
 
 - type: loadoutGroup
   id: CargoTechnicianJumpsuit
@@ -898,6 +931,14 @@
   loadouts:
   - StationEngineerPDA
   - SeniorEngineerPDA
+
+- type: loadoutGroup # Ganimed
+  id: AtmosphericTechnicianHead
+  name: loadout-group-atmospheric-technician-head
+  minLimit: 0
+  loadouts:
+  - StationEngineerHardhatYellowDark
+  - StationEngineerHardhatBlue
 
 - type: loadoutGroup # Ganimed
   id: AtmosphericTechnicianNeck
@@ -1124,6 +1165,14 @@
   - HeadofSecurityCloakLong # Ganimed
   - HeadofSecurityBedsheet # Ganimed
 
+- type: loadoutGroup # Ganimed
+  id: HeadofSecurityBelt
+  name: loadout-group-head-of-security-belt
+  loadouts:
+  - SecurityBelt
+  - SecurityWebbing
+  - HeadofSecurityLeatherBelt
+
 - type: loadoutGroup
   id: HeadofSecurityOuterClothing
   name: loadout-group-head-of-security-outerclothing
@@ -1160,8 +1209,8 @@
   minLimit: 0
   loadouts:
   - WardenHead
-  - WardenBeret
   - WardenCapAlt # Ganimed
+  - WardenBeret
 
 - type: loadoutGroup
   id: WardenJumpsuit
@@ -1190,6 +1239,7 @@
   - ClothingHeadHatCapSec #Backmen
   - ClothingHeadHatPilotkaSec #Backmen
   - TrooperHat
+  - BountyHunterCowboyHat # Ganimed
 
 - type: loadoutGroup # Ganimed
   id: SecurityNeck
@@ -1224,6 +1274,7 @@
   loadouts:
   - SecurityBelt
   - SecurityWebbing
+  - Bandolier # Ganimed
 
 - type: loadoutGroup
   id: SecurityOuterClothing
@@ -1242,6 +1293,7 @@
   - JackSecBoots # Corvax
   - JackBoots
   - SecurityWinterBoots
+  - BlackCowboyBoots # Ganimed
 
 - type: loadoutGroup
   id: SecurityPDA
@@ -1436,6 +1488,7 @@
   # Ganimed-Loadouts-Start
   - GeneticsLabCoat
   - VirologyLabCoat
+  - CoronerLabCoat
   - GeneticsWintercoat
   - VirologyWintercoat
   - VirologyBioSuit

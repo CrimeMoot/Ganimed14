@@ -8,6 +8,21 @@
       department: Science
       time: 216000 #60 hrs
 
+# Med-Sci Time, Ganimed
+- type: loadoutEffectGroup
+  id: SeniorMedicalScientist
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:DepartmentTimeRequirement
+      department: Science
+      time: 216000 # 60 hrs
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:DepartmentTimeRequirement
+      department: Medical
+      time: 216000 # 60 hrs
+
 # Head
 - type: startingGear
   id: ScientificBeret
@@ -57,9 +72,7 @@
     ears: ClothingHeadsetMedicalScience
   effects:
   - !type:GroupLoadoutEffect
-    proto: SeniorResearcher
-  - !type:GroupLoadoutEffect
-    proto: SeniorPhysician
+    proto: SeniorMedicalScientist
 
 # Jumpsuit
 - type: loadout

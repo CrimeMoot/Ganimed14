@@ -25,6 +25,18 @@
   equipment:
     jumpsuit: ClothingUniformJumpskirtWarden
 
+# Belt, Ganimed
+- type: loadout # TODO: Whitelist restriction
+  id: Bandolier
+  equipment:
+    belt: ClothingBeltBandolier
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobWarden
+      time: 36000 # 10hr
+
 # OuterClothing
 - type: loadout
   id: WardenCoat

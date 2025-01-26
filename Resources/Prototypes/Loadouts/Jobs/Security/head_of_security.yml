@@ -97,6 +97,12 @@
   equipment:
     neck: BedsheetHOS
 
+# Belt, Ganimed
+- type: loadout # TODO: Whitelist restriction
+  id: HeadofSecurityLeatherBelt
+  equipment:
+    belt: ClothingBeltHoS
+
 # OuterClothing
 - type: loadout
   id: HeadofSecurityCoat

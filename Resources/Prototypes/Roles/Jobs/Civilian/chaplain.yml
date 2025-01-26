@@ -23,14 +23,10 @@
 - type: startingGear
   id: ChaplainGear
   equipment:
-    shoes: ClothingShoesColorBlack
     id: ChaplainPDA
     ears: ClothingHeadsetService
     neck: ClothingNeckHolyMedal # cats
     suitstorage: HolySable # cats
-    outerClothing: ClothingWitchHunter # cats
-    head: ClothingWhitsHunter # cats
-    eyes: ClothingEyesEyepatch # cats
   storage:
     back:
     - Bible

@@ -4,6 +4,11 @@
   equipment:
     head: ClothingHeadHatCargosoft
 
+- type: loadout # Ganimed
+  id: CargoTechnicianPostalCap
+  equipment:
+    head: ClothingHeadHatCargoPostalsoft
+
 # Jumpsuit
 - type: loadout
   id: CargoTechnicianJumpsuit

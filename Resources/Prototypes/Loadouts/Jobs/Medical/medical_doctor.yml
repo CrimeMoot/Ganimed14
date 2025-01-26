@@ -223,6 +223,11 @@
     outerClothing: ClothingOuterCoatLabViro
 
 - type: loadout # Ganimed
+  id: CoronerLabCoat
+  equipment:
+    outerClothing: ClothingOuterCoatLabCoroner
+
+- type: loadout # Ganimed
   id: GeneticsWintercoat
   equipment:
     outerClothing: ClothingOuterWinterGen

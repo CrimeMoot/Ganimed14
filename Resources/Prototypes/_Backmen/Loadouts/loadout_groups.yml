@@ -54,6 +54,7 @@
   - ClothingNeckCloakBlueshields
   - ClothingNeckMantleBlueShield
   - BlueshieldCloak
+  - BlueShieldTie # Ganimed
 
 - type: loadoutGroup
   id: ClothingHeadHatBlueShield

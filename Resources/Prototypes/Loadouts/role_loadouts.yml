@@ -11,6 +11,7 @@
   - Medals #backmen
   - Survival
   - GroupSpeciesBreathTool
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
@@ -27,6 +28,7 @@
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 # Silicons
@@ -47,6 +49,7 @@
   - PassengerOuterClothing
   - PassengerShoes
   - Glasses
+  - Underwear # Ganimed
   - Medals #backmen
   - Survival
   - Trinkets
@@ -60,6 +63,7 @@
   - GroupTankHarness
   - BartenderHead
   - BartenderJumpsuit
+  - BartenderBelt # Ganimed
   - CommonBackpack
   - BartenderOuterClothing
   - Glasses
@@ -67,6 +71,7 @@
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
@@ -80,6 +85,7 @@
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
@@ -91,11 +97,13 @@
   - ChefJumpsuit
   - CommonBackpack
   - ChefOuterClothing
+  - ChefShoes # Ganimed
   - Glasses
   - Medals #backmen
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
@@ -103,12 +111,14 @@
   groups:
   - GroupTankHarness
   - LibrarianJumpsuit
+  - LibrarianBelt # Ganimed
   - CommonBackpack
   - Glasses
   - Medals #backmen
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
@@ -123,6 +133,7 @@
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
@@ -135,10 +146,12 @@
   - ChaplainJumpsuit
   - CommonBackpack
   - ChaplainOuterClothing
+  - ChaplainShoes # Ganimed
   - Glasses
   - Medals #backmen
   - Trinkets
   - GroupSpeciesBreathTool
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
@@ -156,6 +169,7 @@
   - Medals #backmen
   - JanitorPlunger
   - GroupSpeciesBreathTool
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
@@ -171,6 +185,7 @@
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
@@ -205,6 +220,7 @@
   - Medals #backmen
   - SurvivalMime
   - Trinkets
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
@@ -220,6 +236,7 @@
   - Medals #backmen
   - Instruments
   - GroupSpeciesBreathTool
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 # Cargo
@@ -238,6 +255,7 @@
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
@@ -254,6 +272,7 @@
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
@@ -269,6 +288,7 @@
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 # Engineering
@@ -286,6 +306,7 @@
   - SurvivalExtended
   - Trinkets
   - GroupSpeciesBreathTool
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
@@ -298,6 +319,7 @@
   - SurvivalExtended
   - Trinkets
   - GroupSpeciesBreathTool
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
@@ -314,12 +336,14 @@
   - SurvivalExtended
   - Trinkets
   - GroupSpeciesBreathTool
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
   id: JobAtmosphericTechnician
   groups:
   - GroupTankHarness
+  - AtmosphericTechnicianHead # Ganimed
   - AtmosphericTechnicianNeck # Ganimed
   - AtmosphericTechnicianJumpsuit
   - AtmosphericTechnicianBackpack
@@ -329,6 +353,7 @@
   - SurvivalExtended
   - Trinkets
   - GroupSpeciesBreathTool
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 # Science
@@ -348,6 +373,7 @@
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
@@ -368,6 +394,7 @@
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
@@ -381,6 +408,7 @@
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 # Security
@@ -391,7 +419,7 @@
   - HeadofSecurityNeck
   - HeadofSecurityJumpsuit
   - SecurityBackpack
-  - SecurityBelt
+  - HeadofSecurityBelt # Ganimed
   - HeadofSecurityOuterClothing
   - SecurityShoes
   - SecurityPocket #backmen
@@ -400,6 +428,7 @@
   - Trinkets
   - SecurityStar
   - GroupSpeciesBreathToolSecurity
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
@@ -417,6 +446,7 @@
   - Trinkets
   - SecurityStar
   - GroupSpeciesBreathToolSecurity
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
@@ -436,6 +466,7 @@
   - Trinkets
   - SecurityStar
   - GroupSpeciesBreathToolSecurity
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
@@ -454,6 +485,7 @@
   - Trinkets
   - SecurityStar
   - GroupSpeciesBreathToolSecurity
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
@@ -466,6 +498,7 @@
   - SurvivalSecurity
   - Trinkets
   - GroupSpeciesBreathToolSecurity
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 # Medical
@@ -486,6 +519,7 @@
   - SurvivalMedical
   - Trinkets
   - GroupSpeciesBreathToolMedical
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
@@ -507,6 +541,7 @@
   - SurvivalMedical
   - Trinkets
   - GroupSpeciesBreathToolMedical
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
@@ -521,6 +556,7 @@
   - SurvivalMedical
   - Trinkets
   - GroupSpeciesBreathToolMedical
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
@@ -537,6 +573,7 @@
   - SurvivalMedical
   - Trinkets
   - GroupSpeciesBreathToolMedical
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
@@ -555,6 +592,7 @@
   - SurvivalMedical
   - Trinkets
   - GroupSpeciesBreathToolMedical
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 # Wildcards
@@ -568,6 +606,7 @@
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
@@ -581,6 +620,7 @@
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
@@ -594,7 +634,8 @@
   - Medals #backmen
   - Survival
   - Trinkets
-  - GroupSpeciesBreathTool
+  - GroupSpeciesBreathToolMedical
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
@@ -610,6 +651,7 @@
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 # These loadouts are used for non-crew spawns, like off-station antags and event mobs

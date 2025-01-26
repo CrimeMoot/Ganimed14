@@ -73,6 +73,9 @@
   storage:
     back:
     - ClothingHeadHatCone
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: Engineer
 
 # Smokeables
 - type: loadout

@@ -24,6 +24,11 @@
   equipment:
     head: ClothingHeadHatWitch1
 
+- type: loadout # Ganimed
+  id: ChaplainWitchHunterHat
+  equipment:
+    head: ClothingWhitsHunter
+
 # Mask
 - type: loadout
   id: ChaplainMask
@@ -77,3 +82,14 @@
   id: ChaplainHoodie
   equipment:
     outerClothing: ClothingOuterHoodieChaplain
+
+- type: loadout # Ganimed
+  id: ChaplainWitchHunterSuit
+  equipment:
+    outerClothing: ClothingWitchHunter
+
+# Shoes, Ganimed
+- type: loadout # TODO: Whitelist restriction
+  id: CultShoes
+  equipment:
+    shoes: ClothingShoesCult

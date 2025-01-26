@@ -58,7 +58,7 @@
   equipment:
     id: CMOPDA
     ears: ClothingHeadsetCMO
-    belt: ClothingBeltMilitaryWebbingCMO # cats 
+    belt: ClothingBeltMilitaryWebbingCMOFilled # Goobstation
   storage:
     back:
     - Flash

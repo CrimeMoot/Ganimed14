@@ -101,8 +101,10 @@ namespace Content.IntegrationTests.Tests
             "Loop",
             "Plasma",
             "Elkridge"
-
-
+            //Start-Enterprise
+            "ENTRsaltern"
+            "ENTRcluster"
+            //End-Enterprise
         };
 
         /// <summary>

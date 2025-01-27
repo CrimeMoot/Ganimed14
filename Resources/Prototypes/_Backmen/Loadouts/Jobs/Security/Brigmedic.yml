@@ -33,12 +33,12 @@
 - type: loadout # Ganimed
   id: BlackBrigmedicJumpsuit
   equipment:
-    jumpsuit: ClothingUniformJumpsuitBrigmedicBlack
+    jumpsuit: ClothingUniformJumpsuitBrigmedicBlackOriginal
 
 - type: loadout # Ganimed
   id: BlackBrigmedicJumpskirt
   equipment:
-    jumpsuit: ClothingUniformJumpskirtBrigmedicBlack
+    jumpsuit: ClothingUniformJumpskirtBrigmedicBlackOriginal
 
 - type: loadout
   id: ClothingUniformJumpskirtOfLife
@@ -100,8 +100,16 @@
 
 - type: loadout # Ganimed
   id: SecurityBioSuit
+  dummyEntity: ClothingOuterBioSecurity
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:DepartmentTimeRequirement
+      department: Medical
+      time: 108000 #30 hrs
   equipment:
     outerClothing: ClothingOuterBioSecurity
+    head: ClothingHeadHatHoodBioSecurity
 
 #ears
 - type: loadout

@@ -9,6 +9,12 @@
   equipment:
     jumpsuit: ClothingUniformJumpskirtChemistry
 
+# Glasses, Ganimed
+- type: loadout
+  id: ChemicalAnalysisGoggles
+  equipment:
+    eyes: ClothingEyesGlassesChemical
+
 # Back
 - type: loadout
   id: ChemistBackpack

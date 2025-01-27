@@ -165,6 +165,18 @@
     - ClothingOuterRedRacoon
 
 - type: loadout
+  id: TheatreShrineMaidenWig
+  storage:
+    back:
+    - ClothingHeadHatShrineMaidenWig
+
+- type: loadout
+  id: TheatreShrineMaidenOutfit
+  storage:
+    back:
+    - ClothingOuterSuitShrineMaiden
+
+- type: loadout
   id: TheatreGhostSheet
   storage:
     back:

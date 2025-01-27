@@ -65,6 +65,11 @@
   equipment:
     head: ClothingHeadHatBeretHoS
 
+- type: loadout # Ganimed
+  id: HeadofSecurityLeatherCap
+  equipment:
+    head: ClothingHeadHatCapLeatherHoS
+
 # Neck
 - type: loadout
   id: HeadofSecurityCloak
@@ -103,6 +108,17 @@
   equipment:
     belt: ClothingBeltHoS
 
+# Gloves, Ganimed
+- type: loadout
+  id: CombatGloves
+  equipment:
+    gloves: ClothingHandsGlovesCombat
+
+- type: loadout # TODO: Whitelist restriction
+  id: HeadofSecurityLeatherGloves
+  equipment:
+    gloves: ClothingHandsGlovesLeatherHoS
+
 # OuterClothing
 - type: loadout
   id: HeadofSecurityCoat
@@ -130,14 +146,12 @@
     outerClothing: Clothinghoscoat
 
 # Pocket #Backmen
-
 - type: loadout
   id: WeaponRevolverMatebaNew
   equipment:
     pocket1: WeaponRevolverMatebaNew
 
 # Pocket 2 #Backmen
-
 - type: loadout
   id: SpeedLoaderMagnum
   equipment:

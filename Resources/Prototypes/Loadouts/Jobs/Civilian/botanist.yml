@@ -29,6 +29,11 @@
   equipment:
     head: ClothingHeadHatFlowerWreath
 
+- type: loadout # Ganimed
+  id: WatermelonHelmet
+  equipment:
+    head: ClothingHeadHatWatermelon
+
 # Jumpsuit
 - type: loadout
   id: BotanistJumpsuit
@@ -76,3 +81,9 @@
   id: BotanistWintercoat
   equipment:
     outerClothing: ClothingOuterWinterHydro
+
+# Shoes, Ganimed
+- type: loadout # TODO: Whitelist restriction
+  id: GreenShoes
+  equipment:
+    shoes: ClothingShoesColorGreen

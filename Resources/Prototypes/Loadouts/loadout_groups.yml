@@ -422,6 +422,13 @@
   - ChaplainRobesLight
   - ChaplainRobesDark
 
+- type: loadoutGroup # Ganimed
+  id: ChaplainGloves
+  name: loadout-group-chaplain-gloves
+  minLimit: 0
+  loadouts:
+  - ChaplainDivineWatch
+
 - type: loadoutGroup
   id: ChaplainOuterClothing
   name: loadout-group-chaplain-outerclothing
@@ -496,6 +503,7 @@
   - BotanistPoppy
   - BotanistAmbrosia
   - BotanistFlowerWreath
+  - WatermelonHelmet
   # Ganimed-Loadouts-End
 
 - type: loadoutGroup
@@ -522,6 +530,13 @@
   loadouts:
   - BotanistApron
   - BotanistWintercoat
+
+- type: loadoutGroup # Ganimed
+  id: BotanistShoes
+  name: loadout-group-botanist-shoes
+  loadouts:
+  - BrownShoes
+  - GreenShoes
 
 - type: loadoutGroup
   id: ClownHead
@@ -584,6 +599,8 @@
   - TheatreMonkeySuit
   - TheatreRedRacoonHat
   - TheatreRedRacoonSuit
+  - TheatreShrineMaidenWig
+  - TheatreShrineMaidenOutfit
   - TheatreGhostSheet
   - TheatreMothCloak
   - TheatrePumpkinHat
@@ -924,6 +941,8 @@
   loadouts:
   - WorkBoots
   - EngineeringWinterBoots
+  - OrangeShoes # Ganimed
+  - EngineeringMagBoots # Ganimed
 
 - type: loadoutGroup
   id: StationEngineerID
@@ -1028,12 +1047,25 @@
   - ResearchDirectorWintercoat
   - ClothingOuterWinterSeniorResearcher  # cats
 
+- type: loadoutGroup # Ganimed
+  id: ResearchDirectorGloves
+  name: loadout-group-research-director-gloves
+  minLimit: 0
+  loadouts:
+  - LatexGloves
+  - PurpleGloves
+  - RobohandsGloves
+  - PowerGloves
+
 - type: loadoutGroup
   id: ResearchDirectorShoes
   name: loadout-group-research-director-shoes
   loadouts:
   - BrownShoes
+  - BlackShoes # Ganimed
+  - PurpleShoes # Ganimed
   - ScienceWinterBoots
+  - ScienceMagBoots # Ganimed
 
 - type: loadoutGroup
   id: ScientistHead
@@ -1051,6 +1083,18 @@
   loadouts:
   - ScientistTie
   - ScientistCloak # Ganimed
+
+- type: loadoutGroup # Ganimed
+  id: ScientistGlasses
+  name: loadout-group-scientist-glasses
+  minLimit: 0
+  loadouts:
+  - Glasses
+  - GlassesJamjar
+  - GlassesBinoclard
+  - ChemicalAnalysisGoggles
+  - DiagnosticHud
+  - DiagnosticHudEyepatch
 
 - type: loadoutGroup # Ganimed
   id: ScientistHeadset
@@ -1103,6 +1147,7 @@
   loadouts:
   - WhiteShoes
   - BlackShoes
+  - PurpleShoes # Ganimed
   - ScienceWinterBoots
 
 - type: loadoutGroup
@@ -1136,6 +1181,7 @@
   loadouts:
   - HeadofSecurityHead
   - HeadofSecurityBeret
+  - HeadofSecurityLeatherCap # Ganimed
 
 - type: loadoutGroup
   id: HeadofSecurityJumpsuit
@@ -1166,6 +1212,13 @@
   - HeadofSecurityBedsheet # Ganimed
 
 - type: loadoutGroup # Ganimed
+  id: HeadofSecurityGloves
+  name: loadout-group-head-of-security-gloves
+  loadouts:
+  - CombatGloves
+  - HeadofSecurityLeatherGloves
+
+- type: loadoutGroup # Ganimed
   id: HeadofSecurityBelt
   name: loadout-group-head-of-security-belt
   loadouts:
@@ -1188,11 +1241,11 @@
   loadouts:
   - WeaponPistolMk58
   - WeaponPistolG22
-  - WeaponPistolACP14
-  - WeaponPistolG23
   - WeaponPistolM1911
-  - WeaponPistolVP78
-  - WeaponRevolverMatebaNew
+  # - WeaponPistolACP14
+  # - WeaponPistolG23
+  # - WeaponPistolVP78
+  # - WeaponRevolverMatebaNew
 
 - type: loadoutGroup #Backmen
   id: SecurityOfficerPocket2
@@ -1353,11 +1406,11 @@
   id: DetectiveRevolver
   name: loadout-group-security-pocket
   loadouts:
-  - WeaponRevolverCMB
   - WeaponRevolverR44
   - WeaponRevolverRebota
-  - WeaponRevolverNY
   - WeaponRevolverInspector
+  # - WeaponRevolverCMB
+  # - WeaponRevolverNY
 
 - type: loadoutGroup
   id: SecurityCadetJumpsuit
@@ -1428,6 +1481,8 @@
   name: loadout-group-chief-medical-officer-shoes
   loadouts:
   - BrownShoes
+  - WhiteShoes # Ganimed
+  - BlueShoes # Ganimed
   - MedicalWinterBoots
 
 - type: loadoutGroup
@@ -1458,6 +1513,17 @@
   - HeadsetMedical
   - HeadsetMedicalScience
 
+- type: loadoutGroup # Ganimed
+  id: MedicalDoctorGlasses
+  name: loadout-group-medical-doctor-glasses
+  minLimit: 0
+  loadouts:
+  - Glasses
+  - GlassesJamjar
+  - GlassesBinoclard
+  - MedicalHud
+  - MedicalHudEyepatch
+
 - type: loadoutGroup
   id: MedicalDoctorJumpsuit
   name: loadout-group-medical-doctor-jumpsuit
@@ -1474,6 +1540,10 @@
   - GeneticsJumpskirt
   - VirologyJumpsuit
   - VirologyJumpskirt
+  # - CoronerJumpsuit
+  # - CoronerJumpskirt
+  - BlackCoronerJumpsuit
+  - BlackCoronerJumpskirt
   # Ganimed-Loadouts-End
 
 - type: loadoutGroup

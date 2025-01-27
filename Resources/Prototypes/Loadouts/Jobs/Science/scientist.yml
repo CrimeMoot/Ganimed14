@@ -74,6 +74,17 @@
   - !type:GroupLoadoutEffect
     proto: SeniorMedicalScientist
 
+# Glasses, Ganimed
+- type: loadout
+  id: DiagnosticHud
+  equipment:
+    eyes: ClothingEyesHudDiagnostic
+
+- type: loadout
+  id: DiagnostichHudEyepatch
+  equipment:
+    eyes: ClothingEyesEyepatchHudDiag
+
 # Jumpsuit
 - type: loadout
   id: ScientistJumpsuit
@@ -181,6 +192,7 @@
 
 - type: loadout # Ganimed TODO: Whitelist restriction
   id: ScientistBioSuit
+  dummyEntity: ClothingOuterBioScientist
   effects:
   - !type:JobRequirementLoadoutEffect
     requirement:
@@ -189,6 +201,7 @@
       time: 108000 # 30 hrs
   equipment:
     outerClothing: ClothingOuterBioScientist
+    head: ClothingHeadHatHoodBioScientist
 
 - type: loadout # Ganimed
   id: RadSuit
@@ -228,6 +241,11 @@
   id: ScienceWinterBoots
   equipment:
     shoes: ClothingShoesBootsWinterSci
+
+- type: loadout # Ganimed
+  id: PurpleShoes
+  equipment:
+    shoes: ClothingShoesColorPurple
 
 # ID
 - type: loadout

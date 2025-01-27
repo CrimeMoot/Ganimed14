@@ -62,6 +62,18 @@
   equipment:
     neck: ClothingNeckStoleChaplain
 
+# Gloves, Ganimed
+- type: loadout # TODO: Whitelist restriction
+  id: ChaplainDivineWatch
+  equipment:
+    gloves: ClothingHandsWatchDivine
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobChaplain
+      time: 72000 # 20hr
+
 # Outer clothing
 - type: loadout
   id: ChaplainPlagueSuit

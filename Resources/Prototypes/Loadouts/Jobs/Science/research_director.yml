@@ -56,6 +56,18 @@
   equipment:
     jumpsuit: ClothingUniformJumpskirtResearchDirector
 
+# Gloves, Ganimed
+- type: loadout # TODO: Whitelist restriction
+  id: PowerGloves
+  equipment:
+    gloves: ClothingHandsGlovesPowerglove
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobResearchDirector # JobChiefEngineer
+      time: 180000 # 50hr
+
 # OuterClothing
 - type: loadout
   id: ResearchDirectorLabCoat
@@ -71,3 +83,12 @@
   id: ClothingOuterWinterSeniorResearcher
   equipment:
     outerClothing: ClothingOuterWinterSeniorResearcher  # cats
+
+# Shoes, Ganimed
+- type: loadout # TODO: Whitelist restriction
+  id: ScienceMagBoots
+  equipment:
+    shoes: ClothingShoesBootsMagSci
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MasterRD

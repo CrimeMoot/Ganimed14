@@ -141,6 +141,11 @@
   equipment:
     shoes: ClothingShoesBootsWinterEngi
 
+- type: loadout # Ganimed
+  id: OrangeShoes
+  equipment:
+    shoes: ClothingShoesColorOrange
+
 - type: loadout # Ganimed TODO: Whitelist restriction
   id: EngineeringMagBoots
   effects:

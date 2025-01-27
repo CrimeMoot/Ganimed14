@@ -85,5 +85,7 @@
 
 - type: loadout # Ganimed
   id: ChiefMedicalOfficerBioSuit
+  dummyEntity: ClothingOuterBioCmo
   equipment:
     outerClothing: ClothingOuterBioCmo
+    head: ClothingHeadHatHoodBioCmo

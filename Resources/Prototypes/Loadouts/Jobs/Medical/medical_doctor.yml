@@ -90,6 +90,17 @@
   equipment:
     ears: ClothingHeadsetMedical
 
+# Glasses, Ganimed
+- type: loadout
+  id: MedicalHud
+  equipment:
+    eyes: ClothingEyesHudMedical
+
+- type: loadout
+  id: MedicalHudEyepatch
+  equipment:
+    eyes: ClothingEyesEyepatchHudMedical
+
 # Jumpsuit
 - type: loadout
   id: MedicalDoctorJumpsuit
@@ -151,6 +162,26 @@
   id: VirologyJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtVirology
+
+#- type: loadout # Ganimed
+#  id: CoronerJumpsuit
+#  equipment:
+#    jumpsuit: ClothingUniformJumpsuitCoroner
+
+#- type: loadout # Ganimed
+#  id: CoronerJumpskirt
+#  equipment:
+#    jumpsuit: ClothingUniformJumpskirtCoroner
+
+- type: loadout # Ganimed
+  id: BlackCoronerJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCoronerBlackOriginal
+
+- type: loadout # Ganimed
+  id: BlackCoronerJumpskirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCoronerBlackOriginal
 
 # Back
 - type: loadout
@@ -239,11 +270,13 @@
 
 - type: loadout # Ganimed
   id: VirologyBioSuit
+  dummyEntity: ClothingOuterBioVirology
   effects:
   - !type:GroupLoadoutEffect
     proto: MedicalHeadMirrorTimer
   equipment:
     outerClothing: ClothingOuterBioVirology
+    head: ClothingHeadHatHoodBioVirology
 
 # Shoes
 - type: loadout

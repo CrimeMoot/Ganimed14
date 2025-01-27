@@ -144,6 +144,7 @@
   - ChaplainMask
   - ChaplainNeck
   - ChaplainJumpsuit
+  - ChaplainGloves # Ganimed
   - CommonBackpack
   - ChaplainOuterClothing
   - ChaplainShoes # Ganimed
@@ -180,6 +181,7 @@
   - BotanistJumpsuit
   - BotanistBackpack
   - BotanistOuterClothing
+  - BotanistShoes # Ganimed
   - Glasses
   - Medals #backmen
   - Survival
@@ -366,9 +368,9 @@
   - ResearchDirectorJumpsuit
   - ScientistBackpack
   - ResearchDirectorOuterClothing
-  - ScientistGloves
+  - ResearchDirectorGloves # Ganimed
   - ResearchDirectorShoes
-  - Glasses
+  - ScientistGlasses # Ganimed
   - Medals #backmen
   - Survival
   - Trinkets
@@ -389,7 +391,7 @@
   - ScientistGloves
   - ScientistShoes
   - ScientistPDA
-  - Glasses
+  - ScientistGlasses # Ganimed
   - Medals #backmen
   - Survival
   - Trinkets
@@ -420,6 +422,7 @@
   - HeadofSecurityJumpsuit
   - SecurityBackpack
   - HeadofSecurityBelt # Ganimed
+  - HeadofSecurityGloves # Ganimed
   - HeadofSecurityOuterClothing
   - SecurityShoes
   - SecurityPocket #backmen
@@ -514,7 +517,7 @@
   - ChiefMedicalOfficerOuterClothing
   - ChiefMedicalOfficerNeck
   - ChiefMedicalOfficerShoes
-  - Glasses
+  - MedicalDoctorGlasses # Ganimed
   - Medals #backmen
   - SurvivalMedical
   - Trinkets
@@ -536,7 +539,7 @@
   - MedicalDoctorOuterClothing
   - MedicalShoes
   - MedicalDoctorPDA
-  - Glasses
+  - MedicalDoctorGlasses # Ganimed
   - Medals #backmen
   - SurvivalMedical
   - Trinkets
@@ -547,7 +550,6 @@
 - type: roleLoadout
   id: JobMedicalIntern
   groups:
-
   - GroupTankHarness
   - MedicalInternJumpsuit
   - MedicalBackpack

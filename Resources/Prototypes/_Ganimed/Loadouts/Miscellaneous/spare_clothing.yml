@@ -186,6 +186,12 @@
     back:
     - ClothingHeadHatSombrero
 
+- type: loadout # TODO: Whitelist restriction
+  id: SpareBeaverHat
+  storage:
+    back:
+    - ClothingHeadHatBeaverHat
+
 - type: loadout
   id: SpareBlackCatHat
   storage:
@@ -555,7 +561,7 @@
   id: SpareHardWornSuit
   storage:
     back:
-    - ClothingUniformJumpskirtDetective
+    - ClothingUniformJumpsuitDetective
   effects:
   - !type:GroupLoadoutEffect
     proto: Security
@@ -564,7 +570,7 @@
   id: SpareHardWornSuitskirt
   storage:
     back:
-    - ClothingUniformJumpsuitDetective
+    - ClothingUniformJumpskirtDetective
   effects:
   - !type:GroupLoadoutEffect
     proto: Security
@@ -892,6 +898,12 @@
   storage:
     back:
     - ClothingOuterCoatJensen
+
+- type: loadout
+  id: SpareRedCoat
+  storage:
+    back:
+    - ClothingOuterCoatRedCoat
 
 - type: loadout
   id: SpareBlackHoodie

@@ -24,11 +24,8 @@
     soundEmpty:
       path: /Audio/_Ganimed/Weapons/Guns/Empty/dry_fire.ogg
   - type: Battery
-    maxCharge: 1300
-    startingCharge: 1300
-  - type: BatterySelfRecharger
-    autoRecharge: true
-    autoRechargeRate: 20
+    maxCharge: 1400
+    startingCharge: 1400
   - type: ProjectileBatteryAmmoProvider
     proto: BulletDisabler
     fireCost: 100
@@ -39,7 +36,7 @@
       name: disable
       state: disabler
     - proto: lethaldominator
-      fireCost: 100
+      fireCost: 200
       name: lethal
       state: lethal
   - type: MagazineVisuals

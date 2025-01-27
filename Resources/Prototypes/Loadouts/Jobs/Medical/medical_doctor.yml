@@ -243,6 +243,14 @@
   equipment:
     outerClothing: ClothingOuterCoatLabSeniorPhysician
 
+- type: loadout
+  id: SeniorPhysicianWintercoat
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: SeniorPhysician
+  equipment:
+    outerClothing: ClothingOuterWinterSeniorPhysician  #cats
+
 - type: loadout # Ganimed TODO: Whitelist restriction
   id: GeneticsLabCoat
   equipment:

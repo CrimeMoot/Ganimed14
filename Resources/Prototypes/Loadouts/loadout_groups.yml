@@ -201,6 +201,9 @@
   - HoPJumpsuitTurtleneck
   - HoPJumpskirtTurtleneck
   # Corvax-Loadouts-End
+  - JumpsuitNanotrasen # Ganimed
+  - LawyerJumpsuitBlue # Ganimed
+  - LawyerJumpskirtBlue # Ganimed
 
 - type: loadoutGroup
   id: HoPNeck
@@ -209,6 +212,7 @@
   loadouts:
   - HoPCloak
   - HoPMantle
+  - HoPCloakOriginal # Ganimed
   - HoPCloakLong # Ganimed
   - HoPBedsheet # Ganimed
 
@@ -393,6 +397,7 @@
   minLimit: 0
   loadouts:
   - LawyerNeck
+  - NTBedsheet # Ganimed
 
 - type: loadoutGroup
   id: ChaplainHead
@@ -876,7 +881,7 @@
   minLimit: 0
   loadouts:
   - ChiefEngineerWintercoat
-  - ClothingOuterWinterSeniorEngineer  # cats
+  - SeniorEngineerWintercoat  # cats
 
 - type: loadoutGroup
   id: ChiefEngineerShoes
@@ -933,7 +938,7 @@
   loadouts:
   - StationEngineerOuterVest
   - StationEngineerWintercoat
-  - ClothingOuterWinterSeniorEngineer # cats
+  - SeniorEngineerWintercoat # cats
 
 - type: loadoutGroup
   id: StationEngineerShoes
@@ -981,7 +986,7 @@
   minLimit: 0
   loadouts:
   - AtmosphericTechnicianWintercoat
-  - ClothingOuterWinterSeniorEngineer # cats
+  - SeniorEngineerWintercoat # cats
   - AtmosphericTechnicianBomberJacket # Ganimed
 
 - type: loadoutGroup
@@ -1045,7 +1050,7 @@
   loadouts:
   - ResearchDirectorLabCoat
   - ResearchDirectorWintercoat
-  - ClothingOuterWinterSeniorResearcher  # cats
+  - SeniorResearcherWintercoat  # cats
 
 - type: loadoutGroup # Ganimed
   id: ResearchDirectorGloves
@@ -1136,7 +1141,7 @@
   - RoboticistLabCoat
   - RoboticistWintercoat
   - SeniorResearcherLabCoat
-  - ClothingOuterWinterSeniorResearcher
+  - SeniorResearcherWintercoat # cats
   - ScientistBioSuit
   - RadSuit
   - BombSuit
@@ -1197,9 +1202,13 @@
   - HeadofSecurityJumpsuitBlack
   - HeadofSecurityJumpskirtBlack
   # Corvax-Loadouts-End
-  - HeadofSecurityJumpsuitOld # Ganimed
-  - HeadofSecurityJumpsuitGrey # Ganimed
-  - HeadofSecurityJumpsuitBlue # Ganimed
+  # Ganimed-Loadouts-Start
+  - HeadofSecurityJumpsuitOld
+  - HeadofSecurityJumpsuitGrey
+  - HeadofSecurityJumpsuitBlue
+  - HeadofSecurityJumpsuitOriginal
+  - HeadofSecurityJumpskirtOriginal
+  # Ganimed-Loadouts-End
 
 - type: loadoutGroup
   id: HeadofSecurityNeck
@@ -1208,6 +1217,7 @@
   loadouts:
   - HeadofSecurityCloak
   - HeadofSecurityMantle
+  - HeadofSecurityShoulderMantle # Ganimed
   - HeadofSecurityCloakLong # Ganimed
   - HeadofSecurityBedsheet # Ganimed
 
@@ -1217,6 +1227,15 @@
   loadouts:
   - CombatGloves
   - HeadofSecurityLeatherGloves
+
+- type: loadoutGroup # Ganimed
+  id: HeadofSecurityBackpack
+  name: loadout-group-head-of-security-backpack
+  loadouts:
+  - SecurityBackpack
+  - SecuritySatchel
+  - SecurityDuffel
+  - HeadofSecuritySatchel
 
 - type: loadoutGroup # Ganimed
   id: HeadofSecurityBelt
@@ -1281,6 +1300,15 @@
   - WardenUnarmoredWinterCoat # Ganimed
   - WardenCoatAlt # Ganimed
 
+- type: loadoutGroup # Ganimed
+  id: WardenBackpack
+  name: loadout-group-warden-backpack
+  loadouts:
+  - SecurityBackpack
+  - SecuritySatchel
+  - SecurityDuffel
+  - WardenBackpack
+
 - type: loadoutGroup
   id: SecurityHead
   name: loadout-group-security-head
@@ -1327,6 +1355,7 @@
   loadouts:
   - SecurityBelt
   - SecurityWebbing
+  - AssaultBelt # Ganimed
   - Bandolier # Ganimed
 
 - type: loadoutGroup
@@ -1463,7 +1492,7 @@
   loadouts:
   - ChiefMedicalOfficerLabCoat
   - ChiefMedicalOfficerWintercoat
-  - ClothingOuterWinterSeniorPhysician  # cats
+  - SeniorPhysicianWintercoat  # cats
   - ChiefMedicalOfficerBioSuit # Ganimed
 
 - type: loadoutGroup
@@ -1554,7 +1583,7 @@
   - RegularLabCoat
   - MedicalDoctorWintercoat
   - SeniorPhysicianLabCoat
-  - ClothingOuterWinterSeniorPhysician  # cats
+  - SeniorPhysicianWintercoat  # cats
   # Ganimed-Loadouts-Start
   - GeneticsLabCoat
   - VirologyLabCoat
@@ -1631,7 +1660,7 @@
   - RegularLabCoat
   - ChemistLabCoat
   - ChemistWintercoat
-  - ClothingOuterWinterSeniorPhysician  # cats
+  - SeniorPhysicianWintercoat  # cats
 
 - type: loadoutGroup
   id: ChemistBackpack
@@ -1664,7 +1693,7 @@
   loadouts:
   - ParamedicWindbreaker
   - ParamedicWintercoat
-  - ClothingOuterWinterSeniorPhysician  # cats 
+  - SeniorPhysicianWintercoat  # cats 
 
 - type: loadoutGroup
   id: ParamedicShoes

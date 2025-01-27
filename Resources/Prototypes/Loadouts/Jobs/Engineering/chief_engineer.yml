@@ -95,11 +95,6 @@
   equipment:
     outerClothing: ClothingOuterWinterCE
 
-- type: loadout
-  id: ClothingOuterWinterSeniorEngineer
-  equipment:
-    outerClothing: ClothingOuterWinterSeniorEngineer  # cats
-
 # Shoes
 - type: loadout
   id: BrownShoes

@@ -210,6 +210,14 @@
   equipment:
     outerClothing: ClothingOuterWinterSec
 
+- type: loadout
+  id: SeniorOfficerWintercoat
+  equipment:
+    outerClothing: ClothingOuterWinterSeniorOfficer  # cats
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: SeniorOfficer
+
 # Shoes
 - type: loadout
   id: CombatBoots
@@ -293,7 +301,6 @@
     pocket1: WeaponPistolM1911
 
 # Pocket 2 #Backmen
-
 - type: loadout
   id: MagazinePistol
   effects:

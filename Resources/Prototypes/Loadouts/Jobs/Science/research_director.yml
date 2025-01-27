@@ -79,11 +79,6 @@
   equipment:
     outerClothing: ClothingOuterWinterRD
 
-- type: loadout
-  id: ClothingOuterWinterSeniorResearcher
-  equipment:
-    outerClothing: ClothingOuterWinterSeniorResearcher  # cats
-
 # Shoes, Ganimed
 - type: loadout # TODO: Whitelist restriction
   id: ScienceMagBoots

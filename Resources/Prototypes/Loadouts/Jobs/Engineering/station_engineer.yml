@@ -130,6 +130,14 @@
   equipment:
     outerClothing: ClothingOuterWinterEngi
 
+- type: loadout
+  id: SeniorEngineerWintercoat
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: SeniorEngineering
+  equipment:
+    outerClothing: ClothingOuterWinterSeniorEngineer  # cats
+
 # Shoes
 - type: loadout
   id: WorkBoots

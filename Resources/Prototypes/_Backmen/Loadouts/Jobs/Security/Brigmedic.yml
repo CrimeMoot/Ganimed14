@@ -1,7 +1,6 @@
 ﻿- type: startingGear
   id: BrigmedicGear
   equipment:
-    shoes: ClothingShoesBootsJackSec # Corvax-Resprite
     gloves: ClothingHandsGlovesNitrile
     eyes: ClothingEyesGlassesBrigmedic
     pocket2: HandheldBrigmedicCrewMonitor # Cats

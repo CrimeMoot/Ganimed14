@@ -54,6 +54,11 @@
   equipment:
     neck: ClothingNeckMantleHOP
 
+- type: loadout # Ganimed
+  id: HoPCloakOriginal
+  equipment:
+    neck: ClothingNeckCloakHopOriginal
+
 - type: loadout # Ganimed TODO: Whitelist restriction
   id: HoPCloakLong
   equipment:

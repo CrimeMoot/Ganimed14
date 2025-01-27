@@ -25,6 +25,13 @@
   equipment:
     jumpsuit: ClothingUniformJumpskirtWarden
 
+# Back, Ganimed
+- type: loadout # TODO: Whitelist restriction
+  id: WardenBackpack
+  sponsorOnly: true
+  equipment:
+    back: ClothingBackpackWarden
+
 # Belt, Ganimed
 - type: loadout # TODO: Whitelist restriction
   id: Bandolier

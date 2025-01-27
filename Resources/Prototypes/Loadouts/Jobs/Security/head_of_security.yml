@@ -54,6 +54,16 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitHoSBlue
 
+- type: loadout # Ganimed
+  id: HeadofSecurityJumpsuitOriginal
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitHoSOriginal
+
+- type: loadout # Ganimed
+  id: HeadofSecurityJumpskirtOriginal
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtHoSOriginal
+
 # Head
 - type: loadout
   id: HeadofSecurityHead
@@ -65,10 +75,10 @@
   equipment:
     head: ClothingHeadHatBeretHoS
 
-- type: loadout # Ganimed
+- type: loadout # Ganimed TODO: Whitelist restriction
   id: HeadofSecurityLeatherCap
   equipment:
-    head: ClothingHeadHatCapLeatherHoS
+    head: ClothingHeadHatCapHoS
 
 # Neck
 - type: loadout
@@ -89,6 +99,11 @@
   equipment:
     neck: ClothingNeckMantleHOS
 
+- type: loadout # Ganimed
+  id: HeadofSecurityShoulderMantle
+  equipment:
+    neck: ClothingNeckMantleHOSShoulder
+
 - type: loadout # Ganimed TODO: Whitelist restriction
   id: HeadofSecurityCloakLong
   equipment:
@@ -101,6 +116,13 @@
   id: HeadofSecurityBedsheet
   equipment:
     neck: BedsheetHOS
+
+# Back, Ganimed
+- type: loadout # TODO: Whitelist restriction
+  id: HeadofSecuritySatchel
+  whitelisted: true
+  equipment:
+    back: ClothingBackpackSatchelHoS
 
 # Belt, Ganimed
 - type: loadout # TODO: Whitelist restriction
@@ -129,11 +151,6 @@
   id: HeadofSecurityWinterCoat
   equipment:
     outerClothing: ClothingOuterWinterHoS
-
-- type: loadout
-  id: ClothingOuterWinterSeniorOfficer
-  equipment:
-    outerClothing: ClothingOuterWinterSeniorOfficer  # cats
 
 - type: loadout # Ganimed
   id: HeadofSecurityUnarmoredWinterCoat

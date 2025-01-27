@@ -420,12 +420,12 @@
   - HeadofSecurityHead
   - HeadofSecurityNeck
   - HeadofSecurityJumpsuit
-  - SecurityBackpack
+  - HeadofSecurityBackpack # Ganimed
   - HeadofSecurityBelt # Ganimed
   - HeadofSecurityGloves # Ganimed
   - HeadofSecurityOuterClothing
   - SecurityShoes
-  - SecurityPocket #backmen
+  - SecurityOfficerPocket #backmen
   - Medals #backmen
   - SurvivalSecurity
   - Trinkets
@@ -439,11 +439,11 @@
   groups:
   - WardenHead
   - WardenJumpsuit
-  - SecurityBackpack
+  - WardenBackpack # Ganimed
   - SecurityBelt
   - WardenOuterClothing
   - SecurityShoes
-  - SecurityPocket #Backmen
+  - SecurityOfficerPocket #Backmen
   - Medals #backmen
   - SurvivalSecurity
   - Trinkets
@@ -463,7 +463,7 @@
   - SecurityShoes
   - SecurityPDA
   - SecurityBelt
-  - SecurityPocket #Backmen
+  - SecurityOfficerPocket #Backmen
   - Medals #backmen
   - SurvivalSecurity
   - Trinkets
@@ -496,7 +496,7 @@
   groups:
   - SecurityCadetJumpsuit
   - SecurityBackpack
-  - SecurityPocket
+  - SecurityOfficerPocket
   - Medals #backmen
   - SurvivalSecurity
   - Trinkets

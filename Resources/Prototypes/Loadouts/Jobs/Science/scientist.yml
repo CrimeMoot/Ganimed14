@@ -81,7 +81,7 @@
     eyes: ClothingEyesHudDiagnostic
 
 - type: loadout
-  id: DiagnostichHudEyepatch
+  id: DiagnosticHudEyepatch
   equipment:
     eyes: ClothingEyesEyepatchHudDiag
 
@@ -189,6 +189,14 @@
     proto: SeniorResearcher
   equipment:
     outerClothing: ClothingOuterCoatLabSeniorResearcher
+
+- type: loadout
+  id: SeniorResearcherWintercoat
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: SeniorResearcher
+  equipment:
+    outerClothing: ClothingOuterWinterSeniorResearcher  # cats
 
 - type: loadout # Ganimed TODO: Whitelist restriction
   id: ScientistBioSuit

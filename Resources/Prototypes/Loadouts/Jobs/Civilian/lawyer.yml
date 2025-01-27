@@ -59,3 +59,8 @@
   id: LawyerNeck
   equipment:
     neck: ClothingNeckLawyerbadge
+
+- type: loadout # Ganimed
+  id: NTBedsheet
+  equipment:
+    neck: BedsheetNT

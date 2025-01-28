@@ -99,9 +99,11 @@ namespace Content.IntegrationTests.Tests
             "Amber",
             "Loop",
             "Plasma",
-            "Elkridge"
-
-
+            "Elkridge",
+            //Start-Enterprise
+            "ENTRSaltern",
+            "ENTRCluster"
+            //End-Enterprise
         };
 
         /// <summary>

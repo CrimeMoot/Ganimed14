@@ -21,6 +21,9 @@
     maxAngle: 0
     angleIncrease: -3
   - type: Gun
+    selectedMode: FullAuto
+    availableModes:
+      - FullAuto
     angleDecay: 25
     angleIncrease: 6
     cameraRecoilScalar: 5

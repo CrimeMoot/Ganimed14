@@ -3,7 +3,7 @@
   parent: BaseWeaponShotgun
   id: WeaponShotgun39
   suffix: Дробовик
-  description: ББоевое ружье XM1014 - это полуавтоматическое ружье, часто используемое стрелками-любителями и силовиками. Использует патроны 12-го калибра.
+  description: Боевое ружье XM1014 - это полуавтоматическое ружье, часто используемое стрелками-любителями и силовиками. Использует патроны 12-го калибра.
   components:
   - type: Sprite
     sprite: Backmen/Objects/Weapons/Gunsx64/Shotguns/sh-39/big.rsi

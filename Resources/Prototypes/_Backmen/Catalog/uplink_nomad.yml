@@ -66,27 +66,6 @@
     - id: MagazineRifleRocket20
     - id: MagazineRifleRocket20
 
-- type: listing
-  id: UplinkAKSUBundle
-  name: набор "AKSU"
-  description: Оружие ГРУ СССП, надежное, компактное, а самое главное что ничем не отличается от своего более старшего брата, поэтому его и любят отряды особого назначения. В комплетке 3 магазина.
-  icon: { sprite: Backmen/Objects/Weapons/Gunsx64/Rifles/aksu.rsi, state: icon }
-  productEntity: ClothingBackpackDuffelSyndicateFilledAKSU
-  cost:
-    Telecrystal: 15
-  categories:
-  - UplinkBundles
-
-- type: entity
-  parent: ClothingBackpackDuffelSyndicate
-  id: ClothingBackpackDuffelSyndicateFilledAKSU
-  name: набор "AKSU"
-  components:
-  - type: StorageFill
-    contents:
-    - id: WeaponRifleAKSU
-    - id: MagazineLightRifle
-    - id: MagazineLightRifle
 
 - type: listing
   id: UplinkStG44Bundle
@@ -304,28 +283,6 @@
       amount: 2
 
 - type: listing
-  id: UplinkMG42Bundle
-  name: Набор "MG42"
-  description: Очень старый общевойсковой пулемет Объеденненого Правительства Земли, все оригинальные компоненты были заменены более усовршенственными, а барабан был дополнен БлюСпейс технологией, для более бесперебойной стрельбы. Имеет 1 магазин и 2 ящика патронов.
-  icon: { sprite: Backmen/Objects/Weapons/Gunsx64/LMGs/mg42/big.rsi, state: icon }
-  productEntity: ClothingBackpackDuffelSyndicateFilledMG42
-  cost:
-    Telecrystal: 60
-  categories:
-  - UplinkBundles
-
-- type: entity
-  parent: ClothingBackpackDuffelSyndicate
-  id: ClothingBackpackDuffelSyndicateFilledMG42
-  name: набор "MG42"
-  components:
-  - type: StorageFill
-    contents:
-    - id: WeaponLightMachineGunMG42
-    - id: MagazineBoxCaselessRifleBig
-      amount: 2
-
-- type: listing
   id: UplinkBR64Bundle
   name: Набор "BR-64"
   description: Марксменская тяжелая винтовка, имеет автодосылатель затвора, что облегчает эксплоатирование оружия (но не его чистку). Имеет 3 магазина .60 калибра.
@@ -389,51 +346,6 @@
     contents:
     - id: WeaponShotgun12
     - id: ClothingBeltShellShotgunFill
-
-- type: listing
-  id: UplinkFlamethrowerBundle
-  name: набор "Огнемет М6"
-  description: Огнемет имеющий шланг под специальный резервуар с огненой смесью, которая способна гореть даже в полном вакууме! Имеет в наборе 1 powerpack.
-  icon: { sprite: Backmen/Objects/Weapons/Gunsx64/Flamethrowers/M6/big.rsi, state: icon }
-  productEntity: CrateFlamethrowerBundle
-  cost:
-    Telecrystal: 12
-  categories:
-  - UplinkBundles
-
-- type: entity
-  id: CrateFlamethrowerBundle
-  suffix: Filled
-  parent: CrateSyndicate
-  name: flamethrower bundle
-  description: Contains everything except a big gun to go postal.
-  components:
-  - type: StorageFill
-    contents:
-      - id: WeaponflamethrowerSG
-      - id: PowerpackFlame
-
-- type: listing
-  id: UplinkFlamethrower
-  name: Огнемет М6
-  description: Огнемет с небольшой специальным портом под маленькие баллоны с огненой смесью, которая способна гореть даже в полном вакууме!
-  icon: { sprite: Backmen/Objects/Weapons/Gunsx64/Flamethrowers/M6/big.rsi, state: icon }
-  productEntity: FirethrowerGun
-  cost:
-    Telecrystal: 5
-  categories:
-  - UplinkWeaponry
-
-- type: listing
-  id: UplinkFuelTankFirethrower
-  name: Топливный бак
-  description: Топливный бак для огнемёта.
-  icon: { sprite: Backmen/Objects/Weapons/Gunsx64/Flamethrowers/tank.rsi, state: base }
-  productEntity: FuelTankFirethrower
-  cost:
-    Telecrystal: 1
-  categories:
-  - UplinkAmmo
 
 - type: listing
   id: UplinkSniperSR127Bundle

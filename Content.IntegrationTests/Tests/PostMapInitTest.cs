@@ -102,8 +102,8 @@ namespace Content.IntegrationTests.Tests
             "Plasma",
             "Elkridge",
             //Start-Enterprise
-            "ENTRsaltern",
-            "ENTRcluster"
+            "ENTRSaltern",
+            "ENTRCluster"
             //End-Enterprise
         };
 

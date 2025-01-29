@@ -1,28 +1,6 @@
 ﻿#no_mad shit
 
 - type: listing
-  id: UplinkP90Bundle
-  name: набор "P90"
-  description: Старый добрый п90 военного образца, стал символом специальных операций, в комплетке 3 магазина.
-  icon: { sprite: Backmen/Objects/Weapons/Gunsx64/SMGs/p90.rsi, state: icon }
-  productEntity: ClothingBackpackDuffelSyndicateFilledP90
-  cost:
-    Telecrystal: 18
-  categories:
-  - UplinkBundles
-
-- type: entity
-  parent: ClothingBackpackDuffelSyndicate
-  id: ClothingBackpackDuffelSyndicateFilledP90
-  name: набор "P90"
-  components:
-  - type: StorageFill
-    contents:
-    - id: WeaponSubMachineGunP90
-    - id: MagazinePistolTopSubMachineGun
-    - id: MagazinePistolTopSubMachineGun
-
-- type: listing
   id: UplinkAKMSBundle
   name: набор "AKMS"
   description: Символ войны, легендарное оружие зарекомендовавшие себя как самое надежное оружие в истории. В комплетке 3 магазина.
@@ -66,29 +44,6 @@
     - id: MagazineRifleRocket20
     - id: MagazineRifleRocket20
 
-
-- type: listing
-  id: UplinkStG44Bundle
-  name: набор "StG44"
-  description: Первая "Штурмовая Винтовка" в истории, в отличии от её образца 1944 года, имеет современные внутренности, из-за особенности конструкции имеет более высокую скорострельность. В комплетке 3 магазина.
-  icon: { sprite: Backmen/Objects/Weapons/Gunsx64/Rifles/stg44/big.rsi, state: icon }
-  productEntity: ClothingBackpackDuffelSyndicateFilledStG44
-  cost:
-    Telecrystal: 18
-  categories:
-  - UplinkBundles
-
-- type: entity
-  parent: ClothingBackpackDuffelSyndicate
-  id: ClothingBackpackDuffelSyndicateFilledStG44
-  name: набор "StG44"
-  components:
-  - type: StorageFill
-    contents:
-    - id: WeaponRifleSTG44
-    - id: MagazineLightRifle
-    - id: MagazineLightRifle
-
 - type: listing
   id: UplinkVectorBundle
   name: набор "Vector"
@@ -121,49 +76,6 @@
     - id: WeaponSubMachineGunMP7
     - id: MagazinePistolSubMachineGun
     - id: MagazinePistolSubMachineGun
-
-- type: listing
-  id: UplinkMP38Bundle
-  name: набор "MP38"
-  description: Дешевая, простая пушка с открытым затвором, не нуждается в обслуживании... Скорее всего это оружие с тех самых времен... В комплетке 3 магазина.
-  icon: { sprite: Backmen/Objects/Weapons/Gunsx64/SMGs/mp38/big.rsi, state: icon }
-  productEntity: ClothingBackpackDuffelSyndicateFilledMP38
-  cost:
-    Telecrystal: 14
-  categories:
-  - UplinkBundles
-
-- type: entity
-  parent: ClothingBackpackDuffelSyndicate
-  id: ClothingBackpackDuffelSyndicateFilledMP38
-  name: набор "MP38"
-  components:
-  - type: StorageFill
-    contents:
-    - id: WeaponSubMachineGunMP38
-    - id: MagazinePistolBoxSubMachineGun
-    - id: MagazinePistolBoxSubMachineGun
-
-- type: listing
-  id: UplinkPPSH41Bundle
-  name: набор "PPSH41"
-  description: ПиПиСиЭйч 41, стандартный пистолет-пулемет на вооружении СССП, попал на черный рынок из-за частых "набегов" на склады СССП, явно не проданных местными командирами. В комплетке 2 магазина.
-  icon: { sprite: Backmen/Objects/Weapons/Gunsx64/SMGs/ppsh41/big.rsi, state: icon }
-  productEntity: ClothingBackpackDuffelSyndicateFilledPPSH41
-  cost:
-    Telecrystal: 20
-  categories:
-  - UplinkBundles
-
-- type: entity
-  parent: ClothingBackpackDuffelSyndicate
-  id: ClothingBackpackDuffelSyndicateFilledPPSH41
-  name: набор "PPSH41"
-  components:
-  - type: StorageFill
-    contents:
-    - id: WeaponSubMachineGunPPSH41
-    - id: MagazinePistolDrumSubMachineGun
 
 - type: listing
   id: UplinkDEagle
@@ -280,28 +192,6 @@
     contents:
     - id: WeaponLightMachineGunRPD
     - id: MagazineLightRiflePkBox
-      amount: 2
-
-- type: listing
-  id: UplinkBR64Bundle
-  name: Набор "BR-64"
-  description: Марксменская тяжелая винтовка, имеет автодосылатель затвора, что облегчает эксплоатирование оружия (но не его чистку). Имеет 3 магазина .60 калибра.
-  icon: { sprite: Backmen/Objects/Weapons/Gunsx64/Rifles/br-64/big.rsi, state: icon }
-  productEntity: ClothingBackpackDuffelSyndicateFilledBR64
-  cost:
-    Telecrystal: 17
-  categories:
-  - UplinkBundles
-
-- type: entity
-  parent: ClothingBackpackDuffelSyndicate
-  id: ClothingBackpackDuffelSyndicateFilledBR64
-  name: набор "BR-64"
-  components:
-  - type: StorageFill
-    contents:
-    - id: WeaponRifleBR64
-    - id: MagazineHeavyRifleBR64
       amount: 2
 
 - type: listing

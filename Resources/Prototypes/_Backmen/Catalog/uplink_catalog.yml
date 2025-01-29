@@ -122,16 +122,7 @@
   - UplinkImplants
 
 # Weapon and mask
-- type: listing
-  id: UplinkBrassknuckles
-  name: Кастеты
-  description: Пара кастетов, для ваших жертв
-  icon: { sprite: Backmen/Objects/Weapons/Melee/brassknuckles.rsi, state: icon }
-  productEntity: ClothingHandsGlovesBrassknuckles
-  cost:
-    Telecrystal: 1
-  categories:
-  - UplinkWeaponry
+
 
 - type: listing
   id: UplinkExperimentalSyndicateTeleporter

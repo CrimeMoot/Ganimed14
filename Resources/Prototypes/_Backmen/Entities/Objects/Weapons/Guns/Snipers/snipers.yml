@@ -131,12 +131,13 @@
     delay: 1.3
   - type: Telescope # Ataraxia
 
-- type: entity
+- type: entity #ww2
   name: M1 Garand
   parent: BaseWeaponSniper
   id: WeaponSniperGarand
   suffix: Винтовка
   description: Carlford-1 - это обновленная классическая модель, изготовленная Carlford Armories и адаптированная к современным условиям. Большинство заметных отличий - это незначительные модификации рельсов, не считая этого. Это верное воспроизведение с фирменным звуком "пинг" и всем прочим.
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: Backmen/Objects/Weapons/Gunsx64/Snipers/garand/big.rsi
@@ -196,11 +197,12 @@
   - type: UseDelay
     delay: 0.8
 
-- type: entity
+- type: entity #ww2
   name: PTRD-M
   parent: BaseWeaponSniper
   id: WeaponSniperPtrd-m
   description: Переносное противотанковое ружье Драгунова. Стреляет аналоговыми бронебойными снарядами калибра 14,5 мм. Использует противотанковые боеприпасы
+  categories: [ HideSpawnMenu ]
   components:
   - type: Wieldable
   - type: GunRequiresWield

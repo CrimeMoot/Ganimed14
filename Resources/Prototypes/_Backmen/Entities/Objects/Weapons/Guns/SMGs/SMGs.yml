@@ -247,12 +247,13 @@
     zeroVisible: true
   - type: Appearance
 
-- type: entity
+- type: entity #ww2
   name: MP-38
   parent: BaseWeaponSubMachineGun
   id: WeaponSubMachineGunMP38
   suffix: Пистолет-пулемёт
   description: MP-38 - это старый и дешевый пистолет-пулемет, используемый повстанцами, он обладает хорошей производительностью на больших дистанциях в компактном корпусе, хотя и страдает из-за низкой для своего класса скорострельности.
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: Backmen/Objects/Weapons/Gunsx64/SMGs/mp38/big.rsi
@@ -354,12 +355,13 @@
     zeroVisible: true
   - type: Appearance
 
-- type: entity
+- type: entity ##ww2
   name: PPSH-41
   parent: BaseWeaponSubMachineGun
   id: WeaponSubMachineGunPPSH41
   suffix: Пистолет-пулемёт
   description: ППШ-41 или "Папаша" - это пистолет-пулемет модели USSP, который многие террористические организации копировали на протяжении многих лет. Несмотря на малую поражающую способность, его надежность, исключительная долговечность и высокая скорострельность оказываются полезными для рук пользователя.
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: Backmen/Objects/Weapons/Gunsx64/SMGs/ppsh41/big.rsi

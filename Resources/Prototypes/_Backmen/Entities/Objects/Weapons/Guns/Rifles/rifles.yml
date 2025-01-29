@@ -335,12 +335,13 @@
           tags:
             - MagazineRifle
 
-- type: entity
+- type: entity #ww2
   name: STG 44
   parent: BaseWeaponRifle
   id: WeaponRifleSTG44
   suffix: Автомат
   description: Признанная классической, эта модель была названа первой успешной концепцией штурмовой винтовки, которую обычно называют "штурмовой винтовкой". Имеет более высокую, чем обычно, скорость стрельбы для своего класса.
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: Backmen/Objects/Weapons/Gunsx64/Rifles/stg44/big.rsi

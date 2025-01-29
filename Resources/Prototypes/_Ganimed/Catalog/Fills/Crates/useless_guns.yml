@@ -1,0 +1,26 @@
+- type: entity
+  id: CrateArmoryWW2Guns
+  parent: [ CrateWeaponSecure, BaseRestrictedContraband ]
+  name: World War 2 weapons crate
+  description: Where is Mosin rifle?
+  components:
+  - type: StorageFill
+    contents:
+      - id:  WeaponRifleSTG44
+        amount: 3
+      - id: WeaponSniperGarand
+        amount: 3
+      - id: WeaponSniperPtrd-m
+        amount: 3
+      - id:  WeaponSubMachineGunMP38
+        amount: 3
+      - id: WeaponSubMachineGunPPSH41
+        amount: 3
+      - id: WeaponLightMachineGunMG42
+        amount: 3
+      - id: MagazinePistolBoxSubMachineGun
+        amount: 3
+      - id: MagazinePistolDrumSubMachineGun
+        amount: 3
+      - id: WeaponLightMachineGunMG42
+        amount: 3

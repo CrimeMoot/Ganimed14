@@ -152,7 +152,7 @@
       - MagazineRifleLightSniper
   - type: BallisticAmmoProvider
     mayTransfer: true
-    capacity: 20
+    capacity: 10
     proto: CartridgeRifleLight762
     whitelist:
       tags:

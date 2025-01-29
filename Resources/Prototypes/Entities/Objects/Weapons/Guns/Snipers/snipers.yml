@@ -39,14 +39,39 @@
     price: 500
 
 - type: entity
-  name: Kardashev-Mosin
+  name: Kardashev-Mosin #ganimed-edit
   parent: [BaseWeaponSniper, BaseGunWieldable, BaseSyndicateContraband]
   id: WeaponSniperMosin
-  description: A weapon for hunting, or endless trench warfare. Uses .30 rifle ammo.
-  categories: [ HideSpawnMenu ]
+  description: A weapon for hunting, or endless trench warfare. Uses .30 rifle ammo. Now with triangular bayonet 
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Snipers/bolt_gun_wood.rsi
+  - type: Gun
+    fireRate: 0.75
+    useKey: false
+  - type: MeleeWeapon
+    wideAnimationRotation: -135
+    damage:
+      types:
+        Piercing: 6
+    angle: 0
+    animation: WeaponArcThrust
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Piercing: 7
+  - type: GunRequiresWield
+  - type: PumpAction
+    sound: /Audio/Weapons/Guns/Cock/sf_rifle_cock.ogg
+  - type: BallisticAmmoProvider
+    capacity: 5
+    proto: CartridgeRifleLight762
+    whitelist:
+      tags:
+      - CartridgeRifleLight762
+  #- type: Telescope # Ataraxia
 
 - type: entity
   name: Hristov

@@ -201,7 +201,6 @@ MagazinePistolSubMachineGunTopMounted: MagazinePistolTopSubMachineGun
 WeaponShotgunKammerer: WeaponShotguntrenchgun4034
 WeaponSubMachineGunC20r: WeaponSubMachineGunMP7
 WeaponRevolverMateba: WeaponRevolverMatebaNew
-WeaponSniperMosin: WeaponSniperMosinNew
 WeaponShotgunBulldog: WeaponShotgunZauer
 
 # 2023-11-26
@@ -730,3 +729,6 @@ DrinkIrishCarBomb: DrinkIrishSlammer
 #2025-01-06
 ClothingMaskSexyClown: ClothingMaskBlushingClown
 ClothingMaskSexyMime: ClothingMaskBlushingMime
+
+#2025-01-06 Ganimed
+WeaponSniperMosinNew: WeaponSniperMosin

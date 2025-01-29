@@ -18,9 +18,11 @@
   - ClothingEarBrigmedic
   - ClothingMaskBrigmedic
   - ClothingShoesBrigmedic # Ganimed
+  - Underwear # Ganimed
   - Trinkets
   - SurvivalMedical
   - Medals #backmen
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
@@ -32,7 +34,9 @@
   - EyeBlueShield
   - ClothingNeckBlueShield
   - BlueShieldBackpack
+  - Underwear # Ganimed
   - Trinkets
   - Survival
   - Medals #backmen
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts

@@ -163,25 +163,25 @@
   equipment:
     jumpsuit: ClothingUniformJumpskirtVirology
 
-#- type: loadout # Ganimed
-#  id: CoronerJumpsuit
-#  equipment:
-#    jumpsuit: ClothingUniformJumpsuitCoroner
+- type: loadout # Ganimed
+  id: CoronerJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCoroner
 
-#- type: loadout # Ganimed
-#  id: CoronerJumpskirt
-#  equipment:
-#    jumpsuit: ClothingUniformJumpskirtCoroner
+- type: loadout # Ganimed
+  id: CoronerJumpskirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCoroner
 
 - type: loadout # Ganimed
   id: BlackCoronerJumpsuit
   equipment:
-    jumpsuit: ClothingUniformJumpsuitCoronerBlackOriginal
+    jumpsuit: ClothingUniformJumpsuitCoronerBlack
 
 - type: loadout # Ganimed
   id: BlackCoronerJumpskirt
   equipment:
-    jumpsuit: ClothingUniformJumpskirtCoronerBlackOriginal
+    jumpsuit: ClothingUniformJumpskirtCoronerBlack
 
 # Back
 - type: loadout

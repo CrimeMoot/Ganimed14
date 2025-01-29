@@ -7,6 +7,7 @@
   - CaptainJumpsuit
   - CaptainBackpack
   - CaptainOuterClothing
+  - Underwear # Ganimed
   - Trinkets
   - Medals #backmen
   - Survival
@@ -24,6 +25,7 @@
   - HoPBackpack
   - HoPOuterClothing
   - Glasses
+  - Underwear # Ganimed
   - Medals #backmen
   - Survival
   - Trinkets
@@ -67,6 +69,7 @@
   - CommonBackpack
   - BartenderOuterClothing
   - Glasses
+  - Underwear # Ganimed
   - Medals #backmen
   - Survival
   - Trinkets
@@ -81,6 +84,7 @@
   - BartenderJumpsuit
   - CommonBackpack
   - Glasses
+  - Underwear # Ganimed
   - Medals #backmen
   - Survival
   - Trinkets
@@ -99,6 +103,7 @@
   - ChefOuterClothing
   - ChefShoes # Ganimed
   - Glasses
+  - Underwear # Ganimed
   - Medals #backmen
   - Survival
   - Trinkets
@@ -114,6 +119,7 @@
   - LibrarianBelt # Ganimed
   - CommonBackpack
   - Glasses
+  - Underwear # Ganimed
   - Medals #backmen
   - Survival
   - Trinkets
@@ -129,6 +135,7 @@
   - LawyerJumpsuit
   - CommonBackpack
   - Glasses
+  - Underwear # Ganimed
   - Medals #backmen
   - Survival
   - Trinkets
@@ -149,6 +156,7 @@
   - ChaplainOuterClothing
   - ChaplainShoes # Ganimed
   - Glasses
+  - Underwear # Ganimed
   - Medals #backmen
   - Trinkets
   - GroupSpeciesBreathTool
@@ -166,8 +174,9 @@
   - JanitorOuterClothing
   - Glasses
   - Survival
-  - Trinkets
+  - Underwear # Ganimed
   - Medals #backmen
+  - Trinkets
   - JanitorPlunger
   - GroupSpeciesBreathTool
   - SpareClothing # Ganimed
@@ -183,6 +192,7 @@
   - BotanistOuterClothing
   - BotanistShoes # Ganimed
   - Glasses
+  - Underwear # Ganimed
   - Medals #backmen
   - Survival
   - Trinkets
@@ -200,6 +210,7 @@
   - ClownOuterClothing
   - ClownShoes
   - Glasses
+  - Underwear # Ganimed
   - Medals #backmen
   - SurvivalClown
   - TheatricalAttire # Ganimed
@@ -219,6 +230,7 @@
   - MimeOuterClothing
   - MimeBelt
   - Glasses
+  - Underwear # Ganimed
   - Medals #backmen
   - SurvivalMime
   - Trinkets
@@ -234,8 +246,9 @@
   - MusicianOuterClothing
   - Glasses
   - Survival
-  - Trinkets
+  - Underwear # Ganimed
   - Medals #backmen
+  - Trinkets
   - Instruments
   - GroupSpeciesBreathTool
   - SpareClothing # Ganimed
@@ -253,6 +266,7 @@
   - QuartermasterOuterClothing
   - QuartermasterShoes
   - Glasses
+  - Underwear # Ganimed
   - Medals #backmen
   - Survival
   - Trinkets
@@ -270,6 +284,7 @@
   - CargoTechnicianOuterClothing
   - CargoTechnicianShoes
   - Glasses
+  - Underwear # Ganimed
   - Medals #backmen
   - Survival
   - Trinkets
@@ -286,6 +301,7 @@
   - SalvageSpecialistBelt # Ganimed
   - SalvageSpecialistShoes
   - Glasses
+  - Underwear # Ganimed
   - Medals #backmen
   - Survival
   - Trinkets
@@ -304,6 +320,7 @@
   - ChiefEngineerNeck
   - ChiefEngineerOuterClothing
   - ChiefEngineerShoes
+  - Underwear # Ganimed
   - Medals #backmen
   - SurvivalExtended
   - Trinkets
@@ -334,6 +351,7 @@
   - StationEngineerOuterClothing
   - StationEngineerShoes
   - StationEngineerID
+  - Underwear # Ganimed
   - Medals #backmen
   - SurvivalExtended
   - Trinkets
@@ -351,6 +369,7 @@
   - AtmosphericTechnicianBackpack
   - AtmosphericTechnicianOuterClothing
   - AtmosphericTechnicianShoes
+  - Underwear # Ganimed
   - Medals #backmen
   - SurvivalExtended
   - Trinkets
@@ -371,6 +390,7 @@
   - ResearchDirectorGloves # Ganimed
   - ResearchDirectorShoes
   - ScientistGlasses # Ganimed
+  - Underwear # Ganimed
   - Medals #backmen
   - Survival
   - Trinkets
@@ -392,6 +412,7 @@
   - ScientistShoes
   - ScientistPDA
   - ScientistGlasses # Ganimed
+  - Underwear # Ganimed
   - Medals #backmen
   - Survival
   - Trinkets
@@ -406,6 +427,7 @@
   - ResearchAssistantJumpsuit
   - ScientistBackpack
   - Glasses
+  - Underwear # Ganimed
   - Medals #backmen
   - Survival
   - Trinkets
@@ -426,6 +448,7 @@
   - HeadofSecurityOuterClothing
   - SecurityShoes
   - SecurityOfficerPocket #backmen
+  - Underwear # Ganimed
   - Medals #backmen
   - SurvivalSecurity
   - Trinkets
@@ -444,6 +467,7 @@
   - WardenOuterClothing
   - SecurityShoes
   - SecurityOfficerPocket #Backmen
+  - Underwear # Ganimed
   - Medals #backmen
   - SurvivalSecurity
   - Trinkets
@@ -464,6 +488,7 @@
   - SecurityPDA
   - SecurityBelt
   - SecurityOfficerPocket #Backmen
+  - Underwear # Ganimed
   - Medals #backmen
   - SurvivalSecurity
   - Trinkets
@@ -483,6 +508,7 @@
   - DetectiveOuterClothing
   - SecurityShoes
   - DetectiveRevolver
+  - Underwear # Ganimed
   - Medals #backmen
   - SurvivalSecurity
   - Trinkets
@@ -497,6 +523,7 @@
   - SecurityCadetJumpsuit
   - SecurityBackpack
   - SecurityOfficerPocket
+  - Underwear # Ganimed
   - Medals #backmen
   - SurvivalSecurity
   - Trinkets
@@ -518,6 +545,7 @@
   - ChiefMedicalOfficerNeck
   - ChiefMedicalOfficerShoes
   - MedicalDoctorGlasses # Ganimed
+  - Underwear # Ganimed
   - Medals #backmen
   - SurvivalMedical
   - Trinkets
@@ -540,6 +568,7 @@
   - MedicalShoes
   - MedicalDoctorPDA
   - MedicalDoctorGlasses # Ganimed
+  - Underwear # Ganimed
   - Medals #backmen
   - SurvivalMedical
   - Trinkets
@@ -554,6 +583,7 @@
   - MedicalInternJumpsuit
   - MedicalBackpack
   - Glasses
+  - Underwear # Ganimed
   - Medals #backmen
   - SurvivalMedical
   - Trinkets
@@ -571,6 +601,7 @@
   - ChemistBackpack
   - ChemistOuterClothing
   - MedicalShoes
+  - Underwear # Ganimed
   - Medals #backmen
   - SurvivalMedical
   - Trinkets
@@ -590,6 +621,7 @@
   - ParamedicOuterClothing
   - ParamedicShoes
   - Glasses
+  - Underwear # Ganimed
   - Medals #backmen
   - SurvivalMedical
   - Trinkets
@@ -604,6 +636,7 @@
   - GroupTankHarness
   - CommonBackpack
   - Glasses
+  - Underwear # Ganimed
   - Medals #backmen
   - Survival
   - Trinkets
@@ -618,6 +651,7 @@
   - ReporterJumpsuit
   - CommonBackpack
   - Glasses
+  - Underwear # Ganimed
   - Medals #backmen
   - Survival
   - Trinkets
@@ -633,6 +667,7 @@
   - PsychologistJumpsuit
   - MedicalBackpack
   - Glasses
+  - Underwear # Ganimed
   - Medals #backmen
   - Survival
   - Trinkets
@@ -649,6 +684,7 @@
   - BoxerGloves
   - CommonBackpack
   - Glasses
+  - Underwear # Ganimed
   - Medals #backmen
   - Survival
   - Trinkets

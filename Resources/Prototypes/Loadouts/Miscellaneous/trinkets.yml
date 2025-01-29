@@ -8,6 +8,14 @@
       department: Command
       time: 7200 # 2 hours
 
+- type: loadoutEffectGroup # Ganimed 
+  id: TenOverall
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:OverallPlaytimeRequirement
+      time: 36000 # 10hr
+
 # Flowers
 - type: loadout
   id: FlowerWreath
@@ -323,10 +331,8 @@
 - type: loadout
   id: GlowstickBase
   effects:
-  - !type:JobRequirementLoadoutEffect
-    requirement:
-      !type:OverallPlaytimeRequirement
-      time: 36000 # 10hr
+  - !type:GroupLoadoutEffect
+    proto: TenOverall
   storage:
     back:
     - GlowstickBase
@@ -334,10 +340,8 @@
 - type: loadout
   id: GlowstickYellow
   effects:
-  - !type:JobRequirementLoadoutEffect
-    requirement:
-      !type:OverallPlaytimeRequirement
-      time: 36000 # 10hr
+  - !type:GroupLoadoutEffect
+    proto: TenOverall
   storage:
     back:
     - GlowstickYellow
@@ -345,10 +349,8 @@
 - type: loadout
   id: GlowstickRed
   effects:
-  - !type:JobRequirementLoadoutEffect
-    requirement:
-      !type:OverallPlaytimeRequirement
-      time: 36000 # 10hr
+  - !type:GroupLoadoutEffect
+    proto: TenOverall
   storage:
     back:
     - GlowstickRed
@@ -356,10 +358,8 @@
 - type: loadout
   id: GlowstickPurple
   effects:
-  - !type:JobRequirementLoadoutEffect
-    requirement:
-      !type:OverallPlaytimeRequirement
-      time: 36000 # 10hr
+  - !type:GroupLoadoutEffect
+    proto: TenOverall
   storage:
     back:
     - GlowstickPurple
@@ -367,10 +367,8 @@
 - type: loadout
   id: GlowstickBlue
   effects:
-  - !type:JobRequirementLoadoutEffect
-    requirement:
-      !type:OverallPlaytimeRequirement
-      time: 36000 # 10hr
+  - !type:GroupLoadoutEffect
+    proto: TenOverall
   storage:
     back:
     - GlowstickBlue
@@ -379,10 +377,8 @@
 - type: loadout
   id: TowelColorWhite
   effects:
-  - !type:JobRequirementLoadoutEffect
-    requirement:
-      !type:OverallPlaytimeRequirement
-      time: 36000 # 10hr
+  - !type:GroupLoadoutEffect
+    proto: TenOverall
   storage:
     back:
     - TowelColorWhite

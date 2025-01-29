@@ -6,8 +6,10 @@
   - CommonBackpack
   - Survival
   - Trinkets
+  - Underwear # Ganimed
   - Medals #backmen
   - GroupSpeciesBreathTool
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
@@ -19,6 +21,10 @@
   - SecurityBelt
   - SecurityShoes
   - Survival
+  - Underwear # Ganimed
+  - Medals #backmen
   - Trinkets
+  - SecurityStar
   - GroupSpeciesBreathTool
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts

@@ -356,3 +356,14 @@
   - type: Tag
     tags:
     - WhitelistChameleon
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitShortsleeveSuit
+  name: short-sleeve suit
+  description: I don't lose things. I place things in locations which later elude me.
+  components:
+  - type: Sprite
+    sprite: Corvax/Clothing/Uniforms/Jumpsuit/psychologist.rsi
+  - type: Clothing
+    sprite: Corvax/Clothing/Uniforms/Jumpsuit/psychologist.rsi

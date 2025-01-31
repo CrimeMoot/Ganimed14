@@ -4,6 +4,7 @@
   id: WeaponEarthGovLaserRifle
   suffix: Винтовка
   description: Стандартная лазерная винтовка земного правительства, используемая армией и полицией.
+  categories: [ HideSpawnMenu ] #for remove
   components:
   - type: Sprite
     sprite: Backmen/Objects/Weapons/Gunsx64/Battery/EG-R/big.rsi
@@ -51,6 +52,7 @@
   id: WeaponEarthGovLaserMG
   suffix: Пулемёт
   description: Стандартный лазерный пулемет земного правительства, используемый армией. Тяжелый и смертоносный.
+  categories: [ HideSpawnMenu ] #for remove
   components:
   - type: Sprite
     sprite: Backmen/Objects/Weapons/Gunsx64/Battery/EG-MG/big.rsi
@@ -102,6 +104,7 @@
   id: WeaponEarthGovLaserCarbine
   suffix: Пистолет-пулемёт
   description: Стандартный лазерный карабин правительства Земли, используемый армией и полицией. Благодаря короткому стволу он обладает лучшей маневренностью в узких пространствах.
+  categories: [ HideSpawnMenu ] #for remove
   components:
   - type: Sprite
     sprite: Backmen/Objects/Weapons/Gunsx64/Battery/EG-C/big.rsi
@@ -150,6 +153,7 @@
   id: WeaponEarthGovLaserPistol
   suffix: Пистолет
   description: Стандартный лазерный пистолет земного правительства, используемый армией и полицией.
+  categories: [ HideSpawnMenu ] #for remove
   components:
   - type: Gun
     cameraRecoilScalar: 0.5
@@ -180,6 +184,7 @@
   id: WeaponEarthGovLaserSniper
   suffix: Винтовка
   description: Тяжелая снайперская винтовка правительства Земли для длительных боевых действий.
+  categories: [ HideSpawnMenu ] #for remove
   components:
   - type: Sprite
     sprite: Backmen/Objects/Weapons/Gunsx64/Battery/EG-S/big.rsi

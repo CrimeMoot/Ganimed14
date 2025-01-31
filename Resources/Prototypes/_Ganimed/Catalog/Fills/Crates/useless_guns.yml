@@ -12,7 +12,7 @@
         amount: 3
       - id: WeaponSniperPtrd-m
         amount: 3
-      - id:  WeaponSubMachineGunMP38
+      - id: WeaponSubMachineGunMP38
         amount: 3
       - id: WeaponSubMachineGunPPSH41
         amount: 3
@@ -24,3 +24,26 @@
         amount: 3
       - id: WeaponLightMachineGunMG42
         amount: 3
+        
+- type: entity
+  id: CrateArmoryEarthGovLasers
+  parent: [ CrateWeaponSecure, BaseRestrictedContraband ]
+  name: Earth Gov laser weapons crate
+  description: Burn down a fucking xeno NOW!
+  components:
+  - type: StorageFill
+    contents:
+      - id: WeaponEarthGovLaserPistol
+        amount: 2
+      - id: WeaponEarthGovLaserCarbine
+        amount: 2
+      - id: WeaponEarthGovLaserCarabinCell
+        amount: 2
+      - id: WeaponEarthGovLaserRifle
+        amount: 2
+      - id: WeaponEarthGovLaserSniper
+        amount: 2
+      - id: WeaponEarthGovLaserSniperCell
+        amount: 2
+      - id: WeaponEarthGovLaserMG
+        amount: 2

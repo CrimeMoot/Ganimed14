@@ -186,9 +186,6 @@ FoodTinMREOpen: FoodTinMRE
 
 # 2023-11-05
 WeaponRifleAk: WeaponAKMSRifle
-WeaponXrayCannon: WeaponEarthGovXRay
-WeaponLaserCarbine: WeaponEarthGovLaserRifle
-WeaponLaserCannon: WeaponEarthGovLaserSniper
 WeaponRifleLecter: WeaponRifleAR18
 WeaponSubMachineGunAtreides: WeaponSubMachineGunMP7
 WeaponPistolViper: WeaponPistolHIB88M4

@@ -46,9 +46,9 @@
   id: UplinkRifleMosin
   name: uplink-rifle-mosin-name
   description: uplink-rifle-mosin-desc
-  productEntity: WeaponSniperMosinNew
+  productEntity: WeaponSniperMosin
   cost:
-    Telecrystal: 1
+    Telecrystal: 2
   categories:
   - UplinkWeaponry
 

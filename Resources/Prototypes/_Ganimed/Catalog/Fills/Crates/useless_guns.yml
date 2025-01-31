@@ -37,7 +37,7 @@
         amount: 2
       - id: WeaponEarthGovLaserCarbine
         amount: 2
-      - id: WeaponEarthGovLaserCarabinCell
+      - id: WeaponLaserCarabinCell
         amount: 2
       - id: WeaponEarthGovLaserRifle
         amount: 2
@@ -46,4 +46,14 @@
       - id: WeaponEarthGovLaserSniperCell
         amount: 2
       - id: WeaponEarthGovLaserMG
+        amount: 2
+      - id: MagazinePulseRifleSWS
+        amount: 3
+      - id: EnergyMag
+        amount: 3
+      - id: PulseMag
+        amount: 3
+      - id: BigEnergyMag
+        amount: 3
+      - id: WeaponPulseRifleSpetnaz
         amount: 2

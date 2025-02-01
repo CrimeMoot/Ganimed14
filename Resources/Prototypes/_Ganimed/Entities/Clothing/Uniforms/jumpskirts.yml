@@ -131,7 +131,7 @@
 - type: entity
   parent: ClothingUniformSkirtBase
   id: ClothingUniformJumpskirtJesterGreen
-  name: green jester suit
+  name: green jester skirt-suit
   description: It makes you look HONKable!
   components:
   - type: Sprite

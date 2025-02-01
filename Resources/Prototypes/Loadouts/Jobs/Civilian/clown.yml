@@ -46,6 +46,12 @@
   equipment:
     back: ClothingBackpackDuffelClown
 
+#- type: loadout # Ganimed TODO: Whitelist restriction
+#  id: CluwneBackpackJigglesVonJonkerton
+#  whitelisted: true
+#  equipment:
+#    back: ClothingBackpackCluwneRemoveable
+
 # Shoes
 - type: loadout
   id: ClownShoes

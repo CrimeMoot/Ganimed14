@@ -92,6 +92,22 @@
   - SpareJumpsuitRandom
   - SpareJumpsuitRandomShirt
   - SpareCossackSuit
+  - SpareBlackElegantDress
+  - SpareRedElegantDress
+  - SpareGreenElegantDress
+  - SpareBlueElegantDress
+  - SparePurpleElegantDress
+  - SpareRedStripedDress
+  - SpareOrangeStripedDress
+  - SpareGreenStripedDress
+  - SpareCyanStripedDress
+  - SparePinkStripedDress
+  - SpareRedTurtleneckDress
+  - SpareYellowTurtleneckDress
+  - SpareGreenTurtleneckDress
+  - SpareBlueTurtleneckDress
+  - SparePurpleTurtleneckDress
+  - SpareYellowOldDress
   # Gloves
   - SpareGlovesFingerless
   - SpareGlovesColorBlack
@@ -190,6 +206,13 @@
   - NekoBrassiere
   - ClothBinderBrassiere
   # Underpants
+  - WhiteUnderpants
+  - BlackUnderpants
+  - BrownUnderpants
+  - RedUnderpants
+  - YellowUnderpants
+  - GreenUnderpants
+  - BlueUnderpants
   - WhitePanties
   - BlackPanties
   - BrownPanties
@@ -237,3 +260,36 @@
   - FishnetStockings
   - NekoStockings
   - LightBlueStripedStockings
+
+# Jobs
+# CentCom
+
+
+# Command
+- type: loadoutGroup # Ganimed
+  id: BridgeOfficerHead
+  name: loadout-group-bridge-officer-head
+  minLimit: 0
+  loadouts: 
+  - BridgeOfficerBeret
+
+- type: loadoutGroup # Ganimed
+  id: BridgeOfficerNeck
+  name: loadout-group-bridge-officer-neck
+  minLimit: 0
+  loadouts: 
+  - BridgeOfficerMantle
+
+- type: loadoutGroup # Ganimed
+  id: BridgeOfficerJumpsuit
+  name: loadout-group-bridge-officer-jumpsuit
+  loadouts:
+  - BridgeOfficerUniform
+  - BridgeOfficerBlackJumpsuit
+
+- type: loadoutGroup # Ganimed
+  id: BridgeOfficerBelt
+  name: loadout-group-bridge-officer-belt
+  minLimit: 0
+  loadouts:
+  - BridgeOfficerWebbing

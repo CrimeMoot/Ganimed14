@@ -8,3 +8,10 @@
   id: PsychologistJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtPsychologist
+
+# Shoes, Ganimed
+- type: loadout
+  id: LeatherShoes
+  whitelisted: true
+  equipment:
+    shoes: ClothingShoesLeather

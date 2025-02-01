@@ -64,3 +64,16 @@
   id: NTBedsheet
   equipment:
     neck: BedsheetNT
+
+# OuterClothing, Ganimed
+- type: loadout
+  id: JudgeRobes
+  equipment:
+    outerClothing: ClothingOuterRobesJudge
+
+# Shoes, Ganimed
+- type: loadout
+  id: LaceupShoes
+  whitelisted: true
+  equipment:
+    shoes: ClothingShoesBootsLaceup

@@ -34,6 +34,7 @@
 
 - type: loadout # Ganimed TODO: Whitelist restriction
   id: ResearchDirectorCloakLong
+  whitelisted: true
   equipment:
     neck: ClothingLongCloakRD
   effects:
@@ -59,13 +60,14 @@
 # Gloves, Ganimed
 - type: loadout # TODO: Whitelist restriction
   id: PowerGloves
+  whitelisted: true
   equipment:
     gloves: ClothingHandsGlovesPowerglove
   effects:
   - !type:JobRequirementLoadoutEffect
     requirement:
       !type:RoleTimeRequirement
-      role: JobResearchDirector # JobChiefEngineer
+      role: JobChiefEngineer # JobResearchDirector
       time: 180000 # 50hr
 
 # OuterClothing
@@ -82,6 +84,7 @@
 # Shoes, Ganimed
 - type: loadout # TODO: Whitelist restriction
   id: ScienceMagBoots
+  whitelisted: true
   equipment:
     shoes: ClothingShoesBootsMagSci
   effects:

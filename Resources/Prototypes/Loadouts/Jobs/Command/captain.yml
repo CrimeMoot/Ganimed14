@@ -71,6 +71,7 @@
 
 - type: loadout # Ganimed TODO: Whitelist restriction
   id: CaptainCloakLong
+  whitelisted: true
   equipment:
     neck: ClothingLongCloakCap
   effects:

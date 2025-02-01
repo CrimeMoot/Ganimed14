@@ -145,6 +145,7 @@
 
 - type: loadout # TODO: Whitelist restriction
   id: SpareGoldBandana
+  sponsorOnly: true
   storage:
     back:
     - ClothingHeadBandGold
@@ -187,6 +188,7 @@
 
 - type: loadout # TODO: Whitelist restriction
   id: SpareBeaverHat
+  whitelisted: true
   storage:
     back:
     - ClothingHeadHatBeaverHat
@@ -600,9 +602,123 @@
 
 - type: loadout
   id: SpareCossackSuit
+  whitelisted: true
   storage:
     back:
     - ClothingUniformJumpsuitCossack
+
+#Dresses
+- type: loadout
+  id: SpareBlackElegantDress
+  whitelisted: true
+  storage:
+    back:
+    - ClothingUniformJumpskirtBlackElegantDress
+
+- type: loadout
+  id: SpareRedElegantDress
+  whitelisted: true
+  storage:
+    back:
+    - ClothingUniformJumpskirtRedElegantDress
+
+- type: loadout
+  id: SpareGreenElegantDress
+  whitelisted: true
+  storage:
+    back:
+    - ClothingUniformJumpskirtGreenElegantDress
+
+- type: loadout
+  id: SpareBlueElegantDress
+  whitelisted: true
+  storage:
+    back:
+    - ClothingUniformJumpskirtBlueElegantDress
+
+- type: loadout
+  id: SparePurpleElegantDress
+  whitelisted: true
+  storage:
+    back:
+    - ClothingUniformJumpskirtPurpleElegantDress
+
+- type: loadout
+  id: SpareRedStripedDress
+  whitelisted: true
+  storage:
+    back:
+    - ClothingUniformJumpskirtRedStripedDress
+
+- type: loadout
+  id: SpareOrangeStripedDress
+  whitelisted: true
+  storage:
+    back:
+    - ClothingUniformJumpskirtOrangeStripedDress
+
+- type: loadout
+  id: SpareGreenStripedDress
+  whitelisted: true
+  storage:
+    back:
+    - ClothingUniformJumpskirtGreenStripedDress
+
+- type: loadout
+  id: SpareCyanStripedDress
+  whitelisted: true
+  storage:
+    back:
+    - ClothingUniformJumpskirtCyanStripedDress
+
+- type: loadout
+  id: SparePinkStripedDress
+  whitelisted: true
+  storage:
+    back:
+    - ClothingUniformJumpskirtPinkStripedDress
+
+- type: loadout
+  id: SpareRedTurtleneckDress
+  whitelisted: true
+  storage:
+    back:
+    - ClothingUniformJumpskirtRedTurtleneckDress
+
+- type: loadout
+  id: SpareYellowTurtleneckDress
+  whitelisted: true
+  storage:
+    back:
+    - ClothingUniformJumpskirtYellowTurtleneckDress
+
+- type: loadout
+  id: SpareGreenTurtleneckDress
+  whitelisted: true
+  storage:
+    back:
+    - ClothingUniformJumpskirtGreenTurtleneckDress
+
+- type: loadout
+  id: SpareBlueTurtleneckDress
+  whitelisted: true
+  storage:
+    back:
+    - ClothingUniformJumpskirtBlueTurtleneckDress
+
+- type: loadout
+  id: SparePurpleTurtleneckDress
+  whitelisted: true
+  storage:
+    back:
+    - ClothingUniformJumpskirtPurpleTurtleneckDress
+
+- type: loadout
+  id: SpareYellowOldDress
+  sponsorOnly: true
+  storage:
+    back:
+    - ClothingUniformJumpskirtYellowOldDress
 
 # Hands/Gloves
 - type: loadout
@@ -776,6 +892,7 @@
 
 - type: loadout # TODO: Whitelist restriction
   id: SpareHieroglyphicCloak
+  whitelisted: true
   storage:
     back:
     - ClothingNeckCloakHieroglyphics
@@ -785,6 +902,7 @@
 
 - type: loadout # TODO: Whitelist restriction
   id: SpareOrangeCloak
+  whitelisted: true
   storage:
     back:
     - ClothingNeckCloakOrange
@@ -794,6 +912,7 @@
 
 - type: loadout # TODO: Whitelist restriction
   id: SpareBling
+  sponsorOnly: true
   storage:
     back:
     - ClothingNeckBling
@@ -954,6 +1073,7 @@
 
 - type: loadout # TODO: Whitelist restriction
   id: SpareHospitalGown
+  whitelisted: true
   storage:
     back:
     - ClothingOuterHospitalGown

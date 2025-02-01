@@ -68,6 +68,7 @@
 
 - type: loadout
   id: HeadsetMedicalScience
+  whitelisted: true
   equipment:
     ears: ClothingHeadsetMedicalScience
   effects:
@@ -134,6 +135,7 @@
 
 - type: loadout # Ganimed TODO: Whitelist restriction
   id: FormalScientistJumpsuit
+  whitelisted: true
   effects:
   - !type:GroupLoadoutEffect
     proto: SeniorResearcher
@@ -177,6 +179,11 @@
   equipment:
     outerClothing: ClothingOuterCoatRobo
 
+- type: loadout # Ganimed
+  id: RoboticistOriginalLabCoat
+  equipment:
+    outerClothing: ClothingOuterCoatRoboOriginal
+
 - type: loadout
   id: RoboticistWintercoat
   equipment:
@@ -200,6 +207,7 @@
 
 - type: loadout # Ganimed TODO: Whitelist restriction
   id: ScientistBioSuit
+  whitelisted: true
   dummyEntity: ClothingOuterBioScientist
   effects:
   - !type:JobRequirementLoadoutEffect
@@ -213,6 +221,7 @@
 
 - type: loadout # Ganimed
   id: RadSuit
+  whitelisted: true
   effects:
   - !type:JobRequirementLoadoutEffect
     requirement:
@@ -223,7 +232,8 @@
     outerClothing: ClothingOuterSuitRad
 
 - type: loadout # Ganimed
-  id: BombSuit
+  id: ScienceBombSuit
+  whitelisted: true
   effects:
   - !type:JobRequirementLoadoutEffect
     requirement:

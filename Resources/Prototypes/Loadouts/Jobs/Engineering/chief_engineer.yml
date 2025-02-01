@@ -47,6 +47,7 @@
 
 - type: loadout # Ganimed TODO: Whitelist restriction
   id: ArmoredHarthat
+  whitelisted: true
   equipment:
     head: ClothingHeadHatHardhatArmored
   effects:
@@ -78,6 +79,7 @@
 
 - type: loadout # Ganimed TODO: Whitelist restriction
   id: ChiefEngineerCloakLong
+  whitelisted: true
   equipment:
     neck: ClothingLongCloakCE
   effects:

@@ -8,9 +8,25 @@
       role: JobSalvageSpecialist
       time: 72000 #20 hrs
 
+# Head, Ganimed
+- type: loadout
+  id: MercenaryHeadBand
+  equipment:
+    head: ClothingHeadBandMerc
+
+- type: loadout # TODO: Whitelist restriction
+  id: SpaceBearHide
+  sponsorOnly: true
+  equipment:
+    head: MaterialHideBear
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MasterSalvager
+
 # Neck, Ganimed
 - type: loadout # TODO: Whitelist restriction
   id: MinerCloak
+  whitelisted: true
   equipment:
     neck: ClothingNeckCloakMiner
   effects:
@@ -25,6 +41,7 @@
 
 - type: loadout # TODO: Whitelist restriction
   id: HeadsetMining
+  whitelisted: true
   equipment:
     ears: ClothingHeadsetMining
   effects:
@@ -56,6 +73,7 @@
 # Belt, Ganimed
 - type: loadout # TODO: Whitelist restriction
   id: SalvageWebbing
+  whitelisted: true
   equipment:
     belt: ClothingBeltSalvageWebbing
   effects:

@@ -25,6 +25,7 @@
   - HoPBackpack
   - HoPOuterClothing
   - Glasses
+  - HoPShoes # Ganimed
   - Underwear # Ganimed
   - Medals #backmen
   - Survival
@@ -81,7 +82,7 @@
   id: JobServiceWorker
   groups:
   - GroupTankHarness
-  - BartenderJumpsuit
+  - ServiceWorkerJumpsuit
   - CommonBackpack
   - Glasses
   - Underwear # Ganimed
@@ -133,6 +134,7 @@
   - GroupTankHarness
   - LawyerNeck
   - LawyerJumpsuit
+  - MagistrateOuterClothing # Ganimed
   - CommonBackpack
   - Glasses
   - Underwear # Ganimed
@@ -189,6 +191,7 @@
   - BotanistHead
   - BotanistJumpsuit
   - BotanistBackpack
+  - BotanistGloves # Ganimed
   - BotanistOuterClothing
   - BotanistShoes # Ganimed
   - Glasses
@@ -296,6 +299,7 @@
   id: JobSalvageSpecialist
   groups:
   - GroupTankHarness
+  - SalvageSpecialistHead # Ganimed
   - SalvageSpecialistBackpack
   - SalvageSpecialistOuterClothing
   - SalvageSpecialistBelt # Ganimed
@@ -599,6 +603,7 @@
   - ChemistJumpsuit
   - MedicalGloves
   - ChemistBackpack
+  - ChemistGlasses # Ganimed
   - ChemistOuterClothing
   - MedicalShoes
   - Underwear # Ganimed

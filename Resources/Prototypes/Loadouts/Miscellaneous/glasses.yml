@@ -76,6 +76,7 @@
 # Gar, Ganimed TODO: Whitelist restriction
 - type: loadout
   id: GlassesGar
+  whitelisted: true
 #  effects:
 #  - !type:GroupLoadoutEffect
 #    proto: 
@@ -85,6 +86,7 @@
 # Gar Orange, Ganimed
 - type: loadout
   id: GlassesGarOrange
+  whitelisted: true
 #  effects:
 #  - !type:GroupLoadoutEffect
 #    proto: 
@@ -94,6 +96,7 @@
 # Gar Giga, Ganimed
 - type: loadout
   id: GlassesGarGiga
+  sponsorOnly: true
 #  effects:
 #  - !type:GroupLoadoutEffect
 #    proto: 

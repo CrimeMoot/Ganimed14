@@ -233,6 +233,14 @@
   - HoPWintercoat
   - HoPCoat # Ganimed
 
+- type: loadoutGroup # Ganimed
+  id: HoPShoes
+  name: loadout-group-hop-shoes
+  loadouts:
+  - BrownShoes
+  - LeatherShoes
+  - LaceupShoes
+
 # Civilian
 - type: loadoutGroup
   id: PassengerJumpsuit
@@ -273,6 +281,13 @@
   minLimit: 0
   loadouts:
   - Mantle
+
+- type: loadoutGroup # Ganimed
+  id: CommonBelt
+  name: loadout-group-common-belt
+  minLimit: 0
+  loadouts:
+  - WaistBag
 
 - type: loadoutGroup
   id: PassengerOuterClothing
@@ -320,6 +335,15 @@
   - BartenderVest
   - BartenderApron
   - BartenderWintercoat
+
+- type: loadoutGroup # Ganimed
+  id: ServiceWorkerJumpsuit
+  name: loadout-group-service-worker-jumpsuit
+  loadouts:
+  - BartenderJumpsuit
+  - BartenderJumpskirt
+  - BartenderJumpsuitPurple
+  - JanimaidUniform
 
 - type: loadoutGroup
   id: ChefHead
@@ -399,6 +423,13 @@
   - LawyerNeck
   - NTBedsheet # Ganimed
 
+- type: loadoutGroup # Ganimed
+  id: MagistrateOuterClothing
+  name: loadout-group-magistrate-outerclothing
+  minLimit: 0
+  loadouts:
+  - JudgeRobes
+
 - type: loadoutGroup
   id: ChaplainHead
   name: loadout-group-chaplain-head
@@ -472,6 +503,7 @@
   loadouts:
   - JanitorJumpsuit
   - JanitorJumpskirt
+  - JanimaidUniform # Ganimed
 
 - type: loadoutGroup
   id: JanitorGloves
@@ -528,6 +560,13 @@
   - BotanistSatchel
   - BotanistDuffel
 
+- type: loadoutGroup # Ganimed
+  id: BotanistGloves
+  name: loadout-group-botanist-gloves
+  minLimit: 0
+  loadouts:
+  - BotanistLeatherGloves
+
 - type: loadoutGroup
   id: BotanistOuterClothing
   name: loadout-group-botanist-outerclothing
@@ -567,6 +606,7 @@
   - ClownBackpack
   - ClownSatchel
   - ClownDuffel
+  # CluwneBackpackJigglesVonJonkerton # Ganimed
 
 - type: loadoutGroup
   id: ClownOuterClothing
@@ -773,7 +813,9 @@
   name: loadout-group-quartermaster-shoes
   loadouts:
   - BrownShoes
+  - BlackShoes # Ganimed
   - CargoWinterBoots
+  - LeatherShoes # Ganimed
 
 - type: loadoutGroup
   id: CargoTechnicianHead
@@ -812,7 +854,16 @@
   name: loadout-group-cargo-technician-shoes
   loadouts:
   - BlackShoes
+  - BrownShoes # Ganimed
   - CargoWinterBoots
+
+- type: loadoutGroup # Ganimed
+  id: SalvageSpecialistHead
+  name: loadout-group-salvage-specialist-head
+  minLimit: 0
+  loadouts:
+  - MercenaryHeadBand
+  - SpaceBearHide
 
 - type: loadoutGroup
   id: SalvageSpecialistBackpack
@@ -889,6 +940,7 @@
   loadouts:
   - BrownShoes
   - EngineeringWinterBoots
+  - LeatherShoes # Ganimed
 
 - type: loadoutGroup
   id: TechnicalAssistantJumpsuit
@@ -939,6 +991,7 @@
   - StationEngineerOuterVest
   - StationEngineerWintercoat
   - SeniorEngineerWintercoat # cats
+  - RadSuit # Ganimed
 
 - type: loadoutGroup
   id: StationEngineerShoes
@@ -947,6 +1000,7 @@
   - WorkBoots
   - EngineeringWinterBoots
   - OrangeShoes # Ganimed
+  - BlackShoes # Ganimed
   - EngineeringMagBoots # Ganimed
 
 - type: loadoutGroup
@@ -1070,6 +1124,7 @@
   - BlackShoes # Ganimed
   - PurpleShoes # Ganimed
   - ScienceWinterBoots
+  - LeatherShoes # Ganimed
   - ScienceMagBoots # Ganimed
 
 - type: loadoutGroup
@@ -1122,6 +1177,13 @@
   - OriginalScientistJumpskirt # Ganimed
   - FormalScientistJumpsuit # Ganimed
 
+- type: loadoutGroup # Ganimed
+  id: RoboticistJumpsuit
+  name: loadout-group-roboticist-jumpsuit
+  loadouts:
+  - RoboticistJumpsuit
+  - RoboticistJumpskirt
+
 - type: loadoutGroup
   id: ScientistBackpack
   name: loadout-group-scientist-backpack
@@ -1142,9 +1204,18 @@
   - RoboticistWintercoat
   - SeniorResearcherLabCoat
   - SeniorResearcherWintercoat # cats
-  - ScientistBioSuit
-  - RadSuit
-  - BombSuit
+  - ScientistBioSuit # Ganimed
+  - RadSuit # Ganimed
+  - ScienceBombSuit # Ganimed
+
+- type: loadoutGroup # Ganimed
+  id: RoboticistOuterClothing
+  name: loadout-group-roboticist-outerclothing
+  minLimit: 0
+  loadouts:
+  - RoboticistLabCoat
+  - RoboticistOriginalLabCoat
+  - RoboticistWintercoat
 
 - type: loadoutGroup
   id: ScientistShoes
@@ -1253,6 +1324,7 @@
   - HeadofSecurityWinterCoat
   - HeadofSecurityUnarmoredWinterCoat # Ganimed
   - HeadofSecurityTrenchCoat # Ganimed
+  - HeadofSecurityGreatCoat # Ganimed
 
 - type: loadoutGroup #Backmen
   id: SecurityOfficerPocket
@@ -1315,6 +1387,7 @@
   minLimit: 0
   loadouts:
   - SecurityHelmet
+  - LightRiotHelmet # Ganimed
   - SecurityBeret
   - SecurityHat
   - ClothingHeadHatCapSec #Backmen
@@ -1364,9 +1437,11 @@
   loadouts:
   - ArmorVest
   - ArmorVestSlim
+  - ArmorVestBulletproof # Ganimed
   - ClothingOuterCoatSecurityOvercoat #Backmen
   - ClothingOuterCoatSecurityOfficerOvercoat #Backmen
   - SecurityOfficerWintercoat
+  - SecurityBombSuit # Ganimed
 
 - type: loadoutGroup
   id: SecurityShoes
@@ -1513,6 +1588,7 @@
   - WhiteShoes # Ganimed
   - BlueShoes # Ganimed
   - MedicalWinterBoots
+  - LeatherShoes # Ganimed
 
 - type: loadoutGroup
   id: MedicalDoctorHead
@@ -1547,11 +1623,11 @@
   name: loadout-group-medical-doctor-glasses
   minLimit: 0
   loadouts:
+  - MedicalHud
+  - MedicalHudEyepatch
   - Glasses
   - GlassesJamjar
   - GlassesBinoclard
-  - MedicalHud
-  - MedicalHudEyepatch
 
 - type: loadoutGroup
   id: MedicalDoctorJumpsuit
@@ -1669,6 +1745,18 @@
   - ChemistBackpack
   - ChemistSatchel
   - ChemistDuffel
+
+- type: loadoutGroup # Ganimed
+  id: ChemistGlasses
+  name: loadout-group-chemist-glasses
+  minLimit: 0
+  loadouts:
+  - ChemicalAnalysisGoggles
+  - MedicalHud
+  - MedicalHudEyepatch
+  - Glasses
+  - GlassesJamjar
+  - GlassesBinoclard
 
 - type: loadoutGroup
   id: ParamedicHead

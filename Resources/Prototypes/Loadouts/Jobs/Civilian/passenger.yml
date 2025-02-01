@@ -98,6 +98,7 @@
 
 - type: loadout # Ganimed TODO: Whitelist restriction
   id: LeatherSatchel
+  whitelisted: true
   equipment:
     back: ClothingBackpackSatchelLeather
 

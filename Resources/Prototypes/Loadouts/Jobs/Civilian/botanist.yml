@@ -71,6 +71,12 @@
   equipment:
     back: ClothingBackpackDuffelHydroponics
 
+# Gloves, Ganimed
+- type: loadout
+  id: BotanistLeatherGloves
+  equipment:
+    gloves: ClothingHandsGlovesLeather
+
 # Outer clothing
 - type: loadout
   id: BotanistApron
@@ -83,7 +89,7 @@
     outerClothing: ClothingOuterWinterHydro
 
 # Shoes, Ganimed
-- type: loadout # TODO: Whitelist restriction
+- type: loadout
   id: GreenShoes
   equipment:
     shoes: ClothingShoesColorGreen

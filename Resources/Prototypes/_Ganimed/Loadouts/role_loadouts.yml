@@ -1,0 +1,34 @@
+# Ganimed unique jobs
+- type: roleLoadout
+  id: JobRoboticist
+  groups:
+  - GroupTankHarness
+  - ScientistHead
+  - RoboticistJumpsuit
+  - ScientistBackpack
+  - RoboticistOuterClothing
+  - ScientistGloves
+  - ScientistGlasses # Ganimed
+  - Underwear # Ganimed
+  - Medals #backmen
+  - Survival
+  - Trinkets
+  - GroupSpeciesBreathTool
+  - SpareClothing # Ganimed
+  - Inventory # Corvax-Loadouts
+
+- type: roleLoadout
+  id: JobBridgeOfficer
+  groups:
+  - GroupTankHarness
+  - BridgeOfficerHead
+  - BridgeOfficerNeck
+  - BridgeOfficerJumpsuit
+  - BridgeOfficerBelt
+  - Underwear # Ganimed
+  - Medals #backmen
+  - Survival
+  - Trinkets
+  - GroupSpeciesBreathTool
+  - SpareClothing # Ganimed
+  - Inventory # Corvax-Loadouts

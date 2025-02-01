@@ -442,6 +442,8 @@
 
 - type: loadout # TODO: Whitelist restriction
   id: HoSStockings
+  sponsorOnly: true
+  whitelistJobs: [HeadOfSecurity]
   equipment:
     socks: ClothingUnderStockingsHOS
 

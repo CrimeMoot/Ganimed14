@@ -69,12 +69,19 @@
 
 - type: loadout # Ganimed TODO: Whitelist restriction
   id: BountyHunterCowboyHat
+  whitelisted: true
   equipment:
     head: ClothingHeadHatCowboyBountyHunter
+
+- type: loadout # Ganimed
+  id: LightRiotHelmet
+  equipment:
+    head: ClothingHeadHelmetRiot
 
 # Neck, Ganimed
 - type: loadout # TODO: Whitelist restriction
   id: SecurityWhistle
+  whitelisted: true
   equipment:
     neck: SecurityWhistle
   effects:
@@ -165,6 +172,7 @@
 
 - type: loadout # Ganimed TODO: Whitelist restriction
   id: AssaultBelt
+  sponsorOnly: true
   equipment:
     belt: ClothingBeltAssault
 
@@ -218,6 +226,23 @@
   - !type:GroupLoadoutEffect
     proto: SeniorOfficer
 
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: ArmorVestBulletproof
+  whitelisted: true
+  equipment:
+    outerClothing: ClothingOuterArmorBulletproof
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: SeniorOfficer
+
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: SecurityBombSuit
+  whitelisted: true
+  dummyEntity: ClothingOuterSuitBomb
+  equipment:
+    outerClothing: ClothingOuterSuitBomb
+    head: ClothingHeadHelmetBombSuit
+
 # Shoes
 - type: loadout
   id: CombatBoots
@@ -236,6 +261,7 @@
 
 - type: loadout # Ganimed TODO: Whitelist restriction
   id: BlackCowboyBoots
+  whitelisted: true
   equipment:
     shoes: ClothingShoesBootsCowboyBlackFilled
 

@@ -145,41 +145,49 @@
 
 - type: loadout # Ganimed TODO: Whitelist restriction
   id: GeneticsJumpsuit
+  whitelisted: true
   equipment:
     jumpsuit: ClothingUniformJumpsuitGenetics
 
 - type: loadout # Ganimed
   id: GeneticsJumpskirt
+  whitelisted: true
   equipment:
     jumpsuit: ClothingUniformJumpskirtGenetics
 
 - type: loadout # Ganimed
   id: VirologyJumpsuit
+  whitelisted: true
   equipment:
     jumpsuit: ClothingUniformJumpsuitVirology
 
 - type: loadout # Ganimed
   id: VirologyJumpskirt
+  whitelisted: true
   equipment:
     jumpsuit: ClothingUniformJumpskirtVirology
 
 - type: loadout # Ganimed
   id: CoronerJumpsuit
+  sponsorOnly: true
   equipment:
     jumpsuit: ClothingUniformJumpsuitCoroner
 
 - type: loadout # Ganimed
   id: CoronerJumpskirt
+  sponsorOnly: true
   equipment:
     jumpsuit: ClothingUniformJumpskirtCoroner
 
 - type: loadout # Ganimed
   id: BlackCoronerJumpsuit
+  sponsorOnly: true
   equipment:
     jumpsuit: ClothingUniformJumpsuitCoronerBlack
 
 - type: loadout # Ganimed
   id: BlackCoronerJumpskirt
+  sponsorOnly: true
   equipment:
     jumpsuit: ClothingUniformJumpskirtCoronerBlack
 
@@ -201,31 +209,37 @@
 
 - type: loadout # Ganimed TODO: Whitelist restriction
   id: GeneticsBackpack
+  whitelisted: true
   equipment:
     back: ClothingBackpackGenetics
 
 - type: loadout # Ganimed
   id: GeneticsSatchel
+  whitelisted: true
   equipment:
     back: ClothingBackpackSatchelGenetics
 
 - type: loadout # Ganimed
   id: GeneticsDuffel
+  whitelisted: true
   equipment:
     back: ClothingBackpackDuffelGenetics
 
 - type: loadout # Ganimed
   id: VirologyBackpack
+  whitelisted: true
   equipment:
     back: ClothingBackpackVirology
 
 - type: loadout # Ganimed
   id: VirologySatchel
+  whitelisted: true
   equipment:
     back: ClothingBackpackSatchelVirology
 
 - type: loadout # Ganimed
   id: VirologyDuffel
+  whitelisted: true
   equipment:
     back: ClothingBackpackDuffelVirology
 
@@ -253,31 +267,37 @@
 
 - type: loadout # Ganimed TODO: Whitelist restriction
   id: GeneticsLabCoat
+  whitelisted: true
   equipment:
     outerClothing: ClothingOuterCoatLabGene
 
 - type: loadout # Ganimed
   id: VirologyLabCoat
+  whitelisted: true
   equipment:
     outerClothing: ClothingOuterCoatLabViro
 
 - type: loadout # Ganimed
   id: CoronerLabCoat
+  sponsorOnly: true
   equipment:
     outerClothing: ClothingOuterCoatLabCoroner
 
 - type: loadout # Ganimed
   id: GeneticsWintercoat
+  whitelisted: true
   equipment:
     outerClothing: ClothingOuterWinterGen
 
 - type: loadout # Ganimed
   id: VirologyWintercoat
+  whitelisted: true
   equipment:
     outerClothing: ClothingOuterWinterViro
 
 - type: loadout # Ganimed
   id: VirologyBioSuit
+  whitelisted: true
   dummyEntity: ClothingOuterBioVirology
   effects:
   - !type:GroupLoadoutEffect
@@ -312,8 +332,11 @@
   equipment:
     gloves: ClothingHandsGlovesNitrile
   effects:
-  - !type:GroupLoadoutEffect
-    proto: Doctor
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:DepartmentTimeRequirement
+      department: Medical
+      time: 36000 # 10hr
 
 #Masks
 - type: loadout

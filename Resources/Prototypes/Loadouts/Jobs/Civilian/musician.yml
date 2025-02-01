@@ -17,11 +17,13 @@
 
 - type: loadout # Ganimed TODO: Whitelist restriction
   id: PerformerJumpskirt
+  whitelisted: true
   equipment:
     outerClothing: ClothingUniformJumpskirtPerformer
 
 # Shoes, Ganimed
 - type: loadout # TODO: Whitelist restriction
   id: PerformerBoots
+  whitelisted: true
   equipment:
     shoes: ClothingShoesBootsPerformer

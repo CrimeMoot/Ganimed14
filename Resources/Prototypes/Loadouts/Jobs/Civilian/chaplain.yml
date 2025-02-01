@@ -65,6 +65,7 @@
 # Gloves, Ganimed
 - type: loadout # TODO: Whitelist restriction
   id: ChaplainDivineWatch
+  sponsorOnly: true
   equipment:
     gloves: ClothingHandsWatchDivine
   effects:
@@ -103,5 +104,6 @@
 # Shoes, Ganimed
 - type: loadout # TODO: Whitelist restriction
   id: CultShoes
+  whitelisted: true
   equipment:
     shoes: ClothingShoesCult

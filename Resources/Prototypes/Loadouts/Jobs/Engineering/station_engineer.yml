@@ -53,16 +53,19 @@
 
 - type: loadout # Ganimed TODO: Whitelist restriction
   id: WeldingMaskPainted
+  whitelisted: true
   equipment:
     head: ClothingHeadHatWeldingMaskPainted
 
 - type: loadout # Ganimed
   id: WeldingMaskFlame
+  sponsorOnly: true
   equipment:
     head: ClothingHeadHatWeldingMaskFlame
 
 - type: loadout # Ganimed
   id: WeldingMaskBlueFlame
+  sponsorOnly: true
   equipment:
     head: ClothingHeadHatWeldingMaskFlameBlue
 
@@ -156,12 +159,10 @@
 
 - type: loadout # Ganimed TODO: Whitelist restriction
   id: EngineeringMagBoots
+  whitelisted: true
   effects:
-  - !type:JobRequirementLoadoutEffect
-    requirement:
-      !type:DepartmentTimeRequirement
-      department: Engineering
-      time: 108000 # 30 hrs
+  - !type:GroupLoadoutEffect
+    proto: SeniorEngineering
   equipment:
     shoes: ClothingShoesBootsMag
 

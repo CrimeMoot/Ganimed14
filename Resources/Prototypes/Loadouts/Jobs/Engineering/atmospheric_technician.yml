@@ -22,6 +22,7 @@
 # Neck, Ganimed TODO: Whitelist restriction
 - type: loadout
   id: AtmosianCloak
+  whitelisted: true
   equipment:
     neck: ClothingCloakAtmosian
   effects:
@@ -73,6 +74,7 @@
 
 - type: loadout # Ganimed TODO: Whitelist restriction
   id: AtmosphericTechnicianBomberJacket
+  whitelisted: true
   equipment:
     outerClothing: ClothingOuterAtmosianBomberJacket
   effects:

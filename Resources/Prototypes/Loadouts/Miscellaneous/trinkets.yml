@@ -60,6 +60,7 @@
 
 - type: loadout # Ganimed TODO: Whitelist restriction
   id: AmongPequeno
+  sponsorOnly: true
   storage:
     back:
     - ToyAmongPequeno
@@ -136,6 +137,7 @@
 
 - type: loadout # Ganimed TODO: Whitelist restriction
   id: SmokingPipe
+  sponsorOnly: true
   storage:
     back:
     - SmokingPipeFilledTobacco
@@ -330,6 +332,7 @@
 # Ganimed: Glowsticks  TODO: Whitelist restriction
 - type: loadout
   id: GlowstickBase
+  whitelisted: true
   effects:
   - !type:GroupLoadoutEffect
     proto: TenOverall
@@ -339,6 +342,7 @@
 
 - type: loadout
   id: GlowstickYellow
+  whitelisted: true
   effects:
   - !type:GroupLoadoutEffect
     proto: TenOverall
@@ -348,6 +352,7 @@
 
 - type: loadout
   id: GlowstickRed
+  whitelisted: true
   effects:
   - !type:GroupLoadoutEffect
     proto: TenOverall
@@ -357,6 +362,7 @@
 
 - type: loadout
   id: GlowstickPurple
+  whitelisted: true
   effects:
   - !type:GroupLoadoutEffect
     proto: TenOverall
@@ -366,6 +372,7 @@
 
 - type: loadout
   id: GlowstickBlue
+  whitelisted: true
   effects:
   - !type:GroupLoadoutEffect
     proto: TenOverall

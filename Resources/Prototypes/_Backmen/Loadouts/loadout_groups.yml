@@ -1,29 +1,6 @@
 ﻿# CentCom
 
 # Cargo
-- type: loadoutGroup
-  id: BKCCCargoJumpsuit
-  name: loadout-group-captain-jumpsuit
-  loadouts:
-  - BKCCCargoJumpsuit
-  - BKCCCargoJumpskirtCargo
-
-- type: loadoutGroup
-  id: BKCCCargoNeck
-  name: loadout-group-captain-neck
-  minLimit: 0
-  loadouts:
-  - BKCCCargoCloak
-  - BKCCCargoCloakFormal
-  - BKCCCargoMantle
-
-- type: loadoutGroup
-  id: BKCCCargoBackpack
-  name: loadout-group-captain-backpack
-  loadouts:
-  - BKCCCargoBackpack
-  - BKCCCargoSatchel
-  - BKCCCargoDuffel
 
 # Security
 

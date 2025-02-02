@@ -331,28 +331,28 @@
         
 - type: entity
   parent: ClothingUniformBase
-  id: ClothingUniformJumpsuitCoronerBlackOriginal
+  id: ClothingUniformJumpsuitCoronerBlack
   name: black coroner jumpsuit
   description: Total overhaul vastly different from the usual coroner uniform. Personel freak out when they can't see you from the shadows.
   components:
   - type: Sprite
-    sprite: _Ganimed/Clothing/Original/Uniforms/Jumpsuit/original_blackcoroner.rsi
+    sprite: _Ganimed/Clothing/Uniforms/Jumpsuit/blackcoroner.rsi
   - type: Clothing
-    sprite: _Ganimed/Clothing/Original/Uniforms/Jumpsuit/original_blackcoroner.rsi
+    sprite: _Ganimed/Clothing/Uniforms/Jumpsuit/blackcoroner.rsi
   - type: Tag
     tags:
     - WhitelistChameleon
     
 - type: entity
   parent: ClothingUniformBase
-  id: ClothingUniformJumpsuitBrigmedicBlackOriginal
+  id: ClothingUniformJumpsuitBrigmedicBlack
   name: black brigmedic jumpsuit
   description: Total overhaul vastly different from the usual brigmedic uniform. It is generally a bad idea to be bright if you are on a battlefield.
   components:
   - type: Sprite
-    sprite: _Ganimed/Clothing/Original/Uniforms/Jumpsuit/original_blackbrigmedic.rsi
+    sprite: _Ganimed/Clothing/Uniforms/Jumpsuit/blackbrigmedic.rsi
   - type: Clothing
-    sprite: _Ganimed/Clothing/Original/Uniforms/Jumpsuit/original_blackbrigmedic.rsi
+    sprite: _Ganimed/Clothing/Uniforms/Jumpsuit/blackbrigmedic.rsi
   - type: Tag
     tags:
     - WhitelistChameleon
@@ -367,6 +367,20 @@
     sprite: _Ganimed/Clothing/Uniforms/military.rsi
   - type: Clothing
     sprite: _Ganimed/Clothing/Uniforms/military.rsi
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+    
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitCoroner
+  name: coroner jumpsuit
+  description: A special modification of the medical doctor uniform. Its wearer can be easily denoted as a trained post-mortem professional.
+  components:
+  - type: Sprite
+    sprite: _Ganimed/Clothing/Uniforms/Jumpsuit/coroner.rsi
+  - type: Clothing
+    sprite: _Ganimed/Clothing/Uniforms/Jumpsuit/coroner.rsi
   - type: Tag
     tags:
     - WhitelistChameleon

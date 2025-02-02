@@ -1,13 +1,15 @@
 - type: roleLoadout
   id: JobIAA
   groups:
+  - GroupTankHarness
   - LawyerNeck
   - LawyerJumpsuit
+  - MagistrateOuterClothing # Ganimed
   - CommonBackpack
-  - Survival
-  - Trinkets
   - Underwear # Ganimed
   - Medals #backmen
+  - Survival
+  - Trinkets
   - GroupSpeciesBreathTool
   - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts

@@ -793,6 +793,14 @@
     back:
     - ClothingHandsGlovesColorPurple
 
+# Mask
+- type: loadout # TODO: Whitelist restriction
+  id: SpareNeckGaiter
+  whitelisted: true
+  storage:
+    back:
+    - ClothingMaskNeckGaiter
+
 # Neck
 - type: loadout
   id: SpareRedTie
@@ -916,6 +924,20 @@
   storage:
     back:
     - ClothingNeckBling
+
+- type: loadout # TODO: Whitelist restriction
+  id: SpareWizardBedsheet
+  whitelisted: true
+  storage:
+    back:
+    - BedsheetWiz
+
+- type: loadout # TODO: Whitelist restriction
+  id: SpareCosmosBedsheet
+  sponsorOnly: true
+  storage:
+    back:
+    - BedsheetCosmos
 
 # Outer clothing
 - type: loadout

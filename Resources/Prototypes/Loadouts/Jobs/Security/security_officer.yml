@@ -96,6 +96,22 @@
   - !type:GroupLoadoutEffect
     proto: SeniorOfficer
 
+# Glasses, Ganimed
+- type: loadout
+  id: Sunglasses
+  equipment:
+    eyes: ClothingEyesGlassesSunglasses
+
+- type: loadout
+  id: SecurityHud
+  equipment:
+    eyes: ClothingEyesHudSecurity
+
+- type: loadout
+  id: SecurityHudEyepatch
+  equipment:
+    eyes: ClothingEyesEyepatchHudSecurity
+
 # Jumpsuit
 - type: loadout
   id: SecurityJumpsuit
@@ -231,6 +247,15 @@
   whitelisted: true
   equipment:
     outerClothing: ClothingOuterArmorBulletproof
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: SeniorOfficer
+
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: ArmorVestReflective
+  whitelisted: true
+  equipment:
+    outerClothing: ClothingOuterArmorReflective
   effects:
   - !type:GroupLoadoutEffect
     proto: SeniorOfficer

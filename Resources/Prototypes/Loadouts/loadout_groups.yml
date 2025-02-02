@@ -67,8 +67,8 @@
   - GlowstickRed
   - GlowstickPurple
   - GlowstickBlue
-  - TowelColorBlack
   # Ganimed-Loadouts-End
+  - TowelColorBlack
   - TowelColorDarkBlue
   - TowelColorDarkGreen
   - TowelColorGold
@@ -211,8 +211,8 @@
   minLimit: 0
   loadouts:
   - HoPCloak
-  - HoPMantle
   - HoPCloakOriginal # Ganimed
+  - HoPMantle
   - HoPCloakLong # Ganimed
   - HoPBedsheet # Ganimed
 
@@ -311,6 +311,25 @@
   - BartenderHead
   - BartenderBowler
 
+- type: loadoutGroup # Ganimed
+  id: BartenderGlasses
+  name: loadout-group-bartender-glasses
+  minLimit: 0
+  loadouts:
+  - BeerGoggles
+  - BeerHudEyepatch
+  - ThungerstGoggles
+  - Glasses
+  - CheapSunglasses
+  - Eyepatch
+  - GlassesJamjar
+  - GlassesBinoclard
+  - GlassesJensen
+  - GlassesSalesman
+  - GlassesGar
+  - GlassesGarOrange
+  - GlassesGarGiga
+
 - type: loadoutGroup
   id: BartenderJumpsuit
   name: loadout-group-bartender-jumpsuit
@@ -358,6 +377,24 @@
   minLimit: 0
   loadouts:
   - ChefMask
+
+- type: loadoutGroup # Ganimed
+  id: ChefGlasses
+  name: loadout-group-chef-glasses
+  minLimit: 0
+  loadouts:
+  - FriedOnionGoggles
+  - ThungerstGoggles
+  - Glasses
+  - CheapSunglasses
+  - Eyepatch
+  - GlassesJamjar
+  - GlassesBinoclard
+  - GlassesJensen
+  - GlassesSalesman
+  - GlassesGar
+  - GlassesGarOrange
+  - GlassesGarGiga
 
 - type: loadoutGroup
   id: ChefJumpsuit
@@ -606,7 +643,7 @@
   - ClownBackpack
   - ClownSatchel
   - ClownDuffel
-  # CluwneBackpackJigglesVonJonkerton # Ganimed
+  # - CluwneBackpackJigglesVonJonkerton # Ganimed
 
 - type: loadoutGroup
   id: ClownOuterClothing
@@ -887,6 +924,13 @@
   loadouts:
   - SalvageWebbing
   - SalvageOreBag
+
+- type: loadoutGroup # Ganimed
+  id: SalvageSpecialistGloves
+  name: loadout-group-salvage-specialist-gloves
+  minLimit: 0
+  loadouts:
+  - MercenaryFingerlessGloves
 
 - type: loadoutGroup
   id: SalvageSpecialistShoes
@@ -1177,13 +1221,6 @@
   - OriginalScientistJumpskirt # Ganimed
   - FormalScientistJumpsuit # Ganimed
 
-- type: loadoutGroup # Ganimed
-  id: RoboticistJumpsuit
-  name: loadout-group-roboticist-jumpsuit
-  loadouts:
-  - RoboticistJumpsuit
-  - RoboticistJumpskirt
-
 - type: loadoutGroup
   id: ScientistBackpack
   name: loadout-group-scientist-backpack
@@ -1207,15 +1244,6 @@
   - ScientistBioSuit # Ganimed
   - RadSuit # Ganimed
   - ScienceBombSuit # Ganimed
-
-- type: loadoutGroup # Ganimed
-  id: RoboticistOuterClothing
-  name: loadout-group-roboticist-outerclothing
-  minLimit: 0
-  loadouts:
-  - RoboticistLabCoat
-  - RoboticistOriginalLabCoat
-  - RoboticistWintercoat
 
 - type: loadoutGroup
   id: ScientistShoes
@@ -1431,6 +1459,14 @@
   - AssaultBelt # Ganimed
   - Bandolier # Ganimed
 
+- type: loadoutGroup # Ganimed
+  id: SecurityGlasses
+  name: loadout-group-security-glasses
+  loadouts:
+  - Sunglasses
+  - SecurityHud
+  - SecurityHudEyepatch
+
 - type: loadoutGroup
   id: SecurityOuterClothing
   name: loadout-group-security-outerclothing
@@ -1438,6 +1474,7 @@
   - ArmorVest
   - ArmorVestSlim
   - ArmorVestBulletproof # Ganimed
+  - ArmorVestReflective # Ganimed
   - ClothingOuterCoatSecurityOvercoat #Backmen
   - ClothingOuterCoatSecurityOfficerOvercoat #Backmen
   - SecurityOfficerWintercoat
@@ -1505,6 +1542,16 @@
   - DetectiveCoatGrey
   - DetectiveCoatOriginal # Ganimed
   - DetectiveCoatDark # Ganimed
+
+- type: loadoutGroup # Ganimed
+  id: DetectiveShoes
+  name: loadout-group-detective-shoes
+  loadouts:
+  - JackSecBoots
+  - JackBoots
+  - SecurityWinterBoots
+  - LeatherShoes
+  - LaceupShoes
 
 - type: loadoutGroup #Backmen
   id: DetectiveRevolver

@@ -293,3 +293,20 @@
   minLimit: 0
   loadouts:
   - BridgeOfficerWebbing
+
+#Science
+- type: loadoutGroup # Ganimed
+  id: RoboticistJumpsuit
+  name: loadout-group-roboticist-jumpsuit
+  loadouts:
+  - RoboticistJumpsuit
+  - RoboticistJumpskirt
+
+- type: loadoutGroup # Ganimed
+  id: RoboticistOuterClothing
+  name: loadout-group-roboticist-outerclothing
+  minLimit: 0
+  loadouts:
+  - RoboticistLabCoat
+  - RoboticistOriginalLabCoat
+  - RoboticistWintercoat

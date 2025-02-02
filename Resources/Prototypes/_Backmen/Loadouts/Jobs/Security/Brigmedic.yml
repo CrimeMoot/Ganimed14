@@ -8,6 +8,12 @@
     id: BrigmedicPDA
     belt: ClothingBeltMilitaryWebbingCorpsman
 
+# Neck, Ganimed
+- type: loadout
+  id: BrigmedicBedsheet
+  equipment:
+    neck: BedsheetBrigmedic
+
 #Suit
 - type: loadout
   id: ClothingUniformJumpsuitBrigmedic

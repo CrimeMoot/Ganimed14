@@ -69,7 +69,7 @@
   - BartenderBelt # Ganimed
   - CommonBackpack
   - BartenderOuterClothing
-  - Glasses
+  - BartenderGlasses # Ganimed
   - Underwear # Ganimed
   - Medals #backmen
   - Survival
@@ -103,7 +103,7 @@
   - CommonBackpack
   - ChefOuterClothing
   - ChefShoes # Ganimed
-  - Glasses
+  - ChefGlasses # Ganimed
   - Underwear # Ganimed
   - Medals #backmen
   - Survival
@@ -303,6 +303,7 @@
   - SalvageSpecialistBackpack
   - SalvageSpecialistOuterClothing
   - SalvageSpecialistBelt # Ganimed
+  - SalvageSpecialistGloves # Ganimed
   - SalvageSpecialistShoes
   - Glasses
   - Underwear # Ganimed
@@ -491,6 +492,7 @@
   - SecurityShoes
   - SecurityPDA
   - SecurityBelt
+  # - SecurityGlasses # Ganimed
   - SecurityOfficerPocket #Backmen
   - Underwear # Ganimed
   - Medals #backmen
@@ -510,7 +512,7 @@
   - DetectiveJumpsuit
   - SecurityBackpack
   - DetectiveOuterClothing
-  - SecurityShoes
+  - DetectiveShoes # Ganimed
   - DetectiveRevolver
   - Underwear # Ganimed
   - Medals #backmen
@@ -625,7 +627,7 @@
   - MedicalBackpack
   - ParamedicOuterClothing
   - ParamedicShoes
-  - Glasses
+  - MedicalDoctorGlasses # Ganimed
   - Underwear # Ganimed
   - Medals #backmen
   - SurvivalMedical

@@ -9,6 +9,12 @@
   equipment:
     head: ClothingHeadHatJesterAlt
 
+# Neck, Ganimed
+- type: loadout
+  id: ClownBedsheet
+  equipment:
+    neck: BedsheetClown
+
 # Jumpsuit
 - type: loadout
   id: ClownSuit

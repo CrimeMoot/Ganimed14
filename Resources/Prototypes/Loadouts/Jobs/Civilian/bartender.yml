@@ -25,6 +25,31 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitBartenderPurple
 
+# Glasses, Ganimed
+- type: loadout
+  id: BeerGoggles
+  whitelisted: true
+  equipment:
+    eyes: ClothingEyesHudBeer
+
+- type: loadout
+  id: BeerHudEyepatch
+  whitelisted: true
+  equipment:
+    eyes: ClothingEyesEyepatchHudBeer
+
+- type: loadout # TODO: Whitelist restriction
+  id: ThungerstGoggles
+  whitelisted: true
+  equipment:
+    eyes: ClothingEyesHudOnionBeer
+
+- type: loadout
+  id: FriedOnionGoggles
+  whitelisted: true
+  equipment:
+    eyes: ClothingEyesHudFriedOnion
+
 # Belt, Ganimed
 - type: loadout
   id: WaistBag

@@ -85,6 +85,13 @@
   equipment:
     belt: OreBag
 
+# Gloves, Ganimed
+- type: loadout
+  id: MercenaryFingerlessGloves
+  whitelisted: true
+  equipment:
+    gloves: ClothingHandsGlovesMercFingerless
+
 # Shoes
 - type: loadout
   id: SalvageBoots

@@ -240,24 +240,6 @@
       gun_chamber: !type:ContainerSlot
 
 - type: entity
-  parent: WeaponPistolG22
-  id: WeaponPistolG22NonLethal
-  suffix: Пистолет [Non-lethal]
-  components:
-  - type: ItemSlots
-    slots:
-      gun_magazine:
-        name: Magazine
-        startingItem: MagazinePistol
-        insertSound: /Audio/Weapons/Guns64/Pistols/beretta_reload.ogg
-        ejectSound: /Audio/Weapons/Guns64/Pistols/beretta_unload.ogg
-        priority: 2
-        whitelist:
-          tags:
-            - MagazinePistol
-            - MagazinePistolHighCapacity
-
-- type: entity
   name: HI Browning-88 M4
   parent: BaseWeaponPistol
   id: WeaponPistolHIB88M4
@@ -417,6 +399,7 @@
   parent: BaseWeaponPistol
   id: WeaponPistolDivet
   description: Дайвет - это стандартное оружие для полиции и сотрудников службы безопасности правительства Земли.
+  categories: [ HideSpawnMenu ] #for remove
   components:
   - type: Sprite
     sprite: Backmen/Objects/Weapons/Gunsx64/Pistols/divet.rsi
@@ -461,6 +444,7 @@
 - type: entity
   parent: WeaponPistolDivet
   id: WeaponPistolDivet2
+  categories: [ HideSpawnMenu ] #for remove
   components:
   - type: Sprite
     sprite: Backmen/Objects/Weapons/Gunsx64/Pistols/prentor.rsi
@@ -477,6 +461,7 @@
   parent: BaseWeaponPistol
   id: WeaponPistolUCS
   description: UCS полу-автоматический пистолет компании "Interdyne", зарекомендовал себя как вторичное оружия наёмников, превосходит свои аналоги с Земли.
+  categories: [ HideSpawnMenu ] #for remove
   components:
   - type: Sprite
     sprite: Backmen/Objects/Weapons/Gunsx64/Pistols/ucs/big.rsi

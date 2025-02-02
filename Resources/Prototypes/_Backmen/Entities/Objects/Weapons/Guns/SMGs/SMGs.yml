@@ -85,6 +85,7 @@
   id: WeaponSubMachineGunMP7
   suffix: Пистолет-пулемёт
   description: В свое время SMG-7, имеющий устаревший дизайн, насчитывающий сотни лет, был широко распространен. Сегодня он используется в качестве дешевых копий, напечатанных на компьютере, или семейных реликвий, хотя каким-то образом попал в руки колониальных повстанцев.
+  categories: [ HideSpawnMenu ] #for remove
   components:
   - type: Sprite
     sprite: Backmen/Objects/Weapons/Gunsx64/SMGs/mp7/big.rsi
@@ -204,6 +205,7 @@
   id: WeaponSubMachineGunSkorpion
   suffix: Пистолет-пулемёт
   description: Надежное огнестрельное оружие 20-го века, представляющее собой комбинацию пистолета и автомата.
+  categories: [ HideSpawnMenu ] #for remove
   components:
   - type: Sprite
     sprite: Backmen/Objects/Weapons/Gunsx64/SMGs/skorpion.rsi

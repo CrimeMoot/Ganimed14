@@ -22,6 +22,7 @@
   parent: BaseWeaponRevolver
   id: WeaponRevolverCMB
   description: Автоматический револьвер с патроном 45-го калибра "магнум". Обычно выпускается компанией "Нанотразен секьюрити". Имеет режим серийной стрельбы. В настоящее время проходит испытания с другими револьверами на Терре и в других колониях.
+  categories: [ HideSpawnMenu ] #for remove
   components:
   - type: Sprite
     sprite: Backmen/Objects/Weapons/Gunsx64/Revolver/cmb.rsi
@@ -82,6 +83,7 @@
   parent: BaseWeaponRevolver
   id: WeaponRevolverRebota
   description: Использует "магнум" 45-го калибра. Дизайн, не подвластный времени, от древности до будущего. Этот пистолет хорошо известен в полиции как универсальное и неприхотливое оружие.
+  categories: [ HideSpawnMenu ] #for remove
   components:
   - type: Sprite
     sprite: Backmen/Objects/Weapons/Gunsx64/Revolver/rebota.rsi

@@ -143,6 +143,7 @@
   parent: BaseWeaponEnergyRifle
   id: WeaponPulseShotgunHellHammer
   description: Автоматическое импульсное ружье, использующее моторизованный ударно-спусковой механизм. Импульсное ружье - это стандартное служебное ружье Земного спецназа.
+  categories: [ HideSpawnMenu ] #for remove
   components:
   - type: Sprite
     sprite: Backmen/Objects/Weapons/Gunsx64/Battery/Pulse/hellhamer/big.rsi
@@ -186,6 +187,7 @@
   parent: BaseWeaponEnergyRifle
   id: WeaponPulseSMGTritonM3
   description: AP Motorized Pulse SMP - это скорострельная штурмовая винтовка военного образца с большим магазином боеприпасов. Pulse SMG - это стандартная служебная винтовка Земного спецназа.
+  categories: [ HideSpawnMenu ] #for remove
   components:
   - type: Sprite
     sprite: Backmen/Objects/Weapons/Gunsx64/Battery/Pulse/smpg/big.rsi

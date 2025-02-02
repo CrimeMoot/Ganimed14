@@ -57,3 +57,58 @@
         amount: 3
       - id: WeaponPulseRifleSpetnaz
         amount: 2
+
+- type: entity
+  id: CrateArmoryUselessGunsShit
+  parent: [ CrateWeaponSecure, BaseRestrictedContraband ]
+  name: Crate of various guns
+  description: Pew pew pew!
+  components:
+  - type: StorageFill #5 place free
+    contents:
+      - id: WeaponPistolDivet
+        amount: 1
+      - id: WeaponPistolDivet2
+        amount: 1
+      - id: WeaponPistolUCS
+        amount: 1
+      - id: WeaponRevolverRebota
+        amount: 1
+      - id: WeaponRevolverCMB
+        amount: 1
+      - id: WeaponShotgunGuardian
+        amount: 1
+      - id: WeaponShotgunAA12
+        amount: 1
+      - id: WeaponRifleAKSU
+        amount: 1
+      - id: WeaponRifleG36
+        amount: 2
+      - id: WeaponRifleM16A4
+        amount: 2
+      - id: WeaponRifleFamas
+        amount: 2
+      - id: WeaponRifleBR64
+        amount: 2
+      - id: WeaponRifleUTAPM1
+        amount: 2
+      - id: WeaponRifleV31
+        amount: 2
+      - id: MagazineRifleRocket20
+        amount: 2
+      - id: WeaponSubMachineGunMP7
+        amount: 1
+      - id: WeaponSubMachineGunSkorpion
+        amount: 1
+      - id: WeaponPulseSMGTritonM3
+        amount: 1
+      - id: WeaponPulseShotgunHellHammer
+        amount: 1
+      - id: WeaponMultiphaseEnergyGun
+        amount: 1
+      - id: WeaponDominatorNT
+        amount: 1
+      - id: WeaponDisablerSuper
+        amount: 1
+      - id: WeaponRifleSWS
+        amount: 1       

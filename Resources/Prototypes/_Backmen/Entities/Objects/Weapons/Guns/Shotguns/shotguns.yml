@@ -65,6 +65,7 @@
   id: WeaponShotgunAA12
   suffix: Дробовик
   description: Это магазинный дробовик, предназначенный для ближнего боя. В нем используются патроны для дробовика 12-го калибра.
+  categories: [ HideSpawnMenu ] #for remove
   components:
   - type: Sprite
     sprite: Backmen/Objects/Weapons/Gunsx64/Shotguns/aa12/big.rsi
@@ -195,6 +196,7 @@
   id: WeaponShotgunGuardian
   suffix: Дробовик
   description: Дробовик Guardian модели U-Type производства "Interdyne", сплав корпуса сделан из передовых материалов, что придает легкость в обращении.
+  categories: [ HideSpawnMenu ] #for remove
   components:
   - type: Sprite
     sprite: Backmen/Objects/Weapons/Gunsx64/Shotguns/guard-17/big.rsi

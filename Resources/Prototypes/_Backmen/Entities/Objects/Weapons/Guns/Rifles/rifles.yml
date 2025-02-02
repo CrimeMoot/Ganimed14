@@ -70,6 +70,7 @@
   id: WeaponRifleAKSU
   suffix: Автомат
   description: Культовое боевое оружие. Использует патроны калибра 7,62х39 мм.
+  categories: [ HideSpawnMenu ] #for remove
   components:
   - type: Sprite
     sprite: Backmen/Objects/Weapons/Gunsx64/Rifles/aksu.rsi
@@ -200,6 +201,7 @@
   id: WeaponRifleG36
   suffix: Автомат
   description: Штурмовая винтовка H&K G-36 раньше была стандартной винтовкой армии Земного правительства.
+  categories: [ HideSpawnMenu ] #for remove
   components:
   - type: Sprite
     sprite: Backmen/Objects/Weapons/Gunsx64/Rifles/g36/big.rsi
@@ -319,22 +321,6 @@
     graph: M28Tactical
     node: start
 
-- type: entity
-  parent: WeaponRifleM28
-  id: WeaponRifleM28Rubber
-  components:
-  - type: ItemSlots
-    slots:
-      gun_magazine:
-        name: Magazine
-        startingItem: MagazineRifle
-        insertSound: /Audio/Weapons/Guns64/Rifles/m28_reload.ogg
-        ejectSound: /Audio/Weapons/Guns64/Rifles/m28_unload.ogg
-        priority: 2
-        whitelist:
-          tags:
-            - MagazineRifle
-
 - type: entity #ww2
   name: STG 44
   parent: BaseWeaponRifle
@@ -404,6 +390,7 @@
   id: WeaponRifleM16A4
   suffix: Автомат
   description: Легкая, универсальная штурмовая винтовка. Это 4-е поколение на платформе M16, в этот вариант FN добавлен автоматический выбор огня, и он сохраняет свою актуальность среди наемников и ополченцев благодаря высокой настраиваемости. он невероятно хорош при стрельбе быстрыми очередями, но его необходимо правильно подбирать.
+  categories: [ HideSpawnMenu ] #for remove
   components:
   - type: Sprite
     sprite: Backmen/Objects/Weapons/Gunsx64/Rifles/m16/big.rsi
@@ -465,6 +452,7 @@
   id: WeaponRifleFamas
   suffix: Автомат
   description: Легкая, универсальная штурмовая винтовка.
+  categories: [ HideSpawnMenu ] #for remove
   components:
   - type: Sprite
     sprite: Backmen/Objects/Weapons/Gunsx64/Rifles/famas/big.rsi
@@ -532,6 +520,7 @@
   id: WeaponRifleBR64
   suffix: Винтовка
   description: San Cristo Arms BR-64 - это основная боевая винтовка Корпуса морской пехоты. Она известна своей стабильной эффективностью на большинстве дистанций и убойной силой на близком расстоянии. В основном ее используют люди, предпочитающие патроны большего калибра, чем обычные.
+  categories: [ HideSpawnMenu ] #for remove
   components:
   - type: Sprite
     sprite: Backmen/Objects/Weapons/Gunsx64/Rifles/br-64/big.rsi
@@ -594,6 +583,7 @@
   id: WeaponRifleV31
   suffix: Винтовка
   description: V-31 была основной винтовкой "Сынов Марса" до появления более совершенного энергетического оружия. Тем не менее, V-31 продолжает широко использоваться благодаря сравнительной простоте производства и обслуживания, а также благодаря встроенному низкоскоростному рельсотрону, предназначенному для так называемых "микро" гранат. Обладает хорошей управляемостью благодаря компактной конструкции "буллпап" и, как правило, эффективен на всех дистанциях.
+  categories: [ HideSpawnMenu ] #for remove
   components:
   - type: Sprite
     sprite: Backmen/Objects/Weapons/Gunsx64/Rifles/v31/big.rsi
@@ -694,30 +684,6 @@
       gun_chamber:
         name: Chamber
         startingItem: CartridgeRifle
-        priority: 1
-        whitelist:
-          tags:
-            - CartridgeRifle
-
-- type: entity
-  suffix: Зажигательные
-  parent: WeaponRifleG36
-  id: WeaponRifleLecterFire
-  components:
-  - type: ItemSlots
-    slots:
-      gun_magazine:
-        name: Magazine
-        startingItem: MagazineRifleFire
-        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
-        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
-        priority: 2
-        whitelist:
-          tags:
-            - MagazineRifle
-      gun_chamber:
-        name: Chamber
-        startingItem: CartridgeRifleFire
         priority: 1
         whitelist:
           tags:
@@ -849,6 +815,7 @@
   id: WeaponRifleUTAPM1
   suffix: Автомат
   description: Штурмовая винтовка производства "Interdyne", облегченный вариант Марк 2, используется зачастую частными охранными организациями.
+  categories: [ HideSpawnMenu ] #for remove
   components:
   - type: Sprite
     sprite: Backmen/Objects/Weapons/Gunsx64/Rifles/utap-mark1/big.rsi

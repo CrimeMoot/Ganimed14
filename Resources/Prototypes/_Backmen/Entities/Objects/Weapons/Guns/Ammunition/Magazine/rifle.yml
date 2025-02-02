@@ -109,6 +109,7 @@
   id: MagazineRifleRocket20
   name: rifle magazine (рельсотрон)
   description: Standart EarthGov type of heavy magazines.
+  categories: [ HideSpawnMenu ] #for remove
   parent: BaseItem
   components:
   - type: Tag

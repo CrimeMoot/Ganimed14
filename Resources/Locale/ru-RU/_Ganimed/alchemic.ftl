@@ -16,6 +16,3 @@ reagent-psychicalDesc-sufentanil = алый
 reagent-tramadol = трамадол
 reagent-tramadol-desc = Слабый,но эффективный анальгетик. Убирает боль и участвует в закрытии ран.
 reagent-psychicalDesc-tramadol = молочно-серебристо
-reagent-nanomachines = наномашины
-reagent-psychicalDesc-nanomachines = механически
-reagent-nanomachines-desc = Новейшая разработка Interdyne. Эти мельчайшие наномашины надолго задерживаются в организме,медленно самовоспроизводясь и заменяя мертвые клетки. Используют металлы из крови для самовоспроизведения. Рано или поздно выйдут из строя и понадобится новая сатурация.

@@ -31,3 +31,36 @@
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
+      
+- type: entity
+  id: MagazinePistolMakarov
+  name: makarov magazine (.35)
+  parent: BaseItem
+  components:
+  - type: Tag
+    tags:
+      - MagazinePistolMakarov
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    proto: CartridgeMagnum
+    whitelist:
+      tags:
+        - CartridgePistol
+    capacity: 9
+  - type: Item
+    size: Small
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: Backmen/Objects/Weapons/Gunsx64/Magazines/Magnum/magnum_pistol_mag.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 6
+    zeroVisible: false
+  - type: Appearance

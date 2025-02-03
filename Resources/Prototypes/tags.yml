@@ -292,7 +292,7 @@
   id: CartridgePistol
   
 - type: Tag
-  id: CartridgePistol45ACP
+  id: CartridgePistol45ACP #ganimed
 
 - type: Tag
   id: CartridgeRifle
@@ -828,12 +828,15 @@
 
 - type: Tag
   id: MagazineMagnum
-
+  
 - type: Tag
   id: MagazinePistol
   
 - type: Tag
-  id: MagazinePistol45ACP
+  id: MagazinePistolMakarov #ganimed
+  
+- type: Tag
+  id: MagazinePistol45ACP #ganimed
 
 - type: Tag
   id: MagazinePistolCaselessRifle

@@ -20,10 +20,33 @@
     - 0,1,0,1
   - type: Gun
     fireRate: 5
+    angleIncrease: 2.5
+    angleDecay: 2.75
+    cameraRecoilScalar: 0.5
+    maxAngle: 8
+    minAngle: 1
     availableModes:
     - SemiAuto
     soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/mk58.ogg
+      path: /Audio/Weapons/Guns64/Pistols/beretta_shot.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazinePistolMakarov
+        insertSound: /Audio/Weapons/Guns64/Pistols/colt_reload.ogg
+        ejectSound: /Audio/Weapons/Guns64/Pistols/beretta_unload.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazinePistolMakarov
+      gun_chamber:
+        name: Chamber
+        startingItem: CartridgePistol
+        priority: 1
+        whitelist:
+          tags:
+            - CartridgePistol
 
 - type: entity
   name: ACP-14
@@ -37,10 +60,11 @@
   - type: Item
     sprite: Backmen/Objects/Weapons/Gunsx64/Pistols/acp14/tiny.rsi
   - type: Gun
-    angleIncrease: 2
-    angleDecay: 10
+    fireRate: 5
+    angleIncrease: 3
+    angleDecay: 3.5
     cameraRecoilScalar: 0.5
-    maxAngle: 15
+    maxAngle: 10
     minAngle: 1
     selectedMode: SemiAuto
     availableModes:
@@ -59,7 +83,6 @@
         whitelist:
           tags:
             - MagazinePistol
-            - MagazinePistolHighCapacity
       gun_chamber:
         name: Chamber
         startingItem: CartridgePistol
@@ -192,11 +215,11 @@
   - type: Item
     sprite: Backmen/Objects/Weapons/Gunsx64/Pistols/glock22/tiny.rsi
   - type: Gun #Ganimed
-    fireRate: 5
+    fireRate: 6
     angleDecay: 4
     angleIncrease: 3.5
     cameraRecoilScalar: 0.5
-    maxAngle: 9
+    maxAngle: 12
     minAngle: 1
     selectedMode: SemiAuto
     availableModes:
@@ -251,7 +274,12 @@
   - type: Item
     sprite: Backmen/Objects/Weapons/Gunsx64/Pistols/hi_power_br/tiny.rsi
   - type: Gun
-    angleDecay: 15
+    selectedMode: FullAuto
+    availableModes:
+      - FullAuto
+      - SemiAuto
+    fireRate: 6
+    angleDecay: 5.5
     angleIncrease: 5
     cameraRecoilScalar: 0.5
     maxAngle: 15

@@ -202,7 +202,7 @@
   components:
   - type: StorageFill
     contents:
-    - id: WeaponRifleAR18
+    - id: WeaponRifleM28
       amount: 2
     - id: MagazineRifle
       amount: 4

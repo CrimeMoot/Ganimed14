@@ -105,6 +105,7 @@
 
 - type: loadout # Ganimed
   id: SecurityBioSuit
+  whitelisted: true
   dummyEntity: ClothingOuterBioSecurity
   effects:
   - !type:JobRequirementLoadoutEffect

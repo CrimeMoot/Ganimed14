@@ -264,6 +264,12 @@
   id: SecurityBombSuit
   whitelisted: true
   dummyEntity: ClothingOuterSuitBomb
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:DepartmentTimeRequirement
+      department: Security
+      time: 108000 # 30 hrs
   equipment:
     outerClothing: ClothingOuterSuitBomb
     head: ClothingHeadHelmetBombSuit

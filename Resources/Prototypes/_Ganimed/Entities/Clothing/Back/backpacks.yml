@@ -24,3 +24,13 @@
   components:
   - type: Sprite
     sprite: _Ganimed/Clothing/Back/Backpacks/securityEngineer.rsi
+
+- type: entity
+  parent: ClothingBackpackClown
+  id: ClothingBackpackCluwneRemoveable
+  name: jiggles von jonkerton
+  suffix: Removeable
+  description: It's a backpack made by Jonk! Co.
+  components:
+  - type: Sprite
+    sprite: Clothing/Back/Backpacks/cluwne.rsi

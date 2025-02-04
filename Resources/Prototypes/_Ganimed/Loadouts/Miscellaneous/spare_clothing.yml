@@ -1099,6 +1099,9 @@
   storage:
     back:
     - ClothingMaskNeckGaiter
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: Security
 
 # Neck
 - type: loadout
@@ -1427,15 +1430,27 @@
   - !type:GroupLoadoutEffect
     proto: Doctor
 
+- type: loadout # TODO: Whitelist restriction
+  id: SpareHazardVest
+  whitelisted: true
+  storage:
+    back:
+    - ClothingOuterVestHazard
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: Engineer
+
 # Shoes/Feet
 - type: loadout
   id: SpareSlippers
+  whitelisted: true
   storage:
     back:
     - ClothingShoesSlippers
 
 - type: loadout
   id: SpareTouristShoes
+  whitelisted: true
   storage:
     back:
     - ClothingShoesTourist

@@ -96,10 +96,12 @@
   - GlassesJamjar
   - GlassesBinoclard # Ganimed
   - GlassesJensen
-  - GlassesSalesman # Ganimed
-  - GlassesGar # Ganimed
-  - GlassesGarOrange # Ganimed
-  - GlassesGarGiga # Ganimed
+  # Ganimed-Loadouts-Start
+  - GlassesSalesman
+  - GlassesGar
+  - GlassesGarOrange
+  - GlassesGarGiga
+  # Ganimed-Loadouts-End
 
 - type: loadoutGroup
   id: GroupTankHarness
@@ -233,9 +235,9 @@
   - HoPJumpskirtTurtleneck
   # Corvax-Loadouts-End
   # Ganimed-Loadouts-Start
-  - JumpsuitNanotrasen
   - LawyerJumpsuitBlue
   - LawyerJumpskirtBlue
+  - JumpsuitNanotrasen
   # Ganimed-Loadouts-End
 
 - type: loadoutGroup
@@ -246,9 +248,11 @@
   - HoPCloak
   - HoPCloakOriginal # Ganimed
   - HoPMantle
-  - HoPCloakLong # Ganimed
-  - HoPBedsheet # Ganimed
-  - IanBedsheet # Ganimed
+  # Ganimed-Loadouts-Start
+  - HoPCloakLong
+  - HoPBedsheet
+  - IanBedsheet
+  # Ganimed-Loadouts-End
 
 - type: loadoutGroup
   id: HoPBackpack
@@ -275,7 +279,7 @@
   - BrownShoes
   - BlackShoes
   - LeatherShoes
-  - LaceupShoes
+  - LaceupShoesWhitelisted
 
 # Civilian
 - type: loadoutGroup
@@ -700,7 +704,7 @@
   - ClownBackpack
   - ClownSatchel
   - ClownDuffel
-  # - CluwneBackpackJigglesVonJonkerton # Ganimed
+  - CluwneBackpackJigglesVonJonkertonRemovable # Ganimed
 
 - type: loadoutGroup
   id: ClownOuterClothing
@@ -910,7 +914,7 @@
   - BrownShoes
   - BlackShoes # Ganimed
   - CargoWinterBoots
-  - LeatherShoes # Ganimed
+  - LeatherShoesWhitelisted # Ganimed
 
 - type: loadoutGroup
   id: CargoTechnicianHead
@@ -1024,9 +1028,11 @@
   - ChiefEngineerJumpskirt
   - ChiefEngineerTurtleneck
   - ChiefEngineerTurtleneckSkirt
-  - ChiefEngineerNTJumpsuit # Ganimed
-  - SeniorEngineerJumpsuit # Ganimed
-  - SeniorEngineerJumpskirt # Ganimed
+  # Ganimed-Loadouts-Start
+  - ChiefEngineerNTJumpsuit
+  - SeniorEngineerJumpsuit
+  - SeniorEngineerJumpskirt
+  # Ganimed-Loadouts-End
 
 - type: loadoutGroup
   id: ChiefEngineerNeck
@@ -1060,12 +1066,14 @@
   name: loadout-group-chief-engineer-shoes
   loadouts:
   - BrownShoes
-  - WhiteShoes # Ganimed
-  - OrangeShoes # Ganimed
-  - BlackShoes # Ganimed
+  # Ganimed-Loadouts-Start
+  - WhiteShoes
+  - OrangeShoes
+  - BlackShoes
+  # Ganimed-Loadouts-End
   - EngineeringWinterBoots
   - WorkBoots # Ganimed
-  - LeatherShoes # Ganimed
+  - LeatherShoesWhitelisted # Ganimed
 
 - type: loadoutGroup
   id: TechnicalAssistantJumpsuit
@@ -1124,9 +1132,11 @@
   loadouts:
   - WorkBoots
   - EngineeringWinterBoots
-  - OrangeShoes # Ganimed
-  - BlackShoes # Ganimed
-  - EngineeringMagBoots # Ganimed
+  # Ganimed-Loadouts-Start
+  - OrangeShoes
+  - BlackShoes
+  - EngineeringMagBoots
+  # Ganimed-Loadouts-Start
 
 - type: loadoutGroup
   id: StationEngineerID
@@ -1208,9 +1218,11 @@
   loadouts:
   - ResearchDirectorCloak
   - ResearchDirectorMantle
-  - ResearchDirectorMantleOriginal # Ganimed
-  - ResearchDirectorCloakLong # Ganimed
-  - ResearchDirectorBedsheet # Ganimed
+  # Ganimed-Loadouts-Start
+  - ResearchDirectorMantleOriginal
+  - ResearchDirectorCloakLong
+  - ResearchDirectorBedsheet
+  # Ganimed-Loadouts-End
 
 - type: loadoutGroup
   id: ResearchDirectorJumpsuit
@@ -1252,7 +1264,7 @@
   - BlackShoes # Ganimed
   - PurpleShoes # Ganimed
   - ScienceWinterBoots
-  - LeatherShoes # Ganimed
+  - LeatherShoesWhitelisted # Ganimed
   - ScienceMagBoots # Ganimed
 
 - type: loadoutGroup
@@ -1281,6 +1293,7 @@
   - Glasses
   - GlassesJamjar
   - GlassesBinoclard
+  - GlassesSalesman
   - ChemicalAnalysisGoggles
   - DiagnosticHud
   - DiagnosticHudEyepatch
@@ -1450,7 +1463,7 @@
   - HeadofSecurityGreatCoat
   # Ganimed-Loadouts-End
 
-- type: loadoutGroup #Backmen
+- type: loadoutGroup # Backmen
   id: SecurityOfficerPocket
   name: loadout-group-security-pocket
   loadouts:
@@ -1462,7 +1475,7 @@
   # - WeaponPistolVP78
   # - WeaponRevolverMatebaNew
 
-- type: loadoutGroup #Backmen
+- type: loadoutGroup # Backmen
   id: SecurityOfficerPocket2
   name: loadout-group-security-pocket2
   minLimit: 0
@@ -1514,8 +1527,8 @@
   - LightRiotHelmet # Ganimed
   - SecurityBeret
   - SecurityHat
-  - ClothingHeadHatCapSec #Backmen
-  - ClothingHeadHatPilotkaSec #Backmen
+  - ClothingHeadHatCapSec # Backmen
+  - ClothingHeadHatPilotkaSec # Backmen
   - TrooperHat
   - BountyHunterCowboyHat # Ganimed
 
@@ -1573,8 +1586,8 @@
   - ArmorVestSlim
   - ArmorVestBulletproof # Ganimed
   - ArmorVestReflective # Ganimed
-  - ClothingOuterCoatSecurityOvercoat #Backmen
-  - ClothingOuterCoatSecurityOfficerOvercoat #Backmen
+  - ClothingOuterCoatSecurityOvercoat # Backmen
+  - ClothingOuterCoatSecurityOfficerOvercoat # Backmen
   - SecurityOfficerWintercoat
   - SecurityBombSuit # Ganimed
 
@@ -1595,13 +1608,13 @@
   - SecurityPDA
   - SeniorOfficerPDA
 
-- type: loadoutGroup #Backmen
+- type: loadoutGroup # Backmen
   id: SecurityPocket
   name: loadout-group-security-pocket
   loadouts:
   - WeaponEnergyGunDominator
 
-- type: loadoutGroup #Backmen
+- type: loadoutGroup # Backmen
   id: SecurityPocket2
   name: loadout-group-security-pocket2
   minLimit: 0
@@ -1660,10 +1673,10 @@
   - JackBoots
   - SecurityWinterBoots
   - BrownShoes
-  - LeatherShoes
-  - LaceupShoes
+  - LeatherShoesWhitelisted
+  - LaceupShoesWhitelisted
 
-- type: loadoutGroup #Backmen
+- type: loadoutGroup # Backmen
   id: DetectiveRevolver
   name: loadout-group-security-pocket
   loadouts:
@@ -1679,8 +1692,8 @@
   loadouts:
   - RedJumpsuit
   - RedJumpskirt
-  - SecurityJumpsuitGrey #Backmen
-  - SecurityJumpskirtGrey #Backmen
+  - SecurityJumpsuitGrey # Backmen
+  - SecurityJumpskirtGrey # Backmen
 
 - type: loadoutGroup
   id: SurvivalSecurity
@@ -1755,7 +1768,7 @@
   - WhiteShoes # Ganimed
   - BlueShoes # Ganimed
   - MedicalWinterBoots
-  - LeatherShoes # Ganimed
+  - LeatherShoesWhitelisted # Ganimed
 
 - type: loadoutGroup
   id: MedicalDoctorHead
@@ -1793,6 +1806,7 @@
   loadouts:
   - MedicalHud
   - MedicalHudEyepatch
+  - ChemicalAnalysisGoggles
   - Glasses
   - GlassesJamjar
   - GlassesBinoclard
@@ -1997,6 +2011,16 @@
   loadouts:
   - PsychologistJumpsuit
   - PsychologistJumpskirt
+
+- type: loadoutGroup # Ganimed
+  id: PsychologistShoes
+  name: loadout-group-psychologist-shoes
+  loadouts:
+  - LeatherShoes
+  - BrownShoes
+  - BlackShoes
+  - LaceupShoesWhitelisted
+  - MedicalWinterBoots
 
 - type: loadoutGroup
   id: BoxerJumpsuit

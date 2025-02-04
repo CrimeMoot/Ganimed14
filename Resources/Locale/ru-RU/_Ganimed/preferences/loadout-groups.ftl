@@ -61,4 +61,5 @@ loadout-group-medical-doctor-glasses = Очки врача
 loadout-group-chemist-glasses = Очки химика
 loadout-group-chemist-shoes = Обувь химика
 # Wildcards
+loadout-group-psychologist-shoes = Обувь психолога
 loadout-group-boxer-head = Головной убор мастера боевых искусств

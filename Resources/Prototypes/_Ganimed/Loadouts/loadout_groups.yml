@@ -160,6 +160,8 @@
   - SpareGlovesColorTeal
   - SpareGlovesColorBlue
   - SpareGlovesColorPurple
+  # Mask
+  - SpareNeckGaiter
   # Neck
   - SpareRedTie
   - SpareDetTie
@@ -207,6 +209,10 @@
   - SpareClassicPoncho
   - SpareApron
   - SpareHospitalGown
+  - SpareHazardVest
+  # Shoes
+  # - SpareSlippers
+  # - SpareTouristShoes
 
 # Miscellaneous, Undergarments, Ganimed
 - type: loadoutGroup

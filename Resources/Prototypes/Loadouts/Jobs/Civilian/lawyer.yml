@@ -51,6 +51,7 @@
 
 - type: loadout # Ganimed
   id: JumpsuitNanotrasen
+  whitelisted: true
   equipment:
     jumpsuit: ClothingUniformJumpsuitNanotrasen
 
@@ -79,6 +80,11 @@
 # Shoes, Ganimed
 - type: loadout
   id: LaceupShoes
+  equipment:
+    shoes: ClothingShoesBootsLaceup
+
+- type: loadout
+  id: LaceupShoesWhitelisted
   whitelisted: true
   equipment:
     shoes: ClothingShoesBootsLaceup

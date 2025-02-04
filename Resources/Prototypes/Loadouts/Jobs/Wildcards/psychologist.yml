@@ -12,6 +12,11 @@
 # Shoes, Ganimed
 - type: loadout
   id: LeatherShoes
+  equipment:
+    shoes: ClothingShoesLeather
+
+- type: loadout
+  id: LeatherShoesWhitelisted
   whitelisted: true
   equipment:
     shoes: ClothingShoesLeather

@@ -36,8 +36,6 @@
   wage: 150
   #end-backmen: currency
   special:
-  - !type:AddImplantSpecial
-    implants: [ MindShieldImplant ]
   - !type:AddComponentSpecial
     components:
       - type: CommandStaff

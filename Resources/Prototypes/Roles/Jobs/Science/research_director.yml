@@ -35,8 +35,6 @@
       - type: NpcFactionMember
         factions:
           - CentralCommand
-  - !type:AddImplantSpecial
-    implants: [ MindShieldImplant ]
   - !type:AddComponentSpecial
     components:
       - type: CommandStaff

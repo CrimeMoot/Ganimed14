@@ -344,30 +344,6 @@
   products:
     Tramadol: 4
 
-- type: reagent
-  id: Nanomachines #лечат долго и медленно.
-  name: reagent-nanomachines
-  group: Medicine
-  desc: reagent-nanomachines-desc
-  physicalDesc: reagent-psychicalDesc-nanomachines
-  flavor: metallic
-  color: "#f80000"
-  metabolisms:
-    Medicine:
-      metabolismRate: 0.001
-      effects:
-      - !type:HealthChange
-        conditions:
-        damage:
-          groups:
-            Brute: -0.3
-            Toxin: -0.2
-          types:
-            Heat: -0.2
-            Bloodloss: 0.2
-      - !type:ModifyBleedAmount
-        amount: -0.5
-
 - type: entity
   name: продвинутый экстренный иньектор
   parent: EmergencyMedipen
@@ -392,29 +368,6 @@
           Quantity: 10
         - ReagentId: Dirozine
           Quantity: 20
-
-- type: entity
-  name: иньектор наномашин
-  parent: EmergencyMedipen
-  id: MedipenNanomachines
-  description: Содержит дозу медицинских нанитов,расчитанных на работу в течении 15 минут за каждый иньектор.
-  components:
-  - type: Sprite
-    sprite: _Ganimed/Objects/Specific/Medical/medipen.rsi
-    layers:
-    - state: nanomachines
-      map: ["enum.SolutionContainerLayers.Fill"]
-  - type: SolutionContainerVisuals
-    maxFillLevels: 1
-    changeColor: false
-    emptySpriteName: nanomachines_empty
-  - type: SolutionContainerManager
-    solutions:
-      pen:
-        maxVol: 1
-        reagents:
-        - ReagentId: Nanomachines
-          Quantity: 1
 
 - type: entity
   name: иньектор диловена

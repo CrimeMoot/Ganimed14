@@ -77,9 +77,6 @@
 - type: loadout
   id: GlassesGar
   whitelisted: true
-#  effects:
-#  - !type:GroupLoadoutEffect
-#    proto: 
   equipment:
     eyes: ClothingEyesGlassesGar
 
@@ -87,9 +84,6 @@
 - type: loadout
   id: GlassesGarOrange
   whitelisted: true
-#  effects:
-#  - !type:GroupLoadoutEffect
-#    proto: 
   equipment:
     eyes: ClothingEyesGlassesGarOrange
 

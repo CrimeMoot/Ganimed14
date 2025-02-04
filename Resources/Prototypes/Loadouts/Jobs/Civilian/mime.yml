@@ -37,6 +37,11 @@
   equipment:
     neck: ClothingNeckScarfStripedZebra
 
+- type: loadout
+  id: MimeBedsheet
+  equipment:
+    neck: BedsheetMime
+
 # Jumpsuit
 - type: loadout
   id: MimeJumpsuit

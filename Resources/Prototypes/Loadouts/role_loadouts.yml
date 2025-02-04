@@ -518,6 +518,7 @@
   - DetectiveJumpsuit
   - SecurityBackpack
   - DetectiveOuterClothing
+  - DetectiveGloves # Ganimed
   - DetectiveShoes # Ganimed
   - DetectiveRevolver
   - Underwear # Ganimed
@@ -552,7 +553,7 @@
   - ChiefMedicalOfficerMedicalMask # Ganimed
   - ChiefMedicalOfficerJumpsuit
   - MedicalGloves
-  - MedicalBackpack
+  - MedicalBackpackExtended # Ganimed
   - ChiefMedicalOfficerOuterClothing
   - ChiefMedicalOfficerNeck
   - ChiefMedicalOfficerShoes
@@ -575,7 +576,7 @@
   - MedicalDoctorHeadset # Ganimed
   - MedicalDoctorJumpsuit
   - MedicalGloves
-  - MedicalBackpack
+  - MedicalBackpackExtended # Ganimed
   - MedicalDoctorOuterClothing
   - MedicalShoes
   - MedicalDoctorPDA
@@ -679,7 +680,7 @@
   - GroupTankHarness
   - PsychologistJumpsuit
   - MedicalBackpack
-  - Glasses
+  - MedicalDoctorGlasses # Ganimed
   - CommonBelt # Ganimed
   - Underwear # Ganimed
   - Medals #backmen

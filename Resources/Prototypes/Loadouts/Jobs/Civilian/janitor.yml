@@ -58,6 +58,20 @@
   equipment:
     outerClothing: ClothingOuterWinterJani
 
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: JanitorBioSuit
+  whitelisted: true
+  dummyEntity: ClothingOuterBioJanitor
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:DepartmentTimeRequirement
+      department: Medical
+      time: 108000 # 30 hrs
+  equipment:
+    outerClothing: ClothingOuterBioJanitor
+    head: ClothingHeadHatHoodBioJanitor
+
 # Misc
 - type: loadout
   id: JanitorGoldenPlunger

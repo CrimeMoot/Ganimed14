@@ -884,6 +884,28 @@
     back:
     - ClothingUniformJumpsuitCossack
 
+- type: loadout
+  id: SpareWebJumpsuit
+  whitelisted: true
+  storage:
+    back:
+    - ClothingUniformJumpsuitWeb
+  effects:
+  - !type:SpeciesLoadoutEffect
+    species:
+    - Arachnid
+
+- type: loadout
+  id: SpareWebJumpskirt
+  whitelisted: true
+  storage:
+    back:
+    - ClothingUniformJumpskirtWeb
+  effects:
+  - !type:SpeciesLoadoutEffect
+    species:
+    - Arachnid
+
 #Dresses
 - type: loadout
   id: SpareBlackElegantDress
@@ -1203,6 +1225,13 @@
     - ClothingNeckBling
 
 - type: loadout # TODO: Whitelist restriction
+  id: SpareRaindowBedsheet
+  whitelisted: true
+  storage:
+    back:
+    - BedsheetRainbow
+
+- type: loadout # TODO: Whitelist restriction
   id: SpareWizardBedsheet
   whitelisted: true
   storage:
@@ -1215,6 +1244,13 @@
   storage:
     back:
     - BedsheetCosmos
+
+- type: loadout # TODO: Whitelist restriction
+  id: SpareRedRevBandage
+  whitelisted: true
+  storage:
+    back:
+    - ClothingNeckRevBandage
 
 # Outer clothing
 - type: loadout
@@ -1302,6 +1338,17 @@
     - ClothingOuterWinterColorPurple
 
 - type: loadout
+  id: SpareWebWintercoat
+  whitelisted: true
+  storage:
+    back:
+    - ClothingOuterWinterWeb
+  effects:
+  - !type:SpeciesLoadoutEffect
+    species:
+    - Arachnid
+
+- type: loadout
   id: SpareBomberJacket
   storage:
     back:
@@ -1386,3 +1433,9 @@
   storage:
     back:
     - ClothingShoesSlippers
+
+- type: loadout
+  id: SpareTouristShoes
+  storage:
+    back:
+    - ClothingShoesTourist

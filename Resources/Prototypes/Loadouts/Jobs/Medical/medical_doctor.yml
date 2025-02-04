@@ -93,6 +93,11 @@
   equipment:
     neck: ClothingCloakMed
 
+- type: loadout
+  id: MedicalBedsheet
+  equipment:
+    neck: BedsheetMedical
+
 # Headset, Ganimed
 - type: loadout
   id: HeadsetMedical

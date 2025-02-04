@@ -129,6 +129,8 @@
   - SpareJumpsuitRandom
   - SpareJumpsuitRandomShirt
   - SpareCossackSuit
+  - SpareWebJumpsuit
+  - SpareWebJumpskirt
   - SpareBlackElegantDress
   - SpareRedElegantDress
   - SpareGreenElegantDress
@@ -173,6 +175,10 @@
   - SpareHieroglyphicCloak
   - SpareOrangeCloak
   - SpareBling
+  - SpareRaindowBedsheet
+  - SpareWizardBedsheet
+  - SpareCosmosBedsheet
+  # - SpareRedRevBandage
   # Outer clothing
   - SpareRedFlannelJacket
   - SpareGreenFlannelJacket
@@ -188,6 +194,7 @@
   - SpareGreenWintercoat
   - SpareBlueWintercoat
   - SparePurpleWintercoat
+  - SpareWebWintercoat
   - SpareBomberJacket
   - SpareBlackBomber
   - SpareGentleCoat

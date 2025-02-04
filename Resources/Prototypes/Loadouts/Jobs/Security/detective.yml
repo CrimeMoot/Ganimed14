@@ -67,6 +67,13 @@
   equipment:
     outerClothing: ClothingOuterCoatDetectiveDark
 
+# Gloves, Ganimed
+- type: loadout
+  whitelisted: true
+  id: ForensicGloves
+  equipment:
+    gloves: ClothingHandsGlovesForensic
+
 # Weapon #Backmen
 - type: loadout
   id: WeaponRevolverCMB

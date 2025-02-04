@@ -73,6 +73,14 @@
   equipment:
     neck: BedsheetHOP
 
+- type: loadout # Ganimed
+  id: IanBedsheet
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ProfessionalHoP
+  equipment:
+    neck: BedsheetIan
+
 # Back
 - type: loadout
   id: HoPBackpackIan

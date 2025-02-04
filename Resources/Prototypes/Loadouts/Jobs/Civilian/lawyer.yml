@@ -65,6 +65,11 @@
   equipment:
     neck: BedsheetNT
 
+- type: loadout # Ganimed
+  id: NanotrasenCloak
+  equipment:
+    neck: ClothingNeckCloakNanotrasen
+
 # OuterClothing, Ganimed
 - type: loadout
   id: JudgeRobes

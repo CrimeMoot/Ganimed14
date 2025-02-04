@@ -248,6 +248,7 @@
   - HoPMantle
   - HoPCloakLong # Ganimed
   - HoPBedsheet # Ganimed
+  - IanBedsheet # Ganimed
 
 - type: loadoutGroup
   id: HoPBackpack
@@ -494,6 +495,7 @@
   loadouts:
   - LawyerNeck
   - NTBedsheet # Ganimed
+  - NanotrasenCloak # Ganimed
 
 - type: loadoutGroup # Ganimed
   id: MagistrateOuterClothing
@@ -602,6 +604,7 @@
   - JanitorRubberGloves
   - OrangeGloves
   - PurpleGloves
+  - LatexGloves # Ganimed
 
 - type: loadoutGroup
   id: JanitorOuterClothing
@@ -609,6 +612,7 @@
   minLimit: 0
   loadouts:
   - JanitorWintercoat
+  - JanitorBioSuit # Ganimed
 
 - type: loadoutGroup
   id: JanitorPlunger
@@ -773,6 +777,7 @@
   minLimit: 0
   loadouts:
   - ScarfZebra
+  - MimeBedsheet
 
 - type: loadoutGroup
   id: MimeJumpsuit
@@ -1008,7 +1013,7 @@
   loadouts:
   - ChiefEngineerHead
   - ChiefEngineerBeret
-  - ClothingHeadHatBeretChiefEngineering  # cats
+  - ClothingHeadHatBeretChiefEngineering # cats
   - ArmoredHarthat # Ganimed
 
 - type: loadoutGroup
@@ -1020,6 +1025,8 @@
   - ChiefEngineerTurtleneck
   - ChiefEngineerTurtleneckSkirt
   - ChiefEngineerNTJumpsuit # Ganimed
+  - SeniorEngineerJumpsuit # Ganimed
+  - SeniorEngineerJumpskirt # Ganimed
 
 - type: loadoutGroup
   id: ChiefEngineerNeck
@@ -1038,7 +1045,7 @@
   minLimit: 0
   loadouts:
   - ChiefEngineerWintercoat
-  - SeniorEngineerWintercoat  # cats
+  - SeniorEngineerWintercoat # cats
 
 - type: loadoutGroup # Ganimed
   id: ChiefEngineerGloves
@@ -1215,6 +1222,8 @@
   - ResearchDirectorJumpsuitClassical
   - ResearchDirectorJumpskirtClassical
   # Corvax-Loadouts-End
+  - SeniorResearcherJumpsuit # Ganimed
+  - SeniorResearcherJumpskirt # Ganimed
 
 - type: loadoutGroup
   id: ResearchDirectorOuterClothing
@@ -1223,7 +1232,7 @@
   loadouts:
   - ResearchDirectorLabCoat
   - ResearchDirectorWintercoat
-  - SeniorResearcherWintercoat  # cats
+  - SeniorResearcherWintercoat # cats
 
 - type: loadoutGroup # Ganimed
   id: ResearchDirectorGloves
@@ -1622,6 +1631,8 @@
   - DetectiveJumpskirt
   - NoirJumpsuit
   - NoirJumpskirt
+  - JumpsuitDecSerii
+  - ClothingJumpsuitDecSerii
 
 - type: loadoutGroup
   id: DetectiveOuterClothing
@@ -1634,12 +1645,21 @@
   - DetectiveCoatDark # Ganimed
 
 - type: loadoutGroup # Ganimed
+  id: DetectiveGloves
+  name: loadout-group-detective-gloves
+  minLimit: 0
+  loadouts:
+  - ForensicGloves
+  - LatexGloves
+
+- type: loadoutGroup # Ganimed
   id: DetectiveShoes
   name: loadout-group-detective-shoes
   loadouts:
   - JackSecBoots
   - JackBoots
   - SecurityWinterBoots
+  - BrownShoes
   - LeatherShoes
   - LaceupShoes
 
@@ -1696,6 +1716,8 @@
   - ChiefMedicalOfficerJumpskirt
   - ChiefMedicalOfficerTurtleneckJumpsuit
   - ChiefMedicalOfficerTurtleneckJumpskirt
+  - SeniorPhysicianJumpsuit # Ganimed
+  - SeniorPhysicianJumpskirt # Ganimed
 
 - type: loadoutGroup
   id: ChiefMedicalOfficerOuterClothing
@@ -1704,7 +1726,7 @@
   loadouts:
   - ChiefMedicalOfficerLabCoat
   - ChiefMedicalOfficerWintercoat
-  - SeniorPhysicianWintercoat  # cats
+  - SeniorPhysicianWintercoat # cats
   - ChiefMedicalOfficerBioSuit # Ganimed
 
 - type: loadoutGroup
@@ -1755,6 +1777,7 @@
   loadouts:
   - Stethoscope
   - MedicalCloak
+  - MedicalBedsheet
 
 - type: loadoutGroup # Ganimed
   id: MedicalDoctorHeadset
@@ -1804,7 +1827,7 @@
   - RegularLabCoat
   - MedicalDoctorWintercoat
   - SeniorPhysicianLabCoat
-  - SeniorPhysicianWintercoat  # cats
+  - SeniorPhysicianWintercoat # cats
   # Ganimed-Loadouts-Start
   - GeneticsLabCoat
   - VirologyLabCoat
@@ -1821,14 +1844,20 @@
   - MedicalDoctorBackpack
   - MedicalDoctorSatchel
   - MedicalDoctorDuffel
-  # Ganimed-Loadouts-Start
+
+- type: loadoutGroup # Ganimed
+  id: MedicalBackpackExtended
+  name: loadout-group-medical-doctor-backpack
+  loadouts:
+  - MedicalDoctorBackpack
+  - MedicalDoctorSatchel
+  - MedicalDoctorDuffel
   - GeneticsBackpack
   - GeneticsSatchel
   - GeneticsDuffel
   - VirologyBackpack
   - VirologySatchel
   - VirologyDuffel
-  # Ganimed-Loadouts-End
 
 - type: loadoutGroup
   id: MedicalShoes
@@ -1882,7 +1911,7 @@
   - RegularLabCoat
   - ChemistLabCoat
   - ChemistWintercoat
-  - SeniorPhysicianWintercoat  # cats
+  - SeniorPhysicianWintercoat # cats
 
 - type: loadoutGroup
   id: ChemistBackpack
@@ -1918,7 +1947,7 @@
   minLimit: 0
   loadouts:
   - ParamedicHead
-  - ClothingHeadHatParamedicBeret   # cats
+  - ClothingHeadHatParamedicBeret # cats
 
 - type: loadoutGroup
   id: ParamedicJumpsuit
@@ -1935,7 +1964,7 @@
   loadouts:
   - ParamedicWindbreaker
   - ParamedicWintercoat
-  - SeniorPhysicianWintercoat  # cats 
+  - SeniorPhysicianWintercoat # cats 
 
 - type: loadoutGroup
   id: ParamedicShoes

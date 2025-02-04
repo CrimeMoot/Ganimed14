@@ -11,7 +11,7 @@ loadout-group-captain-gloves = Перчатки капитана
 loadout-group-captain-shoes = Обувь капитана
 loadout-group-hop-shoes = Обувь главы персонала
 loadout-group-magistrate-outerclothing = Судейская мантия
-#Civilian
+# Civilian
 loadout-group-common-belt = Поясная сумка
 loadout-group-bartender-glasses = Очки бармена
 loadout-group-bartender-belt = Пояс бармена
@@ -47,6 +47,7 @@ loadout-group-head-of-security-belt = Пояс главы службы безо�
 loadout-group-warden-backpack = Рюкзак смотрителя
 loadout-group-security-neck = Офицер СБ, шея
 loadout-group-security-glasses = Очки СБ
+loadout-group-detective-gloves = Перчатки криминалиста
 loadout-group-detective-shoes = Обувь детектива
 loadout-group-pilot-head = Головной убор пилота СБ
 loadout-group-pilot-jumpsuit = Форма пилота СБ

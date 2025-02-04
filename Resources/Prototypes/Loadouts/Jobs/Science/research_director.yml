@@ -27,6 +27,14 @@
   equipment:
     neck: ClothingNeckMantleRD
 
+- type: loadout # Ganimed
+  id: ResearchDirectorMantleOriginal
+  equipment:
+    neck: ClothingNeckMantleRDOriginal
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MasterRD
+
 - type: loadout
   id: ResearchDirectorCloak
   equipment:

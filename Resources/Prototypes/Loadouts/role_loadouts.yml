@@ -6,7 +6,9 @@
   - CaptainNeck
   - CaptainJumpsuit
   - CaptainBackpack
+  - CaptainGloves # Ganimed
   - CaptainOuterClothing
+  - CaptainShoes # Ganimed
   - Underwear # Ganimed
   - Trinkets
   - Medals #backmen
@@ -85,6 +87,7 @@
   - ServiceWorkerJumpsuit
   - CommonBackpack
   - Glasses
+  - CommonBelt # Ganimed
   - Underwear # Ganimed
   - Medals #backmen
   - Survival
@@ -136,7 +139,7 @@
   - LawyerJumpsuit
   - MagistrateOuterClothing # Ganimed
   - CommonBackpack
-  - Glasses
+  - GlassesWithSunglasses # Ganimed
   - Underwear # Ganimed
   - Medals #backmen
   - Survival
@@ -158,6 +161,7 @@
   - ChaplainOuterClothing
   - ChaplainShoes # Ganimed
   - Glasses
+  - CommonBelt # Ganimed
   - Underwear # Ganimed
   - Medals #backmen
   - Trinkets
@@ -247,7 +251,7 @@
   - MusicianJumpsuit
   - CommonBackpack
   - MusicianOuterClothing
-  - Glasses
+  - GlassesWithSunglasses # Ganimed
   - Survival
   - Underwear # Ganimed
   - Medals #backmen
@@ -268,7 +272,7 @@
   - CargoTechnicianBackpack
   - QuartermasterOuterClothing
   - QuartermasterShoes
-  - Glasses
+  - GlassesWithSunglasses # Ganimed
   - Underwear # Ganimed
   - Medals #backmen
   - Survival
@@ -300,6 +304,7 @@
   groups:
   - GroupTankHarness
   - SalvageSpecialistHead # Ganimed
+  - SalvageSpecialistNeck # Ganimed
   - SalvageSpecialistBackpack
   - SalvageSpecialistOuterClothing
   - SalvageSpecialistBelt # Ganimed
@@ -324,6 +329,7 @@
   - ChiefEngineerBackpack # Corvax-Loadouts
   - ChiefEngineerNeck
   - ChiefEngineerOuterClothing
+  - ChiefEngineerGloves # Ganimed
   - ChiefEngineerShoes
   - Underwear # Ganimed
   - Medals #backmen
@@ -543,7 +549,7 @@
   groups:
   - GroupTankHarness
   - ChiefMedicalOfficerHead
-  - MedicalMask
+  - ChiefMedicalOfficerMedicalMask # Ganimed
   - ChiefMedicalOfficerJumpsuit
   - MedicalGloves
   - MedicalBackpack
@@ -607,7 +613,7 @@
   - ChemistBackpack
   - ChemistGlasses # Ganimed
   - ChemistOuterClothing
-  - MedicalShoes
+  - ChemistShoes # Ganimed
   - Underwear # Ganimed
   - Medals #backmen
   - SurvivalMedical
@@ -643,6 +649,7 @@
   - GroupTankHarness
   - CommonBackpack
   - Glasses
+  - CommonBelt # Ganimed
   - Underwear # Ganimed
   - Medals #backmen
   - Survival
@@ -669,11 +676,11 @@
 - type: roleLoadout
   id: JobPsychologist
   groups:
-  - PsychologistJumpsuit #backmen
   - GroupTankHarness
   - PsychologistJumpsuit
   - MedicalBackpack
   - Glasses
+  - CommonBelt # Ganimed
   - Underwear # Ganimed
   - Medals #backmen
   - Survival

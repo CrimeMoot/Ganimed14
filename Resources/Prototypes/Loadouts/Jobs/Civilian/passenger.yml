@@ -102,6 +102,13 @@
   equipment:
     back: ClothingBackpackSatchelLeather
 
+# Belt, Ganimed
+- type: loadout
+  id: WaistBag
+  whitelisted: true
+  equipment:
+    belt: ClothingBeltStorageWaistbag
+
 # Gloves
 - type: loadout
   id: PassengerGloves

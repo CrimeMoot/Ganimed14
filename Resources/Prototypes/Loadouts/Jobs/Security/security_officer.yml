@@ -155,7 +155,7 @@
     jumpsuit: ClothingUniformJumpskirtSeniorOfficer
 
 - type: loadout # Ganimed
-  id: BlueSecurityUniform
+  id: SecurityUniformBlueShirt
   equipment:
     jumpsuit: ClothingUniformJumpsuitSecBlue
 
@@ -271,6 +271,7 @@
 # Shoes
 - type: loadout
   id: CombatBoots
+  whitelisted: true
   equipment:
     shoes: ClothingShoesBootsCombatFilled
 

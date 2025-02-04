@@ -50,12 +50,6 @@
   equipment:
     eyes: ClothingEyesHudFriedOnion
 
-# Belt, Ganimed
-- type: loadout
-  id: WaistBag
-  equipment:
-    belt: ClothingBeltStorageWaistbag
-
 # Outer clothing
 - type: loadout
   id: BartenderApron

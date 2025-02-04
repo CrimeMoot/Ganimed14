@@ -17,16 +17,20 @@
 - type: roleLoadout
   id: JobPilot
   groups:
-  - SecurityJumpsuit
+  - GroupTankHarness
+  - PilotHead # Ganimed
+  - PilotJumpsuit # Ganimed
   - SecurityBackpack
-  - SecurityOuterClothing
+  - PilotOuterClothing # Ganimed
   - SecurityBelt
-  - SecurityShoes
-  - Survival
+  - PilotGloves # Ganimed
+  - PilotShoes # Ganimed
+  - SurvivalSecurity
   - Underwear # Ganimed
   - Medals #backmen
+  - SurvivalSecurity
   - Trinkets
   - SecurityStar
-  - GroupSpeciesBreathTool
+  - GroupSpeciesBreathToolSecurity
   - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts

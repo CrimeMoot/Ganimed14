@@ -29,6 +29,36 @@
   equipment:
     jumpsuit: ClothingUniformJumpskirtCapFormalDress
 
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: CaptainWhiteJumpsuit
+  whitelisted: true
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitWhiteCaptain
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MasterCap
+
+- type: loadout # Ganimed
+  id: CaptainWhiteJumpskirt
+  whitelisted: true
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtWhiteCaptain
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MasterCap
+
+- type: loadout # Ganimed
+  id: CaptainCommandSuit
+  sponsorOnly: true
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCommandCaptain
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:DepartmentTimeRequirement
+      department: Command
+      time: 180000 # 50hr
+
 # Head
 - type: loadout
   id: CaptainHead
@@ -45,6 +75,24 @@
   equipment:
     head: ClothingHeadCaptainHat
 
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: CaptainCapWhite
+  whitelisted: true
+  equipment:
+    head: ClothingHeadHatCapcapWhite
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MasterCap
+
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: CaptainBeretWhite
+  whitelisted: true
+  equipment:
+    head: ClothingHeadHatBeretCaptainWhite
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MasterCap
+
 # Neck
 - type: loadout
   id: CaptainCloak
@@ -55,6 +103,11 @@
   id: CaptainCloakFormal
   equipment:
     neck: ClothingNeckCloakCapFormal
+
+- type: loadout # Ganimed
+  id: CaptainCloakOriginal
+  equipment:
+    neck: ClothingNeckCloakCapOriginal
 
 - type: loadout
   id: CaptainMantle
@@ -74,6 +127,24 @@
   whitelisted: true
   equipment:
     neck: ClothingLongCloakCap
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MasterCap
+
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: CaptainGreatcoatOversize
+  whitelisted: true
+  equipment:
+    neck: ClothingNeckCaptainWide
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MasterCap
+
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: CaptainMantleWhite
+  whitelisted: true
+  equipment:
+    neck: ClothingNeckWhiteMantleCaptain
   effects:
   - !type:GroupLoadoutEffect
     proto: MasterCap
@@ -99,6 +170,21 @@
   equipment:
     back: ClothingBackpackDuffelCaptain
 
+# Gloves, Ganimed
+- type: loadout
+  id: CaptainGloves
+  equipment:
+    gloves: ClothingHandsGlovesCaptain
+
+- type: loadout
+  id: CaptainGlovesWhite
+  whitelisted: true
+  equipment:
+    gloves: ClothingHandsGlovesCaptainWhite
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MasterCap
+
 # Outer clothing
 - type: loadout
   id: CaptainOuterClothing
@@ -109,3 +195,8 @@
   id: CaptainWintercoat
   equipment:
     outerClothing: ClothingOuterWinterCap
+
+- type: loadout # Ganimed
+  id: CaptainFormalJacket
+  equipment:
+    outerClothing: ClothingOuterCoatCaptain

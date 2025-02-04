@@ -141,6 +141,12 @@
   equipment:
     outerClothing: ClothingOuterWinterSeniorEngineer  # cats
 
+# Gloves, Ganimed
+- type: loadout
+  id: InsulatedGloves
+  equipment:
+    gloves: ClothingHandsGlovesColorYellow
+
 # Shoes
 - type: loadout
   id: WorkBoots

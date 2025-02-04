@@ -62,6 +62,11 @@
   equipment:
     neck: ClothingNeckStoleChaplain
 
+- type: loadout # Ganimed
+  id: HolyMedal
+  equipment:
+    neck: ClothingNeckHolyMedal
+
 # Gloves, Ganimed
 - type: loadout # TODO: Whitelist restriction
   id: ChaplainDivineWatch

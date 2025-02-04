@@ -33,6 +33,15 @@
   - !type:GroupLoadoutEffect
     proto: MasterSalvager
 
+- type: loadout
+  id: GoliathCloak
+  sponsorOnly: true
+  equipment:
+    neck: ClothingNeckCloakGoliathCloak
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MasterSalvager
+
 # Headset, Ganimed
 - type: loadout
   id: HeadsetCargo

@@ -133,10 +133,10 @@
   equipment:
     mask: ClothingMaskBreathMedicalSecurity
 
-- type: loadout
-  id: ClothingMaskSterile
+- type: loadout # Ganimed
+  id: ClothingMaskBreathMedical
   equipment:
-    mask: ClothingMaskSterile
+    mask: ClothingMaskBreathMedical
 
 - type: loadout
   id: ClothingMaskGasSecurity

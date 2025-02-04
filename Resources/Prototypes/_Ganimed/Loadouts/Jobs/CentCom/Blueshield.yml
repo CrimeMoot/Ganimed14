@@ -9,6 +9,11 @@
   equipment:
     jumpsuit: ClothingUniformJumpskirtBlueshields
 
+- type: loadout # Ganimed
+  id: BlueshieldUniformSuit
+  equipment:
+    jumpsuit: BlueshieldUniformSuit
+
 #mask
 - type: loadout
   id: ClothingMaskGasBlueshields

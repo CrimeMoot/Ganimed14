@@ -64,6 +64,11 @@
   equipment:
     neck: ClothingNeckCloakCe
 
+- type: loadout # Ganimed
+  id: ChiefEngineerCloakOriginal
+  equipment:
+    neck: ClothingNeckCloakCeOriginal
+
 - type: loadout
   id: ChiefEngineerMantle
   equipment:

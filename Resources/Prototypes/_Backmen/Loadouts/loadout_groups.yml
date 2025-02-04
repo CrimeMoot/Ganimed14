@@ -14,6 +14,7 @@
   - ClothingSkirtBlueShield
   - ClothingUniformJumpsuitBlueshields # cats
   - ClothingUniformJumpskirtBlueshields # cats
+  - BlueshieldUniformSuit # Ganimed
 
 - type: loadoutGroup
   id: BlueShieldBackpack
@@ -142,7 +143,8 @@
   minLimit: 0
   loadouts:
   - ClothingMaskBreathMedicalSecurity
-  - ClothingMaskSterile
+  - ClothingMaskBreathMedical # Ganimed
+  - SterileMask # Ganimed
   - ClothingMaskGasSecurity
 
 - type: loadoutGroup # Ganimed

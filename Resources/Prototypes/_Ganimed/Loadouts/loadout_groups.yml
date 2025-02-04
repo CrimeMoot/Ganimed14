@@ -26,6 +26,7 @@
   - SpareHetmanHat
   - SpareSombrero
   - SpareBeaverHat
+  - SpareGreyFedora
   - SpareBlackCatHat
   - SpareGreyCatHat
   - SpareBrownCatHat
@@ -69,6 +70,38 @@
   - SpareJumpskirtColorMaroon
   - SpareJumpsuitColorPink
   - SpareJumpskirtColorPink
+  - SpareTurtleneckColorBlack
+  - SpareTurtleneckSkirtColorBlack
+  - SpareTurtleneckColorGrey
+  - SpareTurtleneckSkirtColorGrey
+  - SpareTurtleneckColorWhite
+  - SpareTurtleneckSkirtColorWhite
+  - SpareTurtleneckColorLightBrown
+  - SpareTurtleneckSkirtColorLightBrown
+  - SpareTurtleneckColorBrown
+  - SpareTurtleneckSkirtColorBrown
+  - SpareTurtleneckColorRed
+  - SpareTurtleneckSkirtColorRed
+  - SpareTurtleneckColorOrange
+  - SpareTurtleneckSkirtColorOrange
+  - SpareTurtleneckColorYellow
+  - SpareTurtleneckSkirtColorYellow
+  - SpareTurtleneckColorGreen
+  - SpareTurtleneckSkirtColorGreen
+  - SpareTurtleneckColorDarkGreen
+  - SpareTurtleneckSkirtColorDarkGreen
+  - SpareTurtleneckColorTeal
+  - SpareTurtleneckSkirtColorTeal
+  - SpareTurtleneckColorBlue
+  - SpareTurtleneckSkirtColorBlue
+  - SpareTurtleneckColorDarkBlue
+  - SpareTurtleneckSkirtColorDarkBlue
+  - SpareTurtleneckColorPurple
+  - SpareTurtleneckSkirtColorPurple
+  - SpareTurtleneckColorMaroon
+  - SpareTurtleneckSkirtColorMaroon
+  - SpareTurtleneckColorPink
+  - SpareTurtleneckSkirtColorPink
   - SpareRedCasualJumpsuit
   - SpareRedCasualJumpskirt
   - SpareGreenCasualJumpsuit
@@ -77,6 +110,7 @@
   - SpareBlueCasualJumpskirt
   - SparePurpleCasualJumpsuit
   - SparePurpleCasualJumpskirt
+  - SpareLoungewear
   - SpareBlackHawaiianShirt
   - SpareRedHawaiianShirt
   - SpareYellowHawaiianShirt
@@ -87,6 +121,9 @@
   - SpareNoirSuitskirt
   - SpareHardWornSuit
   - SpareHardWornSuitskirt
+  - SpareBlueShirt
+  - SpareJournalistSuit
+  - SpareReporterSuit
   - SpareOveralls
   - SpareJumpsuitFlannel
   - SpareJumpsuitRandom
@@ -262,8 +299,7 @@
   - LightBlueStripedStockings
 
 # Jobs
-# CentCom
-
+# CentCom (TODO)
 
 # Command
 - type: loadoutGroup # Ganimed
@@ -310,3 +346,51 @@
   - RoboticistLabCoat
   - RoboticistOriginalLabCoat
   - RoboticistWintercoat
+
+# Security
+- type: loadoutGroup # Ganimed
+  id: PilotHead
+  name: loadout-group-pilot-head
+  minLimit: 0
+  loadouts:
+  - SecurityBeret
+  - ClothingHeadHatPilotkaSec #Backmen
+  - ClothingHeadHatCapSec #Backmen
+  - SecurityHelmet
+  # - PilotHelmet
+
+- type: loadoutGroup # Ganimed
+  id: PilotJumpsuit
+  name: loadout-group-pilot-jumpsuit
+  loadouts:
+  - SecurityJumpsuit
+  - SecurityJumpskirt
+  - BlueSecurityUniform
+  - AerostaticSuit
+
+- type: loadoutGroup # Ganimed
+  id: PilotGloves
+  name: loadout-group-pilot-gloves
+  minLimit: 0
+  loadouts:
+  - AerostaticGloves
+
+- type: loadoutGroup # Ganimed
+  id: PilotOuterClothing
+  name: loadout-group-pilot-outerclothing
+  loadouts:
+  - BomberCoat
+  - ArmorVest
+  - ArmorVestSlim
+  - SecurityOfficerWintercoat
+  - AerostaticBomberJacket
+
+- type: loadoutGroup # Ganimed
+  id: PilotShoes
+  name: loadout-group-pilot-shoes
+  loadouts:
+  - JackSecBoots
+  - JackBoots
+  - CombatBoots
+  - SecurityWinterBoots
+  - AerostaticShoes

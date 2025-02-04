@@ -34,6 +34,12 @@
   equipment:
     head: ClothingHeadHatWatermelon
 
+- type: loadout # Ganimed
+  id: BotanistHeadBucket
+  whitelisted: true
+  equipment:
+    head: Bucket
+
 # Jumpsuit
 - type: loadout
   id: BotanistJumpsuit

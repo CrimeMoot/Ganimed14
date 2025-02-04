@@ -28,6 +28,15 @@
       role: JobMedicalDoctor
       time: 108000 #30 hrs
 
+- type: loadoutEffectGroup # Ganimed
+  id: ClinicalSpecialist
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:DepartmentTimeRequirement
+      department: Medical
+      time: 36000 # 10hr
+
 # Head
 - type: loadout
   id: SeniorPhysicianBeret
@@ -148,48 +157,72 @@
   whitelisted: true
   equipment:
     jumpsuit: ClothingUniformJumpsuitGenetics
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ClinicalSpecialist
 
 - type: loadout # Ganimed
   id: GeneticsJumpskirt
   whitelisted: true
   equipment:
     jumpsuit: ClothingUniformJumpskirtGenetics
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ClinicalSpecialist
 
 - type: loadout # Ganimed
   id: VirologyJumpsuit
   whitelisted: true
   equipment:
     jumpsuit: ClothingUniformJumpsuitVirology
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ClinicalSpecialist
 
 - type: loadout # Ganimed
   id: VirologyJumpskirt
   whitelisted: true
   equipment:
     jumpsuit: ClothingUniformJumpskirtVirology
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ClinicalSpecialist
 
 - type: loadout # Ganimed
   id: CoronerJumpsuit
   sponsorOnly: true
   equipment:
     jumpsuit: ClothingUniformJumpsuitCoroner
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ClinicalSpecialist
 
 - type: loadout # Ganimed
   id: CoronerJumpskirt
   sponsorOnly: true
   equipment:
     jumpsuit: ClothingUniformJumpskirtCoroner
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ClinicalSpecialist
 
 - type: loadout # Ganimed
   id: BlackCoronerJumpsuit
   sponsorOnly: true
   equipment:
     jumpsuit: ClothingUniformJumpsuitCoronerBlack
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ClinicalSpecialist
 
 - type: loadout # Ganimed
   id: BlackCoronerJumpskirt
   sponsorOnly: true
   equipment:
     jumpsuit: ClothingUniformJumpskirtCoronerBlack
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ClinicalSpecialist
 
 # Back
 - type: loadout
@@ -212,36 +245,54 @@
   whitelisted: true
   equipment:
     back: ClothingBackpackGenetics
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ClinicalSpecialist
 
 - type: loadout # Ganimed
   id: GeneticsSatchel
   whitelisted: true
   equipment:
     back: ClothingBackpackSatchelGenetics
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ClinicalSpecialist
 
 - type: loadout # Ganimed
   id: GeneticsDuffel
   whitelisted: true
   equipment:
     back: ClothingBackpackDuffelGenetics
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ClinicalSpecialist
 
 - type: loadout # Ganimed
   id: VirologyBackpack
   whitelisted: true
   equipment:
     back: ClothingBackpackVirology
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ClinicalSpecialist
 
 - type: loadout # Ganimed
   id: VirologySatchel
   whitelisted: true
   equipment:
     back: ClothingBackpackSatchelVirology
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ClinicalSpecialist
 
 - type: loadout # Ganimed
   id: VirologyDuffel
   whitelisted: true
   equipment:
     back: ClothingBackpackDuffelVirology
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ClinicalSpecialist
 
 # OuterClothing
 - type: loadout
@@ -270,30 +321,45 @@
   whitelisted: true
   equipment:
     outerClothing: ClothingOuterCoatLabGene
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ClinicalSpecialist
 
 - type: loadout # Ganimed
   id: VirologyLabCoat
   whitelisted: true
   equipment:
     outerClothing: ClothingOuterCoatLabViro
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ClinicalSpecialist
 
 - type: loadout # Ganimed
   id: CoronerLabCoat
   sponsorOnly: true
   equipment:
     outerClothing: ClothingOuterCoatLabCoroner
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ClinicalSpecialist
 
 - type: loadout # Ganimed
   id: GeneticsWintercoat
   whitelisted: true
   equipment:
     outerClothing: ClothingOuterWinterGen
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ClinicalSpecialist
 
 - type: loadout # Ganimed
   id: VirologyWintercoat
   whitelisted: true
   equipment:
     outerClothing: ClothingOuterWinterViro
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ClinicalSpecialist
 
 - type: loadout # Ganimed
   id: VirologyBioSuit
@@ -332,11 +398,8 @@
   equipment:
     gloves: ClothingHandsGlovesNitrile
   effects:
-  - !type:JobRequirementLoadoutEffect
-    requirement:
-      !type:DepartmentTimeRequirement
-      department: Medical
-      time: 36000 # 10hr
+  - !type:GroupLoadoutEffect
+    proto: ClinicalSpecialist
 
 #Masks
 - type: loadout

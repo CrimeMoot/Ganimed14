@@ -195,37 +195,37 @@
 
 - type: loadout # Ganimed
   id: CoronerJumpsuit
-  sponsorOnly: true
   equipment:
     jumpsuit: ClothingUniformJumpsuitCoroner
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: ClinicalSpecialist
 
 - type: loadout # Ganimed
   id: CoronerJumpskirt
-  sponsorOnly: true
   equipment:
     jumpsuit: ClothingUniformJumpskirtCoroner
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: ClinicalSpecialist
 
 - type: loadout # Ganimed
   id: BlackCoronerJumpsuit
-  sponsorOnly: true
   equipment:
     jumpsuit: ClothingUniformJumpsuitCoronerBlack
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: ClinicalSpecialist
 
 - type: loadout # Ganimed
   id: BlackCoronerJumpskirt
-  sponsorOnly: true
   equipment:
     jumpsuit: ClothingUniformJumpskirtCoronerBlack
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: ClinicalSpecialist
 
@@ -341,10 +341,10 @@
 
 - type: loadout # Ganimed
   id: CoronerLabCoat
-  sponsorOnly: true
   equipment:
     outerClothing: ClothingOuterCoatLabCoroner
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: ClinicalSpecialist
 

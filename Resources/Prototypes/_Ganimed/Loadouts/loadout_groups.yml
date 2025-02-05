@@ -378,7 +378,7 @@
   loadouts:
   - SecurityJumpsuit
   - SecurityJumpskirt
-  - BlueSecurityUniform
+  - SecurityUniformBlueShirt
   - AerostaticSuit
 
 - type: loadoutGroup # Ganimed

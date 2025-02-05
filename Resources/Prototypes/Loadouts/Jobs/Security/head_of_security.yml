@@ -93,12 +93,12 @@
   equipment:
     head: ClothingHeadHatBeretHoS
 
-- type: loadout # Ganimed TODO: Whitelist restriction
+- type: loadout
   id: HeadofSecurityLeatherCap
-  sponsorOnly: true
   equipment:
     head: ClothingHeadHatCapHoS
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: MasterHoS
 
@@ -149,22 +149,22 @@
     neck: BedsheetHOS
 
 # Back, Ganimed
-- type: loadout # TODO: Whitelist restriction
+- type: loadout
   id: HeadofSecuritySatchel
-  sponsorOnly: true
   equipment:
     back: ClothingBackpackSatchelHoS
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: MasterHoS
 
 # Belt, Ganimed
-- type: loadout # TODO: Whitelist restriction
+- type: loadout
   id: HeadofSecurityLeatherBelt
-  sponsorOnly: true
   equipment:
     belt: ClothingBeltHoS
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: MasterHoS
 
@@ -174,13 +174,12 @@
   equipment:
     gloves: ClothingHandsGlovesCombat
 
-- type: loadout # TODO: Whitelist restriction
+- type: loadout
   id: HeadofSecurityLeatherGloves
-  sponsorOnly: true
-  whitelistJobs: [HeadOfSecurity]
   equipment:
     gloves: ClothingHandsGlovesLeatherHoS
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: MasterHoS
 
@@ -205,12 +204,12 @@
   equipment:
     outerClothing: Clothinghoscoat
 
-- type: loadout # Ganimed TODO: Whitelist restriction
+- type: loadout # Ganimed
   id: HeadofSecurityGreatCoat
-  sponsorOnly: true
   equipment:
     outerClothing: ClothingOuterCoatHoSGreatcoat
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: MasterHoS
 

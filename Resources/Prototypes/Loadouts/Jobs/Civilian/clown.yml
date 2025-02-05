@@ -57,6 +57,12 @@
   whitelisted: true
   equipment:
     back: ClothingBackpackCluwneRemoveable
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobClown
+      time: 36000 # 10hr
 
 # Shoes
 - type: loadout

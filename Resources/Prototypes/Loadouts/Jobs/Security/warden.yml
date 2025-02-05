@@ -26,11 +26,12 @@
     jumpsuit: ClothingUniformJumpskirtWarden
 
 # Back, Ganimed
-- type: loadout # TODO: Whitelist restriction
+- type: loadout
   id: WardenBackpack
-  sponsorOnly: true
   equipment:
     back: ClothingBackpackWarden
+  effects:
+  - !type:SponsorLoadoutEffect
 
 # Belt, Ganimed
 - type: loadout # TODO: Whitelist restriction

@@ -186,11 +186,12 @@
   equipment:
     belt: ClothingBeltSecurityWebbingFilled
 
-- type: loadout # Ganimed TODO: Whitelist restriction
+- type: loadout # Ganimed
   id: AssaultBelt
-  sponsorOnly: true
   equipment:
     belt: ClothingBeltAssault
+  effects:
+  - !type:SponsorLoadoutEffect
 
 # Outerclothing
 - type: loadout

@@ -68,12 +68,12 @@
     neck: ClothingNeckHolyMedal
 
 # Gloves, Ganimed
-- type: loadout # TODO: Whitelist restriction
+- type: loadout
   id: ChaplainDivineWatch
-  sponsorOnly: true
   equipment:
     gloves: ClothingHandsWatchDivine
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:JobRequirementLoadoutEffect
     requirement:
       !type:RoleTimeRequirement

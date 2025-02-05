@@ -14,12 +14,12 @@
   equipment:
     head: ClothingHeadBandMerc
 
-- type: loadout # TODO: Whitelist restriction
+- type: loadout
   id: SpaceBearHide
-  sponsorOnly: true
   equipment:
     head: MaterialHideBear
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: MasterSalvager
 
@@ -35,10 +35,10 @@
 
 - type: loadout
   id: GoliathCloak
-  sponsorOnly: true
   equipment:
     neck: ClothingNeckCloakGoliathCloak
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: MasterSalvager
 

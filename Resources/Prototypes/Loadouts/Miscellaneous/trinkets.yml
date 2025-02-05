@@ -58,12 +58,13 @@
     - CandleBlue
     - CandleGreenSmall
 
-- type: loadout # Ganimed TODO: Whitelist restriction
+- type: loadout # Ganimed
   id: AmongPequeno
-  sponsorOnly: true
   storage:
     back:
     - ToyAmongPequeno
+  effects:
+  - !type:SponsorLoadoutEffect
 
 - type: loadout # Ganimed
   id: RubberDuck
@@ -135,12 +136,13 @@
     back:
     - CigarGold
 
-- type: loadout # Ganimed TODO: Whitelist restriction
+- type: loadout # Ganimed
   id: SmokingPipe
-  sponsorOnly: true
   storage:
     back:
     - SmokingPipeFilledTobacco
+  effects:
+  - !type:SponsorLoadoutEffect
 
 # Pins
 - type: loadout

@@ -59,15 +59,17 @@
 
 - type: loadout # Ganimed
   id: WeldingMaskFlame
-  sponsorOnly: true
   equipment:
     head: ClothingHeadHatWeldingMaskFlame
+  effects:
+  - !type:SponsorLoadoutEffect
 
 - type: loadout # Ganimed
   id: WeldingMaskBlueFlame
-  sponsorOnly: true
   equipment:
     head: ClothingHeadHatWeldingMaskFlameBlue
+  effects:
+  - !type:SponsorLoadoutEffect
 
 # Jumpsuit
 - type: loadout

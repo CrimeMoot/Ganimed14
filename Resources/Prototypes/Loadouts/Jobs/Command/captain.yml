@@ -49,10 +49,10 @@
 
 - type: loadout # Ganimed
   id: CaptainCommandSuit
-  sponsorOnly: true
   equipment:
     jumpsuit: ClothingUniformJumpsuitCommandCaptain
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:JobRequirementLoadoutEffect
     requirement:
       !type:DepartmentTimeRequirement

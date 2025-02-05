@@ -6,9 +6,10 @@
 
 - type: loadout # Ganimed
   id: CargoTechnicianPostalCap
-  sponsorOnly: true
   equipment:
     head: ClothingHeadHatCargoPostalsoft
+  effects:
+  - !type:SponsorLoadoutEffect
 
 # Jumpsuit
 - type: loadout
@@ -21,17 +22,19 @@
   equipment:
     jumpsuit: ClothingUniformJumpskirtCargo
 
-- type: loadout # Ganimed TODO: Whitelist restriction
+- type: loadout # Ganimed
   id: CargoTechnicianJumpsuitPostal
-  sponsorOnly: true
   equipment:
     jumpsuit: ClothingUniformJumpsuitCargoPostal
+  effects:
+  - !type:SponsorLoadoutEffect
 
 - type: loadout # Ganimed
   id: CargoTechnicianJumpskirtPostal
-  sponsorOnly: true
   equipment:
     jumpsuit: ClothingUniformJumpskirtCargoPostal
+  effects:
+  - !type:SponsorLoadoutEffect
 
 # Back
 - type: loadout

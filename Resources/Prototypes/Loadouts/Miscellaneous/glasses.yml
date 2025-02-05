@@ -90,9 +90,7 @@
 # Gar Giga, Ganimed
 - type: loadout
   id: GlassesGarGiga
-  sponsorOnly: true
-#  effects:
-#  - !type:GroupLoadoutEffect
-#    proto: 
+  effects:
+  - !type:SponsorLoadoutEffect
   equipment:
     eyes: ClothingEyesGlassesGarGiga

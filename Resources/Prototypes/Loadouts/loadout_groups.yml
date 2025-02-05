@@ -914,6 +914,7 @@
   - BrownShoes
   - BlackShoes # Ganimed
   - CargoWinterBoots
+  - SalvageBoots # Ganimed
   - LeatherShoesWhitelisted # Ganimed
 
 - type: loadoutGroup

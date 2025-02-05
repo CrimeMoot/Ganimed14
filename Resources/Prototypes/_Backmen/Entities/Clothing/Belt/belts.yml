@@ -78,7 +78,7 @@
 
 - type: entity
   parent: BaseStorageItem
-  id: ClothingAmmoPounch
+  id: ClothingPounchAmmo
   name: магазинный подсумок
   description: Тактический штурмовой подсумок для хранения магазинов.
   components:
@@ -103,7 +103,7 @@
 
 - type: entity
   parent: BaseStorageItem
-  id: ClothingMedicalPounch
+  id: ClothingPounchMedical
   name: медицинский подсумок
   description: Тактический штурмовой подсумок для хранения медикаментов.
   components:
@@ -141,7 +141,7 @@
 
 - type: entity
   parent: BaseStorageItem
-  id: ClothingPistolPounch
+  id: ClothingPounchPistol
   name: пистолетная кобура
   description: Кобура для пистолетов.
   components:
@@ -164,7 +164,7 @@
 
 - type: entity
   parent: BaseStorageItem
-  id: ClothingShellPounch
+  id: ClothingPounchShell
   name: подсумок для дроби
   description: Тактический штурмовой подсумок для хранения дроби.
   components:

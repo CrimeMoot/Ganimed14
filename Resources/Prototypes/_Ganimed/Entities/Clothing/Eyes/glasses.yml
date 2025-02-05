@@ -22,3 +22,90 @@
     - Antagonists
   - type: IdentityBlocker
     coverage: EYES
+
+- type: entity
+  parent: ClothingEyesBase
+  id: ClothingEyesGlassesTray
+  name: T-ray glasses
+  description: Improved shielding blocks many flashes. Improved ancient technology?
+  components:
+  - type: Sprite
+    sprite: _Ganimed/Clothing/Eyes/Goggles/traymeson.rsi
+  - type: Clothing
+    sprite: _Ganimed/Clothing/Eyes/Goggles/traymeson.rsi
+  - type: EyeProtection
+  - type: TrayScanner
+  
+- type: entity
+  parent: ClothingEyesBase
+  id: ClothingEyesGlassesBlueShield
+  name: blue shield sunglasses
+  description: Strangely ancient technology used to help provide rudimentary eye cover. Enhanced shielding blocks many flashes. Special modifications may prove useful for blue shield officers.
+  components:
+  - type: Sprite
+    sprite: _Ganimed/Clothing/Eyes/Glasses/blueshieldglasses.rsi
+  - type: Clothing
+    sprite: _Ganimed/Clothing/Eyes/Glasses/blueshieldglasses.rsi
+  - type: FlashImmunity
+  - type: EyeProtection
+    protectionTime: 5
+  - type: Tag
+    tags:
+    - HamsterWearable
+    - WhitelistChameleon
+  - type: GuideHelp
+    guides:
+    - Security
+    
+- type: entity
+  parent: ClothingEyesBase
+  id: ClothingEyesHUDGlassesMedical
+  name: medical HUD sunglasses
+  description: Improved shielding blocks many flashes. Improved ancient technology?
+  components:
+  - type: Sprite
+    sprite: _Ganimed/Clothing/Eyes/Glasses/medsunglasses.rsi
+  - type: Clothing
+    sprite: _Ganimed/Clothing/Eyes/Glasses/medsunglasses.rsi
+  - type: FlashImmunity
+  - type: ShowHealthBars
+    damageContainers:
+    - Biological
+  - type: ShowHealthIcons
+    damageContainers:
+    - Biological
+  - type: Tag
+    tags:
+    - HamsterWearable
+    
+- type: entity
+  parent: ClothingEyesBase
+  id: ClothingEyesHUDGlassesScience
+  name: science HUD sunglasses
+  description: Improved shielding blocks many flashes. Improved ancient technology?
+  components:
+  - type: Sprite
+    sprite: _Ganimed/Clothing/Eyes/Glasses/scisunglasses.rsi
+  - type: Clothing
+    sprite: _Ganimed/Clothing/Eyes/Glasses/scisunglasses.rsi
+  - type: FlashImmunity
+  - type: SolutionScanner
+  - type: Tag
+    tags:
+    - HamsterWearable
+
+- type: entity
+  parent: ClothingEyesBase
+  id: ClothingEyesGlassesEnginering
+  name: enginering sunglasses
+  description: Improved shielding blocks many flashes. Improved ancient technology?
+  components:
+  - type: Sprite
+    sprite: _Ganimed/Clothing/Eyes/Glasses/mesonsunglasses.rsi
+  - type: Clothing
+    sprite: _Ganimed/Clothing/Eyes/Glasses/mesonsunglasses.rsi
+  - type: FlashImmunity
+  - type: EyeProtection
+  - type: Tag
+    tags:
+    - HamsterWearable

@@ -35,10 +35,10 @@
     ClothingBeltMedicalMarine: 20
     ClothingBeltGeneralG6: 20
     ClothingBeltAmmo: 20
-    ClothingShellPounch: 40
-    ClothingPistolPounch: 40
-    ClothingMedicalPounch: 40
-    ClothingAmmoPounch: 40
+    ClothingPounchShell: 40
+    ClothingPounchPistol: 40
+    ClothingPounchMedical: 40
+    ClothingPounchAmmo: 40
     ClothingPounchMTF: 40
     ClothingHeadHelmetEGov: 10
     ClothingOuterNavyVest: 10
@@ -250,10 +250,10 @@
     ClothingBeltMedicalMarine: 2
     ClothingBeltGeneralG6: 2
     ClothingBeltAmmo: 2
-    ClothingShellPounch: 4
-    ClothingPistolPounch: 4
-    ClothingMedicalPounch: 4
-    ClothingAmmoPounch: 4
+    ClothingPounchShell: 4
+    ClothingPounchPistol: 4
+    ClothingPounchMedical: 4
+    ClothingPounchAmmo: 4
     ClothingPounchMTF: 4
     ClothingHeadHatEgovShtabCap: 2
     ClothingHeadHatMarineBeret: 2
@@ -307,10 +307,10 @@
     ClothingBeltMedicalMarine: 2
     ClothingBeltGeneralG6: 2
     ClothingBeltAmmo: 2
-    ClothingShellPounch: 4
-    ClothingPistolPounch: 4
-    ClothingMedicalPounch: 4
-    ClothingAmmoPounch: 4
+    ClothingPounchShell: 4
+    ClothingPounchPistol: 4
+    ClothingPounchMedical: 4
+    ClothingPounchAmmo: 4
     ClothingPounchMTF: 4
     ClothingHeadHatBeretBrigmedic: 2
     ClothingHeadHatBeretSecurityMedic: 2
@@ -362,10 +362,10 @@
     ClothingBeltMedicalMarine: 2
     ClothingBeltGeneralG6: 2
     ClothingBeltAmmo: 2
-    ClothingShellPounch: 4
-    ClothingPistolPounch: 4
-    ClothingMedicalPounch: 4
-    ClothingAmmoPounch: 4
+    ClothingPounchShell: 4
+    ClothingPounchPistol: 4
+    ClothingPounchMedical: 4
+    ClothingPounchAmmo: 4
     ClothingPounchMTF: 4
     ClothingHeadHatMarineBeret: 2
     ClothingHeadHelmetXenonauten: 2

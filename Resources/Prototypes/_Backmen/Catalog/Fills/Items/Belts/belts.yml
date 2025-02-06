@@ -161,13 +161,20 @@
   components:
     - type: StorageFill
       contents:
-        - id: RegenerativeMesh
-          amount: 2
-        - id: MedicatedSuture
-          amount: 2
-        - id: BattleMedipen
-          amount: 2
-        - id: HandheldHealthAnalyzer
+        - id: OintmentAdvanced1
+          amount: 5
+        - id: BrutepackAdvanced1
+          amount: 5
+        - id: Tourniquet
+          amount: 1
+        - id: CombatMedipen
+          amount: 1
+        - id: AntiPoisonMedipen
+          amount: 1
+        - id: RadAutoInjector
+          amount: 1
+        - id: BattleMedipenAntiVirus
+          amount: 1
 
 - type: entity
   parent: ClothingPounchMTF

@@ -50,8 +50,6 @@
     - type: SurgerySpeedModifier
       SpeedModifier: 2.5
     #end-backmen: surgery
-  - !type:AddImplantSpecial
-    implants: [ MindShieldImplant ]
 
 - type: startingGear
   id: CMOGear

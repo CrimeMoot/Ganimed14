@@ -90,3 +90,13 @@
   equipment:
     outerClothing: ClothingOuterBioCmo
     head: ClothingHeadHatHoodBioCmo
+
+# Glasses, Ganimed
+- type: loadout
+  id: MedicalSunglasses
+  whitelisted: true
+  equipment:
+    eyes: ClothingEyesGlassesHudSunglassesMedical
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: Commander

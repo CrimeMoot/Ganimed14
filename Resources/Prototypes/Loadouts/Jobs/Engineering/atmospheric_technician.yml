@@ -81,6 +81,16 @@
   - !type:GroupLoadoutEffect
     proto: MasterAtmosian
 
+# Glasses, Ganimed
+- type: loadout
+  id: TrayGoggles
+  whitelisted: true
+  equipment:
+    eyes: ClothingEyesGlassesTray
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MasterAtmosian
+
 # Shoes
 - type: loadout
   id: WhiteShoes

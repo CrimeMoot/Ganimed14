@@ -7,6 +7,7 @@
   - CaptainJumpsuit
   - CaptainBackpack
   - CaptainGloves # Ganimed
+  - CaptainBelt # Ganimed
   - CaptainOuterClothing
   - CaptainShoes # Ganimed
   - Underwear # Ganimed
@@ -329,6 +330,7 @@
   - ChiefEngineerBackpack # Corvax-Loadouts
   - ChiefEngineerNeck
   - ChiefEngineerOuterClothing
+  - ChiefEngineerGlasses # Ganimed
   - ChiefEngineerGloves # Ganimed
   - ChiefEngineerShoes
   - Underwear # Ganimed
@@ -380,6 +382,7 @@
   - AtmosphericTechnicianJumpsuit
   - AtmosphericTechnicianBackpack
   - AtmosphericTechnicianOuterClothing
+  - AtmosphericTechnicianGlasses # Ganimed
   - AtmosphericTechnicianShoes
   - Underwear # Ganimed
   - Medals #backmen
@@ -400,8 +403,8 @@
   - ScientistBackpack
   - ResearchDirectorOuterClothing
   - ResearchDirectorGloves # Ganimed
+  - ResearchDirectorGlasses # Ganimed
   - ResearchDirectorShoes
-  - ScientistGlasses # Ganimed
   - Underwear # Ganimed
   - Medals #backmen
   - Survival
@@ -477,6 +480,7 @@
   - WardenBackpack # Ganimed
   - SecurityBelt
   - WardenOuterClothing
+  - SecurityGlasses # Ganimed
   - SecurityShoes
   - SecurityOfficerPocket #Backmen
   - Underwear # Ganimed
@@ -496,10 +500,10 @@
   - SecurityJumpsuit
   - SecurityBackpack
   - SecurityOuterClothing
-  - SecurityShoes
   - SecurityPDA
   - SecurityBelt
-  # - SecurityGlasses # Ganimed
+  - SecurityGlasses # Ganimed
+  - SecurityShoes
   - SecurityOfficerPocket #Backmen
   - Underwear # Ganimed
   - Medals #backmen
@@ -519,6 +523,7 @@
   - DetectiveJumpsuit
   - SecurityBackpack
   - DetectiveOuterClothing
+  - SecurityGlasses # Ganimed
   - DetectiveGloves # Ganimed
   - DetectiveShoes # Ganimed
   - DetectiveRevolver
@@ -557,8 +562,8 @@
   - MedicalBackpackExtended # Ganimed
   - ChiefMedicalOfficerOuterClothing
   - ChiefMedicalOfficerNeck
+  - ChiefMedicalOfficerGlasses # Ganimed
   - ChiefMedicalOfficerShoes
-  - MedicalDoctorGlasses # Ganimed
   - Underwear # Ganimed
   - Medals #backmen
   - SurvivalMedical

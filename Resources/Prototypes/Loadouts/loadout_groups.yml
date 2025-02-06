@@ -167,6 +167,7 @@
   - CaptainWhiteJumpsuit
   - CaptainWhiteJumpskirt
   - CaptainCommandSuit
+  - CaptainMaleParadeUniform
   # Ganimed-Loadouts-End
 
 - type: loadoutGroup
@@ -191,6 +192,14 @@
   loadouts:
   - CaptainGloves
   - CaptainGlovesWhite
+
+- type: loadoutGroup # Ganimed
+  id: CaptainBelt
+  name: loadout-group-captain-belt
+  minLimit: 0
+  loadouts:
+  - CaptainBeltSabreSheath
+  - CaptainBeltSabreSheathWhite
 
 - type: loadoutGroup
   id: CaptainBackpack
@@ -280,6 +289,7 @@
   - BlackShoes
   - LeatherShoes
   - LaceupShoesWhitelisted
+  # - WinterBoots
 
 # Civilian
 - type: loadoutGroup
@@ -1055,6 +1065,15 @@
   - SeniorEngineerWintercoat # cats
 
 - type: loadoutGroup # Ganimed
+  id: ChiefEngineerGlasses
+  name: loadout-group-chief-engineer-glasses
+  loadouts:
+  - EngineeringGoggles
+  - TrayGoggles
+  - WeldingGoggles
+  - EngineeringSunglasses
+
+- type: loadoutGroup # Ganimed
   id: ChiefEngineerGloves
   name: loadout-group-chief-engineer-gloves
   minLimit: 0
@@ -1161,6 +1180,13 @@
   loadouts:
   - AtmosianCloak
 
+- type: loadoutGroup # Ganimed
+  id: AtmosphericTechnicianGlasses
+  name: loadout-group-atmospheric-technician-glasses
+  loadouts:
+  - EngineeringGoggles
+  - TrayGoggles
+
 - type: loadoutGroup
   id: AtmosphericTechnicianJumpsuit
   name: loadout-group-atmospheric-technician-jumpsuit
@@ -1246,6 +1272,20 @@
   - ResearchDirectorLabCoat
   - ResearchDirectorWintercoat
   - SeniorResearcherWintercoat # cats
+
+- type: loadoutGroup # Ganimed
+  id: ResearchDirectorGlasses
+  name: loadout-group-research-director-glasses
+  minLimit: 0
+  loadouts:
+  - ChemicalAnalysisGoggles
+  - ScienceSunglasses
+  - DiagnosticHud
+  - DiagnosticHudEyepatch
+  - Glasses
+  - GlassesJamjar
+  - GlassesBinoclard
+  - GlassesSalesman
 
 - type: loadoutGroup # Ganimed
   id: ResearchDirectorGloves
@@ -1405,9 +1445,9 @@
   - HeadofSecurityJumpskirtBlack
   # Corvax-Loadouts-End
   # Ganimed-Loadouts-Start
-  - HeadofSecurityJumpsuitOld
   - HeadofSecurityJumpsuitGrey
   - HeadofSecurityJumpsuitBlue
+  - HeadofSecurityJumpsuitOld
   - HeadofSecurityJumpsuitOriginal
   - HeadofSecurityJumpskirtOriginal
   - HeadofSecurityMaleParadeUniform
@@ -1760,6 +1800,19 @@
   loadouts:
   - SterileMask
   - ClothingMaskBreathMedical
+
+- type: loadoutGroup # Ganimed
+  id: ChiefMedicalOfficerGlasses
+  name: loadout-group-chief-medical-officer-glasses
+  minLimit: 0
+  loadouts:
+  - MedicalHud
+  - MedicalHudEyepatch
+  - MedicalSunglasses
+  - ChemicalAnalysisGoggles
+  - Glasses
+  - GlassesJamjar
+  - GlassesBinoclard
 
 - type: loadoutGroup
   id: ChiefMedicalOfficerShoes

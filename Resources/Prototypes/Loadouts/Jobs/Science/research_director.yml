@@ -15,12 +15,12 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobResearchDirector
-      time: 180000 #50 hrs
+      time: 144000 #40 hrs
   - !type:JobRequirementLoadoutEffect
     requirement:
       !type:RoleTimeRequirement
       role: JobChiefEngineer
-      time: 180000 #50 hrs
+      time: 144000 #40 hrs
 
 # Head
 - type: loadout
@@ -99,6 +99,16 @@
   id: ResearchDirectorWintercoat
   equipment:
     outerClothing: ClothingOuterWinterRD
+
+# Glasses, Ganimed
+- type: loadout
+  id: ScienceSunglasses
+  whitelisted: true
+  equipment:
+    eyes: ClothingEyesGlassesHudSunglassesScience
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: Commander
 
 # Shoes, Ganimed
 - type: loadout # TODO: Whitelist restriction

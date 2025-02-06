@@ -440,14 +440,17 @@
   equipment:
     socks: ClothingUnderStockingsSky
 
-- type: loadout # TODO: Whitelist restriction
+- type: loadout
   id: HoSStockings
-  sponsorOnly: true
   whitelistJobs: [HeadOfSecurity]
   equipment:
     socks: ClothingUnderStockingsHOS
+  effects:
+  - !type:SponsorLoadoutEffect
 
-- type: loadout # TODO: Whitelist restriction
+- type: loadout
   id: CentcomStockings
   equipment:
     socks: ClothingUnderStockingsCentCom
+  effects:
+  - !type:SponsorLoadoutEffect

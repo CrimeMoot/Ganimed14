@@ -68,6 +68,7 @@
 
 - type: loadout # Ganimed
   id: NanotrasenCloak
+  whitelisted: true
   equipment:
     neck: ClothingNeckCloakNanotrasen
 

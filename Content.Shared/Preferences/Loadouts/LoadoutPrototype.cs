@@ -2,7 +2,6 @@ using Content.Shared.Preferences.Loadouts.Effects;
 using Content.Shared.Roles;
 using Robust.Shared.Prototypes;
 using Content.Shared.Players.PlayTimeTracking;
-using Content.Shared.Whitelist;
 
 namespace Content.Shared.Preferences.Loadouts;
 
@@ -46,16 +45,4 @@ public sealed partial class LoadoutPrototype : IPrototype, IEquipmentLoadout
     /// <inheritdoc />
     [DataField]
     public Dictionary<string, List<EntProtoId>> Storage { get; set; } = new();
-
-    /// <summary>
-    ///     Should this item be only available for whitelisted users?
-    /// </summary>
-	[DataField("whitelisted")]
-    public bool Whitelisted = false;
-
-    /// <summary>
-    ///     Should this item be only available for sponsors?
-    /// </summary>
-    [DataField("sponsorOnly")]
-    public bool SponsorOnly = false;
 }

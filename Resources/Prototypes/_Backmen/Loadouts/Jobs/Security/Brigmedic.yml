@@ -2,7 +2,7 @@
   id: BrigmedicGear
   equipment:
     gloves: ClothingHandsGlovesNitrile
-    eyes: ClothingEyesGlassesBrigmedic
+    # eyes: ClothingEyesGlassesBrigmedic
     pocket2: HandheldBrigmedicCrewMonitor # Cats
     pocket1: SecHypo
     id: BrigmedicPDA
@@ -49,6 +49,29 @@
   id: ClothingUniformJumpskirtOfLife
   equipment:
     jumpsuit: ClothingUniformJumpskirtOfLife
+
+# Glasses, Ganimed
+- type: loadout
+  id: MedSecHud
+  equipment:
+    eyes: ClothingEyesHudMedSec
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:DepartmentTimeRequirement
+      department: Security
+      time: 108000 #30 hrs
+
+- type: loadout
+  id: MedicalSunglassesBrigmedic
+  equipment:
+    eyes: ClothingEyesGlassesHudSunglassesMedical
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:DepartmentTimeRequirement
+      department: Medical
+      time: 108000 #30 hrs
 
 #Back
 - type: loadout

@@ -8,6 +8,7 @@ loadout-group-bridge-officer-neck = Мантия офицера мостика
 loadout-group-bridge-officer-jumpsuit = Форма офицера мостика
 loadout-group-bridge-officer-belt = Пояс офицера мостика
 loadout-group-captain-gloves = Перчатки капитана
+loadout-group-captain-belt = Пояс капитана
 loadout-group-captain-shoes = Обувь капитана
 loadout-group-hop-shoes = Обувь главы персонала
 loadout-group-magistrate-outerclothing = Судейская мантия
@@ -31,12 +32,15 @@ loadout-group-salvage-specialist-neck = Плащ утилизатора
 loadout-group-salvage-specialist-belt = Пояс утилизатора
 loadout-group-salvage-specialist-gloves = Перчатки утилизатора
 # Engineering
+loadout-group-chief-engineer-glasses = Очки старшего инженера
 loadout-group-chief-engineer-gloves = Перчатки старшего инженера
 loadout-group-atmospheric-technician-head = Головной убор атмосферного техника
 loadout-group-atmospheric-technician-neck = Плащ атмосферного техника
+loadout-group-atmospheric-technician-glasses = Очки атмосферного техника
 # Science
 loadout-group-roboticist-jumpsuit = Комбинезон робототехника
 loadout-group-roboticist-outerclothing = Верхняя одежда робототехника
+loadout-group-research-director-glasses = Очки научного руководителя
 loadout-group-research-director-gloves = Перчатки научного руководителя
 loadout-group-scientist-glasses = Очки учёного
 loadout-group-scientist-headset = Научная гарнитура
@@ -54,7 +58,10 @@ loadout-group-pilot-jumpsuit = Форма пилота СБ
 loadout-group-pilot-gloves = Перчатки пилота
 loadout-group-pilot-outerclothing = Верхняя одежда пилота СБ
 loadout-group-pilot-shoes = Обувь пилота СБ
+loadout-group-brigmedic-glasses = Очки бригмедика
+loadout-group-brigmedic-shoes = Обувь бригмедика
 # Medical
+loadout-group-chief-medical-officer-glasses = Очки главного врача
 loadout-group-medical-doctor-neck = Врач, шея
 loadout-group-medical-doctor-headset = Медицинская гарнитура
 loadout-group-medical-doctor-glasses = Очки врача

@@ -66,19 +66,19 @@
 
 - type: loadout # Ganimed
   id: HeadofSecurityMaleParadeUniform
-  whitelisted: true
   equipment:
     jumpsuit: ClothingUniformJumpsuitHoSParadeMale
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: MasterHoS
 
 - type: loadout # Ganimed
   id: HeadofSecurityFemaleParadeUniform
-  whitelisted: true
   equipment:
     jumpsuit: ClothingUniformJumpskirtHoSParadeMale
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: MasterHoS
 

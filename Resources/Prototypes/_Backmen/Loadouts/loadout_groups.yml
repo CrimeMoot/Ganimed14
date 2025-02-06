@@ -103,6 +103,14 @@
   - BlackBrigmedicJumpskirt # Ganimed
   - ClothingUniformJumpskirtOfLife
 
+- type: loadoutGroup # Ganimed
+  id: BrigmedicGlasses
+  name: loadout-group-brigmedic-glasses
+  loadouts:
+  - MedicalHud
+  - MedSecHud
+  - MedicalSunglassesBrigmedic
+
 - type: loadoutGroup
   id: ClothingBackpackBrigmedic
   name: loadout-group-brigmedic-backpack
@@ -149,7 +157,7 @@
 
 - type: loadoutGroup # Ganimed
   id: ClothingShoesBrigmedic
-  name: loadout-group-brigmedic-ear
+  name: loadout-group-brigmedic-shoes
   loadouts:
   - JackSecBoots
   - SecurityWinterBoots

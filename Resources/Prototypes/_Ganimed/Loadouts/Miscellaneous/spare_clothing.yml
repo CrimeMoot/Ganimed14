@@ -145,10 +145,11 @@
 
 - type: loadout # TODO: Whitelist restriction
   id: SpareGoldBandana
-  sponsorOnly: true
   storage:
     back:
     - ClothingHeadBandGold
+  effects:
+  - !type:SponsorLoadoutEffect
 
 - type: loadout
   id: SpareGreenBandana
@@ -854,6 +855,26 @@
     proto: Service
 
 - type: loadout
+  id: SpareCuratorSuit
+  whitelisted: true
+  storage:
+    back:
+    - ClothingUniformJumpsuitCurator
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: JamjarTimer
+
+- type: loadout
+  id: SpareCuratorSuitskirt
+  whitelisted: true
+  storage:
+    back:
+    - ClothingUniformJumpskirtCurator
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: JamjarTimer
+
+- type: loadout
   id: SpareOveralls
   storage:
     back:
@@ -1014,10 +1035,11 @@
 
 - type: loadout
   id: SpareYellowOldDress
-  sponsorOnly: true
   storage:
     back:
     - ClothingUniformJumpskirtYellowOldDress
+  effects:
+  - !type:SponsorLoadoutEffect
 
 # Hands/Gloves
 - type: loadout
@@ -1220,12 +1242,13 @@
   - !type:GroupLoadoutEffect
     proto: TenOverall
 
-- type: loadout # TODO: Whitelist restriction
+- type: loadout
   id: SpareBling
-  sponsorOnly: true
   storage:
     back:
     - ClothingNeckBling
+  effects:
+  - !type:SponsorLoadoutEffect
 
 - type: loadout # TODO: Whitelist restriction
   id: SpareRaindowBedsheet
@@ -1234,19 +1257,21 @@
     back:
     - BedsheetRainbow
 
-- type: loadout # TODO: Whitelist restriction
+- type: loadout
   id: SpareWizardBedsheet
-  whitelisted: true
   storage:
     back:
     - BedsheetWiz
+  effects:
+  - !type:SponsorLoadoutEffect
 
-- type: loadout # TODO: Whitelist restriction
+- type: loadout
   id: SpareCosmosBedsheet
-  sponsorOnly: true
   storage:
     back:
     - BedsheetCosmos
+  effects:
+  - !type:SponsorLoadoutEffect
 
 - type: loadout # TODO: Whitelist restriction
   id: SpareRedRevBandage

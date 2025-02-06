@@ -143,6 +143,12 @@
   equipment:
     outerClothing: ClothingOuterWinterSeniorEngineer  # cats
 
+# Glasses, Ganimed
+- type: loadout
+  id: EngineeringGoggles
+  equipment:
+    eyes: ClothingEyesGlassesMeson
+
 # Gloves, Ganimed
 - type: loadout
   id: InsulatedGloves

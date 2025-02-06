@@ -102,6 +102,25 @@
   equipment:
     outerClothing: ClothingOuterWinterCE
 
+# Glasses, Ganimed
+- type: loadout
+  id: EngineeringSunglasses
+  whitelisted: true
+  equipment:
+    eyes: ClothingEyesGlassesHudSunglassesEnginering
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: Commander
+
+- type: loadout
+  id: WeldingGoggles
+  whitelisted: true
+  equipment:
+    eyes: ClothingEyesGlassesWelding
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: SeniorEngineering
+
 # Shoes
 - type: loadout
   id: BrownShoes

@@ -101,6 +101,9 @@
   whitelisted: true
   equipment:
     back: ClothingBackpackSatchelLeather
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: TenOverall
 
 # Belt, Ganimed
 - type: loadout
@@ -108,6 +111,9 @@
   whitelisted: true
   equipment:
     belt: ClothingBeltStorageWaistbag
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: TenOverall
 
 # Gloves
 - type: loadout

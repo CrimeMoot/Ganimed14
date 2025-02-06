@@ -8,6 +8,15 @@
       role: JobCaptain
       time: 72000 #20 hrs
 
+- type: loadoutEffectGroup # Ganimed
+  id: Commander
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:DepartmentTimeRequirement
+      department: Command
+      time: 108000 #30 hrs
+
 # Jumpsuit
 - type: loadout
   id: CaptainJumpsuit
@@ -28,6 +37,15 @@
   id: CaptainFormalSkirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtCapFormalDress
+
+- type: loadout # Ganimed
+  id: CaptainMaleParadeUniform
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCaptainParadeMale
+  effects:
+  - !type:SponsorLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: MasterCap
 
 - type: loadout # Ganimed TODO: Whitelist restriction
   id: CaptainWhiteJumpsuit
@@ -53,11 +71,8 @@
     jumpsuit: ClothingUniformJumpsuitCommandCaptain
   effects:
   - !type:SponsorLoadoutEffect
-  - !type:JobRequirementLoadoutEffect
-    requirement:
-      !type:DepartmentTimeRequirement
-      department: Command
-      time: 180000 # 50hr
+  - !type:GroupLoadoutEffect
+    proto: Commander
 
 # Head
 - type: loadout
@@ -169,6 +184,22 @@
   id: CaptainDuffel
   equipment:
     back: ClothingBackpackDuffelCaptain
+
+# Belt, Ganimed
+- type: loadout
+  id: CaptainBeltSabreSheath
+  whitelisted: true
+  equipment:
+    belt: ClothingBeltSheath
+
+- type: loadout
+  id: CaptainBeltSabreSheathWhite
+  whitelisted: true
+  equipment:
+    belt: ClothingBeltWhiteSheath
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MasterCap
 
 # Gloves, Ganimed
 - type: loadout

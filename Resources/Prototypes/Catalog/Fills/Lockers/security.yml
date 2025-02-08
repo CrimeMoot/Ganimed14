@@ -121,7 +121,9 @@
         prob: 0.4
       - id: MedkitToxinFilled
       - id: MedkitBurnFilled
-
+        prob: 0.4
+      - id: ClothingHeadsetAltBrigmedic # backmen
+      
 - type: entity
   id: LockerDetectiveFilled
   suffix: Filled

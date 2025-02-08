@@ -14,10 +14,9 @@
   - type: BallisticAmmoProvider
     capacity: 8
   - type: Wieldable
-  - type: UseDelay
-    delay: 1.3
   - type: GunRequiresWield
   - type: Gun
+    fireRate: 2
     cameraRecoilScalar: 2
     soundGunshot:
       path: /Audio/Weapons/Guns64/Shotguns/sh39.ogg
@@ -49,6 +48,7 @@
     - state: mag-0
       map: ["enum.GunVisualLayers.Mag"]
   - type: Gun
+    fireRate: 2
     cameraRecoilScalar: 2
   - type: Item
     sprite: Backmen/Objects/Weapons/Gunsx64/Shotguns/zauer/tiny.rsi
@@ -102,7 +102,7 @@
   parent: BaseWeaponShotgun
   id: WeaponShotgunPaladin12
   suffix: Дробовик
-  description: Помповое ружье с девятью патронами. Это ружье используется для охоты, защиты дома и работы в полиции, существует множество его модификаций, которыми пользуются практически все.
+  description: Помповое ружье с десятью патронами. Это ружье используется для охоты, защиты дома и работы в полиции, существует множество его модификаций, которыми пользуются практически все.
   components:
   - type: Sprite
     sprite: Backmen/Objects/Weapons/Gunsx64/Shotguns/paladin-12/big.rsi
@@ -111,7 +111,7 @@
   - type: Clothing
     sprite: Backmen/Objects/Weapons/Gunsx64/Shotguns/paladin-12/tiny.rsi
   - type: BallisticAmmoProvider
-    capacity: 9
+    capacity: 10
     soundRack:
       path: /Audio/Weapons/Guns64/Shotguns/shotgun_cmb_pump.ogg
     soundInsert:
@@ -178,7 +178,7 @@
   - type: Clothing
     sprite: Backmen/Objects/Weapons/Gunsx64/Shotguns/spas-16/tiny.rsi
   - type: BallisticAmmoProvider
-    capacity: 13
+    capacity: 8
   - type: Wieldable
   - type: PumpAction
   - type: UseDelay

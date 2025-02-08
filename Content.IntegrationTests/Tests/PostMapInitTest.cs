@@ -102,7 +102,7 @@ namespace Content.IntegrationTests.Tests
             "Elkridge",
             //Start-Enterprise
             "ENTRSaltern",
-            "ENTRCluster"
+            "ENTRCluster",
 			"ENTRBox"
             //End-Enterprise
         };

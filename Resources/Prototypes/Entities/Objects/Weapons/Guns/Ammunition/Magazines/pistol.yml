@@ -255,10 +255,15 @@
   id: MagazinePistolHighCapacityRubber
   name: machine pistol magazine (.35 auto rubber)
   parent: BaseMagazinePistolHighCapacity
-  categories: [ HideSpawnMenu ]
   components:
   - type: BallisticAmmoProvider
     proto: CartridgePistol
+  - type: Sprite
+    layers:
+    - state: rubber
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
   id: MagazinePistolSubMachineGun

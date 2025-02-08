@@ -103,6 +103,7 @@ namespace Content.IntegrationTests.Tests
             //Start-Enterprise
             "ENTRSaltern",
             "ENTRCluster"
+			"ENTRBox"
             //End-Enterprise
         };
 

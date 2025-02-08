@@ -22,3 +22,69 @@
     - Antagonists
   - type: IdentityBlocker
     coverage: EYES
+
+- type: entity
+  parent: ClothingEyesBase
+  id: ClothingEyesGlassesTray
+  name: T-ray glasses
+  description: Improved shielding blocks many flashes. Improved ancient technology?
+  components:
+  - type: Sprite
+    sprite: _Ganimed/Clothing/Eyes/Goggles/traymeson.rsi
+  - type: Clothing
+    sprite: _Ganimed/Clothing/Eyes/Goggles/traymeson.rsi
+  - type: EyeProtection
+  - type: TrayScanner
+    
+- type: entity
+  parent: ClothingEyesBase
+  id: ClothingEyesGlassesHudSunglassesMedical 
+  name: medical HUD sunglasses
+  description: Improved shielding blocks many flashes. Improved ancient technology?
+  components:
+  - type: Sprite
+    sprite: _Ganimed/Clothing/Eyes/Glasses/medsunglasses.rsi
+  - type: Clothing
+    sprite: _Ganimed/Clothing/Eyes/Glasses/medsunglasses.rsi
+  - type: FlashImmunity
+  - type: ShowHealthBars
+    damageContainers:
+    - Biological
+  - type: ShowHealthIcons
+    damageContainers:
+    - Biological
+  - type: Tag
+    tags:
+    - HamsterWearable
+    
+- type: entity
+  parent: ClothingEyesBase
+  id: ClothingEyesGlassesHudSunglassesScience
+  name: science HUD sunglasses
+  description: Improved shielding blocks many flashes. Improved ancient technology?
+  components:
+  - type: Sprite
+    sprite: _Ganimed/Clothing/Eyes/Glasses/scisunglasses.rsi
+  - type: Clothing
+    sprite: _Ganimed/Clothing/Eyes/Glasses/scisunglasses.rsi
+  - type: FlashImmunity
+  - type: SolutionScanner
+  - type: Tag
+    tags:
+    - HamsterWearable
+
+- type: entity
+  parent: ClothingEyesBase
+  id: ClothingEyesGlassesHudSunglassesEnginering
+  name: enginering sunglasses
+  description: Improved shielding blocks many flashes. Improved ancient technology?
+  components:
+  - type: Sprite
+    sprite: _Ganimed/Clothing/Eyes/Glasses/mesonsunglasses.rsi
+  - type: Clothing
+    sprite: _Ganimed/Clothing/Eyes/Glasses/mesonsunglasses.rsi
+  - type: FlashImmunity
+  - type: EyeProtection
+  - type: Tag
+    tags:
+    - HamsterWearable

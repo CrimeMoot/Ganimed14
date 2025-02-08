@@ -115,7 +115,7 @@
     solutionName: pen
     transferAmount: 15
     onlyAffectsMobs: false
-    injectOnly: false
+    injectOnly: true
   - type: Appearance
   - type: SolutionContainerVisuals
     maxFillLevels: 1
@@ -206,7 +206,7 @@
     solutionName: pen
     transferAmount: 25
     onlyAffectsMobs: false
-    injectOnly: false
+    injectOnly: true
   - type: SolutionContainerManager
     solutions:
       pen:
@@ -238,7 +238,7 @@
     solutionName: pen
     transferAmount: 20
     onlyAffectsMobs: false
-    injectOnly: false
+    injectOnly: true
   - type: SolutionContainerManager
     solutions:
       pen:
@@ -270,7 +270,7 @@
     solutionName: pen
     transferAmount: 30
     onlyAffectsMobs: false
-    injectOnly: false
+    injectOnly: true
   - type: SolutionContainerManager
     solutions:
       pen:
@@ -284,7 +284,7 @@
     tags: []
 
 - type: entity
-  name: puncturase auto-injector # ебать оно существует я сам вахуе
+  name: puncturase auto-injector
   parent: ChemicalMedipen
   id: PunctAutoInjector
   description: A rapid dose of puncturase and tranexamic acid, intended for combat applications.
@@ -302,7 +302,7 @@
     solutionName: pen
     transferAmount: 15
     onlyAffectsMobs: false
-    injectOnly: false
+    injectOnly: true
   - type: SolutionContainerManager
     solutions:
       pen:
@@ -316,7 +316,7 @@
     tags: []
 
 - type: entity
-  name: pyrazine auto-injector # АХУЕТЬ ОНО СУЩЕСТВУЕТ
+  name: pyrazine auto-injector
   parent: ChemicalMedipen
   id: PyraAutoInjector
   description: A rapid dose of pyrazine and dermaline, intended for combat applications.
@@ -334,7 +334,7 @@
     solutionName: pen
     transferAmount: 12
     onlyAffectsMobs: false
-    injectOnly: false
+    injectOnly: true
   - type: SolutionContainerManager
     solutions:
       pen:
@@ -366,7 +366,7 @@
     solutionName: pen
     transferAmount: 15
     onlyAffectsMobs: false
-    injectOnly: false
+    injectOnly: true
   - type: SolutionContainerManager
     solutions:
       pen:
@@ -399,7 +399,7 @@
     solutionName: pen
     transferAmount: 30
     onlyAffectsMobs: false
-    injectOnly: false
+    injectOnly: true
   - type: SolutionContainerManager
     solutions:
       pen:
@@ -438,7 +438,7 @@
     solutionName: pen
     transferAmount: 30
     onlyAffectsMobs: false
-    injectOnly: false
+    injectOnly: true
   - type: StaticPrice
     price: 500
   - type: Tag
@@ -489,17 +489,17 @@
   - type: SolutionContainerManager
     solutions:
       pen:
-        maxVol: 26
+        maxVol: 30
         reagents:
         - ReagentId: Omnizine
           Quantity: 25
-        - ReagentId: Nanomachines #cats edit
-          Quantity: 1 #по рофлу по приколу
+        - ReagentId: TranexamicAcid
+          Quantity: 5
   - type: Hypospray
     solutionName: pen
-    transferAmount: 26
+    transferAmount: 30
     onlyAffectsMobs: false
-    injectOnly: false
+    injectOnly: true
   - type: StaticPrice
     price: 500
   - type: Tag

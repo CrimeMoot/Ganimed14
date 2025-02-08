@@ -42,8 +42,8 @@ public sealed partial class CriminalRecordsConsoleWindow : FancyWindow
     public Action<CriminalRecord, bool, bool>? OnHistoryUpdated;
     public Action? OnHistoryClosed;
     public Action<SecurityStatus, string>? OnDialogConfirmed;
-    public Action<SecurityStatus>? OnStatusFilterPressed;
 
+    public Action<SecurityStatus>? OnStatusFilterPressed;
     private uint _maxLength;
     private bool _access;
     private uint? _selectedKey;
@@ -145,40 +145,6 @@ public sealed partial class CriminalRecordsConsoleWindow : FancyWindow
             if (_selectedRecord is { } record)
                 OnHistoryUpdated?.Invoke(record, _access, true);
         };
-
-         var statusFilterButtonGroup = new ButtonGroup();
-
-        AllListToggle.Group = statusFilterButtonGroup;
-
-        //Need to get the CurrentTab and set correct button to be active
-
-        AllListToggle.OnToggled += _ =>
-        {
-            StatusFilterPressed(0);
-        };
-
-        WantedListToggle.Group = statusFilterButtonGroup;
-        WantedListToggle.OnToggled += _ =>
-        {
-            StatusFilterPressed(1);
-        };
-
-        ParoleListToggle.Group = statusFilterButtonGroup;
-        ParoleListToggle.OnToggled += _ =>
-        {
-            StatusFilterPressed(2);
-        };
-
-        DetainedListToggle.Group = statusFilterButtonGroup;
-        DetainedListToggle.OnToggled += _ =>
-        {
-            StatusFilterPressed(3);
-        };
-    }
-
-    public void StatusFilterPressed(int tab)
-    {
-        OnStatusFilterPressed?.Invoke(tab);
     }
 
     public void StatusFilterPressed(SecurityStatus statusSelected)
@@ -188,13 +154,6 @@ public sealed partial class CriminalRecordsConsoleWindow : FancyWindow
 
     public void UpdateState(CriminalRecordsConsoleState state)
     {
-
-        //Set the correct button to be active
-        AllListToggle.Pressed = state.CurrentTab == 0;
-        WantedListToggle.Pressed = state.CurrentTab == 1;
-        ParoleListToggle.Pressed = state.CurrentTab == 2;
-        DetainedListToggle.Pressed = state.CurrentTab == 3;
-
         if (state.Filter != null)
         {
             if (state.Filter.Type != _currentFilterType)
@@ -245,7 +204,7 @@ public sealed partial class CriminalRecordsConsoleWindow : FancyWindow
         }
     }
 
-    private void PopulateRecordListing(Dictionary<uint, string>? listing, SecurityStatus? filterSecStatus = null)
+    private void PopulateRecordListing(Dictionary<uint, string>? listing)
     {
         if (listing == null)
         {
@@ -404,10 +363,6 @@ public sealed partial class CriminalRecordsConsoleWindow : FancyWindow
             _ => "SecurityIconNone"
         };
     }
-<<<<<<< HEAD
-
-=======
->>>>>>> upstream/master
     private string GetTypeFilterLocals(StationRecordFilterType type)
     {
         return Loc.GetString($"criminal-records-{type.ToString().ToLower()}-filter");

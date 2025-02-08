@@ -59,7 +59,6 @@
 #    - id: ClothingHeadCaptainHat
 #    - id: ClothingOuterCoatCaptain
     # Corvax-Resprite-End
-    - id: ClothingHeadCage # backmen
     - id: HandheldReinforcementCentCom # backmen
 #    - id: ClothingEyesGlassesCommand
     - id: TelescopicBaton # Cats
@@ -145,7 +144,6 @@
     - id: RubberStampApproved
     - id: RubberStampDenied
     - id: RubberStampHop
-    - id: ClothingHeadCage # backmen
     - id: ClothingOuterCoatHOP # Corvax-Resprite
     - id: PrinterDocFlatpack # Corvax-Printer
     - id: ClothingEyesHudCommand
@@ -180,7 +178,6 @@
     - id: RCD
     - id: RCDAmmo
     - id: RubberStampCE
-    - id: ClothingHeadCage # backmen
     - id: PrinterDocFlatpack # Corvax-Printer
     - id: SupermatterFlatpack # backmen
     - id: TelescopicBaton # Cats
@@ -241,7 +238,6 @@
     - id: MedicalTechFabCircuitboard
     - id: MedkitFilled
     - id: RubberStampCMO
-    - id: ClothingHeadCage # backmen
     - id: PrinterDocFlatpack # Corvax-Printer
     - id: FlatpackMetempsychoticMachine # backmen
     - id: MedicalBiofabMachineBoard # backmen
@@ -301,7 +297,6 @@
     - id: ProtolatheMachineCircuitboard
     - id: ResearchComputerCircuitboard
     - id: RubberStampRd
-    - id: ClothingHeadCage # backmen
     - id: PrinterDocFlatpack # Corvax-Printer
 #    - id: FlatpackOracle # backmen
 #    - id: FlatpackSophie # backmen
@@ -365,7 +360,6 @@
     - id: RubberStampHos
     - id: SecurityTechFabCircuitboard
     - id: WeaponEnergyGunDominator
-    - id: ClothingHeadCage # backmen
     - id: PrinterDocFlatpack # Corvax-Printer
     - id: WantedListCartridge
     - id: ClothingHeadHatCapHoS # Corvax-SecFashion

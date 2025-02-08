@@ -731,6 +731,7 @@ DrinkIrishCarBomb: DrinkIrishSlammer
 ClothingMaskSexyClown: ClothingMaskBlushingClown
 ClothingMaskSexyMime: ClothingMaskBlushingMime
 
+
 # 2025-01-27
 FoodCondimentPacketFrostoil: FoodCondimentPacketColdsauce
 
@@ -795,3 +796,8 @@ MagazineBoxAntiMateriel: MagazinePacketHeavyRifle50BMG
 #WeaponSubMachineGunVectorRubber: null
 MagazineBoxCaselessRifleBig: MagazineBoxCaselessRifle
 MagazineBoxAntiMaterielBig: MagazineBoxAntiMateriel
+
+#2025-02-08
+ClothingHeadHelmetInsulated: null
+ClothingHeadCage: null
+CockSpike: null

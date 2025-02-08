@@ -1,33 +1,4 @@
 {
-<<<<<<< HEAD
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from austation at https://github.com/austation/austation/blob/24204d4e288150a2a5eb54102e543d21c489a873/goon/icons/obj/power.dmi modificated by @CrimeMoot",
-  "size": {
-    "x": 32,
-    "y": 32
-  },
-  "states": [
-    {
-      "name": "broken"
-    },
-    {
-      "name": "normal",
-      "directions": 8
-    },
-    {
-      "name": "solar_assembly"
-    },
-    {
-      "name": "solar_tracker",
-      "directions": 8
-    },
-    {
-      "name": "static"
-    }
-  ]
-}
-=======
 	"version":1,
 	"license":"CC-BY-SA-4.0",
 	"copyright":"KalimbaMachine (github) & CaasGit (github) for Space Station 14",
@@ -87,4 +58,3 @@
 		}
 	]
 }
->>>>>>> upstream/master

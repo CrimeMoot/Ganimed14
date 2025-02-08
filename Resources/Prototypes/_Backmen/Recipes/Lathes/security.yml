@@ -1,22 +1,4 @@
-﻿- type: latheRecipe
-  id: ClothingHeadHelmetInsulated
-  result: ClothingHeadHelmetInsulated
-  completetime: 4
-  materials:
-    Steel: 400
-    Bluespace: 20
-
-- type: latheRecipe
-  id: InsulativeHeadcage
-  icon:
-    sprite: Backmen/Clothing/Head/Hats/cage.rsi
-    state: icon
-  result: ClothingHeadCage
-  completetime: 4
-  materials:
-    Steel: 400
-    Bluespace: 20
-
+﻿
 - type: latheRecipe
   id: ShellSoulbreaker
   icon:

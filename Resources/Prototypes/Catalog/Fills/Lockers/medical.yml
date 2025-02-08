@@ -69,8 +69,6 @@
         prob: 0.05
         orGroup: Surgshrubs
       - id: ClothingMaskSterile
-      - id: ClothingHeadCage # backmen
-        prob: 0.5
 
 - type: entity
   parent: LockerWallMedical

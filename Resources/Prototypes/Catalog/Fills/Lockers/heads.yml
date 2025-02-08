@@ -178,7 +178,6 @@
     - id: RCD
     - id: RCDAmmo
     - id: RubberStampCE
-    - id: ClothingHeadCage # backmen
     - id: PrinterDocFlatpack # Corvax-Printer
     - id: SupermatterFlatpack # backmen
     - id: TelescopicBaton # Cats

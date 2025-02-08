@@ -29,7 +29,6 @@
 ## Псионическая изоляция
 <Box>
 <GuideEntityEmbed Entity="ClothingHeadTinfoil"/>
-<GuideEntityEmbed Entity="ClothingHeadHelmetInsulated"/>
 <GuideEntityEmbed Entity="PillCryptobiolin" />
 </Box>
 [color=#a4885c] Изолирующая одежда[/color] и [color=#a4885c] криптобиолин[/color] сделают вас невосприимчивым к псионике, но не позволят использовать все, что у вас есть.

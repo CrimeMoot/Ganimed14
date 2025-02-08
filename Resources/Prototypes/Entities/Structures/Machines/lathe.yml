@@ -356,7 +356,6 @@
       - ClothingEyesGlassesChemical
       - CoreSilver
       #- QSI
-      - InsulativeHeadcage
       - HandTeleporter1
       - BluespacePillCanister # Backmen
       - FauxTileAstroGrass
@@ -945,8 +944,6 @@
       - WeaponLaserCarbine
       - WeaponLaserPistol
       - WeaponLaserCarbinePractice
-      - InsulativeHeadcage
-      - ClothingHeadHelmetInsulated
       - ShellSoulbreaker
       - WeaponXrayCannon
       - RapidSyringeGun # Goobstation

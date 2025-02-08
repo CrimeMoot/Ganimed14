@@ -352,4 +352,3 @@
     itemIconStyle: NoItem
     useDelay: 1
     event: !type:FakeMindShieldToggleEvent
->>>>>>> upstream/master

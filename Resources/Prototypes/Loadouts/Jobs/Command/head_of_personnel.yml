@@ -65,6 +65,7 @@
   equipment:
     neck: ClothingLongCloakHOP
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: MasterHoP
 

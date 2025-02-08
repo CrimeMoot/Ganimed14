@@ -79,6 +79,8 @@
   whitelisted: true
   equipment:
     eyes: ClothingEyesGlassesGar
+  effects:
+  - !type:SponsorLoadoutEffect
 
 # Gar Orange, Ganimed
 - type: loadout
@@ -86,11 +88,13 @@
   whitelisted: true
   equipment:
     eyes: ClothingEyesGlassesGarOrange
+  effects:
+  - !type:SponsorLoadoutEffect
 
 # Gar Giga, Ganimed
 - type: loadout
   id: GlassesGarGiga
-  effects:
-  - !type:SponsorLoadoutEffect
   equipment:
     eyes: ClothingEyesGlassesGarGiga
+  effects:
+  - !type:SponsorLoadoutEffect

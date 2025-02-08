@@ -336,6 +336,7 @@
   id: GlowstickBase
   whitelisted: true
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: TenOverall
   storage:
@@ -346,6 +347,7 @@
   id: GlowstickYellow
   whitelisted: true
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: TenOverall
   storage:
@@ -356,6 +358,7 @@
   id: GlowstickRed
   whitelisted: true
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: TenOverall
   storage:
@@ -366,6 +369,7 @@
   id: GlowstickPurple
   whitelisted: true
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: TenOverall
   storage:
@@ -376,6 +380,7 @@
   id: GlowstickBlue
   whitelisted: true
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: TenOverall
   storage:

@@ -58,6 +58,7 @@
   equipment:
     back: ClothingBackpackCluwneRemoveable
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:JobRequirementLoadoutEffect
     requirement:
       !type:RoleTimeRequirement

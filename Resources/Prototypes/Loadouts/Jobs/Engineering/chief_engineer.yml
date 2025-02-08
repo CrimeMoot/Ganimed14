@@ -51,6 +51,7 @@
   equipment:
     head: ClothingHeadHatHardhatArmored
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: MasterCE
 
@@ -88,6 +89,7 @@
   equipment:
     neck: ClothingLongCloakCE
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: MasterCE
 
@@ -118,6 +120,7 @@
   equipment:
     eyes: ClothingEyesGlassesWelding
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: SeniorEngineering
 

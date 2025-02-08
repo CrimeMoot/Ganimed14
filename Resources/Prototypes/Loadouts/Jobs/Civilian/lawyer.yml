@@ -54,6 +54,8 @@
   whitelisted: true
   equipment:
     jumpsuit: ClothingUniformJumpsuitNanotrasen
+  effects:
+  - !type:SponsorLoadoutEffect
 
 # Neck
 - type: loadout
@@ -71,6 +73,8 @@
   whitelisted: true
   equipment:
     neck: ClothingNeckCloakNanotrasen
+  effects:
+  - !type:SponsorLoadoutEffect
 
 # OuterClothing, Ganimed
 - type: loadout
@@ -89,3 +93,5 @@
   whitelisted: true
   equipment:
     shoes: ClothingShoesBootsLaceup
+  effects:
+  - !type:SponsorLoadoutEffect

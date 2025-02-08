@@ -102,6 +102,7 @@
   equipment:
     back: ClothingBackpackSatchelLeather
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: TenOverall
 
@@ -112,6 +113,7 @@
   equipment:
     belt: ClothingBeltStorageWaistbag
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: TenOverall
 

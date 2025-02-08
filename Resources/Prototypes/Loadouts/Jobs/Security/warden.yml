@@ -50,6 +50,7 @@
   equipment:
     belt: ClothingBeltBandolier
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: Watchman
 

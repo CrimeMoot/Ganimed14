@@ -53,6 +53,7 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitWhiteCaptain
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: MasterCap
 
@@ -62,6 +63,7 @@
   equipment:
     jumpsuit: ClothingUniformJumpskirtWhiteCaptain
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: MasterCap
 
@@ -96,6 +98,7 @@
   equipment:
     head: ClothingHeadHatCapcapWhite
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: MasterCap
 
@@ -105,6 +108,7 @@
   equipment:
     head: ClothingHeadHatBeretCaptainWhite
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: MasterCap
 
@@ -143,6 +147,7 @@
   equipment:
     neck: ClothingLongCloakCap
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: MasterCap
 
@@ -152,6 +157,7 @@
   equipment:
     neck: ClothingNeckCaptainWide
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: MasterCap
 
@@ -161,6 +167,7 @@
   equipment:
     neck: ClothingNeckWhiteMantleCaptain
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: MasterCap
 
@@ -198,6 +205,7 @@
   equipment:
     belt: ClothingBeltWhiteSheath
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: MasterCap
 
@@ -213,6 +221,7 @@
   equipment:
     gloves: ClothingHandsGlovesCaptainWhite
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: MasterCap
 

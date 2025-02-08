@@ -72,6 +72,7 @@
   equipment:
     ears: ClothingHeadsetMedicalScience
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: SeniorMedicalScientist
 
@@ -137,6 +138,7 @@
   id: FormalScientistJumpsuit
   whitelisted: true
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: SeniorResearcher
   equipment:
@@ -210,6 +212,7 @@
   whitelisted: true
   dummyEntity: ClothingOuterBioScientist
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:JobRequirementLoadoutEffect
     requirement:
       !type:DepartmentTimeRequirement
@@ -223,6 +226,7 @@
   id: RadSuit
   whitelisted: true
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:JobRequirementLoadoutEffect
     requirement:
       !type:DepartmentTimeRequirement
@@ -235,6 +239,7 @@
   id: ScienceBombSuit
   whitelisted: true
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:JobRequirementLoadoutEffect
     requirement:
       !type:DepartmentTimeRequirement

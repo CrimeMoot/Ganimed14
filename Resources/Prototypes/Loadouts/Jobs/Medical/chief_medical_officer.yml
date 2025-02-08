@@ -65,6 +65,7 @@
   equipment:
     neck: ClothingLongCloakCMO
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: MasterCMO
 

@@ -60,6 +60,7 @@
   equipment:
     neck: ClothingLongCloakRD
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: MasterRD
 
@@ -86,6 +87,7 @@
   equipment:
     gloves: ClothingHandsGlovesPowerglove
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: MasterEngineeringScientist
 
@@ -117,5 +119,6 @@
   equipment:
     shoes: ClothingShoesBootsMagSci
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: MasterRD

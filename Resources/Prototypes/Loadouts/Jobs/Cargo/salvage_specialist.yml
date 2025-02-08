@@ -30,6 +30,7 @@
   equipment:
     neck: ClothingNeckCloakMiner
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: MasterSalvager
 
@@ -54,6 +55,7 @@
   equipment:
     ears: ClothingHeadsetMining
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: MasterSalvager
 

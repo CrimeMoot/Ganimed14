@@ -163,6 +163,7 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitGenetics
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: ClinicalSpecialist
 
@@ -172,6 +173,7 @@
   equipment:
     jumpsuit: ClothingUniformJumpskirtGenetics
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: ClinicalSpecialist
 
@@ -181,6 +183,7 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitVirology
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: ClinicalSpecialist
 
@@ -190,6 +193,7 @@
   equipment:
     jumpsuit: ClothingUniformJumpskirtVirology
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: ClinicalSpecialist
 
@@ -251,6 +255,7 @@
   equipment:
     back: ClothingBackpackGenetics
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: ClinicalSpecialist
 
@@ -260,6 +265,7 @@
   equipment:
     back: ClothingBackpackSatchelGenetics
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: ClinicalSpecialist
 
@@ -269,6 +275,7 @@
   equipment:
     back: ClothingBackpackDuffelGenetics
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: ClinicalSpecialist
 
@@ -278,6 +285,7 @@
   equipment:
     back: ClothingBackpackVirology
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: ClinicalSpecialist
 
@@ -287,6 +295,7 @@
   equipment:
     back: ClothingBackpackSatchelVirology
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: ClinicalSpecialist
 
@@ -296,6 +305,7 @@
   equipment:
     back: ClothingBackpackDuffelVirology
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: ClinicalSpecialist
 
@@ -327,6 +337,7 @@
   equipment:
     outerClothing: ClothingOuterCoatLabGene
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: ClinicalSpecialist
 
@@ -336,6 +347,7 @@
   equipment:
     outerClothing: ClothingOuterCoatLabViro
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: ClinicalSpecialist
 
@@ -354,6 +366,7 @@
   equipment:
     outerClothing: ClothingOuterWinterGen
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: ClinicalSpecialist
 
@@ -363,6 +376,7 @@
   equipment:
     outerClothing: ClothingOuterWinterViro
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: ClinicalSpecialist
 
@@ -371,6 +385,7 @@
   whitelisted: true
   dummyEntity: ClothingOuterBioVirology
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: MedicalHeadMirrorTimer
   equipment:

@@ -175,6 +175,7 @@
   id: EngineeringMagBoots
   whitelisted: true
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: SeniorEngineering
   equipment:

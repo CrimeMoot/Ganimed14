@@ -131,6 +131,7 @@
   whitelisted: true
   dummyEntity: ClothingOuterBioSecurity
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:JobRequirementLoadoutEffect
     requirement:
       !type:DepartmentTimeRequirement

@@ -587,6 +587,8 @@
   loadouts:
   - ChaplainNeck
   - HolyMedal # Ganimed
+  - ChaplainCloakBlack # Ganimed
+  - ChaplainCloakWhite # Ganimed
 
 - type: loadoutGroup # Ganimed
   id: ChaplainShoes

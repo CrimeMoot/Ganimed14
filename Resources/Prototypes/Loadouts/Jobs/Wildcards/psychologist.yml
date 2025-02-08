@@ -20,3 +20,5 @@
   whitelisted: true
   equipment:
     shoes: ClothingShoesLeather
+  effects:
+  - !type:SponsorLoadoutEffect

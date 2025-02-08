@@ -26,6 +26,7 @@
   equipment:
     neck: ClothingCloakAtmosian
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: MasterAtmosian
 
@@ -78,6 +79,7 @@
   equipment:
     outerClothing: ClothingOuterAtmosianBomberJacket
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: MasterAtmosian
 

@@ -140,6 +140,7 @@
   equipment:
     neck: ClothingLongCloakHOS
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: MasterHoS
 

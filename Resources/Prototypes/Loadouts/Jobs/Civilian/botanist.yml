@@ -39,6 +39,8 @@
   whitelisted: true
   equipment:
     head: Bucket
+  effects:
+  - !type:SponsorLoadoutEffect
 
 # Jumpsuit
 - type: loadout

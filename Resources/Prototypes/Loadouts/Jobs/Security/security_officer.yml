@@ -72,6 +72,8 @@
   whitelisted: true
   equipment:
     head: ClothingHeadHatCowboyBountyHunter
+  effects:
+  - !type:SponsorLoadoutEffect
 
 - type: loadout # Ganimed
   id: LightRiotHelmet
@@ -85,6 +87,7 @@
   equipment:
     neck: SecurityWhistle
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: SeniorOfficer
 
@@ -249,6 +252,7 @@
   equipment:
     outerClothing: ClothingOuterArmorBulletproof
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: SeniorOfficer
 
@@ -258,6 +262,7 @@
   equipment:
     outerClothing: ClothingOuterArmorReflective
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: SeniorOfficer
 
@@ -266,6 +271,7 @@
   whitelisted: true
   dummyEntity: ClothingOuterSuitBomb
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:JobRequirementLoadoutEffect
     requirement:
       !type:DepartmentTimeRequirement
@@ -297,6 +303,8 @@
   whitelisted: true
   equipment:
     shoes: ClothingShoesBootsCowboyBlackFilled
+  effects:
+  - !type:SponsorLoadoutEffect
 
 # PDA
 - type: loadout

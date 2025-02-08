@@ -20,6 +20,8 @@
   whitelisted: true
   equipment:
     outerClothing: ClothingUniformJumpskirtPerformer
+  effects:
+  - !type:SponsorLoadoutEffect
 
 # Shoes, Ganimed
 - type: loadout # TODO: Whitelist restriction
@@ -27,3 +29,5 @@
   whitelisted: true
   equipment:
     shoes: ClothingShoesBootsPerformer
+  effects:
+  - !type:SponsorLoadoutEffect

@@ -30,6 +30,7 @@
   equipment:
     jumpsuit: ClothingUniformJumpskirtJanimaid
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:JobRequirementLoadoutEffect
     requirement:
       !type:DepartmentTimeRequirement
@@ -63,6 +64,7 @@
   whitelisted: true
   dummyEntity: ClothingOuterBioJanitor
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:JobRequirementLoadoutEffect
     requirement:
       !type:DepartmentTimeRequirement

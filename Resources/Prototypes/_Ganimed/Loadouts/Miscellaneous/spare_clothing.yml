@@ -193,6 +193,8 @@
   storage:
     back:
     - ClothingHeadHatBeaverHat
+  effects:
+  - !type:SponsorLoadoutEffect
 
 - type: loadout
   id: SpareGreyFedora
@@ -201,6 +203,7 @@
     back:
     - ClothingHeadHatFedoraGrey
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: Security
 
@@ -465,6 +468,8 @@
   storage:
     back:
     - ClothingUniformTurtleneckColorBlack
+  effects:
+  - !type:SponsorLoadoutEffect
 
 - type: loadout
   id: SpareTurtleneckSkirtColorBlack
@@ -472,6 +477,8 @@
   storage:
     back:
     - ClothingUniformTurtleneckSkirtColorBlack
+  effects:
+  - !type:SponsorLoadoutEffect
 
 - type: loadout
   id: SpareTurtleneckColorGrey
@@ -479,6 +486,8 @@
   storage:
     back:
     - ClothingUniformTurtleneckColorGrey
+  effects:
+  - !type:SponsorLoadoutEffect
 
 - type: loadout
   id: SpareTurtleneckSkirtColorGrey
@@ -486,6 +495,8 @@
   storage:
     back:
     - ClothingUniformTurtleneckSkirtColorGrey
+  effects:
+  - !type:SponsorLoadoutEffect
 
 - type: loadout
   id: SpareTurtleneckColorWhite
@@ -493,6 +504,8 @@
   storage:
     back:
     - ClothingUniformTurtleneckColorWhite
+  effects:
+  - !type:SponsorLoadoutEffect
 
 - type: loadout
   id: SpareTurtleneckSkirtColorWhite
@@ -500,6 +513,8 @@
   storage:
     back:
     - ClothingUniformTurtleneckSkirtColorWhite
+  effects:
+  - !type:SponsorLoadoutEffect
 
 - type: loadout
   id: SpareTurtleneckColorLightBrown
@@ -507,6 +522,8 @@
   storage:
     back:
     - ClothingUniformTurtleneckColorLightBrown
+  effects:
+  - !type:SponsorLoadoutEffect
 
 - type: loadout
   id: SpareTurtleneckSkirtColorLightBrown
@@ -514,6 +531,8 @@
   storage:
     back:
     - ClothingUniformTurtleneckSkirtColorLightBrown
+  effects:
+  - !type:SponsorLoadoutEffect
 
 - type: loadout
   id: SpareTurtleneckColorBrown
@@ -521,6 +540,8 @@
   storage:
     back:
     - ClothingUniformTurtleneckColorBrown
+  effects:
+  - !type:SponsorLoadoutEffect
 
 - type: loadout
   id: SpareTurtleneckSkirtColorBrown
@@ -528,6 +549,8 @@
   storage:
     back:
     - ClothingUniformTurtleneckSkirtColorBrown
+  effects:
+  - !type:SponsorLoadoutEffect
 
 - type: loadout
   id: SpareTurtleneckColorRed
@@ -535,6 +558,8 @@
   storage:
     back:
     - ClothingUniformTurtleneckColorRed
+  effects:
+  - !type:SponsorLoadoutEffect
 
 - type: loadout
   id: SpareTurtleneckSkirtColorRed
@@ -542,6 +567,8 @@
   storage:
     back:
     - ClothingUniformTurtleneckSkirtColorRed
+  effects:
+  - !type:SponsorLoadoutEffect
 
 - type: loadout
   id: SpareTurtleneckColorOrange
@@ -549,6 +576,8 @@
   storage:
     back:
     - ClothingUniformTurtleneckColorOrange
+  effects:
+  - !type:SponsorLoadoutEffect
 
 - type: loadout
   id: SpareTurtleneckSkirtColorOrange
@@ -556,6 +585,8 @@
   storage:
     back:
     - ClothingUniformTurtleneckSkirtColorOrange
+  effects:
+  - !type:SponsorLoadoutEffect
 
 - type: loadout
   id: SpareTurtleneckColorYellow
@@ -563,6 +594,8 @@
   storage:
     back:
     - ClothingUniformTurtleneckColorYellow
+  effects:
+  - !type:SponsorLoadoutEffect
 
 - type: loadout
   id: SpareTurtleneckSkirtColorYellow
@@ -570,6 +603,8 @@
   storage:
     back:
     - ClothingUniformTurtleneckSkirtColorYellow
+  effects:
+  - !type:SponsorLoadoutEffect
 
 - type: loadout
   id: SpareTurtleneckColorGreen
@@ -577,6 +612,8 @@
   storage:
     back:
     - ClothingUniformTurtleneckColorGreen
+  effects:
+  - !type:SponsorLoadoutEffect
 
 - type: loadout
   id: SpareTurtleneckSkirtColorGreen
@@ -584,6 +621,8 @@
   storage:
     back:
     - ClothingUniformTurtleneckSkirtColorGreen
+  effects:
+  - !type:SponsorLoadoutEffect
 
 - type: loadout
   id: SpareTurtleneckColorDarkGreen
@@ -591,6 +630,8 @@
   storage:
     back:
     - ClothingUniformTurtleneckColorDarkGreen
+  effects:
+  - !type:SponsorLoadoutEffect
 
 - type: loadout
   id: SpareTurtleneckSkirtColorDarkGreen
@@ -598,6 +639,8 @@
   storage:
     back:
     - ClothingUniformTurtleneckSkirtColorDarkGreen
+  effects:
+  - !type:SponsorLoadoutEffect
 
 - type: loadout
   id: SpareTurtleneckColorTeal
@@ -605,6 +648,8 @@
   storage:
     back:
     - ClothingUniformTurtleneckColorTeal
+  effects:
+  - !type:SponsorLoadoutEffect
 
 - type: loadout
   id: SpareTurtleneckSkirtColorTeal
@@ -612,6 +657,8 @@
   storage:
     back:
     - ClothingUniformTurtleneckSkirtColorTeal
+  effects:
+  - !type:SponsorLoadoutEffect
 
 - type: loadout
   id: SpareTurtleneckColorBlue
@@ -619,6 +666,8 @@
   storage:
     back:
     - ClothingUniformTurtleneckColorBlue
+  effects:
+  - !type:SponsorLoadoutEffect
 
 - type: loadout
   id: SpareTurtleneckSkirtColorBlue
@@ -626,6 +675,8 @@
   storage:
     back:
     - ClothingUniformTurtleneckSkirtColorBlue
+  effects:
+  - !type:SponsorLoadoutEffect
 
 - type: loadout
   id: SpareTurtleneckColorDarkBlue
@@ -633,6 +684,8 @@
   storage:
     back:
     - ClothingUniformTurtleneckColorDarkBlue
+  effects:
+  - !type:SponsorLoadoutEffect
 
 - type: loadout
   id: SpareTurtleneckSkirtColorDarkBlue
@@ -640,6 +693,8 @@
   storage:
     back:
     - ClothingUniformTurtleneckSkirtColorDarkBlue
+  effects:
+  - !type:SponsorLoadoutEffect
 
 - type: loadout
   id: SpareTurtleneckColorPurple
@@ -647,6 +702,8 @@
   storage:
     back:
     - ClothingUniformTurtleneckColorPurple
+  effects:
+  - !type:SponsorLoadoutEffect
 
 - type: loadout
   id: SpareTurtleneckSkirtColorPurple
@@ -654,6 +711,8 @@
   storage:
     back:
     - ClothingUniformTurtleneckSkirtColorPurple
+  effects:
+  - !type:SponsorLoadoutEffect
 
 - type: loadout
   id: SpareTurtleneckColorMaroon
@@ -661,6 +720,8 @@
   storage:
     back:
     - ClothingUniformTurtleneckColorMaroon
+  effects:
+  - !type:SponsorLoadoutEffect
 
 - type: loadout
   id: SpareTurtleneckSkirtColorMaroon
@@ -668,6 +729,8 @@
   storage:
     back:
     - ClothingUniformTurtleneckSkirtColorMaroon
+  effects:
+  - !type:SponsorLoadoutEffect
 
 - type: loadout
   id: SpareTurtleneckColorPink
@@ -675,6 +738,8 @@
   storage:
     back:
     - ClothingUniformTurtleneckColorPink
+  effects:
+  - !type:SponsorLoadoutEffect
 
 - type: loadout
   id: SpareTurtleneckSkirtColorPink
@@ -682,6 +747,8 @@
   storage:
     back:
     - ClothingUniformTurtleneckSkirtColorPink
+  effects:
+  - !type:SponsorLoadoutEffect
 
 # Casual
 - type: loadout
@@ -771,6 +838,7 @@
     back:
     - ClothingUniformJumpsuitPsychologist
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: Doctor
 
@@ -781,6 +849,7 @@
     back:
     - ClothingUniformJumpskirtPsychologist
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: Doctor
 
@@ -791,6 +860,7 @@
     back:
     - ClothingUniformJumpsuitDetectiveGrey
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: Security
 
@@ -801,6 +871,7 @@
     back:
     - ClothingUniformJumpskirtDetectiveGrey
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: Security
 
@@ -811,6 +882,7 @@
     back:
     - ClothingUniformJumpsuitDetective
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: Security
 
@@ -821,6 +893,7 @@
     back:
     - ClothingUniformJumpskirtDetective
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: Security
 
@@ -831,6 +904,7 @@
     back:
     - ClothingUniformJumpsuitSecBlue
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: Security
 
@@ -841,6 +915,7 @@
     back:
     - ClothingUniformJumpsuitJournalist
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: Service
 
@@ -851,6 +926,7 @@
     back:
     - ClothingUniformJumpsuitReporter
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: Service
 
@@ -861,6 +937,7 @@
     back:
     - ClothingUniformJumpsuitCurator
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: JamjarTimer
 
@@ -871,6 +948,7 @@
     back:
     - ClothingUniformJumpskirtCurator
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: JamjarTimer
 
@@ -888,15 +966,21 @@
 
 - type: loadout
   id: SpareJumpsuitRandom
+  whitelisted: true
   storage:
     back:
     - ClothingUniformRandomStandard
+  effects:
+  - !type:SponsorLoadoutEffect
 
 - type: loadout
   id: SpareJumpsuitRandomShirt
+  whitelisted: true
   storage:
     back:
     - ClothingUniformRandomShirt
+  effects:
+  - !type:SponsorLoadoutEffect
 
 - type: loadout
   id: SpareCossackSuit
@@ -904,6 +988,8 @@
   storage:
     back:
     - ClothingUniformJumpsuitCossack
+  effects:
+  - !type:SponsorLoadoutEffect
 
 - type: loadout
   id: SpareWebJumpsuit
@@ -912,6 +998,7 @@
     back:
     - ClothingUniformJumpsuitWeb
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:SpeciesLoadoutEffect
     species:
     - Arachnid
@@ -923,6 +1010,7 @@
     back:
     - ClothingUniformJumpskirtWeb
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:SpeciesLoadoutEffect
     species:
     - Arachnid
@@ -934,6 +1022,8 @@
   storage:
     back:
     - ClothingUniformJumpskirtBlackElegantDress
+  effects:
+  - !type:SponsorLoadoutEffect
 
 - type: loadout
   id: SpareRedElegantDress
@@ -941,6 +1031,8 @@
   storage:
     back:
     - ClothingUniformJumpskirtRedElegantDress
+  effects:
+  - !type:SponsorLoadoutEffect
 
 - type: loadout
   id: SpareGreenElegantDress
@@ -948,6 +1040,8 @@
   storage:
     back:
     - ClothingUniformJumpskirtGreenElegantDress
+  effects:
+  - !type:SponsorLoadoutEffect
 
 - type: loadout
   id: SpareBlueElegantDress
@@ -955,6 +1049,8 @@
   storage:
     back:
     - ClothingUniformJumpskirtBlueElegantDress
+  effects:
+  - !type:SponsorLoadoutEffect
 
 - type: loadout
   id: SparePurpleElegantDress
@@ -962,6 +1058,8 @@
   storage:
     back:
     - ClothingUniformJumpskirtPurpleElegantDress
+  effects:
+  - !type:SponsorLoadoutEffect
 
 - type: loadout
   id: SpareRedStripedDress
@@ -969,6 +1067,8 @@
   storage:
     back:
     - ClothingUniformJumpskirtRedStripedDress
+  effects:
+  - !type:SponsorLoadoutEffect
 
 - type: loadout
   id: SpareOrangeStripedDress
@@ -976,6 +1076,8 @@
   storage:
     back:
     - ClothingUniformJumpskirtOrangeStripedDress
+  effects:
+  - !type:SponsorLoadoutEffect
 
 - type: loadout
   id: SpareGreenStripedDress
@@ -983,6 +1085,8 @@
   storage:
     back:
     - ClothingUniformJumpskirtGreenStripedDress
+  effects:
+  - !type:SponsorLoadoutEffect
 
 - type: loadout
   id: SpareCyanStripedDress
@@ -990,6 +1094,8 @@
   storage:
     back:
     - ClothingUniformJumpskirtCyanStripedDress
+  effects:
+  - !type:SponsorLoadoutEffect
 
 - type: loadout
   id: SparePinkStripedDress
@@ -997,6 +1103,8 @@
   storage:
     back:
     - ClothingUniformJumpskirtPinkStripedDress
+  effects:
+  - !type:SponsorLoadoutEffect
 
 - type: loadout
   id: SpareRedTurtleneckDress
@@ -1004,6 +1112,8 @@
   storage:
     back:
     - ClothingUniformJumpskirtRedTurtleneckDress
+  effects:
+  - !type:SponsorLoadoutEffect
 
 - type: loadout
   id: SpareYellowTurtleneckDress
@@ -1011,6 +1121,8 @@
   storage:
     back:
     - ClothingUniformJumpskirtYellowTurtleneckDress
+  effects:
+  - !type:SponsorLoadoutEffect
 
 - type: loadout
   id: SpareGreenTurtleneckDress
@@ -1018,6 +1130,8 @@
   storage:
     back:
     - ClothingUniformJumpskirtGreenTurtleneckDress
+  effects:
+  - !type:SponsorLoadoutEffect
 
 - type: loadout
   id: SpareBlueTurtleneckDress
@@ -1025,6 +1139,8 @@
   storage:
     back:
     - ClothingUniformJumpskirtBlueTurtleneckDress
+  effects:
+  - !type:SponsorLoadoutEffect
 
 - type: loadout
   id: SparePurpleTurtleneckDress
@@ -1032,6 +1148,8 @@
   storage:
     back:
     - ClothingUniformJumpskirtPurpleTurtleneckDress
+  effects:
+  - !type:SponsorLoadoutEffect
 
 - type: loadout
   id: SpareYellowOldDress
@@ -1122,6 +1240,7 @@
     back:
     - ClothingMaskNeckGaiter
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: Security
 
@@ -1229,6 +1348,7 @@
     back:
     - ClothingNeckCloakHieroglyphics
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: TenOverall
 
@@ -1239,6 +1359,7 @@
     back:
     - ClothingNeckCloakOrange
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: TenOverall
 
@@ -1256,6 +1377,8 @@
   storage:
     back:
     - BedsheetRainbow
+  effects:
+  - !type:SponsorLoadoutEffect
 
 - type: loadout
   id: SpareWizardBedsheet
@@ -1372,6 +1495,7 @@
     back:
     - ClothingOuterWinterWeb
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:SpeciesLoadoutEffect
     species:
     - Arachnid

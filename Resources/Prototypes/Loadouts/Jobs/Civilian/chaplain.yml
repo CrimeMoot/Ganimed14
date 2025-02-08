@@ -1,3 +1,13 @@
+# Timers
+- type: loadoutEffectGroup
+  id: Clergy
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobChaplain
+      time: 72000 #20 hrs
+
 # Head
 - type: loadout
   id: ChaplainHead
@@ -67,6 +77,24 @@
   equipment:
     neck: ClothingNeckHolyMedal
 
+- type: loadout
+  id: ChaplainCloakBlack
+  equipment:
+    neck: ClothingNeckCloakBlackCloak
+  effects:
+  - !type:SponsorLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: Clergy
+
+- type: loadout
+  id: ChaplainCloakWhite
+  equipment:
+    neck: ClothingNeckCloakWhiteCloak
+  effects:
+  - !type:SponsorLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: Clergy
+
 # Gloves, Ganimed
 - type: loadout
   id: ChaplainDivineWatch
@@ -74,11 +102,8 @@
     gloves: ClothingHandsWatchDivine
   effects:
   - !type:SponsorLoadoutEffect
-  - !type:JobRequirementLoadoutEffect
-    requirement:
-      !type:RoleTimeRequirement
-      role: JobChaplain
-      time: 72000 # 20hr
+  - !type:GroupLoadoutEffect
+    proto: Clergy
 
 # Outer clothing
 - type: loadout
@@ -112,3 +137,5 @@
   whitelisted: true
   equipment:
     shoes: ClothingShoesCult
+  effects:
+  - !type:SponsorLoadoutEffect

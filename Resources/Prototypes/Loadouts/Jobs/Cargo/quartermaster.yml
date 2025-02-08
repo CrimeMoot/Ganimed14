@@ -70,6 +70,7 @@
   equipment:
     neck: ClothingLongCloakQM
   effects:
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: MasterQM
 

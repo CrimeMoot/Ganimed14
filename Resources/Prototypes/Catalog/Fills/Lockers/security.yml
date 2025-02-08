@@ -66,6 +66,7 @@
       - id: ClothingHeadCageSec # cats
         amount: 3
       - id: ClothingHandsGlovesKravMaga # cats
+      - id: Binoculars
 
 - type: entity
   id: LockerSecurityFilled
@@ -187,6 +188,7 @@
   parent: [GunSafeBaseSecure, BaseRestrictedContraband]
   id: GunSafePistolMk58
   name: mk58 safe
+  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -199,6 +201,7 @@
   parent: [GunSafeBaseSecure, BaseRestrictedContraband]
   id: GunSafeRifleLecter
   name: lecter safe
+  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -211,6 +214,7 @@
   parent: [GunSafeBaseSecure, BaseRestrictedContraband]
   id: GunSafeSubMachineGunDrozd
   name: drozd safe
+  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -223,6 +227,7 @@
   parent: [GunSafeBaseSecure, BaseRestrictedContraband]
   id: GunSafeShotgunEnforcer
   name: enforcer safe
+  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -235,6 +240,7 @@
   parent: [GunSafeBaseSecure, BaseRestrictedContraband]
   id: GunSafeShotgunKammerer
   name: kammerer safe
+  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -248,6 +254,7 @@
   suffix: Wt550
   parent: [GunSafeBaseSecure, BaseRestrictedContraband]
   name: wt550 safe
+  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -260,6 +267,7 @@
   parent: [GunSafeBaseSecure, BaseRestrictedContraband]
   id: GunSafeLaserCarbine
   name: laser safe
+  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:

@@ -42,8 +42,8 @@ public sealed partial class CriminalRecordsConsoleWindow : FancyWindow
     public Action<CriminalRecord, bool, bool>? OnHistoryUpdated;
     public Action? OnHistoryClosed;
     public Action<SecurityStatus, string>? OnDialogConfirmed;
+    public Action<SecurityStatus>? OnStatusFilterPressed;
 
-    public Action<int>? OnStatusFilterPressed;
     private uint _maxLength;
     private bool _access;
     private uint? _selectedKey;
@@ -52,6 +52,8 @@ public sealed partial class CriminalRecordsConsoleWindow : FancyWindow
     private DialogWindow? _reasonDialog;
 
     private StationRecordFilterType _currentFilterType;
+
+    private SecurityStatus _currentCrewListFilter;
 
     public CriminalRecordsConsoleWindow(EntityUid console, uint maxLength, IPlayerManager playerManager, IPrototypeManager prototypeManager, IRobustRandom robustRandom, AccessReaderSystem accessReader)
     {
@@ -68,6 +70,8 @@ public sealed partial class CriminalRecordsConsoleWindow : FancyWindow
         _maxLength = maxLength;
         _currentFilterType = StationRecordFilterType.Name;
 
+        _currentCrewListFilter = SecurityStatus.None;
+
         OpenCentered();
 
         foreach (var item in Enum.GetValues<StationRecordFilterType>())
@@ -78,6 +82,12 @@ public sealed partial class CriminalRecordsConsoleWindow : FancyWindow
         foreach (var status in Enum.GetValues<SecurityStatus>())
         {
             AddStatusSelect(status);
+        }
+
+        //Populate status to filter crew list
+        foreach (var item in Enum.GetValues<SecurityStatus>())
+        {
+            CrewListFilter.AddItem(GetCrewListFilterLocals(item), (int)item);
         }
 
         OnClose += () => _reasonDialog?.Close();
@@ -103,6 +113,20 @@ public sealed partial class CriminalRecordsConsoleWindow : FancyWindow
             {
                 _currentFilterType = type;
                 FilterListingOfRecords(FilterText.Text);
+            }
+        };
+
+        //Select Status to filter crew
+        CrewListFilter.OnItemSelected += eventArgs =>
+        {
+            var type = (SecurityStatus)eventArgs.Id;
+
+            if (_currentCrewListFilter != type)
+            {
+                _currentCrewListFilter = type;
+
+                StatusFilterPressed(type);
+
             }
         };
 
@@ -157,6 +181,11 @@ public sealed partial class CriminalRecordsConsoleWindow : FancyWindow
         OnStatusFilterPressed?.Invoke(tab);
     }
 
+    public void StatusFilterPressed(SecurityStatus statusSelected)
+    {
+        OnStatusFilterPressed?.Invoke(statusSelected);
+    }
+
     public void UpdateState(CriminalRecordsConsoleState state)
     {
 
@@ -179,10 +208,14 @@ public sealed partial class CriminalRecordsConsoleWindow : FancyWindow
             }
         }
 
+        if (state.FilterStatus != _currentCrewListFilter)
+        {
+            _currentCrewListFilter = state.FilterStatus;
+        }
+
         _selectedKey = state.SelectedKey;
-
         FilterType.SelectId((int)_currentFilterType);
-
+        CrewListFilter.SelectId((int)_currentCrewListFilter);
         NoRecords.Visible = state.RecordListing == null || state.RecordListing.Count == 0;
         PopulateRecordListing(state.RecordListing);
 
@@ -266,7 +299,6 @@ public sealed partial class CriminalRecordsConsoleWindow : FancyWindow
             j--;
         }
     }
-
     private void PopulateRecordContainer(GeneralStationRecord stationRecord, CriminalRecord criminalRecord)
     {
         var specifier = new SpriteSpecifier.Rsi(new ResPath("Interface/Misc/job_icons.rsi"), "Unknown");
@@ -372,9 +404,29 @@ public sealed partial class CriminalRecordsConsoleWindow : FancyWindow
             _ => "SecurityIconNone"
         };
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
     private string GetTypeFilterLocals(StationRecordFilterType type)
     {
         return Loc.GetString($"criminal-records-{type.ToString().ToLower()}-filter");
+    }
+
+    private string GetCrewListFilterLocals(SecurityStatus type)
+    {
+        string result;
+
+        // If "NONE" override to "show all"
+        if (type == SecurityStatus.None)
+        {
+            result = Loc.GetString("criminal-records-console-show-all");
+        }
+        else
+        {
+            result = Loc.GetString($"criminal-records-status-{type.ToString().ToLower()}");
+        }
+
+        return result;
     }
 }

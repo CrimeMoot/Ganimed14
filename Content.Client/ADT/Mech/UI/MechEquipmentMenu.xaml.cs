@@ -98,7 +98,7 @@ public sealed partial class MechEquipmentMenu : RadialMenu
 }
 
 
-public sealed class MechEquipmentMenuButton : RadialMenuTextureButton
+public sealed class MechEquipmentMenuButton : RadialMenuTextureButtonWithSector
 {
     public NetEntity? Entity;
 }

@@ -552,7 +552,7 @@ namespace Content.Server.GameTicking
             {
                 if (!_webhookIdentifier.HasValue)
                 {
-                    Log.Error("WebhookIdentifier is null or does not have a value.");
+                    Log.Warning("WebhookIdentifier is null or does not have a value.");
                     return;
                 }
 
@@ -580,7 +580,7 @@ namespace Content.Server.GameTicking
                 }
                 catch (UriFormatException e)
                 {
-                    Log.Error($"Ошибка при преобразовании webhookIdentifier в URI: {e.Message}");
+                    Log.Warning$"Ошибка при преобразовании webhookIdentifier в URI: {e.Message}");
                     return;
                 }
 
@@ -595,7 +595,7 @@ namespace Content.Server.GameTicking
                     var response = await client.PostAsync(webhookUri, form); // Using the constructed URI
                     if (!response.IsSuccessStatusCode)
                     {
-                        Log.Error($"Ошибка при отправке файла в Discord: {response.StatusCode}");
+                        Log.Warning($"Ошибка при отправке файла в Discord: {response.StatusCode}");
                     }
                     else
                     {
@@ -607,7 +607,7 @@ namespace Content.Server.GameTicking
             }
             catch (Exception e)
             {
-                Log.Error($"Ошибка при отправке сообщения о завершении раунда в Discord:\n{e}");
+                Log.Warning($"Ошибка при отправке сообщения о завершении раунда в Discord:\n{e}");
             }
         }
         // Ganimed-Tweak-end

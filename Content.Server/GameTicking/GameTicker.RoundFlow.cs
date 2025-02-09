@@ -605,6 +605,10 @@ namespace Content.Server.GameTicking
 
                 File.Delete(tempFilePath);
             }
+            catch (Exception e)
+            {
+                Log.Error($"Ошибка при отправке сообщения о завершении раунда в Discord:\n{e}");
+            }
         }
         // Ganimed-Tweak-end
 

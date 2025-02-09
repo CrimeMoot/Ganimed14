@@ -580,7 +580,7 @@ namespace Content.Server.GameTicking
                 }
                 catch (UriFormatException e)
                 {
-                    Log.Warning$"Ошибка при преобразовании webhookIdentifier в URI: {e.Message}");
+                    Log.Warning($"Ошибка при преобразовании webhookIdentifier в URI: {e.Message}");
                     return;
                 }
 

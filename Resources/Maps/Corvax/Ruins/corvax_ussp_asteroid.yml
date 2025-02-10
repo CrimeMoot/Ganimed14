@@ -11526,7 +11526,7 @@ entities:
     - type: Transform
       pos: 14.57781,-12.755797
       parent: 2
-- proto: CartridgeRifleLight762x39
+- proto: CartridgeRifle
   entities:
   - uid: 20
     components:

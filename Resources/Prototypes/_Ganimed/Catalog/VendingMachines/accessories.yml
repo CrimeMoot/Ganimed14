@@ -118,14 +118,3 @@
   conditions:
     - !type:ListingLimitedStockCondition
       stock: 2
-
-- type: listing
-  id: AccessoriesSponsornventory12
-  productEntity: ClothingNeckCloakTrans  
-  cost:
-    SpaceCash: 1200
-  categories:
-    - Accessories
-  conditions:
-    - !type:ListingLimitedStockCondition
-      stock: 2

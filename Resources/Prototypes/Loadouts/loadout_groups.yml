@@ -27,18 +27,20 @@
   - CigarGold
   - SmokingPipe # Ganimed
   - ClothingNeckLGBTPin
-  - ClothingNeckAromanticPin
-  - ClothingNeckAsexualPin
-  - ClothingNeckBisexualPin
-  - ClothingNeckGayPin
-  - ClothingNeckIntersexPin
-  - ClothingNeckLesbianPin
-  - ClothingNeckNonBinaryPin
-  - ClothingNeckPansexualPin
-  - ClothingNeckOmnisexualPin
-  - ClothingNeckTransPin
   - ClothingNeckAutismPin
-  - ClothingNeckGoldAutismPin
+# start-backmen: no pride
+#  - ClothingNeckAromanticPin
+#  - ClothingNeckAsexualPin
+#  - ClothingNeckBisexualPin
+#  - ClothingNeckGayPin
+#  - ClothingNeckIntersexPin
+#  - ClothingNeckLesbianPin
+#  - ClothingNeckNonBinaryPin
+#  - ClothingNeckPansexualPin
+#  - ClothingNeckOmnisexualPin
+#  - ClothingNeckTransPin
+#  - ClothingNeckGoldAutismPin
+# end-backmen: no pride
   # backmen-pins-start
   - ClothingNeckDonkPin
   - ClothingNeckDeForestPin

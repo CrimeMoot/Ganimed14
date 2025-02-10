@@ -6,7 +6,15 @@
     requirement:
       !type:DepartmentTimeRequirement
       department: Command
-      time: 3600 # 1 hour
+      time: 7200 # 2 hours
+
+- type: loadoutEffectGroup # Ganimed 
+  id: TenOverall
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:OverallPlaytimeRequirement
+      time: 36000 # 10hr
 
 # Flowers
 - type: loadout
@@ -49,6 +57,35 @@
     - CandleRed
     - CandleBlue
     - CandleGreenSmall
+
+- type: loadout # Ganimed
+  id: AmongPequeno
+  storage:
+    back:
+    - ToyAmongPequeno
+  effects:
+  - !type:SponsorLoadoutEffect
+
+- type: loadout # Ganimed
+  id: RubberDuck
+  storage:
+    back:
+    - ToyRubberDuck
+
+- type: loadout # Ganimed
+  id: XmasCrown
+  storage:
+    back:
+    - ClothingHeadHatXmasCrown
+
+- type: loadout # Ganimed
+  id: WarningCone
+  storage:
+    back:
+    - ClothingHeadHatCone
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: Engineer
 
 # Smokeables
 - type: loadout
@@ -99,8 +136,16 @@
     back:
     - CigarGold
 
+- type: loadout # Ganimed
+  id: SmokingPipe
+  storage:
+    back:
+    - SmokingPipeFilledTobacco
+  effects:
+  - !type:SponsorLoadoutEffect
+
 # Pins
-#- type: loadout
+#- type: loadout # TODO: readd
 #  id: ClothingNeckLGBTPin
 #  storage:
 #    back:
@@ -166,7 +211,7 @@
 #    back:
 #    - ClothingNeckTransPin
 
-#- type: loadout
+#- type: loadout # TODO: readd
 #  id: ClothingNeckAutismPin
 #  storage:
 #    back:
@@ -286,14 +331,63 @@
     - ClothingNeckSyndicakePin
 # backmen: loadouts-end
 
+# Ganimed: Glowsticks  TODO: Whitelist restriction
+- type: loadout
+  id: GlowstickBase
+  effects:
+  - !type:SponsorLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: TenOverall
+  storage:
+    back:
+    - GlowstickBase
+
+- type: loadout
+  id: GlowstickYellow
+  effects:
+  - !type:SponsorLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: TenOverall
+  storage:
+    back:
+    - GlowstickYellow
+
+- type: loadout
+  id: GlowstickRed
+  effects:
+  - !type:SponsorLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: TenOverall
+  storage:
+    back:
+    - GlowstickRed
+
+- type: loadout
+  id: GlowstickPurple
+  effects:
+  - !type:SponsorLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: TenOverall
+  storage:
+    back:
+    - GlowstickPurple
+
+- type: loadout
+  id: GlowstickBlue
+  effects:
+  - !type:SponsorLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: TenOverall
+  storage:
+    back:
+    - GlowstickBlue
+
 # Towels
 - type: loadout
   id: TowelColorWhite
   effects:
-  - !type:JobRequirementLoadoutEffect
-    requirement:
-      !type:OverallPlaytimeRequirement
-      time: 36000 # 10hr
+  - !type:GroupLoadoutEffect
+    proto: TenOverall
   storage:
     back:
     - TowelColorWhite

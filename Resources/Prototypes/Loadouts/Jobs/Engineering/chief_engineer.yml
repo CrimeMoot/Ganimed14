@@ -29,6 +29,11 @@
   equipment:
     jumpsuit: ClothingUniformJumpskirtChiefEngineerTurtle
 
+- type: loadout # Ganimed
+  id: ChiefEngineerNTJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitChiefEngineerNT
+
 # Head
 - type: loadout
   id: ChiefEngineerHead
@@ -40,6 +45,15 @@
   equipment:
     head: ClothingHeadHatBeretChiefEngineering   # cats
 
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: ArmoredHarthat
+  equipment:
+    head: ClothingHeadHatHardhatArmored
+  effects:
+  #- !type:WhitelistedLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: MasterCE
+
 - type: loadout
   id: ChiefEngineerBeret
   startingGear: EngineeringBeret
@@ -49,6 +63,11 @@
   id: ChiefEngineerCloak
   equipment:
     neck: ClothingNeckCloakCe
+
+- type: loadout # Ganimed
+  id: ChiefEngineerCloakOriginal
+  equipment:
+    neck: ClothingNeckCloakCeOriginal
 
 - type: loadout
   id: ChiefEngineerMantle
@@ -63,16 +82,44 @@
   equipment:
     neck: ClothingNeckMantleCE
 
+- type: loadout # Ganimed
+  id: ChiefEngineerCloakLong
+  equipment:
+    neck: ClothingLongCloakCE
+  effects:
+  - !type:SponsorLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: MasterCE
+
+- type: loadout # Ganimed
+  id: ChiefEngineerBedsheet
+  equipment:
+    neck: BedsheetCE
+
 # OuterClothing
 - type: loadout
   id: ChiefEngineerWintercoat
   equipment:
     outerClothing: ClothingOuterWinterCE
 
-- type: loadout
-  id: ClothingOuterWinterSeniorEngineer
+# Glasses, Ganimed
+- type: loadout # TODO: Whitelist restriction
+  id: EngineeringSunglasses
   equipment:
-    outerClothing: ClothingOuterWinterSeniorEngineer  # cats
+    eyes: ClothingEyesGlassesHudSunglassesEnginering
+  effects:
+  #- !type:WhitelistedLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: Commander
+
+- type: loadout # TODO: Whitelist restriction
+  id: WeldingGoggles
+  equipment:
+    eyes: ClothingEyesGlassesWelding
+  effects:
+  - !type:SponsorLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: SeniorEngineering
 
 # Shoes
 - type: loadout

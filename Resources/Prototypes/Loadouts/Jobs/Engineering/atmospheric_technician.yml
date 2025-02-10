@@ -1,3 +1,34 @@
+# Timer, Ganimed
+- type: loadoutEffectGroup
+  id: MasterAtmosian
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobAtmosphericTechnician
+      time: 72000 #20 hrs
+
+# Head, Ganimed
+- type: loadout
+  id: StationEngineerHardhatYellowDark
+  equipment:
+    head: ClothingHeadHatHardhatYellowDark
+
+- type: loadout
+  id: StationEngineerHardhatBlue
+  equipment:
+    head: ClothingHeadHatHardhatBlue
+
+# Neck, Ganimed TODO: Whitelist restriction
+- type: loadout
+  id: AtmosianCloak
+  equipment:
+    neck: ClothingCloakAtmosian
+  effects:
+  - !type:SponsorLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: MasterAtmosian
+
 # Jumpsuit
 - type: loadout
   id: AtmosphericTechnicianJumpsuit
@@ -13,6 +44,11 @@
   id: AtmosphericTechnicianJumpsuitCasual
   equipment:
     jumpsuit: ClothingUniformJumpsuitAtmosCasual
+
+- type: loadout # Ganimed
+  id: AtmosphericTechnicianJumpsuitCasualOriginal
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitAtmosCasualOriginal
 
 # Back
 - type: loadout
@@ -36,8 +72,31 @@
   equipment:
     outerClothing: ClothingOuterWinterAtmos
 
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: AtmosphericTechnicianBomberJacket
+  equipment:
+    outerClothing: ClothingOuterAtmosianBomberJacket
+  effects:
+  - !type:SponsorLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: MasterAtmosian
+
+# Glasses, Ganimed
+- type: loadout # TODO: Whitelist restriction
+  id: TrayGoggles
+  equipment:
+    eyes: ClothingEyesGlassesTray
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MasterAtmosian
+
 # Shoes
 - type: loadout
   id: WhiteShoes
   equipment:
     shoes: ClothingShoesColorWhite
+
+- type: loadout # Ganimed
+  id: YellowShoes
+  equipment:
+    shoes: ClothingShoesColorYellow

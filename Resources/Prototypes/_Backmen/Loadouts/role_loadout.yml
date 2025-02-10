@@ -1,9 +1,16 @@
 ﻿- type: roleLoadout
   id: JobBKCCCargo
   groups:
-  - BKCCCargoJumpsuit
-  - BKCCCargoNeck
-  - BKCCCargoBackpack
+  - GroupTankHarness
+  - CargoTechnicianJumpsuit
+  - QuartermasterNeck
+  - CargoTechnicianBackpack
+  - Glasses
+  - Underwear # Ganimed
+  - Medals #backmen
+  - Survival
+  - GroupSpeciesBreathTool
+  - SpareClothing # Ganimed
   - Trinkets
   - Medals #backmen
   - Inventory # Corvax-Loadouts
@@ -17,9 +24,13 @@
   - ClothingOuterBrigmedic
   - ClothingEarBrigmedic
   - ClothingMaskBrigmedic
+  - BrigmedicGlasses # Ganimed
+  - ClothingShoesBrigmedic # Ganimed
+  - Underwear # Ganimed
   - Trinkets
   - SurvivalMedical
   - Medals #backmen
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
@@ -31,7 +42,9 @@
   - EyeBlueShield
   - ClothingNeckBlueShield
   - BlueShieldBackpack
+  - Underwear # Ganimed
   - Trinkets
   - Survival
   - Medals #backmen
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts

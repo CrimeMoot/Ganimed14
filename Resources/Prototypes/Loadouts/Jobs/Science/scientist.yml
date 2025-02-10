@@ -8,6 +8,21 @@
       department: Science
       time: 216000 #60 hrs
 
+# Med-Sci Time, Ganimed
+- type: loadoutEffectGroup
+  id: SeniorMedicalScientist
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:DepartmentTimeRequirement
+      department: Science
+      time: 216000 # 60 hrs
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:DepartmentTimeRequirement
+      department: Medical
+      time: 216000 # 60 hrs
+
 # Head
 - type: startingGear
   id: ScientificBeret
@@ -32,11 +47,44 @@
     head: ClothingHeadBandSkull
 
 # Neck
-
 - type: loadout
   id: ScientistTie
   equipment:
     neck: ClothingNeckTieSci
+
+- type: loadout # Ganimed
+  id: ScientistCloak
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: SeniorResearcher
+  equipment:
+    neck: ClothingNeckCloakRdOriginal
+
+# Headset, Ganimed
+- type: loadout
+  id: HeadsetScience
+  equipment:
+    ears: ClothingHeadsetScience
+
+- type: loadout
+  id: HeadsetMedicalScience
+  equipment:
+    ears: ClothingHeadsetMedicalScience
+  effects:
+  #- !type:WhitelistedLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: SeniorMedicalScientist
+
+# Glasses, Ganimed
+- type: loadout
+  id: DiagnosticHud
+  equipment:
+    eyes: ClothingEyesHudDiagnostic
+
+- type: loadout
+  id: DiagnosticHudEyepatch
+  equipment:
+    eyes: ClothingEyesEyepatchHudDiag
 
 # Jumpsuit
 - type: loadout
@@ -75,6 +123,25 @@
   equipment:
     jumpsuit: ClothingUniformJumpskirtSeniorResearcher
 
+- type: loadout # Ganimed
+  id: OriginalScientistJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitScientistOriginal
+
+- type: loadout # Ganimed
+  id: OriginalScientistJumpskirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtScientistOriginal
+
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: FormalScientistJumpsuit
+  effects:
+  - !type:SponsorLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: SeniorResearcher
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitScientistFormal
+
 # Back
 - type: loadout
   id: ScientistBackpack
@@ -112,6 +179,11 @@
   equipment:
     outerClothing: ClothingOuterCoatRobo
 
+- type: loadout # Ganimed
+  id: RoboticistOriginalLabCoat
+  equipment:
+    outerClothing: ClothingOuterCoatRoboOriginal
+
 - type: loadout
   id: RoboticistWintercoat
   equipment:
@@ -124,6 +196,52 @@
     proto: SeniorResearcher
   equipment:
     outerClothing: ClothingOuterCoatLabSeniorResearcher
+
+- type: loadout
+  id: SeniorResearcherWintercoat
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: SeniorResearcher
+  equipment:
+    outerClothing: ClothingOuterWinterSeniorResearcher  # cats
+
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: ScientistBioSuit
+  dummyEntity: ClothingOuterBioScientist
+  effects:
+  #- !type:WhitelistedLoadoutEffect
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:DepartmentTimeRequirement
+      department: Medical
+      time: 108000 # 30 hrs
+  equipment:
+    outerClothing: ClothingOuterBioScientist
+    head: ClothingHeadHatHoodBioScientist
+
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: RadSuit
+  effects:
+  #- !type:WhitelistedLoadoutEffect
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:DepartmentTimeRequirement
+      department: Engineering
+      time: 108000 # 30 hrs
+  equipment:
+    outerClothing: ClothingOuterSuitRad
+
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: ScienceBombSuit
+  effects:
+  #- !type:WhitelistedLoadoutEffect
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:DepartmentTimeRequirement
+      department: Security
+      time: 108000 # 30 hrs
+  equipment:
+    outerClothing: ClothingOuterSuitBomb
 
 # Gloves
 - type: loadout
@@ -141,6 +259,11 @@
   id: ScienceWinterBoots
   equipment:
     shoes: ClothingShoesBootsWinterSci
+
+- type: loadout # Ganimed
+  id: PurpleShoes
+  equipment:
+    shoes: ClothingShoesColorPurple
 
 # ID
 - type: loadout

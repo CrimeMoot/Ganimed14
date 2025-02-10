@@ -1,0 +1,455 @@
+# Underwear, Ganimed
+
+# T-Shirts
+- type: loadout
+  id: WhiteShirt
+  equipment:
+    undershirt: ClothingUnderShirtWhite
+
+- type: loadout
+  id: BlackShirt
+  equipment:
+    undershirt: ClothingUnderShirtBlack
+
+- type: loadout
+  id: BrownShirt
+  equipment:
+    undershirt: ClothingUnderShirtBrown
+
+- type: loadout
+  id: RedShirt
+  equipment:
+    undershirt: ClothingUnderShirtRed
+
+- type: loadout
+  id: YellowShirt
+  equipment:
+    undershirt: ClothingUnderShirtYellow
+
+- type: loadout
+  id: GreenShirt
+  equipment:
+    undershirt: ClothingUnderShirtGreen
+
+- type: loadout
+  id: BlueShirt
+  equipment:
+    undershirt: ClothingUnderShirtBlue
+
+# Brassiere
+- type: loadout
+  id: WhiteBrassiere
+  equipment:
+    undershirt: ClothingBrassiereWhite
+
+- type: loadout
+  id: BlackBrassiere
+  equipment:
+    undershirt: ClothingBrassiereBlack
+
+- type: loadout
+  id: BrownBrassiere
+  equipment:
+    undershirt: ClothingBrassiereBrown
+
+- type: loadout
+  id: RedBrassiere
+  equipment:
+    undershirt: ClothingBrassiereRed
+
+- type: loadout
+  id: YellowBrassiere
+  equipment:
+    undershirt: ClothingBrassiereYellow
+
+- type: loadout
+  id: GreenBrassiere
+  equipment:
+    undershirt: ClothingBrassiereGreen
+
+- type: loadout
+  id: BlueBrassiere
+  equipment:
+    undershirt: ClothingBrassiereBlue
+
+- type: loadout
+  id: LargeWhiteBrassiere
+  equipment:
+    undershirt: ClothingBigBrassiereWhite
+
+- type: loadout
+  id: LargeBlackBrassiere
+  equipment:
+    undershirt: ClothingBigBrassiereBlack
+
+- type: loadout
+  id: LargeBrownBrassiere
+  equipment:
+    undershirt: ClothingBigBrassiereBrown
+
+- type: loadout
+  id: LargeRedBrassiere
+  equipment:
+    undershirt: ClothingBigBrassiereRed
+
+- type: loadout
+  id: LargeYellowBrassiere
+  equipment:
+    undershirt: ClothingBigBrassiereYellow
+
+- type: loadout
+  id: LargeGreenBrassiere
+  equipment:
+    undershirt: ClothingBigBrassiereGreen
+
+- type: loadout
+  id: LargeBlueBrassiere
+  equipment:
+    undershirt: ClothingBigBrassiereBlue
+
+- type: loadout
+  id: AlternateWhiteBrassiere
+  equipment:
+    undershirt: ClothingAlterBrassiereWhite
+
+- type: loadout
+  id: AlternateBlackBrassiere
+  equipment:
+    undershirt: ClothingAlterBrassiereBlack
+
+- type: loadout
+  id: AlternateBrownBrassiere
+  equipment:
+    undershirt: ClothingAlterBrassiereBrown
+
+- type: loadout
+  id: AlternateRedBrassiere
+  equipment:
+    undershirt: ClothingAlterBrassiereRed
+
+- type: loadout
+  id: AlternateYellowBrassiere
+  equipment:
+    undershirt: ClothingAlterBrassiereYellow
+
+- type: loadout
+  id: AlternateGreenBrassiere
+  equipment:
+    undershirt: ClothingAlterBrassiereGreen
+
+- type: loadout
+  id: AlternateBlueBrassiere
+  equipment:
+    undershirt: ClothingAlterBrassiereBlue
+
+- type: loadout
+  id: CosplayerBrassiere
+  equipment:
+    undershirt: ClothingAnimeBrassiere
+
+- type: loadout
+  id: PatternedBrassiere
+  equipment:
+    undershirt: ClothingMiraBrassiere
+
+- type: loadout
+  id: HeartsBrassiere
+  equipment:
+    undershirt: ClothingHeartBrassiere
+
+- type: loadout
+  id: FlowersBrassiere
+  equipment:
+    undershirt: ClothingFlowerBrassiere
+
+- type: loadout
+  id: NekoBrassiere
+  equipment:
+    undershirt: ClothingCatBrassiere
+
+- type: loadout
+  id: ClothBinderBrassiere
+  equipment:
+    undershirt: ClothingClothBrassiere
+
+# Pants
+- type: loadout
+  id: WhiteUnderpants
+  equipment:
+    underpants: ClothingUnderPantsWhite
+
+- type: loadout
+  id: BlackUnderpants
+  equipment:
+    underpants: ClothingUnderPantsBlack
+
+- type: loadout
+  id: BrownUnderpants
+  equipment:
+    underpants: ClothingUnderPantsBrown
+
+- type: loadout
+  id: RedUnderpants
+  equipment:
+    underpants: ClothingUnderPantsRed
+
+- type: loadout
+  id: YellowUnderpants
+  equipment:
+    underpants: ClothingUnderPantsYellow
+
+- type: loadout
+  id: GreenUnderpants
+  equipment:
+    underpants: ClothingUnderPantsGreen
+
+- type: loadout
+  id: BlueUnderpants
+  equipment:
+    underpants: ClothingUnderPantsBlue
+
+- type: loadout
+  id: WhitePanties
+  equipment:
+    underpants: ClothingFemaleUnderPantsWhite
+
+- type: loadout
+  id: BlackPanties
+  equipment:
+    underpants: ClothingFemaleUnderPantsBlack
+
+- type: loadout
+  id: BrownPanties
+  equipment:
+    underpants: ClothingFemaleUnderPantsBrown
+
+- type: loadout
+  id: RedPanties
+  equipment:
+    underpants: ClothingFemaleUnderPantsRed
+
+- type: loadout
+  id: YellowPanties
+  equipment:
+    underpants: ClothingFemaleUnderPantsYellow
+
+- type: loadout
+  id: GreenPanties
+  equipment:
+    underpants: ClothingFemaleUnderPantsGreen
+
+- type: loadout
+  id: BluePanties
+  equipment:
+    underpants: ClothingFemaleUnderPantsBlue
+
+- type: loadout
+  id: WhiteThong
+  equipment:
+    underpants: ClothingFemaleStringWhite
+
+- type: loadout
+  id: BlackThong
+  equipment:
+    underpants: ClothingFemaleStringBlack
+
+- type: loadout
+  id: BrownThong
+  equipment:
+    underpants: ClothingFemaleStringBrown
+
+- type: loadout
+  id: RedThong
+  equipment:
+    underpants: ClothingFemaleStringRed
+
+- type: loadout
+  id: YellowThong
+  equipment:
+    underpants: ClothingFemaleStringYellow
+
+- type: loadout
+  id: GreenThong
+  equipment:
+    underpants: ClothingFemaleStringGreen
+
+- type: loadout
+  id: BlueThong
+  equipment:
+    underpants: ClothingFemaleStringBlue
+
+- type: loadout
+  id: AlternateWhitePanties
+  equipment:
+    underpants: ClothingFemaleAlterUnderPantsWhite
+
+- type: loadout
+  id: AlternateBlackPanties
+  equipment:
+    underpants: ClothingFemaleAlterUnderPantsBlack
+
+- type: loadout
+  id: AlternateBrownPanties
+  equipment:
+    underpants: ClothingFemaleAlterUnderPantsBrown
+
+- type: loadout
+  id: AlternateRedPanties
+  equipment:
+    underpants: ClothingFemaleAlterUnderPantsRed
+
+- type: loadout
+  id: AlternateYellowPanties
+  equipment:
+    underpants: ClothingFemaleAlterUnderPantsYellow
+
+- type: loadout
+  id: AlternateGreenPanties
+  equipment:
+    underpants: ClothingFemaleAlterUnderPantsGreen
+
+- type: loadout
+  id: AlternateBluePanties
+  equipment:
+    underpants: ClothingFemaleAlterUnderPantsBlue
+
+- type: loadout
+  id: MilitaryUnderpants
+  equipment:
+    underpants: ClothingUnderPantsMilitary
+
+- type: loadout
+  id: NTUnderpants
+  equipment:
+    underpants: ClothingUnderPantsNT
+
+- type: loadout
+  id: CosplayerPanties
+  equipment:
+    underpants: ClothingAnimeFemaleUnderPants
+
+- type: loadout
+  id: PatternedPanties
+  equipment:
+    underpants: ClothingMiraFemaleUnderPants
+
+- type: loadout
+  id: HeartsPanties
+  equipment:
+    underpants: ClothingHeartFemaleUnderPants
+
+- type: loadout
+  id: FlowersPanties
+  equipment:
+    underpants: ClothingFlowerFemaleUnderPants
+
+- type: loadout
+  id: NekoPanties
+  equipment:
+    underpants: ClothingCatFemaleUnderPants
+
+- type: loadout
+  id: ClothStrappingUnderpants
+  equipment:
+    underpants: ClothingClothFemaleUnderPants
+
+# Socks
+- type: loadout
+  id: WhiteSocks
+  equipment:
+    socks: ClothingSocksWhite
+
+- type: loadout
+  id: BlackSocks
+  equipment:
+    socks: ClothingSocksBlack
+
+- type: loadout
+  id: BrownSocks
+  equipment:
+    socks: ClothingSocksBrown
+
+- type: loadout
+  id: RedSocks
+  equipment:
+    socks: ClothingSocksRed
+
+- type: loadout
+  id: YellowSocks
+  equipment:
+    socks: ClothingSocksYellow
+
+- type: loadout
+  id: GreenSocks
+  equipment:
+    socks: ClothingSocksGreen
+
+- type: loadout
+  id: BlueSocks
+  equipment:
+    socks: ClothingSocksBlue
+
+- type: loadout
+  id: DarkLongSocks
+  equipment:
+    socks: ClothingUnderlongSocksDark
+
+- type: loadout
+  id: WhiteLongSocks
+  equipment:
+    socks: ClothingUnderlongSocksWhite
+
+- type: loadout
+  id: CoderSocks
+  equipment:
+    socks: ClothingUnderSocksCoder
+
+- type: loadout
+  id: BeeSocks
+  equipment:
+    socks: ClothingUnderSocksBee
+
+# Stockings
+- type: loadout
+  id: BeelineStockings
+  equipment:
+    socks: ClothingUnderStockingsBee
+
+- type: loadout
+  id: DarkStockings
+  equipment:
+    socks: ClothingUnderStockingsDark
+
+- type: loadout
+  id: WhiteStockings
+  equipment:
+    socks: ClothingUnderStockingsWhite
+
+- type: loadout
+  id: FishnetStockings
+  equipment:
+    socks: ClothingUnderStockingsFishnets
+
+- type: loadout
+  id: NekoStockings
+  equipment:
+    socks: ClothingUnderStockingsCat
+
+- type: loadout
+  id: LightBlueStripedStockings
+  equipment:
+    socks: ClothingUnderStockingsSky
+
+- type: loadout
+  id: HoSStockings
+  equipment:
+    socks: ClothingUnderStockingsHOS
+  effects:
+  - !type:SponsorLoadoutEffect
+
+- type: loadout
+  id: CentcomStockings
+  equipment:
+    socks: ClothingUnderStockingsCentCom
+  effects:
+  - !type:SponsorLoadoutEffect

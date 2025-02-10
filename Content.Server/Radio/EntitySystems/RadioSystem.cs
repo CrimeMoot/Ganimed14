@@ -1,4 +1,3 @@
-using Content.Server._Ganimed.Radio;
 using Content.Server.Administration.Logs;
 using Content.Server.Backmen.Language;
 using Content.Server.Chat.Systems;
@@ -33,7 +32,6 @@ public sealed class RadioSystem : EntitySystem
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly ChatSystem _chat = default!;
     [Dependency] private readonly LanguageSystem _language = default!;
-    [Dependency] private readonly JobPlayer _jobPlayer = default!;
 
     // set used to prevent radio feedback loops.
     private readonly HashSet<string> _messages = new();
@@ -129,16 +127,7 @@ public sealed class RadioSystem : EntitySystem
         RaiseLocalEvent(messageSource, evt);
 
         var name = evt.VoiceName;
-        // Ganimed EDIT RADIO START
-        // Если из-за отображений должностей что-то сломается после какого-то обновления, то расскоментируйте данный код и закомментируйте код ниже, который я укажу. Данные действия просто вернут старый код
-        // name = FormattedMessage.EscapeText(name);
-
-        // В случае поломки комментируй данный код до "SpeechVerbPrototype speech;"
-        // Почему бы просто сразу в name не сохранять? Потому что потом проверять надо будет, и там без данной переменной никак. Не будем же мы проверять: "if (name != name)". Если это убрать, у админов постоянно будет true в самой нижней проверке этого метода
-        string? newName = _jobPlayer.CompletedJobAndPlayer(messageSource, name);
-        // Тут уже мы делаем необходимый name
-        name = newName;
-        // Ganimed EDIT RADIO END
+        name = FormattedMessage.EscapeText(name);
 
         SpeechVerbPrototype speech;
         if (evt.SpeechVerb != null && _prototype.TryIndex(evt.SpeechVerb, out var evntProto))
@@ -217,7 +206,7 @@ public sealed class RadioSystem : EntitySystem
             RaiseLocalEvent(receiver, ref ev);
         }
 
-        if ((name != Name(messageSource)) && (name != newName)) // Ganimed EDIT RADIO
+        if (name != Name(messageSource))
             _adminLogger.Add(LogType.Chat, LogImpact.Low, $"Radio message from {ToPrettyString(messageSource):user} as {name} on {channel.LocalizedName}: {message}");
         else
             _adminLogger.Add(LogType.Chat, LogImpact.Low, $"Radio message from {ToPrettyString(messageSource):user} on {channel.LocalizedName}: {message}");

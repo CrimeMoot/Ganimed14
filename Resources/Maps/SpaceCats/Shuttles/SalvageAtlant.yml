@@ -7477,7 +7477,6 @@ entities:
           - BlobImpassable
           layer:
           - BulletImpassable
-          - TeleportLayer
           density: 75
           hard: True
           restitution: 0

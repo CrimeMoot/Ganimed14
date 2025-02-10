@@ -363,6 +363,7 @@
       - FauxTileJungleAstroGrass
       - FauxTileAstroIce
       - FauxTileAstroSnow
+      - FauxTileAstroAsteroidSand
       - OreBagOfHolding
       - DeviceQuantumSpinInverter
       - EnergyDomeDirectionalTurtle # Ganimed -shield energy_barrier

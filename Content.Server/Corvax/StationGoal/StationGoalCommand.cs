@@ -1,4 +1,5 @@
 using System.Linq;
+using Content.Server.Chat.Systems;
 using Content.Server.Administration;
 using Content.Server.Commands;
 using Content.Shared.Administration;
@@ -11,6 +12,8 @@ namespace Content.Server.Corvax.StationGoal
     public sealed class StationGoalCommand : IConsoleCommand
     {
         [Dependency] private readonly IEntityManager _entManager = default!;
+        [Dependency] private readonly IChatManager _chat = default!;
+        [Dependency] private readonly ChatSystem _chat = default!;
 
         public string Command => "sendstationgoal";
         public string Description => Loc.GetString("send-station-goal-command-description");
@@ -44,6 +47,14 @@ namespace Content.Server.Corvax.StationGoal
                 shell.WriteError("Station goal was not sent");
                 return;
             }
+
+        /// Ganimed-edit-start
+            var _chat = IoCManager.Resolve<IChatManager>();
+            _chat.DispatchGlobalAnnouncement(
+                Loc.GetString("station-goal-announcement", ("goal", proto.Name)),
+                sender: Loc.GetString("station-goal-announcement-CentCom"),
+                colorOverride: Color.Yellow);
+        /// Ganimed-edit-end
         }
 
         public CompletionResult GetCompletion(IConsoleShell shell, string[] args)

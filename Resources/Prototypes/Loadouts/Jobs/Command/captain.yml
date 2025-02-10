@@ -49,7 +49,6 @@
 
 - type: loadout # Ganimed TODO: Whitelist restriction
   id: CaptainWhiteJumpsuit
-  whitelisted: true
   equipment:
     jumpsuit: ClothingUniformJumpsuitWhiteCaptain
   effects:
@@ -59,7 +58,6 @@
 
 - type: loadout # Ganimed
   id: CaptainWhiteJumpskirt
-  whitelisted: true
   equipment:
     jumpsuit: ClothingUniformJumpskirtWhiteCaptain
   effects:
@@ -94,7 +92,6 @@
 
 - type: loadout # Ganimed TODO: Whitelist restriction
   id: CaptainCapWhite
-  whitelisted: true
   equipment:
     head: ClothingHeadHatCapcapWhite
   effects:
@@ -104,7 +101,6 @@
 
 - type: loadout # Ganimed TODO: Whitelist restriction
   id: CaptainBeretWhite
-  whitelisted: true
   equipment:
     head: ClothingHeadHatBeretCaptainWhite
   effects:
@@ -143,7 +139,6 @@
 
 - type: loadout # Ganimed TODO: Whitelist restriction
   id: CaptainCloakLong
-  whitelisted: true
   equipment:
     neck: ClothingLongCloakCap
   effects:
@@ -153,7 +148,6 @@
 
 - type: loadout # Ganimed TODO: Whitelist restriction
   id: CaptainGreatcoatOversize
-  whitelisted: true
   equipment:
     neck: ClothingNeckCaptainWide
   effects:
@@ -163,7 +157,6 @@
 
 - type: loadout # Ganimed TODO: Whitelist restriction
   id: CaptainMantleWhite
-  whitelisted: true
   equipment:
     neck: ClothingNeckWhiteMantleCaptain
   effects:
@@ -193,15 +186,13 @@
     back: ClothingBackpackDuffelCaptain
 
 # Belt, Ganimed
-- type: loadout
+- type: loadout # TODO: Whitelist restriction
   id: CaptainBeltSabreSheath
-  whitelisted: true
   equipment:
     belt: ClothingBeltSheath
 
 - type: loadout
   id: CaptainBeltSabreSheathWhite
-  whitelisted: true
   equipment:
     belt: ClothingBeltWhiteSheath
   effects:
@@ -217,7 +208,6 @@
 
 - type: loadout
   id: CaptainGlovesWhite
-  whitelisted: true
   equipment:
     gloves: ClothingHandsGlovesCaptainWhite
   effects:

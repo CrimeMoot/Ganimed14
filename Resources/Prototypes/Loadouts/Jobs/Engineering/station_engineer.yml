@@ -53,7 +53,6 @@
 
 - type: loadout # Ganimed TODO: Whitelist restriction
   id: WeldingMaskPainted
-  whitelisted: true
   equipment:
     head: ClothingHeadHatWeldingMaskPainted
 
@@ -173,9 +172,8 @@
 
 - type: loadout # Ganimed TODO: Whitelist restriction
   id: EngineeringMagBoots
-  whitelisted: true
   effects:
-  - !type:SponsorLoadoutEffect
+  #- !type:WhitelistedLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: SeniorEngineering
   equipment:

@@ -334,7 +334,6 @@
 # Ganimed: Glowsticks  TODO: Whitelist restriction
 - type: loadout
   id: GlowstickBase
-  whitelisted: true
   effects:
   - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
@@ -345,7 +344,6 @@
 
 - type: loadout
   id: GlowstickYellow
-  whitelisted: true
   effects:
   - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
@@ -356,7 +354,6 @@
 
 - type: loadout
   id: GlowstickRed
-  whitelisted: true
   effects:
   - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
@@ -367,7 +364,6 @@
 
 - type: loadout
   id: GlowstickPurple
-  whitelisted: true
   effects:
   - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
@@ -378,7 +374,6 @@
 
 - type: loadout
   id: GlowstickBlue
-  whitelisted: true
   effects:
   - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect

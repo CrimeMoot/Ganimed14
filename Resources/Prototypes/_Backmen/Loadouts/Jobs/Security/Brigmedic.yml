@@ -2,7 +2,7 @@
   id: BrigmedicGear
   equipment:
     gloves: ClothingHandsGlovesNitrile
-    # eyes: ClothingEyesGlassesBrigmedic
+    #eyes: ClothingEyesGlassesBrigmedic
     pocket2: HandheldBrigmedicCrewMonitor # Cats
     pocket1: SecHypo
     id: BrigmedicPDA
@@ -128,10 +128,8 @@
 
 - type: loadout # Ganimed
   id: SecurityBioSuit
-  whitelisted: true
   dummyEntity: ClothingOuterBioSecurity
   effects:
-  - !type:SponsorLoadoutEffect
   - !type:JobRequirementLoadoutEffect
     requirement:
       !type:DepartmentTimeRequirement

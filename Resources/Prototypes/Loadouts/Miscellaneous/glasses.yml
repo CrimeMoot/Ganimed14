@@ -76,16 +76,14 @@
 # Gar, Ganimed TODO: Whitelist restriction
 - type: loadout
   id: GlassesGar
-  whitelisted: true
   equipment:
     eyes: ClothingEyesGlassesGar
   effects:
   - !type:SponsorLoadoutEffect
 
-# Gar Orange, Ganimed
+# Gar Orange, Ganimed TODO: Whitelist restriction
 - type: loadout
   id: GlassesGarOrange
-  whitelisted: true
   equipment:
     eyes: ClothingEyesGlassesGarOrange
   effects:

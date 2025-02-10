@@ -22,6 +22,7 @@ loadout-group-chef-shoes = Обувь шеф-повара
 loadout-group-librarian-belt = Пояс библиотекаря
 loadout-group-chaplain-gloves = Часы священника
 loadout-group-chaplain-shoes = Обувь священника
+loadout-group-botanist-belt = Пояс ботаника
 loadout-group-botanist-gloves = Перчатки ботаника
 loadout-group-botanist-shoes = Обувь ботаника
 loadout-group-theatrical-attire = Театральные костюмы

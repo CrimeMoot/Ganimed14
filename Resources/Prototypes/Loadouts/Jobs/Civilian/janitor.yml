@@ -26,7 +26,6 @@
 
 - type: loadout # Ganimed TODO: Whitelist restriction
   id: JanimaidUniform
-  whitelisted: true
   equipment:
     jumpsuit: ClothingUniformJumpskirtJanimaid
   effects:
@@ -61,10 +60,9 @@
 
 - type: loadout # Ganimed TODO: Whitelist restriction
   id: JanitorBioSuit
-  whitelisted: true
   dummyEntity: ClothingOuterBioJanitor
   effects:
-  - !type:SponsorLoadoutEffect
+  #- !type:WhitelistedLoadoutEffect
   - !type:JobRequirementLoadoutEffect
     requirement:
       !type:DepartmentTimeRequirement

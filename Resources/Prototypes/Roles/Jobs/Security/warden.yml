@@ -36,7 +36,7 @@
   id: WardenGear
   equipment:
     id: WardenPDA
-    # eyes: ClothingEyesGlassesSecurity
+    #eyes: ClothingEyesGlassesSecurity
     ears: ClothingHeadsetSecurity
   storage:
     back:

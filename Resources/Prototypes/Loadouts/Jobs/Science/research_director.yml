@@ -54,9 +54,8 @@
   equipment:
     neck: ClothingNeckCloakRd
 
-- type: loadout # Ganimed TODO: Whitelist restriction
+- type: loadout # Ganimed
   id: ResearchDirectorCloakLong
-  whitelisted: true
   equipment:
     neck: ClothingLongCloakRD
   effects:
@@ -83,11 +82,10 @@
 # Gloves, Ganimed
 - type: loadout # TODO: Whitelist restriction
   id: PowerGloves
-  whitelisted: true
   equipment:
     gloves: ClothingHandsGlovesPowerglove
   effects:
-  - !type:SponsorLoadoutEffect
+  #- !type:WhitelistedLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: MasterEngineeringScientist
 
@@ -103,22 +101,21 @@
     outerClothing: ClothingOuterWinterRD
 
 # Glasses, Ganimed
-- type: loadout
+- type: loadout # TODO: Whitelist restriction
   id: ScienceSunglasses
-  whitelisted: true
   equipment:
     eyes: ClothingEyesGlassesHudSunglassesScience
   effects:
+  #- !type:WhitelistedLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: Commander
 
 # Shoes, Ganimed
 - type: loadout # TODO: Whitelist restriction
   id: ScienceMagBoots
-  whitelisted: true
   equipment:
     shoes: ClothingShoesBootsMagSci
   effects:
-  - !type:SponsorLoadoutEffect
+  #- !type:WhitelistedLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: MasterRD

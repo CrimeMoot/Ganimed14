@@ -34,7 +34,7 @@
   id: SecurityOfficerGear
   equipment:
     ears: ClothingHeadsetSecurity
-    # eyes: ClothingEyesGlassesSecurity
+    #eyes: ClothingEyesGlassesSecurity
   storage:
     back:
     - Flash

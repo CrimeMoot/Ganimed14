@@ -134,8 +134,8 @@
 # Shoes, Ganimed
 - type: loadout # TODO: Whitelist restriction
   id: CultShoes
-  whitelisted: true
   equipment:
     shoes: ClothingShoesCult
   effects:
-  - !type:SponsorLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: Clergy

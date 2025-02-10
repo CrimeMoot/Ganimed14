@@ -34,9 +34,8 @@
   equipment:
     head: ClothingHeadHatWatermelon
 
-- type: loadout # Ganimed
+- type: loadout # Ganimed TODO: Whitelist restriction
   id: BotanistHeadBucket
-  whitelisted: true
   equipment:
     head: Bucket
   effects:
@@ -78,6 +77,17 @@
   id: BotanistDuffel
   equipment:
     back: ClothingBackpackDuffelHydroponics
+
+# Belt, Ganimed
+- type: loadout
+  id: BotanistBelt
+  equipment:
+    belt: ClothingBeltPlantFilled
+
+- type: loadout
+  id: PlantBag
+  equipment:
+    belt: PlantBag
 
 # Gloves, Ganimed
 - type: loadout

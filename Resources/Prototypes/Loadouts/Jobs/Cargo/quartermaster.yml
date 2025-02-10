@@ -64,9 +64,8 @@
   equipment:
     neck: ClothingNeckMantleQM
 
-- type: loadout # Ganimed TODO: Whitelist restriction
+- type: loadout # Ganimed
   id: QuartermasterCloakLong
-  whitelisted: true
   equipment:
     neck: ClothingLongCloakQM
   effects:

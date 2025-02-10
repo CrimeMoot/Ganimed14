@@ -442,7 +442,6 @@
 
 - type: loadout
   id: HoSStockings
-  whitelistJobs: [HeadOfSecurity]
   equipment:
     socks: ClothingUnderStockingsHOS
   effects:

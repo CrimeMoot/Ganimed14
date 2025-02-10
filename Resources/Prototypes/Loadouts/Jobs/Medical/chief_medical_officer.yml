@@ -59,9 +59,8 @@
   equipment:
     neck: ClothingNeckMantleCMO
 
-- type: loadout # Ganimed TODO: Whitelist restriction
+- type: loadout # Ganimed
   id: ChiefMedicalOfficerCloakLong
-  whitelisted: true
   equipment:
     neck: ClothingLongCloakCMO
   effects:
@@ -93,11 +92,11 @@
     head: ClothingHeadHatHoodBioCmo
 
 # Glasses, Ganimed
-- type: loadout
+- type: loadout # TODO: Whitelist restriction
   id: MedicalSunglasses
-  whitelisted: true
   equipment:
     eyes: ClothingEyesGlassesHudSunglassesMedical
   effects:
+  #- !type:WhitelistedLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: Commander

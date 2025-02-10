@@ -370,7 +370,7 @@
   - BeerHudEyepatch
   - ThungerstGoggles
   - Glasses
-  - CheapSunglasses
+  - Sunglasses
   - Eyepatch
   - GlassesJamjar
   - GlassesBinoclard
@@ -669,6 +669,13 @@
   - BotanistBackpack
   - BotanistSatchel
   - BotanistDuffel
+
+- type: loadoutGroup # Ganimed
+  id: BotanistBelt
+  name: loadout-group-botanist-belt
+  loadouts:
+  - BotanistBelt
+  - PlantBag
 
 - type: loadoutGroup # Ganimed
   id: BotanistGloves
@@ -1090,8 +1097,8 @@
   - BrownShoes
   # Ganimed-Loadouts-Start
   - WhiteShoes
-  - OrangeShoes
   - BlackShoes
+  - OrangeShoes
   # Ganimed-Loadouts-End
   - EngineeringWinterBoots
   - WorkBoots # Ganimed
@@ -1155,8 +1162,8 @@
   - WorkBoots
   - EngineeringWinterBoots
   # Ganimed-Loadouts-Start
-  - OrangeShoes
   - BlackShoes
+  - OrangeShoes
   - EngineeringMagBoots
   # Ganimed-Loadouts-Start
 
@@ -1220,6 +1227,8 @@
   name: loadout-group-atmospheric-technician-shoes
   loadouts:
   - WhiteShoes
+  - YellowShoes # Ganimed
+  - BlueShoes # Ganimed
   - EngineeringWinterBoots
 
 - type: loadoutGroup
@@ -1431,6 +1440,7 @@
   - HeadofSecurityHead
   - HeadofSecurityBeret
   - HeadofSecurityLeatherCap # Ganimed
+  - BountyHunterCowboyHat # Ganimed
 
 - type: loadoutGroup
   id: HeadofSecurityJumpsuit
@@ -1573,6 +1583,7 @@
   - ClothingHeadHatCapSec # Backmen
   - ClothingHeadHatPilotkaSec # Backmen
   - TrooperHat
+  - BlackCowboyHat # Ganimed
   - BountyHunterCowboyHat # Ganimed
 
 - type: loadoutGroup # Ganimed

@@ -22,7 +22,6 @@
 # Neck, Ganimed TODO: Whitelist restriction
 - type: loadout
   id: AtmosianCloak
-  whitelisted: true
   equipment:
     neck: ClothingCloakAtmosian
   effects:
@@ -75,7 +74,6 @@
 
 - type: loadout # Ganimed TODO: Whitelist restriction
   id: AtmosphericTechnicianBomberJacket
-  whitelisted: true
   equipment:
     outerClothing: ClothingOuterAtmosianBomberJacket
   effects:
@@ -84,9 +82,8 @@
     proto: MasterAtmosian
 
 # Glasses, Ganimed
-- type: loadout
+- type: loadout # TODO: Whitelist restriction
   id: TrayGoggles
-  whitelisted: true
   equipment:
     eyes: ClothingEyesGlassesTray
   effects:
@@ -98,3 +95,8 @@
   id: WhiteShoes
   equipment:
     shoes: ClothingShoesColorWhite
+
+- type: loadout # Ganimed
+  id: YellowShoes
+  equipment:
+    shoes: ClothingShoesColorYellow

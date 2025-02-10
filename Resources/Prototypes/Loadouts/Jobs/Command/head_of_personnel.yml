@@ -59,9 +59,8 @@
   equipment:
     neck: ClothingNeckCloakHopOriginal
 
-- type: loadout # Ganimed TODO: Whitelist restriction
+- type: loadout # Ganimed
   id: HoPCloakLong
-  whitelisted: true
   equipment:
     neck: ClothingLongCloakHOP
   effects:

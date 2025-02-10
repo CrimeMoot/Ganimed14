@@ -54,7 +54,6 @@
 
 - type: loadout # Ganimed TODO: Whitelist restriction
   id: CluwneBackpackJigglesVonJonkertonRemovable
-  whitelisted: true
   equipment:
     back: ClothingBackpackCluwneRemoveable
   effects:

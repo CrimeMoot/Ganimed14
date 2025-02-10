@@ -47,11 +47,10 @@
 
 - type: loadout # Ganimed TODO: Whitelist restriction
   id: ArmoredHarthat
-  whitelisted: true
   equipment:
     head: ClothingHeadHatHardhatArmored
   effects:
-  - !type:SponsorLoadoutEffect
+  #- !type:WhitelistedLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: MasterCE
 
@@ -83,9 +82,8 @@
   equipment:
     neck: ClothingNeckMantleCE
 
-- type: loadout # Ganimed TODO: Whitelist restriction
+- type: loadout # Ganimed
   id: ChiefEngineerCloakLong
-  whitelisted: true
   equipment:
     neck: ClothingLongCloakCE
   effects:
@@ -105,18 +103,17 @@
     outerClothing: ClothingOuterWinterCE
 
 # Glasses, Ganimed
-- type: loadout
+- type: loadout # TODO: Whitelist restriction
   id: EngineeringSunglasses
-  whitelisted: true
   equipment:
     eyes: ClothingEyesGlassesHudSunglassesEnginering
   effects:
+  #- !type:WhitelistedLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: Commander
 
-- type: loadout
+- type: loadout # TODO: Whitelist restriction
   id: WeldingGoggles
-  whitelisted: true
   equipment:
     eyes: ClothingEyesGlassesWelding
   effects:

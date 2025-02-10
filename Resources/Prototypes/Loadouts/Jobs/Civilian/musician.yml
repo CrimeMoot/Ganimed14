@@ -17,7 +17,6 @@
 
 - type: loadout # Ganimed TODO: Whitelist restriction
   id: PerformerJumpskirt
-  whitelisted: true
   equipment:
     outerClothing: ClothingUniformJumpskirtPerformer
   effects:
@@ -26,7 +25,6 @@
 # Shoes, Ganimed
 - type: loadout # TODO: Whitelist restriction
   id: PerformerBoots
-  whitelisted: true
   equipment:
     shoes: ClothingShoesBootsPerformer
   effects:

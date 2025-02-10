@@ -134,9 +134,8 @@
   - !type:GroupLoadoutEffect
     proto: MasterHoS
 
-- type: loadout # Ganimed TODO: Whitelist restriction
+- type: loadout # Ganimed
   id: HeadofSecurityCloakLong
-  whitelisted: true
   equipment:
     neck: ClothingLongCloakHOS
   effects:

@@ -33,7 +33,6 @@
 # Neck, Ganimed
 - type: loadout # TODO: Whitelist restriction
   id: ScarfZebra
-  whitelisted: true
   equipment:
     neck: ClothingNeckScarfStripedZebra
 

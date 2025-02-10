@@ -9,7 +9,7 @@
       time: 72000 #20 hrs
 
 # Head, Ganimed
-- type: loadout
+- type: loadout # TODO: Whitelist restriction
   id: MercenaryHeadBand
   equipment:
     head: ClothingHeadBandMerc
@@ -26,11 +26,10 @@
 # Neck, Ganimed
 - type: loadout # TODO: Whitelist restriction
   id: MinerCloak
-  whitelisted: true
   equipment:
     neck: ClothingNeckCloakMiner
   effects:
-  - !type:SponsorLoadoutEffect
+  #- !type:WhitelistedLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: MasterSalvager
 
@@ -51,11 +50,10 @@
 
 - type: loadout # TODO: Whitelist restriction
   id: HeadsetMining
-  whitelisted: true
   equipment:
     ears: ClothingHeadsetMining
   effects:
-  - !type:SponsorLoadoutEffect
+  #- !type:WhitelistedLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: MasterSalvager
 
@@ -84,7 +82,6 @@
 # Belt, Ganimed
 - type: loadout # TODO: Whitelist restriction
   id: SalvageWebbing
-  whitelisted: true
   equipment:
     belt: ClothingBeltSalvageWebbing
   effects:
@@ -97,9 +94,8 @@
     belt: OreBag
 
 # Gloves, Ganimed
-- type: loadout
+- type: loadout # TODO: Whitelist restriction
   id: MercenaryFingerlessGloves
-  whitelisted: true
   equipment:
     gloves: ClothingHandsGlovesMercFingerless
 

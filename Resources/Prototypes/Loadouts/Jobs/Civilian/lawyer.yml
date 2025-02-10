@@ -49,9 +49,8 @@
   equipment:
     jumpsuit: ClothingUniformJumpskirtLawyerGood
 
-- type: loadout # Ganimed
+- type: loadout # Ganimed TODO: Whitelist restriction
   id: JumpsuitNanotrasen
-  whitelisted: true
   equipment:
     jumpsuit: ClothingUniformJumpsuitNanotrasen
   effects:
@@ -68,9 +67,8 @@
   equipment:
     neck: BedsheetNT
 
-- type: loadout # Ganimed
+- type: loadout # Ganimed TODO: Whitelist restriction
   id: NanotrasenCloak
-  whitelisted: true
   equipment:
     neck: ClothingNeckCloakNanotrasen
   effects:
@@ -88,9 +86,8 @@
   equipment:
     shoes: ClothingShoesBootsLaceup
 
-- type: loadout
+- type: loadout # TODO: Whitelist restriction
   id: LaceupShoesWhitelisted
-  whitelisted: true
   equipment:
     shoes: ClothingShoesBootsLaceup
   effects:

@@ -22,7 +22,7 @@
   id: PsychologistGear
   equipment:
     id: PsychologistPDA
-    # shoes: ClothingShoesLeather
+    #shoes: ClothingShoesLeather
     ears: ClothingHeadsetMedical
   storage:
     back:

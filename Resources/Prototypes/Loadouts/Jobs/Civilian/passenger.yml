@@ -98,7 +98,6 @@
 
 - type: loadout # Ganimed TODO: Whitelist restriction
   id: LeatherSatchel
-  whitelisted: true
   equipment:
     back: ClothingBackpackSatchelLeather
   effects:
@@ -107,9 +106,8 @@
     proto: TenOverall
 
 # Belt, Ganimed
-- type: loadout
+- type: loadout # TODO: Whitelist restriction
   id: WaistBag
-  whitelisted: true
   equipment:
     belt: ClothingBeltStorageWaistbag
   effects:

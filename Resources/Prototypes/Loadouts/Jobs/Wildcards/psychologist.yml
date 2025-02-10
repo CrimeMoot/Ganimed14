@@ -17,7 +17,6 @@
 
 - type: loadout
   id: LeatherShoesWhitelisted
-  whitelisted: true
   equipment:
     shoes: ClothingShoesLeather
   effects:

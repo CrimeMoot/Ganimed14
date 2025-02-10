@@ -46,7 +46,6 @@
 # Belt, Ganimed
 - type: loadout # TODO: Whitelist restriction
   id: Bandolier
-  whitelisted: true
   equipment:
     belt: ClothingBeltBandolier
   effects:

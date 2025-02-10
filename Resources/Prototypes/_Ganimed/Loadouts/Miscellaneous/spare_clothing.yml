@@ -143,7 +143,7 @@
     back:
     - ClothingHeadBandRed
 
-- type: loadout # TODO: Whitelist restriction
+- type: loadout
   id: SpareGoldBandana
   storage:
     back:
@@ -189,21 +189,19 @@
 
 - type: loadout # TODO: Whitelist restriction
   id: SpareBeaverHat
-  whitelisted: true
   storage:
     back:
     - ClothingHeadHatBeaverHat
   effects:
   - !type:SponsorLoadoutEffect
 
-- type: loadout
+- type: loadout # TODO: Whitelist restriction
   id: SpareGreyFedora
-  whitelisted: true
   storage:
     back:
     - ClothingHeadHatFedoraGrey
   effects:
-  - !type:SponsorLoadoutEffect
+  #- !type:WhitelistedLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: Security
 
@@ -461,10 +459,9 @@
     back:
     - ClothingUniformJumpskirtColorPink
 
-# Turtlenecks
+# Turtlenecks, TODO: Whitelist restriction
 - type: loadout
   id: SpareTurtleneckColorBlack
-  whitelisted: true
   storage:
     back:
     - ClothingUniformTurtleneckColorBlack
@@ -473,7 +470,6 @@
 
 - type: loadout
   id: SpareTurtleneckSkirtColorBlack
-  whitelisted: true
   storage:
     back:
     - ClothingUniformTurtleneckSkirtColorBlack
@@ -482,7 +478,6 @@
 
 - type: loadout
   id: SpareTurtleneckColorGrey
-  whitelisted: true
   storage:
     back:
     - ClothingUniformTurtleneckColorGrey
@@ -491,7 +486,6 @@
 
 - type: loadout
   id: SpareTurtleneckSkirtColorGrey
-  whitelisted: true
   storage:
     back:
     - ClothingUniformTurtleneckSkirtColorGrey
@@ -500,7 +494,6 @@
 
 - type: loadout
   id: SpareTurtleneckColorWhite
-  whitelisted: true
   storage:
     back:
     - ClothingUniformTurtleneckColorWhite
@@ -509,7 +502,6 @@
 
 - type: loadout
   id: SpareTurtleneckSkirtColorWhite
-  whitelisted: true
   storage:
     back:
     - ClothingUniformTurtleneckSkirtColorWhite
@@ -518,7 +510,6 @@
 
 - type: loadout
   id: SpareTurtleneckColorLightBrown
-  whitelisted: true
   storage:
     back:
     - ClothingUniformTurtleneckColorLightBrown
@@ -527,7 +518,6 @@
 
 - type: loadout
   id: SpareTurtleneckSkirtColorLightBrown
-  whitelisted: true
   storage:
     back:
     - ClothingUniformTurtleneckSkirtColorLightBrown
@@ -536,7 +526,6 @@
 
 - type: loadout
   id: SpareTurtleneckColorBrown
-  whitelisted: true
   storage:
     back:
     - ClothingUniformTurtleneckColorBrown
@@ -545,7 +534,6 @@
 
 - type: loadout
   id: SpareTurtleneckSkirtColorBrown
-  whitelisted: true
   storage:
     back:
     - ClothingUniformTurtleneckSkirtColorBrown
@@ -554,7 +542,6 @@
 
 - type: loadout
   id: SpareTurtleneckColorRed
-  whitelisted: true
   storage:
     back:
     - ClothingUniformTurtleneckColorRed
@@ -563,7 +550,6 @@
 
 - type: loadout
   id: SpareTurtleneckSkirtColorRed
-  whitelisted: true
   storage:
     back:
     - ClothingUniformTurtleneckSkirtColorRed
@@ -572,7 +558,6 @@
 
 - type: loadout
   id: SpareTurtleneckColorOrange
-  whitelisted: true
   storage:
     back:
     - ClothingUniformTurtleneckColorOrange
@@ -581,7 +566,6 @@
 
 - type: loadout
   id: SpareTurtleneckSkirtColorOrange
-  whitelisted: true
   storage:
     back:
     - ClothingUniformTurtleneckSkirtColorOrange
@@ -590,7 +574,6 @@
 
 - type: loadout
   id: SpareTurtleneckColorYellow
-  whitelisted: true
   storage:
     back:
     - ClothingUniformTurtleneckColorYellow
@@ -599,7 +582,6 @@
 
 - type: loadout
   id: SpareTurtleneckSkirtColorYellow
-  whitelisted: true
   storage:
     back:
     - ClothingUniformTurtleneckSkirtColorYellow
@@ -608,7 +590,6 @@
 
 - type: loadout
   id: SpareTurtleneckColorGreen
-  whitelisted: true
   storage:
     back:
     - ClothingUniformTurtleneckColorGreen
@@ -617,7 +598,6 @@
 
 - type: loadout
   id: SpareTurtleneckSkirtColorGreen
-  whitelisted: true
   storage:
     back:
     - ClothingUniformTurtleneckSkirtColorGreen
@@ -626,7 +606,6 @@
 
 - type: loadout
   id: SpareTurtleneckColorDarkGreen
-  whitelisted: true
   storage:
     back:
     - ClothingUniformTurtleneckColorDarkGreen
@@ -635,7 +614,6 @@
 
 - type: loadout
   id: SpareTurtleneckSkirtColorDarkGreen
-  whitelisted: true
   storage:
     back:
     - ClothingUniformTurtleneckSkirtColorDarkGreen
@@ -644,7 +622,6 @@
 
 - type: loadout
   id: SpareTurtleneckColorTeal
-  whitelisted: true
   storage:
     back:
     - ClothingUniformTurtleneckColorTeal
@@ -653,7 +630,6 @@
 
 - type: loadout
   id: SpareTurtleneckSkirtColorTeal
-  whitelisted: true
   storage:
     back:
     - ClothingUniformTurtleneckSkirtColorTeal
@@ -662,7 +638,6 @@
 
 - type: loadout
   id: SpareTurtleneckColorBlue
-  whitelisted: true
   storage:
     back:
     - ClothingUniformTurtleneckColorBlue
@@ -671,7 +646,6 @@
 
 - type: loadout
   id: SpareTurtleneckSkirtColorBlue
-  whitelisted: true
   storage:
     back:
     - ClothingUniformTurtleneckSkirtColorBlue
@@ -680,7 +654,6 @@
 
 - type: loadout
   id: SpareTurtleneckColorDarkBlue
-  whitelisted: true
   storage:
     back:
     - ClothingUniformTurtleneckColorDarkBlue
@@ -689,7 +662,6 @@
 
 - type: loadout
   id: SpareTurtleneckSkirtColorDarkBlue
-  whitelisted: true
   storage:
     back:
     - ClothingUniformTurtleneckSkirtColorDarkBlue
@@ -698,7 +670,6 @@
 
 - type: loadout
   id: SpareTurtleneckColorPurple
-  whitelisted: true
   storage:
     back:
     - ClothingUniformTurtleneckColorPurple
@@ -707,7 +678,6 @@
 
 - type: loadout
   id: SpareTurtleneckSkirtColorPurple
-  whitelisted: true
   storage:
     back:
     - ClothingUniformTurtleneckSkirtColorPurple
@@ -716,7 +686,6 @@
 
 - type: loadout
   id: SpareTurtleneckColorMaroon
-  whitelisted: true
   storage:
     back:
     - ClothingUniformTurtleneckColorMaroon
@@ -725,7 +694,6 @@
 
 - type: loadout
   id: SpareTurtleneckSkirtColorMaroon
-  whitelisted: true
   storage:
     back:
     - ClothingUniformTurtleneckSkirtColorMaroon
@@ -734,7 +702,6 @@
 
 - type: loadout
   id: SpareTurtleneckColorPink
-  whitelisted: true
   storage:
     back:
     - ClothingUniformTurtleneckColorPink
@@ -743,7 +710,6 @@
 
 - type: loadout
   id: SpareTurtleneckSkirtColorPink
-  whitelisted: true
   storage:
     back:
     - ClothingUniformTurtleneckSkirtColorPink
@@ -830,87 +796,72 @@
     back:
     - ClothingUniformJumpsuitHawaiBlue
 
-# Unique
+# Unique, TODO: Whitelist restriction
 - type: loadout
   id: SparePsychologistSuit
-  whitelisted: true
   storage:
     back:
     - ClothingUniformJumpsuitPsychologist
   effects:
-  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: Doctor
 
 - type: loadout
   id: SparePsychologistSuitskirt
-  whitelisted: true
   storage:
     back:
     - ClothingUniformJumpskirtPsychologist
   effects:
-  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: Doctor
 
 - type: loadout
   id: SpareNoirSuit
-  whitelisted: true
   storage:
     back:
     - ClothingUniformJumpsuitDetectiveGrey
   effects:
-  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: Security
 
 - type: loadout
   id: SpareNoirSuitskirt
-  whitelisted: true
   storage:
     back:
     - ClothingUniformJumpskirtDetectiveGrey
   effects:
-  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: Security
 
 - type: loadout
   id: SpareHardWornSuit
-  whitelisted: true
   storage:
     back:
     - ClothingUniformJumpsuitDetective
   effects:
-  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: Security
 
 - type: loadout
   id: SpareHardWornSuitskirt
-  whitelisted: true
   storage:
     back:
     - ClothingUniformJumpskirtDetective
   effects:
-  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: Security
 
 - type: loadout
   id: SpareBlueShirt
-  whitelisted: true
   storage:
     back:
     - ClothingUniformJumpsuitSecBlue
   effects:
-  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: Security
 
 - type: loadout
   id: SpareJournalistSuit
-  whitelisted: true
   storage:
     back:
     - ClothingUniformJumpsuitJournalist
@@ -921,7 +872,6 @@
 
 - type: loadout
   id: SpareReporterSuit
-  whitelisted: true
   storage:
     back:
     - ClothingUniformJumpsuitReporter
@@ -932,23 +882,19 @@
 
 - type: loadout
   id: SpareCuratorSuit
-  whitelisted: true
   storage:
     back:
     - ClothingUniformJumpsuitCurator
   effects:
-  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: JamjarTimer
 
 - type: loadout
   id: SpareCuratorSuitskirt
-  whitelisted: true
   storage:
     back:
     - ClothingUniformJumpskirtCurator
   effects:
-  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: JamjarTimer
 
@@ -966,7 +912,6 @@
 
 - type: loadout
   id: SpareJumpsuitRandom
-  whitelisted: true
   storage:
     back:
     - ClothingUniformRandomStandard
@@ -975,7 +920,6 @@
 
 - type: loadout
   id: SpareJumpsuitRandomShirt
-  whitelisted: true
   storage:
     back:
     - ClothingUniformRandomShirt
@@ -984,7 +928,6 @@
 
 - type: loadout
   id: SpareCossackSuit
-  whitelisted: true
   storage:
     back:
     - ClothingUniformJumpsuitCossack
@@ -993,32 +936,27 @@
 
 - type: loadout
   id: SpareWebJumpsuit
-  whitelisted: true
   storage:
     back:
     - ClothingUniformJumpsuitWeb
   effects:
-  - !type:SponsorLoadoutEffect
   - !type:SpeciesLoadoutEffect
     species:
     - Arachnid
 
 - type: loadout
   id: SpareWebJumpskirt
-  whitelisted: true
   storage:
     back:
     - ClothingUniformJumpskirtWeb
   effects:
-  - !type:SponsorLoadoutEffect
   - !type:SpeciesLoadoutEffect
     species:
     - Arachnid
 
-#Dresses
+#Dresses, TODO: Whitelist restriction
 - type: loadout
   id: SpareBlackElegantDress
-  whitelisted: true
   storage:
     back:
     - ClothingUniformJumpskirtBlackElegantDress
@@ -1027,7 +965,6 @@
 
 - type: loadout
   id: SpareRedElegantDress
-  whitelisted: true
   storage:
     back:
     - ClothingUniformJumpskirtRedElegantDress
@@ -1036,7 +973,6 @@
 
 - type: loadout
   id: SpareGreenElegantDress
-  whitelisted: true
   storage:
     back:
     - ClothingUniformJumpskirtGreenElegantDress
@@ -1045,7 +981,6 @@
 
 - type: loadout
   id: SpareBlueElegantDress
-  whitelisted: true
   storage:
     back:
     - ClothingUniformJumpskirtBlueElegantDress
@@ -1054,7 +989,6 @@
 
 - type: loadout
   id: SparePurpleElegantDress
-  whitelisted: true
   storage:
     back:
     - ClothingUniformJumpskirtPurpleElegantDress
@@ -1063,7 +997,6 @@
 
 - type: loadout
   id: SpareRedStripedDress
-  whitelisted: true
   storage:
     back:
     - ClothingUniformJumpskirtRedStripedDress
@@ -1072,7 +1005,6 @@
 
 - type: loadout
   id: SpareOrangeStripedDress
-  whitelisted: true
   storage:
     back:
     - ClothingUniformJumpskirtOrangeStripedDress
@@ -1081,7 +1013,6 @@
 
 - type: loadout
   id: SpareGreenStripedDress
-  whitelisted: true
   storage:
     back:
     - ClothingUniformJumpskirtGreenStripedDress
@@ -1090,7 +1021,6 @@
 
 - type: loadout
   id: SpareCyanStripedDress
-  whitelisted: true
   storage:
     back:
     - ClothingUniformJumpskirtCyanStripedDress
@@ -1099,7 +1029,6 @@
 
 - type: loadout
   id: SparePinkStripedDress
-  whitelisted: true
   storage:
     back:
     - ClothingUniformJumpskirtPinkStripedDress
@@ -1108,7 +1037,6 @@
 
 - type: loadout
   id: SpareRedTurtleneckDress
-  whitelisted: true
   storage:
     back:
     - ClothingUniformJumpskirtRedTurtleneckDress
@@ -1117,7 +1045,6 @@
 
 - type: loadout
   id: SpareYellowTurtleneckDress
-  whitelisted: true
   storage:
     back:
     - ClothingUniformJumpskirtYellowTurtleneckDress
@@ -1126,7 +1053,6 @@
 
 - type: loadout
   id: SpareGreenTurtleneckDress
-  whitelisted: true
   storage:
     back:
     - ClothingUniformJumpskirtGreenTurtleneckDress
@@ -1135,7 +1061,6 @@
 
 - type: loadout
   id: SpareBlueTurtleneckDress
-  whitelisted: true
   storage:
     back:
     - ClothingUniformJumpskirtBlueTurtleneckDress
@@ -1144,7 +1069,6 @@
 
 - type: loadout
   id: SparePurpleTurtleneckDress
-  whitelisted: true
   storage:
     back:
     - ClothingUniformJumpskirtPurpleTurtleneckDress
@@ -1235,7 +1159,6 @@
 # Mask
 - type: loadout # TODO: Whitelist restriction
   id: SpareNeckGaiter
-  whitelisted: true
   storage:
     back:
     - ClothingMaskNeckGaiter
@@ -1343,7 +1266,6 @@
 
 - type: loadout # TODO: Whitelist restriction
   id: SpareHieroglyphicCloak
-  whitelisted: true
   storage:
     back:
     - ClothingNeckCloakHieroglyphics
@@ -1354,7 +1276,6 @@
 
 - type: loadout # TODO: Whitelist restriction
   id: SpareOrangeCloak
-  whitelisted: true
   storage:
     back:
     - ClothingNeckCloakOrange
@@ -1373,14 +1294,13 @@
 
 - type: loadout # TODO: Whitelist restriction
   id: SpareRaindowBedsheet
-  whitelisted: true
   storage:
     back:
     - BedsheetRainbow
   effects:
   - !type:SponsorLoadoutEffect
 
-- type: loadout
+- type: loadout # TODO: Whitelist restriction
   id: SpareWizardBedsheet
   storage:
     back:
@@ -1388,7 +1308,7 @@
   effects:
   - !type:SponsorLoadoutEffect
 
-- type: loadout
+- type: loadout # TODO: Whitelist restriction
   id: SpareCosmosBedsheet
   storage:
     back:
@@ -1398,7 +1318,6 @@
 
 - type: loadout # TODO: Whitelist restriction
   id: SpareRedRevBandage
-  whitelisted: true
   storage:
     back:
     - ClothingNeckRevBandage
@@ -1488,14 +1407,12 @@
     back:
     - ClothingOuterWinterColorPurple
 
-- type: loadout
+- type: loadout # TODO: Whitelist restriction
   id: SpareWebWintercoat
-  whitelisted: true
   storage:
     back:
     - ClothingOuterWinterWeb
   effects:
-  - !type:SponsorLoadoutEffect
   - !type:SpeciesLoadoutEffect
     species:
     - Arachnid
@@ -1571,7 +1488,6 @@
 
 - type: loadout # TODO: Whitelist restriction
   id: SpareHospitalGown
-  whitelisted: true
   storage:
     back:
     - ClothingOuterHospitalGown
@@ -1581,7 +1497,6 @@
 
 - type: loadout # TODO: Whitelist restriction
   id: SpareHazardVest
-  whitelisted: true
   storage:
     back:
     - ClothingOuterVestHazard
@@ -1590,16 +1505,14 @@
     proto: Engineer
 
 # Shoes/Feet
-- type: loadout
+- type: loadout # TODO: Whitelist restriction
   id: SpareSlippers
-  whitelisted: true
   storage:
     back:
     - ClothingShoesSlippers
 
-- type: loadout
+- type: loadout # TODO: Whitelist restriction
   id: SpareTouristShoes
-  whitelisted: true
   storage:
     back:
     - ClothingShoesTourist

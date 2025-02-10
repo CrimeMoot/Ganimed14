@@ -57,6 +57,11 @@
   equipment:
     outerClothing: ClothingOuterCoatDetectiveLoadout
 
+- type: loadout
+  id: DetectiveCoatGrey
+  equipment:
+    outerClothing: ClothingOuterCoatDetectiveLoadoutGrey
+
 - type: loadout # Ganimed
   id: DetectiveCoatOriginal
   equipment:
@@ -67,9 +72,8 @@
   equipment:
     outerClothing: ClothingOuterCoatDetectiveDark
 
-# Gloves, Ganimed
+# Gloves, Ganimed, TODO: Whitelist restriction
 - type: loadout
-  whitelisted: true
   id: ForensicGloves
   equipment:
     gloves: ClothingHandsGlovesForensic
@@ -99,8 +103,3 @@
   id: WeaponRevolverInspector
   equipment:
     belt: WeaponRevolverInspector
-    
-- type: loadout
-  id: DetectiveCoatGrey
-  equipment:
-    outerClothing: ClothingOuterCoatDetectiveLoadoutGrey

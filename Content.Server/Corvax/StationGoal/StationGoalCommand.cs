@@ -12,7 +12,6 @@ namespace Content.Server.Corvax.StationGoal
     public sealed class StationGoalCommand : IConsoleCommand
     {
         [Dependency] private readonly IEntityManager _entManager = default!;
-        [Dependency] private readonly IChatManager _chat = default!;
         [Dependency] private readonly ChatSystem _chat = default!;
 
         public string Command => "sendstationgoal";

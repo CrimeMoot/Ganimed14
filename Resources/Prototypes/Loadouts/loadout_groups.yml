@@ -26,8 +26,8 @@
   - CigarCase
   - CigarGold
   - SmokingPipe # Ganimed
-  - ClothingNeckLGBTPin
-  - ClothingNeckAutismPin
+  # - ClothingNeckLGBTPin # TODO: readd
+  # - ClothingNeckAutismPin # TODO: readd
 # start-backmen: no pride
 #  - ClothingNeckAromanticPin
 #  - ClothingNeckAsexualPin

@@ -145,11 +145,11 @@
   - !type:SponsorLoadoutEffect
 
 # Pins
-- type: loadout
-  id: ClothingNeckLGBTPin
-  storage:
-    back:
-    - ClothingNeckLGBTPin
+#- type: loadout # TODO: readd
+#  id: ClothingNeckLGBTPin
+#  storage:
+#    back:
+#    - ClothingNeckLGBTPin
 
 #- type: loadout
 #  id: ClothingNeckAromanticPin
@@ -211,11 +211,11 @@
 #    back:
 #    - ClothingNeckTransPin
 
-- type: loadout
-  id: ClothingNeckAutismPin
-  storage:
-    back:
-    - ClothingNeckAutismPin
+#- type: loadout # TODO: readd
+#  id: ClothingNeckAutismPin
+#  storage:
+#    back:
+#    - ClothingNeckAutismPin
 
 #- type: loadout
 #  id: ClothingNeckGoldAutismPin

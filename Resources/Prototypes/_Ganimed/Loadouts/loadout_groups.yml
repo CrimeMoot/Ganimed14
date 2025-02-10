@@ -182,7 +182,10 @@
   - SpareRaindowBedsheet
   - SpareWizardBedsheet
   - SpareCosmosBedsheet
-  # - SpareRedRevBandage
+  - SpareBlueTSFLoyalistBandage
+  - SpareDarkPeripheralistBandage
+  - SpareRedRevBandage
+  - SpareGreenElysiumBandage
   # Outer clothing
   - SpareRedFlannelJacket
   - SpareGreenFlannelJacket

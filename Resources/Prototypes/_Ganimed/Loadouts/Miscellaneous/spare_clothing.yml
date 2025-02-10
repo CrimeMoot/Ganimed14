@@ -1317,10 +1317,28 @@
   - !type:SponsorLoadoutEffect
 
 - type: loadout # TODO: Whitelist restriction
+  id: SpareBlueTSFLoyalistBandage
+  storage:
+    back:
+    - ClothingNeckTSFBandage
+
+- type: loadout # TODO: Whitelist restriction
+  id: SpareDarkPeripheralistBandage
+  storage:
+    back:
+    - ClothingNeckPerefBandage
+
+- type: loadout # TODO: Whitelist restriction
   id: SpareRedRevBandage
   storage:
     back:
     - ClothingNeckRevBandage
+
+- type: loadout # TODO: Whitelist restriction
+  id: SpareGreenElysiumBandage
+  storage:
+    back:
+    - ClothingNeckELZBandage
 
 # Outer clothing
 - type: loadout

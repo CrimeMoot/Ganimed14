@@ -49,7 +49,7 @@ namespace Content.Server.Corvax.StationGoal
 
         /// Ganimed-edit-start
             _chat.DispatchGlobalAnnouncement(
-                Loc.GetString("station-goal-announcement", ("goal", proto.Name)),
+                Loc.GetString("station-goal-announcement", ("goal", Loc.GetString(proto.ID)))
                 sender: Loc.GetString("station-goal-announcement-CentCom"),
                 colorOverride: Color.Yellow);
         /// Ganimed-edit-end

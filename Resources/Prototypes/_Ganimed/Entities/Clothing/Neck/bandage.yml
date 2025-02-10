@@ -49,3 +49,12 @@
   components:
   - type: Sprite
     sprite: _Ganimed/Clothing/Neck/Bandage/revbandage.rsi
+    
+- type: entity
+  parent: ClothingNeckBaseFlipped
+  id: ClothingNeckTSFBandage
+  name: blue bandage
+  description: It's blue bandage, you can tie it on your shoulder.
+  components:
+  - type: Sprite
+    sprite: _Ganimed/Clothing/Neck/Bandage/tsfbandage.rsi

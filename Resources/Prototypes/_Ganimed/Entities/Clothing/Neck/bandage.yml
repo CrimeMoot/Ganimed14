@@ -58,3 +58,21 @@
   components:
   - type: Sprite
     sprite: _Ganimed/Clothing/Neck/Bandage/tsfbandage.rsi
+    
+- type: entity
+  parent: ClothingNeckBaseFlipped
+  id: ClothingNeckELZBandage
+  name: green bandage
+  description: It's green bandage, you can tie it on your shoulder.
+  components:
+  - type: Sprite
+    sprite: _Ganimed/Clothing/Neck/Bandage/elizbandage.rsi
+    
+- type: entity
+  parent: ClothingNeckBaseFlipped
+  id: ClothingNeckPerefBandage
+  name: dark gray bandage
+  description: It's dark gray bandage, you can tie it on your shoulder.
+  components:
+  - type: Sprite
+    sprite: _Ganimed/Clothing/Neck/Bandage/perefbandage.rsi

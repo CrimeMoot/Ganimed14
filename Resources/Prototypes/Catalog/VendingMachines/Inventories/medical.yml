@@ -10,5 +10,6 @@
     BoxBottle: 3
     ClothingEyesHudMedical: 2
     ClothingEyesEyepatchHudMedical: 2
-    ClothingMaskBreathMedical: 2 #<--Space Cat's
-
+    ClothingMaskBreathMedical: 2 # Ganimed
+  contrabandInventory:
+    FoodApple: 1

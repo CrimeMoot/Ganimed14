@@ -12,7 +12,7 @@ namespace Content.Server.Corvax.StationGoal
     public sealed class StationGoalCommand : IConsoleCommand
     {
         [Dependency] private readonly IEntityManager _entManager = default!;
-        [Dependency] private readonly ChatSystem _chat = default!;
+        [Dependency] private readonly IChatManager _chatManager = default!;
 
         public string Command => "sendstationgoal";
         public string Description => Loc.GetString("send-station-goal-command-description");
@@ -48,10 +48,10 @@ namespace Content.Server.Corvax.StationGoal
             }
 
         /// Ganimed-edit-start
-            _chat.DispatchGlobalAnnouncement(
-                Loc.GetString("station-goal-announcement", ("goal", Loc.GetString(proto.ID))),
-                sender: Loc.GetString("station-goal-announcement-CentCom"),
-                colorOverride: Color.Yellow);
+        _chatManager.DispatchGlobalAnnouncement(
+            Loc.GetString("station-goal-announcement", ("goal", Loc.GetString(proto.ID))),
+            sender: Loc.GetString("station-goal-announcement-CentCom"),
+            colorOverride: Color.Yellow);
         /// Ganimed-edit-end
         }
 

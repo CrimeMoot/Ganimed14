@@ -26,7 +26,7 @@
     - Harpy
     - Oni
     - Shadowkin
-    # Ganimed-stop
+    # Ganimed-end
 
 - type: loadoutEffectGroup
   id: EffectSpeciesVox

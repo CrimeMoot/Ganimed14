@@ -24,3 +24,6 @@
     PenHearts: 1 # Cats edit
     PenLightBlue: 2 # Cats edit
     PrinterDocFlatpack: 2 # Corvax-Printer
+  contrabandInventory:
+    ToyFigurineLibrarian: 1
+

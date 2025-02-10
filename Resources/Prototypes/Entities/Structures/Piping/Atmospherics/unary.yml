@@ -78,6 +78,10 @@
         path: /Audio/Ambience/Objects/gas_vent.ogg
     - type: AtmosMonitoringConsoleDevice
       navMapBlip: GasVentOpening
+    - type: GuideHelp
+      guides:
+      - AirVent
+      - DeviceMonitoringAndControl
 
 - type: entity
   parent: GasUnaryBase
@@ -104,6 +108,9 @@
       node: passivevent
     - type: AtmosMonitoringConsoleDevice
       navMapBlip: GasVentOpening
+    - type: GuideHelp
+      guides:
+      - PassiveVent
 
 - type: entity
   parent: [GasUnaryBase, AirSensorBase]
@@ -164,6 +171,10 @@
         path: /Audio/Ambience/Objects/gas_vent.ogg
     - type: AtmosMonitoringConsoleDevice
       navMapBlip: GasVentScrubber
+    - type: GuideHelp
+      guides:
+      - AirScrubber
+      - DeviceMonitoringAndControl
 
 - type: entity
   parent: GasUnaryBase
@@ -214,6 +225,9 @@
     - type: ContainerContainer
       containers:
         VentCrawTube: !type:Container
+    - type: GuideHelp
+      guides:
+      - AirInjector
 
 - type: entity
   parent: [ BaseMachinePowered, ConstructibleMachine ]
@@ -262,6 +276,9 @@
     - type: AtmosMonitoringConsoleDevice
       navMapBlip: Thermoregulator
     - type: StationAiWhitelist
+    - type: GuideHelp
+      guides:
+      - Thermomachines
 
 - type: entity
   parent: BaseGasThermoMachine
@@ -470,3 +487,6 @@
   - type: PowerSwitch
   - type: AtmosMonitoringConsoleDevice
     navMapBlip: Thermoregulator
+  - type: GuideHelp
+    guides:
+    - GasCondensing

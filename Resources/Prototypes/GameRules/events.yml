@@ -76,7 +76,7 @@
   - type: StationEvent
     startAnnouncementColor: "#18abf5"
     startAudio:
-      path: /Audio/Corvax/Announcements/flux.ogg # Corvax-Announcements
+      path: /Audio/Corvax/Announcements/flux.ogg # Corvax-Announcementssd
       params:
         volume: -4
     weight: 8

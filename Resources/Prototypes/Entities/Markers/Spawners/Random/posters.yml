@@ -93,7 +93,7 @@
       - PosterContrabandInterdyne
       - PosterContrabandWaffleCorp
       - PosterContrabandMissingSpacepen
-      - PosterContrabandFearThem 
+      - PosterContrabandFearThem
       - PosterContrabandSilence
       - PosterDontSitDown
       - PosterTayarHalloween
@@ -103,6 +103,13 @@
       - PosterGasAttack
       - PosterNoGood
     chance: 1
+      # Сorvax-Next-START
+    rarePrototypes:
+      - FlagCoder
+      - FlagSyndicate
+      - FlagInteQ
+    rareChance: 0.01
+      # Сorvax-Next-END
 
 - type: entity
   parent: MarkerBase
@@ -182,8 +189,8 @@
       # Cats start
       - PosterLegitEfficiency
       - PosterLegitGreatFood
-      - PosterLegitTurnOnSensors 
-      - PosterLegitOktoberfest2 
+      - PosterLegitTurnOnSensors
+      - PosterLegitOktoberfest2
       - PosterPassTheBanana
       - PosterSingoPizza
       - PosterPapersPlease
@@ -195,4 +202,19 @@
       - PosterWhatDVLegit
       - PosterUnclePrazLegit
       # Cats end
-    chance: 1
+    rarePrototypes:
+      - FlagAgurk
+      - FlagHCA
+      - FlagLizard
+      - FlagMothic
+      - FlagNanoTrasen
+      - FlagShigu
+      - FlagSolfed
+      - FlagSolfedAlt
+      - FlagTizira
+      - FlagGoldRing
+      - FlagNRI
+      - FlagSovietUSSP
+      - FlagVulp
+    rareChance: 0.01
+      # Сorvax-Next-END

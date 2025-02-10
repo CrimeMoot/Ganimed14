@@ -1,0 +1,414 @@
+# Miscellaneous, Spare clothes, Ganimed
+- type: loadoutGroup
+  id: SpareClothing
+  name: loadout-group-spare-clothing
+  minLimit: 0
+  maxLimit: 3
+  loadouts:
+  - SpareBlackCap # Head
+  - SpareGreyCap
+  - SpareRedCap
+  - SpareOrangeCap
+  - SpareYellowCap
+  - SpareGreenCap
+  - SpareBlueCap
+  - SpareGreyFlatCap
+  - SpareBrownFlatCap
+  - SpareBlackBandana
+  - SpareGreyBandana
+  - SpareBrownBandana
+  - SpareRedBandana
+  - SpareGoldBandana
+  - SpareGreenBandana
+  - SpareBlueBandana
+  - SpareBeret
+  - SpareUshanka
+  - SpareHetmanHat
+  - SpareSombrero
+  - SpareBeaverHat
+  - SpareGreyFedora
+  - SpareBlackCatHat
+  - SpareGreyCatHat
+  - SpareBrownCatHat
+  - SpareHeadslimeHat
+  - SpareWaterCupPartyHat
+  - SpareRedPartyHat
+  - SpareYellowPartyHat
+  - SpareGreenPartyHat
+  - SpareBluePartyHat
+  - SparePaperHat
+  # Jumpsuits
+  - SpareJumpsuitColorBlack
+  - SpareJumpskirtColorBlack
+  - SpareJumpsuitColorGrey
+  - SpareJumpskirtColorGrey
+  - SpareJumpsuitColorWhite
+  - SpareJumpskirtColorWhite
+  - SpareJumpsuitColorLightBrown
+  - SpareJumpskirtColorLightBrown
+  - SpareJumpsuitColorBrown
+  - SpareJumpskirtColorBrown
+  - SpareJumpsuitColorRed
+  - SpareJumpskirtColorRed
+  - SpareJumpsuitColorOrange
+  - SpareJumpskirtColorOrange
+  - SpareJumpsuitColorYellow
+  - SpareJumpskirtColorYellow
+  - SpareJumpsuitColorGreen
+  - SpareJumpskirtColorGreen
+  - SpareJumpsuitColorDarkGreen
+  - SpareJumpskirtColorDarkGreen
+  - SpareJumpsuitColorTeal
+  - SpareJumpskirtColorTeal
+  - SpareJumpsuitColorBlue
+  - SpareJumpskirtColorBlue
+  - SpareJumpsuitColorDarkBlue
+  - SpareJumpskirtColorDarkBlue
+  - SpareJumpsuitColorPurple
+  - SpareJumpskirtColorPurple
+  - SpareJumpsuitColorMaroon
+  - SpareJumpskirtColorMaroon
+  - SpareJumpsuitColorPink
+  - SpareJumpskirtColorPink
+  - SpareTurtleneckColorBlack
+  - SpareTurtleneckSkirtColorBlack
+  - SpareTurtleneckColorGrey
+  - SpareTurtleneckSkirtColorGrey
+  - SpareTurtleneckColorWhite
+  - SpareTurtleneckSkirtColorWhite
+  - SpareTurtleneckColorLightBrown
+  - SpareTurtleneckSkirtColorLightBrown
+  - SpareTurtleneckColorBrown
+  - SpareTurtleneckSkirtColorBrown
+  - SpareTurtleneckColorRed
+  - SpareTurtleneckSkirtColorRed
+  - SpareTurtleneckColorOrange
+  - SpareTurtleneckSkirtColorOrange
+  - SpareTurtleneckColorYellow
+  - SpareTurtleneckSkirtColorYellow
+  - SpareTurtleneckColorGreen
+  - SpareTurtleneckSkirtColorGreen
+  - SpareTurtleneckColorDarkGreen
+  - SpareTurtleneckSkirtColorDarkGreen
+  - SpareTurtleneckColorTeal
+  - SpareTurtleneckSkirtColorTeal
+  - SpareTurtleneckColorBlue
+  - SpareTurtleneckSkirtColorBlue
+  - SpareTurtleneckColorDarkBlue
+  - SpareTurtleneckSkirtColorDarkBlue
+  - SpareTurtleneckColorPurple
+  - SpareTurtleneckSkirtColorPurple
+  - SpareTurtleneckColorMaroon
+  - SpareTurtleneckSkirtColorMaroon
+  - SpareTurtleneckColorPink
+  - SpareTurtleneckSkirtColorPink
+  - SpareRedCasualJumpsuit
+  - SpareRedCasualJumpskirt
+  - SpareGreenCasualJumpsuit
+  - SpareGreenCasualJumpskirt
+  - SpareBlueCasualJumpsuit
+  - SpareBlueCasualJumpskirt
+  - SparePurpleCasualJumpsuit
+  - SparePurpleCasualJumpskirt
+  - SpareLoungewear
+  - SpareBlackHawaiianShirt
+  - SpareRedHawaiianShirt
+  - SpareYellowHawaiianShirt
+  - SpareBlueHawaiianShirt
+  - SparePsychologistSuit
+  - SparePsychologistSuitskirt
+  - SpareNoirSuit
+  - SpareNoirSuitskirt
+  - SpareHardWornSuit
+  - SpareHardWornSuitskirt
+  - SpareBlueShirt
+  - SpareJournalistSuit
+  - SpareReporterSuit
+  - SpareCuratorSuit
+  - SpareCuratorSuitskirt
+  - SpareOveralls
+  - SpareJumpsuitFlannel
+  - SpareJumpsuitRandom
+  - SpareJumpsuitRandomShirt
+  - SpareCossackSuit
+  - SpareWebJumpsuit
+  - SpareWebJumpskirt
+  - SpareBlackElegantDress
+  - SpareRedElegantDress
+  - SpareGreenElegantDress
+  - SpareBlueElegantDress
+  - SparePurpleElegantDress
+  - SpareRedStripedDress
+  - SpareOrangeStripedDress
+  - SpareGreenStripedDress
+  - SpareCyanStripedDress
+  - SparePinkStripedDress
+  - SpareRedTurtleneckDress
+  - SpareYellowTurtleneckDress
+  - SpareGreenTurtleneckDress
+  - SpareBlueTurtleneckDress
+  - SparePurpleTurtleneckDress
+  - SpareYellowOldDress
+  # Gloves
+  - SpareGlovesFingerless
+  - SpareGlovesColorBlack
+  - SpareGlovesColorGray
+  - SpareGlovesColorWhite
+  - SpareGlovesColorLightBrown
+  - SpareGlovesColorBrown
+  - SpareGlovesColorRed
+  - SpareGlovesColorOrange
+  - SpareGlovesColorGreen
+  - SpareGlovesColorTeal
+  - SpareGlovesColorBlue
+  - SpareGlovesColorPurple
+  # Mask
+  - SpareNeckGaiter
+  # Neck
+  - SpareRedTie
+  - SpareDetTie
+  - SpareBlueTie
+  - SpareBlackScarf
+  - SpareBrownScarf
+  - SpareRedScarf
+  - SpareOrangeScarf
+  - SpareGreenScarf
+  - SpareLightBlueScarf
+  - SpareBlueScarf
+  - SparePurpleScarf
+  - SpareHieroglyphicCloak
+  - SpareOrangeCloak
+  - SpareBling
+  - SpareRaindowBedsheet
+  - SpareWizardBedsheet
+  - SpareCosmosBedsheet
+  - SpareBlueTSFLoyalistBandage
+  - SpareDarkPeripheralistBandage
+  - SpareRedRevBandage
+  - SpareGreenElysiumBandage
+  # Outer clothing
+  - SpareRedFlannelJacket
+  - SpareGreenFlannelJacket
+  - SpareBlueFlannelJacket
+  - SpareBlackWintercoat
+  - SpareGrayWintercoat
+  - SpareWhiteWintercoat
+  - SpareLightBrownWintercoat
+  - SpareBrownWintercoat
+  - SpareRedWintercoat
+  - SpareOrangeWintercoat
+  - SpareYellowWintercoat
+  - SpareGreenWintercoat
+  - SpareBlueWintercoat
+  - SparePurpleWintercoat
+  - SpareWebWintercoat
+  - SpareBomberJacket
+  - SpareBlackBomber
+  - SpareGentleCoat
+  - SpareJensenCoat
+  - SpareRedCoat
+  - SpareBlackHoodie
+  - SpareGreyHoodie
+  - SpareVest
+  - SpareTrenchCoat
+  - SpareClassicPoncho
+  - SpareApron
+  - SpareHospitalGown
+  - SpareHazardVest
+  # Shoes
+  # - SpareSlippers
+  # - SpareTouristShoes
+
+# Miscellaneous, Undergarments, Ganimed
+- type: loadoutGroup
+  id: Underwear
+  name: loadout-group-underwear
+  minLimit: 0
+  maxLimit: 3
+  loadouts:
+  - WhiteShirt # Undershirts
+  - BlackShirt
+  - BrownShirt
+  - RedShirt
+  - YellowShirt
+  - GreenShirt
+  - BlueShirt
+  - WhiteBrassiere
+  - BlackBrassiere
+  - BrownBrassiere
+  - RedBrassiere
+  - YellowBrassiere
+  - GreenBrassiere
+  - BlueBrassiere
+  - LargeWhiteBrassiere
+  - LargeBlackBrassiere
+  - LargeBrownBrassiere
+  - LargeRedBrassiere
+  - LargeYellowBrassiere
+  - LargeGreenBrassiere
+  - LargeBlueBrassiere
+  - AlternateWhiteBrassiere
+  - AlternateBlackBrassiere
+  - AlternateBrownBrassiere
+  - AlternateRedBrassiere
+  - AlternateYellowBrassiere
+  - AlternateGreenBrassiere
+  - AlternateBlueBrassiere
+  - CosplayerBrassiere
+  - PatternedBrassiere
+  - HeartsBrassiere
+  - FlowersBrassiere
+  - NekoBrassiere
+  - ClothBinderBrassiere
+  # Underpants
+  - WhiteUnderpants
+  - BlackUnderpants
+  - BrownUnderpants
+  - RedUnderpants
+  - YellowUnderpants
+  - GreenUnderpants
+  - BlueUnderpants
+  - WhitePanties
+  - BlackPanties
+  - BrownPanties
+  - RedPanties
+  - YellowPanties
+  - GreenPanties
+  - BluePanties
+  - WhiteThong
+  - BlackThong
+  - BrownThong
+  - RedThong
+  - YellowThong
+  - GreenThong
+  - BlueThong
+  - AlternateWhitePanties
+  - AlternateBlackPanties
+  - AlternateBrownPanties
+  - AlternateRedPanties
+  - AlternateYellowPanties
+  - AlternateGreenPanties
+  - AlternateBluePanties
+  - MilitaryUnderpants
+  - NTUnderpants
+  - CosplayerPanties
+  - PatternedPanties
+  - HeartsPanties
+  - FlowersPanties
+  - NekoPanties
+  - ClothStrappingUnderpants
+  # Socks
+  - BlackSocks
+  - WhiteSocks
+  - BrownSocks
+  - RedSocks
+  - YellowSocks
+  - GreenSocks
+  - BlueSocks
+  - DarkLongSocks
+  - WhiteLongSocks
+  - CoderSocks
+  - BeeSocks
+  - BeelineStockings
+  - DarkStockings
+  - WhiteStockings
+  - FishnetStockings
+  - NekoStockings
+  - LightBlueStripedStockings
+
+# Jobs
+# CentCom (TODO)
+
+# Command
+- type: loadoutGroup # Ganimed
+  id: BridgeOfficerHead
+  name: loadout-group-bridge-officer-head
+  minLimit: 0
+  loadouts: 
+  - BridgeOfficerBeret
+
+- type: loadoutGroup # Ganimed
+  id: BridgeOfficerNeck
+  name: loadout-group-bridge-officer-neck
+  minLimit: 0
+  loadouts: 
+  - BridgeOfficerMantle
+
+- type: loadoutGroup # Ganimed
+  id: BridgeOfficerJumpsuit
+  name: loadout-group-bridge-officer-jumpsuit
+  loadouts:
+  - BridgeOfficerUniform
+  - BridgeOfficerBlackJumpsuit
+
+- type: loadoutGroup # Ganimed
+  id: BridgeOfficerBelt
+  name: loadout-group-bridge-officer-belt
+  minLimit: 0
+  loadouts:
+  - BridgeOfficerWebbing
+
+#Science
+- type: loadoutGroup # Ganimed
+  id: RoboticistJumpsuit
+  name: loadout-group-roboticist-jumpsuit
+  loadouts:
+  - RoboticistJumpsuit
+  - RoboticistJumpskirt
+
+- type: loadoutGroup # Ganimed
+  id: RoboticistOuterClothing
+  name: loadout-group-roboticist-outerclothing
+  minLimit: 0
+  loadouts:
+  - RoboticistLabCoat
+  - RoboticistOriginalLabCoat
+  - RoboticistWintercoat
+
+# Security
+- type: loadoutGroup # Ganimed
+  id: PilotHead
+  name: loadout-group-pilot-head
+  minLimit: 0
+  loadouts:
+  - SecurityBeret
+  - ClothingHeadHatPilotkaSec #Backmen
+  - ClothingHeadHatCapSec #Backmen
+  - SecurityHelmet
+  # - PilotHelmet
+
+- type: loadoutGroup # Ganimed
+  id: PilotJumpsuit
+  name: loadout-group-pilot-jumpsuit
+  loadouts:
+  - SecurityJumpsuit
+  - SecurityJumpskirt
+  - SecurityUniformBlueShirt
+  - AerostaticSuit
+
+- type: loadoutGroup # Ganimed
+  id: PilotGloves
+  name: loadout-group-pilot-gloves
+  minLimit: 0
+  loadouts:
+  - AerostaticGloves
+
+- type: loadoutGroup # Ganimed
+  id: PilotOuterClothing
+  name: loadout-group-pilot-outerclothing
+  loadouts:
+  - BomberCoat
+  - ArmorVest
+  - ArmorVestSlim
+  - SecurityOfficerWintercoat
+  - AerostaticBomberJacket
+
+- type: loadoutGroup # Ganimed
+  id: PilotShoes
+  name: loadout-group-pilot-shoes
+  loadouts:
+  - JackSecBoots
+  - JackBoots
+  - CombatBoots
+  - SecurityWinterBoots
+  - AerostaticShoes

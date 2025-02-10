@@ -46,6 +46,30 @@
   - !type:GroupLoadoutEffect
     proto: SeniorEngineering
 
+- type: loadout # Ganimed
+  id: WeldingMask
+  equipment:
+    head: ClothingHeadHatWelding
+
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: WeldingMaskPainted
+  equipment:
+    head: ClothingHeadHatWeldingMaskPainted
+
+- type: loadout # Ganimed
+  id: WeldingMaskFlame
+  equipment:
+    head: ClothingHeadHatWeldingMaskFlame
+  effects:
+  - !type:SponsorLoadoutEffect
+
+- type: loadout # Ganimed
+  id: WeldingMaskBlueFlame
+  equipment:
+    head: ClothingHeadHatWeldingMaskFlameBlue
+  effects:
+  - !type:SponsorLoadoutEffect
+
 # Jumpsuit
 - type: loadout
   id: StationEngineerJumpsuit
@@ -78,6 +102,11 @@
   equipment:
     jumpsuit: ClothingUniformJumpskirtSeniorEngineer
 
+- type: loadout # Ganimed
+  id: StationEngineerNTRepairmanJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitRepairmanNT
+
 # Back
 - type: loadout
   id: StationEngineerBackpack
@@ -105,6 +134,26 @@
   equipment:
     outerClothing: ClothingOuterWinterEngi
 
+- type: loadout
+  id: SeniorEngineerWintercoat
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: SeniorEngineering
+  equipment:
+    outerClothing: ClothingOuterWinterSeniorEngineer  # cats
+
+# Glasses, Ganimed
+- type: loadout
+  id: EngineeringGoggles
+  equipment:
+    eyes: ClothingEyesGlassesMeson
+
+# Gloves, Ganimed
+- type: loadout
+  id: InsulatedGloves
+  equipment:
+    gloves: ClothingHandsGlovesColorYellow
+
 # Shoes
 - type: loadout
   id: WorkBoots
@@ -115,6 +164,20 @@
   id: EngineeringWinterBoots
   equipment:
     shoes: ClothingShoesBootsWinterEngi
+
+- type: loadout # Ganimed
+  id: OrangeShoes
+  equipment:
+    shoes: ClothingShoesColorOrange
+
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: EngineeringMagBoots
+  effects:
+  #- !type:WhitelistedLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: SeniorEngineering
+  equipment:
+    shoes: ClothingShoesBootsMag
 
 # ID
 - type: loadout

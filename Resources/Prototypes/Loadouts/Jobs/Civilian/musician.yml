@@ -14,3 +14,18 @@
   id: MusicianWintercoat
   equipment:
     outerClothing: ClothingOuterWinterMusician
+
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: PerformerJumpskirt
+  equipment:
+    outerClothing: ClothingUniformJumpskirtPerformer
+  effects:
+  - !type:SponsorLoadoutEffect
+
+# Shoes, Ganimed
+- type: loadout # TODO: Whitelist restriction
+  id: PerformerBoots
+  equipment:
+    shoes: ClothingShoesBootsPerformer
+  effects:
+  - !type:SponsorLoadoutEffect

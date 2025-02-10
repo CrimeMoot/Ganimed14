@@ -49,8 +49,46 @@
   equipment:
     jumpsuit: ClothingUniformJumpskirtLawyerGood
 
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: JumpsuitNanotrasen
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitNanotrasen
+  effects:
+  - !type:SponsorLoadoutEffect
+
 # Neck
 - type: loadout
   id: LawyerNeck
   equipment:
     neck: ClothingNeckLawyerbadge
+
+- type: loadout # Ganimed
+  id: NTBedsheet
+  equipment:
+    neck: BedsheetNT
+
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: NanotrasenCloak
+  equipment:
+    neck: ClothingNeckCloakNanotrasen
+  effects:
+  - !type:SponsorLoadoutEffect
+
+# OuterClothing, Ganimed
+- type: loadout
+  id: JudgeRobes
+  equipment:
+    outerClothing: ClothingOuterRobesJudge
+
+# Shoes, Ganimed
+- type: loadout
+  id: LaceupShoes
+  equipment:
+    shoes: ClothingShoesBootsLaceup
+
+- type: loadout # TODO: Whitelist restriction
+  id: LaceupShoesWhitelisted
+  equipment:
+    shoes: ClothingShoesBootsLaceup
+  effects:
+  - !type:SponsorLoadoutEffect

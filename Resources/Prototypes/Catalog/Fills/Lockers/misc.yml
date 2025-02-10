@@ -125,7 +125,7 @@
     - id: ClothingShoesBootsCombatFilled
     - id: ToolboxSyndicateFilled
     - id: BalloonSyn
-    - id: WeaponSniperMosinNew
+    - id: WeaponSniperMosin
       weight: 2
 
 - type: entityTable

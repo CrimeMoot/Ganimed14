@@ -37,9 +37,9 @@
   - type: Item
     sprite: Backmen/Objects/Weapons/Gunsx64/Pistols/acp14/tiny.rsi
   - type: Gun
-    angleIncrease: 8
+    angleIncrease: 2
     angleDecay: 10
-    cameraRecoilScalar: 1
+    cameraRecoilScalar: 0.5
     maxAngle: 15
     minAngle: 1
     selectedMode: SemiAuto
@@ -52,20 +52,21 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MagazinePistol45ACP
+        startingItem: MagazinePistol
         insertSound: /Audio/Weapons/Guns64/Pistols/acp14_reload.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - MagazinePistol45ACP
+            - MagazinePistol
+            - MagazinePistolHighCapacity
       gun_chamber:
         name: Chamber
-        startingItem: CartridgePistolACP
+        startingItem: CartridgePistol
         priority: 1
         whitelist:
           tags:
-            - CartridgePistol45ACP
+            - CartridgePistol
   - type: MagazineVisuals
     magState: mag
     steps: 1
@@ -103,20 +104,21 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MagazinePistol57x28Extd
+        startingItem: MagazinePistolHighCapacity
         insertSound: /Audio/Weapons/Guns64/Pistols/vp70_reload.ogg
         ejectSound: /Audio/Weapons/Guns64/Pistols/vp70_unload.ogg
         priority: 2
         whitelist:
           tags:
-            - MagazinePistol57x28
+            - MagazinePistol
+            - MagazinePistolHighCapacity
       gun_chamber:
         name: Chamber
-        startingItem: CartridgePistol57x28
+        startingItem: CartridgePistol
         priority: 1
         whitelist:
           tags:
-            - CartridgePistol57x28
+            - CartridgePistol
   - type: MagazineVisuals
     magState: mag
     steps: 1
@@ -155,20 +157,20 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MagazinePistol50AE
+        startingItem: MagazineMagnumPistol
         insertSound: /Audio/Weapons/Guns64/Pistols/deagle_reload.ogg
         ejectSound: /Audio/Weapons/Guns64/Pistols/deagle_unload.ogg
         priority: 2
         whitelist:
           tags:
-            - MagazinePistol50AE
+            - MagazineMagnumPistol
       gun_chamber:
         name: Chamber
-        startingItem: CartridgePistol50AE
+        startingItem: CartridgeMagnum
         priority: 1
         whitelist:
           tags:
-            - CartridgePistol50AE
+            - CartridgeMagnum
   - type: MagazineVisuals
     magState: mag
     steps: 1
@@ -203,20 +205,21 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MagazinePistol9x17
+        startingItem: MagazinePistol
         insertSound: /Audio/Weapons/Guns64/Pistols/beretta_reload.ogg
         ejectSound: /Audio/Weapons/Guns64/Pistols/beretta_unload.ogg
         priority: 2
         whitelist:
           tags:
-            - MagazinePistol9x17
+            - MagazinePistol
+            - MagazinePistolHighCapacity
       gun_chamber:
         name: Chamber
-        startingItem: CartridgePistol9x17
+        startingItem: CartridgePistol
         priority: 1
         whitelist:
           tags:
-            - CartridgePistol9x17
+            - CartridgePistol
   - type: MagazineVisuals
     magState: mag
     steps: 1
@@ -230,6 +233,19 @@
   parent: WeaponPistolG22
   id: WeaponPistolG22NonLethal
   suffix: Пистолет [Non-lethal]
+  components:
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazinePistol
+        insertSound: /Audio/Weapons/Guns64/Pistols/beretta_reload.ogg
+        ejectSound: /Audio/Weapons/Guns64/Pistols/beretta_unload.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazinePistol
+            - MagazinePistolHighCapacity
 
 - type: entity
   name: HI Browning-88 M4
@@ -256,20 +272,21 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MagazinePistol57x28
+        startingItem: MagazinePistol
         insertSound: /Audio/Weapons/Guns64/Pistols/vp70_reload.ogg
         ejectSound: /Audio/Weapons/Guns64/Pistols/vp70_unload.ogg
         priority: 2
         whitelist:
           tags:
-            - MagazinePistol57x28
+            - MagazinePistol
+            - MagazinePistolHighCapacity
       gun_chamber:
         name: Chamber
-        startingItem: CartridgePistol57x28
+        startingItem: CartridgePistol
         priority: 1
         whitelist:
           tags:
-            - CartridgePistol57x28
+            - CartridgePistol
   - type: MagazineVisuals
     magState: mag
     steps: 1
@@ -304,20 +321,21 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MagazinePistol9x17
+        startingItem: MagazinePistol
         insertSound: /Audio/Weapons/Guns64/Pistols/colt_reload.ogg
         ejectSound: /Audio/Weapons/Guns64/Pistols/colt_unload.ogg
         priority: 2
         whitelist:
           tags:
-            - MagazinePistol9x17
+            - MagazinePistol
+            - MagazinePistolHighCapacity
       gun_chamber:
         name: Chamber
-        startingItem: CartridgePistol9x17
+        startingItem: CartridgePistol
         priority: 1
         whitelist:
           tags:
-            - CartridgePistol9x17
+            - CartridgePistol
   - type: MagazineVisuals
     magState: mag
     steps: 1
@@ -359,20 +377,21 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MagazinePistol57x28
+        startingItem: MagazinePistol
         insertSound: /Audio/Weapons/Guns64/Pistols/colt_reload.ogg
         ejectSound: /Audio/Weapons/Guns64/Pistols/colt_unload.ogg
         priority: 2
         whitelist:
           tags:
-            - MagazinePistol57x28
+            - MagazinePistol
+            - MagazinePistolHighCapacity
       gun_chamber:
         name: Chamber
-        startingItem: CartridgePistol57x28
+        startingItem: CartridgePistol
         priority: 1
         whitelist:
           tags:
-            - CartridgePistol57x28
+            - CartridgePistol
   - type: MagazineVisuals
     magState: mag
     steps: 1
@@ -466,19 +485,20 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MagazinePistol57x28Extd
+        startingItem: MagazinePistolHighCapacity
         insertSound: /Audio/Weapons/Guns64/SMGs/uzi_reload.ogg
         ejectSound: /Audio/Weapons/Guns64/SMGs/uzi_unload.ogg
         priority: 2
         whitelist:
           tags:
-            - MagazinePistol57x28
+            - MagazinePistol
+            - MagazinePistolHighCapacity
       gun_chamber:
         name: Chamber
         priority: 1
         whitelist:
           tags:
-            - CartridgePistol57x28
+            - CartridgePistol
   - type: Gun
     fireRate: 6
     cameraRecoilScalar: 0.5

@@ -216,7 +216,7 @@
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: MagazinePistol
-  result: MagazinePistol9x17
+  result: MagazinePistol
   materials:
     Steel: 145
 
@@ -239,7 +239,7 @@
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: MagazinePistolIncendiary
-  result: MagazinePistol9x17Incendiary
+  result: MagazinePistolIncendiary
   materials:
     Steel: 25
     Plastic: 120
@@ -254,7 +254,7 @@
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: MagazinePistolSubMachineGun
-  result: MagazinePistolSubMachineGun9x17
+  result: MagazinePistolSubMachineGun
   materials:
     Steel: 300
 
@@ -275,7 +275,7 @@
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: MagazineBoxPistol
-  result: MagazinePacketPistol9x17
+  result: MagazineBoxPistol
   materials:
     Steel: 600
 
@@ -296,7 +296,7 @@
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: MagazineRifle
-  result: MagazineRifle556UEG
+  result: MagazineRifle
   materials:
     Steel: 475
 
@@ -320,7 +320,7 @@
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: MagazineRifleIncendiary
-  result: MagazineRifle556UEGIncendiary
+  result: MagazineRifleIncendiary
   materials:
     Steel: 25
     Plastic: 450
@@ -335,7 +335,7 @@
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: MagazineLightRifle
-  result: MagazineRifleLight762x39
+  result: MagazineLightRifle
   materials:
     Steel: 565
 
@@ -359,7 +359,7 @@
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: MagazineLightRifleIncendiary
-  result: MagazineRifleLight762x39Incendiary
+  result: MagazineLightRifleIncendiary
   materials:
     Steel: 25
     Plastic: 540
@@ -367,14 +367,14 @@
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: MagazineBoxRifle
-  result: MagazinePacketRifle556UEG
+  result: MagazineBoxRifle
   materials:
     Steel: 750
 
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: MagazineBoxLightRifle
-  result: MagazinePacketRifle762x39
+  result: MagazineBoxLightRifle
   materials:
     Steel: 900
 
@@ -480,7 +480,7 @@
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: MagazineBoxPistolIncendiary
-  result: MagazinePacketPistol9x17Incendiary
+  result: MagazineBoxPistolIncendiary
   materials:
     Plastic: 600
 
@@ -494,14 +494,14 @@
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: MagazineBoxLightRifleIncendiary
-  result: MagazinePacketRifle762x39Incendiary
+  result: MagazineBoxLightRifleIncendiary
   materials:
     Plastic: 900
 
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: MagazineBoxRifleIncendiary
-  result: MagazinePacketRifle556UEGIncendiary
+  result: MagazineBoxRifleIncendiary
   materials:
     Plastic: 750
 

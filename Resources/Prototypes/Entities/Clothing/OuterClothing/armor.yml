@@ -18,9 +18,8 @@
       coefficients:
         Blunt: 0.70
         Slash: 0.70
-        Piercing: 0.60 #Can save you, but bullets will still hurt. Will take about 10 shots from a Viper before critting, as opposed to 7 while unarmored and 16~ with a bulletproof vest.
+        Piercing: 0.70 #Can save you, but bullets will still hurt. Will take about 10 shots from a Viper before critting, as opposed to 7 while unarmored and 16~ with a bulletproof vest.
         Heat: 0.80
-        ArmorPiercing: 0.90
   - type: ExplosionResistance
     damageCoefficient: 0.90
 
@@ -79,8 +78,7 @@
       coefficients:
         Blunt: 0.9
         Slash: 0.9
-        Piercing: 0.3
-        ArmorPiercing: 0.70
+        Piercing: 0.4
         Heat: 0.9
   - type: ExplosionResistance
     damageCoefficient: 0.80
@@ -127,11 +125,9 @@
       coefficients:
         Blunt: 0.35
         Slash: 0.35
-        Piercing: 0.30
-        ArmorPiercing: 0.60
+        Piercing: 0.35
         Heat: 0.35
         Caustic: 0.5
-        Stun: 0.3
   - type: ExplosionResistance
     damageCoefficient: 0.35
   - type: ClothingSpeedModifier
@@ -197,7 +193,6 @@
         Blunt: 0.5
         Slash: 0.5
         Piercing: 0.6
-        ArmorPiercing: 0.9
         Heat: 0.5
   - type: GroupExamine
 
@@ -217,7 +212,6 @@
         Blunt: 0.2
         Slash: 0.2
         Piercing: 0.2
-        ArmorPiercing: 0.6
         Heat: 0.5
         Radiation: 0
         Caustic: 0.75
@@ -288,7 +282,6 @@
         Blunt: 0.5
         Slash: 0.5
         Piercing: 0.6
-        ArmorPiercing: 0.9
         Heat: 0.5
         Caustic: 0.9
   - type: ClothingSpeedModifier
@@ -315,7 +308,6 @@
         Blunt: 0.5
         Slash: 0.5
         Piercing: 0.5
-        ArmorPiercing: 0.6
         Heat: 0.9
         Radiation: 0.8
   - type: ClothingSpeedModifier
@@ -349,7 +341,6 @@
           Blunt: 0.5
           Slash: 0.5
           Piercing: 0.4
-          ArmorPiercing: 0.8
           Heat: 0.5
     - type: ClothingSpeedModifier
       walkModifier: 0.9

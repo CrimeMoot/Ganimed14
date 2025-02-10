@@ -212,36 +212,17 @@
       - MagazineBoxPistol
       - MagazineBoxRifle
       - MagazineLightRifle
-#      - MagazineLightRifleEmpty
+      - MagazineLightRifleEmpty
       - MagazinePistol
-#      - MagazinePistolEmpty
+      - MagazinePistolEmpty
       - MagazinePistolSubMachineGun
-#      - MagazinePistolSubMachineGunEmpty
+      - MagazinePistolSubMachineGunEmpty
       - MagazinePistolSubMachineGunTopMounted
-#      - MagazinePistolSubMachineGunTopMountedEmpty
+      - MagazinePistolSubMachineGunTopMountedEmpty
       - MagazineRifle
-#      - MagazineRifleEmpty
-      # Backmen-ammonation-start
-      - MagazinePistolSubMachineGun57x28
-      - MagazinePistolSubMachineGunVector45ACP
-      - MagazineRifleFamas556UEG
-      - MagazineRifle762UEG
-      - MagazineRifle762UEGIncendiary
-      - MagazineRifleFamas556UEGIncendiary
-      - MagazinePistol45ACP
-      - MagazinePistol45ACPincendiary
-      - MagazinePistol57x28
-      - MagazinePistol57x28Incendiary
-      - MagazinePistol57x28Extd
-      - MagazineBoxHeavyRifle
-      - MagazinePacketRifle762x39
-      - MagazinePacketRifle762UEG
-      - MagazinePacketPistolACP
-      - MagazinePacketPistol57x28
-      - MagazinePacketPistol50AE
-      # Backmen-ammonation-end
+      - MagazineRifleEmpty
       - MagazineShotgun
-#      - MagazineShotgunEmpty
+      - MagazineShotgunEmpty
       - MagazineShotgunSlug
       - RiotShield
       - SpeedLoaderMagnum
@@ -252,7 +233,6 @@
       - CartridgeEphedrine # Ganimed
       - CartridgeIchor # Ganimed
       - SecHypo # Ganimed
-#      - SpeedLoaderMagnumEmpty
   - type: BlueprintReceiver
     whitelist:
       tags:
@@ -435,39 +415,20 @@
       - GrenadeFlash
       - HoloprojectorSecurity
       - MagazineBoxLightRifleIncendiary
-#      - MagazineBoxLightRifleUranium
+      - MagazineBoxLightRifleUranium
       - MagazineBoxMagnumIncendiary
-#      - MagazineBoxMagnumUranium
+      - MagazineBoxMagnumUranium
       - MagazineBoxPistolIncendiary
-#      - MagazineBoxPistolUranium
+      - MagazineBoxPistolUranium
       - MagazineBoxRifleIncendiary
-#      - MagazineBoxRifleUranium
+      - MagazineBoxRifleUranium
       - MagazineGrenadeEmpty
       - MagazineLightRifleIncendiary
-#      - MagazineLightRifleUranium
+      - MagazineLightRifleUranium
       - MagazinePistolIncendiary
-#      - MagazinePistolUranium
+      - MagazinePistolUranium
       - MagazineRifleIncendiary
-#      - MagazineRifleUranium
-      # Backmen-ammonation-start
-      - MagazinePistolSubMachineGun57x28
-      - MagazinePistolSubMachineGunVector45ACP
-      - MagazineRifleFamas556UEG
-      - MagazineRifle762UEG
-      - MagazineRifle762UEGIncendiary
-      - MagazineRifleFamas556UEGIncendiary
-      - MagazinePistol45ACP
-      - MagazinePistol45ACPincendiary
-      - MagazinePistol57x28
-      - MagazinePistol57x28Incendiary
-      - MagazinePistol57x28Extd
-      - MagazineBoxHeavyRifle
-      - MagazinePacketRifle762x39
-      - MagazinePacketRifle762UEG
-      - MagazinePacketPistolACP
-      - MagazinePacketPistol57x28
-      - MagazinePacketPistol50AE
-      # Backmen-ammonation-end
+      - MagazineRifleUranium
       - MagazineShotgunBeanbag
       - MagazineShotgunIncendiary
       - MagazineShotgunIncendiary
@@ -891,44 +852,29 @@
       - ForensicPad
       - Handcuffs
       - MagazineBoxLightRifle
-#      - MagazineBoxLightRiflePractice
+      - MagazineBoxLightRiflePractice
       - MagazineBoxMagnum
-#      - MagazineBoxMagnumPractice
+      - MagazineBoxMagnumPractice
       - MagazineBoxPistol
-#      - MagazineBoxPistolPractice
+      - MagazineBoxPistolPractice
       - MagazineBoxRifle
-#      - MagazineBoxRiflePractice
+      - MagazineBoxRiflePractice
       - MagazineLightRifle
-#      - MagazineLightRifleEmpty
+      - MagazineLightRifleEmpty
       - MagazinePistol
-#      - MagazinePistolEmpty
+      - MagazinePistolEmpty
       - MagazinePistolSubMachineGun
-#      - MagazinePistolSubMachineGunEmpty
+      - MagazinePistolSubMachineGunEmpty
       - MagazinePistolSubMachineGunTopMounted
-#      - MagazinePistolSubMachineGunTopMountedEmpty
+      - MagazinePistolSubMachineGunTopMountedEmpty
       - MagazineRifle
-#      - MagazineRifleEmpty
+      - MagazineRifleEmpty
       - MagazineShotgun
-#      - MagazineShotgunEmpty
+      - MagazineShotgunEmpty
       - MagazineShotgunSlug
       - RiotShield
       - SpeedLoaderMagnum
-#      - SpeedLoaderMagnumEmpty
-      # Backmen-ammonation-start
-      - MagazinePistolSubMachineGun57x28
-      - MagazinePistolSubMachineGunVector45ACP
-      - MagazineRifleFamas556UEG
-      - MagazineRifle762UEG
-      - MagazinePistol45ACP
-      - MagazinePistol57x28
-      - MagazinePistol57x28Extd
-      - MagazineBoxHeavyRifle
-      - MagazinePacketRifle762x39
-      - MagazinePacketRifle762UEG
-      - MagazinePacketPistolACP
-      - MagazinePacketPistol57x28
-      - MagazinePacketPistol50AE
-      # Backmen-ammonation-end
+      - SpeedLoaderMagnumEmpty
       - Stunbaton
       - TargetClown
       - TargetHuman
@@ -960,31 +906,20 @@
       - GrenadeFlash
       - HoloprojectorSecurity
       - MagazineBoxLightRifleIncendiary
-#      - MagazineBoxLightRifleUranium
+      - MagazineBoxLightRifleUranium
       - MagazineBoxMagnumIncendiary
-#      - MagazineBoxMagnumUranium
+      - MagazineBoxMagnumUranium
       - MagazineBoxPistolIncendiary
-#      - MagazineBoxPistolUranium
+      - MagazineBoxPistolUranium
       - MagazineBoxRifleIncendiary
-#      - MagazineBoxRifleUranium
+      - MagazineBoxRifleUranium
       - MagazineGrenadeEmpty
       - MagazineLightRifleIncendiary
-#      - MagazineLightRifleUranium
+      - MagazineLightRifleUranium
       - MagazinePistolIncendiary
-#      - MagazinePistolUranium
+      - MagazinePistolUranium
       - MagazineRifleIncendiary
-#      - MagazineRifleUranium
-      # Backmen-ammonation-start
-      - MagazineRifle762UEGIncendiary
-      - MagazineRifleFamas556UEGIncendiary
-      - MagazinePistol45ACPincendiary
-      - MagazinePistol57x28Incendiary
-      - MagazinePacketPistol50AEAP
-      - MagazinePacketRifle762x39AP
-      - MagazinePacketRifle762x39AP
-      - MagazinePacketRifle762UEGAP
-      - MagazinePacketRifle556UEGAP
-      # Backmen-ammonation-end
+      - MagazineRifleUranium
       - MagazineShotgunBeanbag
       - MagazineShotgunIncendiary
       - PortableRecharger
@@ -1056,31 +991,16 @@
         - MagazineBoxPistol
         - MagazineBoxRifle
         - MagazineLightRifle
-#        - MagazineLightRifleEmpty
+        - MagazineLightRifleEmpty
         - MagazinePistol
-#        - MagazinePistolEmpty
+        - MagazinePistolEmpty
         - MagazineRifle
-#        - MagazineRifleEmpty
+        - MagazineRifleEmpty
         - MagazineShotgun
-#        - MagazineShotgunEmpty
+        - MagazineShotgunEmpty
         - MagazineShotgunSlug
         - SpeedLoaderMagnum
-#        - SpeedLoaderMagnumEmpty
-      # Backmen-ammonation-start
-        - MagazinePistolSubMachineGun57x28
-        - MagazinePistolSubMachineGunVector45ACP
-        - MagazineRifleFamas556UEG
-        - MagazineRifle762UEG
-        - MagazinePistol45ACP
-        - MagazinePistol57x28
-        - MagazinePistol57x28Extd
-        - MagazineBoxHeavyRifle
-        - MagazinePacketRifle762x39
-        - MagazinePacketRifle762UEG
-        - MagazinePacketPistolACP
-        - MagazinePacketPistol57x28
-        - MagazinePacketPistol50AE
-      # Backmen-ammonation-end
+        - SpeedLoaderMagnumEmpty
     - type: MaterialStorage
       whitelist:
         tags:

@@ -7,7 +7,7 @@
     contents:
     - id: WeaponRifleAR18
       amount: 2
-    - id: MagazineRifle556UEG
+    - id: MagazineRifle
       amount: 4
 
 - type: entity
@@ -19,7 +19,7 @@
     contents:
     - id: WeaponSubMachineGunVectorSpecial
       amount: 2
-    - id: MagazinePistolSubMachineGunVector45ACP
+    - id: MagazinePistolSubMachineGun
       amount: 4
 
 - type: entity
@@ -55,7 +55,7 @@
     contents:
     - id: WeaponSubMachineGunMP5
       amount: 2
-    - id: MagazinePistolSubMachineGun9x17
+    - id: MagazinePistolSubMachineGun
       amount: 4
 
 - type: entity

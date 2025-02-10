@@ -8,7 +8,7 @@
     contents:
       - id: WeaponSubMachineGunMP5
         amount: 2
-      - id: MagazinePistolSubMachineGun9x17
+      - id: MagazinePistolSubMachineGun
         amount: 4
 
 - type: entity
@@ -65,9 +65,9 @@
   components:
   - type: StorageFill
     contents:
-    - id: WeaponPistolG22
+    - id: WeaponPistolACP14
       amount: 2
-    - id: MagazinePistol9x17
+    - id: MagazinePistol
       amount: 4
 
 - type: entity

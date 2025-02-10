@@ -37,7 +37,6 @@
   id: MagazineRifle
   name: "magazine (.20 rifle)"
   parent: BaseMagazineRifle
-  categories: [ HideSpawnMenu ]
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeRifle
@@ -53,7 +52,6 @@
   name: "magazine (.20 rifle any)"
   suffix: empty
   parent: MagazineRifle
-  categories: [ HideSpawnMenu ]
   components:
   - type: BallisticAmmoProvider
     proto: null
@@ -66,7 +64,6 @@
   id: MagazineRifleIncendiary
   name: "magazine (.20 rifle incendiary)"
   parent: MagazineRifle
-  categories: [ HideSpawnMenu ]
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeRifleIncendiary
@@ -75,7 +72,6 @@
   id: MagazineRiflePractice
   name: "magazine (.20 rifle practice)"
   parent: BaseMagazineRifle
-  categories: [ HideSpawnMenu ]
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeRiflePractice
@@ -90,7 +86,6 @@
   id: MagazineRifleUranium
   name: "magazine (.20 rifle uranium)"
   parent: BaseMagazineRifle
-  categories: [ HideSpawnMenu ]
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeRifleUranium

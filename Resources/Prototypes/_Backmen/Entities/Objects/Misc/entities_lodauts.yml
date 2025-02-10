@@ -241,9 +241,9 @@
     state: icon
   content:
   - WeaponRifleUTAPM1
-  - MagazineRifle762UEG
-  - MagazineRifle762UEG
-  - MagazineRifle762UEG
+  - MagazineRifle
+  - MagazineRifle
+  - MagazineRifle
 
 - type: thiefBackpackSet
   id: ShotgunGuardian17Set

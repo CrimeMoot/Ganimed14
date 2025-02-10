@@ -28,10 +28,6 @@
   - MagazineRifleIncendiary
   - MagazinePistolIncendiary
   - MagazineLightRifleIncendiary
-  - MagazineRifle762UEGIncendiary
-  - MagazineRifleFamas556UEGIncendiary
-  - MagazinePistol45ACPincendiary
-  - MagazinePistol57x28Incendiary
   - SpeedLoaderMagnumIncendiary
   - MagazineShotgunIncendiary
   - MagazineBoxPistolIncendiary
@@ -76,14 +72,14 @@
   tier: 1
   cost: 7500
   recipeUnlocks:
-#  - MagazineRifleUranium
-#  - MagazinePistolUranium
-#  - MagazineLightRifleUranium
+  - MagazineRifleUranium
+  - MagazinePistolUranium
+  - MagazineLightRifleUranium
   - SpeedLoaderMagnumUranium
-#  - MagazineBoxPistolUranium
-#  - MagazineBoxMagnumUranium
-#  - MagazineBoxLightRifleUranium
-#  - MagazineBoxRifleUranium
+  - MagazineBoxPistolUranium
+  - MagazineBoxMagnumUranium
+  - MagazineBoxLightRifleUranium
+  - MagazineBoxRifleUranium
   - BoxShotgunUranium
 
 - type: technology

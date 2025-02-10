@@ -2,7 +2,6 @@
   parent: [ BaseCartridge, BaseMajorContraband ]
   id: CartridgeAntiMateriel
   name: cartridge (.60 anti-materiel)
-  categories: [ HideSpawnMenu ]
   components:
   - type: Tag
     tags:

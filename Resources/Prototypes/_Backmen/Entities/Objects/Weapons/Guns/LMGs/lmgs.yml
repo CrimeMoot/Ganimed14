@@ -31,20 +31,20 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MagazineLightMachineGun762x39
+        startingItem: MagazineLightRiflePkBox
         insertSound: /Audio/Weapons/Guns64/Rifles/ak47_reload.ogg
         ejectSound: /Audio/Weapons/Guns64/Rifles/ak47_unload.ogg
         priority: 2
         whitelist:
           tags:
-            - MagazineLightMachineGunRPD
+            - MagazineLightRifleBox
       gun_chamber:
         name: Chamber
-        startingItem: CartridgeRifleLight762x39
+        startingItem: CartridgeLightRifle
         priority: 1
         whitelist:
           tags:
-            - CartridgeRifle762x39
+            - CartridgeLightRifle
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot

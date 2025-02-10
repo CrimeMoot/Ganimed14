@@ -23,13 +23,11 @@
 - type: startingGear
   id: RoboticistGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitRoboticist
-    back: ClothingBackpackScience
     shoes: ClothingShoesColorBlack
-    eyes: ClothingEyesGlassesWelding
-    outerClothing: ClothingOuterCoatRnd
     id: RoboticistPDA
-    ears: ClothingHeadsetScience
+    ears: ClothingHeadsetRobotics
+    belt: ClothingBeltUtilityFilled
+  #eyes: ClothingEyesGlassesWelding
   #innerClothingSkirt: ClothingUniformJumpskirtRoboticist
   #satchel: ClothingBackpackSatchelScienceFilled
   #duffelbag: ClothingBackpackDuffelScienceFilled

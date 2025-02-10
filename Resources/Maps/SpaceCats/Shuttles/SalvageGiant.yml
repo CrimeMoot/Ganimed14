@@ -2489,7 +2489,6 @@ entities:
           - LowImpassable
           layer:
           - BulletImpassable
-          - TeleportLayer
           density: 50
           hard: True
           restitution: 0
@@ -4151,7 +4150,6 @@ entities:
           - BlobImpassable
           layer:
           - BulletImpassable
-          - TeleportLayer
           density: 350
           hard: True
           restitution: 0
@@ -5010,7 +5008,6 @@ entities:
           - BlobImpassable
           layer:
           - BulletImpassable
-          - TeleportLayer
           density: 75
           hard: True
           restitution: 0

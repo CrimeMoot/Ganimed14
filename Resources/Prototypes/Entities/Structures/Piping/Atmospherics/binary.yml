@@ -83,6 +83,9 @@
   - type: ContainerContainer
     containers:
       VentCrawTube: !type:Container
+  - type: GuideHelp
+    guides:
+    - Pumps
 
 - type: entity
   parent: GasBinaryBase
@@ -149,6 +152,9 @@
     - type: ContainerContainer
       containers:
         VentCrawTube: !type:Container
+    - type: GuideHelp
+      guides:
+      - Pumps
 
 - type: entity
   parent: GasBinaryBase
@@ -187,6 +193,9 @@
     - type: ContainerContainer
       containers:
         VentCrawTube: !type:Container
+    - type: GuideHelp
+      guides:
+      - PassiveGate
 
 - type: entity
   parent: GasBinaryBase
@@ -237,7 +246,6 @@
         path: /Audio/Ambience/Objects/gas_hiss.ogg
     - type: AtmosMonitoringConsoleDevice
       navMapBlip: GasValve
-
     - type: VentCrawTube
       containerId: VentCrawTube
       connected: true
@@ -245,6 +253,9 @@
     - type: ContainerContainer
       containers:
         VentCrawTube: !type:Container
+    - type: GuideHelp
+      guides:
+      - ManualValve
 
 - type: entity
   parent: GasBinaryBase
@@ -313,6 +324,9 @@
   - type: ContainerContainer
     containers:
       VentCrawTube: !type:Container
+  - type: GuideHelp
+    guides:
+    - SignalValve
 
 - type: entity
   parent: GasBinaryBase
@@ -353,6 +367,9 @@
     - type: ContainerContainer
       containers:
         VentCrawTube: !type:Container
+    - type: GuideHelp
+      guides:
+      - GasCanisters
 
 - type: entity
   parent: GasVentPump
@@ -412,6 +429,9 @@
       enabled: true
     - type: AtmosMonitoringConsoleDevice
       navMapBlip: GasVentOpening
+    - type: GuideHelp
+      guides:
+      - AirVent
 
 - type: entity
   parent: [ BaseMachine, ConstructibleMachine ]
@@ -519,6 +539,9 @@
     node: radiator
   - type: AtmosMonitoringConsoleDevice
     navMapBlip: Thermoregulator
+  - type: GuideHelp
+    guides:
+    - Radiators
 
 - type: entity
   parent: HeatExchanger

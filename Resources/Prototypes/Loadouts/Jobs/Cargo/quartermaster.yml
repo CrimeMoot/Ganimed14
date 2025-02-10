@@ -64,6 +64,20 @@
   equipment:
     neck: ClothingNeckMantleQM
 
+- type: loadout # Ganimed
+  id: QuartermasterCloakLong
+  equipment:
+    neck: ClothingLongCloakQM
+  effects:
+  - !type:SponsorLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: MasterQM
+
+- type: loadout # Ganimed
+  id: QuartermasterBedsheet
+  equipment:
+    neck: BedsheetQM
+
 # OuterClothing
 - type: loadout
   id: QuartermasterWintercoat

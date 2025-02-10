@@ -18,7 +18,6 @@
       - id: ClothingOuterHardsuitWarden
       - id: HoloprojectorSecurity
       - id: ClothingEyesHudSecurity
-      - id: ClothingHeadCage # backmen
         amount: 2
       - id: BookSpaceLaw
       - id: ClothingHeadHatCapWardenAlt # Corvax-SecFashion
@@ -27,8 +26,6 @@
       - id: ClothingBackpackElectropack
         amount: 2
       - id: RemoteSignaller
-        amount: 2
-      - id: ClothingHeadCageSec # cats
         amount: 3
       - id: BoxImpantsDead # cats
 
@@ -55,17 +52,15 @@
       - id: DoorRemoteArmory
       - id: HoloprojectorSecurity
       - id: ClothingEyesHudSecurity
-      - id: ClothingHeadCage # backmen
         amount: 2
       - id: BookSpaceLaw
       - id: ClothingBackpackWarden # Corvax-SecFashion
       - id: ClothingBackpackElectropack
         amount: 2
       - id: RemoteSignaller
-        amount: 2
-      - id: ClothingHeadCageSec # cats
         amount: 3
       - id: ClothingHandsGlovesKravMaga # cats
+      - id: Binoculars
 
 - type: entity
   id: LockerSecurityFilled
@@ -128,9 +123,8 @@
       - id: MedkitToxinFilled
       - id: MedkitBurnFilled
         prob: 0.4
-      - id: ClothingHeadCage # backmen
       - id: ClothingHeadsetAltBrigmedic # backmen
-
+      
 - type: entity
   id: LockerDetectiveFilled
   suffix: Filled
@@ -151,7 +145,6 @@
       - id: DrinkDetFlask
       - id: ClothingHandsGlovesForensic
       - id: BookBusido # Corvax-Books
-      - id: ClothingHeadCage # backmen
         amount: 1
       - id: RubberStampDetective
       - id: HoloprojectorSecurity

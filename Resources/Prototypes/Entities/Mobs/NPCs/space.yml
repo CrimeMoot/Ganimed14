@@ -408,7 +408,7 @@
     - type: SalvageMobRestrictions
 
 - type: entity
-  parent: SimpleSpaceMobBase
+  parent: SimpleMobBase # Ganimed
   id: MobSnail
   name: snail
   description: Revolting unless you're french.
@@ -525,9 +525,11 @@
   - type: FireVisuals
     sprite: Mobs/Effects/onfire.rsi
     normalState: Mouse_burning
-  - type: Temperature
-    heatDamageThreshold: 500
-    coldDamageThreshold: 0
+  - type: Temperature  # Ganimed
+    heatDamageThreshold: 360
+    coldDamageThreshold: 285
+    currentTemperature: 310.15
+    specificHeat: 42
   - type: Reactive
     reactions:
     - reagents: [TableSalt, Saline]
@@ -552,7 +554,7 @@
   - type: MobStateActions
     actions:
       Alive:
-      - ActionSmite
+      - ActionSmiteNoReq
       Critical:
       - ActionCritSuccumb
       - ActionCritFakeDeath

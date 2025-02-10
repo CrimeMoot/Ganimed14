@@ -1,3 +1,62 @@
+# Timer, Ganimed
+- type: loadoutEffectGroup
+  id: MasterSalvager
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobSalvageSpecialist
+      time: 72000 #20 hrs
+
+# Head, Ganimed
+- type: loadout # TODO: Whitelist restriction
+  id: MercenaryHeadBand
+  equipment:
+    head: ClothingHeadBandMerc
+
+- type: loadout
+  id: SpaceBearHide
+  equipment:
+    head: MaterialHideBear
+  effects:
+  - !type:SponsorLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: MasterSalvager
+
+# Neck, Ganimed
+- type: loadout # TODO: Whitelist restriction
+  id: MinerCloak
+  equipment:
+    neck: ClothingNeckCloakMiner
+  effects:
+  #- !type:WhitelistedLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: MasterSalvager
+
+- type: loadout
+  id: GoliathCloak
+  equipment:
+    neck: ClothingNeckCloakGoliathCloak
+  effects:
+  - !type:SponsorLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: MasterSalvager
+
+# Headset, Ganimed
+- type: loadout
+  id: HeadsetCargo
+  equipment:
+    ears: ClothingHeadsetCargo
+
+- type: loadout # TODO: Whitelist restriction
+  id: HeadsetMining
+  equipment:
+    ears: ClothingHeadsetMining
+  effects:
+  #- !type:WhitelistedLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: MasterSalvager
+
 # Back
 - type: loadout
   id: SalvageSpecialistBackpack
@@ -19,6 +78,26 @@
   id: SalvageSpecialistWintercoat
   equipment:
     outerClothing: ClothingOuterWinterMiner
+
+# Belt, Ganimed
+- type: loadout # TODO: Whitelist restriction
+  id: SalvageWebbing
+  equipment:
+    belt: ClothingBeltSalvageWebbing
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MasterSalvager
+
+- type: loadout
+  id: SalvageOreBag
+  equipment:
+    belt: OreBag
+
+# Gloves, Ganimed
+- type: loadout # TODO: Whitelist restriction
+  id: MercenaryFingerlessGloves
+  equipment:
+    gloves: ClothingHandsGlovesMercFingerless
 
 # Shoes
 - type: loadout

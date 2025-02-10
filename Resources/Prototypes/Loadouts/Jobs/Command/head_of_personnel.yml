@@ -54,6 +54,33 @@
   equipment:
     neck: ClothingNeckMantleHOP
 
+- type: loadout # Ganimed
+  id: HoPCloakOriginal
+  equipment:
+    neck: ClothingNeckCloakHopOriginal
+
+- type: loadout # Ganimed
+  id: HoPCloakLong
+  equipment:
+    neck: ClothingLongCloakHOP
+  effects:
+  - !type:SponsorLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: MasterHoP
+
+- type: loadout # Ganimed
+  id: HoPBedsheet
+  equipment:
+    neck: BedsheetHOP
+
+- type: loadout # Ganimed
+  id: IanBedsheet
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ProfessionalHoP
+  equipment:
+    neck: BedsheetIan
+
 # Back
 - type: loadout
   id: HoPBackpackIan
@@ -68,3 +95,8 @@
   id: HoPWintercoat
   equipment:
     outerClothing: ClothingOuterWinterHoP
+
+- type: loadout # Ganimed
+  id: HoPCoat
+  equipment:
+    outerClothing: ClothingOuterCoatHOP

@@ -356,7 +356,6 @@
       - ClothingEyesGlassesChemical
       - CoreSilver
       #- QSI
-      - InsulativeHeadcage
       - HandTeleporter1
       - BluespacePillCanister # Backmen
       - FauxTileAstroGrass
@@ -364,6 +363,7 @@
       - FauxTileJungleAstroGrass
       - FauxTileAstroIce
       - FauxTileAstroSnow
+      - FauxTileAstroAsteroidSand
       - OreBagOfHolding
       - DeviceQuantumSpinInverter
       - EnergyDomeDirectionalTurtle # Ganimed -shield energy_barrier
@@ -945,8 +945,6 @@
       - WeaponLaserCarbine
       - WeaponLaserPistol
       - WeaponLaserCarbinePractice
-      - InsulativeHeadcage
-      - ClothingHeadHelmetInsulated
       - ShellSoulbreaker
       - WeaponXrayCannon
       - RapidSyringeGun # Goobstation

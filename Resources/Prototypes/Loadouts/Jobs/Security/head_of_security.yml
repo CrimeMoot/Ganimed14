@@ -39,6 +39,49 @@
   equipment:
     jumpsuit: ClothingUniformJumpskirtHosFormal
 
+- type: loadout # Ganimed
+  id: HeadofSecurityJumpsuitOld
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitHoSOld
+
+- type: loadout # Ganimed
+  id: HeadofSecurityJumpsuitGrey
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitHoSGrey
+
+- type: loadout # Ganimed
+  id: HeadofSecurityJumpsuitBlue
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitHoSBlue
+
+- type: loadout # Ganimed
+  id: HeadofSecurityJumpsuitOriginal
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitHoSOriginal
+
+- type: loadout # Ganimed
+  id: HeadofSecurityJumpskirtOriginal
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtHoSOriginal
+
+- type: loadout # Ganimed
+  id: HeadofSecurityMaleParadeUniform
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitHoSParadeMale
+  effects:
+  - !type:SponsorLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: MasterHoS
+
+- type: loadout # Ganimed
+  id: HeadofSecurityFemaleParadeUniform
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtHoSParadeMale
+  effects:
+  - !type:SponsorLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: MasterHoS
+
 # Head
 - type: loadout
   id: HeadofSecurityHead
@@ -50,11 +93,25 @@
   equipment:
     head: ClothingHeadHatBeretHoS
 
+- type: loadout
+  id: HeadofSecurityLeatherCap
+  equipment:
+    head: ClothingHeadHatCapHoS
+  effects:
+  - !type:SponsorLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: MasterHoS
+
 # Neck
 - type: loadout
   id: HeadofSecurityCloak
   equipment:
     neck: ClothingNeckCloakHos
+
+- type: loadout # Ganimed
+  id: HeadofSecurityCloakOriginal
+  equipment:
+    neck: ClothingNeckCloakHosOriginal
 
 - type: loadout
   id: HeadofSecurityMantle
@@ -69,6 +126,63 @@
   equipment:
     neck: ClothingNeckMantleHOS
 
+- type: loadout # Ganimed
+  id: HeadofSecurityShoulderMantle
+  equipment:
+    neck: ClothingNeckMantleHOSShoulder
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MasterHoS
+
+- type: loadout # Ganimed
+  id: HeadofSecurityCloakLong
+  equipment:
+    neck: ClothingLongCloakHOS
+  effects:
+  - !type:SponsorLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: MasterHoS
+
+- type: loadout # Ganimed
+  id: HeadofSecurityBedsheet
+  equipment:
+    neck: BedsheetHOS
+
+# Back, Ganimed
+- type: loadout
+  id: HeadofSecuritySatchel
+  equipment:
+    back: ClothingBackpackSatchelHoS
+  effects:
+  - !type:SponsorLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: MasterHoS
+
+# Belt, Ganimed
+- type: loadout
+  id: HeadofSecurityLeatherBelt
+  equipment:
+    belt: ClothingBeltHoS
+  effects:
+  - !type:SponsorLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: MasterHoS
+
+# Gloves, Ganimed
+- type: loadout
+  id: CombatGloves
+  equipment:
+    gloves: ClothingHandsGlovesCombat
+
+- type: loadout
+  id: HeadofSecurityLeatherGloves
+  equipment:
+    gloves: ClothingHandsGlovesLeatherHoS
+  effects:
+  - !type:SponsorLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: MasterHoS
+
 # OuterClothing
 - type: loadout
   id: HeadofSecurityCoat
@@ -80,20 +194,32 @@
   equipment:
     outerClothing: ClothingOuterWinterHoS
 
-- type: loadout
-  id: ClothingOuterWinterSeniorOfficer
+- type: loadout # Ganimed
+  id: HeadofSecurityUnarmoredWinterCoat
   equipment:
-    outerClothing: ClothingOuterWinterSeniorOfficer  # cats
+    outerClothing: ClothingOuterWinterHoSUnarmored
+
+- type: loadout # Ganimed
+  id: HeadofSecurityTrenchCoat
+  equipment:
+    outerClothing: Clothinghoscoat
+
+- type: loadout # Ganimed
+  id: HeadofSecurityGreatCoat
+  equipment:
+    outerClothing: ClothingOuterCoatHoSGreatcoat
+  effects:
+  - !type:SponsorLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: MasterHoS
 
 # Pocket #Backmen
-
 - type: loadout
   id: WeaponRevolverMatebaNew
   equipment:
     pocket1: WeaponRevolverMatebaNew
 
 # Pocket 2 #Backmen
-
 - type: loadout
   id: SpeedLoaderMagnum
   equipment:

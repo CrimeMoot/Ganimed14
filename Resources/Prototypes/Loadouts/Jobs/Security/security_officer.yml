@@ -67,6 +67,57 @@
   equipment:
     head: ClothingHeadHatSecurityTrooper
 
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: BlackCowboyHat
+  equipment:
+    head: ClothingHeadHatCowboyBlack
+
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: BountyHunterCowboyHat
+  equipment:
+    head: ClothingHeadHatCowboyBountyHunter
+  effects:
+  - !type:SponsorLoadoutEffect
+
+- type: loadout # Ganimed
+  id: LightRiotHelmet
+  equipment:
+    head: ClothingHeadHelmetRiot
+
+# Neck, Ganimed
+- type: loadout # TODO: Whitelist restriction
+  id: SecurityWhistle
+  equipment:
+    neck: SecurityWhistle
+  effects:
+  - !type:SponsorLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: SeniorOfficer
+
+- type: loadout # TODO: Whitelist restriction
+  id: SecurityCloak
+  equipment:
+    neck: ClothingCloakSec
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: SeniorOfficer
+
+# Glasses, Ganimed
+- type: loadout
+  id: Sunglasses
+  equipment:
+    eyes: ClothingEyesGlassesSunglasses
+
+- type: loadout
+  id: SecurityHud
+  equipment:
+    eyes: ClothingEyesHudSecurity
+
+- type: loadout
+  id: SecurityHudEyepatch
+  equipment:
+    eyes: ClothingEyesEyepatchHudSecurity
+
 # Jumpsuit
 - type: loadout
   id: SecurityJumpsuit
@@ -109,6 +160,11 @@
   equipment:
     jumpsuit: ClothingUniformJumpskirtSeniorOfficer
 
+- type: loadout # Ganimed
+  id: SecurityUniformBlueShirt
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSecBlue
+
 # Back
 - type: loadout
   id: SecurityBackpack
@@ -135,6 +191,13 @@
   id: SecurityWebbing
   equipment:
     belt: ClothingBeltSecurityWebbingFilled
+
+- type: loadout # Ganimed
+  id: AssaultBelt
+  equipment:
+    belt: ClothingBeltAssault
+  effects:
+  - !type:SponsorLoadoutEffect
 
 # Outerclothing
 - type: loadout
@@ -178,8 +241,48 @@
   equipment:
     outerClothing: ClothingOuterWinterSec
 
-# Shoes
 - type: loadout
+  id: SeniorOfficerWintercoat
+  equipment:
+    outerClothing: ClothingOuterWinterSeniorOfficer  # cats
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: SeniorOfficer
+
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: ArmorVestBulletproof
+  equipment:
+    outerClothing: ClothingOuterArmorBulletproof
+  effects:
+  - !type:SponsorLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: SeniorOfficer
+
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: ArmorVestReflective
+  equipment:
+    outerClothing: ClothingOuterArmorReflective
+  effects:
+  - !type:SponsorLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: SeniorOfficer
+
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: SecurityBombSuit
+  dummyEntity: ClothingOuterSuitBomb
+  effects:
+  - !type:SponsorLoadoutEffect
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:DepartmentTimeRequirement
+      department: Security
+      time: 108000 # 30 hrs
+  equipment:
+    outerClothing: ClothingOuterSuitBomb
+    head: ClothingHeadHelmetBombSuit
+
+# Shoes
+- type: loadout # TODO: Whitelist restriction
   id: CombatBoots
   equipment:
     shoes: ClothingShoesBootsCombatFilled
@@ -193,6 +296,13 @@
   id: SecurityWinterBoots
   equipment:
     shoes: ClothingShoesBootsWinterSecFilled
+
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: BlackCowboyBoots
+  equipment:
+    shoes: ClothingShoesBootsCowboyBlackFilled
+  effects:
+  - !type:SponsorLoadoutEffect
 
 # PDA
 - type: loadout
@@ -256,7 +366,6 @@
     pocket1: WeaponPistolM1911
 
 # Pocket 2 #Backmen
-
 - type: loadout
   id: MagazinePistol
   effects:

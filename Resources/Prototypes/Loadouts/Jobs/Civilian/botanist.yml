@@ -9,6 +9,38 @@
   equipment:
     head: ClothingHeadBandBotany
 
+- type: loadout # Ganimed
+  id: BotanistStrawHat
+  equipment:
+    head: ClothingHeadHatStrawHat
+
+- type: loadout # Ganimed
+  id: BotanistPoppy
+  equipment:
+    head: FoodPoppy
+
+- type: loadout # Ganimed
+  id: BotanistAmbrosia
+  equipment:
+    head: FoodAmbrosiaVulgaris
+
+- type: loadout # Ganimed
+  id: BotanistFlowerWreath
+  equipment:
+    head: ClothingHeadHatFlowerWreath
+
+- type: loadout # Ganimed
+  id: WatermelonHelmet
+  equipment:
+    head: ClothingHeadHatWatermelon
+
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: BotanistHeadBucket
+  equipment:
+    head: Bucket
+  effects:
+  - !type:SponsorLoadoutEffect
+
 # Jumpsuit
 - type: loadout
   id: BotanistJumpsuit
@@ -21,9 +53,14 @@
     jumpsuit: ClothingUniformJumpskirtHydroponics
 
 - type: loadout
-  id: BotanistOveralls
+  id: Overalls
   equipment:
     jumpsuit: ClothingUniformOveralls
+
+- type: loadout # Ganimed
+  id: BotanistOveralls
+  equipment:
+    jumpsuit: ClothingUniformOverallsOriginal
 
 # Back
 - type: loadout
@@ -41,6 +78,23 @@
   equipment:
     back: ClothingBackpackDuffelHydroponics
 
+# Belt, Ganimed
+- type: loadout
+  id: BotanistBelt
+  equipment:
+    belt: ClothingBeltPlantFilled
+
+- type: loadout
+  id: PlantBag
+  equipment:
+    belt: PlantBag
+
+# Gloves, Ganimed
+- type: loadout
+  id: BotanistLeatherGloves
+  equipment:
+    gloves: ClothingHandsGlovesLeather
+
 # Outer clothing
 - type: loadout
   id: BotanistApron
@@ -51,3 +105,9 @@
   id: BotanistWintercoat
   equipment:
     outerClothing: ClothingOuterWinterHydro
+
+# Shoes, Ganimed
+- type: loadout
+  id: GreenShoes
+  equipment:
+    shoes: ClothingShoesColorGreen

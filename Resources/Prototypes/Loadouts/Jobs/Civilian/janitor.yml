@@ -24,6 +24,18 @@
   equipment:
     jumpsuit: ClothingUniformJumpskirtJanitor
 
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: JanimaidUniform
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtJanimaid
+  effects:
+  - !type:SponsorLoadoutEffect
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:DepartmentTimeRequirement
+      department: Civilian
+      time: 36000 # 10 hrs
+
 # Gloves
 - type: loadout
   id: JanitorRubberGloves
@@ -45,6 +57,20 @@
   id: JanitorWintercoat
   equipment:
     outerClothing: ClothingOuterWinterJani
+
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: JanitorBioSuit
+  dummyEntity: ClothingOuterBioJanitor
+  effects:
+  #- !type:WhitelistedLoadoutEffect
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:DepartmentTimeRequirement
+      department: Medical
+      time: 108000 # 30 hrs
+  equipment:
+    outerClothing: ClothingOuterBioJanitor
+    head: ClothingHeadHatHoodBioJanitor
 
 # Misc
 - type: loadout

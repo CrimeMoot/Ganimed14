@@ -59,6 +59,20 @@
   equipment:
     neck: ClothingNeckMantleCMO
 
+- type: loadout # Ganimed
+  id: ChiefMedicalOfficerCloakLong
+  equipment:
+    neck: ClothingLongCloakCMO
+  effects:
+  - !type:SponsorLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: MasterCMO
+
+- type: loadout # Ganimed
+  id: ChiefMedicalOfficerBedsheet
+  equipment:
+    neck: BedsheetCMO
+
 # Outer clothing
 - type: loadout
   id: ChiefMedicalOfficerLabCoat
@@ -70,3 +84,19 @@
   equipment:
     outerClothing: ClothingOuterWinterCMO
 
+- type: loadout # Ganimed
+  id: ChiefMedicalOfficerBioSuit
+  dummyEntity: ClothingOuterBioCmo
+  equipment:
+    outerClothing: ClothingOuterBioCmo
+    head: ClothingHeadHatHoodBioCmo
+
+# Glasses, Ganimed
+- type: loadout # TODO: Whitelist restriction
+  id: MedicalSunglasses
+  equipment:
+    eyes: ClothingEyesGlassesHudSunglassesMedical
+  effects:
+  #- !type:WhitelistedLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: Commander

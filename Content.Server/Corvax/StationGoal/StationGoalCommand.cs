@@ -48,7 +48,6 @@ namespace Content.Server.Corvax.StationGoal
             }
 
         /// Ganimed-edit-start
-            var _chat = IoCManager.Resolve<IChatManager>();
             _chat.DispatchGlobalAnnouncement(
                 Loc.GetString("station-goal-announcement", ("goal", proto.Name)),
                 sender: Loc.GetString("station-goal-announcement-CentCom"),

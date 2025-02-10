@@ -32,8 +32,8 @@
 - type: startingGear
   id: DetectiveGear
   equipment:
-    eyes: ClothingEyesGlassesSecurity
     id: DetectivePDA
+    #eyes: ClothingEyesGlassesSecurity
     ears: ClothingHeadsetSecurity
     belt: ClothingBeltHolster
   storage:

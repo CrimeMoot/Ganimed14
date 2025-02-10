@@ -1225,7 +1225,6 @@ entities:
           - LowImpassable
           layer:
           - BulletImpassable
-          - TeleportLayer
           density: 50
           hard: True
           restitution: 0

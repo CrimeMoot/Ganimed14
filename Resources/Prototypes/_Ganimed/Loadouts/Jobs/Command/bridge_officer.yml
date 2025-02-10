@@ -1,0 +1,28 @@
+# Jumpsuit
+- type: loadout
+  id: BridgeOfficerUniform
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitBridgeOfficer
+
+- type: loadout
+  id: BridgeOfficerBlackJumpsuit
+  equipment:
+    jumpsuit: ClothingBlackJumpsuit
+
+# Head
+- type: loadout
+  id: BridgeOfficerBeret
+  equipment:
+    head: ClothingBlackBeret
+
+# Neck
+- type: loadout
+  id: BridgeOfficerMantle
+  equipment:
+    neck: ClothingNeckBlackMantle
+
+# Belt
+- type: loadout
+  id: BridgeOfficerWebbing
+  equipment:
+    belt: ClothingBlackWebbing

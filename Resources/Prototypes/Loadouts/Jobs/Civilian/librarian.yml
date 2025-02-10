@@ -18,3 +18,9 @@
   id: CuratorJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtCurator
+
+# Belt, Ganimed
+- type: loadout
+  id: BooksBag
+  equipment:
+    belt: BooksBag

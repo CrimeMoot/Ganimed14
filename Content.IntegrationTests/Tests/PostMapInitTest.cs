@@ -100,6 +100,7 @@ namespace Content.IntegrationTests.Tests
             "Loop",
             "Plasma",
             "Elkridge",
+            "Convex",
             //Start-Enterprise
             "ENTRSaltern",
             "ENTRCluster"

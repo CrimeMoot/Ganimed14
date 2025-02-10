@@ -20,6 +20,11 @@
   equipment:
     jumpsuit: ClothingUniformJumpskirtParamedic
 
+- type: loadout # Ganimed
+  id: ParamedicNTJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitParamedicNT
+
 # Outer clothing
 - type: loadout
   id: ParamedicWindbreaker

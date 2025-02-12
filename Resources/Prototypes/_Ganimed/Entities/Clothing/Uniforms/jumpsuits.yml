@@ -396,6 +396,7 @@
   - type: Clothing
     sprite: Corvax/Clothing/Uniforms/Jumpsuit/psychologist.rsi
 
+- type: entity
   parent: [ClothingUniformBase, BaseCommandContraband]
   id: ClothingUniformJumpsuitCaptainParadeMale
   name: captain's parade uniform

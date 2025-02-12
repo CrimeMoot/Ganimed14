@@ -1,0 +1,29 @@
+<npc:NpcFactionEditWindow xmlns="https://spacestation14.io"
+         xmlns:gfx="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
+         xmlns:npc="clr-namespace:Content.Client._Ganimed.NPC.UI"
+         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+         x:Class="Content.Client._Ganimed.NPC.UI.NpcFactionEditWindow"
+         Title="{Loc 'npc-faction-ui-window-title'}"
+         MinWidth="320"
+         MaxWidth="320"
+         MinHeight="320"
+         MaxHeight="500">
+    <BoxContainer Margin="4 0" Orientation="Vertical">
+        <BoxContainer Orientation="Vertical">
+            <Label Name="NpcName" Text="{Loc 'npc-faction-ui-window-name-label-loading'}" />
+        </BoxContainer>
+        <Label Text="{Loc 'npc-faction-ui-window-factions-list-label'}" />
+        <BoxContainer VerticalExpand="True" HorizontalExpand="True">
+            <ScrollContainer HorizontalExpand="True" MinHeight="300">
+                <PanelContainer>
+                    <PanelContainer.PanelOverride>
+                        <gfx:StyleBoxFlat BackgroundColor="#202028" />
+                    </PanelContainer.PanelOverride>
+                    <BoxContainer Name="FactionsList" Orientation="Vertical">
+                        <!-- Filled from .xaml.cs -->
+                    </BoxContainer>
+                </PanelContainer>
+            </ScrollContainer>
+        </BoxContainer>
+    </BoxContainer>
+</npc:NpcFactionEditWindow>

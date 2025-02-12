@@ -15,12 +15,12 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobResearchDirector
-      time: 144000 #40 hrs
+      time: 108000 #30 hrs
   - !type:JobRequirementLoadoutEffect
     requirement:
       !type:RoleTimeRequirement
       role: JobChiefEngineer
-      time: 144000 #40 hrs
+      time: 108000 #30 hrs
 
 # Head
 - type: loadout
@@ -118,4 +118,4 @@
   effects:
   #- !type:WhitelistedLoadoutEffect
   - !type:GroupLoadoutEffect
-    proto: MasterRD
+    proto: MasterEngineeringScientist

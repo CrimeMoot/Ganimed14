@@ -29,6 +29,7 @@ loadout-group-theatrical-attire = Театральные костюмы
 loadout-group-mime-neck = Шарф мима
 # Cargo
 loadout-group-salvage-specialist-head = Головной убор утилизатора
+loadout-group-salvage-specialist-headset = Гарнитура утилизатора
 loadout-group-salvage-specialist-neck = Плащ утилизатора
 loadout-group-salvage-specialist-belt = Пояс утилизатора
 loadout-group-salvage-specialist-gloves = Перчатки утилизатора

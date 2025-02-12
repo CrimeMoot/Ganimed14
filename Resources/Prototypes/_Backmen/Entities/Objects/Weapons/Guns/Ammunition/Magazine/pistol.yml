@@ -75,10 +75,11 @@
     zeroVisible: false
   - type: Appearance
 
-- type: entity
+- type: entity #ww2
   id: MagazinePistolBoxSubMachineGun
   name: SMG box magazine (.9×19mm parabellum)
   parent: BaseItem
+  categories: [ HideSpawnMenu ]
   components:
   - type: Tag
     tags:
@@ -108,10 +109,11 @@
     zeroVisible: false
   - type: Appearance
 
-- type: entity
+- type: entity #ww2
   id: MagazinePistolDrumSubMachineGun
   name: SMG Drum magazine (.9×19mm parabellum)
   parent: BaseItem
+  categories: [ HideSpawnMenu ]
   components:
   - type: Tag
     tags:

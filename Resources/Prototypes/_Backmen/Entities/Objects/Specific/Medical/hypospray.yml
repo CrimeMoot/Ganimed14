@@ -104,17 +104,15 @@
   - type: SolutionContainerManager
     solutions:
       pen:
-        maxVol: 40
+        maxVol: 28
         reagents:
-        - ReagentId: Ultravasculine
-          Quantity: 20
-        - ReagentId: Epinephrine
-          Quantity: 10
+        - ReagentId: Dylovene
+          Quantity: 18
         - ReagentId: Ambuzol
           Quantity: 10
   - type: Hypospray
     solutionName: pen
-    transferAmount: 55
+    transferAmount: 28
   - type: Sprite
     sprite: Objects/Specific/Medical/medipen.rsi
     netsync: false

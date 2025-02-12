@@ -24,11 +24,8 @@
     soundEmpty:
       path: /Audio/_Ganimed/Weapons/Guns/Empty/dry_fire.ogg
   - type: Battery
-    maxCharge: 1300
-    startingCharge: 1300
-  - type: BatterySelfRecharger
-    autoRecharge: true
-    autoRechargeRate: 20
+    maxCharge: 1400
+    startingCharge: 1400
   - type: ProjectileBatteryAmmoProvider
     proto: BulletDisabler
     fireCost: 100
@@ -39,7 +36,7 @@
       name: disable
       state: disabler
     - proto: lethaldominator
-      fireCost: 100
+      fireCost: 200
       name: lethal
       state: lethal
   - type: MagazineVisuals
@@ -62,6 +59,9 @@
   parent: EmitterBolt
   categories: [ HideSpawnMenu ]
   components:
+  - type: Reflective
+    reflective:
+    - Energy
   - type: Sprite
     sprite: Backmen/Objects/Weapons/Guns/Energy/x01.rsi
     layers:
@@ -76,8 +76,6 @@
     color: "#ff4300"
     radius: 2.0
     energy: 7.0
-  - type: IgniteOnCollide
-    fireStacks: 0.50
   - type: Fixtures
     fixtures:
       projectile:

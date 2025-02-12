@@ -183,7 +183,7 @@
   components:
   - type: StorageFill
     contents:
-    - id: WeaponPistolACP14
+    - id: WeaponPistolG22 #ganimed
       amount: 4
     - id: MagazinePistol
       amount: 8
@@ -195,7 +195,7 @@
   components:
   - type: StorageFill
     contents:
-    - id: WeaponRifleAR18
+    - id: WeaponRifleM28
       amount: 2
     - id: MagazineRifle
       amount: 4
@@ -207,7 +207,7 @@
   components:
   - type: StorageFill
     contents:
-    - id: WeaponSubMachineGunVectorSpecial
+    - id: WeaponSubMachineGunMP5
       amount: 2
     - id: MagazinePistolSubMachineGun
       amount: 4
@@ -244,9 +244,9 @@
   components:
   - type: StorageFill
     contents:
-    - id: WeaponSubMachineGunMP5
+    - id: WeaponSubMachineGunVectorSpecial
       amount: 2
-    - id: MagazinePistolSubMachineGunTopMounted
+    - id: MagazinePistolSubMachineGun
       amount: 4
 
 - type: entity
@@ -256,5 +256,5 @@
   components:
   - type: StorageFill
     contents:
-    - id: WeaponEarthGovLaserRifle
+    - id: WeaponLaserCarbine
       amount: 3

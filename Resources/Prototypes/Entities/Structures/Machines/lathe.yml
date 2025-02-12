@@ -855,13 +855,16 @@
       - MagazineBoxLightRiflePractice
       - MagazineBoxMagnum
       - MagazineBoxMagnumPractice
+      - MagazineBoxPistol45ACP #Ganimed
       - MagazineBoxPistol
       - MagazineBoxPistolPractice
       - MagazineBoxRifle
       - MagazineBoxRiflePractice
       - MagazineLightRifle
-      - MagazineLightRifleEmpty
+      - MagazineLightRifleEmpty 
+      - MagazinePistol45ACP #Ganimed
       - MagazinePistol
+      - MagazinePistol45ACPEmpty #Ganimed
       - MagazinePistolEmpty
       - MagazinePistolSubMachineGun
       - MagazinePistolSubMachineGunEmpty

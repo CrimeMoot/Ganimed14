@@ -1,0 +1,9 @@
+ent-WeaponPistolM1911 = Дознаватель
+ent-CartridgePistol45ACP = патрон (.45 ACP)
+    .desc = { ent-BaseCartridgePistol.desc }ь
+ent-MagazinePistol45ACP = пистолетный магазин (.45 ACP)
+    .desc = { ent-BaseMagazinePistol.desc }
+ent-MagazinePistol45ACPEmpty = пистолетный магазин (.45 ACP любые)
+    .suffix = Пустой
+ent-MagazineBoxPistol45ACP = коробка патронов (.45 ACP)
+    .desc = { ent-BaseMagazineBoxPistol.desc }

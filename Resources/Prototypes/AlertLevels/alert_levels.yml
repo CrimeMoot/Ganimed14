@@ -44,22 +44,6 @@
       color: PaleVioletRed
       emergencyLightColor: PaleVioletRed
       forceEnableEmergencyLights: true
-    sierra:
-      announcement: alert-level-sierra-announcement
-      selectable: false
-      sound: /Audio/_Ganimed/AlertLevels/sierra.ogg # Cats edit
-      disableSelection: true
-      color: LightSeaGreen
-      emergencyLightColor: LightSeaGreen
-      forceEnableEmergencyLights: true
-    enigma:
-      announcement: alert-level-enigma-announcement
-      selectable: false
-      sound: /Audio/_Ganimed/AlertLevels/enigma.ogg # Cats edit
-      disableSelection: true
-      color: '#EF7200'
-      emergencyLightColor: '#EF7200'
-      forceEnableEmergencyLights: true
     delta:
       announcement: alert-level-delta-announcement
       selectable: false

@@ -987,6 +987,13 @@
   - SpaceBearHide
 
 - type: loadoutGroup # Ganimed
+  id: SalvageSpecialistHeadset
+  name: loadout-group-salvage-specialist-headset
+  loadouts:
+  - HeadsetCargo
+  - HeadsetMining
+
+- type: loadoutGroup # Ganimed
   id: SalvageSpecialistNeck
   name: loadout-group-salvage-specialist-neck
   minLimit: 0

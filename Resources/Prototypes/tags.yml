@@ -31,14 +31,13 @@
   id: ArtifactFragment
 
 - type: Tag
-<<<<<<< HEAD
   id: ArtificialBluespaceCrystal
-=======
-  id: BroneArachne
->>>>>>> upstream/master
 
 - type: Tag
   id: ATVKeys
+
+- type: Tag
+  id: BroneArachne
 
 - type: Tag
   id: Balloon

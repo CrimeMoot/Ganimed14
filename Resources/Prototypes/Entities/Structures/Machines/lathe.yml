@@ -211,6 +211,7 @@
     - SecurityExplosives
     - SecurityEquipment
     - SecurityWeapons
+    - SecurityAmmo
 
 - type: entity
   id: ProtolatheHyperConvection
@@ -408,6 +409,7 @@
     - SecurityEquipmentStatic
     - SecurityPracticeStatic
     - SecurityWeaponsStatic
+    - SecurityAmmoStatic
     dynamicPacks:
     - SecurityEquipment
     - SecurityBoards

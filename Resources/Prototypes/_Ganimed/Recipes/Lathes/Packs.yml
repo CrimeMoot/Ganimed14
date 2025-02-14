@@ -34,3 +34,8 @@
   id: ConcentratedLaserWeaponry
   recipes:
   - BorgModuleCombat
+
+- type: latheRecipePack
+  id: PlantAnalyzer
+  recipes:
+  - PlantAnalyzer

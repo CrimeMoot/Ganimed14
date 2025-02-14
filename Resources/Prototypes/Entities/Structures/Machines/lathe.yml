@@ -206,6 +206,7 @@
     - BackmenTranslators # backmen
     - BackmenProtolathe # backmen
     - BackmenSurgery # backmen
+    - ClothingEyesNightVisionGoggles # Backmen
   - type: EmagLatheRecipes
     emagDynamicPacks:
     - SecurityExplosives
@@ -265,6 +266,8 @@
     - MechBoards
     - ShuttleBoards
     - BackmenBoards # backmen
+    - MachineBluespaceTransitorCircuitboard # Ganimed
+    - MachineBluespaceHarvesterCircuitboard # Ganimed
   - type: EmagLatheRecipes
     emagDynamicPacks:
     - SecurityBoards
@@ -332,6 +335,8 @@
     - ADTMechEnergyGunHeavyTechnology # Ganimed
     - ADTMechGunSmallTechnology # Ganimed
     - ADTMechGunHeavyTechnology # Ganimed
+    - ADTGygaxTechnology # Ganimed
+    - ClothingEyesThermalVisionGoggles # Ganimed
   - type: MaterialStorage
     whitelist:
       tags:

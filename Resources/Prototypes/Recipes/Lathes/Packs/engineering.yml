@@ -55,9 +55,9 @@
 - type: latheRecipePack
   id: AdvancedTools
   recipes:
-  - PowerDrill
+  - RnDPowerDrill
   - WelderExperimental
-  - JawsOfLife
+  - RnDJawsOfLife
   - Fulton
   - FultonBeacon
 

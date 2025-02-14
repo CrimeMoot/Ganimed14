@@ -2,9 +2,7 @@
 - type: latheRecipePack
   id: BackmenProtolathe
   recipes:
-  - InsulativeHeadcage
   - HandTeleporter1
   - EnergyDomeDirectionalTurtle
-  - ClothingHeadHelmetInsulated
   - CoreSilver
   

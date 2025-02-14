@@ -54,11 +54,7 @@
       "name": "heavylaser"
     },
     {
-<<<<<<< HEAD
-        "name": "adtomnilaser"
-=======
       "name": "heavylaser_flash"
->>>>>>> upstream/master
     }
   ]
 }

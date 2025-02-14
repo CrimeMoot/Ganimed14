@@ -1,4 +1,16 @@
 - type: latheRecipePack
+  id: ADTOdysseusTechnology
+  recipes:
+  - ADTOdysseusHarness
+  - ADTOdysseusLArm
+  - ADTOdysseusRArm
+  - ADTOdysseusLLeg
+  - ADTOdysseusRLeg
+  - ADTOdysseusHead
+  - ADTOdysseusCentralElectronics
+  - ADTOdysseusPeripheralsElectronics
+
+- type: latheRecipePack
   id: ADTClarkeTechnology
   recipes:
   - ADTClarkeHarness
@@ -9,6 +21,19 @@
   - ADTClarkeHead
   - ADTClarkeCentralElectronics
   - ADTClarkePeripheralsElectronics
+
+- type: latheRecipePack
+  id: ADTGygaxTechnology
+  recipes:
+  - ADTGygaxHarness
+  - ADTGygaxLArm
+  - ADTGygaxRArm
+  - ADTGygaxLLeg
+  - ADTGygaxRLeg
+  - ADTGygaxArmorPlates
+  - ADTGygaxHead
+  - ADTGygaxCentralElectronics
+  - ADTGygaxPeripheralsElectronics
 
 - type: latheRecipePack
   id: ADTDurandTechnology

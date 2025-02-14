@@ -23,6 +23,7 @@ sponsor-win-manager-ghost-tier13 = 13
 sponsor-win-manager-ghost-tier14 = 14
 sponsor-win-manager-ghost-Luna = Луна
 sponsor-win-manager-ghost-p03 = p03
+sponsor-win-manager-ghost-astronaut = Астронафт
 sponsor-win-manager-theme = Тема призрака:
 sponsor-win-manager-tier-0 = Бесплатный
 sponsor-win-manager-tier-1 = EAT

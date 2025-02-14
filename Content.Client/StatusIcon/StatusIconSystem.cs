@@ -4,6 +4,7 @@ using Content.Shared.StatusIcon;
 using Content.Shared.StatusIcon.Components;
 using Content.Shared.Stealth.Components;
 using Content.Shared.Whitelist;
+using Robust.Client.GameObjects;
 using Robust.Client.Graphics;
 using Robust.Client.Player;
 using Robust.Shared.Configuration;
@@ -86,7 +87,11 @@ public sealed class StatusIconSystem : SharedStatusIconSystem
         if (data.HideOnStealth && TryComp<StealthComponent>(ent, out var stealth) && stealth.Enabled)
             return false;
 
+<<<<<<< HEAD
         if (data.HideOnStealth && HasComp<EntityActiveInvisibleComponent>(ent)) // Ganimed edit
+=======
+        if (TryComp<SpriteComponent>(ent, out var sprite) && !sprite.Visible)
+>>>>>>> upstream/master
             return false;
 
         if (data.ShowTo != null && !_entityWhitelist.IsValid(data.ShowTo, viewer))

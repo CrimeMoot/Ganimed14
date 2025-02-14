@@ -94,17 +94,20 @@ namespace Content.IntegrationTests.Tests
             "Reach",
             "Train",
             "Oasis",
-            "Cog",
             "Gate",
             "Amber",
             "Loop",
             "Plasma",
             "Elkridge",
             "Convex",
+<<<<<<< HEAD
             //Start-Enterprise
             "ENTRSaltern",
             "ENTRCluster"
             //End-Enterprise
+=======
+            "Relic"
+>>>>>>> upstream/master
         };
 
         /// <summary>

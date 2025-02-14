@@ -31,7 +31,11 @@
   id: ArtifactFragment
 
 - type: Tag
+<<<<<<< HEAD
   id: ArtificialBluespaceCrystal
+=======
+  id: BroneArachne
+>>>>>>> upstream/master
 
 - type: Tag
   id: ATVKeys
@@ -1224,6 +1228,9 @@
 
 - type: Tag
   id: Spray
+
+- type: Tag
+  id: SprayNozzle
 
 - type: Tag
   id: SpreaderIgnore

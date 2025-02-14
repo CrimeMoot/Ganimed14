@@ -87,11 +87,10 @@ public sealed class StatusIconSystem : SharedStatusIconSystem
         if (data.HideOnStealth && TryComp<StealthComponent>(ent, out var stealth) && stealth.Enabled)
             return false;
 
-<<<<<<< HEAD
         if (data.HideOnStealth && HasComp<EntityActiveInvisibleComponent>(ent)) // Ganimed edit
-=======
+            return false;
+
         if (TryComp<SpriteComponent>(ent, out var sprite) && !sprite.Visible)
->>>>>>> upstream/master
             return false;
 
         if (data.ShowTo != null && !_entityWhitelist.IsValid(data.ShowTo, viewer))

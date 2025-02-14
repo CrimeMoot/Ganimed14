@@ -102,7 +102,7 @@ namespace Content.IntegrationTests.Tests
             "Convex",
             //Start-Enterprise
             "ENTRSaltern",
-            "ENTRCluster"
+            "ENTRCluster",
             //End-Enterprise
             "Relic"
         };

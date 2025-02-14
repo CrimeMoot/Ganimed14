@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 Entries:
 - author: Spessmann
   changes:
@@ -2720,9 +2719,6 @@ Entries:
   id: 7447
   time: '2024-09-27T07:22:17.0000000+00:00'
   url: https://github.com/space-wizards/space-station-14/pull/32012
-=======
-﻿Entries:
->>>>>>> upstream/master
 - author: LittleNorthStar
   changes:
   - message: Noir trenchcoat to detective loadout

@@ -100,14 +100,11 @@ namespace Content.IntegrationTests.Tests
             "Plasma",
             "Elkridge",
             "Convex",
-<<<<<<< HEAD
             //Start-Enterprise
             "ENTRSaltern",
             "ENTRCluster"
             //End-Enterprise
-=======
             "Relic"
->>>>>>> upstream/master
         };
 
         /// <summary>

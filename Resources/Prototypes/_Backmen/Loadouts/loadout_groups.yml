@@ -1,29 +1,6 @@
 ﻿# CentCom
 
 # Cargo
-- type: loadoutGroup
-  id: BKCCCargoJumpsuit
-  name: loadout-group-captain-jumpsuit
-  loadouts:
-  - BKCCCargoJumpsuit
-  - BKCCCargoJumpskirtCargo
-
-- type: loadoutGroup
-  id: BKCCCargoNeck
-  name: loadout-group-captain-neck
-  minLimit: 0
-  loadouts:
-  - BKCCCargoCloak
-  - BKCCCargoCloakFormal
-  - BKCCCargoMantle
-
-- type: loadoutGroup
-  id: BKCCCargoBackpack
-  name: loadout-group-captain-backpack
-  loadouts:
-  - BKCCCargoBackpack
-  - BKCCCargoSatchel
-  - BKCCCargoDuffel
 
 # Security
 
@@ -37,6 +14,7 @@
   - ClothingSkirtBlueShield
   - ClothingUniformJumpsuitBlueshields # cats
   - ClothingUniformJumpskirtBlueshields # cats
+  - BlueshieldUniformSuit # Ganimed
 
 - type: loadoutGroup
   id: BlueShieldBackpack
@@ -54,6 +32,7 @@
   - ClothingNeckCloakBlueshields
   - ClothingNeckMantleBlueShield
   - BlueshieldCloak
+  - BlueShieldTie # Ganimed
 
 - type: loadoutGroup
   id: ClothingHeadHatBlueShield
@@ -118,7 +97,19 @@
   loadouts:
   - ClothingUniformJumpsuitBrigmedic
   - ClothingUniformJumpskirtBrigmedic
+  - OriginalBrigmedicJumpsuit # Ganimed
+  - OriginalBrigmedicJumpskirt # Ganimed
+  - BlackBrigmedicJumpsuit # Ganimed
+  - BlackBrigmedicJumpskirt # Ganimed
   - ClothingUniformJumpskirtOfLife
+
+- type: loadoutGroup # Ganimed
+  id: BrigmedicGlasses
+  name: loadout-group-brigmedic-glasses
+  loadouts:
+  - MedicalHud
+  - MedSecHud
+  - MedicalSunglassesBrigmedic
 
 - type: loadoutGroup
   id: ClothingBackpackBrigmedic
@@ -141,10 +132,11 @@
   id: ClothingOuterBrigmedic
   name: loadout-group-brigmedic-outer
   loadouts:
-  - ClothingOuterVestArmorMedSec
   - ClothingOuterCoatAMG
+  - ClothingOuterVestArmorMedSec
   - ClothingOuterVestSecurityMedic
   - ClothingOuterCoatLabSecurityMedic
+  - SecurityBioSuit # Ganimed
 
 - type: loadoutGroup
   id: ClothingEarBrigmedic
@@ -159,8 +151,17 @@
   minLimit: 0
   loadouts:
   - ClothingMaskBreathMedicalSecurity
-  - ClothingMaskSterile
+  - ClothingMaskBreathMedical # Ganimed
+  - SterileMask # Ganimed
   - ClothingMaskGasSecurity
+
+- type: loadoutGroup # Ganimed
+  id: ClothingShoesBrigmedic
+  name: loadout-group-brigmedic-shoes
+  loadouts:
+  - JackSecBoots
+  - SecurityWinterBoots
+  - RedShoes
 
 # Miscellaneous
 - type: loadoutGroup

@@ -384,4 +384,14 @@
   - type: Tag
     tags:
     - WhitelistChameleon
-    
+
+- type: entity
+  parent: [ClothingUniformBase, BaseCommandContraband]
+  id: ClothingUniformJumpsuitCaptainParadeMale
+  name: captain's parade uniform
+  description: Captain's luxury-wear, for special occasions.
+  components:
+  - type: Sprite
+    sprite: _Ganimed/Clothing/Uniforms/Jumpsuit/cap_parade.rsi
+  - type: Clothing
+    sprite: _Ganimed/Clothing/Uniforms/Jumpsuit/cap_parade.rsi

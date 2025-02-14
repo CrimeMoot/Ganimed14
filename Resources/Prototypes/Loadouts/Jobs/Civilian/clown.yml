@@ -9,6 +9,12 @@
   equipment:
     head: ClothingHeadHatJesterAlt
 
+# Neck, Ganimed
+- type: loadout
+  id: ClownBedsheet
+  equipment:
+    neck: BedsheetClown
+
 # Jumpsuit
 - type: loadout
   id: ClownSuit
@@ -46,6 +52,18 @@
   equipment:
     back: ClothingBackpackDuffelClown
 
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: CluwneBackpackJigglesVonJonkertonRemovable
+  equipment:
+    back: ClothingBackpackCluwneRemoveable
+  effects:
+  - !type:SponsorLoadoutEffect
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobClown
+      time: 36000 # 10hr
+
 # Shoes
 - type: loadout
   id: ClownShoes
@@ -57,6 +75,17 @@
   equipment:
     shoes: ClothingShoesJester
 
+- type: loadout # Ganimed
+  id: LargeClownShoes
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobClown
+      time: 180000 # 50hr
+  equipment:
+    shoes: ClothingShoesClownLarge
+
 # Outer clothing
 - type: loadout
   id: ClownRobes
@@ -67,3 +96,118 @@
   id: ClownWintercoat
   equipment:
     outerClothing: ClothingOuterWinterClown
+
+# Theatrical attire, Ganimed
+- type: loadout
+  id: TheatreSantaHat
+  storage:
+    back:
+    - ClothingHeadHatSantahat
+
+- type: loadout
+  id: TheatreSantaSuit
+  storage:
+    back:
+    - ClothingOuterSanta
+
+- type: loadout
+  id: TheatreWitchHat
+  storage:
+    back:
+    - ClothingHeadHatWitch
+
+- type: loadout
+  id: TheatreWitchHat1
+  storage:
+    back:
+    - ClothingHeadHatWitch1
+
+- type: loadout
+  id: TheatreWitchRobes
+  storage:
+    back:
+    - ClothingOuterSuitWitchRobes
+
+- type: loadout
+  id: TheatreCarpSuit
+  storage:
+    back:
+    - ClothingOuterSuitCarp
+
+- type: loadout
+  id: TheatreCardborgHead
+  storage:
+    back:
+    - ClothingHeadHatCardborg
+
+- type: loadout
+  id: TheatreCardborgSuit
+  storage:
+    back:
+    - ClothingOuterCardborg
+
+- type: loadout
+  id: TheatreChickenHead
+  storage:
+    back:
+    - ClothingHeadHatChickenhead
+
+- type: loadout
+  id: TheatreChickenSuit
+  storage:
+    back:
+    - ClothingOuterSuitChicken
+
+- type: loadout
+  id: TheatreMonkeyHat
+  storage:
+    back:
+    - ClothingHeadHatAnimalMonkey
+
+- type: loadout
+  id: TheatreMonkeySuit
+  storage:
+    back:
+    - ClothingOuterSuitMonkey
+
+- type: loadout
+  id: TheatreRedRacoonHat
+  storage:
+    back:
+    - ClothingHeadHatRedRacoon
+
+- type: loadout
+  id: TheatreRedRacoonSuit
+  storage:
+    back:
+    - ClothingOuterRedRacoon
+
+- type: loadout
+  id: TheatreShrineMaidenWig
+  storage:
+    back:
+    - ClothingHeadHatShrineMaidenWig
+
+- type: loadout
+  id: TheatreShrineMaidenOutfit
+  storage:
+    back:
+    - ClothingOuterSuitShrineMaiden
+
+- type: loadout
+  id: TheatreGhostSheet
+  storage:
+    back:
+    - ClothingOuterGhostSheet
+
+- type: loadout
+  id: TheatreMothCloak
+  storage:
+    back:
+    - ClothingNeckCloakMoth
+
+- type: loadout
+  id: TheatrePumpkinHat
+  storage:
+    back:
+    - ClothingHeadHatPumpkin

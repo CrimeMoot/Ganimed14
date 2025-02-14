@@ -6,11 +6,16 @@
   - CaptainNeck
   - CaptainJumpsuit
   - CaptainBackpack
+  - CaptainGloves # Ganimed
+  - CaptainBelt # Ganimed
   - CaptainOuterClothing
+  - CaptainShoes # Ganimed
+  - Underwear # Ganimed
   - Trinkets
   - Medals #backmen
   - Survival
   - GroupSpeciesBreathTool
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
@@ -23,10 +28,13 @@
   - HoPBackpack
   - HoPOuterClothing
   - Glasses
+  - HoPShoes # Ganimed
+  - Underwear # Ganimed
   - Medals #backmen
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 # Silicons
@@ -53,10 +61,12 @@
   - PassengerOuterClothing
   - PassengerShoes
   - Glasses
+  - Underwear # Ganimed
   - Medals #backmen
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
@@ -65,26 +75,32 @@
   - GroupTankHarness
   - BartenderHead
   - BartenderJumpsuit
+  - BartenderBelt # Ganimed
   - CommonBackpack
   - BartenderOuterClothing
-  - Glasses
+  - BartenderGlasses # Ganimed
+  - Underwear # Ganimed
   - Medals #backmen
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
   id: JobServiceWorker
   groups:
   - GroupTankHarness
-  - BartenderJumpsuit
+  - ServiceWorkerJumpsuit
   - CommonBackpack
   - Glasses
+  - CommonBelt # Ganimed
+  - Underwear # Ganimed
   - Medals #backmen
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
@@ -96,11 +112,14 @@
   - ChefJumpsuit
   - CommonBackpack
   - ChefOuterClothing
-  - Glasses
+  - ChefShoes # Ganimed
+  - ChefGlasses # Ganimed
+  - Underwear # Ganimed
   - Medals #backmen
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
@@ -108,12 +127,15 @@
   groups:
   - GroupTankHarness
   - LibrarianJumpsuit
+  - LibrarianBelt # Ganimed
   - CommonBackpack
   - Glasses
+  - Underwear # Ganimed
   - Medals #backmen
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
@@ -122,12 +144,15 @@
   - GroupTankHarness
   - LawyerNeck
   - LawyerJumpsuit
+  - MagistrateOuterClothing # Ganimed
   - CommonBackpack
-  - Glasses
+  - GlassesWithSunglasses # Ganimed
+  - Underwear # Ganimed
   - Medals #backmen
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
@@ -138,12 +163,17 @@
   - ChaplainMask
   - ChaplainNeck
   - ChaplainJumpsuit
+  - ChaplainGloves # Ganimed
   - CommonBackpack
   - ChaplainOuterClothing
+  - ChaplainShoes # Ganimed
   - Glasses
+  - CommonBelt # Ganimed
+  - Underwear # Ganimed
   - Medals #backmen
   - Trinkets
   - GroupSpeciesBreathTool
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
@@ -157,10 +187,12 @@
   - JanitorOuterClothing
   - Glasses
   - Survival
-  - Trinkets
+  - Underwear # Ganimed
   - Medals #backmen
+  - Trinkets
   - JanitorPlunger
   - GroupSpeciesBreathTool
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
@@ -170,12 +202,17 @@
   - BotanistHead
   - BotanistJumpsuit
   - BotanistBackpack
+  - BotanistBelt # Ganimed
+  - BotanistGloves # Ganimed
   - BotanistOuterClothing
+  - BotanistShoes # Ganimed
   - Glasses
+  - Underwear # Ganimed
   - Medals #backmen
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
@@ -188,9 +225,12 @@
   - ClownOuterClothing
   - ClownShoes
   - Glasses
+  - Underwear # Ganimed
   - Medals #backmen
   - SurvivalClown
+  - TheatricalAttire # Ganimed
   - Trinkets
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
@@ -199,14 +239,17 @@
   - GroupTankHarness
   - MimeHead
   - MimeMask
+  - MimeNeck # Ganimed
   - MimeJumpsuit
   - MimeBackpack
   - MimeOuterClothing
   - MimeBelt
   - Glasses
+  - Underwear # Ganimed
   - Medals #backmen
   - SurvivalMime
   - Trinkets
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
@@ -216,12 +259,14 @@
   - MusicianJumpsuit
   - CommonBackpack
   - MusicianOuterClothing
-  - Glasses
+  - GlassesWithSunglasses # Ganimed
   - Survival
-  - Trinkets
+  - Underwear # Ganimed
   - Medals #backmen
+  - Trinkets
   - Instruments
   - GroupSpeciesBreathTool
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 # Cargo
@@ -235,11 +280,13 @@
   - CargoTechnicianBackpack
   - QuartermasterOuterClothing
   - QuartermasterShoes
-  - Glasses
+  - GlassesWithSunglasses # Ganimed
+  - Underwear # Ganimed
   - Medals #backmen
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
@@ -252,24 +299,33 @@
   - CargoTechnicianOuterClothing
   - CargoTechnicianShoes
   - Glasses
+  - Underwear # Ganimed
   - Medals #backmen
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
   id: JobSalvageSpecialist
   groups:
   - GroupTankHarness
+  - SalvageSpecialistHead # Ganimed
+  - SalvageSpecialistNeck # Ganimed
+  - SalvageSpecialistHeadset # Ganimed
   - SalvageSpecialistBackpack
   - SalvageSpecialistOuterClothing
+  - SalvageSpecialistBelt # Ganimed
+  - SalvageSpecialistGloves # Ganimed
   - SalvageSpecialistShoes
   - Glasses
+  - Underwear # Ganimed
   - Medals #backmen
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 # Engineering
@@ -282,11 +338,15 @@
   - ChiefEngineerBackpack # Corvax-Loadouts
   - ChiefEngineerNeck
   - ChiefEngineerOuterClothing
+  - ChiefEngineerGlasses # Ganimed
+  - ChiefEngineerGloves # Ganimed
   - ChiefEngineerShoes
+  - Underwear # Ganimed
   - Medals #backmen
   - SurvivalExtended
   - Trinkets
   - GroupSpeciesBreathTool
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
@@ -295,11 +355,12 @@
   - GroupTankHarness
   - TechnicalAssistantJumpsuit
   - StationEngineerBackpack
+  - Underwear # Ganimed
   - Medals #backmen
-  - Trinkets
   - SurvivalExtended
   - Trinkets
   - GroupSpeciesBreathTool
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
@@ -312,25 +373,31 @@
   - StationEngineerOuterClothing
   - StationEngineerShoes
   - StationEngineerID
+  - Underwear # Ganimed
   - Medals #backmen
-  - Trinkets
   - SurvivalExtended
   - Trinkets
   - GroupSpeciesBreathTool
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
   id: JobAtmosphericTechnician
   groups:
   - GroupTankHarness
+  - AtmosphericTechnicianHead # Ganimed
+  - AtmosphericTechnicianNeck # Ganimed
   - AtmosphericTechnicianJumpsuit
   - AtmosphericTechnicianBackpack
   - AtmosphericTechnicianOuterClothing
+  - AtmosphericTechnicianGlasses # Ganimed
   - AtmosphericTechnicianShoes
+  - Underwear # Ganimed
   - Medals #backmen
   - SurvivalExtended
   - Trinkets
   - GroupSpeciesBreathTool
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 # Science
@@ -343,13 +410,15 @@
   - ResearchDirectorJumpsuit
   - ScientistBackpack
   - ResearchDirectorOuterClothing
-  - ScientistGloves
+  - ResearchDirectorGloves # Ganimed
+  - ResearchDirectorGlasses # Ganimed
   - ResearchDirectorShoes
-  - Glasses
+  - Underwear # Ganimed
   - Medals #backmen
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
@@ -358,17 +427,20 @@
   - GroupTankHarness
   - ScientistHead
   - ScientistNeck
+  - ScientistHeadset # Ganimed
   - ScientistJumpsuit
   - ScientistBackpack
   - ScientistOuterClothing
   - ScientistGloves
   - ScientistShoes
   - ScientistPDA
-  - Glasses
+  - ScientistGlasses # Ganimed
+  - Underwear # Ganimed
   - Medals #backmen
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
@@ -378,10 +450,12 @@
   - ResearchAssistantJumpsuit
   - ScientistBackpack
   - Glasses
+  - Underwear # Ganimed
   - Medals #backmen
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 # Security
@@ -391,16 +465,19 @@
   - HeadofSecurityHead
   - HeadofSecurityNeck
   - HeadofSecurityJumpsuit
-  - SecurityBackpack
-  - SecurityBelt
+  - HeadofSecurityBackpack # Ganimed
+  - HeadofSecurityBelt # Ganimed
+  - HeadofSecurityGloves # Ganimed
   - HeadofSecurityOuterClothing
   - SecurityShoes
-  - SecurityPocket #backmen
+  - SecurityOfficerPocket #backmen
+  - Underwear # Ganimed
   - Medals #backmen
   - SurvivalSecurity
   - Trinkets
   - SecurityStar
   - GroupSpeciesBreathToolSecurity
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
@@ -408,34 +485,41 @@
   groups:
   - WardenHead
   - WardenJumpsuit
-  - SecurityBackpack
+  - WardenBackpack # Ganimed
   - SecurityBelt
   - WardenOuterClothing
+  - SecurityGlasses # Ganimed
   - SecurityShoes
-  - SecurityPocket #Backmen
+  - SecurityOfficerPocket #Backmen
+  - Underwear # Ganimed
   - Medals #backmen
   - SurvivalSecurity
   - Trinkets
   - SecurityStar
   - GroupSpeciesBreathToolSecurity
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
   id: JobSecurityOfficer
   groups:
   - SecurityHead
+  - SecurityNeck # Ganimed
   - SecurityJumpsuit
   - SecurityBackpack
   - SecurityOuterClothing
-  - SecurityShoes
   - SecurityPDA
   - SecurityBelt
-  - SecurityPocket #Backmen
+  - SecurityGlasses # Ganimed
+  - SecurityShoes
+  - SecurityOfficerPocket #Backmen
+  - Underwear # Ganimed
   - Medals #backmen
   - SurvivalSecurity
   - Trinkets
   - SecurityStar
   - GroupSpeciesBreathToolSecurity
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
@@ -447,13 +531,17 @@
   - DetectiveJumpsuit
   - SecurityBackpack
   - DetectiveOuterClothing
-  - SecurityShoes
+  - SecurityGlasses # Ganimed
+  - DetectiveGloves # Ganimed
+  - DetectiveShoes # Ganimed
   - DetectiveRevolver
+  - Underwear # Ganimed
   - Medals #backmen
   - SurvivalSecurity
   - Trinkets
   - SecurityStar
   - GroupSpeciesBreathToolSecurity
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
@@ -461,11 +549,13 @@
   groups:
   - SecurityCadetJumpsuit
   - SecurityBackpack
-  - SecurityPocket
+  - SecurityOfficerPocket
+  - Underwear # Ganimed
   - Medals #backmen
   - SurvivalSecurity
   - Trinkets
   - GroupSpeciesBreathToolSecurity
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 # Medical
@@ -474,18 +564,20 @@
   groups:
   - GroupTankHarness
   - ChiefMedicalOfficerHead
-  - MedicalMask
+  - ChiefMedicalOfficerMedicalMask # Ganimed
   - ChiefMedicalOfficerJumpsuit
   - MedicalGloves
-  - MedicalBackpack
+  - MedicalBackpackExtended # Ganimed
   - ChiefMedicalOfficerOuterClothing
   - ChiefMedicalOfficerNeck
+  - ChiefMedicalOfficerGlasses # Ganimed
   - ChiefMedicalOfficerShoes
-  - Glasses
+  - Underwear # Ganimed
   - Medals #backmen
   - SurvivalMedical
   - Trinkets
   - GroupSpeciesBreathToolMedical
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
@@ -494,31 +586,36 @@
   - GroupTankHarness
   - MedicalDoctorHead
   - MedicalMask
+  - MedicalDoctorNeck # Ganimed
+  - MedicalDoctorHeadset # Ganimed
   - MedicalDoctorJumpsuit
   - MedicalGloves
-  - MedicalBackpack
+  - MedicalBackpackExtended # Ganimed
   - MedicalDoctorOuterClothing
   - MedicalShoes
   - MedicalDoctorPDA
-  - Glasses
+  - MedicalDoctorGlasses # Ganimed
+  - Underwear # Ganimed
   - Medals #backmen
   - SurvivalMedical
   - Trinkets
   - GroupSpeciesBreathToolMedical
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
   id: JobMedicalIntern
   groups:
-
   - GroupTankHarness
   - MedicalInternJumpsuit
   - MedicalBackpack
   - Glasses
+  - Underwear # Ganimed
   - Medals #backmen
   - SurvivalMedical
   - Trinkets
   - GroupSpeciesBreathToolMedical
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
@@ -529,12 +626,15 @@
   - ChemistJumpsuit
   - MedicalGloves
   - ChemistBackpack
+  - ChemistGlasses # Ganimed
   - ChemistOuterClothing
-  - MedicalShoes
+  - ChemistShoes # Ganimed
+  - Underwear # Ganimed
   - Medals #backmen
   - SurvivalMedical
   - Trinkets
   - GroupSpeciesBreathToolMedical
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
@@ -548,11 +648,13 @@
   - MedicalBackpack
   - ParamedicOuterClothing
   - ParamedicShoes
-  - Glasses
+  - MedicalDoctorGlasses # Ganimed
+  - Underwear # Ganimed
   - Medals #backmen
   - SurvivalMedical
   - Trinkets
   - GroupSpeciesBreathToolMedical
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 # Wildcards
@@ -562,10 +664,13 @@
   - GroupTankHarness
   - CommonBackpack
   - Glasses
+  - CommonBelt # Ganimed
+  - Underwear # Ganimed
   - Medals #backmen
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
@@ -575,38 +680,46 @@
   - ReporterJumpsuit
   - CommonBackpack
   - Glasses
+  - Underwear # Ganimed
   - Medals #backmen
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
   id: JobPsychologist
   groups:
-  - PsychologistJumpsuit #backmen
   - GroupTankHarness
   - PsychologistJumpsuit
   - MedicalBackpack
-  - Glasses
+  - MedicalDoctorGlasses # Ganimed
+  - CommonBelt # Ganimed
+  - PsychologistShoes # Ganimed
+  - Underwear # Ganimed
   - Medals #backmen
   - Survival
   - Trinkets
-  - GroupSpeciesBreathTool
+  - GroupSpeciesBreathToolMedical
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
   id: JobBoxer
   groups:
   - GroupTankHarness
+  - BoxerHead #Ganimed
   - BoxerJumpsuit
   - BoxerGloves
   - CommonBackpack
   - Glasses
+  - Underwear # Ganimed
   - Medals #backmen
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
+  - SpareClothing # Ganimed
   - Inventory # Corvax-Loadouts
 
 # These loadouts are used for non-crew spawns, like off-station antags and event mobs

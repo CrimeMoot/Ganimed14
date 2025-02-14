@@ -4,6 +4,13 @@
   equipment:
     head: ClothingHeadHatCargosoft
 
+- type: loadout # Ganimed
+  id: CargoTechnicianPostalCap
+  equipment:
+    head: ClothingHeadHatCargoPostalsoft
+  effects:
+  - !type:SponsorLoadoutEffect
+
 # Jumpsuit
 - type: loadout
   id: CargoTechnicianJumpsuit
@@ -14,6 +21,20 @@
   id: CargoTechnicianJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtCargo
+
+- type: loadout # Ganimed
+  id: CargoTechnicianJumpsuitPostal
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCargoPostal
+  effects:
+  - !type:SponsorLoadoutEffect
+
+- type: loadout # Ganimed
+  id: CargoTechnicianJumpskirtPostal
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCargoPostal
+  effects:
+  - !type:SponsorLoadoutEffect
 
 # Back
 - type: loadout

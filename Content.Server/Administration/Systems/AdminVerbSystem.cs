@@ -41,6 +41,8 @@ using Robust.Server.Player;
 using Content.Shared.Silicons.StationAi;
 using Robust.Shared.Physics.Components;
 using static Content.Shared.Configurable.ConfigurationComponent;
+using Content.Server._Ganimed.NPC; // Ganimed
+using Content.Shared.NPC.Components; // Ganimed
 
 namespace Content.Server.Administration.Systems
 {
@@ -389,6 +391,22 @@ namespace Content.Server.Administration.Systems
                         Icon = new SpriteSpecifier.Rsi(new ResPath("/Textures/Interface/Actions/actions_borg.rsi"), "state-laws"),
                     });
                 }
+
+                // Ganimed-start
+                if (HasComp<NpcFactionMemberComponent>(args.Target))
+                {
+                    args.Verbs.Add(new Verb()
+                    {
+                        Text = Loc.GetString("npc-faction-ui-verb"),
+                        Category = VerbCategory.Admin,
+                        Act = () =>
+                        {
+                            var ui = new NpcFactionEui(args.Target);
+                            _euiManager.OpenEui(ui, player);
+                        },
+                    });
+                }
+                // Ganimed-end
             }
         }
 

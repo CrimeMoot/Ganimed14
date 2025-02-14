@@ -36,8 +36,8 @@
 - type: startingGear
   id: DoctorGear
   equipment:
-    ears: ClothingHeadsetMedical
     belt: ClothingBeltMedicalFilled
+    #ears: ClothingHeadsetMedical
   #storage:
     #back:
     #- Stuff

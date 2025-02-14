@@ -41,11 +41,13 @@
         - HandLabeler
   - type: StorageFill
     contents:
-      - id: Stunbaton
-      - id: Handcuffs
       - id: Brutepack
       - id: Ointment
       - id: Gauze
+      - id: Bloodpack
+      - id: Tourniquet
+      - id: EmergencyMedipen
+      - id: Zipties
 
 - type: entity
   parent: ClothingBeltSheath

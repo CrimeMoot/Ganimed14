@@ -8,6 +8,20 @@
       role: JobResearchDirector
       time: 72000 #20 hrs
 
+- type: loadoutEffectGroup
+  id: MasterEngineeringScientist
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobResearchDirector
+      time: 108000 #30 hrs
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobChiefEngineer
+      time: 108000 #30 hrs
+
 # Head
 - type: loadout
   id: ResearchDirectorBeret
@@ -27,10 +41,32 @@
   equipment:
     neck: ClothingNeckMantleRD
 
+- type: loadout # Ganimed
+  id: ResearchDirectorMantleOriginal
+  equipment:
+    neck: ClothingNeckMantleRDOriginal
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MasterRD
+
 - type: loadout
   id: ResearchDirectorCloak
   equipment:
     neck: ClothingNeckCloakRd
+
+- type: loadout # Ganimed
+  id: ResearchDirectorCloakLong
+  equipment:
+    neck: ClothingLongCloakRD
+  effects:
+  - !type:SponsorLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: MasterRD
+
+- type: loadout # Ganimed
+  id: ResearchDirectorBedsheet
+  equipment:
+    neck: BedsheetRD
 
 # Jumpsuit
 - type: loadout
@@ -43,6 +79,16 @@
   equipment:
     jumpsuit: ClothingUniformJumpskirtResearchDirector
 
+# Gloves, Ganimed
+- type: loadout # TODO: Whitelist restriction
+  id: PowerGloves
+  equipment:
+    gloves: ClothingHandsGlovesPowerglove
+  effects:
+  #- !type:WhitelistedLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: MasterEngineeringScientist
+
 # OuterClothing
 - type: loadout
   id: ResearchDirectorLabCoat
@@ -54,7 +100,22 @@
   equipment:
     outerClothing: ClothingOuterWinterRD
 
-- type: loadout
-  id: ClothingOuterWinterSeniorResearcher
+# Glasses, Ganimed
+- type: loadout # TODO: Whitelist restriction
+  id: ScienceSunglasses
   equipment:
-    outerClothing: ClothingOuterWinterSeniorResearcher  # cats
+    eyes: ClothingEyesGlassesHudSunglassesScience
+  effects:
+  #- !type:WhitelistedLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: Commander
+
+# Shoes, Ganimed
+- type: loadout # TODO: Whitelist restriction
+  id: ScienceMagBoots
+  equipment:
+    shoes: ClothingShoesBootsMagSci
+  effects:
+  #- !type:WhitelistedLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: MasterEngineeringScientist

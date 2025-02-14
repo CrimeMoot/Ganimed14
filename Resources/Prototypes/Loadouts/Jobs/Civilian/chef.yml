@@ -36,3 +36,9 @@
   id: ChefWintercoat
   equipment:
     outerClothing: ClothingOuterWinterChef
+
+# Shoes, Ganimed
+- type: loadout
+  id: ChefShoes
+  equipment:
+    shoes: ClothingShoesChef

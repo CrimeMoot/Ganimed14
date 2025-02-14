@@ -19,7 +19,6 @@
       time: 216000 # 60 hrs
 
 # Other Timers
-
 - type: loadoutEffectGroup
   id: MedicalHeadMirrorTimer
   effects:
@@ -29,8 +28,16 @@
       role: JobMedicalDoctor
       time: 108000 #30 hrs
 
-# Head
+- type: loadoutEffectGroup # Ganimed
+  id: ClinicalSpecialist
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:DepartmentTimeRequirement
+      department: Medical
+      time: 36000 # 10hr
 
+# Head
 - type: loadout
   id: SeniorPhysicianBeret
   effects:
@@ -71,6 +78,42 @@
   id: NurseHat
   equipment:
     head: ClothingHeadNurseHat
+
+# Neck, Ganimed
+- type: loadout
+  id: Stethoscope
+  equipment:
+    neck: ClothingNeckStethoscope
+
+- type: loadout
+  id: MedicalCloak
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: SeniorPhysician
+  equipment:
+    neck: ClothingCloakMed
+
+- type: loadout
+  id: MedicalBedsheet
+  equipment:
+    neck: BedsheetMedical
+
+# Headset, Ganimed
+- type: loadout
+  id: HeadsetMedical
+  equipment:
+    ears: ClothingHeadsetMedical
+
+# Glasses, Ganimed
+- type: loadout
+  id: MedicalHud
+  equipment:
+    eyes: ClothingEyesHudMedical
+
+- type: loadout
+  id: MedicalHudEyepatch
+  equipment:
+    eyes: ClothingEyesEyepatchHudMedical
 
 # Jumpsuit
 - type: loadout
@@ -114,6 +157,78 @@
   equipment:
     jumpsuit: UniformScrubsColorPurple
 
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: GeneticsJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitGenetics
+  effects:
+  #- !type:WhitelistedLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: ClinicalSpecialist
+
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: GeneticsJumpskirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtGenetics
+  effects:
+  #- !type:WhitelistedLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: ClinicalSpecialist
+
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: VirologyJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitVirology
+  effects:
+  #- !type:WhitelistedLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: ClinicalSpecialist
+
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: VirologyJumpskirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtVirology
+  effects:
+  #- !type:WhitelistedLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: ClinicalSpecialist
+
+- type: loadout # Ganimed
+  id: CoronerJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCoroner
+  effects:
+  - !type:SponsorLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: ClinicalSpecialist
+
+- type: loadout # Ganimed
+  id: CoronerJumpskirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCoroner
+  effects:
+  - !type:SponsorLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: ClinicalSpecialist
+
+- type: loadout # Ganimed
+  id: BlackCoronerJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCoronerBlack
+  effects:
+  - !type:SponsorLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: ClinicalSpecialist
+
+- type: loadout # Ganimed
+  id: BlackCoronerJumpskirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCoronerBlack
+  effects:
+  - !type:SponsorLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: ClinicalSpecialist
+
 # Back
 - type: loadout
   id: MedicalDoctorBackpack
@@ -130,6 +245,60 @@
   equipment:
     back: ClothingBackpackDuffelMedical
 
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: GeneticsBackpack
+  equipment:
+    back: ClothingBackpackGenetics
+  effects:
+  #- !type:WhitelistedLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: ClinicalSpecialist
+
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: GeneticsSatchel
+  equipment:
+    back: ClothingBackpackSatchelGenetics
+  effects:
+  #- !type:WhitelistedLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: ClinicalSpecialist
+
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: GeneticsDuffel
+  equipment:
+    back: ClothingBackpackDuffelGenetics
+  effects:
+  #- !type:WhitelistedLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: ClinicalSpecialist
+
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: VirologyBackpack
+  equipment:
+    back: ClothingBackpackVirology
+  effects:
+  #- !type:WhitelistedLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: ClinicalSpecialist
+
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: VirologySatchel
+  equipment:
+    back: ClothingBackpackSatchelVirology
+  effects:
+  #- !type:WhitelistedLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: ClinicalSpecialist
+
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: VirologyDuffel
+  equipment:
+    back: ClothingBackpackDuffelVirology
+  effects:
+  #- !type:WhitelistedLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: ClinicalSpecialist
+
 # OuterClothing
 - type: loadout
   id: MedicalDoctorWintercoat
@@ -143,7 +312,71 @@
     proto: SeniorPhysician
   equipment:
     outerClothing: ClothingOuterCoatLabSeniorPhysician
-    
+
+- type: loadout
+  id: SeniorPhysicianWintercoat
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: SeniorPhysician
+  equipment:
+    outerClothing: ClothingOuterWinterSeniorPhysician #cats
+
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: GeneticsLabCoat
+  equipment:
+    outerClothing: ClothingOuterCoatLabGene
+  effects:
+  #- !type:WhitelistedLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: ClinicalSpecialist
+
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: VirologyLabCoat
+  equipment:
+    outerClothing: ClothingOuterCoatLabViro
+  effects:
+  #- !type:WhitelistedLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: ClinicalSpecialist
+
+- type: loadout # Ganimed
+  id: CoronerLabCoat
+  equipment:
+    outerClothing: ClothingOuterCoatLabCoroner
+  effects:
+  - !type:SponsorLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: ClinicalSpecialist
+
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: GeneticsWintercoat
+  equipment:
+    outerClothing: ClothingOuterWinterGen
+  effects:
+  #- !type:WhitelistedLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: ClinicalSpecialist
+
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: VirologyWintercoat
+  equipment:
+    outerClothing: ClothingOuterWinterViro
+  effects:
+  #- !type:WhitelistedLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: ClinicalSpecialist
+
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: VirologyBioSuit
+  dummyEntity: ClothingOuterBioVirology
+  effects:
+  #- !type:WhitelistedLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: MedicalHeadMirrorTimer
+  equipment:
+    outerClothing: ClothingOuterBioVirology
+    head: ClothingHeadHatHoodBioVirology
+
 # Shoes
 - type: loadout
   id: MedicalWinterBoots
@@ -169,6 +402,9 @@
   id: NitrileGloves
   equipment:
     gloves: ClothingHandsGlovesNitrile
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ClinicalSpecialist
 
 #Masks
 - type: loadout

@@ -801,7 +801,7 @@
     sprite: Clothing/Uniforms/Jumpsuit/nanotrasen.rsi
 
 - type: entity
-  parent: [ClothingUniformBase, BaseCommandContraband]
+  parent: [ClothingUniformSkirtBase, BaseCommandContraband]
   id: ClothingUniformJumpsuitCapFormal
   name: captain's formal suit
   description: A suit for special occasions.

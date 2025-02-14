@@ -320,6 +320,17 @@
     - MechParts
     - MechEquipment
     - BackmenShitmedModules # backmen
+    - ADTClarkeTechnology # Ganimed
+    - ADTDurandTechnology # Ganimed
+    - ADTPhazonTechnology # Ganimed
+    - ADTMechEquipment # Ganimed
+    - ADTMechEquipmentMedical # Ganimed
+    - ADTMechEquipmentCutter # Ganimed
+    - ADTMechTechnologyArmor # Ganimed
+    - ADTMechEnergyGunSmallTechnology # Ganimed
+    - ADTMechEnergyGunHeavyTechnology # Ganimed
+    - ADTMechGunSmallTechnology # Ganimed
+    - ADTMechGunHeavyTechnology # Ganimed
   - type: MaterialStorage
     whitelist:
       tags:

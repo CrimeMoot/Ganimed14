@@ -162,7 +162,7 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitGenetics
   effects:
-  - !type:SponsorLoadoutEffect
+  #- !type:WhitelistedLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: ClinicalSpecialist
 
@@ -171,7 +171,7 @@
   equipment:
     jumpsuit: ClothingUniformJumpskirtGenetics
   effects:
-  - !type:SponsorLoadoutEffect
+  #- !type:WhitelistedLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: ClinicalSpecialist
 
@@ -180,7 +180,7 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitVirology
   effects:
-  - !type:SponsorLoadoutEffect
+  #- !type:WhitelistedLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: ClinicalSpecialist
 
@@ -189,7 +189,7 @@
   equipment:
     jumpsuit: ClothingUniformJumpskirtVirology
   effects:
-  - !type:SponsorLoadoutEffect
+  #- !type:WhitelistedLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: ClinicalSpecialist
 
@@ -339,12 +339,12 @@
   - !type:GroupLoadoutEffect
     proto: ClinicalSpecialist
 
-- type: loadout # Ganimed TODO: Whitelist restriction
+- type: loadout # Ganimed
   id: CoronerLabCoat
   equipment:
     outerClothing: ClothingOuterCoatLabCoroner
   effects:
-  #- !type:WhitelistedLoadoutEffect
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: ClinicalSpecialist
 

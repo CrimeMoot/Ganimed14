@@ -53,7 +53,7 @@
   equipment:
     ears: ClothingHeadsetMining
   effects:
-  #- !type:WhitelistedLoadoutEffect
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: MasterSalvager
 

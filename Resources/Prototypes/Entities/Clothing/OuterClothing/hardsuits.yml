@@ -576,7 +576,6 @@
     - MonkeyWearable
     - Hardsuit
     - WhitelistChameleon
-  - type: DNALocker # Cats edit
 
 # Syndicate Medic Hardsuit
 - type: entity
@@ -595,7 +594,6 @@
     tags:
     - Hardsuit
     - WhitelistChameleon
-  - type: DNALocker # Cats edit
 
 #Syndicate Elite Hardsuit
 - type: entity
@@ -633,7 +631,6 @@
   - type: ClothingSpeedModifier
     walkModifier: 1.0
     sprintModifier: 1.0  #backmen-speedoznik
-  - type: DNALocker # Cats edit
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitSyndieElite
@@ -670,7 +667,6 @@
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitSyndieCommander
-  - type: DNALocker # Cats edit
 
 
 #Cybersun Juggernaut Hardsuit
@@ -705,7 +701,6 @@
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitCybersun
-  - type: DNALocker # Cats edit
 
 #Wizard Hardsuit
 - type: entity
@@ -852,7 +847,6 @@
     sprite: Clothing/OuterClothing/Hardsuits/ERTSuits/ertleader.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitERTLeader
-  - type: DNALocker # Cats edit
 
 #ERT Chaplain Hardsuit
 - type: entity
@@ -867,7 +861,6 @@
     sprite: Clothing/OuterClothing/Hardsuits/ERTSuits/ertchaplain.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitERTChaplain
-  - type: DNALocker # Cats edit
 
 #ERT Engineer Hardsuit
 - type: entity
@@ -883,7 +876,6 @@
     sprite: Clothing/OuterClothing/Hardsuits/ERTSuits/ertengineer.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitERTEngineer
-  - type: DNALocker # Cats edit
 
 #ERT Medic Hardsuit
 - type: entity
@@ -898,7 +890,6 @@
     sprite: Clothing/OuterClothing/Hardsuits/ERTSuits/ertmedical.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitERTMedical
-  - type: DNALocker # Cats edit
 
 #ERT Security Hardsuit
 - type: entity
@@ -913,7 +904,6 @@
     sprite: Clothing/OuterClothing/Hardsuits/ERTSuits/ertsecurity.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitERTSecurity
-  - type: DNALocker # Cats edit
 
 #ERT Janitor Hardsuit
 - type: entity
@@ -928,7 +918,6 @@
     sprite: Clothing/OuterClothing/Hardsuits/ERTSuits/ertjanitor.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitERTJanitor
-  - type: DNALocker # Cats edit
 
 #Deathsquad
 - type: entity
@@ -969,7 +958,6 @@
     clothingPrototype: ClothingHeadHelmetHardsuitDeathsquad
   - type: DiseaseProtection #Backmen & Ataraxia anti viral
     protection: 1
-  - type: DNALocker # Cats edit
 
 #CBURN Hardsuit
 - type: entity
@@ -1010,7 +998,6 @@
     clothingPrototype: ClothingHeadHelmetCBURN
   - type: DiseaseProtection #Backmen & Ataraxia anti viral
     protection: 0.6
-  - type: DNALocker # Cats edit
 
 #MISC. HARDSUITS
 #Clown Hardsuit

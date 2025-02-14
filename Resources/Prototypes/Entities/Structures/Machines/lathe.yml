@@ -415,7 +415,6 @@
     - SecurityBoards
     - SecurityExplosives
     - SecurityWeapons
-    - WeaponizedLaserManipulation
   - type: MaterialStorage
     whitelist:
       tags:

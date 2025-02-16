@@ -120,4 +120,11 @@ namespace Content.Shared.Maps
             TileId = id;
         }
     }
+
+    [Flags]
+    public enum TileFlag : byte
+    {
+        None = 0,
+        Roof = 1 << 0,
+    }
 }

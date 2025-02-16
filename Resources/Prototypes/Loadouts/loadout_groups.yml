@@ -630,6 +630,7 @@
   minLimit: 0
   loadouts:
   - JanitorWintercoat
+  - WetFloorSign # Ganimed
   - JanitorBioSuit # Ganimed
 
 - type: loadoutGroup

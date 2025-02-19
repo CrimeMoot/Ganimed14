@@ -189,6 +189,17 @@
   # Ganimed-Loadouts-End
 
 - type: loadoutGroup # Ganimed
+  id: CaptainGlasses
+  name: loadout-group-captain-glasses
+  loadouts:
+  - Sunglasses
+  - AdministrationSunglasses
+  - AdministrationHud
+  - SecurityHud
+  - SecurityHudEyepatch
+  - GlassesGarGiga
+
+- type: loadoutGroup # Ganimed
   id: CaptainGloves
   name: loadout-group-captain-gloves
   loadouts:
@@ -234,6 +245,23 @@
   minLimit: 0
   loadouts:
   - HoPHead
+
+- type: loadoutGroup # Ganimed
+  id: HoPGlasses
+  name: loadout-group-hop-glasses
+  minLimit: 0
+  loadouts:
+  - AdministrationHud
+  - CheapSunglasses
+  - Glasses
+  - Eyepatch
+  - GlassesJamjar
+  - GlassesBinoclard
+  - GlassesJensen
+  - GlassesSalesman
+  - GlassesGar
+  - GlassesGarOrange
+  - GlassesGarGiga
 
 - type: loadoutGroup
   id: HoPJumpsuit
@@ -796,6 +824,7 @@
   - MimeMask
   - MimeMaskSad
   - MimeMaskScared
+  #- MimeMaskBlushing # Ganimed
 
 - type: loadoutGroup # Ganimed
   id: MimeNeck
@@ -1496,6 +1525,7 @@
   loadouts:
   - CombatGloves
   - HeadofSecurityLeatherGloves
+  - HeadofSecurityTacticalMaidGloves
 
 - type: loadoutGroup # Ganimed
   id: HeadofSecurityBackpack
@@ -1532,8 +1562,8 @@
   loadouts:
   - WeaponPistolMk58
   - WeaponPistolG22
+  - WeaponPistolACP14
   - WeaponPistolM1911
-  # - WeaponPistolACP14
   # - WeaponPistolG23
   # - WeaponPistolVP78
   # - WeaponRevolverMatebaNew
@@ -1677,6 +1707,7 @@
   name: loadout-group-security-pocket
   loadouts:
   - WeaponEnergyGunDominator
+  - WeaponPistolM1911 # Ganimed
 
 - type: loadoutGroup # Backmen
   id: SecurityPocket2
@@ -1722,6 +1753,14 @@
   - DetectiveCoatDark # Ganimed
 
 - type: loadoutGroup # Ganimed
+  id: DetectiveBelt
+  name: loadout-group-detective-belt
+  loadouts:
+  - DetectiveShoulderHolster
+  - SecurityBeltEmpty
+  - WaistBag
+
+- type: loadoutGroup # Ganimed
   id: DetectiveGloves
   name: loadout-group-detective-gloves
   minLimit: 0
@@ -1745,8 +1784,8 @@
   name: loadout-group-security-pocket
   loadouts:
   - WeaponRevolverR44
-  - WeaponRevolverRebota
   - WeaponRevolverInspector
+  - WeaponRevolverRebota
   # - WeaponRevolverCMB
   # - WeaponRevolverNY
 
@@ -1823,6 +1862,7 @@
   loadouts:
   - SterileMask
   - ClothingMaskBreathMedical
+  - CorpsmanBreathMask
 
 - type: loadoutGroup # Ganimed
   id: ChiefMedicalOfficerGlasses
@@ -1853,6 +1893,7 @@
   minLimit: 0
   loadouts:
   - MedicalBeret
+  - CorpsmanBeret # Ganimed
   - SeniorPhysicianBeret
   - MedicalHeadMirror
   - BlueSurgeryCap
@@ -2039,6 +2080,7 @@
   loadouts:
   - ParamedicHead
   - ClothingHeadHatParamedicBeret # cats
+  - CorpsmanBeret # Ganimed
 
 - type: loadoutGroup
   id: ParamedicJumpsuit

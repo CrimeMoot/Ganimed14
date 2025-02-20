@@ -49,8 +49,8 @@
 - type: startingGear
   id: CaptainGear
   equipment:
-    eyes: ClothingEyesGlassesSunglasses
     id: CaptainPDA
+    #eyes: ClothingEyesGlassesSunglasses
     ears: ClothingHeadsetAltCommand
   storage:
     back:

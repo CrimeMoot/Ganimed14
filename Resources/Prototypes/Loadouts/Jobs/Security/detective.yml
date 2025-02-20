@@ -72,6 +72,17 @@
   equipment:
     outerClothing: ClothingOuterCoatDetectiveDark
 
+# Belt, Ganimed
+- type: loadout
+  id: DetectiveShoulderHolster
+  equipment:
+    belt: ClothingBeltHolster
+
+- type: loadout
+  id: SecurityBeltEmpty
+  equipment:
+    belt: ClothingBeltSecurity
+
 # Gloves, Ganimed, TODO: Whitelist restriction
 - type: loadout
   id: ForensicGloves
@@ -81,25 +92,40 @@
 # Weapon #Backmen
 - type: loadout
   id: WeaponRevolverCMB
-  equipment:
-    belt: WeaponRevolverCMB
+  dummyEntity: WeaponRevolverCMB
+  storage:
+    belt:
+    - SpeedLoaderMagnum
+    - WeaponRevolverCMB
 
 - type: loadout
   id: WeaponRevolverR44
-  equipment:
-    belt: WeaponRevolverR44
+  dummyEntity: WeaponRevolverR44
+  storage:
+    belt:
+    - SpeedLoaderMagnum
+    - WeaponRevolverR44
 
 - type: loadout
   id: WeaponRevolverRebota
-  equipment:
-    belt: WeaponRevolverRebota
+  dummyEntity: WeaponRevolverRebota
+  storage:
+    belt:
+    - SpeedLoaderMagnum
+    - WeaponRevolverRebota
 
 - type: loadout
   id: WeaponRevolverNY
-  equipment:
-    belt: WeaponRevolverNY
+  dummyEntity: WeaponRevolverNY
+  storage:
+    belt:
+    - SpeedLoaderMagnum
+    - WeaponRevolverNY
 
 - type: loadout
   id: WeaponRevolverInspector
-  equipment:
-    belt: WeaponRevolverInspector
+  dummyEntity: WeaponRevolverInspector
+  storage:
+    belt:
+    - SpeedLoaderMagnum
+    - WeaponRevolverInspector

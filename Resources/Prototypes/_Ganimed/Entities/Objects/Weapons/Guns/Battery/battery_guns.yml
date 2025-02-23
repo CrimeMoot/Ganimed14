@@ -54,53 +54,6 @@
   - type: DNAGunLocker
 
 - type: entity
-  name: летальный режим
-  id: lethaldominator
-  parent: EmitterBolt
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Reflective
-    reflective:
-    - Energy
-  - type: Sprite
-    sprite: Backmen/Objects/Weapons/Guns/Energy/x01.rsi
-    layers:
-    - state: redtrac
-      shader: unshaded
-  - type: Projectile
-    damage:
-      types:
-        Heat: 20
-  - type: PointLight
-    enabled: true
-    color: "#ff4300"
-    radius: 2.0
-    energy: 7.0
-  - type: Fixtures
-    fixtures:
-      projectile:
-        shape:
-          !type:PhysShapeAabb
-          bounds: "-0.15,-0.45,0.15,0.15"
-        hard: false
-        mask:
-          - Impassable
-          - BulletImpassable
-
-
-- type: entity
-  name : нелетальный режим
-  id: disablerdominator
-  parent: BulletDisabler
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: PointLight
-    enabled: true
-    color: "#42aaff"
-    radius: 2.0
-    energy: 7.0
-
-- type: entity
   name: лазерный пистолет синего щита
   parent: BaseWeaponBatterySmall
   id: PistolBlueShield
@@ -139,18 +92,45 @@
     maxCharge: 750
     startingCharge: 750
   - type: DNAGunLocker
-
-- type: hitscan
-  id: VioletLaser 
-  damage:
-    types:
-      Heat: 25
-  muzzleFlash:
-    sprite: _Ganimed/Objects/Weapons/Guns/Projectiles/violethit.rsi
-    state: muzzle_beam_violet
-  travelFlash:
-    sprite: _Ganimed/Objects/Weapons/Guns/Projectiles/violethit.rsi
-    state: beam_violet
-  impactFlash:
-    sprite: _Ganimed/Objects/Weapons/Guns/Projectiles/violethit.rsi
-    state: impact_beam_violet
+    
+- type: entity
+  name: Ion rifle
+  parent: BaseWeaponBattery
+  id: WeaponIonRifle
+  description: A specialized rifle that fires ion charges capable of disrupting and interfering with electronic devices. It's huge, but it can be hung on your back and has a sniper scope.
+  components:
+  - type: Item
+    size: Ginormous
+  - type: Sprite
+    sprite: _Ganimed/Objects/Weapons/Guns/Battery/ion_rifle.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-unshaded-4
+      map: ["enum.GunVisualLayers.MagUnshaded"]
+      shader: unshaded
+  - type: Clothing
+    sprite: Ganimed/Objects/Guns/Battery/ion_rifle.rsi
+  - type: MagazineVisuals
+    magState: mag
+    steps: 5
+    zeroVisible: false
+  - type: Appearance
+  - type: Gun
+    fireRate: 1
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
+  - type: ProjectileBatteryAmmoProvider
+    proto: BulletIonWide
+    fireCost: 125
+  - type: EnergyGun
+    fireModes:
+    - proto: BulletIonWide
+      fireCost: 125
+      name: wide
+    - proto: BulletIonFocused
+      fireCost: 250
+      name: focus
+  - type: GunRequiresWield
+  - type: Wieldable
+  - type: Telescope

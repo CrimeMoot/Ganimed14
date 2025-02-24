@@ -21,6 +21,9 @@
     maxAngle: 0
     angleIncrease: -3
   - type: Gun
+    selectedMode: FullAuto
+    availableModes:
+      - FullAuto
     angleDecay: 25
     angleIncrease: 6
     cameraRecoilScalar: 5
@@ -82,6 +85,7 @@
   id: WeaponSubMachineGunMP7
   suffix: Пистолет-пулемёт
   description: В свое время SMG-7, имеющий устаревший дизайн, насчитывающий сотни лет, был широко распространен. Сегодня он используется в качестве дешевых копий, напечатанных на компьютере, или семейных реликвий, хотя каким-то образом попал в руки колониальных повстанцев.
+  categories: [ HideSpawnMenu ] #for remove
   components:
   - type: Sprite
     sprite: Backmen/Objects/Weapons/Gunsx64/SMGs/mp7/big.rsi
@@ -201,6 +205,7 @@
   id: WeaponSubMachineGunSkorpion
   suffix: Пистолет-пулемёт
   description: Надежное огнестрельное оружие 20-го века, представляющее собой комбинацию пистолета и автомата.
+  categories: [ HideSpawnMenu ] #for remove
   components:
   - type: Sprite
     sprite: Backmen/Objects/Weapons/Gunsx64/SMGs/skorpion.rsi
@@ -244,12 +249,13 @@
     zeroVisible: true
   - type: Appearance
 
-- type: entity
+- type: entity #ww2
   name: MP-38
   parent: BaseWeaponSubMachineGun
   id: WeaponSubMachineGunMP38
   suffix: Пистолет-пулемёт
   description: MP-38 - это старый и дешевый пистолет-пулемет, используемый повстанцами, он обладает хорошей производительностью на больших дистанциях в компактном корпусе, хотя и страдает из-за низкой для своего класса скорострельности.
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: Backmen/Objects/Weapons/Gunsx64/SMGs/mp38/big.rsi
@@ -351,12 +357,13 @@
     zeroVisible: true
   - type: Appearance
 
-- type: entity
+- type: entity ##ww2
   name: PPSH-41
   parent: BaseWeaponSubMachineGun
   id: WeaponSubMachineGunPPSH41
   suffix: Пистолет-пулемёт
   description: ППШ-41 или "Папаша" - это пистолет-пулемет модели USSP, который многие террористические организации копировали на протяжении многих лет. Несмотря на малую поражающую способность, его надежность, исключительная долговечность и высокая скорострельность оказываются полезными для рук пользователя.
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: Backmen/Objects/Weapons/Gunsx64/SMGs/ppsh41/big.rsi

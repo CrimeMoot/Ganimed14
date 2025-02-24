@@ -1,0 +1,11 @@
+- type: entity
+  id: CartridgePistol45ACP
+  name: cartridge (.45 ACP)
+  parent: BaseCartridgePistol
+  components:
+  - type: Tag
+    tags:
+      - Cartridge
+      - CartridgePistol45ACP
+  - type: CartridgeAmmo
+    proto: BulletPistol45ACP

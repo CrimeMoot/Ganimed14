@@ -20,10 +20,33 @@
     - 0,1,0,1
   - type: Gun
     fireRate: 5
+    angleIncrease: 2.5
+    angleDecay: 2.75
+    cameraRecoilScalar: 0.5
+    maxAngle: 8
+    minAngle: 1
     availableModes:
     - SemiAuto
     soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/mk58.ogg
+      path: /Audio/Weapons/Guns64/Pistols/beretta_shot.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazinePistolMakarov
+        insertSound: /Audio/Weapons/Guns64/Pistols/colt_reload.ogg
+        ejectSound: /Audio/Weapons/Guns64/Pistols/beretta_unload.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazinePistolMakarov
+      gun_chamber:
+        name: Chamber
+        startingItem: CartridgePistol
+        priority: 1
+        whitelist:
+          tags:
+            - CartridgePistol
 
 - type: entity
   name: ACP-14
@@ -37,10 +60,11 @@
   - type: Item
     sprite: Backmen/Objects/Weapons/Gunsx64/Pistols/acp14/tiny.rsi
   - type: Gun
-    angleIncrease: 2
-    angleDecay: 10
+    fireRate: 5
+    angleIncrease: 3
+    angleDecay: 3.5
     cameraRecoilScalar: 0.5
-    maxAngle: 15
+    maxAngle: 10
     minAngle: 1
     selectedMode: SemiAuto
     availableModes:
@@ -59,7 +83,6 @@
         whitelist:
           tags:
             - MagazinePistol
-            - MagazinePistolHighCapacity
       gun_chamber:
         name: Chamber
         startingItem: CartridgePistol
@@ -185,22 +208,32 @@
   parent: BaseWeaponPistol
   id: WeaponPistolG22
   suffix: Пистолет
-  description: Популярное полицейское огнестрельное оружие в наши дни. Патрон 9х19 мм.
+  description: Надежный и недорогой пистолет под .35 калибр. Эта версия выпускается дочерним оружейным предприятием Nanotrasen специально для службы безопасности и отличается улучшенной эрогонимикой, ночным прицелом, а также уменьшенным весом.
   components:
   - type: Sprite
     sprite: Backmen/Objects/Weapons/Gunsx64/Pistols/glock22/big.rsi
   - type: Item
     sprite: Backmen/Objects/Weapons/Gunsx64/Pistols/glock22/tiny.rsi
-  - type: Gun
-    angleDecay: 7
-    angleIncrease: 2
+  - type: Gun #Ganimed
+    fireRate: 6
+    angleDecay: 4
+    angleIncrease: 3.5
     cameraRecoilScalar: 0.5
-    maxAngle: 15
+    maxAngle: 12
     minAngle: 1
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
     soundGunshot:
-      path: /Audio/Weapons/Guns64/Pistols/beretta_shot.ogg
+      path: /Audio/Weapons/Guns/Gunshots/mk58.ogg
     soundEmpty:
       path: /Audio/Weapons/Guns64/Pistols/beretta_empty.ogg
+  - type: Clothing
+    sprite: Backmen/Objects/Weapons/Gunsx64/Pistols/glock22/tiny.rsi
+    quickEquip: false
+    slots:
+    - suitStorage
+    - Belt
   - type: ItemSlots
     slots:
       gun_magazine:
@@ -230,24 +263,6 @@
       gun_chamber: !type:ContainerSlot
 
 - type: entity
-  parent: WeaponPistolG22
-  id: WeaponPistolG22NonLethal
-  suffix: Пистолет [Non-lethal]
-  components:
-  - type: ItemSlots
-    slots:
-      gun_magazine:
-        name: Magazine
-        startingItem: MagazinePistol
-        insertSound: /Audio/Weapons/Guns64/Pistols/beretta_reload.ogg
-        ejectSound: /Audio/Weapons/Guns64/Pistols/beretta_unload.ogg
-        priority: 2
-        whitelist:
-          tags:
-            - MagazinePistol
-            - MagazinePistolHighCapacity
-
-- type: entity
   name: HI Browning-88 M4
   parent: BaseWeaponPistol
   id: WeaponPistolHIB88M4
@@ -259,7 +274,12 @@
   - type: Item
     sprite: Backmen/Objects/Weapons/Gunsx64/Pistols/hi_power_br/tiny.rsi
   - type: Gun
-    angleDecay: 15
+    selectedMode: FullAuto
+    availableModes:
+      - FullAuto
+      - SemiAuto
+    fireRate: 6
+    angleDecay: 5.5
     angleIncrease: 5
     cameraRecoilScalar: 0.5
     maxAngle: 15
@@ -352,20 +372,21 @@
     radius: 6
 
 - type: entity
-  name: M-1911
+  name: M1911
   parent: BaseWeaponPistol
   id: WeaponPistolM1911
   suffix: Пистолет
-  description: М-1911 с патронником 35-го калибра был архаичным оружием, но его популярный и чрезвычайно надежный механизм послужил образцом для многих будущих полуавтоматических пистолетов.
+  description: Немного неаккуратный, но проверенный временем пистолет .45 калибра на основе М1911, выпускаемый дочерним оружейным предприятем Nanotrasen. Его калибр обеспечивает высокое останавливающее действие, однако патронов не так много.
   components:
   - type: Sprite
     sprite: Backmen/Objects/Weapons/Gunsx64/Pistols/m1911/big.rsi
   - type: Item
     sprite: Backmen/Objects/Weapons/Gunsx64/Pistols/m1911/tiny.rsi
   - type: Gun
-    angleDecay: 15
-    angleIncrease: 5
-    cameraRecoilScalar: 0.5
+    fireRate: 4
+    angleDecay: 6
+    angleIncrease: 4.5
+    cameraRecoilScalar: 0.7
     maxAngle: 15
     minAngle: 1
     selectedMode: SemiAuto
@@ -373,21 +394,21 @@
       - SemiAuto
     soundGunshot:
       path: /Audio/Weapons/Guns64/Pistols/colt.ogg
+      volume: 1.6
   - type: ItemSlots
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MagazinePistol
+        startingItem: MagazinePistol45ACP
         insertSound: /Audio/Weapons/Guns64/Pistols/colt_reload.ogg
         ejectSound: /Audio/Weapons/Guns64/Pistols/colt_unload.ogg
         priority: 2
         whitelist:
           tags:
-            - MagazinePistol
-            - MagazinePistolHighCapacity
+            - MagazinePistol45ACP
       gun_chamber:
         name: Chamber
-        startingItem: CartridgePistol
+        startingItem: CartridgePistol45ACP
         priority: 1
         whitelist:
           tags:
@@ -406,6 +427,7 @@
   parent: BaseWeaponPistol
   id: WeaponPistolDivet
   description: Дайвет - это стандартное оружие для полиции и сотрудников службы безопасности правительства Земли.
+  categories: [ HideSpawnMenu ] #for remove
   components:
   - type: Sprite
     sprite: Backmen/Objects/Weapons/Gunsx64/Pistols/divet.rsi
@@ -450,6 +472,7 @@
 - type: entity
   parent: WeaponPistolDivet
   id: WeaponPistolDivet2
+  categories: [ HideSpawnMenu ] #for remove
   components:
   - type: Sprite
     sprite: Backmen/Objects/Weapons/Gunsx64/Pistols/prentor.rsi
@@ -466,6 +489,7 @@
   parent: BaseWeaponPistol
   id: WeaponPistolUCS
   description: UCS полу-автоматический пистолет компании "Interdyne", зарекомендовал себя как вторичное оружия наёмников, превосходит свои аналоги с Земли.
+  categories: [ HideSpawnMenu ] #for remove
   components:
   - type: Sprite
     sprite: Backmen/Objects/Weapons/Gunsx64/Pistols/ucs/big.rsi

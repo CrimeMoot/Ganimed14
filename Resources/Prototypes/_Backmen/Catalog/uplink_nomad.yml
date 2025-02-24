@@ -1,28 +1,6 @@
 ﻿#no_mad shit
 
 - type: listing
-  id: UplinkP90Bundle
-  name: набор "P90"
-  description: Старый добрый п90 военного образца, стал символом специальных операций, в комплетке 3 магазина.
-  icon: { sprite: Backmen/Objects/Weapons/Gunsx64/SMGs/p90.rsi, state: icon }
-  productEntity: ClothingBackpackDuffelSyndicateFilledP90
-  cost:
-    Telecrystal: 18
-  categories:
-  - UplinkBundles
-
-- type: entity
-  parent: ClothingBackpackDuffelSyndicate
-  id: ClothingBackpackDuffelSyndicateFilledP90
-  name: набор "P90"
-  components:
-  - type: StorageFill
-    contents:
-    - id: WeaponSubMachineGunP90
-    - id: MagazinePistolTopSubMachineGun
-    - id: MagazinePistolTopSubMachineGun
-
-- type: listing
   id: UplinkAKMSBundle
   name: набор "AKMS"
   description: Символ войны, легендарное оружие зарекомендовавшие себя как самое надежное оружие в истории. В комплетке 3 магазина.
@@ -67,50 +45,6 @@
     - id: MagazineRifleRocket20
 
 - type: listing
-  id: UplinkAKSUBundle
-  name: набор "AKSU"
-  description: Оружие ГРУ СССП, надежное, компактное, а самое главное что ничем не отличается от своего более старшего брата, поэтому его и любят отряды особого назначения. В комплетке 3 магазина.
-  icon: { sprite: Backmen/Objects/Weapons/Gunsx64/Rifles/aksu.rsi, state: icon }
-  productEntity: ClothingBackpackDuffelSyndicateFilledAKSU
-  cost:
-    Telecrystal: 15
-  categories:
-  - UplinkBundles
-
-- type: entity
-  parent: ClothingBackpackDuffelSyndicate
-  id: ClothingBackpackDuffelSyndicateFilledAKSU
-  name: набор "AKSU"
-  components:
-  - type: StorageFill
-    contents:
-    - id: WeaponRifleAKSU
-    - id: MagazineLightRifle
-    - id: MagazineLightRifle
-
-- type: listing
-  id: UplinkStG44Bundle
-  name: набор "StG44"
-  description: Первая "Штурмовая Винтовка" в истории, в отличии от её образца 1944 года, имеет современные внутренности, из-за особенности конструкции имеет более высокую скорострельность. В комплетке 3 магазина.
-  icon: { sprite: Backmen/Objects/Weapons/Gunsx64/Rifles/stg44/big.rsi, state: icon }
-  productEntity: ClothingBackpackDuffelSyndicateFilledStG44
-  cost:
-    Telecrystal: 18
-  categories:
-  - UplinkBundles
-
-- type: entity
-  parent: ClothingBackpackDuffelSyndicate
-  id: ClothingBackpackDuffelSyndicateFilledStG44
-  name: набор "StG44"
-  components:
-  - type: StorageFill
-    contents:
-    - id: WeaponRifleSTG44
-    - id: MagazineLightRifle
-    - id: MagazineLightRifle
-
-- type: listing
   id: UplinkVectorBundle
   name: набор "Vector"
   description: Оружие используемая спецназом, такой экзепляр стал очень быстро востребован на черном рынке, благодаря своей передовой системе глушение отдачи. В комплетке 3 магазина.
@@ -142,49 +76,6 @@
     - id: WeaponSubMachineGunMP7
     - id: MagazinePistolSubMachineGun
     - id: MagazinePistolSubMachineGun
-
-- type: listing
-  id: UplinkMP38Bundle
-  name: набор "MP38"
-  description: Дешевая, простая пушка с открытым затвором, не нуждается в обслуживании... Скорее всего это оружие с тех самых времен... В комплетке 3 магазина.
-  icon: { sprite: Backmen/Objects/Weapons/Gunsx64/SMGs/mp38/big.rsi, state: icon }
-  productEntity: ClothingBackpackDuffelSyndicateFilledMP38
-  cost:
-    Telecrystal: 14
-  categories:
-  - UplinkBundles
-
-- type: entity
-  parent: ClothingBackpackDuffelSyndicate
-  id: ClothingBackpackDuffelSyndicateFilledMP38
-  name: набор "MP38"
-  components:
-  - type: StorageFill
-    contents:
-    - id: WeaponSubMachineGunMP38
-    - id: MagazinePistolBoxSubMachineGun
-    - id: MagazinePistolBoxSubMachineGun
-
-- type: listing
-  id: UplinkPPSH41Bundle
-  name: набор "PPSH41"
-  description: ПиПиСиЭйч 41, стандартный пистолет-пулемет на вооружении СССП, попал на черный рынок из-за частых "набегов" на склады СССП, явно не проданных местными командирами. В комплетке 2 магазина.
-  icon: { sprite: Backmen/Objects/Weapons/Gunsx64/SMGs/ppsh41/big.rsi, state: icon }
-  productEntity: ClothingBackpackDuffelSyndicateFilledPPSH41
-  cost:
-    Telecrystal: 20
-  categories:
-  - UplinkBundles
-
-- type: entity
-  parent: ClothingBackpackDuffelSyndicate
-  id: ClothingBackpackDuffelSyndicateFilledPPSH41
-  name: набор "PPSH41"
-  components:
-  - type: StorageFill
-    contents:
-    - id: WeaponSubMachineGunPPSH41
-    - id: MagazinePistolDrumSubMachineGun
 
 - type: listing
   id: UplinkDEagle
@@ -304,50 +195,6 @@
       amount: 2
 
 - type: listing
-  id: UplinkMG42Bundle
-  name: Набор "MG42"
-  description: Очень старый общевойсковой пулемет Объеденненого Правительства Земли, все оригинальные компоненты были заменены более усовршенственными, а барабан был дополнен БлюСпейс технологией, для более бесперебойной стрельбы. Имеет 1 магазин и 2 ящика патронов.
-  icon: { sprite: Backmen/Objects/Weapons/Gunsx64/LMGs/mg42/big.rsi, state: icon }
-  productEntity: ClothingBackpackDuffelSyndicateFilledMG42
-  cost:
-    Telecrystal: 60
-  categories:
-  - UplinkBundles
-
-- type: entity
-  parent: ClothingBackpackDuffelSyndicate
-  id: ClothingBackpackDuffelSyndicateFilledMG42
-  name: набор "MG42"
-  components:
-  - type: StorageFill
-    contents:
-    - id: WeaponLightMachineGunMG42
-    - id: MagazineBoxCaselessRifle
-      amount: 2
-
-- type: listing
-  id: UplinkBR64Bundle
-  name: Набор "BR-64"
-  description: Марксменская тяжелая винтовка, имеет автодосылатель затвора, что облегчает эксплоатирование оружия (но не его чистку). Имеет 3 магазина .60 калибра.
-  icon: { sprite: Backmen/Objects/Weapons/Gunsx64/Rifles/br-64/big.rsi, state: icon }
-  productEntity: ClothingBackpackDuffelSyndicateFilledBR64
-  cost:
-    Telecrystal: 17
-  categories:
-  - UplinkBundles
-
-- type: entity
-  parent: ClothingBackpackDuffelSyndicate
-  id: ClothingBackpackDuffelSyndicateFilledBR64
-  name: набор "BR-64"
-  components:
-  - type: StorageFill
-    contents:
-    - id: WeaponRifleBR64
-    - id: MagazineHeavyRifleBR64
-      amount: 2
-
-- type: listing
   id: UplinkSVDBundle
   name: набор "SVD"
   description: Легендарное оружие, зарекомендовала себя за счёт платформы АК на которой он был создан. В комплетке 3 магазина.
@@ -389,51 +236,6 @@
     contents:
     - id: WeaponShotgun12
     - id: ClothingBeltShellShotgunFill
-
-- type: listing
-  id: UplinkFlamethrowerBundle
-  name: набор "Огнемет М6"
-  description: Огнемет имеющий шланг под специальный резервуар с огненой смесью, которая способна гореть даже в полном вакууме! Имеет в наборе 1 powerpack.
-  icon: { sprite: Backmen/Objects/Weapons/Gunsx64/Flamethrowers/M6/big.rsi, state: icon }
-  productEntity: CrateFlamethrowerBundle
-  cost:
-    Telecrystal: 12
-  categories:
-  - UplinkBundles
-
-- type: entity
-  id: CrateFlamethrowerBundle
-  suffix: Filled
-  parent: CrateSyndicate
-  name: flamethrower bundle
-  description: Contains everything except a big gun to go postal.
-  components:
-  - type: StorageFill
-    contents:
-      - id: WeaponflamethrowerSG
-      - id: PowerpackFlame
-
-- type: listing
-  id: UplinkFlamethrower
-  name: Огнемет М6
-  description: Огнемет с небольшой специальным портом под маленькие баллоны с огненой смесью, которая способна гореть даже в полном вакууме!
-  icon: { sprite: Backmen/Objects/Weapons/Gunsx64/Flamethrowers/M6/big.rsi, state: icon }
-  productEntity: FirethrowerGun
-  cost:
-    Telecrystal: 5
-  categories:
-  - UplinkWeaponry
-
-- type: listing
-  id: UplinkFuelTankFirethrower
-  name: Топливный бак
-  description: Топливный бак для огнемёта.
-  icon: { sprite: Backmen/Objects/Weapons/Gunsx64/Flamethrowers/tank.rsi, state: base }
-  productEntity: FuelTankFirethrower
-  cost:
-    Telecrystal: 1
-  categories:
-  - UplinkAmmo
 
 - type: listing
   id: UplinkSniperSR127Bundle

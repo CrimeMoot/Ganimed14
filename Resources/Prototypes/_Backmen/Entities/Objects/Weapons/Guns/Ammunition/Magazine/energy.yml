@@ -11,6 +11,7 @@
   id: MagazinePulseRifleSWS
   name: pulse rifle magazine
   description: Standart EarthGov type of impulse magazines
+  categories: [ HideSpawnMenu ] #for remove
   parent: BaseItem
   components:
   - type: Tag
@@ -49,6 +50,7 @@
   id: BigEnergyMag
   name: big energy magazine
   description: Standart EarthGov type of energys magazines.
+  categories: [ HideSpawnMenu ] #for remove
   parent: BasePowerCell
   components:
   - type: Battery
@@ -82,6 +84,7 @@
   id: EnergyMag
   name: energy magazine
   description: Standart EarthGov type of energys magazines.
+  categories: [ HideSpawnMenu ] #for remove
   parent: BasePowerCell
   components:
   - type: Battery
@@ -115,6 +118,7 @@
   id: PulseMag
   name: pulse magazine
   description: Special mag for NanoTrasen special force, using pulse energy.
+  categories: [ HideSpawnMenu ] #for remove
   parent: BasePowerCell
   components:
   - type: Battery

@@ -1,6 +1,7 @@
 - type: entity
   name: EarthGov laser carbine
   description: Стандартный лазерный карабин правительства Земли, используемый армией и полицией. Благодаря короткому стволу он обладает лучшей маневренностью в узких пространствах.
+  categories: [ HideSpawnMenu ] #for remove
   parent: BaseWeaponPowerCell
   id: WeaponLaserCarabinCell
   suffix: Rifle
@@ -59,6 +60,7 @@
   id: WeaponEarthGovLaserSniperCell
   suffix: Винтовка
   description: Тяжелая снайперская винтовка правительства Земли для длительных боевых действий.
+  categories: [ HideSpawnMenu ] #for remove
   components:
   - type: Sprite
     sprite: Backmen/Objects/Weapons/Gunsx64/Battery/EG-S/big.rsi
@@ -114,6 +116,7 @@
   parent: [BaseWeaponPowerCell, BaseGunWieldable]
   id: WeaponPulseRifleSpetnaz
   description: A weapon that is almost as infamous as its users.
+  categories: [ HideSpawnMenu ] #for remove
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Battery/pulse_rifle.rsi

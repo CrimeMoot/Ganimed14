@@ -186,9 +186,6 @@ FoodTinMREOpen: FoodTinMRE
 
 # 2023-11-05
 WeaponRifleAk: WeaponAKMSRifle
-WeaponXrayCannon: WeaponEarthGovXRay
-WeaponLaserCarbine: WeaponEarthGovLaserRifle
-WeaponLaserCannon: WeaponEarthGovLaserSniper
 WeaponRifleLecter: WeaponRifleAR18
 WeaponSubMachineGunAtreides: WeaponSubMachineGunMP7
 WeaponPistolViper: WeaponPistolHIB88M4
@@ -201,7 +198,6 @@ MagazinePistolSubMachineGunTopMounted: MagazinePistolTopSubMachineGun
 WeaponShotgunKammerer: WeaponShotguntrenchgun4034
 WeaponSubMachineGunC20r: WeaponSubMachineGunMP7
 WeaponRevolverMateba: WeaponRevolverMatebaNew
-WeaponSniperMosin: WeaponSniperMosinNew
 WeaponShotgunBulldog: WeaponShotgunZauer
 
 # 2023-11-26
@@ -736,6 +732,11 @@ DrinkIrishCarBomb: DrinkIrishSlammer
 ClothingMaskSexyClown: ClothingMaskBlushingClown
 ClothingMaskSexyMime: ClothingMaskBlushingMime
 
+
+#2025-02-01 Ganimed guns clenup
+WeaponSniperMosinNew: WeaponSniperMosin
+WeaponRifleLecterFire: WeaponRifleM28
+WeaponRifleM28Rubber: WeaponRifleM28
 
 # 2025-01-27
 FoodCondimentPacketFrostoil: FoodCondimentPacketColdsauce

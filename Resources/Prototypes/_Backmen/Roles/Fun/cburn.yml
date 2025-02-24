@@ -12,7 +12,7 @@
     id: idcoinRXBZZ
     ears: ClothingHeadsetEarthGov
     belt: WeaponAdvancedLaser
-    pocket2: ClothingMedicalPounchRXBZZFilled
+    pocket2: ClothingPounchMedicalRXBZZFilled
 
 - type: startingGear
   id: RXBZZMedic
@@ -28,7 +28,7 @@
     id: idcoinRXBZZMedic
     ears: ClothingHeadsetEarthGov
     belt: ClothingBeltMedicalMarineRxbzz
-    pocket2: ClothingMedicalPounchRXBZZFilled
+    pocket2: ClothingPounchMedicalRXBZZFilled
 
 - type: startingGear
   id: RXBZZFlamer
@@ -42,7 +42,7 @@
     outerClothing: ClothingOuterHardsuitCBURN
     id: idcoinRXBZZSpecialist
     ears: ClothingHeadsetEarthGov
-    pocket2: ClothingMedicalPounchRXBZZFilled
+    pocket2: ClothingPounchMedicalRXBZZFilled
   storage:
     back:
     - ArmySetLoadoutsSpecialist
@@ -63,7 +63,7 @@
     head: ClothingHeadHatERTLeaderBeret
     ears: ClothingHeadsetEarthGov
     belt: WeaponAdvancedLaser
-    pocket2: ClothingMedicalPounchRXBZZFilled
+    pocket2: ClothingPounchMedicalRXBZZFilled
   storage:
     back:
     - RadioMTFHandheld

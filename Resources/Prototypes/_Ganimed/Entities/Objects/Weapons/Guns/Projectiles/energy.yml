@@ -11,11 +11,16 @@
     - state: omnilaser_greyscale
       color: blue
   - type: EmpOnTrigger
-    range: 1
+    range: 0.5
     energyConsumption: 30000
-    disableDuration: 15
+    disableDuration: 120
   - type: Ammo
     muzzleFlash: null
+  - type: Projectile
+    damage:
+      types:
+        Heat: 5
+        Radiation: 5
   - type: PointLight
     radius: 2
     color: blue
@@ -27,12 +32,22 @@
   parent: BaseBulletTrigger
   noSpawn: true
   components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: spark
+      color: blue
   - type: EmpOnTrigger
-    range: 3
-    energyConsumption: 10000
-    disableDuration: 5
+    range: 2.5
+    energyConsumption: 600
+    disableDuration: 20
   - type: Ammo
     muzzleFlash: null
+  - type: Projectile
+    damage:
+      types:
+        Heat: 2.5
+        Radiation: 2.5
   - type: PointLight
     radius: 4
     color: blue

@@ -1,6 +1,6 @@
 ent-WeaponPistolM1911 = Дознаватель
 ent-CartridgePistol45ACP = патрон (.45 ACP)
-    .desc = { ent-BaseCartridgePistol.desc }ь
+    .desc = { ent-BaseCartridgePistol.desc }
 ent-MagazinePistol45ACP = пистолетный магазин (.45 ACP)
     .desc = { ent-BaseMagazinePistol.desc }
 ent-MagazinePistol45ACPEmpty = пистолетный магазин (.45 ACP любые)

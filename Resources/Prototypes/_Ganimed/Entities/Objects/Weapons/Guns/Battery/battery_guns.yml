@@ -54,6 +54,14 @@
   - type: DNAGunLocker
 
 - type: entity
+  name: доминатор mk 2
+  parent: WeaponEnergyGunDominator
+  id: WeaponEnergyGunDominatorGenlock
+  description: Высокотехнологичное оружие созданное правоохранительной организацией Sibyl System, предназначенное специально для борьбы против преступности. Данная версия отличается от стандартной наличием идентификации пользователя перед стрельбой.
+  components:
+  - type: DNAGunLocker
+
+- type: entity
   name: лазерный пистолет синего щита
   parent: BaseWeaponBatterySmall
   id: PistolBlueShield

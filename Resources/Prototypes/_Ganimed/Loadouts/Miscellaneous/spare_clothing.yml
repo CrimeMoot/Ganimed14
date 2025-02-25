@@ -63,6 +63,15 @@
       role: JobAtmosphericTechnician
       time: 7200 # 2 hours
 
+- type: loadoutEffectGroup
+  id: Corpsman
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobBrigmedic
+      time: 7200 # 2 hours
+
 
 # Head/Hats
 - type: loadout
@@ -264,6 +273,12 @@
   storage:
     back:
     - ClothingHeadHatPaper
+
+- type: loadout
+  id: SparePaperSack
+  storage:
+    back:
+    - ClothingHeadPaperSack
 
 # Jumpsuits/Uniform
 # Color
@@ -899,6 +914,16 @@
     proto: JamjarTimer
 
 - type: loadout
+  id: SpareJumpskirtOfLife
+  storage:
+    back:
+    - ClothingUniformJumpskirtOfLife
+  effects:
+  - !type:SponsorLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: Corpsman
+
+- type: loadout
   id: SpareOveralls
   storage:
     back:
@@ -1157,6 +1182,15 @@
     - ClothingHandsGlovesColorPurple
 
 # Mask
+- type: loadout
+  id: SpareSterileMask
+  storage:
+    back:
+    - ClothingMaskSterile
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: Doctor
+
 - type: loadout # TODO: Whitelist restriction
   id: SpareNeckGaiter
   storage:

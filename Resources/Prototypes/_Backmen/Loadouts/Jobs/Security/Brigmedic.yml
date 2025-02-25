@@ -157,6 +157,15 @@
     mask: ClothingMaskBreathMedicalSecurity
 
 - type: loadout # Ganimed
+  id: CorpsmanBreathMask
+  equipment:
+    mask: ClothingMaskBreathMedicalSecurity
+  effects:
+  - !type:SponsorLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: Corpsman
+
+- type: loadout # Ganimed
   id: ClothingMaskBreathMedical
   equipment:
     mask: ClothingMaskBreathMedical

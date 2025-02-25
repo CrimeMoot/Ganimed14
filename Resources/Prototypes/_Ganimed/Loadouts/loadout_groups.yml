@@ -37,6 +37,7 @@
   - SpareGreenPartyHat
   - SpareBluePartyHat
   - SparePaperHat
+  - SparePaperSack
   # Jumpsuits
   - SpareJumpsuitColorBlack
   - SpareJumpskirtColorBlack
@@ -126,6 +127,7 @@
   - SpareReporterSuit
   - SpareCuratorSuit
   - SpareCuratorSuitskirt
+  - SpareJumpskirtOfLife
   - SpareOveralls
   - SpareJumpsuitFlannel
   - SpareJumpsuitRandom
@@ -163,6 +165,7 @@
   - SpareGlovesColorBlue
   - SpareGlovesColorPurple
   # Mask
+  - SpareSterileMask
   - SpareNeckGaiter
   # Neck
   - SpareRedTie

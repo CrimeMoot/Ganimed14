@@ -79,6 +79,14 @@
   equipment:
     head: ClothingHeadNurseHat
 
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: CorpsmanBeret
+  equipment:
+    head: ClothingHeadHatBeretBrigmedic
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: Corpsman
+
 # Neck, Ganimed
 - type: loadout
   id: Stethoscope

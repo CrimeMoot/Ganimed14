@@ -17,6 +17,15 @@
       department: Command
       time: 108000 #30 hrs
 
+# Glasses, Ganimed
+- type: loadout
+  id: AdministrationSunglasses
+  equipment:
+    eyes: ClothingEyesGlassesCommand
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: Commander
+
 # Jumpsuit
 - type: loadout
   id: CaptainJumpsuit

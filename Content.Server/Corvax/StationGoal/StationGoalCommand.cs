@@ -4,6 +4,8 @@ using Content.Server.Commands;
 using Content.Shared.Administration;
 using Robust.Shared.Console;
 using Robust.Shared.Prototypes;
+using Content.Server.Chat.Systems;
+using Serilog;
 
 namespace Content.Server.Corvax.StationGoal
 {
@@ -44,6 +46,18 @@ namespace Content.Server.Corvax.StationGoal
                 shell.WriteError("Station goal was not sent");
                 return;
             }
+
+            // Ganimed-start
+            string nameStationPretty = _entManager.ToPrettyString(euid);
+            var nameParts = nameStationPretty.Split('(');
+            var stationName = nameParts[0].Trim();
+
+            var chat = IoCManager.Resolve<IEntitySystemManager>().GetEntitySystem<ChatSystem>();
+            chat.DispatchGlobalAnnouncement(
+                Loc.GetString("station-goal-announcement", ("station", stationName), ("goal", Loc.GetString(proto.ID))),
+                sender: Loc.GetString("station-goal-announcement-CentCom"),
+                colorOverride: Color.Yellow);
+            // Ganimed-end
         }
 
         public CompletionResult GetCompletion(IConsoleShell shell, string[] args)

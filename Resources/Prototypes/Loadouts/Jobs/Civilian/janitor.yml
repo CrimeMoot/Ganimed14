@@ -58,6 +58,11 @@
   equipment:
     outerClothing: ClothingOuterWinterJani
 
+- type: loadout # Ganimed
+  id: WetFloorSign
+  equipment:
+    outerClothing: WetFloorSign
+
 - type: loadout # Ganimed TODO: Whitelist restriction
   id: JanitorBioSuit
   dummyEntity: ClothingOuterBioJanitor

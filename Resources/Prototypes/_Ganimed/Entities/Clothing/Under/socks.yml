@@ -23,9 +23,6 @@
     sprite: Clothing/Under/Socks/bee.rsi
   - type: Clothing
     sprite: Clothing/Under/Socks/bee.rsi
-    clothingVisuals:
-      socks:
-        - state: equipped-FEET
 
 - type: entity
   parent: ClothingUnderSocksBase
@@ -37,9 +34,6 @@
     sprite: Clothing/Under/Socks/coder.rsi
   - type: Clothing
     sprite: Clothing/Under/Socks/coder.rsi
-    clothingVisuals:
-      socks:
-        - state: equipped-FEET
 
 #base
 - type: entity
@@ -52,9 +46,6 @@
     sprite: _Ganimed/Clothing/Under/Socks/socks.rsi
   - type: Clothing
     sprite: _Ganimed/Clothing/Under/Socks/socks.rsi
-    clothingVisuals:
-      socks:
-        - state: equipped-FEET
 
 - type: entity
   parent: ClothingUnderSocksBase
@@ -69,7 +60,7 @@
     sprite: _Ganimed/Clothing/Under/Socks/socks.rsi
     clothingVisuals:
       socks:
-        - state: equipped-FEET
+        - state: equipped-SOCKS
           color: "#3f3f3f"
 
 - type: entity
@@ -85,7 +76,7 @@
     sprite: _Ganimed/Clothing/Under/Socks/socks.rsi
     clothingVisuals:
       socks:
-        - state: equipped-FEET
+        - state: equipped-SOCKS
           color: "#0089EF"
 
 - type: entity
@@ -101,7 +92,7 @@
     sprite: _Ganimed/Clothing/Under/Socks/socks.rsi
     clothingVisuals:
       socks:
-        - state: equipped-FEET
+        - state: equipped-SOCKS
           color: "#723A02"
 
 - type: entity
@@ -117,7 +108,7 @@
     sprite: _Ganimed/Clothing/Under/Socks/socks.rsi
     clothingVisuals:
       socks:
-        - state: equipped-FEET
+        - state: equipped-SOCKS
           color: "#5ABF2F"
 
 - type: entity
@@ -133,7 +124,7 @@
     sprite: _Ganimed/Clothing/Under/Socks/socks.rsi
     clothingVisuals:
       socks:
-        - state: equipped-FEET
+        - state: equipped-SOCKS
           color: "#940000"
 
 - type: entity
@@ -149,7 +140,7 @@
     sprite: _Ganimed/Clothing/Under/Socks/socks.rsi
     clothingVisuals:
       socks:
-        - state: equipped-FEET
+        - state: equipped-SOCKS
           color: "#EBE216"
 
 - type: entity
@@ -161,10 +152,7 @@
   - type: Sprite
     sprite: _Ganimed/Clothing/Under/Socks/stockings/bee.rsi
   - type: Clothing
-    sprite: _Ganimed/Clothing/Under/Socks/stockings/bee.rsii
-    clothingVisuals:
-      socks:
-        - state: equipped-FEET          
+    sprite: _Ganimed/Clothing/Under/Socks/stockings/bee.rsi    
         
 - type: entity
   parent: ClothingUnderSocksBase
@@ -176,9 +164,6 @@
     sprite: _Ganimed/Clothing/Under/Socks/stockings/Centcom.rsi
   - type: Clothing
     sprite: _Ganimed/Clothing/Under/Socks/stockings/Centcom.rsi
-    clothingVisuals:
-      socks:
-        - state: equipped-FEET
 
 - type: entity
   parent: ClothingUnderSocksBase
@@ -189,10 +174,7 @@
   - type: Sprite
     sprite: _Ganimed/Clothing/Under/Socks/stockings/dark.rsi
   - type: Clothing
-    sprite: _Ganimed/Clothing/Under/Socks/stockings/dark.rsi
-    clothingVisuals:
-      socks:
-        - state: equipped-FEET         
+    sprite: _Ganimed/Clothing/Under/Socks/stockings/dark.rsi     
 
 - type: entity
   parent: ClothingUnderSocksBase
@@ -203,10 +185,7 @@
   - type: Sprite
     sprite: _Ganimed/Clothing/Under/Socks/stockings/fishnets.rsi
   - type: Clothing
-    sprite: _Ganimed/Clothing/Under/Socks/stockings/fishnets.rsi
-    clothingVisuals:
-      socks:
-        - state: equipped-FEET           
+    sprite: _Ganimed/Clothing/Under/Socks/stockings/fishnets.rsi        
 
 - type: entity
   parent: ClothingUnderSocksBase
@@ -218,9 +197,6 @@
     sprite: _Ganimed/Clothing/Under/Socks/stockings/safno.rsi
   - type: Clothing
     sprite: _Ganimed/Clothing/Under/Socks/stockings/safno.rsi
-    clothingVisuals:
-      socks:
-        - state: equipped-FEET
 
 - type: entity
   parent: ClothingUnderSocksBase
@@ -232,9 +208,6 @@
     sprite: _Ganimed/Clothing/Under/Socks/stockings/white.rsi
   - type: Clothing
     sprite: _Ganimed/Clothing/Under/Socks/stockings/white.rsi
-    clothingVisuals:
-      socks:
-        - state: equipped-FEET
         
 - type: entity
   parent: ClothingUnderSocksBase
@@ -246,9 +219,6 @@
     sprite: _Ganimed/Clothing/Under/Socks/stockings/sky.rsi
   - type: Clothing
     sprite: _Ganimed/Clothing/Under/Socks/stockings/sky.rsi
-    clothingVisuals:
-      socks:
-        - state: equipped-FEET        
 
 - type: entity
   parent: ClothingUnderSocksBase
@@ -260,9 +230,6 @@
     sprite: _Ganimed/Clothing/Under/Socks/stockings/cat.rsi
   - type: Clothing
     sprite: _Ganimed/Clothing/Under/Socks/stockings/cat.rsi
-    clothingVisuals:
-      socks:
-        - state: equipped-FEET 
 
 - type: entity
   parent: ClothingUnderSocksBase
@@ -273,10 +240,7 @@
   - type: Sprite
     sprite: _Ganimed/Clothing/Under/Socks/longSocks/Dark.rsi
   - type: Clothing
-    sprite: _Ganimed/Clothing/Under/Socks/stockings/Dark.rsi
-    clothingVisuals:
-      socks:
-        - state: equipped-FEET
+    sprite: _Ganimed/Clothing/Under/Socks/longSocks/Dark.rsi
 
 - type: entity
   parent: ClothingUnderSocksBase
@@ -287,7 +251,4 @@
   - type: Sprite
     sprite: _Ganimed/Clothing/Under/Socks/longSocks/White.rsi
   - type: Clothing
-    sprite: _Ganimed/Clothing/Under/Socks/stockings/White.rsi
-    clothingVisuals:
-      socks:
-        - state: equipped-FEET
+    sprite: _Ganimed/Clothing/Under/Socks/longSocks/White.rsi

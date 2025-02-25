@@ -22,9 +22,6 @@
     sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/white.rsi
   - type: Clothing
     sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/white.rsi
-    clothingVisuals:
-      undershirt:
-        - state: equipped-INNERCLOTHING
 
 - type: entity
   parent: ClothingUnderShirtBase
@@ -39,7 +36,7 @@
     sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/white.rsi
     clothingVisuals:
       undershirt:
-        - state: equipped-INNERCLOTHING
+        - state: equipped-UNDERSHIRT
           color: "#3f3f3f"
 
 - type: entity
@@ -55,7 +52,7 @@
     sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/white.rsi
     clothingVisuals:
       undershirt:
-        - state: equipped-INNERCLOTHING
+        - state: equipped-UNDERSHIRT
           color: "#0089EF"
 
 - type: entity
@@ -71,7 +68,7 @@
     sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/white.rsi
     clothingVisuals:
       undershirt:
-        - state: equipped-INNERCLOTHING
+        - state: equipped-UNDERSHIRT
           color: "#5ABF2F"
 
 - type: entity
@@ -87,7 +84,7 @@
     sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/white.rsi
     clothingVisuals:
       undershirt:
-        - state: equipped-INNERCLOTHING
+        - state: equipped-UNDERSHIRT
           color: "#723A02"
 
 - type: entity
@@ -103,7 +100,7 @@
     sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/white.rsi
     clothingVisuals:
       undershirt:
-        - state: equipped-INNERCLOTHING
+        - state: equipped-UNDERSHIRT
           color: "#940000"
 
 - type: entity
@@ -119,7 +116,7 @@
     sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/white.rsi
     clothingVisuals:
       undershirt:
-        - state: equipped-INNERCLOTHING
+        - state: equipped-UNDERSHIRT
           color: "#EBE216"
 
 #Big
@@ -133,9 +130,6 @@
     sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/bigwhite.rsi
   - type: Clothing
     sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/bigwhite.rsi
-    clothingVisuals:
-      undershirt:
-        - state: equipped-INNERCLOTHING
 
 - type: entity
   parent: ClothingUnderShirtBase
@@ -150,7 +144,7 @@
     sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/bigwhite.rsi
     clothingVisuals:
       undershirt:
-        - state: equipped-INNERCLOTHING
+        - state: equipped-UNDERSHIRT
           color: "#3f3f3f"
 
 - type: entity
@@ -166,7 +160,7 @@
     sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/bigwhite.rsi
     clothingVisuals:
       undershirt:
-        - state: equipped-INNERCLOTHING
+        - state: equipped-UNDERSHIRT
           color: "#0089EF"
 
 - type: entity
@@ -182,7 +176,7 @@
     sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/bigwhite.rsi
     clothingVisuals:
       undershirt:
-        - state: equipped-INNERCLOTHING
+        - state: equipped-UNDERSHIRT
           color: "#5ABF2F"
 
 - type: entity
@@ -198,7 +192,7 @@
     sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/bigwhite.rsi
     clothingVisuals:
       undershirt:
-        - state: equipped-INNERCLOTHING
+        - state: equipped-UNDERSHIRT
           color: "#723A02"
 
 - type: entity
@@ -214,7 +208,7 @@
     sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/bigwhite.rsi
     clothingVisuals:
       undershirt:
-        - state: equipped-INNERCLOTHING
+        - state: equipped-UNDERSHIRT
           color: "#940000"
 
 - type: entity
@@ -230,7 +224,7 @@
     sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/bigwhite.rsi
     clothingVisuals:
       undershirt:
-        - state: equipped-INNERCLOTHING
+        - state: equipped-UNDERSHIRT
           color: "#EBE216"
 
 #alter
@@ -246,7 +240,7 @@
     sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/alterwhite.rsi
     clothingVisuals:
       undershirt:
-        - state: equipped-INNERCLOTHING
+        - state: equipped-UNDERSHIRT
 
 - type: entity
   parent: ClothingUnderShirtBase
@@ -261,7 +255,7 @@
     sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/alterwhite.rsi
     clothingVisuals:
       undershirt:
-        - state: equipped-INNERCLOTHING
+        - state: equipped-UNDERSHIRT
           color: "#3f3f3f"
 
 - type: entity
@@ -277,7 +271,7 @@
     sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/alterwhite.rsi
     clothingVisuals:
       undershirt:
-        - state: equipped-INNERCLOTHING
+        - state: equipped-UNDERSHIRT
           color: "#0089EF"
 
 - type: entity
@@ -293,7 +287,7 @@
     sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/alterwhite.rsi
     clothingVisuals:
       undershirt:
-        - state: equipped-INNERCLOTHING
+        - state: equipped-UNDERSHIRT
           color: "#5ABF2F"
 
 - type: entity
@@ -309,7 +303,7 @@
     sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/alterwhite.rsi
     clothingVisuals:
       undershirt:
-        - state: equipped-INNERCLOTHING
+        - state: equipped-UNDERSHIRT
           color: "#723A02"
 
 - type: entity
@@ -325,7 +319,7 @@
     sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/alterwhite.rsi
     clothingVisuals:
       undershirt:
-        - state: equipped-INNERCLOTHING
+        - state: equipped-UNDERSHIRT
           color: "#940000"
 
 - type: entity
@@ -341,7 +335,7 @@
     sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/alterwhite.rsi
     clothingVisuals:
       undershirt:
-        - state: equipped-INNERCLOTHING
+        - state: equipped-UNDERSHIRT
           color: "#EBE216"
 
 #misc
@@ -355,9 +349,6 @@
     sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/anime.rsi
   - type: Clothing
     sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/anime.rsi
-    clothingVisuals:
-      undershirt:
-        - state: equipped-INNERCLOTHING
 
 - type: entity
   parent: ClothingUnderShirtBase
@@ -369,23 +360,6 @@
     sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/cat.rsi
   - type: Clothing
     sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/cat.rsi
-    clothingVisuals:
-      undershirt:
-        - state: equipped-INNERCLOTHING
-
-- type: entity
-  parent: ClothingUnderShirtBase
-  id: ClothingClothBrassiere
-  name: brassiere
-  description: Make them loins buzz!
-  components:
-  - type: Sprite
-    sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/cloth.rsi
-  - type: Clothing
-    sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/cloth.rsi
-    clothingVisuals:
-      undershirt:
-        - state: equipped-INNERCLOTHING
 
 - type: entity
   parent: ClothingUnderShirtBase
@@ -397,9 +371,6 @@
     sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/flower.rsi
   - type: Clothing
     sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/flower.rsi
-    clothingVisuals:
-      undershirt:
-        - state: equipped-INNERCLOTHING
 
 - type: entity
   parent: ClothingUnderShirtBase
@@ -411,9 +382,6 @@
     sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/heart.rsi
   - type: Clothing
     sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/heart.rsi
-    clothingVisuals:
-      undershirt:
-        - state: equipped-INNERCLOTHING
 
 - type: entity
   parent: ClothingUnderShirtBase
@@ -425,9 +393,6 @@
     sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/mirabrassiere.rsi
   - type: Clothing
     sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/mirabrassiere.rsi
-    clothingVisuals:
-      undershirt:
-        - state: equipped-INNERCLOTHING
 
 #Tshirt
 - type: entity
@@ -440,9 +405,6 @@
     sprite: _Ganimed/Clothing/Under/Shirt/Tshirt/shirt.rsi
   - type: Clothing
     sprite: _Ganimed/Clothing/Under/Shirt/Tshirt/shirt.rsi
-    clothingVisuals:
-      undershirt:
-        - state: equipped-INNERCLOTHING
 
 - type: entity
   parent: ClothingUnderShirtBase
@@ -457,7 +419,7 @@
     sprite: _Ganimed/Clothing/Under/Shirt/Tshirt/shirt.rsi
     clothingVisuals:
       undershirt:
-        - state: equipped-INNERCLOTHING
+        - state: equipped-UNDERSHIRT
           color: "#3f3f3f"
 
 - type: entity
@@ -473,7 +435,7 @@
     sprite: _Ganimed/Clothing/Under/Shirt/Tshirt/shirt.rsi
     clothingVisuals:
       undershirt:
-        - state: equipped-INNERCLOTHING
+        - state: equipped-UNDERSHIRT
           color: "#0089EF"
 
 - type: entity
@@ -489,7 +451,7 @@
     sprite: _Ganimed/Clothing/Under/Shirt/Tshirt/shirt.rsi
     clothingVisuals:
       undershirt:
-        - state: equipped-INNERCLOTHING
+        - state: equipped-UNDERSHIRT
           color: "#5ABF2F"
 
 - type: entity
@@ -505,7 +467,7 @@
     sprite: _Ganimed/Clothing/Under/Shirt/Tshirt/shirt.rsi
     clothingVisuals:
       undershirt:
-        - state: equipped-INNERCLOTHING
+        - state: equipped-UNDERSHIRT
           color: "#723A02"
 
 - type: entity
@@ -521,7 +483,7 @@
     sprite: _Ganimed/Clothing/Under/Shirt/Tshirt/shirt.rsi
     clothingVisuals:
       undershirt:
-        - state: equipped-INNERCLOTHING
+        - state: equipped-UNDERSHIRT
           color: "#940000"
 
 - type: entity
@@ -537,5 +499,5 @@
     sprite: _Ganimed/Clothing/Under/Shirt/Tshirt/shirt.rsi
     clothingVisuals:
       undershirt:
-        - state: equipped-INNERCLOTHING
+        - state: equipped-UNDERSHIRT
           color: "#EBE216"

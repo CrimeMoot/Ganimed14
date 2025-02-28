@@ -1,7 +1,0 @@
-- type: latheRecipe
-  id: ArtificialBluespaceCrystal
-  result: ArtificialBluespaceCrystal
-  completetime: 1
-  materials:
-    Diamond: 600
-    Plasma: 600

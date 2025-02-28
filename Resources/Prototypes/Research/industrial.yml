@@ -15,7 +15,6 @@
   - OreProcessorIndustrialMachineCircuitboard
   - ClothingMaskWeldingGas
   - ShipyardCircuitboard # backmen: salvage
-  - ClothingShoesBootsJump
 
 - type: technology
   id: SpaceScanning

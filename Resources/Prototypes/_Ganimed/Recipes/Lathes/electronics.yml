@@ -1,9 +1,0 @@
-- type: latheRecipe
-  parent: BaseGoldCircuitboardRecipe
-  id: MachineBluespaceHarvesterCircuitboard
-  result: MachineBluespaceHarvesterCircuitboard
-
-- type: latheRecipe
-  parent: BaseGoldCircuitboardRecipe
-  id: MachineBluespaceTransitorCircuitboard
-  result: MachineBluespaceTransitorCircuitboard

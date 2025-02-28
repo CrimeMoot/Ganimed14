@@ -1,7 +1,6 @@
 - type: gameMapPool
   id: BackmenDefaultMapPool
   maps:
-  - BackmenAspid
   - BackmenKettle
   - BackmenHive
   - BackmenShoukou

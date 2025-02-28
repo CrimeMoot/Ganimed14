@@ -82,7 +82,6 @@ namespace Content.IntegrationTests.Tests
             "shwrDust",
             "BackmenHive",
 			"BackmenShoukou",
-			"BackmenAspid",
 			"BackmenKettle",
 			"BackmenRook",
             "BargeVsShip",

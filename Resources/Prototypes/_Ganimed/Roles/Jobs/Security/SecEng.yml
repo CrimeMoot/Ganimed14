@@ -1,8 +1,8 @@
 - type: job
   id: SecurityEngineer
-  name: job-name-security-enginer
-  description: job-description-security-enginer
-  playTimeTracker: JobSecurityEnginer
+  name: job-name-security-engineer
+  description: job-description-security-engineer
+  playTimeTracker: JobSecurityEngineer
   requirements:
     - !type:DepartmentTimeRequirement
       department: Engineering
@@ -13,7 +13,7 @@
     - !type:AgeRequirement
       requiredAge: 21
   startingGear: SecurityEngineerGear
-  icon: "JobIconSecurityEnginer"
+  icon: "JobIconSecurityEngineer"
   supervisors: job-supervisors-hos
   canBeAntag: false
   access:
@@ -31,7 +31,7 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitSecEngineer
     back: ClothingBackpackSecurityEngineer
-    shoes: ClothingShoesBootsJackSecEnginer
+    shoes: ClothingShoesBootsJackSecEngineer
     eyes: ClothingEyesHudSecEng
     gloves: ClothingHandsGlovesColorYellow
     head: ClothingHeadHatWeldingMaskFlame

@@ -1,5 +1,5 @@
 - type: entity
-  id: BluespaceHarvester
+  id: BluespaceHarvesters
   parent: CrateEngineering
   name: Блюспейс Харвестер
   description: Содержит все всё что требуется, для создание харвестер.

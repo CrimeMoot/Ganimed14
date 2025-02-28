@@ -17,6 +17,7 @@ using Robust.Shared.Map.Events;
 using Robust.Shared.Network;
 using Robust.Shared.Physics;
 using Robust.Shared.Physics.Systems;
+using Robust.Shared.Serialization;
 using Robust.Shared.Player;
 using Robust.Shared.Utility;
 
@@ -48,7 +49,24 @@ public sealed class FollowerSystem : EntitySystem
         SubscribeLocalEvent<BeforeSerializationEvent>(OnBeforeSave);
         SubscribeLocalEvent<FollowedComponent, PolymorphedEvent>(OnFollowedPolymorphed);
     }
+/*
+    private void OnFollowedGetState(EntityUid uid, FollowedComponent component, ref ComponentGetState args)
+    {
+        component.Following.RemoveWhere(x => TerminatingOrDeleted(x));
+        args.State = new FollowedComponentState()
+        {
+            Following = GetNetEntitySet(component.Following),
+        };
+    }
 
+    private void OnFollowedHandleState(EntityUid uid, FollowedComponent component, ref ComponentHandleState args)
+    {
+        if (args.Current is not FollowedComponentState state)
+            return;
+
+        component.Following = EnsureEntitySet<FollowedComponent>(state.Following, uid);
+    }
+*/
     private void OnFollowedAttempt(Entity<FollowedComponent> ent, ref ComponentGetStateAttemptEvent args)
     {
         if (args.Cancelled)
@@ -377,3 +395,4 @@ public sealed class EntityStoppedFollowingEvent : FollowEvent
     public EntityStoppedFollowingEvent(EntityUid following, EntityUid follower) : base(following, follower)
     {
     }
+}

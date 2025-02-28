@@ -9,6 +9,7 @@
   - CaptainGloves # Ganimed
   - CaptainBelt # Ganimed
   - CaptainOuterClothing
+  - CaptainGlasses # Ganimed
   - CaptainShoes # Ganimed
   - Underwear # Ganimed
   - Trinkets
@@ -27,7 +28,7 @@
   - HoPJumpsuit
   - HoPBackpack
   - HoPOuterClothing
-  - Glasses
+  - HoPGlasses # Ganimed
   - HoPShoes # Ganimed
   - Underwear # Ganimed
   - Medals #backmen
@@ -171,6 +172,7 @@
   - CommonBelt # Ganimed
   - Underwear # Ganimed
   - Medals #backmen
+  - Survival
   - Trinkets
   - GroupSpeciesBreathTool
   - SpareClothing # Ganimed
@@ -470,7 +472,7 @@
   - HeadofSecurityGloves # Ganimed
   - HeadofSecurityOuterClothing
   - SecurityShoes
-  - SecurityOfficerPocket #backmen
+  - SecurityPocket #backmen
   - Underwear # Ganimed
   - Medals #backmen
   - SurvivalSecurity
@@ -531,6 +533,7 @@
   - DetectiveJumpsuit
   - SecurityBackpack
   - DetectiveOuterClothing
+  - DetectiveBelt # Ganimed
   - SecurityGlasses # Ganimed
   - DetectiveGloves # Ganimed
   - DetectiveShoes # Ganimed

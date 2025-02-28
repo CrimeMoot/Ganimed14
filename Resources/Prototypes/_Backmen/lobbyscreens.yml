@@ -22,6 +22,3 @@
   id: VangoghLobbyScreen
   path: /Textures/Backmen/LobbyScreens/vangogh.rsi
 
-- type: animatedLobbyScreen
-  id: GachiLobbyScreen
-  path: /Textures/Backmen/LobbyScreens/Gachi.rsi

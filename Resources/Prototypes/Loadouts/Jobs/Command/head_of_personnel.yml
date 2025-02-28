@@ -81,6 +81,15 @@
   equipment:
     neck: BedsheetIan
 
+# Glasses, Ganimed
+- type: loadout
+  id: AdministrationHud
+  equipment:
+    eyes: ClothingEyesHudCommand
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: Commander
+
 # Back
 - type: loadout
   id: HoPBackpackIan

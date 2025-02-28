@@ -30,6 +30,13 @@
   equipment:
     mask: ClothingMaskScaredMime
 
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: MimeMaskBlushing
+  equipment:
+    mask: ClothingMaskBlushingMime
+  effects:
+  - !type:SponsorLoadoutEffect
+
 # Neck, Ganimed
 - type: loadout # TODO: Whitelist restriction
   id: ScarfZebra

@@ -141,7 +141,6 @@
   cost: 10000
   recipeUnlocks:
   - WeaponLaserCannon
-  - BorgModuleNeutralizationAdvanced
   - BorgModuleCombat
 
 - type: technology

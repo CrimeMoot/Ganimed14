@@ -12,18 +12,6 @@
   - MachineBluespaceTransitorCircuitboard
 
 - type: technology
-  id: HypoImplant
-  name: research-technology-hypo
-  icon:
-    sprite: _Ganimed/Objects/Specific/Medical/hypocivial.rsi
-    state: medivend_hypo
-  discipline: Experimental
-  tier: 2
-  cost: 10000
-  recipeUnlocks:
-  - HypoExperement
-
-- type: technology
   id: BluespaceMining
   name: research-technology-bluespace-mining
   icon:

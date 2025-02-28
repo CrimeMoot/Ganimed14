@@ -1,62 +1,55 @@
-using Robust.Shared.GameStates;
+using Robust.Shared.Map.Components;
 
-namespace Content.Shared.Light.Components
+namespace Content.Shared.Light.Components;
+
+/// <summary>
+/// Cycles through colors AKA "Day / Night cycle" on <see cref="MapLightComponent"/>
+/// </summary>
+[RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
+public sealed partial class LightCycleComponent : Component
 {
-    [NetworkedComponent, RegisterComponent]
-    [AutoGenerateComponentState]
-    public sealed partial class LightCycleComponent : Component
-    {
+    [DataField, AutoNetworkedField]
+    public Color OriginalColor = Color.Transparent;
 
-        public string? OriginalColor;
+    /// <summary>
+    /// How long an entire cycle lasts
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public TimeSpan Duration = TimeSpan.FromMinutes(30);
 
-        [AutoNetworkedField]
-        [DataField("offset")]
-        public TimeSpan Offset;
+    [DataField, AutoNetworkedField]
+    public TimeSpan Offset;
 
-        [AutoNetworkedField]
-        [ViewVariables(VVAccess.ReadWrite), DataField("isEnabled")]
-        public bool IsEnabled = true;
-        [AutoNetworkedField]
-        [ViewVariables(VVAccess.ReadWrite), DataField("initialTime")]
-        public int InitialTime = 600;
-        [AutoNetworkedField]
-        [ViewVariables(VVAccess.ReadWrite), DataField("cycleDuration")]
-        public int CycleDuration = 1800;
-        [AutoNetworkedField]
-        [ViewVariables(VVAccess.ReadWrite), DataField("minLightLevel")]
-        public double MinLightLevel = 0.2;
-        [AutoNetworkedField]
-        [ViewVariables(VVAccess.ReadWrite), DataField("maxLightLevel")]
-        public double MaxLightLevel = 1.25;
-        [AutoNetworkedField]
-        [ViewVariables(VVAccess.ReadWrite), DataField("clipLight")]
-        public double ClipLight = 1.25;
-        [AutoNetworkedField]
-        [ViewVariables(VVAccess.ReadWrite), DataField("clipRed")]
-        public double ClipRed = 1;
-        [AutoNetworkedField]
-        [ViewVariables(VVAccess.ReadWrite), DataField("clipGreen")]
-        public double ClipGreen = 1;
-        [AutoNetworkedField]
-        [ViewVariables(VVAccess.ReadWrite), DataField("clipBlue")]
-        public double ClipBlue = 1.25;
-        [AutoNetworkedField]
-        [ViewVariables(VVAccess.ReadWrite), DataField("minRedLevel")]
-        public double MinRedLevel = 0.1;
-        [AutoNetworkedField]
-        [ViewVariables(VVAccess.ReadWrite), DataField("minGreenLevel")]
-        public double MinGreenLevel = 0.15;
-        [AutoNetworkedField]
-        [ViewVariables(VVAccess.ReadWrite), DataField("minBlueLevel")]
-        public double MinBlueLevel = 0.50;
-        [AutoNetworkedField]
-        [ViewVariables(VVAccess.ReadWrite), DataField("maxRedLevel")]
-        public double MaxRedLevel = 2;
-        [AutoNetworkedField]
-        [ViewVariables(VVAccess.ReadWrite), DataField("maxGreenLevel")]
-        public double MaxGreenLevel = 2;
-        [AutoNetworkedField]
-        [ViewVariables(VVAccess.ReadWrite), DataField("maxBlueLevel")]
-        public double MaxBlueLevel = 5;
-    }
+    [DataField, AutoNetworkedField]
+    public bool Enabled = true;
+
+    /// <summary>
+    /// Should the offset be randomised upon MapInit.
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public bool InitialOffset = true;
+
+    /// <summary>
+    /// Trench of the oscillation.
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public float MinLightLevel = 0f;
+
+    /// <summary>
+    /// Peak of the oscillation
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public float MaxLightLevel = 3f;
+
+    [DataField, AutoNetworkedField]
+    public float ClipLight = 1.25f;
+
+    [DataField, AutoNetworkedField]
+    public Color ClipLevel = new Color(1f, 1f, 1.25f);
+
+    [DataField, AutoNetworkedField]
+    public Color MinLevel = new Color(0.1f, 0.15f, 0.50f);
+
+    [DataField, AutoNetworkedField]
+    public Color MaxLevel = new Color(2f, 2f, 5f);
 }

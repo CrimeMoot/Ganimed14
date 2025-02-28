@@ -192,6 +192,7 @@
     dynamicPacks:
     - AdvancedTools
     - ScienceEquipment
+    - ScienceExplosives
     - ScienceClothing
     - PowerCells
     - ScienceWeapons
@@ -518,6 +519,7 @@
     - Scarves
     - Carpets
     - Bedsheets
+    - CorvaxClothing # Corvax-Clothing
   - type: EmagLatheRecipes
     emagStaticPacks:
     - ClothingCentComm

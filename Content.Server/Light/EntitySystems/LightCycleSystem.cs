@@ -1,23 +1,22 @@
-using Content.Server.GameTicking;
+using Content.Shared;
 using Content.Shared.Light.Components;
+using Robust.Shared.Random;
 
-namespace Content.Server.Light.EntitySystems
+namespace Content.Server.Light.EntitySystems;
+
+/// <inheritdoc/>
+public sealed class LightCycleSystem : SharedLightCycleSystem
 {
-    public sealed partial class LightCycleSystem : EntitySystem
+    [Dependency] private readonly IRobustRandom _random = default!;
+
+    protected override void OnCycleMapInit(Entity<LightCycleComponent> ent, ref MapInitEvent args)
     {
-        [Dependency] private readonly GameTicker _gameTicker = default!;
-        public override void Initialize()
+        base.OnCycleMapInit(ent, ref args);
+
+        if (ent.Comp.InitialOffset)
         {
-            base.Initialize();
-
-            SubscribeLocalEvent<LightCycleComponent, ComponentStartup>(OnComponentStartup);
+            ent.Comp.Offset = _random.Next(ent.Comp.Duration);
+            Dirty(ent);
         }
-
-        private void OnComponentStartup(EntityUid uid, LightCycleComponent cycle, ComponentStartup args)
-        {
-            cycle.Offset = _gameTicker.RoundDuration();
-        }
-
     }
-
 }

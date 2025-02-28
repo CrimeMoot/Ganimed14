@@ -1630,7 +1630,7 @@
   id: SecurityNeck
   name: loadout-group-security-neck
   minLimit: 0
-  loadouts: 
+  loadouts:
   - SecurityWhistle
   - SecurityCloak
 
@@ -1676,6 +1676,7 @@
   id: SecurityOuterClothing
   name: loadout-group-security-outerclothing
   loadouts:
+  - ArmorVestSec # Corvax
   - ArmorVest
   - ArmorVestSlim
   - ArmorVestBulletproof # Ganimed
@@ -2097,7 +2098,7 @@
   loadouts:
   - ParamedicWindbreaker
   - ParamedicWintercoat
-  - SeniorPhysicianWintercoat # cats 
+  - SeniorPhysicianWintercoat # cats
 
 - type: loadoutGroup
   id: ParamedicShoes

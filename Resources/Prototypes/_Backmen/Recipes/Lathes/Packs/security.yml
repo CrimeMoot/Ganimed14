@@ -4,16 +4,13 @@
   recipes:
     - MagazineBoxLightRifle
     - MagazineBoxMagnum
-    - MagazineBoxPistol
-    - MagazineBoxRifle
-    - MagazineLightRifle
 
 # Shared between secfab and emagged protolathe
 - type: latheRecipePack
   id: BackmenAmmo
   recipes:
-  - MagazineBoxLightRifleIncendiary
   - MagazineBoxMagnumIncendiary
+<<<<<<< HEAD
   - MagazineBoxPistolIncendiary
   - MagazineBoxRifleIncendiary
   - MagazineGrenadeEmpty
@@ -22,9 +19,7 @@
   - MagazineRifleIncendiary
   - MagazineShotgunBeanbag
   - MagazineShotgunIncendiary
-  - MagazineShotgunIncendiary
   - BoxShotgunIncendiary
-  - MagazinePistolSubMachineGunIncendiary
   - SpeedLoaderMagnumIncendiary
   - BoxShellTranquilizer
   - BoxBeanbag

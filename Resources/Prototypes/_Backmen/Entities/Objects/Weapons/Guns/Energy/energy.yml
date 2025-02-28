@@ -5,6 +5,7 @@
   suffix: Винтовка
   description: Стандартная лазерная винтовка земного правительства, используемая армией и полицией.
   components:
+  - type: Appearance
   - type: Sprite
     sprite: Backmen/Objects/Weapons/Gunsx64/Battery/EG-R/big.rsi
     layers:
@@ -52,6 +53,7 @@
   suffix: Пулемёт
   description: Стандартный лазерный пулемет земного правительства, используемый армией. Тяжелый и смертоносный.
   components:
+  - type: Appearance
   - type: Sprite
     sprite: Backmen/Objects/Weapons/Gunsx64/Battery/EG-MG/big.rsi
     layers:
@@ -103,6 +105,7 @@
   suffix: Пистолет-пулемёт
   description: Стандартный лазерный карабин правительства Земли, используемый армией и полицией. Благодаря короткому стволу он обладает лучшей маневренностью в узких пространствах.
   components:
+  - type: Appearance
   - type: Sprite
     sprite: Backmen/Objects/Weapons/Gunsx64/Battery/EG-C/big.rsi
     layers:
@@ -181,6 +184,7 @@
   suffix: Винтовка
   description: Тяжелая снайперская винтовка правительства Земли для длительных боевых действий.
   components:
+  - type: Appearance
   - type: Sprite
     sprite: Backmen/Objects/Weapons/Gunsx64/Battery/EG-S/big.rsi
     layers:
@@ -229,6 +233,7 @@
   suffix: Винтовка
   description: Экспериментальное рентгеновское оружие земного правительства, похоже, оно испускает радиацию.
   components:
+  - type: Appearance
   - type: Sprite
     sprite: Backmen/Objects/Weapons/Gunsx64/Battery/EGE-XR/big.rsi
     layers:

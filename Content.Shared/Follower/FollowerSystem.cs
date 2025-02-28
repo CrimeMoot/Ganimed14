@@ -7,6 +7,7 @@ using Content.Shared.Ghost;
 using Content.Shared.Hands;
 using Content.Shared.Movement.Events;
 using Content.Shared.Movement.Pulling.Events;
+using Content.Shared.Polymorph;
 using Content.Shared.Tag;
 using Content.Shared.Verbs;
 using Robust.Shared.Containers;
@@ -16,7 +17,6 @@ using Robust.Shared.Map.Events;
 using Robust.Shared.Network;
 using Robust.Shared.Physics;
 using Robust.Shared.Physics.Systems;
-using Robust.Shared.Serialization;
 using Robust.Shared.Player;
 using Robust.Shared.Utility;
 
@@ -40,30 +40,15 @@ public sealed class FollowerSystem : EntitySystem
         SubscribeLocalEvent<FollowerComponent, MoveInputEvent>(OnFollowerMove);
         SubscribeLocalEvent<FollowerComponent, PullStartedMessage>(OnPullStarted);
         SubscribeLocalEvent<FollowerComponent, EntityTerminatingEvent>(OnFollowerTerminating);
+        SubscribeLocalEvent<FollowerComponent, AfterAutoHandleStateEvent>(OnAfterHandleState);
 
         SubscribeLocalEvent<FollowedComponent, ComponentGetStateAttemptEvent>(OnFollowedAttempt);
         SubscribeLocalEvent<FollowerComponent, GotEquippedHandEvent>(OnGotEquippedHand);
         SubscribeLocalEvent<FollowedComponent, EntityTerminatingEvent>(OnFollowedTerminating);
         SubscribeLocalEvent<BeforeSerializationEvent>(OnBeforeSave);
-    }
-/*
-    private void OnFollowedGetState(EntityUid uid, FollowedComponent component, ref ComponentGetState args)
-    {
-        component.Following.RemoveWhere(x => TerminatingOrDeleted(x));
-        args.State = new FollowedComponentState()
-        {
-            Following = GetNetEntitySet(component.Following),
-        };
+        SubscribeLocalEvent<FollowedComponent, PolymorphedEvent>(OnFollowedPolymorphed);
     }
 
-    private void OnFollowedHandleState(EntityUid uid, FollowedComponent component, ref ComponentHandleState args)
-    {
-        if (args.Current is not FollowedComponentState state)
-            return;
-
-        component.Following = EnsureEntitySet<FollowedComponent>(state.Following, uid);
-    }
-*/
     private void OnFollowedAttempt(Entity<FollowedComponent> ent, ref ComponentGetStateAttemptEvent args)
     {
         if (args.Cancelled)
@@ -160,11 +145,25 @@ public sealed class FollowerSystem : EntitySystem
         StopFollowingEntity(uid, component.Following, deparent: false);
     }
 
+    private void OnAfterHandleState(Entity<FollowerComponent> entity, ref AfterAutoHandleStateEvent args)
+    {
+        StartFollowingEntity(entity, entity.Comp.Following);
+    }
+
     // Since we parent our observer to the followed entity, we need to detach
     // before they get deleted so that we don't get recursively deleted too.
     private void OnFollowedTerminating(EntityUid uid, FollowedComponent component, ref EntityTerminatingEvent args)
     {
         StopAllFollowers(uid, component);
+    }
+
+    private void OnFollowedPolymorphed(Entity<FollowedComponent> entity, ref PolymorphedEvent args)
+    {
+        foreach (var follower in entity.Comp.Following)
+        {
+            // Stop following the target's old entity and start following the new one
+            StartFollowingEntity(follower, args.NewEntity);
+        }
     }
 
     /// <summary>
@@ -227,6 +226,7 @@ public sealed class FollowerSystem : EntitySystem
         RaiseLocalEvent(follower, followerEv);
         RaiseLocalEvent(entity, entityEv);
         Dirty(entity, followedComp);
+        Dirty(follower, followerComp);
     }
 
     /// <summary>
@@ -238,7 +238,7 @@ public sealed class FollowerSystem : EntitySystem
         if (!Resolve(target, ref followed, false))
             return;
 
-        if (!HasComp<FollowerComponent>(uid))
+        if (!TryComp<FollowerComponent>(uid, out var followerComp) || followerComp.Following != target)
             return;
 
         followed.Following.Remove(uid);
@@ -377,4 +377,3 @@ public sealed class EntityStoppedFollowingEvent : FollowEvent
     public EntityStoppedFollowingEvent(EntityUid following, EntityUid follower) : base(following, follower)
     {
     }
-}

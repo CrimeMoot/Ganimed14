@@ -1,0 +1,14 @@
+- type: entity
+  id: BluespaceHarvester
+  parent: CrateEngineering
+  name: Блюспейс Харвестер
+  description: Содержит все всё что требуется, для создание харвестер.
+  components:
+  - type: StorageFill
+    contents:
+    - id: ArtificialBluespaceCrystal
+      amount: 1
+    - id: MachineBluespaceTransitorCircuitboard
+      amount: 1
+    - id: MachineBluespaceHarvesterCircuitboar
+      amount: 1

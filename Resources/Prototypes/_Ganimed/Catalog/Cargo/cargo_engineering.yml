@@ -1,0 +1,9 @@
+- type: cargoProduct
+  id: EngineeringBluespaceHarvester
+  icon:
+    sprite: _Ganimed/Bluespace/module.rsi
+    state: bluespace
+  product: BluespaceHarvester
+  cost: 50000
+  category: cargoproduct-category-name-bluespaceharvester
+  group: market

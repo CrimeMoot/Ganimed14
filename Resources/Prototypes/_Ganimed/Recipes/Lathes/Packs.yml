@@ -5,37 +5,6 @@
   - MachineBluespaceTransitorCircuitboard
 
 - type: latheRecipePack
-  id: HypoImplant
-  recipes:
-  - HypoExperement
-
-- type: latheRecipePack
   id: BluespaceMining
   recipes:
-  - MachineBluespaceHarvesterCircuitboard
-
-- type: latheRecipePack
-  id: ChemicalImplant
-  recipes:
-  - ChemicalsImplanter
-  - ChemicalImplanterTrigger
-
-- type: latheRecipePack
-  id: NightVisionTech
-  recipes:
-  - ClothingEyesNightVisionGoggles
-
-- type: latheRecipePack
-  id: ThermalVisionTech
-  recipes:
-  - ClothingEyesThermalVisionGoggles
-
-- type: latheRecipePack
-  id: ConcentratedLaserWeaponry
-  recipes:
-  - BorgModuleCombat
-
-- type: latheRecipePack
-  id: PlantAnalyzer
-  recipes:
-  - PlantAnalyzer
+  - MachineBluespaceHarvesterCircuitboar

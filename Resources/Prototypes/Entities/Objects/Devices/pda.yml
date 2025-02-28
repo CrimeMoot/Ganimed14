@@ -83,7 +83,6 @@
       - CrewManifestCartridge
       - NotekeeperCartridge
       - BankCartridge
-      - GlimmerMonitorCartridge
       - NewsReaderCartridge
     cartridgeSlot:
       priority: -1

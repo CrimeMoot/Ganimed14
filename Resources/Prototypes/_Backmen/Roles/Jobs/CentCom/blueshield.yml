@@ -8,23 +8,14 @@
   joinNotifyCrew: true
   discordRequired: false
   requirements:
-    - !type:RoleTimeRequirement
-      role: JobHeadOfSecurity
-      time: 18000
     - !type:DepartmentTimeRequirement
-      department: Medical
-      time: 14400
+      department: Security
+      time: 14400 #4 hrs
     - !type:DepartmentTimeRequirement
-      department: Science
-      time: 14400
-    - !type:DepartmentTimeRequirement
-      department: Civilian
-      time: 14400
-    - !type:DepartmentTimeRequirement
-      department: Engineering
-      time: 14400
+      department: Command
+      time: 14400 #4 hrs
     - !type:OverallPlaytimeRequirement
-      time: 86400
+      time: 86400 #24 hrs
     - !type:AgeRequirement
       requiredAge: 21 # cats
   special:

@@ -139,7 +139,6 @@
   - GroupTankHarness
   - LawyerNeck
   - LawyerJumpsuit
-  - MagistrateOuterClothing # Ganimed
   - CommonBackpack
   - GlassesWithSunglasses # Ganimed
   - Underwear # Ganimed
@@ -696,7 +695,7 @@
   - PsychologistShoes # Ganimed
   - Underwear # Ganimed
   - Medals #backmen
-  - Survival
+  - SurvivalMedical
   - Trinkets
   - GroupSpeciesBreathToolMedical
   - SpareClothing # Ganimed

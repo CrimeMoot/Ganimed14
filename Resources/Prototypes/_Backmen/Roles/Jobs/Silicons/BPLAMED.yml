@@ -3,6 +3,7 @@
   name: job-name-silicon-BPLAMED
   description: job-description-silicon-BPLAMED
   playTimeTracker: BPLAMED
+  setPreference: false
   joinNotifyCrew: false
   requirements:
   - !type:OverallPlaytimeRequirement

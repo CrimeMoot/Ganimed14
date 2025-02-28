@@ -14,10 +14,9 @@
   id: XenoAgent
   name: roles-antag-XenoAgent-name
   antagonist: true
-  setPreference: true
+  setPreference: false
   objective: roles-antag-XenoAgent-objective
-  guides: [  ]
   requirements:
   - !type:OverallPlaytimeRequirement
-    time: 12000 # 150h
+    time: 12000 # 15h
   discordRequired: false # backmen: antag

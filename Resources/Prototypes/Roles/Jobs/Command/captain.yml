@@ -6,20 +6,20 @@
   requirements:
     - !type:DepartmentTimeRequirement
       department: Engineering
-      time: 72000 #20 hrs # Corvax-RoleTime
+      time: 54000 #15 hrs
     - !type:DepartmentTimeRequirement
       department: Medical
-      time: 72000 #20 hrs # Corvax-RoleTime
+      time: 54000 #15 hrs
     - !type:DepartmentTimeRequirement
       department: Security
       time: 72000 #20 hrs # Corvax-RoleTime
-#    - !type:DepartmentTimeRequirement
-#      department: Command
-#      time: 54000 # 15 hours
+    - !type:DepartmentTimeRequirement
+      department: Command
+      time: 90000 # 25 hours
     - !type:OverallPlaytimeRequirement
-      time: 504000 #140 hrs # Corvax-RoleTime
+      time: 432000 #120 hrs
     - !type:AgeRequirement
-      requiredAge: 21 # cats
+      requiredAge: 24 # cats
   weight: 20
   startingGear: CaptainGear
   icon: "JobIconCaptain"

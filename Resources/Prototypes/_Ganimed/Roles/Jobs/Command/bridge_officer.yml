@@ -16,9 +16,10 @@
   access:
   - Command
   - Maintenance
-  - External
-  - Security
   - Brig
+  #extendedAccess:
+  #- External
+  #- Security
   special:
   - !type:AddComponentSpecial
     components:

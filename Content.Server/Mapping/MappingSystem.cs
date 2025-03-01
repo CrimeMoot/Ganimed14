@@ -76,13 +76,10 @@ public sealed class MappingSystem : EntitySystem
             var saveDir = Path.Combine(_cfg.GetCVar(CCVars.AutosaveDirectory), name);
             _resMan.UserData.CreateDir(new ResPath(saveDir).ToRootedPath());
 
-            var path = new ResPath(Path.Combine(saveDir, $"{DateTime.Now:yyyy-M-dd_HH.mm.ss}-AUTO.yml"));
-            Log.Info($"Autosaving map {name} ({uid}) to {path}. Next save in {ReadableTimeLeft(uid)} seconds.");
-
-            if (HasComp<MapComponent>(uid))
-                _loader.TrySaveMap(uid, path);
-            else
-                _loader.TrySaveGrid(uid, path);
+            var path = Path.Combine(saveDir, $"{DateTime.Now.ToString("yyyy-M-dd_HH.mm.ss")}-AUTO.yml");
+            _currentlyAutosaving[map] = (CalculateNextTime(), name);
+            Log.Info($"Autosaving map {name} ({map}) to {path}. Next save in {ReadableTimeLeft(map)} seconds.");
+            _loader.SaveMap(map, path);
         }
     }
 

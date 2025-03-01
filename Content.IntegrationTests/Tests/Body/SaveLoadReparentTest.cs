@@ -2,6 +2,7 @@
 using System.Linq;
 using Content.Shared.Body.Components;
 using Content.Shared.Body.Systems;
+using Robust.Server.GameObjects;
 using Robust.Shared.Containers;
 using Robust.Shared.EntitySerialization.Systems;
 using Robust.Shared.GameObjects;
@@ -114,7 +115,7 @@ public sealed class SaveLoadReparentTest
 
             var mapPath = new ResPath($"/{nameof(SaveLoadReparentTest)}{nameof(Test)}map.yml");
 
-            Assert.That(mapLoader.TrySaveMap(mapId, mapPath));
+            mapLoader.SaveMap(mapId, mapPath);
             mapSys.DeleteMap(mapId);
 
             Assert.That(mapLoader.TryLoadMap(mapPath, out var map, out _), Is.True);

@@ -1,0 +1,27 @@
+# Shared between secfab and emagged autolathe
+- type: latheRecipePack
+  id: BackmenAmmoStatic
+  recipes:
+    - MagazineBoxLightRifle
+    - MagazineBoxMagnum
+
+# Shared between secfab and emagged protolathe
+- type: latheRecipePack
+  id: BackmenAmmo
+  recipes:
+  - MagazineBoxMagnumIncendiary
+<<<<<<< HEAD
+  - MagazineBoxPistolIncendiary
+  - MagazineBoxRifleIncendiary
+  - MagazineGrenadeEmpty
+  - MagazineLightRifleIncendiary
+  - MagazinePistolIncendiary
+  - MagazineRifleIncendiary
+  - MagazineShotgunBeanbag
+  - MagazineShotgunIncendiary
+  - BoxShotgunIncendiary
+  - SpeedLoaderMagnumIncendiary
+  - BoxShellTranquilizer
+  - BoxBeanbag
+  - SpeedLoaderMagnumUranium
+  - BoxShotgunUranium

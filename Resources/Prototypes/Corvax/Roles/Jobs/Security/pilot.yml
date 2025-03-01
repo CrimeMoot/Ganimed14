@@ -31,12 +31,13 @@
 - type: startingGear
   id: PilotGear
   equipment:
-    eyes: ClothingEyesGlassesSunglasses
+    eyes: ClothingEyesGlassesSecurity
     id: PilotPDA
     ears: ClothingHeadsetSecurity
-    neck: ClothingNeckTieRed
-    pocket1: WeaponPistolMk58
+    gloves: ClothingHandsGlovesCombat #backmen
+    pocket1: WeaponMultiphaseEnergyGun #backmen
+    pocket2: RadioSecurityPilotSupplyPod #backmen
   storage:
     back:
     - Flash
-    - MagazinePistol
+   #- MagazinePistol  (backmen)

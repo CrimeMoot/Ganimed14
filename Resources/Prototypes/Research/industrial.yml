@@ -15,7 +15,6 @@
   - OreProcessorIndustrialMachineCircuitboard
   - ClothingMaskWeldingGas
   - ShipyardCircuitboard # backmen: salvage
-  - ClothingShoesBootsJump
 
 - type: technology
   id: SpaceScanning
@@ -168,6 +167,8 @@
     - RnDPowerDrill
     - RnDJawsOfLife
     - BorgModuleAdvancedTool
+    - Fulton
+    - FultonBeacon
 
 - type: technology
   id: MassExcavation

@@ -1,7 +1,6 @@
 - type: gameMapPool
   id: BackmenDefaultMapPool
   maps:
-  - BackmenAspid
   - BackmenKettle
   - BackmenHive
   - BackmenShoukou
@@ -11,7 +10,6 @@
   - Saltern
   - Bagel
   - Box
-  - Cog
   - Core
   - Fland
   - Marathon

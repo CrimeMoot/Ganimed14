@@ -38,9 +38,6 @@
   id: Daylight
   desc: salvage-light-mod-daylight
   color: "#D8B059"
-  hour: 8
-  minlight: 0.25
-  maxlight: 1.25
   biomes:
     - Grasslands
 
@@ -48,28 +45,19 @@
   id: Lavalight
   desc: salvage-light-mod-daylight
   color: "#A34931"
-  hour: 8
-  minlight: 0.5
-  maxlight: 1
   biomes:
     - Lava
 
 - type: salvageLightMod
   id: Evening
   desc: salvage-light-mod-evening
-  color: "#D8B059"
-  hour: 17
-  minlight: 0.2
-  maxlight: 1
+  color: "#2b3143"
 
 - type: salvageLightMod
   id: Night
   desc: salvage-light-mod-night
   cost: 1
-  color: "#B0C4DE"
-  hour: 19
-  minlight: 0.015
-  maxlight: 0.5
+  color: null
 
 # Temperatures
 - type: salvageTemperatureMod

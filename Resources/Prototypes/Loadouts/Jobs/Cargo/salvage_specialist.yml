@@ -1,12 +1,21 @@
 # Timer, Ganimed
 - type: loadoutEffectGroup
-  id: MasterSalvager
+  id: ShaftMiner
   effects:
   - !type:JobRequirementLoadoutEffect
     requirement:
       !type:RoleTimeRequirement
       role: JobSalvageSpecialist
       time: 72000 #20 hrs
+
+- type: loadoutEffectGroup
+  id: MasterSalvager
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobSalvageSpecialist
+      time: 144000 #40 hrs
 
 # Head, Ganimed
 - type: loadout # TODO: Whitelist restriction
@@ -31,7 +40,7 @@
   effects:
   #- !type:WhitelistedLoadoutEffect
   - !type:GroupLoadoutEffect
-    proto: MasterSalvager
+    proto: ShaftMiner
 
 - type: loadout
   id: GoliathCloak
@@ -55,7 +64,7 @@
   effects:
   - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
-    proto: MasterSalvager
+    proto: ShaftMiner
 
 # Back
 - type: loadout

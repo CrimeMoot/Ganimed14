@@ -98,6 +98,17 @@
     proto: MasterSalvager
 
 - type: loadout
+  id: ToolbeltEmpty
+  equipment:
+    belt: ClothingBeltUtility
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:DepartmentTimeRequirement
+      department: Engineering
+      time: 72000 # 20 hrs
+
+- type: loadout
   id: SalvageOreBag
   equipment:
     belt: OreBag

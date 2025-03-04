@@ -151,6 +151,7 @@
   - SpareBlueTurtleneckDress
   - SparePurpleTurtleneckDress
   - SpareYellowOldDress
+  - SpareOldDress
   # Gloves
   - SpareGlovesFingerless
   - SpareGlovesColorBlack
@@ -347,9 +348,9 @@
 - type: loadoutGroup # Ganimed
   id: BridgeOfficerBelt
   name: loadout-group-bridge-officer-belt
-  minLimit: 0
   loadouts:
   - BridgeOfficerWebbing
+  - SecurityBelt
 
 #Science
 - type: loadoutGroup # Ganimed

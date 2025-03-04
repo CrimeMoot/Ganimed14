@@ -22,7 +22,7 @@
 #      time: 21600
       time: 6000   #cats
     - !type:DepartmentTimeRequirement
-      department: CentCom
+      department: CentralCommand
 #      time: 43200
       time: 12000   #cats
     - !type:AgeRequirement
@@ -47,7 +47,7 @@
         - type: AntagImmune
   minBankBalance: 200
   maxBankBalance: 300
-  wageDepartment: CentCom
+  wageDepartment: CentralCommand
   wage: 50
 
 - type: jobIcon

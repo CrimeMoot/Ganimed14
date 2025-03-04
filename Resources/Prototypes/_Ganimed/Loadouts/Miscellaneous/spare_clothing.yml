@@ -1108,6 +1108,14 @@
   effects:
   - !type:SponsorLoadoutEffect
 
+- type: loadout
+  id: SpareOldDress
+  storage:
+    back:
+    - ClothingUniformJumpskirtOldDress
+  effects:
+  - !type:SponsorLoadoutEffect
+
 # Hands/Gloves
 - type: loadout
   id: SpareGlovesFingerless

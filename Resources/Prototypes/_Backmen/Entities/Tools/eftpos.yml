@@ -101,14 +101,3 @@
       presetAccountName: Science
       canChangeAccountNumber: false
       currencyType: SpaceCash
-
-- type: entity
-  parent: Eftpos
-  id: EftposSpecific
-  suffix: Specific
-  components:
-    - type: Eftpos
-      presetAccountNumber: 1322
-      presetAccountName: Specific
-      canChangeAccountNumber: false
-      currencyType: SpaceCash

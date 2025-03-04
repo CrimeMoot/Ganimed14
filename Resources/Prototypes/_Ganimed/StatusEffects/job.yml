@@ -16,8 +16,8 @@
 
 - type: jobIcon
   parent: JobIcon
-  id: JobIconSecurityEnginer
+  id: JobIconSecurityEngineer
   icon:
     sprite: /Textures/Interface/Misc/job_icons.rsi
     state: SecurityEngineer
-  jobName: job-name-security-enginer
+  jobName: job-name-security-engineer

@@ -419,3 +419,57 @@
   id: SterileMask
   equipment:
     mask: ClothingMaskSterile
+
+# Belt contents, Ganimed
+- type: loadout
+  id: MedicalBeltFillTopical
+  dummyEntity: Brutepack
+  storage:
+    belt:
+    - Brutepack
+    - Brutepack
+    - Ointment
+    - Bloodpack
+    - Gauze
+    - EmergencyMedipen
+
+- type: loadout
+  id: MedicalBeltFillSurgical
+  dummyEntity: Scalpel
+  storage:
+    belt:
+    - Scalpel
+    - Retractor
+    - Hemostat
+    - SawElectric
+    - Cautery
+    - Drill
+    - EmergencyMedipen
+    #- BoneGel
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobMedicalDoctor
+      time: 36000 # 10hr
+
+- type: loadout
+  id: MedicalBeltFillMedicine
+  dummyEntity: PillCanisterTricordrazine
+  storage:
+    belt:
+    - PillCanisterTricordrazine
+    - PillCanisterBicaridine
+    - PillCanisterKelotane
+    - PillCanisterIron
+    #- PillCanisterDexalin
+    - PillCanisterDylovene
+    #- PillCanisterHyronalin
+    - EpinephrineChemistryBottle
+    - Syringe
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobChemist
+      time: 36000 # 10hr

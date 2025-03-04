@@ -17,6 +17,7 @@
   - Maintenance
   extendedAccess:
   - Chemistry
+  - External
   #start-backmen: currency
   minBankBalance: 150
   maxBankBalance: 250

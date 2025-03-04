@@ -30,6 +30,6 @@
   - type: Sprite
     layers:
     - state: default
-    - state: idsecurityenginer
+    - state: idsecurityengineer
   - type: PresetIdCard
     job: SecurityEngineer

@@ -28,7 +28,7 @@ public sealed class KillPersonConditionSystem : EntitySystem
     [Dependency] private readonly SharedRoleSystem _roleSystem = default!;
     [Dependency] private readonly IPrototypeManager _prototype = default!;
 
-    private static readonly ProtoId<DepartmentPrototype> _ccDep = "CentCom";
+    private static readonly ProtoId<DepartmentPrototype> _ccDep = "CentralCommand";
 
     public override void Initialize()
     {

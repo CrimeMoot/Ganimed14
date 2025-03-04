@@ -616,9 +616,12 @@
   minLimit: 0
   loadouts:
   - ChaplainNeck
-  - HolyMedal # Ganimed
-  - ChaplainCloakBlack # Ganimed
-  - ChaplainCloakWhite # Ganimed
+  # Ganimed-Loadouts-Start
+  - HolyMedal
+  - CultBedsheet
+  - ChaplainCloakBlack
+  - ChaplainCloakWhite
+  # Ganimed-Loadouts-End
 
 - type: loadoutGroup # Ganimed
   id: ChaplainShoes
@@ -1052,6 +1055,7 @@
   minLimit: 0
   loadouts:
   - SalvageWebbing
+  - ToolbeltEmpty
   - SalvageOreBag
 
 - type: loadoutGroup # Ganimed

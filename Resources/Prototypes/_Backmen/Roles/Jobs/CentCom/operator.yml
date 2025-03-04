@@ -19,13 +19,13 @@
 #      time: 7200
       time: 3000    #cats
     - !type:DepartmentTimeRequirement
-      department: CentCom
+      department: CentralCommand
 #      time: 14400
       time: 5000    #cats
     - !type:AgeRequirement
       requiredAge: 21 # cats
     - !type:DepartmentTimeRequirement
-      department: Silicons
+      department: Silicon
 #      time: 6000
       time: 2000   #cats
   access:
@@ -50,7 +50,7 @@
         - type: AntagImmune
   minBankBalance: 400
   maxBankBalance: 600
-  wageDepartment: CentCom
+  wageDepartment: CentralCommand
   wage: 75
 
 

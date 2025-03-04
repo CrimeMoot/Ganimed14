@@ -8,15 +8,15 @@
   requirements:
     - !type:RoleTimeRequirement
       role: JobChemist
-      time: 18000 #5 hrs # Corvax-RoleTime
-#    - !type:RoleTimeRequirement
-#      role: JobMedicalDoctor
-#      time: 21600 #6 hrs
+      time: 21600 #6 hrs
+    - !type:RoleTimeRequirement
+      role: JobMedicalDoctor
+      time: 21600 #6 hrs
     - !type:DepartmentTimeRequirement
       department: Medical
-      time: 54000 #15 hrs # Corvax-RoleTime
-#    - !type:OverallPlaytimeRequirement
-#      time: 144000 #40 hrs
+      time: 72000 #20 hrs
+    - !type:OverallPlaytimeRequirement
+      time: 108000 #30 hrs
     - !type:AgeRequirement
       requiredAge: 21 # cats
   weight: 10

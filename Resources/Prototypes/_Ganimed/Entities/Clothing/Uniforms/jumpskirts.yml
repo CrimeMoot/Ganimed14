@@ -116,3 +116,25 @@
   - type: Tag
     tags:
     - WhitelistChameleon
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtShortsleeveSuit
+  name: short-sleeve suitskirt
+  description: I don't lose things. I place things in locations which later elude me.
+  components:
+  - type: Sprite
+    sprite: Corvax/Clothing/Uniforms/Jumpskirt/psychologist.rsi
+  - type: Clothing
+    sprite: Corvax/Clothing/Uniforms/Jumpskirt/psychologist.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtJesterGreen
+  name: green jester skirt-suit
+  description: It makes you look HONKable!
+  components:
+  - type: Sprite
+    sprite: _Ganimed/Clothing/Uniforms/Jumpskirt/clownskirtsuit.rsi
+  - type: Clothing
+    sprite: _Ganimed/Clothing/Uniforms/Jumpskirt/clownskirtsuit.rsi

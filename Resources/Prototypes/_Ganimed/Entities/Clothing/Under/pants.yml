@@ -22,9 +22,6 @@
     sprite: _Ganimed/Clothing/Under/Underpants/Male/ntpants.rsi
   - type: Clothing
     sprite: _Ganimed/Clothing/Under/Underpants/Male/ntpants.rsi
-    clothingVisuals:
-      underpants:
-        - state: equipped-INNERCLOTHING
 
 - type: entity
   parent: ClothingUnderPantsBase
@@ -36,9 +33,6 @@
     sprite: _Ganimed/Clothing/Under/Underpants/Male/military.rsi
   - type: Clothing
     sprite: _Ganimed/Clothing/Under/Underpants/Male/military.rsi
-    clothingVisuals:
-      underpants:
-        - state: equipped-INNERCLOTHING
 
 #color
 - type: entity
@@ -51,9 +45,6 @@
     sprite: _Ganimed/Clothing/Under/Underpants/Male/white.rsi
   - type: Clothing
     sprite: _Ganimed/Clothing/Under/Underpants/Male/white.rsi
-    clothingVisuals:
-      underpants:
-        - state: equipped-INNERCLOTHING
 
 - type: entity
   parent: ClothingUnderPantsBase
@@ -68,7 +59,7 @@
     sprite: _Ganimed/Clothing/Under/Underpants/Male/white.rsi
     clothingVisuals:
       underpants:
-        - state: equipped-INNERCLOTHING
+        - state: equipped-UNDERPANTS
           color: "#3f3f3f"
 
 - type: entity
@@ -84,7 +75,7 @@
     sprite: _Ganimed/Clothing/Under/Underpants/Male/white.rsi
     clothingVisuals:
       underpants:
-        - state: equipped-INNERCLOTHING
+        - state: equipped-UNDERPANTS
           color: "#0089EF"
 
 - type: entity
@@ -100,7 +91,7 @@
     sprite: _Ganimed/Clothing/Under/Underpants/Male/white.rsi
     clothingVisuals:
       underpants:
-        - state: equipped-INNERCLOTHING
+        - state: equipped-UNDERPANTS
           color: "#723A02"
 
 - type: entity
@@ -116,7 +107,7 @@
     sprite: _Ganimed/Clothing/Under/Underpants/Male/white.rsi
     clothingVisuals:
       underpants:
-        - state: equipped-INNERCLOTHING
+        - state: equipped-UNDERPANTS
           color: "#5ABF2F"
 
 - type: entity
@@ -132,7 +123,7 @@
     sprite: _Ganimed/Clothing/Under/Underpants/Male/white.rsi
     clothingVisuals:
       underpants:
-        - state: equipped-INNERCLOTHING
+        - state: equipped-UNDERPANTS
           color: "#940000"
 
 - type: entity
@@ -148,7 +139,7 @@
     sprite: _Ganimed/Clothing/Under/Underpants/Male/white.rsi
     clothingVisuals:
       underpants:
-        - state: equipped-INNERCLOTHING
+        - state: equipped-UNDERPANTS
           color: "#EBE216"
 
 #Female
@@ -164,9 +155,6 @@
     sprite: _Ganimed/Clothing/Under/Underpants/Female/white.rsi
   - type: Clothing
     sprite: _Ganimed/Clothing/Under/Underpants/Female/white.rsi
-    clothingVisuals:
-      underpants:
-        - state: equipped-INNERCLOTHING
 
 - type: entity
   parent: ClothingUnderPantsBase
@@ -181,7 +169,7 @@
     sprite: _Ganimed/Clothing/Under/Underpants/Female/white.rsi
     clothingVisuals:
       underpants:
-        - state: equipped-INNERCLOTHING
+        - state: equipped-UNDERPANTS
           color: "#3f3f3f"
 
 - type: entity
@@ -197,7 +185,7 @@
     sprite: _Ganimed/Clothing/Under/Underpants/Female/white.rsi
     clothingVisuals:
       underpants:
-        - state: equipped-INNERCLOTHING
+        - state: equipped-UNDERPANTS
           color: "#0089EF"
 
 - type: entity
@@ -213,7 +201,7 @@
     sprite: _Ganimed/Clothing/Under/Underpants/Female/white.rsi
     clothingVisuals:
       underpants:
-        - state: equipped-INNERCLOTHING
+        - state: equipped-UNDERPANTS
           color: "#723A02"
 
 - type: entity
@@ -229,7 +217,7 @@
     sprite: _Ganimed/Clothing/Under/Underpants/Female/white.rsi
     clothingVisuals:
       underpants:
-        - state: equipped-INNERCLOTHING
+        - state: equipped-UNDERPANTS
           color: "#5ABF2F"
 
 - type: entity
@@ -245,7 +233,7 @@
     sprite: _Ganimed/Clothing/Under/Underpants/Female/white.rsi
     clothingVisuals:
       underpants:
-        - state: equipped-INNERCLOTHING
+        - state: equipped-UNDERPANTS
           color: "#940000"
 
 - type: entity
@@ -261,7 +249,7 @@
     sprite: _Ganimed/Clothing/Under/Underpants/Female/white.rsi
     clothingVisuals:
       underpants:
-        - state: equipped-INNERCLOTHING
+        - state: equipped-UNDERPANTS
           color: "#EBE216"
 
 #strings
@@ -275,9 +263,6 @@
     sprite: _Ganimed/Clothing/Under/Underpants/Female/whitestring.rsi
   - type: Clothing
     sprite: _Ganimed/Clothing/Under/Underpants/Female/whitestring.rsi
-    clothingVisuals:
-      underpants:
-        - state: equipped-INNERCLOTHING
 
 - type: entity
   parent: ClothingUnderPantsBase
@@ -292,7 +277,7 @@
     sprite: _Ganimed/Clothing/Under/Underpants/Female/whitestring.rsi
     clothingVisuals:
       underpants:
-        - state: equipped-INNERCLOTHING
+        - state: equipped-UNDERPANTS
           color: "#3f3f3f"
 
 - type: entity
@@ -308,7 +293,7 @@
     sprite: _Ganimed/Clothing/Under/Underpants/Female/whitestring.rsi
     clothingVisuals:
       underpants:
-        - state: equipped-INNERCLOTHING
+        - state: equipped-UNDERPANTS
           color: "#0089EF"
 
 - type: entity
@@ -324,7 +309,7 @@
     sprite: _Ganimed/Clothing/Under/Underpants/Female/whitestring.rsi
     clothingVisuals:
       underpants:
-        - state: equipped-INNERCLOTHING
+        - state: equipped-UNDERPANTS
           color: "#723A02"
 
 - type: entity
@@ -340,7 +325,7 @@
     sprite: _Ganimed/Clothing/Under/Underpants/Female/whitestring.rsi
     clothingVisuals:
       underpants:
-        - state: equipped-INNERCLOTHING
+        - state: equipped-UNDERPANTS
           color: "#5ABF2F"
 
 - type: entity
@@ -356,7 +341,7 @@
     sprite: _Ganimed/Clothing/Under/Underpants/Female/whitestring.rsi
     clothingVisuals:
       underpants:
-        - state: equipped-INNERCLOTHING
+        - state: equipped-UNDERPANTS
           color: "#940000"
 
 - type: entity
@@ -372,7 +357,7 @@
     sprite: _Ganimed/Clothing/Under/Underpants/Female/whitestring.rsi
     clothingVisuals:
       underpants:
-        - state: equipped-INNERCLOTHING
+        - state: equipped-UNDERPANTS
           color: "#EBE216"
 
 #Alter
@@ -386,9 +371,6 @@
     sprite: _Ganimed/Clothing/Under/Underpants/Female/alterwhite.rsi
   - type: Clothing
     sprite: _Ganimed/Clothing/Under/Underpants/Female/alterwhite.rsi
-    clothingVisuals:
-      underpants:
-        - state: equipped-INNERCLOTHING
 
 - type: entity
   parent: ClothingUnderPantsBase
@@ -403,7 +385,7 @@
     sprite: _Ganimed/Clothing/Under/Underpants/Female/alterwhite.rsi
     clothingVisuals:
       underpants:
-        - state: equipped-INNERCLOTHING
+        - state: equipped-UNDERPANTS
           color: "#3f3f3f"
 
 - type: entity
@@ -419,7 +401,7 @@
     sprite: _Ganimed/Clothing/Under/Underpants/Female/alterwhite.rsi
     clothingVisuals:
       underpants:
-        - state: equipped-INNERCLOTHING
+        - state: equipped-UNDERPANTS
           color: "#0089EF"
 
 - type: entity
@@ -435,7 +417,7 @@
     sprite: _Ganimed/Clothing/Under/Underpants/Female/alterwhite.rsi
     clothingVisuals:
       underpants:
-        - state: equipped-INNERCLOTHING
+        - state: equipped-UNDERPANTS
           color: "#723A02"
 
 - type: entity
@@ -451,7 +433,7 @@
     sprite: _Ganimed/Clothing/Under/Underpants/Female/alterwhite.rsi
     clothingVisuals:
       underpants:
-        - state: equipped-INNERCLOTHING
+        - state: equipped-UNDERPANTS
           color: "#5ABF2F"
 
 - type: entity
@@ -467,7 +449,7 @@
     sprite: _Ganimed/Clothing/Under/Underpants/Female/alterwhite.rsi
     clothingVisuals:
       underpants:
-        - state: equipped-INNERCLOTHING
+        - state: equipped-UNDERPANTS
           color: "#940000"
 
 - type: entity
@@ -483,7 +465,7 @@
     sprite: _Ganimed/Clothing/Under/Underpants/Female/alterwhite.rsi
     clothingVisuals:
       underpants:
-        - state: equipped-INNERCLOTHING
+        - state: equipped-UNDERPANTS
           color: "#EBE216"
 
 #Misc
@@ -497,9 +479,6 @@
     sprite: _Ganimed/Clothing/Under/Underpants/Female/anime.rsi
   - type: Clothing
     sprite: _Ganimed/Clothing/Under/Underpants/Female/anime.rsi
-    clothingVisuals:
-      underpants:
-        - state: equipped-INNERCLOTHING
 
 - type: entity
   parent: ClothingUnderPantsBase
@@ -511,23 +490,6 @@
     sprite: _Ganimed/Clothing/Under/Underpants/Female/cat.rsi
   - type: Clothing
     sprite: _Ganimed/Clothing/Under/Underpants/Female/cat.rsi
-    clothingVisuals:
-      underpants:
-        - state: equipped-INNERCLOTHING
-
-- type: entity
-  parent: ClothingUnderPantsBase
-  id: ClothingClothFemaleUnderPants
-  name: female underpants
-  description: Make them loins buzz!
-  components:
-  - type: Sprite
-    sprite: _Ganimed/Clothing/Under/Underpants/Female/cloth.rsi
-  - type: Clothing
-    sprite: _Ganimed/Clothing/Under/Underpants/Female/cloth.rsi
-    clothingVisuals:
-      underpants:
-        - state: equipped-INNERCLOTHING
 
 - type: entity
   parent: ClothingUnderPantsBase
@@ -539,9 +501,6 @@
     sprite: _Ganimed/Clothing/Under/Underpants/Female/flower.rsi
   - type: Clothing
     sprite: _Ganimed/Clothing/Under/Underpants/Female/flower.rsi
-    clothingVisuals:
-      underpants:
-        - state: equipped-INNERCLOTHING
 
 - type: entity
   parent: ClothingUnderPantsBase
@@ -553,9 +512,6 @@
     sprite: _Ganimed/Clothing/Under/Underpants/Female/heart.rsi
   - type: Clothing
     sprite: _Ganimed/Clothing/Under/Underpants/Female/heart.rsi
-    clothingVisuals:
-      underpants:
-        - state: equipped-INNERCLOTHING
 
 - type: entity
   parent: ClothingUnderPantsBase
@@ -567,6 +523,3 @@
     sprite: _Ganimed/Clothing/Under/Underpants/Female/mirapants.rsi
   - type: Clothing
     sprite: _Ganimed/Clothing/Under/Underpants/Female/mirapants.rsi
-    clothingVisuals:
-      underpants:
-        - state: equipped-INNERCLOTHING

@@ -204,8 +204,8 @@
 - type: entity
   parent: [ClothingMaskGasExplorer,ShowSecurityIcons]
   id: ClothingMaskGasRXBZZ
-  name: армейский противогаз
-  description: Противогаз армейского класса, который можно подключить к дыхательному баллону.
+  name: противогаз РХБЗЗ
+  description: Противогаз РХБЗЗ,
   components:
   - type: ActivatableUI
     key: enum.SharedGasTankUiKey.Key
@@ -213,12 +213,12 @@
     interfaces:
       enum.SharedGasTankUiKey.Key:
         type: GasTankBoundUserInterface
-  - type: GasTank
+  - type: GasTank #почти 11 минут
     outputPressure: 21.3
     air:
-      volume: 5
+      volume: 1.75
       moles:
-        - 2.051379050 # oxygen
+        - 0.7179826675 # oxygen
       temperature: 293.15
     tankLowPressure: 30.0
   - type: FlashImmunity

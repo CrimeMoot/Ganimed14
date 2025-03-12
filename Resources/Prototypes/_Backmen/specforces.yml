@@ -123,7 +123,6 @@
   parent: BaseRXBZZ
   guaranteedSpawn:
     - id: SpawnMobHumanRXBZZLeader
-    - id: SpawnMobHumanRXBZZFlamer
     - id: SpawnMobHumanRXBZZMedic
   specForceSpawn:
     - id: SpawnMobHumanRXBZZ
@@ -132,29 +131,25 @@
   id: RXBZZBlobLow
   parent: BaseRXBZZ
   guaranteedSpawn:
-    - id: SpawnMobHumanRXBZZBlobLeader
-    - id: SpawnMobHumanRXBZZFlamer
+    - id: SpawnMobHumanRXBZZLeaderBlob
     - id: SpawnMobHumanRXBZZ
-      amount: 2
+      amount: 3
 
 - type: specForceTeam
   id: RXBZZBlobDefault
   parent: BaseRXBZZ
   guaranteedSpawn:
-    - id: SpawnMobHumanRXBZZBlobLeader
-    - id: SpawnMobHumanRXBZZFlamer
+    - id: SpawnMobHumanRXBZZLeaderBlob
     - id: SpawnMobHumanRXBZZMedic
     - id: SpawnMobHumanRXBZZ
-      amount: 4
+      amount: 5
 
 - type: specForceTeam
   id: RXBZZBlobBig
   parent: BaseRXBZZ
   guaranteedSpawn:
-    - id: SpawnMobHumanRXBZZBlobLeader
+    - id: SpawnMobHumanRXBZZLeaderBlob
     - id: SpawnMobHumanRXBZZMedic
       amount: 2
-    - id: SpawnMobHumanRXBZZFlamer
-      amount: 2
     - id: SpawnMobHumanRXBZZ
-      amount: 4
+      amount: 6

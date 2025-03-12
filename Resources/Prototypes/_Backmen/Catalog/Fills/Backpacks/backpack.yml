@@ -158,8 +158,8 @@
 
 - type: entity
   categories: [ HideSpawnMenu ]
-  parent: ClothingBackpackDuffelMilitary
-  id: ClothingBackpackDuffelRXBZZ
+  parent: ClothingMilitaryBackpack
+  id: ClothingBackpackRXBZZ
   components:
     - type: Storage
       maxItemSize: Huge
@@ -167,10 +167,12 @@
       - 0,0,6,5
     - type: StorageFill
       contents:
-        - id: MedkitAdvancedRXBZZ
-        - id: WeaponEnergyGunDominator
         - id: BoxFlare
         - id: ArmySetLoadouts
+        - id: GasAnalyzer
+        - id: GeigerCounter
+        - id: Crowbar
+
 
 - type: entity
   categories: [ HideSpawnMenu ]
@@ -179,12 +181,42 @@
   components:
     - type: StorageFill
       contents:
-        - id: ArmySetLoadouts
         - id: MedkitAdvancedRXBZZ
         - id: BoxFlare
-        - id: MedkitCombatFilled
-        - id: MedkitCombatFilled
+        - id: ArmySetLoadouts
+        - id: WeaponAdvancedLaser
+        - id: ClothingHandsGlovesNitrile
+        - id: ClothingMaskSterile
+        - id: EmergencyRollerBedSpawnFolded
         - id: Defibrillator
+        - id: Hypospray
+        - id: BoxBodyBag
+        - id: GasAnalyzer
+        - id: GeigerCounter
+        - id: Crowbar
+        - id: HandheldHealthAnalyzer
+        - id: PowerCellMicroreactor
+        - id: MedicatedSuture
+        
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: ClothingBackpackMilitarySatchel
+  id: ClothingBackpackSatchelRXBZZLeader
+  components:
+    - type: StorageFill
+      contents:
+        - id: HandheldStationMap
+        - id: ArmySetLoadouts
+        - id: WeaponAdvancedLaser
+        - id: BoxFolderClipboard
+        - id: Binoculars
+        - id: RadioRXBZZSupplyPod
+        - id: RadioHandheld
+        - id: Crowbar
+        - id: GasAnalyzer
+        - id: GeigerCounter
+        - id: PowerCellHigh
+        - id: DoubleEmergencyOxygenTankFilled
 
 - type: entity
   categories: [ HideSpawnMenu ]

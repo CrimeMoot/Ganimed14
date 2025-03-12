@@ -154,20 +154,50 @@
         - id: GrenadeBlast
           amount: 2
 
-- type: entity
-  parent: ClothingMedicalPounch
-  id: ClothingMedicalPounchRXBZZFilled
+- type: entity #ERT
+  parent: ClothingPounchMedical
+  id: ClothingPounchMedicalERTFilled
   categories: [ HideSpawnMenu ]
   components:
     - type: StorageFill
       contents:
-        - id: RegenerativeMesh
+        - id: OintmentAdvanced1
+          amount: 5
+        - id: BrutepackAdvanced1
+          amount: 5
+        - id: Tourniquet
           amount: 2
-        - id: MedicatedSuture
+        - id: CombatMedipen
+        - id: EmergencyMedipen
+
+- type: entity #RXBZZ
+  parent: ClothingPounchMedical
+  id: ClothingPounchMedicalRXBZZFilled
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: StorageFill
+      contents:
+        - id: OintmentAdvanced1
+          amount: 5
+        - id: BrutepackAdvanced1
+          amount: 5
+        - id: Tourniquet
           amount: 2
-        - id: BattleMedipen
-          amount: 2
-        - id: HandheldHealthAnalyzer
+        - id: CombatMedipen
+        - id: AntiPoisonMedipen
+        - id: RadAutoInjector
+        - id: BattleMedipenAntiVirus
+          
+- type: entity
+  parent: ClothingPounchMTF
+  id: ClothingPounchMTFFlare
+  name: подсумок с сигнальным пистолетом
+  components:
+    - type: StorageFill
+      contents:
+        - id: ShellShotgunFlare
+          amount: 10
+        - id: WeaponFlareGunSecurity
 
 - type: entity
   parent: ClothingPounchMTF
@@ -308,20 +338,25 @@
           amount: 4
 
 - type: entity
-  categories: [ HideSpawnMenu ]
-  parent: ClothingBeltMedicalMarine
-  id: ClothingBeltMedicalMarineRxbzz
+  parent: [ClothingBeltMedical,ClothingBeltSecurity]
+  id: ClothingBeltMilitaryWebbingCorpsmanRXBZZMedicFilled #RXBZZMedic
+  name: РПС медика РХБЗЗ
+  description: Медицинская ременно-плечевая система с множеством мелких и стерильных карманов и подсумков.
   components:
-    - type: StorageFill
-      contents:
-        - id: CombatMedipen
-          amount: 6
-        - id: EmergencyMedipen
-          amount: 2
-        - id: MedicatedSuture
-          amount: 3
-        - id: RegenerativeMesh
-          amount: 3
+  - type: Sprite
+    sprite: _Ganimed/Clothing/Belt/corpsman.rsi
+  - type: Clothing
+    sprite: _Ganimed/Clothing/Belt/corpsman.rsi
+  - type: StorageFill
+    contents:
+      - id: ReliableContainerAmbuzolFilled
+      - id: ReliableContainerEpinephrineFilled
+      - id: ReliableContainerSalineFilled
+      - id: ReliableContainerBruteFilled
+      - id: ReliableContainerBurnFilled
+      - id: ReliableContainerAntiradFilled
+      - id: ReliableContainerStellibininFilled
+      - id: ReliableContainerIntoxicationFilled
 
 - type: entity
   categories: [ HideSpawnMenu ]

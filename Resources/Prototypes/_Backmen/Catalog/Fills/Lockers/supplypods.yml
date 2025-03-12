@@ -35,6 +35,55 @@
     contents:
         - id: ClothingOuterHardsuitBlueShield
 
+#RXBZZ
+- type: entity
+  id: DropPodMarkerRXBZZ
+  parent: DropPodMarker
+  suffix: RXBZZ, supply
+  components:
+  - type: TimedSpawner
+    prototypes:
+      -  DropPodLaunchAnimationRXBZZ
+
+- type: entity
+  id: DropPodLaunchAnimationRXBZZ
+  parent: DropPodLaunchAnimation
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: Backmen/Effects/droppod_falling.rsi
+    layers:
+    - state: supplypod_falling_animation
+      offset: "0,3.3"
+  - type: TimedSpawner
+    prototypes:
+      - SupplyDropPodRXBZZ
+
+- type: entity
+  id: SupplyDropPodRXBZZ
+  parent: SupplyPodBase
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+        - id: ReliableContainerAmbuzolFilled
+        - id: ReliableContainerStellibininFilled
+        - id: ReliableContainerAntiradFilled
+        - id: gearbundlefirstaid
+        - id: gearbundleshotgun
+        - id: PowerCellMedium
+          amount: 2
+        - id: MagazineBoxRifle
+          amount: 2
+        - id: MagazineBoxLightRifle
+          amount: 2
+        - id: DoubleEmergencyOxygenTankFilled
+          amount: 4
+        - id: ClothingMaskGas
+          amount: 4
+        - id: BoxFlare
+          amount: 2
+
 #syndi
 
 - type: entity

@@ -6,7 +6,7 @@
     pocket2: HandheldBrigmedicCrewMonitor # Cats
     pocket1: SecHypo
     id: BrigmedicPDA
-    belt: ClothingBeltMilitaryWebbingCorpsman
+    belt: ClothingBeltMilitaryWebbingCorpsmanFilled
 
 # Neck, Ganimed
 - type: loadout

@@ -7,12 +7,15 @@
     mask: ClothingMaskGasRXBZZ
     eyes: ClothingEyesGlassesSunglasses
     gloves: ClothingHandsGlovesCombat
-    outerClothing: ClothingOuterArmorBasic
+    outerClothing: ClothingOuterHardsuitCBURN
     id: idcoinRXBZZ
     ears: ClothingHeadsetAltCentCom
     belt: WeaponAdvancedLaser
     pocket1: DoubleEmergencyOxygenTankFilled
     pocket2: ClothingPounchMedicalRXBZZFilled
+    underpants: ClothingUnderPantsMilitary
+    undershirt: ClothingUnderShirtBlack
+    socks: ClothingSocksBlack
 
 - type: startingGear
   id: RXBZZMedic
@@ -24,13 +27,16 @@
     neck: ClothingNeckStethoscope
     eyes: ClothingEyesGlassesHudSunglassesMedical
     gloves: ClothingHandsGlovesCombat
-    outerClothing: ClothingOuterVestArmorMedSec
+    outerClothing: ClothingOuterHardsuitCBURN
     id: idcoinRXBZZMedic
     head: ClothingHeadHatBeretSecurityMedic
     ears: ClothingHeadsetAltCentCom
     belt: ClothingBeltMilitaryWebbingCorpsmanRXBZZMedicFilled
     pocket1: DoubleEmergencyOxygenTankFilled
     pocket2: ClothingPounchMedicalRXBZZFilled
+    underpants: ClothingUnderPantsMilitary
+    undershirt: ClothingUnderShirtBlack
+    socks: ClothingSocksBlack
 
 - type: startingGear
   id: RXBZZLeader
@@ -42,13 +48,16 @@
     neck: ClothingNeckOldMantle
     eyes: ClothingEyesThermalVisionGoggles
     gloves: ClothingHandsGlovesCombat
-    outerClothing: ClothingOuterArmorBasic
+    outerClothing: ClothingOuterHardsuitCBURNLeader
     id: CBURNPDA
     head: ClothingHeadHatERTLeaderBeret
     ears: ClothingHeadsetAltCentCom
     belt: Chainsword #и мы быстренько всех покромсали
     pocket1: ClothingPounchMTFFlare
     pocket2: ClothingPounchMedicalRXBZZFilled
+    underpants: ClothingUnderPantsMilitary
+    undershirt: ClothingUnderShirtBlack
+    socks: ClothingSocksBlack
 
 - type: startingGear
   id: RXBZZLeaderBlob

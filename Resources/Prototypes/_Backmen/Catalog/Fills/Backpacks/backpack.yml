@@ -161,10 +161,6 @@
   parent: ClothingMilitaryBackpack
   id: ClothingBackpackRXBZZ
   components:
-    - type: Storage
-      maxItemSize: Huge
-      grid:
-      - 0,0,6,5
     - type: StorageFill
       contents:
         - id: BoxFlare

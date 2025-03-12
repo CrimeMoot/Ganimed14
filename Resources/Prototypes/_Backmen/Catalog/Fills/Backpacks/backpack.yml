@@ -159,7 +159,7 @@
 - type: entity
   categories: [ HideSpawnMenu ]
   parent: ClothingMilitaryBackpack
-  id: ClothingBackpackRXBZZ
+  id: ClothingBackpackCBURN
   components:
     - type: StorageFill
       contents:
@@ -173,11 +173,11 @@
 - type: entity
   categories: [ HideSpawnMenu ]
   parent: ClothingBackpackDuffelMilitary
-  id: ClothingBackpackDuffelRXBZZMedic
+  id: ClothingBackpackDuffelCBURNMedic
   components:
     - type: StorageFill
       contents:
-        - id: MedkitAdvancedRXBZZ
+        - id: MedkitAdvancedCBURN
         - id: BoxFlare
         - id: ArmySetLoadouts
         - id: WeaponAdvancedLaser
@@ -197,7 +197,7 @@
 - type: entity
   categories: [ HideSpawnMenu ]
   parent: ClothingBackpackMilitarySatchel
-  id: ClothingBackpackSatchelRXBZZLeader
+  id: ClothingBackpackSatchelCBURNLeader
   components:
     - type: StorageFill
       contents:
@@ -206,7 +206,7 @@
         - id: WeaponAdvancedLaser
         - id: BoxFolderClipboard
         - id: Binoculars
-        - id: RadioRXBZZSupplyPod
+        - id: RadioCBURNSupplyPod
         - id: RadioHandheld
         - id: Crowbar
         - id: GasAnalyzer
@@ -247,7 +247,7 @@
 - type: entity
   name: продвинутая аптечка стимуляторов
   parent: MedkitAdvanced
-  id: MedkitAdvancedRXBZZ
+  id: MedkitAdvancedCBURN
   components:
     - type: Item
       size: Normal

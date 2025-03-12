@@ -89,43 +89,43 @@
 
 - type: entity
   categories: [ HideSpawnMenu, Spawner ]
-  id: SpawnMobHumanRXBZZ
+  id: SpawnMobHumanCBURN
   parent: SpawnSpecforce
   name: РХБЗЗ Опер
   suffix: спавнер спецсил
   components:
     - type: GhostRoleMobSpawner
-      prototype: MobHumanRXBZZ
+      prototype: MobHumanCBURN
 
 - type: entity
   categories: [ HideSpawnMenu, Spawner ]
-  id: SpawnMobHumanRXBZZLeader
+  id: SpawnMobHumanCBURNLeader
   parent: SpawnSpecforce
   name: РХБЗЗ лидер
   suffix: спавнер спецсил
   components:
     - type: GhostRoleMobSpawner
-      prototype: MobHumanRXBZZLeader
+      prototype: MobHumanCBURNLeader
 
 - type: entity
   categories: [ HideSpawnMenu, Spawner ]
-  id: SpawnMobHumanRXBZZLeaderBlob
+  id: SpawnMobHumanCBURNLeaderBlob
   parent: SpawnSpecforce
   name: РХБЗЗ лидер
   suffix: спавнер спецсил
   components:
     - type: GhostRoleMobSpawner
-      prototype: MobHumanRXBZZLeaderBlob
+      prototype: MobHumanCBURNLeaderBlob
 
 - type: entity
   categories: [ HideSpawnMenu, Spawner ]
-  id: SpawnMobHumanRXBZZMedic
+  id: SpawnMobHumanCBURNMedic
   parent: SpawnSpecforce
   name: РХБЗЗ специалист
   suffix: спавнер спецсил
   components:
     - type: GhostRoleMobSpawner
-      prototype: MobHumanRXBZZMedic
+      prototype: MobHumanCBURNMedic
 
 - type: entity
   categories: [ HideSpawnMenu, Spawner ]

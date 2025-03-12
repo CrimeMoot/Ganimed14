@@ -87,7 +87,7 @@
     state: icon
   content:
   - WeaponPulseRifleXMLG
-  - ClothingPounchRXBZZFilled
+  - ClothingPounchCBURNFilled
 
 - type: thiefBackpackSet
   id: EG-CSet
@@ -98,7 +98,7 @@
     state: base
   content:
   - WeaponLaserCarabinCell
-  - ClothingPounchRXBZZEnergyFilled
+  - ClothingPounchCBURNEnergyFilled
 
 - type: thiefBackpackSet
   id: EG-SSet
@@ -109,7 +109,7 @@
     state: base
   content:
   - WeaponEarthGovLaserSniperCell
-  - ClothingPounchRXBZZBigEnergyFilled
+  - ClothingPounchCBURNBigEnergyFilled
 
 - type: thiefBackpackSet
   id: SR127Set
@@ -120,7 +120,7 @@
     state: base
   content:
   - WeaponRifleSR127
-  - ClothingPounchRXBZZSRFilled
+  - ClothingPounchCBURNSRFilled
 
 - type: thiefBackpackSet
   id: MP5Set
@@ -131,7 +131,7 @@
     state: icon
   content:
   - WeaponSubMachineGunMP5Tactical
-  - ClothingPounchRXBZZPPFilled
+  - ClothingPounchCBURNPPFilled
 
 - type: thiefBackpackSet
   id: G36Set
@@ -142,7 +142,7 @@
     state: icon
   content:
   - WeaponRifleG36Tactical
-  - ClothingPounchRXBZZRifleFilled
+  - ClothingPounchCBURNRifleFilled
 
 - type: thiefBackpackSet
   id: MinigunSet
@@ -208,7 +208,7 @@
     state: base
   content:
   - WeaponLauncherM81
-  - ClothingBeltMilitaryWebbingRXBZZGrenadeFilled
+  - ClothingBeltMilitaryWebbingCBURNGrenadeFilled
 
 - type: thiefBackpackSet
   id: VP78Set

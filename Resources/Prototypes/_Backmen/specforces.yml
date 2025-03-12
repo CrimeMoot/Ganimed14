@@ -29,15 +29,15 @@
     - id: SpawnMobHumanERTMedicalEVAV2_1
     - id: SpawnMobHumanERTJunitorEVAV2_1
 
-# BaseRXBZZ
+# BaseCBURN
 - type: specForceTeam
-  id: BaseRXBZZ
+  id: BaseCBURN
   abstract: true
-  specForceName: spec-forces-system-RXBZZ-name
+  specForceName: spec-forces-system-CBURN-name
   shuttlePath: Maps/Backmen/Shuttles/SpecForces/NT-CC-SRV-013.yml
   spawnMarker: MarkerSpecforce
-  announcementText: spec-forces-system-RXBZZ-annonce
-  announcementTitle: spec-forces-system-RXBZZ-title
+  announcementText: spec-forces-system-CBURN-annonce
+  announcementTitle: spec-forces-system-CBURN-title
   announcementSoundPath: /Audio/_Ganimed/StationEvents/spawn.ogg
   maxRolesAmount: 8
   raffleConfig:
@@ -117,39 +117,39 @@
   specForceSpawn:
     - id: SpawnMobHumanERTSecurityTay39
 
-# RXBZZ teams
+# CBURN teams
 - type: specForceTeam
-  id: RXBZZ
-  parent: BaseRXBZZ
+  id: CBURN
+  parent: BaseCBURN
   guaranteedSpawn:
-    - id: SpawnMobHumanRXBZZLeader
-    - id: SpawnMobHumanRXBZZMedic
+    - id: SpawnMobHumanCBURNLeader
+    - id: SpawnMobHumanCBURNMedic
   specForceSpawn:
-    - id: SpawnMobHumanRXBZZ
+    - id: SpawnMobHumanCBURN
 
 - type: specForceTeam
-  id: RXBZZBlobLow
-  parent: BaseRXBZZ
+  id: CBURNBlobLow
+  parent: BaseCBURN
   guaranteedSpawn:
-    - id: SpawnMobHumanRXBZZLeaderBlob
-    - id: SpawnMobHumanRXBZZ
+    - id: SpawnMobHumanCBURNLeaderBlob
+    - id: SpawnMobHumanCBURN
       amount: 3
 
 - type: specForceTeam
-  id: RXBZZBlobDefault
-  parent: BaseRXBZZ
+  id: CBURNBlobDefault
+  parent: BaseCBURN
   guaranteedSpawn:
-    - id: SpawnMobHumanRXBZZLeaderBlob
-    - id: SpawnMobHumanRXBZZMedic
-    - id: SpawnMobHumanRXBZZ
+    - id: SpawnMobHumanCBURNLeaderBlob
+    - id: SpawnMobHumanCBURNMedic
+    - id: SpawnMobHumanCBURN
       amount: 5
 
 - type: specForceTeam
-  id: RXBZZBlobBig
-  parent: BaseRXBZZ
+  id: CBURNBlobBig
+  parent: BaseCBURN
   guaranteedSpawn:
-    - id: SpawnMobHumanRXBZZLeaderBlob
-    - id: SpawnMobHumanRXBZZMedic
+    - id: SpawnMobHumanCBURNLeaderBlob
+    - id: SpawnMobHumanCBURNMedic
       amount: 2
-    - id: SpawnMobHumanRXBZZ
+    - id: SpawnMobHumanCBURN
       amount: 6

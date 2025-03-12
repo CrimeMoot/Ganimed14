@@ -1,50 +1,50 @@
 - type: startingGear
-  id: RXBZZ
+  id: CBURN
   equipment:
     jumpsuit: ClothingUniformJumpsuitTacticool
-    back: ClothingBackpackRXBZZ
+    back: ClothingBackpackCBURN
     shoes: ClothingShoesBootsCombatFilled
-    mask: ClothingMaskGasRXBZZ
+    mask: ClothingMaskGasCBURN
     eyes: ClothingEyesGlassesSunglasses
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitCBURN
-    id: idcoinRXBZZ
+    id: idcoinCBURN
     ears: ClothingHeadsetAltCentCom
     belt: WeaponAdvancedLaser
     pocket1: DoubleEmergencyOxygenTankFilled
-    pocket2: ClothingPounchMedicalRXBZZFilled
+    pocket2: ClothingPounchMedicalCBURNFilled
     underpants: ClothingUnderPantsMilitary
     undershirt: ClothingUnderShirtBlack
     socks: ClothingSocksBlack
 
 - type: startingGear
-  id: RXBZZMedic
+  id: CBURNMedic
   equipment:
     jumpsuit: ClothingUniformJumpsuitTacticool
-    back: ClothingBackpackDuffelRXBZZMedic
+    back: ClothingBackpackDuffelCBURNMedic
     shoes: ClothingShoesBootsCombatFilled
-    mask: ClothingMaskGasRXBZZ
+    mask: ClothingMaskGasCBURN
     neck: ClothingNeckStethoscope
     eyes: ClothingEyesGlassesHudSunglassesMedical
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitCBURN
-    id: idcoinRXBZZMedic
+    id: idcoinCBURNMedic
     head: ClothingHeadHatBeretSecurityMedic
     ears: ClothingHeadsetAltCentCom
-    belt: ClothingBeltMilitaryWebbingCorpsmanRXBZZMedicFilled
+    belt: ClothingBeltMilitaryWebbingCorpsmanCBURNMedicFilled
     pocket1: DoubleEmergencyOxygenTankFilled
-    pocket2: ClothingPounchMedicalRXBZZFilled
+    pocket2: ClothingPounchMedicalCBURNFilled
     underpants: ClothingUnderPantsMilitary
     undershirt: ClothingUnderShirtBlack
     socks: ClothingSocksBlack
 
 - type: startingGear
-  id: RXBZZLeader
+  id: CBURNLeader
   equipment:
     jumpsuit: ClothingBlackJumpsuit
-    back: ClothingBackpackSatchelRXBZZLeader
+    back: ClothingBackpackSatchelCBURNLeader
     shoes: ClothingShoesBootsCombatFilled
-    mask: ClothingMaskGasRXBZZ
+    mask: ClothingMaskGasCBURN
     neck: ClothingNeckOldMantle
     eyes: ClothingEyesThermalVisionGoggles
     gloves: ClothingHandsGlovesCombat
@@ -54,17 +54,17 @@
     ears: ClothingHeadsetAltCentCom
     belt: Chainsword #и мы быстренько всех покромсали
     pocket1: ClothingPounchMTFFlare
-    pocket2: ClothingPounchMedicalRXBZZFilled
+    pocket2: ClothingPounchMedicalCBURNFilled
     underpants: ClothingUnderPantsMilitary
     undershirt: ClothingUnderShirtBlack
     socks: ClothingSocksBlack
 
 - type: startingGear
-  id: RXBZZLeaderBlob
-  parent: RXBZZLeader
+  id: CBURNLeaderBlob
+  parent: CBURNLeader
   storage:
     back:
     - NukeCodePaperStation
     - PinpointerNuclear
     - PinpointerNuclearBomb
-    - PaperOrderRXBZZ
+    - PaperOrderCBURN

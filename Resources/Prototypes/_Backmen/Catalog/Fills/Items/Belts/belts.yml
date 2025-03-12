@@ -109,7 +109,7 @@
 - type: entity
   categories: [ HideSpawnMenu ]
   parent: ClothingBeltBandolier
-  id: ClothingBeltBandolierRXBZZ
+  id: ClothingBeltBandolierCBURN
   components:
     - type: Storage
       grid:
@@ -146,7 +146,7 @@
         - 0,0,5,2
     - type: StorageFill
       contents:
-        - id: MedkitAdvancedRXBZZ
+        - id: MedkitAdvancedCBURN
         - id: WeaponEnergyGunDominator
         - id: WeaponLauncherM81
         - id: GrenadeFrag
@@ -170,9 +170,9 @@
         - id: CombatMedipen
         - id: EmergencyMedipen
 
-- type: entity #RXBZZ
+- type: entity #CBURN
   parent: ClothingPounchMedical
-  id: ClothingPounchMedicalRXBZZFilled
+  id: ClothingPounchMedicalCBURNFilled
   categories: [ HideSpawnMenu ]
   components:
     - type: StorageFill
@@ -201,7 +201,7 @@
 
 - type: entity
   parent: ClothingPounchMTF
-  id: ClothingPounchRXBZZFilled
+  id: ClothingPounchCBURNFilled
   categories: [ HideSpawnMenu ]
   components:
     - type: StorageFill
@@ -211,7 +211,7 @@
 
 - type: entity
   parent: ClothingPounchMTF
-  id: ClothingPounchRXBZZEnergyFilled
+  id: ClothingPounchCBURNEnergyFilled
   categories: [ HideSpawnMenu ]
   components:
     - type: StorageFill
@@ -221,7 +221,7 @@
 
 - type: entity
   parent: ClothingPounchMTF
-  id: ClothingPounchRXBZZBigEnergyFilled
+  id: ClothingPounchCBURNBigEnergyFilled
   categories: [ HideSpawnMenu ]
   components:
     - type: StorageFill
@@ -231,7 +231,7 @@
 
 - type: entity
   parent: ClothingPounchMTF
-  id: ClothingPounchRXBZZSRFilled
+  id: ClothingPounchCBURNSRFilled
   categories: [ HideSpawnMenu ]
   components:
     - type: StorageFill
@@ -241,7 +241,7 @@
 
 - type: entity
   parent: ClothingPounchMTF
-  id: ClothingPounchRXBZZPPFilled
+  id: ClothingPounchCBURNPPFilled
   categories: [ HideSpawnMenu ]
   components:
     - type: StorageFill
@@ -251,7 +251,7 @@
 
 - type: entity
   parent: ClothingPounchMTF
-  id: ClothingPounchRXBZZRifleFilled
+  id: ClothingPounchCBURNRifleFilled
   categories: [ HideSpawnMenu ]
   components:
     - type: StorageFill
@@ -261,7 +261,7 @@
 
 - type: entity
   parent: ClothingBeltMilitaryWebbing
-  id: ClothingBeltMilitaryWebbingRXBZZGrenadeFilled
+  id: ClothingBeltMilitaryWebbingCBURNGrenadeFilled
   categories: [ HideSpawnMenu ]
   components:
     - type: StorageFill
@@ -293,7 +293,7 @@
 
 - type: entity
   parent: ClothingPounchMTF
-  id: ClothingPounchRXBZZSpecialistFilled
+  id: ClothingPounchCBURNSpecialistFilled
   categories: [ HideSpawnMenu ]
   components:
     - type: StorageFill
@@ -339,7 +339,7 @@
 
 - type: entity
   parent: [ClothingBeltMedical,ClothingBeltSecurity]
-  id: ClothingBeltMilitaryWebbingCorpsmanRXBZZMedicFilled #RXBZZMedic
+  id: ClothingBeltMilitaryWebbingCorpsmanCBURNMedicFilled #CBURNMedic
   name: РПС медика РХБЗЗ
   description: Медицинская ременно-плечевая система с множеством мелких и стерильных карманов и подсумков.
   components:

@@ -62,7 +62,7 @@
   name: рация вызова снабжения РХБЗЗ
   description: Портативная рация для связи с отделом снабжения, настроена на одностороний разговор. Экстренные припасы прибудут к вам даже сквозь толпу зомби и горящую плазму.
   parent: BaseItem
-  id: RadioRXBZZSupplyPod
+  id: RadioCBURNSupplyPod
   components:
   - type: Sprite
     sprite: Objects/Devices/communication.rsi
@@ -72,6 +72,6 @@
     heldPrefix: radio
   - type: SpawnItemsOnUse
     items:
-      - id: DropPodMarkerRXBZZ
+      - id: DropPodMarkerCBURN
     sound:
       path: /Audio/Corvax/Effects/Footsteps/off2.ogg

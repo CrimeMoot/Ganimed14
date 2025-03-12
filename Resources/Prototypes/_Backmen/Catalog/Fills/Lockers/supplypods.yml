@@ -35,18 +35,18 @@
     contents:
         - id: ClothingOuterHardsuitBlueShield
 
-#RXBZZ
+#CBURN
 - type: entity
-  id: DropPodMarkerRXBZZ
+  id: DropPodMarkerCBURN
   parent: DropPodMarker
-  suffix: RXBZZ, supply
+  suffix: CBURN, supply
   components:
   - type: TimedSpawner
     prototypes:
-      -  DropPodLaunchAnimationRXBZZ
+      -  DropPodLaunchAnimationCBURN
 
 - type: entity
-  id: DropPodLaunchAnimationRXBZZ
+  id: DropPodLaunchAnimationCBURN
   parent: DropPodLaunchAnimation
   categories: [ HideSpawnMenu ]
   components:
@@ -57,10 +57,10 @@
       offset: "0,3.3"
   - type: TimedSpawner
     prototypes:
-      - SupplyDropPodRXBZZ
+      - SupplyDropPodCBURN
 
 - type: entity
-  id: SupplyDropPodRXBZZ
+  id: SupplyDropPodCBURN
   parent: SupplyPodBase
   categories: [ HideSpawnMenu ]
   components:

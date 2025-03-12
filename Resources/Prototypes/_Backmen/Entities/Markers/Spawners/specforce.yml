@@ -109,23 +109,13 @@
 
 - type: entity
   categories: [ HideSpawnMenu, Spawner ]
-  id: SpawnMobHumanRXBZZBlobLeader
+  id: SpawnMobHumanRXBZZLeaderBlob
   parent: SpawnSpecforce
   name: РХБЗЗ лидер
   suffix: спавнер спецсил
   components:
     - type: GhostRoleMobSpawner
-      prototype: MobHumanRXBZZBlobLeader
-
-- type: entity
-  categories: [ HideSpawnMenu, Spawner ]
-  id: SpawnMobHumanRXBZZFlamer
-  parent: SpawnSpecforce
-  name: РХБЗЗ специалист
-  suffix: спавнер спецсил
-  components:
-    - type: GhostRoleMobSpawner
-      prototype: MobHumanRXBZZFlamer
+      prototype: MobHumanRXBZZLeaderBlob
 
 - type: entity
   categories: [ HideSpawnMenu, Spawner ]

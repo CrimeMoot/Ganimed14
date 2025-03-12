@@ -39,6 +39,17 @@
         - Injector
         - Pill
         - HandLabeler
+
+- type: entity
+  parent: [ClothingBeltMedical,ClothingBeltSecurity]
+  id: ClothingBeltMilitaryWebbingCorpsmanFilled
+  name: РПС бригмедика
+  description: Медицинская ременно-плечевая система с множеством мелких и стерильных карманов и подсумков.
+  components:
+  - type: Sprite
+    sprite: _Ganimed/Clothing/Belt/corpsman.rsi
+  - type: Clothing
+    sprite: _Ganimed/Clothing/Belt/corpsman.rsi
   - type: StorageFill
     contents:
       - id: Brutepack

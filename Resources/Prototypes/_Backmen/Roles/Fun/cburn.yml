@@ -1,75 +1,59 @@
 - type: startingGear
   id: RXBZZ
   equipment:
-    jumpsuit: ClothingUniformJumpsuitColorBlack
-    back: ClothingBackpackDuffelRXBZZ
-    shoes: ClothingShoesBootsMagArmy
+    jumpsuit: ClothingUniformJumpsuitTacticool
+    back: ClothingBackpackRXBZZ
+    shoes: ClothingShoesBootsCombatFilled
     mask: ClothingMaskGasRXBZZ
-    eyes: ClothingEyesThermalVisionGoggles
-    neck: CombatKnifeSpetsnaz
+    eyes: ClothingEyesGlassesSunglasses
     gloves: ClothingHandsGlovesCombat
-    outerClothing: ClothingOuterHardsuitCBURN
+    outerClothing: ClothingOuterArmorBasic
     id: idcoinRXBZZ
-    ears: ClothingHeadsetEarthGov
+    ears: ClothingHeadsetAltCentCom
     belt: WeaponAdvancedLaser
+    pocket1: DoubleEmergencyOxygenTankFilled
     pocket2: ClothingPounchMedicalRXBZZFilled
 
 - type: startingGear
   id: RXBZZMedic
   equipment:
-    jumpsuit: ClothingUniformJumpsuitColorBlack
+    jumpsuit: ClothingUniformJumpsuitTacticool
     back: ClothingBackpackDuffelRXBZZMedic
-    shoes: ClothingShoesBootsMagArmy
+    shoes: ClothingShoesBootsCombatFilled
     mask: ClothingMaskGasRXBZZ
-    eyes: ClothingEyesHudMedical
-    neck: CombatKnifeSpetsnaz
+    neck: ClothingNeckStethoscope
+    eyes: ClothingEyesGlassesHudSunglassesMedical
     gloves: ClothingHandsGlovesCombat
-    outerClothing: ClothingOuterHardsuitCBURN
+    outerClothing: ClothingOuterVestArmorMedSec
     id: idcoinRXBZZMedic
-    ears: ClothingHeadsetEarthGov
-    belt: ClothingBeltMedicalMarineRxbzz
+    head: ClothingHeadHatBeretSecurityMedic
+    ears: ClothingHeadsetAltCentCom
+    belt: ClothingBeltMilitaryWebbingCorpsmanRXBZZMedicFilled
+    pocket1: DoubleEmergencyOxygenTankFilled
     pocket2: ClothingPounchMedicalRXBZZFilled
 
-- type: startingGear
-  id: RXBZZFlamer
-  equipment:
-    jumpsuit: ClothingUniformJumpsuitColorBlack
-    shoes: ClothingShoesBootsMagArmy
-    back: ClothingBackpackDuffelMilitary
-    mask: ClothingMaskGasRXBZZ
-    neck: CombatKnifeSpetsnaz
-    gloves: ClothingHandsGlovesCombat
-    outerClothing: ClothingOuterHardsuitCBURN
-    id: idcoinRXBZZSpecialist
-    ears: ClothingHeadsetEarthGov
-    pocket2: ClothingPounchMedicalRXBZZFilled
-  storage:
-    back:
-    - ArmySetLoadoutsSpecialist
-    - ArmySetLoadoutsSpecialistSecondary
 
+    
 - type: startingGear
   id: RXBZZLeader
   equipment:
-    jumpsuit: ClothingUniformJumpsuitColorBlack
-    back: ClothingBackpackDuffelRXBZZ
-    shoes: ClothingShoesBootsMagArmy
+    jumpsuit: ClothingBlackJumpsuit
+    back: ClothingBackpackSatchelRXBZZLeader
+    shoes: ClothingShoesBootsCombatFilled
     mask: ClothingMaskGasRXBZZ
-    neck: CombatKnifeSpetsnaz
+    neck: ClothingNeckOldMantle
     eyes: ClothingEyesThermalVisionGoggles
     gloves: ClothingHandsGlovesCombat
-    outerClothing: ClothingOuterHardsuitCBURNLeader
-    id: idcoinRXBZZSergant
+    outerClothing: ClothingOuterArmorBasic
+    id: CBURNPDA
     head: ClothingHeadHatERTLeaderBeret
-    ears: ClothingHeadsetEarthGov
-    belt: WeaponAdvancedLaser
+    ears: ClothingHeadsetAltCentCom
+    belt: Chainsword #и мы быстренько всех покромсали
+    pocket1: ClothingPounchMTFFlare
     pocket2: ClothingPounchMedicalRXBZZFilled
-  storage:
-    back:
-    - RadioMTFHandheld
 
 - type: startingGear
-  id: RXBZZBlobLeader
+  id: RXBZZLeaderBlob
   parent: RXBZZLeader
   storage:
     back:

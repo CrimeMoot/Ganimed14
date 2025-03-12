@@ -1,7 +1,10 @@
-ent-ClothingBeltMilitaryWebbingCMO = пояс главного врача
+ent-ClothingBeltMilitaryWebbingCMO = РПС главного врача
     .desc = Медицинский нагрудник с глубокими карманами, предназначенный для использования парамедиками и медицинскими работниками.
 ent-ClothingBeltMilitaryWebbingCMOFilled = { ent-ClothingBeltMilitaryWebbingCMO }
     .suffix = Заполненный
-    .desc = { ent-ClothingBeltMilitaryWebbingCMO }
-ent-ClothingBeltMilitaryWebbingCorpsman = пояс бригмедика
+    .desc = { ent-ClothingBeltMilitaryWebbingCMO.desc }
+ent-ClothingBeltMilitaryWebbingCorpsman = РПС бригмедика
     .desc = Медицинский нагрудник с глубокими карманами, предназначенный для использования парамедиками и медицинскими работниками.
+ent-ClothingBeltMilitaryWebbingCorpsmanFilled = { ent-ClothingBeltMilitaryWebbingCorpsman }
+    .suffix = Заполненный
+    .desc = { ent-ClothingBeltMilitaryWebbingCorpsman.desc }

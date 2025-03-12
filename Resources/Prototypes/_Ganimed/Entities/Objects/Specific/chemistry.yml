@@ -13,6 +13,9 @@
         visible: false
   - type: Item
     sprite: _Ganimed/Objects/Specific/Chemistry/kit.rsi
+  - type: Tag
+    tags:
+      - Bottle #Без этого тега не лезет в РПС и пояса
   - type: MeleeWeapon
     soundNoDamage:
       path: "/Audio/Effects/Fluids/splat.ogg"
@@ -93,3 +96,93 @@
           Quantity: 20
        # - ReagentId: Tricordrazine я зачем ты добавил сюда трику,ибо она лечит мало и только если общий дамаг меньше 50,а организм способен через кровь переваривать только 2 химиката
        #   Quantity:  25
+
+- type: entity
+  name: epinephrine reliable container
+  parent: ReliableContainer
+  description: "Filled with epinephrine"
+  id: ReliableContainerEpinephrineFilled
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      beaker:
+        maxVol: 100
+        reagents:
+        - ReagentId: Epinephrine
+          Quantity: 100
+          
+- type: entity
+  name: saline reliable container
+  parent: ReliableContainer
+  description: "Filled with medication that treat bloodloss."
+  id: ReliableContainerSalineFilled
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      beaker:
+        maxVol: 100
+        reagents:
+        - ReagentId: Saline
+          Quantity: 100
+          
+- type: entity
+  name: ambuzol reliable container
+  parent: ReliableContainer
+  description: "Filled with medication that treat zombie infection."
+  id: ReliableContainerAmbuzolFilled
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      beaker:
+        maxVol: 100
+        reagents:
+        - ReagentId: Ambuzol
+          Quantity: 100
+          
+- type: entity
+  name: stellibinin reliable container
+  parent: ReliableContainer
+  description: "Filled with medication that treat poison damage."
+  id: ReliableContainerStellibininFilled
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      beaker:
+        maxVol: 100
+        reagents:
+        - ReagentId: Stellibinin
+          Quantity: 100
+          
+- type: entity
+  name: anti-intoxication reliable container
+  parent: ReliableContainer
+  description: "Filled with medication that treat mInD eFFeeecTs."
+  id: ReliableContainerIntoxicationFilled
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      beaker:
+        maxVol: 100
+        reagents:
+        - ReagentId: Haloperidol #от галлюциногенов
+          Quantity: 50
+        - ReagentId: Diphenylmethylamine #и ещё от сонливости
+          Quantity: 30
+        - ReagentId: Ethylredoxrazine #и алкоголя
+          Quantity: 20
+          
+- type: entity
+  name: anti-radiation reliable container
+  parent: ReliableContainer
+  description: "Filled with medication that treat radiation damage"
+  id: ReliableContainerAntiradFilled
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      beaker:
+        maxVol: 100
+        reagents:
+        - ReagentId: Hyronalin
+          Quantity: 50
+        - ReagentId: Arithrazine
+          Quantity: 50

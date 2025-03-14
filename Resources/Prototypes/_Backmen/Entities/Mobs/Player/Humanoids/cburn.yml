@@ -39,7 +39,6 @@
 - type: entity
   name:  РХБЗЗ Реагент
   parent: MobHumanCBURNBase
-  suffix: ready
   id: MobHumanCBURN
   components:
   - type: GhostRole
@@ -59,7 +58,6 @@
 - type: entity
   name:  РХБЗЗ Медик
   parent: MobHumanCBURNBase
-  suffix: ready
   id: MobHumanCBURNMedic
   components:
   - type: GhostRole
@@ -82,7 +80,6 @@
 - type: entity
   name:  РХБЗЗ Лидер
   parent: MobHumanCBURNBase
-  suffix: CentCom
   id: MobHumanCBURNLeader
   components:
   - type: GhostRole

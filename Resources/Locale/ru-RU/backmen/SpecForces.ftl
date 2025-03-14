@@ -9,6 +9,6 @@ spec-forces-system-ert-name = ОБР Theta
 spec-forces-system-alpha-name = СОБР Alpha
 spec-forces-system-tay-name = ОБР Tay
 spec-forces-system-epsilon-name = ОБР Epsilon
-spec-forces-system-CBURN-name = РХБЗЗ Sierra
+spec-forces-system-CBURN-name = РХБЗЗ
 spec-forces-system-deathsquad-name = Спецназ Omega
 spec-forces-system-round-end = Был вызван { $specforce } в { $time } ({ $who })!

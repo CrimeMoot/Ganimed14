@@ -35,6 +35,8 @@
     speechSounds: Metrocop
     soundCooldownTime: 0.1
   - type: AntagImmune
+  - type: SpecForce
+    actionBssActionName: ActionCentcomFtlAction
 
 - type: entity
   name:  РХБЗЗ Реагент

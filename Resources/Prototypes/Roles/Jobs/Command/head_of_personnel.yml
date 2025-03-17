@@ -13,12 +13,12 @@
 #    - !type:DepartmentTimeRequirement
 #      department: Science
 #      time: 18000 #5 hrs
-    - !type:DepartmentTimeRequirement
-      department: Cargo
-      time: 18000 #5 hrs
-    - !type:DepartmentTimeRequirement
-      department: Security
-      time: 18000 #5 hrs # Corvax-RoleTime
+#    - !type:DepartmentTimeRequirement
+#      department: Cargo
+#      time: 18000 #5 hrs
+#    - !type:DepartmentTimeRequirement
+#      department: Security
+#      time: 18000 #5 hrs # Corvax-RoleTime
     - !type:DepartmentTimeRequirement
       department: Civilian
       time: 36000 #10 hrs

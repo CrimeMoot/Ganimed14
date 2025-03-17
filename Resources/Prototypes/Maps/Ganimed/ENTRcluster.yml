@@ -2,7 +2,7 @@
   id: ENTRCluster
   mapName: 'ENTRcluster'
   mapPath: /Maps/Ganimed/ENTRcluster.yml
-  minPlayers: 4
+  minPlayers: 3
   maxPlayers: 35
   stations:
     Cluster:
@@ -29,7 +29,7 @@
             Janitor: [ 1, 1 ]
             Chaplain: [ 1, 1 ]
             Librarian: [ 1, 1 ]
-#            Lawyer: [ 1, 1 ] # Corvax-IAA
+            Lawyer: [ 1, 1 ]
             ServiceWorker: [ 1, 1 ]
             #engineering
             ChiefEngineer: [ 1, 1 ]

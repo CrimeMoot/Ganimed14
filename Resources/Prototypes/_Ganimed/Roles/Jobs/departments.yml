@@ -1,12 +1,14 @@
-- type: department
-  id: Legal
-  name: department-Legal
-  description: department-Legal-description
-  color: "#701442"
-  roles:
-  #- Magistrate
-  - IAA
-  - Lawyer
-  primary: false # Temporarily
-  editorHidden: true # Temporarily
-  accountNumber: 1344 #backmen: currency
+# TODO: independent Legal/Justice department
+
+#- type: department
+#  id: Legal
+#  name: department-Legal
+#  description: department-Legal-description
+#  color: "#701442"
+#  roles:
+#  #- Magistrate
+#  - IAA
+#  - Lawyer
+#  primary: false # Temporarily
+#  editorHidden: true # Temporarily
+#  accountNumber: 1344 #backmen: currency

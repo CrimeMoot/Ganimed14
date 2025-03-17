@@ -22,6 +22,8 @@
     - Brig
     - Maintenance
     - External
+  extendedAccess:
+    - Cryogenics
   #start-backmen: currency
   minBankBalance: 200
   maxBankBalance: 400

@@ -10,9 +10,9 @@
   - !type:DepartmentTimeRequirement
     department: Security
     time: 36000
-  - !type:DepartmentTimeRequirement
-    department: Legal
-    time: 14400 #4 hrs
+  - !type:RoleTimeRequirement #- !type:DepartmentTimeRequirement
+    role: JobLawyer #department: Legal
+    time: 18000 #5 hrs
   - !type:AgeRequirement
     requiredAge: 21
   startingGear: IAAGear

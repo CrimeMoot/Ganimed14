@@ -10,12 +10,12 @@
   requirements:
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 18000 #5 hrs
+      time: 36000 #10 hrs
     - !type:DepartmentTimeRequirement
       department: Command
-      time: 14400 #4 hrs
+      time: 36000 #10 hrs
     - !type:OverallPlaytimeRequirement
-      time: 86400 #24 hrs
+      time: 108000 #30 hrs
     - !type:AgeRequirement
       requiredAge: 21 # cats
   special:
@@ -48,9 +48,9 @@
   equipment:
     id: BlueShieldPDA
     gloves: ClothingHandsGlovesCombat
-    ears: ClothingHeadsetAltCommand
+    ears: ClothingHeadsetCommand
     shoes: ClothingShoesBootsCombat
-    back: ClothingBlueshieldBackpack # cats
+    #back: ClothingBlueshieldBackpack # cats
     belt: ClothingBeltSecurityCentComSecurity
     pocket1: PistolBlueShield # cats
   storage:

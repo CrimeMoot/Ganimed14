@@ -51,7 +51,7 @@
             SecurityOfficer: [ 3, 3 ]
             Detective: [ 1, 1 ]
             SecurityCadet: [ 2, 2 ]
-            #Lawyer: [ 1, 1 ] # Corvax-IAA
+            Lawyer: [ 1, 1 ]
             #supply
             Quartermaster: [ 1, 1 ]
             SalvageSpecialist: [ 2, 2 ]
@@ -66,14 +66,14 @@
             Borg: [ 1, 1 ]
             # backmen
             Brigmedic: [ 0, 1 ] # backmen-Brigmedic
-            # Cats
-            Maid: [ 0, 1]
-            BridgeOfficer: [ 0, 1 ]    
-            BlueShield: [0, 1] # backmen-BlueShield      
+            BlueShield: [0, 1] # backmen-BlueShield     
             #BKBPLATech: [ 0, 1 ] # backmen-BPLA-Silicons
             #BKBPLAMED: [ 0, 1 ] # backmen-BPLAMED-Silicons
-#            Deliveryman: [ 0, 1 ]
-#            Prisoner: [ 2, 3 ]
+            #Deliveryman: [ 0, 1 ]
+            #Prisoner: [ 2, 3 ] 
+            # Cats
+            #Maid: [ 0, 1]
+            BridgeOfficer: [ 0, 1 ]    
         # backmen blob-config-start SMALL+
         - type: StationBlobConfig
           stageBegin: 25

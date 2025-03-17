@@ -444,8 +444,8 @@
     - SawElectric
     - Cautery
     - Drill
-    - EmergencyMedipen
     #- BoneGel
+    - EmergencyMedipen
   effects:
   - !type:JobRequirementLoadoutEffect
     requirement:

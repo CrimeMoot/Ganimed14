@@ -5,10 +5,13 @@
   playTimeTracker: JobBridgeOfficer
   requirements:
     - !type:OverallPlaytimeRequirement
-      time: 64000
+      time: 72000 #20 hrs
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 21600
+      time: 21600 #6 hrs
+    - !type:DepartmentTimeRequirement
+      department: Command
+      time: 21600 #6 hrs
   startingGear: BridgeOfficerGear
   icon: "JobIconBridgeOfficer"
   supervisors: job-supervisors-command
@@ -29,7 +32,7 @@
   minBankBalance: 300
   maxBankBalance: 600
   wageDepartment: CentralCommand
-  wage: 200
+  wage: 150
 
 - type: startingGear
   id: BridgeOfficerGear

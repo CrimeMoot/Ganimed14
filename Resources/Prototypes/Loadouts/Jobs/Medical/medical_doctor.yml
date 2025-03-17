@@ -428,7 +428,7 @@
     belt:
     - Brutepack
     - Brutepack
-    - Ointment
+    - Ointment #- AloeCream
     - Bloodpack
     - Gauze
     - EmergencyMedipen
@@ -445,7 +445,8 @@
     - Cautery
     - Drill
     #- BoneGel
-    - EmergencyMedipen
+    #- Bonesetter
+    #- EmergencyMedipen
   effects:
   - !type:JobRequirementLoadoutEffect
     requirement:
@@ -459,12 +460,12 @@
   storage:
     belt:
     - PillCanisterTricordrazine
-    - PillCanisterBicaridine
-    - PillCanisterKelotane
-    - PillCanisterIron
+    - PillCanisterBicaridine #- SyringeBicaridine
+    - PillCanisterKelotane #- SyringeDermaline
+    - PillCanisterIron #- SyringeSaline
     #- PillCanisterDexalin
-    - PillCanisterDylovene
-    #- PillCanisterHyronalin
+    - PillCanisterDylovene #- PillCanisterCharcoal
+    #- PillCanisterHyronalin #- SyringeHyronalin
     - EpinephrineChemistryBottle
     - Syringe
   effects:
@@ -472,4 +473,27 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobChemist
+      time: 36000 # 10hr
+
+- type: loadout
+  id: MedicalBeltFillAdvanced
+  dummyEntity: MedicatedSuture
+  storage:
+    belt:
+    - MedicatedSuture
+    - RegenerativeMesh
+    - Bloodpack
+    - BruteAutoInjector
+    - BurnAutoInjector
+    - AntiPoisonMedipen
+    - RadAutoInjector
+    - CombatMedipen
+    #- SpaceMedipen #- EmergencyMedipen
+    - SyringeEphedrine #- SyringeStimulants #- Stimpack
+    #- OmnimedTool #(- EnergyScalpel - AdvancedRetractor - EnergyCautery)
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobChiefMedicalOfficer
       time: 36000 # 10hr

@@ -6,10 +6,10 @@
   requirements:
   - !type:DepartmentTimeRequirement
     department: Command
-    time: 72000
+    time: 72000 #20 hrs
   - !type:DepartmentTimeRequirement
     department: Security
-    time: 36000
+    time: 36000 #10 hrs
   - !type:RoleTimeRequirement #- !type:DepartmentTimeRequirement
     role: JobLawyer #department: Legal
     time: 18000 #5 hrs

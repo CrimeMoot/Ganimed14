@@ -59,7 +59,7 @@ public sealed class SpecForcesSystem : EntitySystem
     }
 
     [ValidatePrototypeId<SpecForceTeamPrototype>]
-    private const string Rxbzz = "RXBZZBlobDefault";
+    private const string Rxbzz = "CBURNBlobDefault"; //ganimed-edit сменили ID, а они тут в железно забиты.
 
     private void OnBlobChange(BlobChangeLevelEvent ev)
     {

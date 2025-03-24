@@ -3,6 +3,7 @@ loadout-group-spare-clothing = Запасная одежда
 loadout-group-underwear = Нижнее бельё
 # Command
 loadout-group-blueshield-backpack = Рюкзак ОСЩ
+loadout-group-blueshield-neck = ОСЩ, шея
 loadout-group-bridge-officer-head = Головной убор офицера мостика
 loadout-group-bridge-officer-neck = Мантия офицера мостика
 loadout-group-bridge-officer-jumpsuit = Форма офицера мостика

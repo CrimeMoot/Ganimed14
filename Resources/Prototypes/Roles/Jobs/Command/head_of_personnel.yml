@@ -3,6 +3,7 @@
   name: job-name-hop
   description: job-description-hop
   playTimeTracker: JobHeadOfPersonnel
+  requireAdminNotify: true
   requirements:
 #    - !type:DepartmentTimeRequirement
 #      department: Engineering

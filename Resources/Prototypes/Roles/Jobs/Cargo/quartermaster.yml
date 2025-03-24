@@ -3,6 +3,7 @@
   name: job-name-qm
   description: job-description-qm
   playTimeTracker: JobQuartermaster
+  requireAdminNotify: true
   requirements:
     - !type:RoleTimeRequirement
       role: JobCargoTechnician

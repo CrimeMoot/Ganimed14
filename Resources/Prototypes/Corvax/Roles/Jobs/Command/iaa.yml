@@ -3,6 +3,7 @@
   name: job-name-iaa
   description: job-description-iaa
   playTimeTracker: JobIAA
+  requireAdminNotify: true
   requirements:
   - !type:DepartmentTimeRequirement
     department: Command
@@ -20,12 +21,13 @@
   supervisors: job-supervisors-centcom
   canBeAntag: false
   access:
-    - Service
-    - Brig
-    - Maintenance
-    - Command
-    - External
-    - Lawyer
+  - Service
+  - Brig
+  - Maintenance
+  - Command
+  - External
+  - Lawyer
+  - Cryogenics
   #start-backmen: currency
   minBankBalance: 800
   maxBankBalance: 1200

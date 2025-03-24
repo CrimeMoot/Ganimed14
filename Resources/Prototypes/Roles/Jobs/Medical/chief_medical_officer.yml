@@ -5,6 +5,7 @@
   name: job-name-cmo
   description: job-description-cmo
   playTimeTracker: JobChiefMedicalOfficer
+  requireAdminNotify: true
   requirements:
     - !type:RoleTimeRequirement
       role: JobChemist

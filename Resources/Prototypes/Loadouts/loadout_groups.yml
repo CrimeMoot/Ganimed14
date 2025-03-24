@@ -26,8 +26,8 @@
   - CigarCase
   - CigarGold
   - SmokingPipe # Ganimed
-  # - ClothingNeckLGBTPin # TODO: readd
-  # - ClothingNeckAutismPin # TODO: readd
+  - ClothingNeckLGBTPin
+  - ClothingNeckAutismPin
 # start-backmen: no pride
 #  - ClothingNeckAromanticPin
 #  - ClothingNeckAsexualPin
@@ -64,7 +64,7 @@
   - ClothingNeckWhiteListPin
   # Corvax-Loadouts-End
   # Ganimed-Loadouts-Start
-  - GlowstickBase
+  - GlowstickGreen
   - GlowstickYellow
   - GlowstickRed
   - GlowstickPurple
@@ -213,6 +213,7 @@
   loadouts:
   - CaptainBeltSabreSheath
   - CaptainBeltSabreSheathWhite
+  - ExtraShoulderHolster
 
 - type: loadoutGroup
   id: CaptainBackpack
@@ -252,7 +253,7 @@
   minLimit: 0
   loadouts:
   - AdministrationHud
-  - CheapSunglasses
+  - Sunglasses
   - Glasses
   - Eyepatch
   - GlassesJamjar
@@ -368,6 +369,7 @@
   minLimit: 0
   loadouts:
   - WaistBag
+  - Clipboard
 
 - type: loadoutGroup
   id: PassengerOuterClothing
@@ -425,6 +427,7 @@
   loadouts:
   - WaistBag
   - Bandolier
+  - ExtraShoulderHolster
 
 - type: loadoutGroup
   id: BartenderOuterClothing
@@ -530,7 +533,22 @@
   - LawyerJumpskirtRed
   - LawyerJumpsuitGood
   - LawyerJumpskirtGood
-  - JumpsuitNanotrasen # Ganimed
+
+- type: loadoutGroup # Ganimed
+  id: IAAJumpsuit
+  name: loadout-group-iaa-jumpsuit
+  loadouts:
+  - LawyerJumpsuit
+  - LawyerJumpskirt
+  - LawyerJumpsuitBlue
+  - LawyerJumpskirtBlue
+  - LawyerJumpsuitPurple
+  - LawyerJumpskirtPurple
+  - LawyerJumpsuitRed
+  - LawyerJumpskirtRed
+  - LawyerJumpsuitGood
+  - LawyerJumpskirtGood
+  - JumpsuitNanotrasen
 
 - type: loadoutGroup
   id: LawyerNeck
@@ -538,8 +556,25 @@
   minLimit: 0
   loadouts:
   - LawyerNeck
-  - NTBedsheet # Ganimed
-  - NanotrasenCloak # Ganimed
+
+- type: loadoutGroup # Ganimed
+  id: IAANeck
+  name: loadout-group-iaa-neck
+  minLimit: 0
+  loadouts:
+  - LawyerNeck
+  - NTBedsheet
+  - NanotrasenCloak
+
+- type: loadoutGroup # Ganimed
+  id: MagistrateHead
+  name: loadout-group-magistrate-head
+  minLimit: 0
+  loadouts:
+  - DetectiveFedoraGrey
+  - BartenderHead
+  - BartenderBowler
+  - JudgePwig
 
 - type: loadoutGroup # Ganimed
   id: MagistrateOuterClothing
@@ -1698,6 +1733,7 @@
   - CombatBoots # Ganimed
   - SecurityWinterBoots
   - BlackCowboyBoots # Ganimed
+  - HighheelBoots # Ganimed
 
 - type: loadoutGroup
   id: SecurityPDA
@@ -1734,6 +1770,7 @@
   minLimit: 0
   loadouts:
   - DetectiveTie
+  - DetectiveHorrificNecktie # Ganimed
 
 - type: loadoutGroup
   id: DetectiveJumpsuit
@@ -1743,8 +1780,9 @@
   - DetectiveJumpskirt
   - NoirJumpsuit
   - NoirJumpskirt
-  - JumpsuitDecSerii
-  - ClothingJumpsuitDecSerii
+  - JumpsuitDecSerii # Ganimed
+  - ClothingJumpsuitDecSerii # Ganimed
+  - SuperstarCopJumpsuit # Ganimed
 
 - type: loadoutGroup
   id: DetectiveOuterClothing
@@ -1755,6 +1793,7 @@
   - DetectiveCoatGrey
   - DetectiveCoatOriginal # Ganimed
   - DetectiveCoatDark # Ganimed
+  - DetectiveDiscoBlazer # Ganimed
 
 - type: loadoutGroup # Ganimed
   id: DetectiveBelt
@@ -1782,6 +1821,7 @@
   - BrownShoes
   - LeatherShoesWhitelisted
   - LaceupShoesWhitelisted
+  - GreenLizardskinShoes
 
 - type: loadoutGroup # Backmen
   id: DetectiveRevolver
@@ -1789,9 +1829,9 @@
   loadouts:
   - WeaponRevolverR44
   - WeaponRevolverInspector
-  - WeaponRevolverRebota
+  - WeaponRevolverNY
+  # - WeaponRevolverRebota
   # - WeaponRevolverCMB
-  # - WeaponRevolverNY
 
 - type: loadoutGroup
   id: SecurityCadetJumpsuit

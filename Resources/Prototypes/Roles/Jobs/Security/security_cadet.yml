@@ -35,12 +35,12 @@
 - type: startingGear
   id: SecurityCadetGear
   equipment:
-    shoes: ClothingShoesBootsJackSec # Corvax-Resprite-MRP
+    shoes: ClothingShoesBootsJackSecFilled # Corvax-Resprite-MRP
     outerClothing: ClothingOuterArmorBasic
     id: SecurityCadetPDA
     ears: ClothingHeadsetSecurity
     belt: ClothingBeltSecurityFilled
-    pocket2: BookSpaceLaw # Corvax-HyperLink
+    pocket2: BookSecurity
   storage:
     back:
     - Flash

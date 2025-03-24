@@ -20,7 +20,7 @@
   supervisors: job-supervisors-hop
   canBeAntag: false
   joinNotifyCrew: true
-  setPreference: true #TODO: Remove
+  setPreference: false
   access:
   - Maintenance
   - Command
@@ -32,7 +32,7 @@
   minBankBalance: 300
   maxBankBalance: 600
   wageDepartment: CentralCommand
-  wage: 200
+  wage: 100
 
 - type: startingGear
   id: MaidGear

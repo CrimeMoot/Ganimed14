@@ -32,7 +32,7 @@
   minBankBalance: 300
   maxBankBalance: 600
   wageDepartment: CentralCommand
-  wage: 150
+  wage: 100
 
 - type: startingGear
   id: BridgeOfficerGear

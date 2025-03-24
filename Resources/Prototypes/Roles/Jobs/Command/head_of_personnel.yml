@@ -33,7 +33,8 @@
   startingGear: HoPGear
   icon: "JobIconHeadOfPersonnel"
   supervisors: job-supervisors-captain
-  canBeAntag: false
+  canBeAntag: true # Ganimed MRP
+  antagAdvantage: 5 # Ganimed MRP
   access:
   - Command
   - HeadOfPersonnel

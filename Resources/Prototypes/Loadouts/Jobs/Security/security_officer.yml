@@ -304,6 +304,13 @@
   effects:
   - !type:SponsorLoadoutEffect
 
+- type: loadout
+  id: HighheelBoots
+  equipment:
+    shoes: ClothingShoesHighheelBootsFilled
+  effects:
+  - !type:SponsorLoadoutEffect
+
 # PDA
 - type: loadout
   id: SecurityPDA

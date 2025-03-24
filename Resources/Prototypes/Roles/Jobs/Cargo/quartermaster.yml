@@ -19,7 +19,8 @@
   startingGear: QuartermasterGear
   icon: "JobIconQuarterMaster"
   supervisors: job-supervisors-captain
-  canBeAntag: false
+  canBeAntag: true # Ganimed MRP
+  antagAdvantage: 5 # Ganimed MRP
   access:
   - Cargo
   - Salvage

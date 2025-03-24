@@ -1,3 +1,13 @@
+# Timers, Ganimed
+- type: loadoutEffectGroup
+  id: ForensicExpert
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobDetective
+      time: 72000 #20 hrs
+
 # Head
 - type: loadout
   id: DetectiveFedora
@@ -14,6 +24,15 @@
   id: DetectiveTie
   equipment:
     neck: ClothingNeckTieDet
+
+- type: loadout
+  id: DetectiveHorrificNecktie
+  equipment:
+    neck: ClothingNeckHorrific
+  effects:
+  - !type:SponsorLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: ForensicExpert
 
 # Jumpsuit
 - type: loadout
@@ -46,6 +65,15 @@
   equipment:
     jumpsuit: ClothingJumpsuitDec
 
+- type: loadout # Ganimed
+  id: SuperstarCopJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSuperstarCop
+  effects:
+  - !type:SponsorLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: ForensicExpert
+
 # OuterClothing
 - type: loadout
   id: DetectiveArmorVest
@@ -72,11 +100,29 @@
   equipment:
     outerClothing: ClothingOuterCoatDetectiveDark
 
+- type: loadout # Ganimed
+  id: DetectiveDiscoBlazer
+  equipment:
+    outerClothing: ClothingOuterDiscoAssBlazer
+  effects:
+  - !type:SponsorLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: ForensicExpert
+
 # Belt, Ganimed
 - type: loadout
   id: DetectiveShoulderHolster
   equipment:
     belt: ClothingBeltHolster
+
+- type: loadout
+  id: ExtraShoulderHolster
+  equipment:
+    belt: ClothingBeltHolster
+  effects:
+  - !type:SponsorLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: ForensicExpert
 
 - type: loadout
   id: SecurityBeltEmpty
@@ -88,6 +134,19 @@
   id: ForensicGloves
   equipment:
     gloves: ClothingHandsGlovesForensic
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ForensicExpert
+
+# Shoes, Ganimed
+- type: loadout
+  id: GreenLizardskinShoes
+  equipment:
+    shoes: ClothingShoesGreenLizardskin
+  effects:
+  - !type:SponsorLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: ForensicExpert
 
 # Weapon #Backmen
 - type: loadout

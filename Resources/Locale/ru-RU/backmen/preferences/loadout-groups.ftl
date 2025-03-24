@@ -13,7 +13,7 @@ loadout-group-brigmedic-mask = Маска бригмедика
 loadout-group-medals = Медали
 
 # CentCom
-loadout-group-blueshield-jumpsuit = Одежда
-loadout-group-BlueShield-hat = Головной убор
-loadout-group-BlueShield-outer = Верхняя одежда
-loadout-group-BlueShield-eyes = Очки
+loadout-group-blueshield-jumpsuit = Форма ОСЩ
+loadout-group-blueshield-hat = Головной убор ОСЩ
+loadout-group-blueshield-outer = Верхняя одежда ОСЩ
+loadout-group-blueshield-eyes = Очки ОСЩ

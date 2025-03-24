@@ -26,8 +26,8 @@
 
 - type: loadoutGroup
   id: ClothingNeckBlueShield
-  name: loadout-group-captain-neck
-  minLimit: 1
+  name: loadout-group-blueshield-neck
+  minLimit: 0
   loadouts:
   - ClothingNeckCloakBlueshields
   - ClothingNeckMantleBlueShield
@@ -36,8 +36,7 @@
 
 - type: loadoutGroup
   id: ClothingHeadHatBlueShield
-  name: loadout-group-BlueShield-hat
-  minLimit: 1
+  name: loadout-group-blueshield-hat
   loadouts:
   - ClothingHeadHatBeretBlueShield
   - ClothingHeadHatBlueShieldCap
@@ -47,7 +46,7 @@
 
 - type: loadoutGroup
   id: ClothingOuterBlueShield
-  name: loadout-group-BlueShield-outer
+  name: loadout-group-blueshield-outer
   loadouts:
   - ClothingOuterNavyVest
   - ClothingOuterXenonautenLight
@@ -58,8 +57,7 @@
 
 - type: loadoutGroup
   id: EyeBlueShield
-  name: loadout-group-BlueShield-eyes
-  minLimit: 0
+  name: loadout-group-blueshield-eyes
   loadouts:
   - ClothingEyesGlassesBlueShield
   - ClothingEyeslensesBlueShield

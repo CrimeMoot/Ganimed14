@@ -13,9 +13,12 @@ loadout-group-captain-belt = Пояс капитана
 loadout-group-captain-shoes = Обувь капитана
 loadout-group-hop-glasses = Очки главы персонала
 loadout-group-hop-shoes = Обувь главы персонала
+loadout-group-iaa-neck = АВД, шея
+loadout-group-iaa-jumpsuit = Костюм АВД
+loadout-group-magistrate-head = Головной убор АВД
 loadout-group-magistrate-outerclothing = Судейская мантия
 # Civilian
-loadout-group-common-belt = Поясная сумка
+loadout-group-common-belt = Пояс
 loadout-group-bartender-glasses = Очки бармена
 loadout-group-bartender-belt = Пояс бармена
 loadout-group-service-worker-jumpsuit = Униформа сервисного работника

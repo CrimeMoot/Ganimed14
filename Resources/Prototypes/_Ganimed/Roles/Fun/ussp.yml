@@ -9,7 +9,7 @@
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterVestWebMerc
     suitstorage: WeaponAKMSRifle  
-    id: USSPPDA1
+    id: SoldierUSSPPDA
     ears: ClothingHeadsetUSSP
     belt: ClothingBeltMercWebbing
     pocket1: ClothingEyesNightVisionGoggles      
@@ -29,7 +29,7 @@
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterVestWebMerc
     suitstorage: WeaponAKMSTacticalRifle  
-    id: USSPPDA2
+    id: OfficerUSSPPDA
     ears: ClothingHeadsetUSSP
     belt: ClothingBeltMercWebbing
     pocket1: ClothingEyesNightVisionGoggles      

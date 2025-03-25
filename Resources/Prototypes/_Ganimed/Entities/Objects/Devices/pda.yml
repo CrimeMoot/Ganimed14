@@ -63,7 +63,7 @@
 
 - type: entity
   parent: BasePDA
-  id: USSPPDA1
+  id: SoldierUSSPPDA
   name: USSP PDA
   description: The same red as the banner of the Revolution.
   components:
@@ -90,7 +90,7 @@
           !type:String
           pda-ussp
   - type: Pda
-    id: USSPIDCard1
+    id: SoldierUSSPIDCard
     penSlot:
       startingItem: PenHearts
       priority: -1
@@ -108,7 +108,7 @@
 
 - type: entity
   parent: BasePDA
-  id: USSPPDA2
+  id: OfficerUSSPPDA
   name: USSP PDA
   description: The same red as the banner of the Revolution.
   components:
@@ -135,7 +135,7 @@
           !type:String
           pda-ussp
   - type: Pda
-    id: USSPIDCard2
+    id: OfficerUSSPIDCard
     penSlot:
       startingItem: PenHearts
       priority: -1

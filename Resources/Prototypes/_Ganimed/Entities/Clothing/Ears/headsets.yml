@@ -43,6 +43,6 @@
       key_slots:
       - EncryptionKeyUSSP
   - type: Sprite
-    sprite: _Ganimed\Clothing\Ears\ussp.rsi 
+    sprite: _Ganimed\Clothing\Ears\ussp.rsi
   - type: Clothing
     sprite: _Ganimed\Clothing\Ears\ussp.rsi

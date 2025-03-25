@@ -205,7 +205,7 @@
   parent: [ClothingMaskGasExplorer,ShowSecurityIcons]
   id: ClothingMaskGasCBURN
   name: противогаз РХБЗЗ
-  description: Противогаз РХБЗЗ,
+  description: Стандартный противогаз РХБЗЗ. От него пахнет какими-то химикатами, а различные потертости и следы на маске говорят о том что выдержал он многое. Довольно удобный для длительного ношения и почти не ухудшает обзор.
   components:
   - type: ActivatableUI
     key: enum.SharedGasTankUiKey.Key

@@ -33,3 +33,29 @@
     - state: idsecurityenginer
   - type: PresetIdCard
     job: SecurityEngineer
+    
+- type: entity
+  parent: IDCardStandard
+  id: USSPIDCard1
+  name: USSP soldier representative ID card.
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - state: idusspsoldier
+  - type: IdCard
+    jobTitle: job-title-ussp-soldier
+    jobIcon: JobIconUSSPSoldier
+
+- type: entity
+  parent: IDCardStandard
+  id: USSPIDCard2
+  name: USSP officer representative ID card.
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - state: idusspofficer
+  - type: IdCard
+    jobTitle: job-title-ussp-officer 
+    jobIcon: JobIconUSSPOfficer

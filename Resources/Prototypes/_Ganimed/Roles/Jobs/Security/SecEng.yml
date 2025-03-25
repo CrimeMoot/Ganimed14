@@ -6,12 +6,12 @@
   requirements:
     - !type:DepartmentTimeRequirement
       department: Engineering
-      time: 13000
+      time: 36000 #10 hrs
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 13000
+      time: 25200 #7 hrs
     - !type:AgeRequirement
-      requiredAge: 21
+      requiredAge: 21 # Ganimed-MRP
   startingGear: SecurityEngineerGear
   icon: "JobIconSecurityEngineer"
   supervisors: job-supervisors-hos
@@ -22,6 +22,12 @@
   - Maintenance
   - External
   - Engineering
+  #start-backmen: currency
+  minBankBalance: 200
+  maxBankBalance: 400
+  wageDepartment: Security
+  wage: 100
+  #end-backmen: currency
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
@@ -33,10 +39,7 @@
     back: ClothingBackpackSecurityEngineer
     shoes: ClothingShoesBootsJackSecEngineer
     eyes: ClothingEyesHudSecEng
-    gloves: ClothingHandsGlovesColorYellow
-    head: ClothingHeadHatWeldingMaskFlame
     id: SecurityEngineerPDA
-    outerClothing: ClothingOuterVestHazard
     suitstorage: SecBreachingHammer
     ears: ClothingHeadsetSecurityEngineer
     belt: ClothingMilitaryWebbingSecEng
@@ -47,4 +50,3 @@
     - RCDAmmo
     - LPPC4Low
     - LPPC4Low
-    - BoxSurvivalSecurity

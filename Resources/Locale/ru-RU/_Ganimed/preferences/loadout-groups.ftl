@@ -16,7 +16,7 @@ loadout-group-hop-glasses = Очки главы персонала
 loadout-group-hop-shoes = Обувь главы персонала
 loadout-group-iaa-neck = АВД, шея
 loadout-group-iaa-jumpsuit = Костюм АВД
-loadout-group-magistrate-head = Головной убор АВД
+loadout-group-magistrate-head = Головной убор юриста
 loadout-group-magistrate-outerclothing = Судейская мантия
 # Civilian
 loadout-group-common-belt = Пояс
@@ -69,6 +69,11 @@ loadout-group-pilot-outerclothing = Верхняя одежда пилота С�
 loadout-group-pilot-shoes = Обувь пилота СБ
 loadout-group-brigmedic-glasses = Очки бригмедика
 loadout-group-brigmedic-shoes = Обувь бригмедика
+loadout-group-security-engineer-head = Головной убор полевого инженера
+loadout-group-security-engineer-glasses = Очки полевого инженера
+loadout-group-security-engineer-jumpsuit = Комбинезон полевого инженера
+loadout-group-security-engineer-outerclothing =  полевого инженера
+loadout-group-security-engineer-gloves = Перчатки полевого инженера
 # Medical
 loadout-group-chief-medical-officer-glasses = Очки главного врача
 loadout-group-medical-doctor-neck = Врач, шея

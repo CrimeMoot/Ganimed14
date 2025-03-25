@@ -15,13 +15,15 @@
       department: Cargo
       time: 72000 #20 hrs
     - !type:OverallPlaytimeRequirement
-      time: 108000 #30 hrs
+      time: 126000 #35 hrs
+    - !type:AgeRequirement
+      requiredAge: 21 # Ganimed-MRP
   weight: 10
   startingGear: QuartermasterGear
   icon: "JobIconQuarterMaster"
   supervisors: job-supervisors-captain
-  canBeAntag: true # Ganimed MRP
-  antagAdvantage: 5 # Ganimed MRP
+  canBeAntag: true # Ganimed-MRP
+  antagAdvantage: 5 # Ganimed-MRP
   access:
   - Cargo
   - Salvage

@@ -68,4 +68,4 @@
             #BKBPLATech: [0, 3] # backmen-BPLA-Silicons
             #BKBPLAMED: [0, 3] # backmen-BPLAMED-Silicons
             Deliveryman: [ 0, 1 ]
-            Prisoner: [ 0, 1]
+            Prisoner: [ 1, 1]

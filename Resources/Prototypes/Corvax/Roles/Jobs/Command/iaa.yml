@@ -15,7 +15,7 @@
     role: JobLawyer #department: Legal
     time: 18000 #5 hrs
   - !type:AgeRequirement
-    requiredAge: 21
+    requiredAge: 21 # Ganimed-MRP
   startingGear: IAAGear
   icon: "JobIconIAA"
   supervisors: job-supervisors-centcom

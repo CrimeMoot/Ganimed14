@@ -11,7 +11,7 @@
   startingGear: ResearchAssistantGear
   icon: "JobIconResearchAssistant"
   supervisors: job-supervisors-science
-  canBeAntag: true # Ganimed MRP: Available not only for newbies
+  canBeAntag: true # Ganimed-MRP: Available not only for newbies
   access:
   - Research
   - Maintenance

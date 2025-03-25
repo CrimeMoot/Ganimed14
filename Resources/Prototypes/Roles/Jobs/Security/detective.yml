@@ -8,7 +8,7 @@
     department: Security
     time: 54000 #15 hrs
   - !type:AgeRequirement
-    requiredAge: 21 # cats
+    requiredAge: 21 # Ganimed-MRP
   startingGear: DetectiveGear
   icon: "JobIconDetective"
   supervisors: job-supervisors-hos

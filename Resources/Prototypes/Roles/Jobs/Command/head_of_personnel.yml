@@ -29,13 +29,13 @@
     - !type:OverallPlaytimeRequirement
       time: 180000 #50 hrs # Corvax-RoleTime
     - !type:AgeRequirement
-      requiredAge: 21 # cats
+      requiredAge: 21 # Ganimed-MRP
   weight: 20
   startingGear: HoPGear
   icon: "JobIconHeadOfPersonnel"
   supervisors: job-supervisors-captain
-  canBeAntag: true # Ganimed MRP
-  antagAdvantage: 5 # Ganimed MRP
+  canBeAntag: true # Ganimed-MRP
+  antagAdvantage: 5 # Ganimed-MRP
   access:
   - Command
   - HeadOfPersonnel

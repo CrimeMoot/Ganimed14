@@ -3,7 +3,7 @@
   id: ClothingHeadHelmetHardsuitUSSP
   categories: [ HideSpawnMenu ]
   name: USSP hardsuit helmet
-  description: ...We need 5 billions...
+  description: ...We need 5 billion...
   components:
   - type: BreathMask
   - type: Sprite

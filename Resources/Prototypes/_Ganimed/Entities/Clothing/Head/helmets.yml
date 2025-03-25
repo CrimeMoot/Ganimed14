@@ -43,7 +43,7 @@
   id: ClothingHeadHelmetHardsuitUSSPGreen
   noSpawn: true
   name: USSP hardsuit helmet
-  description: ...We need 5 players to Enterprise...
+  description: ...We need 5 players on Enterprise...
   components:
   - type: BreathMask
   - type: Sprite

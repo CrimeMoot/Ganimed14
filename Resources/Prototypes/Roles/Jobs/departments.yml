@@ -40,9 +40,9 @@
 - type: department
   id: CentralCommand
   name: department-CentralCommand #department-CentCom
-  description: department-CentralCommand-description #department-CentCom-description
-  color: "#0c344d" #13db0f
-  weight: -5
+  description: department-CentCom-description #department-CentralCommand-description
+  color: "#0c344d" #13db0f #044c1c
+  weight: -5 #120
   roles:
   #- CentralCommandOfficial
   - CBURN
@@ -62,7 +62,6 @@
   - BKCCAssistant
   - BKCCAdmiral
   #editorHidden: true
-  #weight: 120
   accountNumber: 1350  #backmen: currency
 
 - type: department

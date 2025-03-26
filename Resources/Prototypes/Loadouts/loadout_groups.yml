@@ -1827,8 +1827,8 @@
   id: DetectiveRevolver
   name: loadout-group-security-pocket
   loadouts:
-  - WeaponRevolverR44
   - WeaponRevolverInspector
+  - WeaponRevolverR44
   - WeaponRevolverNY
   # - WeaponRevolverRebota
   # - WeaponRevolverCMB

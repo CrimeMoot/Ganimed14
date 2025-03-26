@@ -24,6 +24,10 @@
       time: 360000 #100 hrs
     - !type:AgeRequirement
       requiredAge: 24 # Ganimed-MRP
+    - !type:TraitsRequirement # Ganimed-MRP: Captain must be proficient in communication
+      inverted: true
+      traits:
+      - Monolingual
   weight: 20
   startingGear: CaptainGear
   icon: "JobIconCaptain"

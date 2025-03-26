@@ -72,7 +72,7 @@ loadout-group-brigmedic-shoes = Обувь бригмедика
 loadout-group-security-engineer-head = Головной убор полевого инженера
 loadout-group-security-engineer-glasses = Очки полевого инженера
 loadout-group-security-engineer-jumpsuit = Комбинезон полевого инженера
-loadout-group-security-engineer-outerclothing =  полевого инженера
+loadout-group-security-engineer-outerclothing = Верхняя одежда полевого инженера
 loadout-group-security-engineer-gloves = Перчатки полевого инженера
 # Medical
 loadout-group-chief-medical-officer-glasses = Очки главного врача

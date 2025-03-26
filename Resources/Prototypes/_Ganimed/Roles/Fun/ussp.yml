@@ -3,7 +3,7 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitUSSP
     back: ClothingMilitaryBackpack
-    shoes: ClothingShoesBootsCombat
+    shoes: ClothingShoesBootsCombatFilled
     head: ClothingHeadHelmetMerc    
     eyes: ClothingEyesGlassesSunglasses
     gloves: ClothingHandsGlovesCombat
@@ -23,7 +23,7 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitUSSPCommander
     back: ClothingMilitaryBackpack
-    shoes: ClothingShoesBootsCombat
+    shoes: ClothingShoesBootsCombatFilled
     head: ClothingHeadHatBeretUSSP    
     eyes: ClothingEyesGlassesSunglasses
     gloves: ClothingHandsGlovesCombat

@@ -46,6 +46,19 @@
   - type: IdCard
     jobTitle: job-title-ussp-soldier
     jobIcon: JobIconUSSPSoldier
+    
+- type: entity
+  parent: IDCardStandard
+  id: MedicalUSSPIDCard
+  name: USSP medical representative ID card.
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - state: idusspmedical
+  - type: IdCard
+    jobTitle: job-title-ussp-medical
+    jobIcon: JobIconUSSPMedical
 
 - type: entity
   parent: IDCardStandard

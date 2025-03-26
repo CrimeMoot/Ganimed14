@@ -203,6 +203,9 @@
         },	
         {
             "name": "USSPSoldier"
+        },	
+        {
+            "name": "USSPMedical"
         },		
         {
             "name": "Maid"

@@ -51,6 +51,7 @@
   - !type:AddComponentSpecial
     components:
       - type: CommandStaff
+      - type: AntagImmune # Ganimed-MRP: Loyalty implant
       - type: NpcFactionMember
         factions:
           - CentralCommand

@@ -2035,6 +2035,14 @@
   - VirologySatchel
   - VirologyDuffel
 
+- type: loadoutGroup # Ganimed
+  id: MedicalBelt
+  name: loadout-group-medical-doctor-belt
+  loadouts:
+  - MedicalBeltTopical
+  - MedicalBeltSurgical
+  - MedicalBeltMedication
+
 - type: loadoutGroup
   id: MedicalShoes
   name: loadout-group-medical-doctor-shoes

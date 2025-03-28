@@ -422,31 +422,16 @@
 
 # Belt contents, Ganimed
 - type: loadout
-  id: MedicalBeltFillTopical
-  dummyEntity: Brutepack
-  storage:
-    belt:
-    - Brutepack
-    - Brutepack
-    - Ointment #- AloeCream
-    - Bloodpack
-    - Gauze
-    - EmergencyMedipen
+  id: MedicalBeltTopical
+  dummyEntity: LoadoutDummyMedicalTopical
+  equipment:
+    belt: ClothingBeltMedicalFilled
 
 - type: loadout
-  id: MedicalBeltFillSurgical
-  dummyEntity: Scalpel
-  storage:
-    belt:
-    - Scalpel
-    - Retractor
-    - Hemostat
-    - SawElectric
-    - Cautery
-    - Drill
-    #- BoneGel
-    #- Bonesetter
-    #- EmergencyMedipen
+  id: MedicalBeltSurgical
+  dummyEntity: LoadoutDummyMedicalSurgical
+  equipment:
+    belt: ClothingBeltMedicalFilledSurgical
   effects:
   - !type:JobRequirementLoadoutEffect
     requirement:
@@ -455,19 +440,10 @@
       time: 36000 # 10hr
 
 - type: loadout
-  id: MedicalBeltFillMedicine
-  dummyEntity: PillCanisterTricordrazine
-  storage:
-    belt:
-    - PillCanisterTricordrazine
-    - PillCanisterBicaridine #- SyringeBicaridine
-    - PillCanisterKelotane #- SyringeDermaline
-    - PillCanisterIron #- SyringeSaline
-    #- PillCanisterDexalin
-    - PillCanisterDylovene #- PillCanisterCharcoal
-    #- PillCanisterHyronalin #- SyringeHyronalin
-    - EpinephrineChemistryBottle
-    - Syringe
+  id: MedicalBeltMedication
+  dummyEntity: LoadoutDummyMedicalReagents
+  equipment:
+    belt: ClothingBeltMedicalFilledMedication
   effects:
   - !type:JobRequirementLoadoutEffect
     requirement:
@@ -475,25 +451,25 @@
       role: JobChemist
       time: 36000 # 10hr
 
-- type: loadout
-  id: MedicalBeltFillAdvanced
-  dummyEntity: MedicatedSuture
-  storage:
-    belt:
-    - MedicatedSuture
-    - RegenerativeMesh
-    - Bloodpack
-    - BruteAutoInjector
-    - BurnAutoInjector
-    - AntiPoisonMedipen
-    - RadAutoInjector
-    - CombatMedipen
-    #- SpaceMedipen #- EmergencyMedipen
-    - SyringeEphedrine #- SyringeStimulants #- Stimpack
-    #- OmnimedTool #(- EnergyScalpel - AdvancedRetractor - EnergyCautery)
-  effects:
-  - !type:JobRequirementLoadoutEffect
-    requirement:
-      !type:RoleTimeRequirement
-      role: JobChiefMedicalOfficer
-      time: 36000 # 10hr
+#- type: loadout
+#  id: MedicalBeltFillAdvanced
+#  dummyEntity: MedicatedSuture
+#  storage:
+#    belt:
+#    - MedicatedSuture
+#    - RegenerativeMesh
+#    - Bloodpack
+#    - BruteAutoInjector
+#    - BurnAutoInjector
+#    - AntiPoisonMedipen
+#    - RadAutoInjector
+#    - CombatMedipen
+#    #- SpaceMedipen #- EmergencyMedipen
+#    - SyringeEphedrine #- SyringeStimulants #- Stimpack
+#    #- OmnimedTool #(- EnergyScalpel - AdvancedRetractor - EnergyCautery)
+#  effects:
+#  - !type:JobRequirementLoadoutEffect
+#    requirement:
+#      !type:RoleTimeRequirement
+#      role: JobChiefMedicalOfficer
+#      time: 36000 # 10hr

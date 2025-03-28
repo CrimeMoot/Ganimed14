@@ -79,6 +79,7 @@ loadout-group-chief-medical-officer-glasses = Очки главного врач
 loadout-group-medical-doctor-neck = Врач, шея
 loadout-group-medical-doctor-headset = Медицинская гарнитура
 loadout-group-medical-doctor-glasses = Очки врача
+loadout-group-medical-doctor-belt = Пояс медика
 loadout-group-chemist-glasses = Очки химика
 loadout-group-chemist-shoes = Обувь химика
 # Wildcards

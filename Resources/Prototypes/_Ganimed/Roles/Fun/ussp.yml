@@ -81,3 +81,58 @@
     - Tourniquet
     - CombatMedipen
     - Flare
+    
+- type: startingGear
+  id: USSPGearMedic
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitUSSP
+    back: ClothingBackpackDuffelMilitary
+    shoes: ClothingShoesBootsCombatFilled
+    mask: ClothingMaskGas
+    head: ClothingHeadHelmetMercMedic
+    eyes: ClothingEyesGlassesSunglasses
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterVestWebMerc
+    suitstorage: WeaponRifleAKSU
+    id: MedicUSSPPDA
+    ears: ClothingHeadsetUSSP
+    belt: ClothingBeltMedicalMarine
+    pocket1: ClothingEyesNightVisionGoggles
+    pocket2: WeaponPistolMakarovsssp
+    underpants: ClothingUnderPantsMilitary
+    undershirt: ClothingUnderShirtBlack
+    socks: ClothingSocksBlack
+  storage:
+    back:
+    - BoxMRE
+    - DoubleEmergencyOxygenTankFilled
+    - Tourniquet
+    - MagazineLightRifle #к сожалению работает только так
+    - MagazineLightRifle
+    - MagazineLightRifle
+    - MagazineLightRifle
+    - MagazineLightRifle
+    - MagazinePistol
+    - GrenadeShrapnel
+    - ExGrenade
+    - DefibrillatorOneHandedUnpowered
+    - ReliableContainerBruteFilled
+    - ReliableContainerBurnFilled 
+    belt:
+    - MedicatedSuture
+    - MedicatedSuture
+    - Bloodpack
+    - Bloodpack
+    - Gauze
+    - RegenerativeMesh
+    - RegenerativeMesh 
+    - EmergencyMedipen
+    - EmergencyMedipen
+    - EpinephrineChemistryBottle
+    - EpinephrineChemistryBottle
+    - SyndiHypo   
+    outerClothing:
+    - Gauze
+    - Tourniquet
+    - CombatMedipen
+    - Flare

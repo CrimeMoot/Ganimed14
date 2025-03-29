@@ -640,7 +640,7 @@
 ## USSP
 
 - type: entity
-  id: RandomHumanoidSpawnerUSSPArmy
+  id: RandomHumanoidSpawnerUSSPSoldier
   name: USSP soldier
   suffix: USSP, soldier
   components:
@@ -681,4 +681,26 @@
     - type: RandomMetadata
       nameSegments:
       - NamesFirstUSSPMilitaryLeader
+      - NamesLastUSSPMilitary
+      
+- type: entity
+  id: RandomHumanoidSpawnerUSSPMedic
+  name: USSP medic
+  suffix: USSP, medic
+  components:
+    - type: Sprite
+      sprite: _Ganimed/Clothing/Uniforms/ussp/ussp_form.rsi
+      state: icon
+    - type: RandomHumanoidSpawner
+      settings: USSP3
+      
+- type: randomHumanoidSettings
+  id: USSP3
+  randomizeName: false
+  components:
+    - type: Loadout
+      prototypes: [ USSPGearMedic ]
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstUSSPMilitary
       - NamesLastUSSPMilitary

@@ -12,16 +12,16 @@
   - type: Clothing
     sprite: Clothing/Neck/Misc/pins.rsi
 
-- type: entity
-  parent: ClothingNeckPinBase
-  id: ClothingNeckLGBTPin
-  name: LGBT pin
-  description: Be gay do crime.
-  components:
-  - type: Sprite
-    state: lgbt
-  - type: Clothing
-    equippedPrefix: lgbt
+#- type: entity
+#  parent: ClothingNeckPinBase
+#  id: ClothingNeckLGBTPin
+#  name: LGBT pin
+#  description: Be gay do crime.
+#  components:
+#  - type: Sprite
+#    state: lgbt
+#  - type: Clothing
+#    equippedPrefix: lgbt
 
 #- type: entity
 #  parent: ClothingNeckPinBase
@@ -133,16 +133,16 @@
 #  - type: Clothing
 #    equippedPrefix: trans
 
-- type: entity
-  parent: ClothingNeckPinBase
-  id: ClothingNeckAutismPin
-  name: autism pin
-  description: Be autism do crime.
-  components:
-  - type: Sprite
-    state: autism
-  - type: Clothing
-    equippedPrefix: autism
+#- type: entity
+#  parent: ClothingNeckPinBase
+#  id: ClothingNeckAutismPin
+#  name: autism pin
+#  description: Be autism do crime.
+#  components:
+#  - type: Sprite
+#    state: autism
+#  - type: Clothing
+#    equippedPrefix: autism
 
 #- type: entity
 #  parent: ClothingNeckPinBase

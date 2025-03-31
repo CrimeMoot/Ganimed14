@@ -9,9 +9,9 @@
       time: 36000 #10 hrs
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 25200 #7 hrs
+      time: 21600 #6 hrs
     - !type:AgeRequirement
-      requiredAge: 21 # Ganimed-MRP
+      requiredAge: 20 # Ganimed-MRP
   startingGear: BrigmedicGear
   icon: "JobIconBrigmedic"
   supervisors: job-supervisors-hos

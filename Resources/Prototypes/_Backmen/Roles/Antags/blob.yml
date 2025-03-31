@@ -7,7 +7,7 @@
   guides: [ Blob ]
   requirements:
   - !type:OverallPlaytimeRequirement
-    time: 12000 # 15h # Corvax-RoleTime
+    time: 54000 # 15h # Corvax-RoleTime
   discordRequired: false # backmen: antag
 
 - type: antag
@@ -18,5 +18,5 @@
   objective: roles-antag-XenoAgent-objective
   requirements:
   - !type:OverallPlaytimeRequirement
-    time: 12000 # 15h
+    time: 54000 # 15h
   discordRequired: false # backmen: antag

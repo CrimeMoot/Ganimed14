@@ -28,6 +28,7 @@
       inverted: true
       traits:
       - Monolingual
+      - Muted
   weight: 20
   startingGear: CaptainGear
   icon: "JobIconCaptain"

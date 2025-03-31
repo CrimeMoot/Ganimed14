@@ -1763,6 +1763,7 @@
   loadouts:
   - DetectiveFedora
   - DetectiveFedoraGrey
+  - SecurityBeret # Ganimed
 
 - type: loadoutGroup
   id: DetectiveNeck
@@ -2215,6 +2216,7 @@
 - type: loadoutGroup # Ganimed
   id: BoxerHead
   name: loadout-group-boxer-head
+  minLimit: 0
   loadouts:
   - TacticalHeadband
   - Casa

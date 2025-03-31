@@ -10,6 +10,9 @@
     #  department: Security
     #  time: 72000 #20 hrs # Corvax-RoleTime
     #  inverted: true # stop playing intern if you're good at security!
+    - !type:AgeRequirement
+      inverted: true
+      requiredAge: 70 # Ganimed-MRP
   startingGear: SecurityCadetGear
   icon: "JobIconSecurityCadet"
   supervisors: job-supervisors-security

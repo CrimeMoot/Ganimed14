@@ -102,8 +102,8 @@
     - type: TinfoilHat
       passthrough: true
       destroyOnFry: false
-    - type: ClothingGrantPsionicPower
-      power: MetapsionicPower
+#    - type: ClothingGrantPsionicPower
+#      power: MetapsionicPower
     - type: GuideHelp
       guides:
         - Psionics

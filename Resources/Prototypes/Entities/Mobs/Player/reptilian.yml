@@ -5,5 +5,5 @@
   parent: BaseMobReptilian
   id: MobReptilian
   components:
-    - type: PotentialPsionic
+#    - type: PotentialPsionic
 #Weh

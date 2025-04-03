@@ -101,6 +101,16 @@
     outerClothing: ClothingOuterCoatDetectiveDark
 
 - type: loadout # Ganimed
+  id: DetectiveCoatDesertDMC
+  equipment:
+    outerClothing: ClothingOuterCoatDesertdmc
+
+- type: loadout # Ganimed
+  id: DetectiveCoatBlackDMC
+  equipment:
+    outerClothing: ClothingOuterCoatBlackdmc
+
+- type: loadout # Ganimed
   id: DetectiveDiscoBlazer
   equipment:
     outerClothing: ClothingOuterDiscoAssBlazer

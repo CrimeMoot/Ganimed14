@@ -59,6 +59,7 @@ loadout-group-head-of-security-belt = Пояс главы службы безо�
 loadout-group-warden-backpack = Рюкзак смотрителя
 loadout-group-security-neck = Офицер СБ, шея
 loadout-group-security-glasses = Очки СБ
+loadout-group-detective-backpack = Рюкзак детектива
 loadout-group-detective-belt = Пояс детектива
 loadout-group-detective-gloves = Перчатки криминалиста
 loadout-group-detective-shoes = Обувь детектива

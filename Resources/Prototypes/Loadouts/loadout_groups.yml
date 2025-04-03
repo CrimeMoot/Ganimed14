@@ -1291,6 +1291,7 @@
   - AtmosphericTechnicianWintercoat
   - SeniorEngineerWintercoat # cats
   - AtmosphericTechnicianBomberJacket # Ganimed
+  - FireSuit # Ganimed
 
 - type: loadoutGroup
   id: AtmosphericTechnicianBackpack
@@ -1308,6 +1309,7 @@
   - YellowShoes # Ganimed
   - BlueShoes # Ganimed
   - EngineeringWinterBoots
+  - WorkBoots # Ganimed
 
 - type: loadoutGroup
   id: SurvivalExtended
@@ -1475,6 +1477,7 @@
   - ScientistBioSuit
   - RadSuit
   - ScienceBombSuit
+  - ScienceFireSuit
   # Ganimed-Loadouts-End
 
 - type: loadoutGroup
@@ -1747,7 +1750,10 @@
   name: loadout-group-security-pocket
   loadouts:
   - WeaponEnergyGunDominator
-  - WeaponPistolM1911 # Ganimed
+  - WeaponMultiphaseEnergyGun # Ganimed
+  # - WeaponPistolG22 # Ganimed
+  # - WeaponPistolM1911 # Ganimed
+  # - WeaponRevolverNY # Ganimed
 
 - type: loadoutGroup # Backmen
   id: SecurityPocket2
@@ -1794,7 +1800,18 @@
   - DetectiveCoatGrey
   - DetectiveCoatOriginal # Ganimed
   - DetectiveCoatDark # Ganimed
+  - DetectiveCoatDesertDMC # Ganimed
+  - DetectiveCoatBlackDMC # Ganimed
   - DetectiveDiscoBlazer # Ganimed
+
+- type: loadoutGroup # Ganimed
+  id: DetectiveBackpack
+  name: loadout-group-detective-backpack
+  loadouts:
+  - SecurityBackpack
+  - SecuritySatchel
+  - SecurityDuffel
+  - LeatherSatchel
 
 - type: loadoutGroup # Ganimed
   id: DetectiveBelt

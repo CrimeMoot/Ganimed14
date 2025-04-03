@@ -87,6 +87,9 @@
             "name": "Clown"
         },
         {
+            "name": "Cluwne"
+        },
+        {
             "name": "Captain"
         },
         {
@@ -206,6 +209,30 @@
         },
         {
             "name": "Admin"
+        },
+        {
+            "name": "ERTLeader"
+        },
+        {
+            "name": "ERTOfficer"
+        },
+        {
+            "name": "ERTMedical"
+        },
+        {
+            "name": "ERTEngineer"
+        },
+        {
+            "name": "ERTJanitor"
+        },
+        {
+            "name": "ERTChaplain"
+        },
+        {
+            "name": "SRT"
+        },
+        {
+            "name": "TSF"
         },
         {
             "name": "Changeling"

@@ -70,7 +70,7 @@ loadout-group-mime-backpack = Рюкзак мима
 loadout-group-mime-outerclothing = Верхняя одежда мима
 loadout-group-mime-belt = Пояс мима
 loadout-group-musician-jumpsuit = Костюм музыканта
-loadout-group-musician-outerclothing = Костюм музыканта
+loadout-group-musician-outerclothing = Куртка музыканта
 # Cargo
 loadout-group-quartermaster-head = Головной убор квартирмейстера
 loadout-group-quartermaster-jumpsuit = Униформа квартирмейстера

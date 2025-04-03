@@ -19,20 +19,20 @@
 #      icon: Backmen/Interface/VerbIcons/metapsionic.png
 #      event: !type:MetapsionicPowerActionEvent
 
-#- type: entity
-#  id: ActionDispel
-#  name: action-name-dispel
-#  description: action-description-dispel
-#  components:
-#    - type: PsiAction
-#    - type: EntityTargetAction
-#      icon: Backmen/Interface/VerbIcons/dispel.png
-#      event: !type:DispelPowerActionEvent
-#      useDelay: 45
-#      checkCanAccess: false
-#      range: 6
-#      canTargetSelf: false
-#      itemIconStyle: BigAction
+- type: entity
+  id: ActionDispel
+  name: action-name-dispel
+  description: action-description-dispel
+  components:
+    - type: PsiAction
+    - type: EntityTargetAction
+      icon: Backmen/Interface/VerbIcons/dispel.png
+      event: !type:DispelPowerActionEvent
+      useDelay: 45
+      checkCanAccess: false
+      range: 6
+      canTargetSelf: false
+      itemIconStyle: BigAction
 
 #- type: entity
 #  id: ActionMassSleep
@@ -48,16 +48,16 @@
 #      range: 8
 #      itemIconStyle: BigAction
 
-#- type: entity
-#  id: ActionPsionicInvisibility
-#  name: action-name-psionic-invisibility
-#  description: action-description-psionic-invisibility
-#  components:
-#    - type: PsiAction
-#    - type: InstantAction
-#      useDelay: 120
-#      icon: Backmen/Interface/VerbIcons/psionic_invisibility.png
-#      event: !type:PsionicInvisibilityPowerActionEvent
+- type: entity
+  id: ActionPsionicInvisibility
+  name: action-name-psionic-invisibility
+  description: action-description-psionic-invisibility
+  components:
+    - type: PsiAction
+    - type: InstantAction
+      useDelay: 120
+      icon: Backmen/Interface/VerbIcons/psionic_invisibility.png
+      event: !type:PsionicInvisibilityPowerActionEvent
 
 #- type: entity
 #  id: ActionPsionicInvisibilityOff

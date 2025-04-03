@@ -11,7 +11,8 @@
       - id: Hemostat
       - id: SawElectric
       - id: Drill
-      - id: BoneGel
+      - id: Cautery
+      #- id: BoneGel
       #- id: Bonesetter
       #- id: EmergencyMedipen
 

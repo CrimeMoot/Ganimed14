@@ -59,15 +59,15 @@
       icon: Backmen/Interface/VerbIcons/psionic_invisibility.png
       event: !type:PsionicInvisibilityPowerActionEvent
 
-#- type: entity
-#  id: ActionPsionicInvisibilityOff
-#  name: action-description-psionic-invisibility-off
-#  description: action-description-psionic-invisibility
-#  components:
-#    - type: InstantAction
-#      icon: Backmen/Interface/VerbIcons/psionic_invisibility_off.png
-#      event: !type:PsionicInvisibilityPowerOffActionEvent
-#
+- type: entity
+  id: ActionPsionicInvisibilityOff
+  name: action-description-psionic-invisibility-off
+  description: action-description-psionic-invisibility
+  components:
+    - type: InstantAction
+      icon: Backmen/Interface/VerbIcons/psionic_invisibility_off.png
+      event: !type:PsionicInvisibilityPowerOffActionEvent
+
 #- type: entity
 #  id: ActionMindSwapPsionic
 #  name: action-name-mind-swap

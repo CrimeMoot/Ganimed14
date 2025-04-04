@@ -33,8 +33,8 @@
     - ExGrenade
     outerClothing:
     - Gauze
-    - Tourniquet
-    - CombatMedipen
+    - Tourniquet 
+    - EmergencyMedipen
     - Flare
 
 - type: startingGear
@@ -66,6 +66,7 @@
     - Tourniquet
     - Binoculars
     - SmokeGrenade
+    - PowerCellHigh
     belt:
     - MagazineLightRifle #к сожалению работает только так
     - MagazineLightRifle
@@ -77,8 +78,8 @@
     - ExGrenade
     outerClothing:
     - Gauze
-    - Tourniquet
-    - CombatMedipen
+    - Tourniquet 
+    - EmergencyMedipen
     - Flare
     
 - type: startingGear
@@ -120,13 +121,13 @@
     - Gauze
     - RegenerativeMesh
     - RegenerativeMesh 
-    - EmergencyMedipen
-    - EmergencyMedipen
+    - CombatMedipen
+    - CombatMedipen
     - EpinephrineChemistryBottle
     - EpinephrineChemistryBottle
     - SyndiHypo   
     outerClothing:
     - Gauze
-    - Tourniquet
-    - CombatMedipen
+    - Tourniquet 
+    - EmergencyMedipen
     - Flare

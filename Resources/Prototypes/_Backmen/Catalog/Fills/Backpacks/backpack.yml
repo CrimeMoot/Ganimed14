@@ -158,33 +158,61 @@
 
 - type: entity
   categories: [ HideSpawnMenu ]
-  parent: ClothingBackpackDuffelMilitary
-  id: ClothingBackpackDuffelRXBZZ
+  parent: ClothingMilitaryBackpack
+  id: ClothingBackpackCBURN
   components:
-    - type: Storage
-      maxItemSize: Huge
-      grid:
-      - 0,0,6,5
     - type: StorageFill
       contents:
-        - id: MedkitAdvancedRXBZZ
-        - id: WeaponEnergyGunDominator
         - id: BoxFlare
         - id: ArmySetLoadouts
+        - id: GasAnalyzer
+        - id: GeigerCounter
+        - id: Crowbar
+
 
 - type: entity
   categories: [ HideSpawnMenu ]
   parent: ClothingBackpackDuffelMilitary
-  id: ClothingBackpackDuffelRXBZZMedic
+  id: ClothingBackpackDuffelCBURNMedic
   components:
     - type: StorageFill
       contents:
-        - id: ArmySetLoadouts
-        - id: MedkitAdvancedRXBZZ
+        - id: MedkitAdvancedCBURN
         - id: BoxFlare
-        - id: MedkitCombatFilled
-        - id: MedkitCombatFilled
+        - id: ArmySetLoadouts
+        - id: WeaponAdvancedLaser
+        - id: ClothingHandsGlovesNitrile
+        - id: ClothingMaskSterile
+        - id: EmergencyRollerBedSpawnFolded
         - id: Defibrillator
+        - id: Hypospray
+        - id: BoxBodyBag
+        - id: GasAnalyzer
+        - id: GeigerCounter
+        - id: Crowbar
+        - id: HandheldHealthAnalyzer
+        - id: PowerCellMicroreactor
+        - id: MedicatedSuture
+        
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: ClothingBackpackMilitarySatchel
+  id: ClothingBackpackSatchelCBURNLeader
+  components:
+    - type: StorageFill
+      contents:
+        - id: HandheldStationMap
+        - id: ArmySetLoadouts
+        - id: WeaponAdvancedLaser
+        - id: BoxFolderClipboard
+        - id: Binoculars
+        - id: RadioCBURNSupplyPod
+        - id: RadioHandheld
+        - id: Crowbar
+        - id: GasAnalyzer
+        - id: GeigerCounter
+        - id: PowerCellHigh
+        - id: DoubleEmergencyOxygenTankFilled
 
 - type: entity
   categories: [ HideSpawnMenu ]
@@ -219,7 +247,7 @@
 - type: entity
   name: продвинутая аптечка стимуляторов
   parent: MedkitAdvanced
-  id: MedkitAdvancedRXBZZ
+  id: MedkitAdvancedCBURN
   components:
     - type: Item
       size: Normal

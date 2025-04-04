@@ -95,7 +95,7 @@
       - Разрешение на применение всего арсенала особого отдела, для выполнения задачи.
 
 - type: entity
-  id: PaperOrderRXBZZ
+  id: PaperOrderCBURN
   name: приказ
   parent: Paper
   components:

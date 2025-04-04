@@ -199,6 +199,15 @@
             "name": "Visitor"
         },
         {
+            "name": "USSPOfficer"
+        },	
+        {
+            "name": "USSPSoldier"
+        },	
+        {
+            "name": "USSPMedical"
+        },		
+        {
             "name": "Maid"
         },
         {

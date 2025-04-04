@@ -1,0 +1,7 @@
+- type: radioChannel
+  id: USSP
+  name: chat-radio-ussp
+  keycode: 'ч'
+  frequency: 1917
+  color: "#f80000"
+  longRange: true 

@@ -29,7 +29,15 @@
       "name": "light_overlay"
     },
     {
-      "name": "pda-ussp"
-    }
+      "name": "pda-ussp",
+      "delays": [
+        [
+          1.2,
+          1.2,
+          1.2,
+          1.2
+        ]
+      ]
+    }	
   ]
 }

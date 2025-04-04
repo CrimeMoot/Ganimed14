@@ -45,7 +45,6 @@
     belt: ClothingMilitaryWebbingSecEng
   storage:
     back:
-    - SecRCD
     - RCDAmmo
     - RCDAmmo
     - LPPC4Low

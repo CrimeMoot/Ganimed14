@@ -100,12 +100,12 @@
   equipment:
     outerClothing: ClothingOuterCoatDetectiveDark
 
-- type: loadout # Ganimed
+- type: loadout # Ganimed, TODO: Whitelist restriction
   id: DetectiveCoatDesertDMC
   equipment:
     outerClothing: ClothingOuterCoatDesertdmc
 
-- type: loadout # Ganimed
+- type: loadout # Ganimed, TODO: Whitelist restriction
   id: DetectiveCoatBlackDMC
   equipment:
     outerClothing: ClothingOuterCoatBlackdmc

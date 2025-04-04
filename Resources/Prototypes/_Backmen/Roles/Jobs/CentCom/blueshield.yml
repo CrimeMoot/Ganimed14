@@ -30,7 +30,7 @@
         - type: NpcFactionMember
           factions:
             - CentralCommand
-        - type: AntagImmune
+        - type: AntagImmune # Ganimed-MRP: Loyalty implant
   startingGear: BlueShieldGear
   icon: "JobIconBlueShield"
   supervisors: job-supervisors-hoh
@@ -60,5 +60,5 @@
     back:
   #  - BlueShieldLoadout
     - BlueShieldSetMedical
-    - CombatKnifeSpetsnaz
+    #- CombatKnifeSpetsnaz
     - SecHypo

@@ -1116,7 +1116,7 @@
   - ChiefEngineerHead
   - ChiefEngineerBeret
   - ClothingHeadHatBeretChiefEngineering # cats
-  - ArmoredHarthat # Ganimed
+  - ArmoredHardhat # Ganimed
 
 - type: loadoutGroup
   id: ChiefEngineerJumpsuit
@@ -1798,11 +1798,13 @@
   - DetectiveArmorVest
   - DetectiveCoat
   - DetectiveCoatGrey
-  - DetectiveCoatOriginal # Ganimed
-  - DetectiveCoatDark # Ganimed
-  - DetectiveCoatDesertDMC # Ganimed
-  - DetectiveCoatBlackDMC # Ganimed
-  - DetectiveDiscoBlazer # Ganimed
+  # Ganimed-Loadouts-Start
+  - DetectiveCoatOriginal
+  - DetectiveCoatDark
+  - DetectiveCoatDesertDMC
+  - DetectiveCoatBlackDMC
+  - DetectiveDiscoBlazer
+  # Ganimed-Loadouts-End
 
 - type: loadoutGroup # Ganimed
   id: DetectiveBackpack

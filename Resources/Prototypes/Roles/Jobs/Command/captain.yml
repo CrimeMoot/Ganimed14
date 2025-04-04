@@ -54,6 +54,7 @@
   - !type:AddComponentSpecial
     components:
       - type: CommandStaff
+      - type: AntagImmune # Ganimed-MRP: Loyalty implant
 
 - type: startingGear
   id: CaptainGear

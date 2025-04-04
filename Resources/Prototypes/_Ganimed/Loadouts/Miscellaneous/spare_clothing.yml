@@ -197,6 +197,16 @@
     - ClothingHeadHatSombrero
 
 - type: loadout # TODO: Whitelist restriction
+  id: SpareGreyFedora
+  storage:
+    back:
+    - ClothingHeadHatFedoraGrey
+  effects:
+  - !type:SponsorLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: Security
+
+- type: loadout # TODO: Whitelist restriction
   id: SpareBeaverHat
   storage:
     back:
@@ -204,15 +214,15 @@
   effects:
   - !type:SponsorLoadoutEffect
 
-- type: loadout # TODO: Whitelist restriction
-  id: SpareGreyFedora
+- type: loadout
+  id: SpareMagicianHat
   storage:
     back:
-    - ClothingHeadHatFedoraGrey
+    - ClothingHeadHatMagician
   effects:
-  #- !type:WhitelistedLoadoutEffect
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
-    proto: Security
+    proto: TenOverall
 
 - type: loadout
   id: SpareBlackCatHat

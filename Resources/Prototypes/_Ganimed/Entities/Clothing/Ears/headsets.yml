@@ -1,13 +1,12 @@
 - type: entity
   parent: ClothingHeadset
   id: ClothingBlackHeadset
-  name: гарнитура офицера
+  name: гарнитура офицера мостика
   description: Это выглядит довольно внушительно.
   components:
   - type: ContainerFill
     containers:
       key_slots:
-      - EncryptionKeySecurity
       - EncryptionKeyCommon
       - EncryptionKeyCommand
   - type: Sprite

@@ -3,6 +3,7 @@ loadout-group-spare-clothing = Запасная одежда
 loadout-group-underwear = Нижнее бельё
 # Command
 loadout-group-blueshield-backpack = Рюкзак ОСЩ
+loadout-group-blueshield-neck = ОСЩ, шея
 loadout-group-bridge-officer-head = Головной убор офицера мостика
 loadout-group-bridge-officer-neck = Мантия офицера мостика
 loadout-group-bridge-officer-jumpsuit = Форма офицера мостика
@@ -13,9 +14,12 @@ loadout-group-captain-belt = Пояс капитана
 loadout-group-captain-shoes = Обувь капитана
 loadout-group-hop-glasses = Очки главы персонала
 loadout-group-hop-shoes = Обувь главы персонала
+loadout-group-iaa-neck = АВД, шея
+loadout-group-iaa-jumpsuit = Костюм АВД
+loadout-group-magistrate-head = Головной убор юриста
 loadout-group-magistrate-outerclothing = Судейская мантия
 # Civilian
-loadout-group-common-belt = Поясная сумка
+loadout-group-common-belt = Пояс
 loadout-group-bartender-glasses = Очки бармена
 loadout-group-bartender-belt = Пояс бармена
 loadout-group-service-worker-jumpsuit = Униформа сервисного работника
@@ -55,6 +59,7 @@ loadout-group-head-of-security-belt = Пояс главы службы безо�
 loadout-group-warden-backpack = Рюкзак смотрителя
 loadout-group-security-neck = Офицер СБ, шея
 loadout-group-security-glasses = Очки СБ
+loadout-group-detective-backpack = Рюкзак детектива
 loadout-group-detective-belt = Пояс детектива
 loadout-group-detective-gloves = Перчатки криминалиста
 loadout-group-detective-shoes = Обувь детектива
@@ -65,11 +70,17 @@ loadout-group-pilot-outerclothing = Верхняя одежда пилота С�
 loadout-group-pilot-shoes = Обувь пилота СБ
 loadout-group-brigmedic-glasses = Очки бригмедика
 loadout-group-brigmedic-shoes = Обувь бригмедика
+loadout-group-security-engineer-head = Головной убор полевого инженера
+loadout-group-security-engineer-glasses = Очки полевого инженера
+loadout-group-security-engineer-jumpsuit = Комбинезон полевого инженера
+loadout-group-security-engineer-outerclothing = Верхняя одежда полевого инженера
+loadout-group-security-engineer-gloves = Перчатки полевого инженера
 # Medical
 loadout-group-chief-medical-officer-glasses = Очки главного врача
 loadout-group-medical-doctor-neck = Врач, шея
 loadout-group-medical-doctor-headset = Медицинская гарнитура
 loadout-group-medical-doctor-glasses = Очки врача
+loadout-group-medical-doctor-belt = Пояс медика
 loadout-group-chemist-glasses = Очки химика
 loadout-group-chemist-shoes = Обувь химика
 # Wildcards

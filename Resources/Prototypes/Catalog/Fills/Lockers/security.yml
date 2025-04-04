@@ -6,10 +6,18 @@
   - type: StorageFill
     contents:
       - id: FlashlightSeclite
+      - id: WeaponDisabler
+        prob: 0.3
       - id: ClothingBeltSecurityFilled
       - id: Flash
+      - id: ClothingEyesGlassesSunglasses
+        orGroup: WardenGlasses
+      - id: ClothingEyesHudSecurity
+        orGroup: WardenGlasses
       - id: ClothingEyesGlassesSecurity
-      - id: ClothingHandsGlovesCombat
+        orGroup: WardenGlasses
+        prob: 0.3
+      - id: ClothingHandsGlovesKravMaga # cats
       - id: ClothingShoesBootsJack
       - id: ClothingOuterCoatWarden
       - id: ClothingOuterWinterWarden
@@ -37,13 +45,21 @@
   - type: StorageFill
     contents:
       - id: FlashlightSeclite
+      - id: WeaponDisabler
+        prob: 0.3
       - id: ClothingHeadHatWarden
       - id: ClothingHeadHatBeretWarden
       - id: ClothingHeadHatCapWardenAlt # Corvax-SecFashion
       - id: ClothingBeltSecurityFilled
       - id: Flash
+      - id: ClothingEyesGlassesSunglasses
+        orGroup: WardenGlasses
+      - id: ClothingEyesHudSecurity
+        orGroup: WardenGlasses
       - id: ClothingEyesGlassesSecurity
-      - id: ClothingHandsGlovesCombat
+        orGroup: WardenGlasses
+        prob: 0.3
+      - id: ClothingHandsGlovesKravMaga # cats
       - id: ClothingShoesBootsJack
       - id: ClothingOuterCoatWarden
       - id: ClothingOuterWinterWarden
@@ -59,7 +75,6 @@
         amount: 2
       - id: RemoteSignaller
         amount: 3
-      - id: ClothingHandsGlovesKravMaga # cats
       - id: Binoculars
 
 - type: entity
@@ -70,8 +85,10 @@
   - type: StorageFill
     contents:
       - id: Eftpos # backmen
+        prob: 0.3
       - id: FlashlightSeclite
         prob: 0.8
+      - id: WeaponDisabler
       - id: ClothingUniformJumpsuitSecGrey
         prob: 0.3
       - id: ClothingHeadHelmetBasic
@@ -79,7 +96,10 @@
       - id: ClothingBeltSecurityFilled
       - id: Flash
         prob: 0.5
-      - id: ClothingEyesGlassesSecurity
+      - id: ClothingEyesGlassesSunglasses
+        orGroup: SecurityGlasses
+      - id: ClothingEyesHudSecurity
+        orGroup: SecurityGlasses
       - id: ClothingHeadsetSecurity
       - id: ClothingHandsGlovesColorBlack
       - id: ClothingShoesBootsJack
@@ -87,7 +107,6 @@
         prob: 0.1
       - id: ClothingOuterCoatSecurityOvercoat # Corvax-SecFashion
         prob: 0.2
-      - id: ClothingEyesHudSecurity
       - id: HoloprojectorSecurity
         prob: 0.6
       - id: BookSpaceLaw
@@ -101,7 +120,11 @@
   components:
   - type: StorageFill
     contents:
-      - id: ClothingEyesGlassesSecurity
+      - id: ClothingEyesGlassesHudSunglassesMedical
+        orGroup: BrigmedicGlasses
+      - id: ClothingEyesHudMedSec
+        orGroup: BrigmedicGlasses
+      - id: WeaponDisabler
       - id: TrackingImplanter
         amount: 2
       - id: ClothingOuterHardsuitBrigmedic
@@ -121,6 +144,7 @@
       - id: MedkitBruteFilled
         prob: 0.4
       - id: MedkitToxinFilled
+        prob: 0.4
       - id: MedkitBurnFilled
         prob: 0.4
       - id: ClothingHeadsetAltBrigmedic # backmen
@@ -132,8 +156,10 @@
   components:
   - type: StorageFill
     contents:
-      - id: ClothingEyesGlassesSecurity
-        prob: 0.3
+      - id: ClothingEyesGlassesSunglasses
+        orGroup: SecurityGlasses
+      - id: ClothingEyesHudSecurity
+        orGroup: SecurityGlasses
       - id: ClothingHeadHatFedoraBrown
       - id: ClothingNeckTieDet
       - id: ClothingOuterVestDetective
@@ -174,7 +200,7 @@
   - type: StorageFill
     contents:
     - id: WeaponDisabler
-      amount: 2
+      amount: 4
 
 - type: entity
   parent: [GunSafeBaseSecure, BaseRestrictedContraband]

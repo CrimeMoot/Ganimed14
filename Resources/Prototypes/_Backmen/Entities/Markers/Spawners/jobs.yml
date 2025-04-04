@@ -106,18 +106,18 @@
         - state: Delivery
         - state: jobicon
 
-- type: entity
-  id: SpawnPointBrigmedic
-  parent: SpawnPointBKCCAssistant
-  name: brigmedic
-  components:
-  - type: SpawnPoint
-    job_id: Brigmedic
-  - type: Sprite
-    layers:
-      - state: green
-      - state: brigmedic
-      - state: jobicon
+#- type: entity
+#  id: SpawnPointBrigmedic
+#  parent: SpawnPointBKCCAssistant
+#  name: brigmedic
+#  components:
+#  - type: SpawnPoint
+#    job_id: Brigmedic
+#  - type: Sprite
+#    layers:
+#      - state: green
+#      - state: brigmedic
+#      - state: jobicon
 
 - type: entity
   id: SpawnPointRoboticist

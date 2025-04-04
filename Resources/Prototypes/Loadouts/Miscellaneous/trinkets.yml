@@ -145,7 +145,7 @@
   - !type:SponsorLoadoutEffect
 
 # Pins
-#- type: loadout # TODO: readd
+#- type: loadout
 #  id: ClothingNeckLGBTPin
 #  storage:
 #    back:
@@ -211,7 +211,7 @@
 #    back:
 #    - ClothingNeckTransPin
 
-#- type: loadout # TODO: readd
+#- type: loadout
 #  id: ClothingNeckAutismPin
 #  storage:
 #    back:
@@ -333,7 +333,7 @@
 
 # Ganimed: Glowsticks  TODO: Whitelist restriction
 - type: loadout
-  id: GlowstickBase
+  id: GlowstickGreen
   effects:
   - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect

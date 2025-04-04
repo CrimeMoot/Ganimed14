@@ -139,7 +139,6 @@
   - GroupTankHarness
   - LawyerNeck
   - LawyerJumpsuit
-  - MagistrateOuterClothing # Ganimed
   - CommonBackpack
   - GlassesWithSunglasses # Ganimed
   - Underwear # Ganimed
@@ -275,6 +274,7 @@
   - QuartermasterJumpsuit
   - CargoTechnicianBackpack
   - QuartermasterOuterClothing
+  - CommonBelt # Ganimed
   - QuartermasterShoes
   - GlassesWithSunglasses # Ganimed
   - Underwear # Ganimed
@@ -293,6 +293,7 @@
   - CargoTechnicianJumpsuit
   - CargoTechnicianBackpack
   - CargoTechnicianOuterClothing
+  - CommonBelt # Ganimed
   - CargoTechnicianShoes
   - Glasses
   - Underwear # Ganimed
@@ -525,7 +526,7 @@
   - DetectiveHead
   - DetectiveNeck
   - DetectiveJumpsuit
-  - SecurityBackpack
+  - DetectiveBackpack # Ganimed
   - DetectiveOuterClothing
   - DetectiveBelt # Ganimed
   - SecurityGlasses # Ganimed
@@ -589,6 +590,7 @@
   - MedicalGloves
   - MedicalBackpackExtended # Ganimed
   - MedicalDoctorOuterClothing
+  - MedicalBelt # Ganimed
   - MedicalShoes
   - MedicalDoctorPDA
   - MedicalDoctorGlasses # Ganimed
@@ -696,7 +698,7 @@
   - PsychologistShoes # Ganimed
   - Underwear # Ganimed
   - Medals #backmen
-  - Survival
+  - SurvivalMedical
   - Trinkets
   - GroupSpeciesBreathToolMedical
   - SpareClothing # Ganimed

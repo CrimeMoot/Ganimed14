@@ -1,8 +1,8 @@
 - type: entity
   parent: ClothingShoesBootsJack
-  id: ClothingShoesBootsJackSecEnginer
+  id: ClothingShoesBootsJackSecEngineer
   components:
     - type: Sprite
-      sprite: _Ganimed/Clothing/Shoes/Boots/jackboots_sec_enginer.rsi
+      sprite: _Ganimed/Clothing/Shoes/Boots/jackboots_sec_engineer.rsi
     - type: Clothing
-      sprite: _Ganimed/Clothing/Shoes/Boots/jackboots_sec_enginer.rsi
+      sprite: _Ganimed/Clothing/Shoes/Boots/jackboots_sec_engineer.rsi

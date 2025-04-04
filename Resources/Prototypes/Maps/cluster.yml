@@ -29,7 +29,7 @@
             Janitor: [ 1, 1 ]
             Chaplain: [ 1, 1 ]
             Librarian: [ 1, 1 ]
-#            Lawyer: [ 1, 1 ] # Corvax-IAA
+            #Lawyer: [ 1, 1 ]
             ServiceWorker: [ 1, 1 ]
             #engineering
             ChiefEngineer: [ 1, 1 ]
@@ -66,7 +66,7 @@
             Roboticist: [ 0, 1 ]
             Brigmedic: [ 0, 1 ]
             BridgeOfficer: [ 0, 1 ]
-            Prisoner: [ 2, 2]
+            Prisoner: [ 0, 1]
         - type: StationBlobConfig
           stageBegin: 25
           stageCritical: 350

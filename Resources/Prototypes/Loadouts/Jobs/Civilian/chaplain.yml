@@ -77,7 +77,15 @@
   equipment:
     neck: ClothingNeckHolyMedal
 
-- type: loadout
+- type: loadout # Ganimed
+  id: CultBedsheet
+  equipment:
+    neck: BedsheetCult
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: Clergy
+
+- type: loadout # Ganimed
   id: ChaplainCloakBlack
   equipment:
     neck: ClothingNeckCloakBlackCloak
@@ -86,7 +94,7 @@
   - !type:GroupLoadoutEffect
     proto: Clergy
 
-- type: loadout
+- type: loadout # Ganimed
   id: ChaplainCloakWhite
   equipment:
     neck: ClothingNeckCloakWhiteCloak

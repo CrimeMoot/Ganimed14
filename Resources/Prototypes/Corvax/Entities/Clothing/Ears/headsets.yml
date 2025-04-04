@@ -1,5 +1,5 @@
 - type: entity
-  parent: ClothingHeadset
+  parent: [ClothingHeadset, BaseCommandContraband]
   id: ClothingHeadsetIAA
   name: iaa headset
   description: A headset for internal affairs agent to hear the captain's last words.

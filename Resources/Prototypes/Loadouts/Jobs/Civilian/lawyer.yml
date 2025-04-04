@@ -74,8 +74,14 @@
   effects:
   - !type:SponsorLoadoutEffect
 
+# Head, Ganimed
+- type: loadout # TODO: Whitelist restriction
+  id: JudgePwig
+  equipment:
+    head: ClothingHeadHatPwig
+
 # OuterClothing, Ganimed
-- type: loadout
+- type: loadout # TODO: Whitelist restriction
   id: JudgeRobes
   equipment:
     outerClothing: ClothingOuterRobesJudge

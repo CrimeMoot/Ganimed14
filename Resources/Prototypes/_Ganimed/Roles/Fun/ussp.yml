@@ -33,7 +33,7 @@
     - ExGrenade
     outerClothing:
     - Gauze
-    - Tourniquet 
+    - Tourniquet
     - EmergencyMedipen
     - Flare
 
@@ -78,10 +78,10 @@
     - ExGrenade
     outerClothing:
     - Gauze
-    - Tourniquet 
+    - Tourniquet
     - EmergencyMedipen
     - Flare
-    
+
 - type: startingGear
   id: USSPGearMedic
   equipment:
@@ -112,7 +112,7 @@
     - MagazinePistol
     - DefibrillatorCompact
     - ReliableContainerBruteFilled
-    - ReliableContainerBurnFilled 
+    - ReliableContainerBurnFilled
     belt:
     - MedicatedSuture
     - MedicatedSuture
@@ -120,14 +120,14 @@
     - Bloodpack
     - Gauze
     - RegenerativeMesh
-    - RegenerativeMesh 
+    - RegenerativeMesh
     - CombatMedipen
     - CombatMedipen
     - EpinephrineChemistryBottle
     - EpinephrineChemistryBottle
-    - SyndiHypo   
+    - SyndiHypo
     outerClothing:
     - Gauze
-    - Tourniquet 
+    - Tourniquet
     - EmergencyMedipen
     - Flare

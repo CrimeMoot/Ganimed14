@@ -386,6 +386,17 @@
     - WhitelistChameleon
 
 - type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitShortsleeveSuit
+  name: short-sleeve suit
+  description: I don't lose things. I place things in locations which later elude me.
+  components:
+  - type: Sprite
+    sprite: Corvax/Clothing/Uniforms/Jumpsuit/psychologist.rsi
+  - type: Clothing
+    sprite: Corvax/Clothing/Uniforms/Jumpsuit/psychologist.rsi
+
+- type: entity
   parent: [ClothingUniformBase, BaseCommandContraband]
   id: ClothingUniformJumpsuitCaptainParadeMale
   name: captain's parade uniform

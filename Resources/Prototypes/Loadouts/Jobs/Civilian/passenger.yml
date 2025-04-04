@@ -115,6 +115,14 @@
   - !type:GroupLoadoutEffect
     proto: TenOverall
 
+- type: loadout # TODO: Whitelist restriction
+  id: Clipboard
+  equipment:
+    belt: BoxFolderClipboard
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: TenOverall
+
 # Gloves
 - type: loadout
   id: PassengerGloves

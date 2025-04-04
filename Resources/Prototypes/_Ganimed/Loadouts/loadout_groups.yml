@@ -25,8 +25,9 @@
   - SpareUshanka
   - SpareHetmanHat
   - SpareSombrero
-  - SpareBeaverHat
   - SpareGreyFedora
+  - SpareBeaverHat
+  - SpareMagicianHat
   - SpareBlackCatHat
   - SpareGreyCatHat
   - SpareBrownCatHat
@@ -151,6 +152,7 @@
   - SpareBlueTurtleneckDress
   - SparePurpleTurtleneckDress
   - SpareYellowOldDress
+  - SpareOldDress
   # Gloves
   - SpareGlovesFingerless
   - SpareGlovesColorBlack
@@ -347,9 +349,9 @@
 - type: loadoutGroup # Ganimed
   id: BridgeOfficerBelt
   name: loadout-group-bridge-officer-belt
-  minLimit: 0
   loadouts:
   - BridgeOfficerWebbing
+  - SecurityBelt
 
 #Science
 - type: loadoutGroup # Ganimed
@@ -415,3 +417,36 @@
   - CombatBoots
   - SecurityWinterBoots
   - AerostaticShoes
+
+- type: loadoutGroup # Ganimed
+  id: SecurityEngineerHead
+  name: loadout-group-security-engineer-head
+  loadouts:
+  - WeldingMaskFlame
+  - ArmoredHardhat
+
+#- type: loadoutGroup # Ganimed
+#  id: SecurityEngineerGlasses
+#  name: loadout-group-security-engineer-glasses
+#  loadouts:
+#  - 
+
+#- type: loadoutGroup # Ganimed
+#  id: SecurityEngineerJumpsuit
+#  name: loadout-group-security-engineer-jumpsuit
+#  loadouts:
+#  - 
+
+- type: loadoutGroup # Ganimed
+  id: SecurityEngineerOuterClothing
+  name: loadout-group-security-engineer-outerclothing
+  loadouts:
+  - StationEngineerOuterVest
+  - ScienceBombSuit
+
+- type: loadoutGroup # Ganimed
+  id: SecurityEngineerGloves
+  name: loadout-group-security-engineer-gloves
+  loadouts:
+  - InsulatedGloves
+  - CombatGloves

@@ -3,23 +3,27 @@
   name: job-name-qm
   description: job-description-qm
   playTimeTracker: JobQuartermaster
+  requireAdminNotify: true
   requirements:
-#    - !type:RoleTimeRequirement
-#      role: JobCargoTechnician
-#      time: 21600 #6 hrs
+    - !type:RoleTimeRequirement
+      role: JobCargoTechnician
+      time: 18000 #5 hrs
     - !type:RoleTimeRequirement
       role: JobSalvageSpecialist
       time: 36000 #10 hrs # Corvax-RoleTime
     - !type:DepartmentTimeRequirement
       department: Cargo
-      time: 36000 #10 hours
+      time: 72000 #20 hrs
     - !type:OverallPlaytimeRequirement
-      time: 144000 #40 hrs
+      time: 126000 #35 hrs
+    - !type:AgeRequirement
+      requiredAge: 21 # Ganimed-MRP
   weight: 10
   startingGear: QuartermasterGear
   icon: "JobIconQuarterMaster"
   supervisors: job-supervisors-captain
-  canBeAntag: false
+  canBeAntag: true # Ganimed-MRP
+  antagAdvantage: 5 # Ganimed-MRP
   access:
   - Cargo
   - Salvage

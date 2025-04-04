@@ -8,25 +8,19 @@
   joinNotifyCrew: true
   discordRequired: false
   requirements:
-    - !type:RoleTimeRequirement
-      role: JobHeadOfSecurity
-      time: 18000
+    - !type:DepartmentTimeRequirement
+      department: Security
+      time: 36000 #10 hrs
+    - !type:DepartmentTimeRequirement
+      department: Command
+      time: 36000 #10 hrs
     - !type:DepartmentTimeRequirement
       department: Medical
-      time: 14400
-    - !type:DepartmentTimeRequirement
-      department: Science
-      time: 14400
-    - !type:DepartmentTimeRequirement
-      department: Civilian
-      time: 14400
-    - !type:DepartmentTimeRequirement
-      department: Engineering
-      time: 14400
+      time: 18000 #5 hrs
     - !type:OverallPlaytimeRequirement
-      time: 86400
+      time: 108000 #30 hrs
     - !type:AgeRequirement
-      requiredAge: 21 # cats
+      requiredAge: 21 # Ganimed-MRP
   special:
     - !type:AddImplantSpecial
       implants: [ MindShieldImplant ]
@@ -36,7 +30,7 @@
         - type: NpcFactionMember
           factions:
             - CentralCommand
-        - type: AntagImmune
+        - type: AntagImmune # Ganimed-MRP: Loyalty implant
   startingGear: BlueShieldGear
   icon: "JobIconBlueShield"
   supervisors: job-supervisors-hoh
@@ -48,7 +42,7 @@
   #start-backmen: currency
   minBankBalance: 900
   maxBankBalance: 1600
-  wageDepartment: CentCom
+  wageDepartment: CentralCommand
   wage: 200
   #end-backmen: currency
 
@@ -57,14 +51,14 @@
   equipment:
     id: BlueShieldPDA
     gloves: ClothingHandsGlovesCombat
-    ears: ClothingHeadsetAltCommand
+    ears: ClothingHeadsetCommand
     shoes: ClothingShoesBootsCombat
-    back: ClothingBlueshieldBackpack # cats
+    #back: ClothingBlueshieldBackpack # cats
     belt: ClothingBeltSecurityCentComSecurity
     pocket1: PistolBlueShield # cats
   storage:
     back:
   #  - BlueShieldLoadout
     - BlueShieldSetMedical
-    - CombatKnifeSpetsnaz
+    #- CombatKnifeSpetsnaz
     - SecHypo

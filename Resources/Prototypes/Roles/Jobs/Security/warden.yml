@@ -3,12 +3,16 @@
   name: job-name-warden
   description: job-description-warden
   playTimeTracker: JobWarden
+  requireAdminNotify: true
   requirements:
+    - !type:RoleTimeRequirement
+      role: JobSecurityOfficer
+      time: 36000 #10 hrs
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 108000 #50 hrs # Corvax-RoleTime
+      time: 90000 #25 hrs
     - !type:AgeRequirement
-      requiredAge: 21 # cats
+      requiredAge: 21 # Ganimed-MRP
   startingGear: WardenGear
   icon: "JobIconWarden"
   supervisors: job-supervisors-hos

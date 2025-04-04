@@ -8,13 +8,13 @@
   - ScientistBackpack
   - RoboticistOuterClothing
   - ScientistGloves
-  - ScientistGlasses # Ganimed
-  - Underwear # Ganimed
+  - ScientistGlasses
+  - Underwear
   - Medals #backmen
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
-  - SpareClothing # Ganimed
+  - SpareClothing
   - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
@@ -25,10 +25,27 @@
   - BridgeOfficerNeck
   - BridgeOfficerJumpsuit
   - BridgeOfficerBelt
-  - Underwear # Ganimed
+  - Underwear
   - Medals #backmen
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
-  - SpareClothing # Ganimed
+  - SpareClothing
+  - Inventory # Corvax-Loadouts
+
+- type: roleLoadout
+  id: JobSecurityEngineer
+  groups:
+  - GroupTankHarness
+  - SecurityEngineerHead
+  #- SecurityEngineerGlasses
+  #- SecurityEngineerJumpsuit
+  - SecurityEngineerOuterClothing
+  - SecurityEngineerGloves
+  - Underwear
+  - Medals #backmen
+  - SurvivalSecurity
+  - Trinkets
+  - GroupSpeciesBreathToolSecurity
+  - SpareClothing
   - Inventory # Corvax-Loadouts

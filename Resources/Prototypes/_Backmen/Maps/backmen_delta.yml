@@ -58,13 +58,13 @@
             Detective: [ 1, 1 ]
             Paramedic: [ 1, 1 ]
             # backmen
-            Prisoner: [ 3, 3]
+            Prisoner: [ 1, 2]
             Brigmedic: [ 0, 1 ] # backmen-Brigmedic
             BlueShield: [1, 1] # backmen-BlueShield
-            BKBPLATech: [0, 3] # backmen-BPLA-Silicons
-            BKBPLAMED: [0, 3] # backmen-BPLAMED-Silicons
+            #BKBPLATech: [0, 3] # backmen-BPLA-Silicons
+            #BKBPLAMED: [0, 3] # backmen-BPLAMED-Silicons
             # Cats
-            Maid: [ 0, 1]
+            #Maid: [ 0, 1]
             BridgeOfficer: [ 0, 1 ]
         # backmen blob-config-start HUGE
         - type: StationBlobConfig

@@ -359,7 +359,7 @@
     - id: HoloprojectorSecurity
     - id: RubberStampHos
     - id: SecurityTechFabCircuitboard
-    - id: WeaponEnergyGunDominator
+    # - id: WeaponEnergyGunDominator
     - id: PrinterDocFlatpack # Corvax-Printer
     - id: WantedListCartridge
     - id: ClothingHeadHatCapHoS # Corvax-SecFashion

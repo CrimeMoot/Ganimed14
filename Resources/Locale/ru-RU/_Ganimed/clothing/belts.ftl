@@ -8,3 +8,10 @@ ent-ClothingBeltMilitaryWebbingCorpsman = РПС бригмедика
 ent-ClothingBeltMilitaryWebbingCorpsmanFilled = { ent-ClothingBeltMilitaryWebbingCorpsman }
     .suffix = Заполненный
     .desc = { ent-ClothingBeltMilitaryWebbingCorpsman.desc }
+
+ent-ClothingBeltMedicalFilledSurgical = { ent-ClothingBeltMedical }
+    .suffix = Заполненный, хирургические инструменты
+    .desc = { ent-ClothingBeltMedical.desc }
+ent-ClothingBeltMedicalFilledMedication = { ent-ClothingBeltMedical }
+    .suffix = Заполненный, медикаменты
+    .desc = { ent-ClothingBeltMedical.desc }

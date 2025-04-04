@@ -6,7 +6,7 @@
   requirements:
     - !type:DepartmentTimeRequirement
       department: Medical
-      time: 7200 #2 hrs # Corvax-RoleTime
+      time: 18000 #5 hrs
   startingGear: DoctorGear
   icon: "JobIconMedicalDoctor"
   supervisors: job-supervisors-cmo
@@ -32,8 +32,8 @@
 
 - type: startingGear
   id: DoctorGear
-  equipment:
-    belt: ClothingBeltMedicalFilled
+  #equipment:
+    #belt: ClothingBeltMedicalFilled
     #ears: ClothingHeadsetMedical
   #storage:
     #back:

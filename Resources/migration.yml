@@ -818,3 +818,17 @@ SpawnMobHumanRXBZZFlamer: SpawnMobHumanCBURNMedic
 PaperOrderRXBZZ: PaperOrderCBURN
 RXBZZ: CBURN
 RXBZZMedic: CBURNMedic
+
+#2025-04-03
+
+ActionMetapsionicPulse: null
+ActionMassSleep: null
+ActionMindSwapPsionic: null
+ActionMindSwapReturn: null
+ActionTelegnosis: null
+ActionTelegnosisReturn: null
+ActionPsionicRegeneration: null
+ActionNoosphericZap: null
+ActionPyrokinesis: null
+ActionPsychokinesis: null
+GlimmerMonitorCartridge: null

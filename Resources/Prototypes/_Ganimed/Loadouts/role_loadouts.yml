@@ -3,7 +3,7 @@
   id: JobRoboticist
   groups:
   - GroupTankHarness
-  - ScientistHead
+  - RoboticistHead
   - RoboticistJumpsuit
   - ScientistBackpack
   - RoboticistOuterClothing

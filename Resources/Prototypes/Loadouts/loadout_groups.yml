@@ -11,13 +11,19 @@
   - Headphones
   - PlushieLizard
   - PlushieSpaceLizard
-  - ThreeCandles
   # Ganimed-Loadouts-Start
+  - PlushieMoth
+  - PlushieDiona
+  - PlushieVox
+  - PlushieSlime
+  - PlushieBee
+  - PlushieCarp
   - AmongPequeno
   - RubberDuck
   - XmasCrown
   - WarningCone
   # Ganimed-Loadouts-End
+  - ThreeCandles
   - Lighter
   - CigPackGreen
   - CigPackRed
@@ -26,9 +32,9 @@
   - CigarCase
   - CigarGold
   - SmokingPipe # Ganimed
+# start-backmen: no pride
 #  - ClothingNeckLGBTPin
 #  - ClothingNeckAutismPin
-# start-backmen: no pride
 #  - ClothingNeckAromanticPin
 #  - ClothingNeckAsexualPin
 #  - ClothingNeckBisexualPin
@@ -102,7 +108,6 @@
   - GlassesSalesman
   - GlassesGar
   - GlassesGarOrange
-  - GlassesGarGiga
   # Ganimed-Loadouts-End
 
 - type: loadoutGroup
@@ -166,10 +171,10 @@
   - CaptainJumpskirtTurtleneck
   # Corvax-Loadouts-End
   # Ganimed-Loadouts-Start
+  - CaptainMaleParadeUniform
   - CaptainWhiteJumpsuit
   - CaptainWhiteJumpskirt
   - CaptainCommandSuit
-  - CaptainMaleParadeUniform
   # Ganimed-Loadouts-End
 
 - type: loadoutGroup

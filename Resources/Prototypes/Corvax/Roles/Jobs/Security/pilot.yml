@@ -40,3 +40,5 @@
   storage:
     back:
     - Flash
+    - WeaponFlareGunSecurity
+    - ShellShotgunFlare

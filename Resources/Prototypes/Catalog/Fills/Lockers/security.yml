@@ -25,8 +25,6 @@
       - id: DoorRemoteArmory
       - id: ClothingOuterHardsuitWarden
       - id: HoloprojectorSecurity
-      - id: ClothingEyesHudSecurity
-        amount: 2
       - id: BookSpaceLaw
       - id: ClothingHeadHatCapWardenAlt # Corvax-SecFashion
       - id: ClothingOuterCoatWardenAlt # Corvax-SecFashion
@@ -34,7 +32,7 @@
       - id: ClothingBackpackElectropack
         amount: 2
       - id: RemoteSignaller
-        amount: 3
+        amount: 2
       - id: BoxImpantsDead # cats
 
 - type: entity
@@ -67,14 +65,12 @@
       - id: RubberStampWarden
       - id: DoorRemoteArmory
       - id: HoloprojectorSecurity
-      - id: ClothingEyesHudSecurity
-        amount: 2
       - id: BookSpaceLaw
       - id: ClothingBackpackWarden # Corvax-SecFashion
       - id: ClothingBackpackElectropack
         amount: 2
       - id: RemoteSignaller
-        amount: 3
+        amount: 2
       - id: Binoculars
 
 - type: entity

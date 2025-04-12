@@ -46,6 +46,7 @@ loadout-group-atmospheric-technician-head = Головной убор атмос
 loadout-group-atmospheric-technician-neck = Плащ атмосферного техника
 loadout-group-atmospheric-technician-glasses = Очки атмосферного техника
 # Science
+loadout-group-roboticist-head = Головной убор робототехника
 loadout-group-roboticist-jumpsuit = Комбинезон робототехника
 loadout-group-roboticist-outerclothing = Верхняя одежда робототехника
 loadout-group-research-director-glasses = Очки научного руководителя

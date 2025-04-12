@@ -49,6 +49,42 @@
     back:
     - PlushieSpaceLizard
 
+- type: loadout # Ganimed
+  id: PlushieMoth
+  storage:
+    back:
+    - PlushieMoth
+
+- type: loadout # Ganimed
+  id: PlushieDiona
+  storage:
+    back:
+    - PlushieDiona
+
+- type: loadout # Ganimed
+  id: PlushieVox
+  storage:
+    back:
+    - PlushieVox
+
+- type: loadout # Ganimed
+  id: PlushieSlime
+  storage:
+    back:
+    - PlushieSlime
+
+- type: loadout # Ganimed
+  id: PlushieBee
+  storage:
+    back:
+    - PlushieBee
+
+- type: loadout # Ganimed
+  id: PlushieCarp
+  storage:
+    back:
+    - PlushieCarp
+
 - type: loadout
   id: ThreeCandles
   dummyEntity: LoadoutDummyCandles

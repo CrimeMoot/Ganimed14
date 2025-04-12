@@ -353,7 +353,26 @@
   - BridgeOfficerWebbing
   - SecurityBelt
 
+#- type: loadoutGroup # Ganimed
+#  id: NonLethalWeapons
+#  name: loadout-group-self-defence-weapons
+#  loadouts:
+#  - Flash
+#  - TelescopicBaton
+#  - WeaponDisabler
+
 #Science
+- type: loadoutGroup # Ganimed
+  id: RoboticistHead
+  name: loadout-group-roboticist-head
+  minLimit: 0
+  loadouts:
+  - RoboticistCap
+  - SkullBandana
+  - ScientificBeret
+  - WeldingMaskFlame
+  - WeldingMaskBlueFlame
+
 - type: loadoutGroup # Ganimed
   id: RoboticistJumpsuit
   name: loadout-group-roboticist-jumpsuit

@@ -496,7 +496,7 @@
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitSuitSssp
-  name: мпортивный костюм
+  name: спортивный костюм
   description: Может сегодня повезёт и пообщаемся с капитаном достойно.
   components:
     - type: Sprite

@@ -1,7 +1,7 @@
 - type: entity
   name:  РХБЗЗ Base
   parent: MobHuman
-  id: MobHumanRXBZZBase
+  id: MobHumanCBURNBase
   categories: [ HideSpawnMenu ]
   components:
   - type: GhostTakeoverAvailable
@@ -19,7 +19,7 @@
     name: Оперативник РХБЗЗ
   - type: RandomMetadata
     nameSegments:
-    - NameSpetsRXBZZ
+    - NameSpetsCBURN
     - names_last_male
   - type: RandomHumanoidAppearance
     randomizeName: false
@@ -35,12 +35,13 @@
     speechSounds: Metrocop
     soundCooldownTime: 0.1
   - type: AntagImmune
+  - type: SpecForce
+    actionBssActionName: ActionCentcomFtlAction
 
 - type: entity
   name:  РХБЗЗ Реагент
-  parent: MobHumanRXBZZBase
-  suffix: ready
-  id: MobHumanRXBZZ
+  parent: MobHumanCBURNBase
+  id: MobHumanCBURN
   components:
   - type: GhostRole
     name: Оперативник РХБЗЗ ТСФ
@@ -54,13 +55,12 @@
       - !type:OverallPlaytimeRequirement
         time: 36000
   - type: Loadout
-    prototypes: [RXBZZ]
+    prototypes: [CBURN]
 
 - type: entity
   name:  РХБЗЗ Медик
-  parent: MobHumanRXBZZBase
-  suffix: ready
-  id: MobHumanRXBZZMedic
+  parent: MobHumanCBURNBase
+  id: MobHumanCBURNMedic
   components:
   - type: GhostRole
     name: Медик РХБЗЗ
@@ -77,33 +77,12 @@
         department: Medical
         time: 18000
   - type: Loadout
-    prototypes: [RXBZZMedic]
-
-- type: entity
-  name:  РХБЗЗ Реагент Специалист
-  parent: MobHumanRXBZZBase
-  suffix: ready
-  id: MobHumanRXBZZFlamer
-  components:
-  - type: GhostRole
-    name: Специалист РХБЗЗ
-    description: Отделение ВС ТСФ по борьбе с радиационно, химическо, биологическоми и зомби опасностями.
-    raffle:
-      settings: default
-    requirements:
-      - !type:DepartmentTimeRequirement
-        department: Security
-        time: 18000
-      - !type:OverallPlaytimeRequirement
-        time: 36000
-  - type: Loadout
-    prototypes: [RXBZZFlamer]
+    prototypes: [CBURNMedic]
 
 - type: entity
   name:  РХБЗЗ Лидер
-  parent: MobHumanRXBZZBase
-  suffix: CentCom
-  id: MobHumanRXBZZLeader
+  parent: MobHumanCBURNBase
+  id: MobHumanCBURNLeader
   components:
   - type: GhostRole
     name: Лидер РХБЗЗ
@@ -120,7 +99,7 @@
         department: Command
         time: 18000
   - type: Loadout
-    prototypes: [RXBZZLeader]
+    prototypes: [CBURNLeader]
   - type: RandomMetadata
     nameSegments:
     - NameSpetsCommander
@@ -128,9 +107,9 @@
 
 - type: entity
   name:  РХБЗЗ Лидер
-  parent: MobHumanRXBZZLeader
+  parent: MobHumanCBURNLeader
   suffix: Blob
-  id: MobHumanRXBZZBlobLeader
+  id: MobHumanCBURNLeaderBlob
   components:
   - type: Loadout
-    prototypes: [RXBZZBlobLeader]
+    prototypes: [CBURNLeaderBlob]

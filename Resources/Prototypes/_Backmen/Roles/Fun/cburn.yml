@@ -1,79 +1,70 @@
 - type: startingGear
-  id: RXBZZ
+  id: CBURN
   equipment:
-    jumpsuit: ClothingUniformJumpsuitColorBlack
-    back: ClothingBackpackDuffelRXBZZ
-    shoes: ClothingShoesBootsMagArmy
-    mask: ClothingMaskGasRXBZZ
-    eyes: ClothingEyesThermalVisionGoggles
-    neck: CombatKnifeSpetsnaz
+    jumpsuit: ClothingUniformJumpsuitTacticool
+    back: ClothingBackpackCBURN
+    shoes: ClothingShoesBootsCombatFilled
+    mask: ClothingMaskGasCBURN
+    eyes: ClothingEyesGlassesSunglasses
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitCBURN
-    id: idcoinRXBZZ
-    ears: ClothingHeadsetEarthGov
+    id: idcoinCBURN
+    ears: ClothingHeadsetAltCentCom
     belt: WeaponAdvancedLaser
-    pocket2: ClothingMedicalPounchRXBZZFilled
+    pocket1: DoubleEmergencyOxygenTankFilled
+    pocket2: ClothingPounchMedicalCBURNFilled
+    underpants: ClothingUnderPantsMilitary
+    undershirt: ClothingUnderShirtBlack
+    socks: ClothingSocksBlack
 
 - type: startingGear
-  id: RXBZZMedic
+  id: CBURNMedic
   equipment:
-    jumpsuit: ClothingUniformJumpsuitColorBlack
-    back: ClothingBackpackDuffelRXBZZMedic
-    shoes: ClothingShoesBootsMagArmy
-    mask: ClothingMaskGasRXBZZ
-    eyes: ClothingEyesHudMedical
-    neck: CombatKnifeSpetsnaz
+    jumpsuit: ClothingUniformJumpsuitTacticool
+    back: ClothingBackpackDuffelCBURNMedic
+    shoes: ClothingShoesBootsCombatFilled
+    mask: ClothingMaskGasCBURN
+    neck: ClothingNeckStethoscope
+    eyes: ClothingEyesGlassesHudSunglassesMedical
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitCBURN
-    id: idcoinRXBZZMedic
-    ears: ClothingHeadsetEarthGov
-    belt: ClothingBeltMedicalMarineRxbzz
-    pocket2: ClothingMedicalPounchRXBZZFilled
+    id: idcoinCBURNMedic
+    head: ClothingHeadHatBeretSecurityMedic
+    ears: ClothingHeadsetAltCentCom
+    belt: ClothingBeltMilitaryWebbingCorpsmanCBURNMedicFilled
+    pocket1: DoubleEmergencyOxygenTankFilled
+    pocket2: ClothingPounchMedicalCBURNFilled
+    underpants: ClothingUnderPantsMilitary
+    undershirt: ClothingUnderShirtBlack
+    socks: ClothingSocksBlack
 
 - type: startingGear
-  id: RXBZZFlamer
+  id: CBURNLeader
   equipment:
-    jumpsuit: ClothingUniformJumpsuitColorBlack
-    shoes: ClothingShoesBootsMagArmy
-    back: ClothingBackpackDuffelMilitary
-    mask: ClothingMaskGasRXBZZ
-    neck: CombatKnifeSpetsnaz
-    gloves: ClothingHandsGlovesCombat
-    outerClothing: ClothingOuterHardsuitCBURN
-    id: idcoinRXBZZSpecialist
-    ears: ClothingHeadsetEarthGov
-    pocket2: ClothingMedicalPounchRXBZZFilled
-  storage:
-    back:
-    - ArmySetLoadoutsSpecialist
-    - ArmySetLoadoutsSpecialistSecondary
-
-- type: startingGear
-  id: RXBZZLeader
-  equipment:
-    jumpsuit: ClothingUniformJumpsuitColorBlack
-    back: ClothingBackpackDuffelRXBZZ
-    shoes: ClothingShoesBootsMagArmy
-    mask: ClothingMaskGasRXBZZ
-    neck: CombatKnifeSpetsnaz
+    jumpsuit: ClothingBlackJumpsuit
+    back: ClothingBackpackSatchelCBURNLeader
+    shoes: ClothingShoesBootsCombatFilled
+    mask: ClothingMaskGasCBURN
+    neck: ClothingNeckOldMantle
     eyes: ClothingEyesThermalVisionGoggles
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitCBURNLeader
-    id: idcoinRXBZZSergant
+    id: CBURNPDA
     head: ClothingHeadHatERTLeaderBeret
-    ears: ClothingHeadsetEarthGov
-    belt: WeaponAdvancedLaser
-    pocket2: ClothingMedicalPounchRXBZZFilled
-  storage:
-    back:
-    - RadioMTFHandheld
+    ears: ClothingHeadsetAltCentCom
+    belt: Chainsword #и мы быстренько всех покромсали
+    pocket1: ClothingPounchMTFFlare
+    pocket2: ClothingPounchMedicalCBURNFilled
+    underpants: ClothingUnderPantsMilitary
+    undershirt: ClothingUnderShirtBlack
+    socks: ClothingSocksBlack
 
 - type: startingGear
-  id: RXBZZBlobLeader
-  parent: RXBZZLeader
+  id: CBURNLeaderBlob
+  parent: CBURNLeader
   storage:
     back:
     - NukeCodePaperStation
     - PinpointerNuclear
     - PinpointerNuclearBomb
-    - PaperOrderRXBZZ
+    - PaperOrderCBURN

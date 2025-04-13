@@ -367,7 +367,7 @@
 
 - type: entity
   parent: CentcomIDCardDeathsquad
-  id: IdCardRXBZZLeader
+  id: IdCardCBURNLeader
   name: ID card leader CBURN
   categories: [ HideSpawnMenu ]
   components:
@@ -392,7 +392,7 @@
 
 - type: entity
   parent: CentcomIDCardDeathsquad
-  id: IdCardRXBZZ
+  id: IdCardCBURN
   name: ID карта Оперативника РХБЗЗ
   categories: [ HideSpawnMenu ]
   components:

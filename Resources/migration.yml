@@ -790,7 +790,34 @@ VendingMachinePride: null
 
 #2025-03-01
 
-CrateServiceLoreBooks: null 
+CrateServiceLoreBooks: null
+
+#2025-03-26 Pouches fix in CBRUN branch
+ClothingMedicalPounch: ClothingPounchMedical
+ClothingAmmoPounch: ClothingPounchAmmo
+ClothingShellPounch: ClothingPounchShell
+ClothingPistolPounch: ClothingPounchPistol
+MedkitAdvancedRXBZZ: MedkitAdvancedCBURN
+ClothingBeltBandolierRXBZZ: ClothingBeltBandolierRXBZZ
+ClothingMedicalPounchRXBZZFilled: ClothingPounchMedicalERTFilled
+ClothingPounchRXBZZFilled: ClothingPounchCBURNFilled
+ClothingPounchRXBZZEnergyFilled: ClothingPounchCBURNEnergyFilled
+ClothingPounchRXBZZBigEnergyFilled: ClothingPounchCBURNBigEnergyFilled
+ClothingBeltMilitaryWebbingRXBZZGrenadeFilled: ClothingBeltMilitaryWebbingCBURNGrenadeFilled
+ClothingPounchRXBZZSpecialistFilled: ClothingPounchCBURNSpecialistFilled
+ClothingBeltMedicalMarineRxbzz: ClothingBeltMilitaryWebbingCorpsmanCBURNMedicFilled
+ClothingAmmoPounch: ClothingPounchAmmo
+ClothingMedicalPounch: ClothingPounchMedical
+ClothingPistolPounch: ClothingPounchPistol
+ClothingShellPounch: ClothingPounchShell
+ClothingMaskGasRXBZZ: ClothingMaskGasCBURN
+SpawnMobHumanRXBZZ: SpawnMobHumanCBURN
+SpawnMobHumanRXBZZLeader: SpawnMobHumanCBURNLeader
+SpawnMobHumanRXBZZBlobLeader: SpawnMobHumanCBURNLeaderBlob
+SpawnMobHumanRXBZZFlamer: SpawnMobHumanCBURNMedic
+PaperOrderRXBZZ: PaperOrderCBURN
+RXBZZ: CBURN
+RXBZZMedic: CBURNMedic
 
 #2025-04-03
 

@@ -81,6 +81,13 @@
   - !type:GroupLoadoutEffect
     proto: MasterAtmosian
 
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: FireSuit
+  dummyEntity: ClothingOuterSuitFire
+  equipment:
+    outerClothing: ClothingOuterSuitFire
+    head: ClothingHeadHelmetFire
+
 # Glasses, Ganimed
 - type: loadout # TODO: Whitelist restriction
   id: TrayGoggles

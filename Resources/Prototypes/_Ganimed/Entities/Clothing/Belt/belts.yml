@@ -87,8 +87,8 @@
 - type: entity
   id: ClothingMilitaryWebbingSecEng
   parent: ClothingBeltMilitaryWebbing
-  name: инженерный рпс полевого инженера
-  description: Лямка с большим количеством ремней для инженера по безопасности.
+  name: РПС полевого инженера
+  description: Крепкий пояс с большим количеством ремней, используемый сапёрами.
   suffix: Security
   components:
   - type: StorageFill
@@ -98,6 +98,6 @@
     - id: Screwdriver
     - id: WelderIndustrial
     - id: Multitool
-    - id: NetworkConfigurator
+    - id: SecRCD
   - type: ExplosionResistance
     damageCoefficient: 0.5

@@ -19,3 +19,15 @@
     layers:
     - state: green
     - state: virologist
+
+- type: entity
+  id: SpawnPointIAA
+  parent: SpawnPointJobBase
+  name: internalaffairsagent
+  components:
+  - type: SpawnPoint
+    job_id: IAA # Corvax-IAA
+  - type: Sprite
+    layers:
+      - state: green
+      - state: lawyer

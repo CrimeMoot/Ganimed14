@@ -1,6 +1,6 @@
 ent-ClothingEyesGlassesHudSunglassesScience = солнцезащитные научные очки
     .desc = Модные очки для модного учёного.
-ent-ClothingEyesGlassesHudSunglassesEnginering = инженерные солнцезащитные очки
+ent-ClothingEyesGlassesHudSunglassesEngineering = инженерные солнцезащитные очки
     .desc = На тот случай, когда надо разварить вспышку.
 ent-ClothingEyesGlassesHudSunglassesMedical = солнцезащитные медицинские очки
     .desc = На тот случай, когда ваш пациент вас ослепляет своими ранами.

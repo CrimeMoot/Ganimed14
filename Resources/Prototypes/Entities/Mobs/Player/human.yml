@@ -102,9 +102,9 @@
     - type: ActiveRadio
       channels:
         - Flesh
-    - type: Psionic
-      channel: Flesh
-      channelColor: "#cf1b48"
+#    - type: Psionic
+#      channel: Flesh
+#      channelColor: "#cf1b48"
 
 # Nuclear Operative
 - type: entity

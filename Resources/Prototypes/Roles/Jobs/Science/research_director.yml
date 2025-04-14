@@ -3,19 +3,24 @@
   name: job-name-rd
   description: job-description-rd
   playTimeTracker: JobResearchDirector
+  requireAdminNotify: true
   requirements:
+    - !type:RoleTimeRequirement
+      role: JobScientist
+      time: 21600 #6 hrs
     - !type:DepartmentTimeRequirement
       department: Science
-      time: 54000 #15 hrs # Corvax-RoleTime
-#    - !type:OverallPlaytimeRequirement
-#      time: 144000 #40 hrs
+      time: 72000 #20 hrs
+    - !type:OverallPlaytimeRequirement
+      time: 126000 #35 hrs
     - !type:AgeRequirement
-      requiredAge: 21 # cats
+      requiredAge: 21 # Ganimed-MRP
   weight: 10
   startingGear: ResearchDirectorGear
   icon: "JobIconResearchDirector"
   supervisors: job-supervisors-captain
-  canBeAntag: false
+  canBeAntag: true # Ganimed-MRP
+  antagAdvantage: 5 # Ganimed-MRP
   access:
   - Research
   - Command

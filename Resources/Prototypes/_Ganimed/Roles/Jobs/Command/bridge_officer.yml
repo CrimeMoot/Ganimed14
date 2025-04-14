@@ -5,10 +5,13 @@
   playTimeTracker: JobBridgeOfficer
   requirements:
     - !type:OverallPlaytimeRequirement
-      time: 64000
+      time: 72000 #20 hrs
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 21600
+      time: 21600 #6 hrs
+    - !type:DepartmentTimeRequirement
+      department: Command
+      time: 14400 #4 hrs
   startingGear: BridgeOfficerGear
   icon: "JobIconBridgeOfficer"
   supervisors: job-supervisors-command
@@ -16,9 +19,10 @@
   access:
   - Command
   - Maintenance
-  - External
-  - Security
   - Brig
+  #extendedAccess:
+  #- External
+  #- Security
   special:
   - !type:AddComponentSpecial
     components:
@@ -27,8 +31,8 @@
     implants: [ MindShieldImplant ]
   minBankBalance: 300
   maxBankBalance: 600
-  wageDepartment: CentCom
-  wage: 200
+  wageDepartment: CentralCommand
+  wage: 100
 
 - type: startingGear
   id: BridgeOfficerGear

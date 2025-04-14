@@ -30,3 +30,8 @@
       sprite: Corvax/Clothing/OuterClothing/Vests/vest_security_medic.rsi
     - type: Clothing
       sprite: Corvax/Clothing/OuterClothing/Vests/vest_security_medic.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Slash: 0.9
+          Caustic: 0.9

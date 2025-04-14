@@ -3,5 +3,5 @@
   name: Uristititi McVox
   parent: BaseMobVox
   id: MobVox
-  components:
-    - type: PotentialPsionic
+#  components:
+#    - type: PotentialPsionic

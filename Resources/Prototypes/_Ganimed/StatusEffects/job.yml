@@ -16,7 +16,7 @@
 
 - type: jobIcon
   parent: JobIcon
-  id: JobIconSecurityEnginer
+  id: JobIconSecurityEngineer
   icon:
     sprite: /Textures/Interface/Misc/job_icons.rsi
     state: SecurityEngineer
@@ -28,7 +28,7 @@
   icon:
     sprite: /Textures/Interface/Misc/job_icons.rsi
     state: USSPSoldier
-    jobName: job-name-ussp-soldier
+  jobName: job-name-ussp-soldier
 
 - type: jobIcon
   parent: JobIcon
@@ -36,7 +36,7 @@
   icon:
     sprite: /Textures/Interface/Misc/job_icons.rsi
     state: USSPMedical
-    jobName: job-name-ussp-medical
+  jobName: job-name-ussp-medical
 
 - type: jobIcon
   parent: JobIcon
@@ -44,4 +44,12 @@
   icon:
     sprite: /Textures/Interface/Misc/job_icons.rsi
     state: USSPOfficer
-    jobName: job-name-ussp-officer
+  jobName: job-name-ussp-officer
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconCluwne
+  icon:
+    sprite: /Textures/Interface/Misc/job_icons.rsi
+    state: Cluwne
+  jobName: job-name-cluwne

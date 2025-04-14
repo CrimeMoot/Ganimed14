@@ -43,7 +43,7 @@ loadout-group-chef-jumpsuit = Форма шеф-повара
 loadout-group-chef-outerclothing = Верхняя одежда шеф-повара
 loadout-group-librarian-jumpsuit = Костюм библиотекаря
 loadout-group-lawyer-jumpsuit = Костюм адвоката
-loadout-group-lawyer-neck = Адвокат, шея
+loadout-group-lawyer-neck = Значок адвоката
 loadout-group-chaplain-head = Головной убор священника
 loadout-group-chaplain-mask = Маска священника
 loadout-group-chaplain-jumpsuit = Одеяние священника
@@ -70,7 +70,7 @@ loadout-group-mime-backpack = Рюкзак мима
 loadout-group-mime-outerclothing = Верхняя одежда мима
 loadout-group-mime-belt = Пояс мима
 loadout-group-musician-jumpsuit = Костюм музыканта
-loadout-group-musician-outerclothing = Костюм музыканта
+loadout-group-musician-outerclothing = Куртка музыканта
 # Cargo
 loadout-group-quartermaster-head = Головной убор квартирмейстера
 loadout-group-quartermaster-jumpsuit = Униформа квартирмейстера

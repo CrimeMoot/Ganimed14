@@ -1,0 +1,29 @@
+- type: entity
+  id: LoadoutDummyMedicalTopical
+  categories: [ HideSpawnMenu ]
+  name: basic first aid kit
+  description: Standard first-aid topicals for general emergencies.
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Medical/medical.rsi
+    state: brutepack_5
+
+- type: entity
+  id: LoadoutDummyMedicalSurgical
+  categories: [ HideSpawnMenu ]
+  name: surgical tools
+  description: Now this is a real surgeon's toolbelt.
+  components:
+  - type: Sprite
+    sprite: _Shitmed/Objects/Specific/Medical/Surgery/scalpel.rsi
+    state: scalpel
+
+- type: entity
+  id: LoadoutDummyMedicalReagents
+  categories: [ HideSpawnMenu ]
+  name: medications set
+  description: Various drugs in the form of pills for pharmacists out there.
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Chemistry/pills_canister.rsi
+    state: pill_canister

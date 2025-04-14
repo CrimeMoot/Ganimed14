@@ -50,7 +50,7 @@
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
        !type:String
-       pda-security-enginer
+       pda-security-engineer
   - type: Icon
     state: pda-security
   - type: CartridgeLoader

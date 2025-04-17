@@ -254,9 +254,9 @@
       - EncryptionKeySecurity
       - EncryptionKeyCommon
   - type: Sprite
-    sprite: Backmen/Clothing/Ears/Headsets/secmed.rsi
+    sprite: Clothing/Ears/Headsets/brigmedic.rsi
   - type: Clothing
-    sprite: Backmen/Clothing/Ears/Headsets/secmed.rsi
+    sprite: Clothing/Ears/Headsets/brigmedic.rsi
 
 - type: entity
   parent: ClothingHeadset

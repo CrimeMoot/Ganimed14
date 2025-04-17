@@ -6,9 +6,9 @@
   description: A lightweight space suit with the basic ability to protect the wearer from the vacuum of space during emergencies.
   components:
   - type: Sprite
-    sprite: Backmen/Clothing/OuterClothing/Suits/eva.rsi # backmen resprite
+    sprite: Clothing/OuterClothing/Suits/eva.rsi
   - type: Clothing
-    sprite: Backmen/Clothing/OuterClothing/Suits/eva.rsi # backmen resprite
+    sprite: Clothing/OuterClothing/Suits/eva.rsi
   - type: Tag
     tags:
     - SuitEVA

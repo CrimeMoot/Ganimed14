@@ -119,11 +119,9 @@
   description: A medium voltage power cable.
   components:
   - type: Sprite
-    color: Yellow
     sprite: _Ganimed/Structures/Power/Cables/mv_cable.rsi # Cats edit
     state: mvcable_0
   - type: Icon
-    color: Yellow
     sprite: _Ganimed/Structures/Power/Cables/mv_cable.rsi # Cats edit
     state: mvcable_4
   - type: NodeContainer
@@ -171,11 +169,9 @@
   description: A cable used to connect machines to an APC. #APCs aren't area defined anymore so need this cable to connect things to the APC. This description should be dynamic in future.
   components:
   - type: Sprite
-    color: Green
     sprite: _Ganimed/Structures/Power/Cables/lv_cable.rsi # Cats edit
     state: lvcable_0
   - type: Icon
-    color: Green
     sprite: _Ganimed/Structures/Power/Cables/lv_cable.rsi # Cats edit
     state: lvcable_4
   - type: NodeContainer

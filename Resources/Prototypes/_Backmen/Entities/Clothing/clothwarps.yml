@@ -14,7 +14,11 @@
     slots:
     - gloves
     - FEET
+    - UNDERSHIRT
+    - UNDERPANTS
+    - SOCKS
     sprite: Backmen/Clothing/Shoes/Misc/clothWrap.rsi
+    femaleMask: UniformFull
   - type: Construction
     graph: ClothingClothWrap
     node: shoes
@@ -35,4 +39,3 @@
   - type: Tag
     tags:
     - ClothMade
-    - WhitelistChameleon

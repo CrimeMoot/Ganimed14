@@ -11,13 +11,19 @@
   - Headphones
   - PlushieLizard
   - PlushieSpaceLizard
-  - ThreeCandles
   # Ganimed-Loadouts-Start
+  - PlushieMoth
+  - PlushieDiona
+  - PlushieVox
+  - PlushieSlime
+  - PlushieBee
+  - PlushieCarp
   - AmongPequeno
   - RubberDuck
   - XmasCrown
   - WarningCone
   # Ganimed-Loadouts-End
+  - ThreeCandles
   - Lighter
   - CigPackGreen
   - CigPackRed
@@ -26,9 +32,9 @@
   - CigarCase
   - CigarGold
   - SmokingPipe # Ganimed
-  # - ClothingNeckLGBTPin # TODO: readd
-  # - ClothingNeckAutismPin # TODO: readd
 # start-backmen: no pride
+#  - ClothingNeckLGBTPin
+#  - ClothingNeckAutismPin
 #  - ClothingNeckAromanticPin
 #  - ClothingNeckAsexualPin
 #  - ClothingNeckBisexualPin
@@ -64,7 +70,7 @@
   - ClothingNeckWhiteListPin
   # Corvax-Loadouts-End
   # Ganimed-Loadouts-Start
-  - GlowstickBase
+  - GlowstickGreen
   - GlowstickYellow
   - GlowstickRed
   - GlowstickPurple
@@ -102,7 +108,6 @@
   - GlassesSalesman
   - GlassesGar
   - GlassesGarOrange
-  - GlassesGarGiga
   # Ganimed-Loadouts-End
 
 - type: loadoutGroup
@@ -166,10 +171,10 @@
   - CaptainJumpskirtTurtleneck
   # Corvax-Loadouts-End
   # Ganimed-Loadouts-Start
+  - CaptainMaleParadeUniform
   - CaptainWhiteJumpsuit
   - CaptainWhiteJumpskirt
   - CaptainCommandSuit
-  - CaptainMaleParadeUniform
   # Ganimed-Loadouts-End
 
 - type: loadoutGroup
@@ -213,6 +218,7 @@
   loadouts:
   - CaptainBeltSabreSheath
   - CaptainBeltSabreSheathWhite
+  - ExtraShoulderHolster
 
 - type: loadoutGroup
   id: CaptainBackpack
@@ -252,7 +258,7 @@
   minLimit: 0
   loadouts:
   - AdministrationHud
-  - CheapSunglasses
+  - Sunglasses
   - Glasses
   - Eyepatch
   - GlassesJamjar
@@ -368,6 +374,7 @@
   minLimit: 0
   loadouts:
   - WaistBag
+  - Clipboard
 
 - type: loadoutGroup
   id: PassengerOuterClothing
@@ -425,6 +432,7 @@
   loadouts:
   - WaistBag
   - Bandolier
+  - ExtraShoulderHolster
 
 - type: loadoutGroup
   id: BartenderOuterClothing
@@ -530,7 +538,22 @@
   - LawyerJumpskirtRed
   - LawyerJumpsuitGood
   - LawyerJumpskirtGood
-  - JumpsuitNanotrasen # Ganimed
+
+- type: loadoutGroup # Ganimed
+  id: IAAJumpsuit
+  name: loadout-group-iaa-jumpsuit
+  loadouts:
+  - LawyerJumpsuit
+  - LawyerJumpskirt
+  - LawyerJumpsuitBlue
+  - LawyerJumpskirtBlue
+  - LawyerJumpsuitPurple
+  - LawyerJumpskirtPurple
+  - LawyerJumpsuitRed
+  - LawyerJumpskirtRed
+  - LawyerJumpsuitGood
+  - LawyerJumpskirtGood
+  - JumpsuitNanotrasen
 
 - type: loadoutGroup
   id: LawyerNeck
@@ -538,8 +561,25 @@
   minLimit: 0
   loadouts:
   - LawyerNeck
-  - NTBedsheet # Ganimed
-  - NanotrasenCloak # Ganimed
+
+- type: loadoutGroup # Ganimed
+  id: IAANeck
+  name: loadout-group-iaa-neck
+  minLimit: 0
+  loadouts:
+  - LawyerNeck
+  - NTBedsheet
+  - NanotrasenCloak
+
+- type: loadoutGroup # Ganimed
+  id: MagistrateHead
+  name: loadout-group-magistrate-head
+  minLimit: 0
+  loadouts:
+  - DetectiveFedoraGrey
+  - BartenderHead
+  - BartenderBowler
+  - JudgePwig
 
 - type: loadoutGroup # Ganimed
   id: MagistrateOuterClothing
@@ -616,9 +656,12 @@
   minLimit: 0
   loadouts:
   - ChaplainNeck
-  - HolyMedal # Ganimed
-  - ChaplainCloakBlack # Ganimed
-  - ChaplainCloakWhite # Ganimed
+  # Ganimed-Loadouts-Start
+  - HolyMedal
+  - CultBedsheet
+  - ChaplainCloakBlack
+  - ChaplainCloakWhite
+  # Ganimed-Loadouts-End
 
 - type: loadoutGroup # Ganimed
   id: ChaplainShoes
@@ -1052,6 +1095,7 @@
   minLimit: 0
   loadouts:
   - SalvageWebbing
+  - ToolbeltEmpty
   - SalvageOreBag
 
 - type: loadoutGroup # Ganimed
@@ -1077,7 +1121,7 @@
   - ChiefEngineerHead
   - ChiefEngineerBeret
   - ClothingHeadHatBeretChiefEngineering # cats
-  - ArmoredHarthat # Ganimed
+  - ArmoredHardhat # Ganimed
 
 - type: loadoutGroup
   id: ChiefEngineerJumpsuit
@@ -1252,6 +1296,7 @@
   - AtmosphericTechnicianWintercoat
   - SeniorEngineerWintercoat # cats
   - AtmosphericTechnicianBomberJacket # Ganimed
+  - FireSuit # Ganimed
 
 - type: loadoutGroup
   id: AtmosphericTechnicianBackpack
@@ -1269,6 +1314,7 @@
   - YellowShoes # Ganimed
   - BlueShoes # Ganimed
   - EngineeringWinterBoots
+  - WorkBoots # Ganimed
 
 - type: loadoutGroup
   id: SurvivalExtended
@@ -1436,6 +1482,7 @@
   - ScientistBioSuit
   - RadSuit
   - ScienceBombSuit
+  - ScienceFireSuit
   # Ganimed-Loadouts-End
 
 - type: loadoutGroup
@@ -1694,6 +1741,7 @@
   - CombatBoots # Ganimed
   - SecurityWinterBoots
   - BlackCowboyBoots # Ganimed
+  - HighheelBoots # Ganimed
 
 - type: loadoutGroup
   id: SecurityPDA
@@ -1707,7 +1755,10 @@
   name: loadout-group-security-pocket
   loadouts:
   - WeaponEnergyGunDominator
-  - WeaponPistolM1911 # Ganimed
+  - WeaponMultiphaseEnergyGun # Ganimed
+  # - WeaponPistolG22 # Ganimed
+  # - WeaponPistolM1911 # Ganimed
+  # - WeaponRevolverNY # Ganimed
 
 - type: loadoutGroup # Backmen
   id: SecurityPocket2
@@ -1723,6 +1774,7 @@
   loadouts:
   - DetectiveFedora
   - DetectiveFedoraGrey
+  - SecurityBeret # Ganimed
 
 - type: loadoutGroup
   id: DetectiveNeck
@@ -1730,6 +1782,7 @@
   minLimit: 0
   loadouts:
   - DetectiveTie
+  - DetectiveHorrificNecktie # Ganimed
 
 - type: loadoutGroup
   id: DetectiveJumpsuit
@@ -1739,8 +1792,9 @@
   - DetectiveJumpskirt
   - NoirJumpsuit
   - NoirJumpskirt
-  - JumpsuitDecSerii
-  - ClothingJumpsuitDecSerii
+  - JumpsuitDecSerii # Ganimed
+  - ClothingJumpsuitDecSerii # Ganimed
+  - SuperstarCopJumpsuit # Ganimed
 
 - type: loadoutGroup
   id: DetectiveOuterClothing
@@ -1749,8 +1803,22 @@
   - DetectiveArmorVest
   - DetectiveCoat
   - DetectiveCoatGrey
-  - DetectiveCoatOriginal # Ganimed
-  - DetectiveCoatDark # Ganimed
+  # Ganimed-Loadouts-Start
+  - DetectiveCoatOriginal
+  - DetectiveCoatDark
+  - DetectiveCoatDesertDMC
+  - DetectiveCoatBlackDMC
+  - DetectiveDiscoBlazer
+  # Ganimed-Loadouts-End
+
+- type: loadoutGroup # Ganimed
+  id: DetectiveBackpack
+  name: loadout-group-detective-backpack
+  loadouts:
+  - SecurityBackpack
+  - SecuritySatchel
+  - SecurityDuffel
+  - LeatherSatchel
 
 - type: loadoutGroup # Ganimed
   id: DetectiveBelt
@@ -1778,16 +1846,17 @@
   - BrownShoes
   - LeatherShoesWhitelisted
   - LaceupShoesWhitelisted
+  - GreenLizardskinShoes
 
 - type: loadoutGroup # Backmen
   id: DetectiveRevolver
   name: loadout-group-security-pocket
   loadouts:
-  - WeaponRevolverR44
   - WeaponRevolverInspector
-  - WeaponRevolverRebota
+  - WeaponRevolverR44
+  - WeaponRevolverNY
+  # - WeaponRevolverRebota
   # - WeaponRevolverCMB
-  # - WeaponRevolverNY
 
 - type: loadoutGroup
   id: SecurityCadetJumpsuit
@@ -1962,10 +2031,10 @@
   - SeniorPhysicianWintercoat # cats
   # Ganimed-Loadouts-Start
   - GeneticsLabCoat
-  - VirologyLabCoat
-  - CoronerLabCoat
   - GeneticsWintercoat
+  - VirologyLabCoat
   - VirologyWintercoat
+  - CoronerLabCoat
   - VirologyBioSuit
   # Ganimed-Loadouts-End
 
@@ -1990,6 +2059,14 @@
   - VirologyBackpack
   - VirologySatchel
   - VirologyDuffel
+
+- type: loadoutGroup # Ganimed
+  id: MedicalBelt
+  name: loadout-group-medical-doctor-belt
+  loadouts:
+  - MedicalBeltTopical
+  - MedicalBeltSurgical
+  - MedicalBeltMedication
 
 - type: loadoutGroup
   id: MedicalShoes
@@ -2163,6 +2240,7 @@
 - type: loadoutGroup # Ganimed
   id: BoxerHead
   name: loadout-group-boxer-head
+  minLimit: 0
   loadouts:
   - TacticalHeadband
   - Casa

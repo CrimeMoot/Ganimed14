@@ -7,12 +7,16 @@
     - !type:DepartmentTimeRequirement
       department: Science
       time: 36000 #10 hrs
+    - !type:DepartmentTimeRequirement
+      department: Silicon
+      time: 18000 #5 hrs
   startingGear: RoboticistGear
   icon: "JobIconRoboticist"
   supervisors: job-supervisors-rd
   access:
   - Research
   - Maintenance
+  #- Robotics
   #start-backmen: currency
   minBankBalance: 150
   maxBankBalance: 250

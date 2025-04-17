@@ -243,6 +243,20 @@
   equipment:
     outerClothing: ClothingOuterSuitBomb
 
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: ScienceFireSuit
+  dummyEntity: ClothingOuterSuitFire
+  effects:
+  #- !type:WhitelistedLoadoutEffect
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobAtmosphericTechnician
+      time: 108000 #30 hrs
+  equipment:
+    outerClothing: ClothingOuterSuitFire
+    head: ClothingHeadHelmetFire
+
 # Gloves
 - type: loadout
   id: LatexGloves

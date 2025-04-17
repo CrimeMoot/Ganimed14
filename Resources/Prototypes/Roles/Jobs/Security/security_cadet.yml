@@ -6,10 +6,13 @@
   requirements:
     - !type:OverallPlaytimeRequirement
       time: 36000 #10 hrs # Corvax-RoleTime
-    - !type:DepartmentTimeRequirement
-      department: Security
-      time: 72000 #20 hrs # Corvax-RoleTime
-      inverted: true # stop playing intern if you're good at security!
+    #- !type:DepartmentTimeRequirement
+    #  department: Security
+    #  time: 72000 #20 hrs # Corvax-RoleTime
+    #  inverted: true # stop playing intern if you're good at security!
+    - !type:AgeRequirement
+      inverted: true
+      requiredAge: 70 # Ganimed-MRP
   startingGear: SecurityCadetGear
   icon: "JobIconSecurityCadet"
   supervisors: job-supervisors-security
@@ -18,6 +21,7 @@
   - Security
   - Brig
   - Maintenance
+  extendedAccess:
   - Service
   - External
   - Cryogenics
@@ -34,12 +38,12 @@
 - type: startingGear
   id: SecurityCadetGear
   equipment:
-    shoes: ClothingShoesBootsJackSec # Corvax-Resprite-MRP
+    shoes: ClothingShoesBootsJackSecFilled # Corvax-Resprite-MRP
     outerClothing: ClothingOuterArmorBasic
     id: SecurityCadetPDA
     ears: ClothingHeadsetSecurity
     belt: ClothingBeltSecurityFilled
-    pocket2: BookSpaceLaw # Corvax-HyperLink
+    pocket2: BookSecurity
   storage:
     back:
     - Flash

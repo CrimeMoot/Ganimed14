@@ -16,8 +16,16 @@
 
 - type: jobIcon
   parent: JobIcon
-  id: JobIconSecurityEnginer
+  id: JobIconSecurityEngineer
   icon:
     sprite: /Textures/Interface/Misc/job_icons.rsi
     state: SecurityEngineer
-  jobName: job-name-security-enginer
+  jobName: job-name-security-engineer
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconCluwne
+  icon:
+    sprite: /Textures/Interface/Misc/job_icons.rsi
+    state: Cluwne
+  jobName: job-name-cluwne

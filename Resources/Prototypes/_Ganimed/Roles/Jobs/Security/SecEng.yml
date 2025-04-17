@@ -1,19 +1,19 @@
 - type: job
   id: SecurityEngineer
-  name: job-name-security-enginer
-  description: job-description-security-enginer
-  playTimeTracker: JobSecurityEnginer
+  name: job-name-security-engineer
+  description: job-description-security-engineer
+  playTimeTracker: JobSecurityEngineer
   requirements:
     - !type:DepartmentTimeRequirement
       department: Engineering
-      time: 13000
+      time: 36000 #10 hrs
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 13000
+      time: 21600 #6 hrs
     - !type:AgeRequirement
-      requiredAge: 21
+      requiredAge: 20 # Ganimed-MRP
   startingGear: SecurityEngineerGear
-  icon: "JobIconSecurityEnginer"
+  icon: "JobIconSecurityEngineer"
   supervisors: job-supervisors-hos
   canBeAntag: false
   access:
@@ -22,6 +22,12 @@
   - Maintenance
   - External
   - Engineering
+  #start-backmen: currency
+  minBankBalance: 200
+  maxBankBalance: 400
+  wageDepartment: Security
+  wage: 100
+  #end-backmen: currency
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
@@ -31,20 +37,15 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitSecEngineer
     back: ClothingBackpackSecurityEngineer
-    shoes: ClothingShoesBootsJackSecEnginer
+    shoes: ClothingShoesBootsJackSecEngineer
     eyes: ClothingEyesHudSecEng
-    gloves: ClothingHandsGlovesColorYellow
-    head: ClothingHeadHatWeldingMaskFlame
     id: SecurityEngineerPDA
-    outerClothing: ClothingOuterVestHazard
     suitstorage: SecBreachingHammer
     ears: ClothingHeadsetSecurityEngineer
     belt: ClothingMilitaryWebbingSecEng
   storage:
     back:
-    - SecRCD
     - RCDAmmo
     - RCDAmmo
     - LPPC4Low
     - LPPC4Low
-    - BoxSurvivalSecurity

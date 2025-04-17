@@ -46,7 +46,7 @@
     head: ClothingHeadHatBeretChiefEngineering   # cats
 
 - type: loadout # Ganimed TODO: Whitelist restriction
-  id: ArmoredHarthat
+  id: ArmoredHardhat
   equipment:
     head: ClothingHeadHatHardhatArmored
   effects:
@@ -106,7 +106,7 @@
 - type: loadout # TODO: Whitelist restriction
   id: EngineeringSunglasses
   equipment:
-    eyes: ClothingEyesGlassesHudSunglassesEnginering
+    eyes: ClothingEyesGlassesHudSunglassesEngineering
   effects:
   #- !type:WhitelistedLoadoutEffect
   - !type:GroupLoadoutEffect

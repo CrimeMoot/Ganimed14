@@ -83,7 +83,6 @@
       - CrewManifestCartridge
       - NotekeeperCartridge
       - BankCartridge
-      - GlimmerMonitorCartridge
       - NewsReaderCartridge
     cartridgeSlot:
       priority: -1
@@ -1377,7 +1376,7 @@
   - type: Pda
     id: ReporterIDCard
     penSlot:
-      startingItem: LuxuryPen
+      startingItem: PenMedia
       priority: -1
       whitelist:
         tags:

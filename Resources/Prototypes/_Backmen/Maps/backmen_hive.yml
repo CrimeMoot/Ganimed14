@@ -63,7 +63,7 @@
             Quartermaster: [ 1, 1 ]
             CargoTechnician: [ 3, 4 ]
             SalvageSpecialist: [ 2, 3 ]
-            Deliveryman: [ 2, 2 ]
+            Deliveryman: [ 1, 2 ]
           #silicon
             StationAi: [ 1, 1 ]
             #BKBPLATech: [0, 3]

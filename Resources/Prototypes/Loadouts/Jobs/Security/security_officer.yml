@@ -304,6 +304,13 @@
   effects:
   - !type:SponsorLoadoutEffect
 
+- type: loadout
+  id: HighheelBoots
+  equipment:
+    shoes: ClothingShoesHighheelBootsFilled
+  effects:
+  - !type:SponsorLoadoutEffect
+
 # PDA
 - type: loadout
   id: SecurityPDA
@@ -332,6 +339,11 @@
   id: WeaponEnergyGunDominator
   equipment:
     pocket1: WeaponEnergyGunDominator
+
+- type: loadout # Ganimed
+  id: WeaponMultiphaseEnergyGun
+  equipment:
+    pocket1: WeaponMultiphaseEnergyGun
 
 - type: loadout
   id: WeaponPistolG22

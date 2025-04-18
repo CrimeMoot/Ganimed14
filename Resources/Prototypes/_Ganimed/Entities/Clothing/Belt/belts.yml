@@ -19,9 +19,9 @@
   - type: Storage
     maxItemSize: Small
     grid:
-    - 0,0,1,1
+    - 0,0,0,1
     - 2,0,5,1
-    - 7,0,8,1
+    - 7,0,7,1
     whitelist:
       tags:
         - MagazineShotgun
@@ -72,8 +72,8 @@
         name: Sidearm
         insertVerbText: holster-insert-verb-text
         ejectVerbText: holster-eject-verb-text
-        #insertSound: /Audio/Items/sheath.ogg
-        #ejectSound: /Audio/Items/unsheath.ogg
+        #insertSound: /..
+        ejectSound: /Audio/_Ganimed/Items/holster_eject.ogg
         priority: 2
         whitelist:
           tags:
@@ -107,8 +107,8 @@
         name: Sidearm
         insertVerbText: holster-insert-verb-text
         ejectVerbText: holster-eject-verb-text
-        insertSound: /Audio/_Ganimed/Items/holster_undraw.ogg
-        ejectSound: /Audio/_Ganimed/Items/holster_draw.ogg
+        #insertSound: /..
+        ejectSound: /Audio/_Ganimed/Items/holster_eject.ogg
         priority: 2
         whitelist:
           components:
@@ -147,7 +147,7 @@
     sprite: _Ganimed/Clothing/Belt/shotgunbelt.rsi
   - type: Storage
     grid:
-    - 0,0,7,6
+    - 0,0,7,5
     maxItemSize: Small
     whitelist:
       tags:

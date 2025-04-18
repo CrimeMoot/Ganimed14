@@ -546,3 +546,15 @@
 
 - type: Tag
   id: ADTMinerArmor
+
+- type: Tag
+  id: ADTBsoWeapon
+
+- type: Tag
+  id: ADTBatonBlocker
+
+- type: Tag
+  id: ADTCartridgeMagnumLesser
+
+- type: Tag
+  id: ADTSpeedLoaderMagnumLesser

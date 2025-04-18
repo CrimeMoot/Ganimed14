@@ -55,8 +55,8 @@
   - type: Appearance
   - type: Foldable #рп реализация кобуры для правшей и левшей
     canFoldInsideContainer: true #без этого кобура нормально работает только в одном состоянии
-    unfoldVerbText: fold-flip-verb
-    foldVerbText: fold-flip-verb
+    unfoldVerbText: holster-unfold-verb-text
+    foldVerbText: holster-fold-verb-text
   - type: FoldableClothing
     foldedEquippedPrefix: reflected
   - type: Storage # вайтлиста нет, ограничения сделаны по максимальному размеру и сетке инвентаря

@@ -2207,6 +2207,8 @@
   loadouts:
   - PsychologistJumpsuit
   - PsychologistJumpskirt
+  - PsychologistShortsleeveJumpsuit
+  - PsychologistShortsleeveJumpskirt
 
 - type: loadoutGroup # Ganimed
   id: PsychologistShoes

@@ -841,6 +841,24 @@
     proto: Doctor
 
 - type: loadout
+  id: SpareShortsleeveSuit
+  storage:
+    back:
+    - ClothingUniformJumpsuitShortsleeveSuit
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: Doctor
+
+- type: loadout
+  id: SpareShortsleeveSuitskirt
+  storage:
+    back:
+    - ClothingUniformJumpskirtShortsleeveSuit
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: Doctor
+
+- type: loadout
   id: SpareNoirSuit
   storage:
     back:

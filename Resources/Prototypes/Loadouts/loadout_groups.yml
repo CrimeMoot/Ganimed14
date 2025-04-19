@@ -1632,6 +1632,7 @@
   - WardenHead
   - WardenCapAlt # Ganimed
   - WardenBeret
+  - SecurityBeret # Ganimed
 
 - type: loadoutGroup
   id: WardenJumpsuit
@@ -1792,9 +1793,12 @@
   - DetectiveJumpskirt
   - NoirJumpsuit
   - NoirJumpskirt
-  - JumpsuitDecSerii # Ganimed
-  - ClothingJumpsuitDecSerii # Ganimed
-  - SuperstarCopJumpsuit # Ganimed
+  # Ganimed-Loadouts-Start
+  - JumpsuitDecSerii
+  - ClothingJumpsuitDecSerii
+  - SecurityUniformBlueShirt
+  - SuperstarCopJumpsuit
+  # Ganimed-Loadouts-End
 
 - type: loadoutGroup
   id: DetectiveOuterClothing

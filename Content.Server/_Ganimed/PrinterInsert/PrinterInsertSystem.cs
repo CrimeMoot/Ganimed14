@@ -59,7 +59,7 @@ public sealed class PrinterInsertSystem : EntitySystem
         var station = _stationSystem.GetOwningStation(entity);
         if (station != null)
         {
-            var data = DateTime.Today.ToShortDateString().Replace("202", "302");
+            var data = DateTime.Today.ToShortDateString().Replace("202", "259");
             var time = _gameTiming.CurTime.Subtract(_gameTicker.RoundStartTimeSpan).ToString("hh\\:mm\\:ss");
             var datatime = "Время от начала смены и дата: " + time + " " + data;
             _paperSystem.SetContent(entity, entity.Comp.Content.Replace("Station XX-000", Name(station.Value)));

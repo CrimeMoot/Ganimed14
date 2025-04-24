@@ -9,7 +9,7 @@
   - type: Clothing
     sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/white.rsi
     clothingVisuals:
-      undershirt:
+      underweart:
         - state: equipped-UNDERWEART
 
 - type: entity
@@ -24,7 +24,7 @@
   - type: Clothing
     sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/white.rsi
     clothingVisuals:
-      undershirt:
+      underweart:
         - state: equipped-UNDERWEART
           color: "#3f3f3f"
 
@@ -40,7 +40,7 @@
   - type: Clothing
     sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/white.rsi
     clothingVisuals:
-      undershirt:
+      underweart:
         - state: equipped-UNDERWEART
           color: "#0089EF"
 
@@ -56,7 +56,7 @@
   - type: Clothing
     sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/white.rsi
     clothingVisuals:
-      undershirt:
+      underweart:
         - state: equipped-UNDERWEART
           color: "#5ABF2F"
 
@@ -72,7 +72,7 @@
   - type: Clothing
     sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/white.rsi
     clothingVisuals:
-      undershirt:
+      underweart:
         - state: equipped-UNDERWEART
           color: "#723A02"
 
@@ -88,7 +88,7 @@
   - type: Clothing
     sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/white.rsi
     clothingVisuals:
-      undershirt:
+      underweart:
         - state: equipped-UNDERWEART
           color: "#940000"
 
@@ -104,7 +104,7 @@
   - type: Clothing
     sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/white.rsi
     clothingVisuals:
-      undershirt:
+      underweart:
         - state: equipped-UNDERWEART
           color: "#EBE216"
 
@@ -120,7 +120,7 @@
   - type: Clothing
     sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/bigwhite.rsi
     clothingVisuals:
-      undershirt:
+      underweart:
         - state: equipped-UNDERWEART
 
 - type: entity
@@ -135,7 +135,7 @@
   - type: Clothing
     sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/bigwhite.rsi
     clothingVisuals:
-      undershirt:
+      underweart:
         - state: equipped-UNDERWEART
           color: "#3f3f3f"
 
@@ -151,7 +151,7 @@
   - type: Clothing
     sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/bigwhite.rsi
     clothingVisuals:
-      undershirt:
+      underweart:
         - state: equipped-UNDERWEART
           color: "#0089EF"
 
@@ -167,7 +167,7 @@
   - type: Clothing
     sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/bigwhite.rsi
     clothingVisuals:
-      undershirt:
+      underweart:
         - state: equipped-UNDERWEART
           color: "#5ABF2F"
 
@@ -183,7 +183,7 @@
   - type: Clothing
     sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/bigwhite.rsi
     clothingVisuals:
-      undershirt:
+      underweart:
         - state: equipped-UNDERWEART
           color: "#723A02"
 
@@ -199,7 +199,7 @@
   - type: Clothing
     sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/bigwhite.rsi
     clothingVisuals:
-      undershirt:
+      underweart:
         - state: equipped-UNDERWEART
           color: "#940000"
 
@@ -215,7 +215,7 @@
   - type: Clothing
     sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/bigwhite.rsi
     clothingVisuals:
-      undershirt:
+      underweart:
         - state: equipped-UNDERWEART
           color: "#EBE216"
 
@@ -231,7 +231,7 @@
   - type: Clothing
     sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/alterwhite.rsi
     clothingVisuals:
-      undershirt:
+      underweart:
         - state: equipped-UNDERWEART
 
 - type: entity
@@ -246,7 +246,7 @@
   - type: Clothing
     sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/alterwhite.rsi
     clothingVisuals:
-      undershirt:
+      underweart:
         - state: equipped-UNDERWEART
           color: "#3f3f3f"
 
@@ -262,7 +262,7 @@
   - type: Clothing
     sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/alterwhite.rsi
     clothingVisuals:
-      undershirt:
+      underweart:
         - state: equipped-UNDERWEART
           color: "#0089EF"
 
@@ -278,7 +278,7 @@
   - type: Clothing
     sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/alterwhite.rsi
     clothingVisuals:
-      undershirt:
+      underweart:
         - state: equipped-UNDERWEART
           color: "#5ABF2F"
 
@@ -294,7 +294,7 @@
   - type: Clothing
     sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/alterwhite.rsi
     clothingVisuals:
-      undershirt:
+      underweart:
         - state: equipped-UNDERWEART
           color: "#723A02"
 
@@ -310,7 +310,7 @@
   - type: Clothing
     sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/alterwhite.rsi
     clothingVisuals:
-      undershirt:
+      underweart:
         - state: equipped-UNDERWEART
           color: "#940000"
 
@@ -326,7 +326,7 @@
   - type: Clothing
     sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/alterwhite.rsi
     clothingVisuals:
-      undershirt:
+      underweart:
         - state: equipped-UNDERWEART
           color: "#EBE216"
 
@@ -342,7 +342,7 @@
   - type: Clothing
     sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/anime.rsi
     clothingVisuals:
-      undershirt:
+      underweart:
         - state: equipped-UNDERWEART
 
 - type: entity
@@ -356,7 +356,7 @@
   - type: Clothing
     sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/cat.rsi
     clothingVisuals:
-      undershirt:
+      underweart:
         - state: equipped-UNDERWEART
 
 - type: entity
@@ -370,7 +370,7 @@
   - type: Clothing
     sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/cloth.rsi
     clothingVisuals:
-      undershirt:
+      underweart:
         - state: equipped-UNDERWEART
 
 - type: entity
@@ -384,7 +384,7 @@
   - type: Clothing
     sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/flower.rsi
     clothingVisuals:
-      undershirt:
+      underweart:
         - state: equipped-UNDERWEART
 
 - type: entity
@@ -398,7 +398,7 @@
   - type: Clothing
     sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/heart.rsi
     clothingVisuals:
-      undershirt:
+      underweart:
         - state: equipped-UNDERWEART
 
 - type: entity
@@ -412,7 +412,7 @@
   - type: Clothing
     sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/mirabrassiere.rsi
     clothingVisuals:
-      undershirt:
+      underweart:
         - state: equipped-UNDERWEART
 
 #Tshirt
@@ -427,7 +427,7 @@
   - type: Clothing
     sprite: _Ganimed/Clothing/Under/Shirt/Tshirt/shirt.rsi
     clothingVisuals:
-      undershirt:
+      underweart:
         - state: equipped-UNDERWEART
 
 - type: entity
@@ -442,7 +442,7 @@
   - type: Clothing
     sprite: _Ganimed/Clothing/Under/Shirt/Tshirt/shirt.rsi
     clothingVisuals:
-      undershirt:
+      underweart:
         - state: equipped-UNDERWEART
           color: "#3f3f3f"
 
@@ -458,7 +458,7 @@
   - type: Clothing
     sprite: _Ganimed/Clothing/Under/Shirt/Tshirt/shirt.rsi
     clothingVisuals:
-      undershirt:
+      underweart:
         - state: equipped-UNDERWEART
           color: "#0089EF"
 
@@ -474,7 +474,7 @@
   - type: Clothing
     sprite: _Ganimed/Clothing/Under/Shirt/Tshirt/shirt.rsi
     clothingVisuals:
-      undershirt:
+      underweart:
         - state: equipped-UNDERWEART
           color: "#5ABF2F"
 
@@ -490,7 +490,7 @@
   - type: Clothing
     sprite: _Ganimed/Clothing/Under/Shirt/Tshirt/shirt.rsi
     clothingVisuals:
-      undershirt:
+      underweart:
         - state: equipped-UNDERWEART
           color: "#723A02"
 
@@ -506,7 +506,7 @@
   - type: Clothing
     sprite: _Ganimed/Clothing/Under/Shirt/Tshirt/shirt.rsi
     clothingVisuals:
-      undershirt:
+      underweart:
         - state: equipped-UNDERWEART
           color: "#940000"
 
@@ -522,6 +522,6 @@
   - type: Clothing
     sprite: _Ganimed/Clothing/Under/Shirt/Tshirt/shirt.rsi
     clothingVisuals:
-      undershirt:
+      underweart:
         - state: equipped-UNDERWEART
           color: "#EBE216"

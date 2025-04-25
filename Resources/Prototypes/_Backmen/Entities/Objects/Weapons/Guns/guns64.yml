@@ -297,7 +297,7 @@
     - NoSpinOnThrow
     - FireThrowerBall
   - type: TimedDespawn
-    lifetime: 4
+    lifetime: 3
   - type: ThrowingAngle
     angle: 0
   - type: IgniteOnCollide

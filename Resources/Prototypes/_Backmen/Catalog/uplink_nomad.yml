@@ -168,7 +168,7 @@
 - type: listing
   id: UplinkPPSH41Bundle
   name: набор "PPSH41"
-  description: ПиПиСиЭйч 41, стандартный пистолет-пулемет на вооружении СССП, попал на черный рынок из-за частых "набегов" на склады СССП, явно не проданных местными командирами. В комплетке 2 магазина.
+  description: ППШ 41, стандартный пистолет-пулемет на вооружении СССП, попал на черный рынок из-за частых "набегов" на склады СССП, явно не проданных местными командирами. В комплетке 2 магазина.
   icon: { sprite: Backmen/Objects/Weapons/Gunsx64/SMGs/ppsh41/big.rsi, state: icon }
   productEntity: ClothingBackpackDuffelSyndicateFilledPPSH41
   cost:
@@ -393,11 +393,11 @@
 - type: listing
   id: UplinkFlamethrowerBundle
   name: набор "Огнемет М6"
-  description: Огнемет имеющий шланг под специальный резервуар с огненой смесью, которая способна гореть даже в полном вакууме! Имеет в наборе 1 powerpack.
+  description: Огнемет имеющий шланг под специальный резервуар с огненой смесью, идущей в комплекте.
   icon: { sprite: Backmen/Objects/Weapons/Gunsx64/Flamethrowers/M6/big.rsi, state: icon }
   productEntity: CrateFlamethrowerBundle
   cost:
-    Telecrystal: 12
+    Telecrystal: 13
   categories:
   - UplinkBundles
 
@@ -413,27 +413,27 @@
       - id: WeaponflamethrowerSG
       - id: PowerpackFlame
 
-- type: listing
-  id: UplinkFlamethrower
-  name: Огнемет М6
-  description: Огнемет с небольшой специальным портом под маленькие баллоны с огненой смесью, которая способна гореть даже в полном вакууме!
-  icon: { sprite: Backmen/Objects/Weapons/Gunsx64/Flamethrowers/M6/big.rsi, state: icon }
-  productEntity: FirethrowerGun
-  cost:
-    Telecrystal: 5
-  categories:
-  - UplinkWeaponry
+#- type: listing
+#  id: UplinkFlamethrower
+#  name: Огнемет М6
+#  description: Огнемет с небольшой специальным портом под маленькие баллоны с огненой смесью, которая способна гореть даже в полном вакууме!
+#  icon: { sprite: Backmen/Objects/Weapons/Gunsx64/Flamethrowers/M6/big.rsi, state: icon }
+#  productEntity: FirethrowerGun
+#  cost:
+#    Telecrystal: 8
+#  categories:
+#  - UplinkWeaponry
 
-- type: listing
-  id: UplinkFuelTankFirethrower
-  name: Топливный бак
-  description: Топливный бак для огнемёта.
-  icon: { sprite: Backmen/Objects/Weapons/Gunsx64/Flamethrowers/tank.rsi, state: base }
-  productEntity: FuelTankFirethrower
-  cost:
-    Telecrystal: 1
-  categories:
-  - UplinkAmmo
+#- type: listing
+#  id: UplinkFuelTankFirethrower
+#  name: Топливный бак
+#  description: Топливный бак для огнемёта.
+#  icon: { sprite: Backmen/Objects/Weapons/Gunsx64/Flamethrowers/tank.rsi, state: base }
+#  productEntity: FuelTankFirethrower
+#  cost:
+#    Telecrystal: 3
+#  categories:
+#  - UplinkAmmo
 
 - type: listing
   id: UplinkSniperSR127Bundle

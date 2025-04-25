@@ -7,14 +7,16 @@
 /Content.*.Database/ @CrimeMoot
 
 # C# content
-/Content.Shared/ @CrimeMoot
-/Content.Server/ @CrimeMoot
-/Content.Client/ @CrimeMoot
+*.cs @CrimeMoot
+/Content.*/ @CrimeMoot
+/Content.*/_Ganimed/ @CrimeMoot
 
 # YAML and prototypes
+*.yml @CrimeMoot @RedSpyy
 /Resources/Prototypes/ @CrimeMoot @RedSpyy
 
 # Localization
+*.ftl @HyperB1
 /Resources/Locale/ru-RU/ @HyperB1
 
 # Head Mapper
@@ -23,6 +25,8 @@
 /Resources/Prototypes/_Ganimed/Maps/** @AltMapper
 
 # Sprites and design (Head Spriter vacant)
+# *.png
+# *meta.json
 # /Resources/Textures/
 
 # Unique content
@@ -33,6 +37,7 @@
 /Resources/Prototypes/_Ganimed/Entities/Objects/Weapons/ @RedSpyy
 
 # Lore, Wiki, Guidebook & Rules
+*.xml @HyperB1
 /Resources/ServerInfo/ @AltMapper @Yuoko @HyperB1
 /Resources/Prototypes/Guidebook/ @AltMapper @Yuoko @HyperB1
 /Resources/Prototypes/_Ganimed/Guidebook/ @AltMapper @Yuoko @HyperB1

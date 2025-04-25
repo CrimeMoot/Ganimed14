@@ -397,7 +397,7 @@
   icon: { sprite: Backmen/Objects/Weapons/Gunsx64/Flamethrowers/M6/big.rsi, state: icon }
   productEntity: CrateFlamethrowerBundle
   cost:
-    Telecrystal: 13
+    Telecrystal: 16
   categories:
   - UplinkBundles
 

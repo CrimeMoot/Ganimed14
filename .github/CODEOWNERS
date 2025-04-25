@@ -1,11 +1,38 @@
 # Last match in file takes precedence.
 
 # Ping for all PRs
-* @Rxup
+* @CrimeMoot
+
+# Database
+/Content.*.Database/ @CrimeMoot
+
+# C# content
+/Content.Shared/ @CrimeMoot
+/Content.Server/ @CrimeMoot
+/Content.Client/ @CrimeMoot
+
+# YAML and prototypes
+/Resources/Prototypes/ @CrimeMoot @RedSpyy
+
+# Localization
+/Resources/Locale/ru-RU/ @HyperB1
 
 # Head Mapper
-/Resources/Maps/** @Roudenn
+/Resources/Maps/** @AltMapper
+/Resources/Prototypes/Maps/** @AltMapper
+/Resources/Prototypes/_Ganimed/Maps/** @AltMapper
 
-# Head Spriter
-*.png @CatBackGround
+# Sprites and design (Head Spriter vacant)
+# /Resources/Textures/
 
+# Unique content
+/Resources/Prototypes/Loadouts/ @HyperB1
+/Resources/Prototypes/_Ganimed/Loadouts/ @HyperB1
+/Resources/Prototypes/_Ganimed/Entities/Clothing/ @AltMapper
+/Resources/Prototypes/Entities/Objects/Weapons/ @RedSpyy
+/Resources/Prototypes/_Ganimed/Entities/Objects/Weapons/ @RedSpyy
+
+# Lore, Wiki, Guidebook & Rules
+/Resources/ServerInfo/ @AltMapper @Yuoko @HyperB1
+/Resources/Prototypes/Guidebook/ @AltMapper @Yuoko @HyperB1
+/Resources/Prototypes/_Ganimed/Guidebook/ @AltMapper @Yuoko @HyperB1

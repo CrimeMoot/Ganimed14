@@ -41,7 +41,7 @@
     fireRate: 4
     cameraRecoilScalar: 0.2
     maxAngle: 60
-    minAngle: 60
+    minAngle: 50
     selectedMode: FullAuto
     availableModes:
       - FullAuto
@@ -147,7 +147,7 @@
     fireRate: 4
     cameraRecoilScalar: 0.2
     maxAngle: 60
-    minAngle: 60
+    minAngle: 50
     soundGunshot:
       path: /Audio/Weapons/Guns64/Flamethrowers/flamethrower.ogg
     soundEmpty:
@@ -220,7 +220,7 @@
       - TankFlamethrower
   - type: BallisticAmmoProvider
     mayTransfer: true
-    capacity: 100
+    capacity: 50
     proto: FireThrowerBall
     whitelist:
       tags:
@@ -250,7 +250,7 @@
   - type: DamageOnLand
     damage:
       types:
-        Blunt: 1
+        Heat: 1
   - type: Damageable
     damageContainer: Biological
   - type: Destructible
@@ -362,7 +362,7 @@
     sound:
       path: /Audio/Effects/fire.ogg
   - type: IgniteOnCollide
-    fireStacks: 0.5
+    fireStacks: 0.75
     count: 100
     fixtureId: fix1
   - type: Transform

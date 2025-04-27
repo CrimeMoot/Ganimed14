@@ -14,6 +14,9 @@
     slots:
     - gloves
     - FEET
+    - UNDERSHIRT
+    - UNDERPANTS
+    - SOCKS
     sprite: Backmen/Clothing/Shoes/Misc/clothWrap.rsi
   - type: Construction
     graph: ClothingClothWrap

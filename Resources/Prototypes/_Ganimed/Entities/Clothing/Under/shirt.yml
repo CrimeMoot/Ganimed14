@@ -375,20 +375,6 @@
 
 - type: entity
   parent: ClothingUnderShirtBase
-  id: ClothingClothBrassiere
-  name: brassiere
-  description: Make them loins buzz!
-  components:
-  - type: Sprite
-    sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/cloth.rsi
-  - type: Clothing
-    sprite: _Ganimed/Clothing/Under/Shirt/Brassiere/cloth.rsi
-    clothingVisuals:
-      undershirt:
-        - state: equipped-INNERCLOTHING
-
-- type: entity
-  parent: ClothingUnderShirtBase
   id: ClothingFlowerBrassiere
   name: brassiere
   description: Make them loins buzz!

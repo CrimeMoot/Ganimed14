@@ -9,6 +9,16 @@
   equipment:
     jumpsuit: ClothingUniformJumpskirtPsychologist
 
+- type: loadout # Ganimed
+  id: PsychologistShortsleeveJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitShortsleeveSuit
+
+- type: loadout # Ganimed
+  id: PsychologistShortsleeveJumpskirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtShortsleeveSuit
+
 # Shoes, Ganimed
 - type: loadout
   id: LeatherShoes

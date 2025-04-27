@@ -37,11 +37,11 @@
       - BACK
       - SUITSTORAGE
   - type: Gun
-    projectileSpeed: 5
-    fireRate: 10
+    projectileSpeed: 10
+    fireRate: 4
     cameraRecoilScalar: 0.2
     maxAngle: 60
-    minAngle: 60
+    minAngle: 50
     selectedMode: FullAuto
     availableModes:
       - FullAuto
@@ -107,7 +107,7 @@
     whitelist:
       tags:
         - FireThrowerBall
-    capacity: 2000
+    capacity: 300
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
@@ -143,11 +143,11 @@
   - type: Item
     sprite: Backmen/Objects/Weapons/Gunsx64/Flamethrowers/M6/tiny.rsi
   - type: Gun
-    projectileSpeed: 5
-    fireRate: 10
+    projectileSpeed: 10
+    fireRate: 4
     cameraRecoilScalar: 0.2
     maxAngle: 60
-    minAngle: 60
+    minAngle: 50
     soundGunshot:
       path: /Audio/Weapons/Guns64/Flamethrowers/flamethrower.ogg
     soundEmpty:
@@ -220,7 +220,7 @@
       - TankFlamethrower
   - type: BallisticAmmoProvider
     mayTransfer: true
-    capacity: 100
+    capacity: 50
     proto: FireThrowerBall
     whitelist:
       tags:
@@ -250,7 +250,7 @@
   - type: DamageOnLand
     damage:
       types:
-        Blunt: 1
+        Heat: 1
   - type: Damageable
     damageContainer: Biological
   - type: Destructible
@@ -297,7 +297,7 @@
     - NoSpinOnThrow
     - FireThrowerBall
   - type: TimedDespawn
-    lifetime: 5
+    lifetime: 3
   - type: ThrowingAngle
     angle: 0
   - type: IgniteOnCollide
@@ -348,7 +348,7 @@
         Blunt: 5
   - type: AtmosExposed
   - type: TimedDespawn
-    lifetime: 100
+    lifetime: 50
   - type: Projectile
     deleteOnCollide: false
     damage:
@@ -362,7 +362,7 @@
     sound:
       path: /Audio/Effects/fire.ogg
   - type: IgniteOnCollide
-    fireStacks: 0.8
+    fireStacks: 0.75
     count: 100
     fixtureId: fix1
   - type: Transform
@@ -391,11 +391,11 @@
       - !type:HealthChange
         damage:
           types:
-            Heat: 10
+            Heat: 5
   - type: DamageContacts
     damage:
       types:
-        Heat: 10
+        Heat: 5
     ignoreWhitelist:
       tags:
       - NoSpinOnThrow
@@ -415,7 +415,7 @@
     spreadChance: 0.4
   - type: GrowingKudzu
   - type: TimedDespawn
-    lifetime: 40
+    lifetime: 30
 
 - type: Tag
   id: UpgradeStation

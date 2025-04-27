@@ -517,20 +517,6 @@
 
 - type: entity
   parent: ClothingUnderPantsBase
-  id: ClothingClothFemaleUnderPants
-  name: female underpants
-  description: Make them loins buzz!
-  components:
-  - type: Sprite
-    sprite: _Ganimed/Clothing/Under/Underpants/Female/cloth.rsi
-  - type: Clothing
-    sprite: _Ganimed/Clothing/Under/Underpants/Female/cloth.rsi
-    clothingVisuals:
-      underpants:
-        - state: equipped-INNERCLOTHING
-
-- type: entity
-  parent: ClothingUnderPantsBase
   id: ClothingFlowerFemaleUnderPants
   name: female underpants
   description: Make them loins buzz!

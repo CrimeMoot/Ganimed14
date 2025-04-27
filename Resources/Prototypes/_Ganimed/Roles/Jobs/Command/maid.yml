@@ -20,6 +20,7 @@
   supervisors: job-supervisors-hop
   canBeAntag: false
   joinNotifyCrew: true
+  setPreference: false
   access:
   - Maintenance
   - Command
@@ -30,8 +31,8 @@
     implants: [ MindShieldImplant ]
   minBankBalance: 300
   maxBankBalance: 600
-  wageDepartment: CentCom
-  wage: 200
+  wageDepartment: CentralCommand
+  wage: 100
 
 - type: startingGear
   id: MaidGear

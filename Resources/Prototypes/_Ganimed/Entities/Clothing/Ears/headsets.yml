@@ -1,13 +1,12 @@
 - type: entity
   parent: ClothingHeadset
   id: ClothingBlackHeadset
-  name: гарнитура офицера
+  name: гарнитура офицера мостика
   description: Это выглядит довольно внушительно.
   components:
   - type: ContainerFill
     containers:
       key_slots:
-      - EncryptionKeySecurity
       - EncryptionKeyCommon
       - EncryptionKeyCommand
   - type: Sprite
@@ -31,3 +30,18 @@
     sprite: _Ganimed/Clothing/Ears/security.rsi
   - type: Clothing
     sprite: _Ganimed/Clothing/Ears/security.rsi
+    
+- type: entity
+  parent: ClothingHeadset
+  id: ClothingHeadsetUSSP
+  name: NRA headset
+  description: A headset used by the upper echelons of USSP.
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyUSSP
+  - type: Sprite
+    sprite: _Ganimed/Clothing/Ears/ussp.rsi
+  - type: Clothing
+    sprite: _Ganimed/Clothing/Ears/ussp.rsi

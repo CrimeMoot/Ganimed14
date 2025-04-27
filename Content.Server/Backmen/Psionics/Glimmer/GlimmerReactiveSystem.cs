@@ -15,8 +15,8 @@ using Content.Shared.StatusEffect;
 using Content.Shared.Damage;
 using Content.Shared.Destructible;
 using Content.Shared.Construction.Components;
-using Content.Shared.MassMedia.Components;
-using Content.Shared.MassMedia.Systems;
+//using Content.Shared.MassMedia.Components;
+//using Content.Shared.MassMedia.Systems;
 using Content.Shared.Power;
 using Robust.Shared.Audio;
 using Robust.Shared.Random;
@@ -383,7 +383,7 @@ namespace Content.Server.Backmen.Psionics.Glimmer
             {
                 var currentGlimmerTier = _glimmerSystem.GetGlimmerTier();
 
-
+/*
                 if (currentGlimmerTier != LastGlimmerTier)
                 {
                     var glimmerTierDelta = (int) currentGlimmerTier - (int) LastGlimmerTier;
@@ -427,7 +427,7 @@ namespace Content.Server.Backmen.Psionics.Glimmer
                             RaiseLocalEvent(readerUid, ref args);
                         }
                     }
-                }
+                }*/
 
                 var reactives = EntityQueryEnumerator<SharedGlimmerReactiveComponent,TransformComponent>();
                 while (reactives.MoveNext(out var owner, out _, out var transformComponent))

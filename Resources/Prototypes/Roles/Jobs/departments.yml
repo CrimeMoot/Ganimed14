@@ -39,9 +39,10 @@
 
 - type: department
   id: CentralCommand
-  name: department-CentralCommand
-  description: department-CentralCommand-description
-  color: "#0c344d"
+  name: department-CentralCommand #department-CentCom
+  description: department-CentCom-description #department-CentralCommand-description
+  color: "#0c344d" #13db0f #044c1c
+  weight: -5 #120
   roles:
   #- CentralCommandOfficial
   - CBURN
@@ -53,8 +54,15 @@
   - ERTEngineer
   - DeathSquad
   - SpecialOperationsOfficer #Backmen-ERTRoles
-  editorHidden: true
-  weight: 120
+  - BKCCSecGavna
+  - BKCCSecOfficer
+  - BKCCOperator
+  - BKCCOfficial
+  - BKCCCargo
+  - BKCCAssistant
+  - BKCCAdmiral
+  #editorHidden: true
+  accountNumber: 1350  #backmen: currency
 
 - type: department
   id: Command
@@ -116,10 +124,13 @@
   id: Silicon
   name: department-Silicon
   description: department-Silicon-description
-  color: "#D381C9"
+  color: "#825ECE"
+  weight: -2
   roles:
   - Borg
   - StationAi
+  - BKBPLATech # Backmen
+  - BKBPLAMED # Backmen
 
 - type: department
   id: Security
@@ -155,7 +166,7 @@
   name: department-Specific
   description: department-Specific-description
   color: "#9FED58"
-  weight: 10
+  weight: -12
   roles:
   - Boxer
   - Reporter

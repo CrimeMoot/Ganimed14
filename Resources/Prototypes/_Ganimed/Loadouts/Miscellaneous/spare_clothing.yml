@@ -63,6 +63,15 @@
       role: JobAtmosphericTechnician
       time: 7200 # 2 hours
 
+- type: loadoutEffectGroup
+  id: Corpsman
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobBrigmedic
+      time: 7200 # 2 hours
+
 
 # Head/Hats
 - type: loadout
@@ -188,6 +197,16 @@
     - ClothingHeadHatSombrero
 
 - type: loadout # TODO: Whitelist restriction
+  id: SpareGreyFedora
+  storage:
+    back:
+    - ClothingHeadHatFedoraGrey
+  effects:
+  - !type:SponsorLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: Security
+
+- type: loadout # TODO: Whitelist restriction
   id: SpareBeaverHat
   storage:
     back:
@@ -195,15 +214,15 @@
   effects:
   - !type:SponsorLoadoutEffect
 
-- type: loadout # TODO: Whitelist restriction
-  id: SpareGreyFedora
+- type: loadout
+  id: SpareMagicianHat
   storage:
     back:
-    - ClothingHeadHatFedoraGrey
+    - ClothingHeadHatMagician
   effects:
-  #- !type:WhitelistedLoadoutEffect
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
-    proto: Security
+    proto: TenOverall
 
 - type: loadout
   id: SpareBlackCatHat
@@ -264,6 +283,12 @@
   storage:
     back:
     - ClothingHeadHatPaper
+
+- type: loadout
+  id: SparePaperSack
+  storage:
+    back:
+    - ClothingHeadPaperSack
 
 # Jumpsuits/Uniform
 # Color
@@ -816,6 +841,24 @@
     proto: Doctor
 
 - type: loadout
+  id: SpareShortsleeveSuit
+  storage:
+    back:
+    - ClothingUniformJumpsuitShortsleeveSuit
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: Doctor
+
+- type: loadout
+  id: SpareShortsleeveSuitskirt
+  storage:
+    back:
+    - ClothingUniformJumpskirtShortsleeveSuit
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: Doctor
+
+- type: loadout
   id: SpareNoirSuit
   storage:
     back:
@@ -897,6 +940,16 @@
   effects:
   - !type:GroupLoadoutEffect
     proto: JamjarTimer
+
+- type: loadout
+  id: SpareJumpskirtOfLife
+  storage:
+    back:
+    - ClothingUniformJumpskirtOfLife
+  effects:
+  - !type:SponsorLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: Corpsman
 
 - type: loadout
   id: SpareOveralls
@@ -1083,6 +1136,14 @@
   effects:
   - !type:SponsorLoadoutEffect
 
+- type: loadout
+  id: SpareOldDress
+  storage:
+    back:
+    - ClothingUniformJumpskirtOldDress
+  effects:
+  - !type:SponsorLoadoutEffect
+
 # Hands/Gloves
 - type: loadout
   id: SpareGlovesFingerless
@@ -1157,6 +1218,15 @@
     - ClothingHandsGlovesColorPurple
 
 # Mask
+- type: loadout
+  id: SpareSterileMask
+  storage:
+    back:
+    - ClothingMaskSterile
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: Doctor
+
 - type: loadout # TODO: Whitelist restriction
   id: SpareNeckGaiter
   storage:

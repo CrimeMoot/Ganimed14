@@ -79,6 +79,14 @@
   equipment:
     head: ClothingHeadNurseHat
 
+- type: loadout # Ganimed TODO: Whitelist restriction
+  id: CorpsmanBeret
+  equipment:
+    head: ClothingHeadHatBeretBrigmedic
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: Corpsman
+
 # Neck, Ganimed
 - type: loadout
   id: Stethoscope
@@ -162,7 +170,7 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitGenetics
   effects:
-  - !type:SponsorLoadoutEffect
+  #- !type:WhitelistedLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: ClinicalSpecialist
 
@@ -171,7 +179,7 @@
   equipment:
     jumpsuit: ClothingUniformJumpskirtGenetics
   effects:
-  - !type:SponsorLoadoutEffect
+  #- !type:WhitelistedLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: ClinicalSpecialist
 
@@ -180,7 +188,7 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitVirology
   effects:
-  - !type:SponsorLoadoutEffect
+  #- !type:WhitelistedLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: ClinicalSpecialist
 
@@ -189,7 +197,7 @@
   equipment:
     jumpsuit: ClothingUniformJumpskirtVirology
   effects:
-  - !type:SponsorLoadoutEffect
+  #- !type:WhitelistedLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: ClinicalSpecialist
 
@@ -339,12 +347,12 @@
   - !type:GroupLoadoutEffect
     proto: ClinicalSpecialist
 
-- type: loadout # Ganimed TODO: Whitelist restriction
+- type: loadout # Ganimed
   id: CoronerLabCoat
   equipment:
     outerClothing: ClothingOuterCoatLabCoroner
   effects:
-  #- !type:WhitelistedLoadoutEffect
+  - !type:SponsorLoadoutEffect
   - !type:GroupLoadoutEffect
     proto: ClinicalSpecialist
 
@@ -411,3 +419,57 @@
   id: SterileMask
   equipment:
     mask: ClothingMaskSterile
+
+# Belt contents, Ganimed
+- type: loadout
+  id: MedicalBeltTopical
+  dummyEntity: LoadoutDummyMedicalTopical
+  equipment:
+    belt: ClothingBeltMedicalFilled
+
+- type: loadout
+  id: MedicalBeltSurgical
+  dummyEntity: LoadoutDummyMedicalSurgical
+  equipment:
+    belt: ClothingBeltMedicalFilledSurgical
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobMedicalDoctor
+      time: 36000 # 10hr
+
+- type: loadout
+  id: MedicalBeltMedication
+  dummyEntity: LoadoutDummyMedicalReagents
+  equipment:
+    belt: ClothingBeltMedicalFilledMedication
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobChemist
+      time: 36000 # 10hr
+
+#- type: loadout
+#  id: MedicalBeltFillAdvanced
+#  dummyEntity: MedicatedSuture
+#  storage:
+#    belt:
+#    - MedicatedSuture
+#    - RegenerativeMesh
+#    - Bloodpack
+#    - BruteAutoInjector
+#    - BurnAutoInjector
+#    - AntiPoisonMedipen
+#    - RadAutoInjector
+#    - CombatMedipen
+#    #- SpaceMedipen #- EmergencyMedipen
+#    - SyringeEphedrine #- SyringeStimulants #- Stimpack
+#    #- OmnimedTool #(- EnergyScalpel - AdvancedRetractor - EnergyCautery)
+#  effects:
+#  - !type:JobRequirementLoadoutEffect
+#    requirement:
+#      !type:RoleTimeRequirement
+#      role: JobChiefMedicalOfficer
+#      time: 36000 # 10hr

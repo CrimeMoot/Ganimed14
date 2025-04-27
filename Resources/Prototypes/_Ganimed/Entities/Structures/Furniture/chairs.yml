@@ -1,0 +1,8 @@
+- type: entity
+  name: passenger seat
+  id: ChairPassengerSeat
+  parent: ChairBase
+  description: The passenger seat of a prestigious ship.
+  components:
+  - type: Sprite
+    state: passenger

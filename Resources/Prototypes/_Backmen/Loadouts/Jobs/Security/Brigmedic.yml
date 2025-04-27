@@ -35,15 +35,19 @@
   equipment:
     jumpsuit: ClothingUniformJumpskirtBrigmedicOriginal
 
-- type: loadout # Ganimed
+- type: loadout # Ganimed TODO: Whitelist restriction
   id: BlackBrigmedicJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitBrigmedicBlack
+  effects:
+  - !type:SponsorLoadoutEffect
 
-- type: loadout # Ganimed
+- type: loadout # Ganimed TODO: Whitelist restriction
   id: BlackBrigmedicJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtBrigmedicBlack
+  effects:
+  - !type:SponsorLoadoutEffect
 
 - type: loadout
   id: ClothingUniformJumpskirtOfLife
@@ -155,6 +159,15 @@
   id: ClothingMaskBreathMedicalSecurity
   equipment:
     mask: ClothingMaskBreathMedicalSecurity
+
+- type: loadout # Ganimed
+  id: CorpsmanBreathMask
+  equipment:
+    mask: ClothingMaskBreathMedicalSecurity
+  effects:
+  - !type:SponsorLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: Corpsman
 
 - type: loadout # Ganimed
   id: ClothingMaskBreathMedical

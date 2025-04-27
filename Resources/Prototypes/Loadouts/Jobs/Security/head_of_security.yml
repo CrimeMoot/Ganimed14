@@ -183,6 +183,15 @@
   - !type:GroupLoadoutEffect
     proto: MasterHoS
 
+- type: loadout
+  id: HeadofSecurityTacticalMaidGloves
+  equipment:
+    gloves: ClothingHandsTacticalMaidGloves
+  effects:
+  - !type:SponsorLoadoutEffect
+  - !type:GroupLoadoutEffect
+    proto: MasterHoS
+
 # OuterClothing
 - type: loadout
   id: HeadofSecurityCoat

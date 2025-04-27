@@ -17,7 +17,7 @@
       "name": "admin"
     },
     {
-      "name": "idsecurityenginer"
+      "name": "idsecurityengineer"
     },
     {
       "name": "ert_chaplain"
@@ -152,6 +152,9 @@
       "name": "idtsf"
     },
     {
+      "name": "idusspmedical"
+    },
+    {
       "name": "idusspofficer"
     },
     {
@@ -234,6 +237,9 @@
     },
     {
       "name": "idcluwne"
+    },
+    {
+      "name": "red"
     },
     {
       "name": "idseniorengineer"

@@ -304,6 +304,13 @@
   effects:
   - !type:SponsorLoadoutEffect
 
+- type: loadout
+  id: HighheelBoots
+  equipment:
+    shoes: ClothingShoesHighheelBootsFilled
+  effects:
+  - !type:SponsorLoadoutEffect
+
 # PDA
 - type: loadout
   id: SecurityPDA
@@ -321,28 +328,49 @@
 # Pocket #Backmen
 - type: loadout
   id: WeaponPistolMk58
+  dummyEntity: WeaponPistolMk58
   equipment:
     pocket1: WeaponPistolMk58
+  storage:
+    back:
+    - MagazinePistol
 
 - type: loadout
   id: WeaponEnergyGunDominator
   equipment:
     pocket1: WeaponEnergyGunDominator
 
+- type: loadout # Ganimed
+  id: WeaponMultiphaseEnergyGun
+  equipment:
+    pocket1: WeaponMultiphaseEnergyGun
+
 - type: loadout
   id: WeaponPistolG22
+  dummyEntity: WeaponPistolG22
   equipment:
     pocket1: WeaponPistolG22
+  storage:
+    back:
+    - MagazinePistol
 
 - type: loadout
   id: WeaponPistolACP14
+  dummyEntity: WeaponPistolACP14
   equipment:
     pocket1: WeaponPistolACP14
+  storage:
+    back:
+    - MagazinePistol
 
 - type: loadout
   id: WeaponPistolG23
+  dummyEntity: WeaponPistolG23
   equipment:
     pocket1: WeaponPistolG23
+  storage:
+    back:
+    - MagazinePistolHighCapacity
 
 - type: loadout
   id: WeaponPistolVP78
@@ -362,8 +390,12 @@
 
 - type: loadout
   id: WeaponPistolM1911
+  dummyEntity: WeaponPistolM1911
   equipment:
     pocket1: WeaponPistolM1911
+  storage:
+    back:
+    - MagazinePistol
 
 # Pocket 2 #Backmen
 - type: loadout

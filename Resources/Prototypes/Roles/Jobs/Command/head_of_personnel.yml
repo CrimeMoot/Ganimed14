@@ -3,28 +3,39 @@
   name: job-name-hop
   description: job-description-hop
   playTimeTracker: JobHeadOfPersonnel
+  requireAdminNotify: true
   requirements:
-    - !type:DepartmentTimeRequirement
-      department: Engineering
-      time: 18000 #5 hrs # Corvax-RoleTime
-    - !type:DepartmentTimeRequirement
-      department: Medical
-      time: 18000 #5 hrs # Corvax-RoleTime
-    - !type:DepartmentTimeRequirement
-      department: Security
-      time: 18000 #5 hrs # Corvax-RoleTime
 #    - !type:DepartmentTimeRequirement
-#      department: Command
-#      time: 72000 # 20 hrs
+#      department: Engineering
+#      time: 18000 #5 hrs # Corvax-RoleTime
+#    - !type:DepartmentTimeRequirement
+#      department: Medical
+#      time: 18000 #5 hrs # Corvax-RoleTime
+#    - !type:DepartmentTimeRequirement
+#      department: Science
+#      time: 18000 #5 hrs
+#    - !type:DepartmentTimeRequirement
+#      department: Cargo
+#      time: 18000 #5 hrs
+#    - !type:DepartmentTimeRequirement
+#      department: Security
+#      time: 18000 #5 hrs # Corvax-RoleTime
+    - !type:DepartmentTimeRequirement
+      department: Civilian
+      time: 36000 #10 hrs
+    - !type:DepartmentTimeRequirement
+      department: Command
+      time: 54000 #15 hrs
     - !type:OverallPlaytimeRequirement
       time: 180000 #50 hrs # Corvax-RoleTime
     - !type:AgeRequirement
-      requiredAge: 21 # cats
+      requiredAge: 21 # Ganimed-MRP
   weight: 20
   startingGear: HoPGear
   icon: "JobIconHeadOfPersonnel"
   supervisors: job-supervisors-captain
-  canBeAntag: false
+  canBeAntag: true # Ganimed-MRP
+  antagAdvantage: 5 # Ganimed-MRP
   access:
   - Command
   - HeadOfPersonnel

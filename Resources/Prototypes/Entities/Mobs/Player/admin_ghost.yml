@@ -95,7 +95,8 @@
   - type: BkmSupermatterImmune
   # Corvax-Start
   - type: MovementSpeedModifier
-    baseWalkSpeed: 30
+    baseWalkSpeed: 12
+    baseSprintSpeed: 30
   # Corvax-End
   - type: TurretController # Cats-TurretControl
 

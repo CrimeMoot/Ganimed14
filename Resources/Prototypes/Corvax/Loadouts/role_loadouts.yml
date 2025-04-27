@@ -2,8 +2,9 @@
   id: JobIAA
   groups:
   - GroupTankHarness
-  - LawyerNeck
-  - LawyerJumpsuit
+  - MagistrateHead # Ganimed
+  - IAANeck # Ganimed
+  - IAAJumpsuit # Ganimed
   - MagistrateOuterClothing # Ganimed
   - CommonBackpack
   - Underwear # Ganimed
@@ -25,7 +26,7 @@
   - SecurityBelt
   - PilotGloves # Ganimed
   - PilotShoes # Ganimed
-  - SurvivalSecurity
+  - SecurityOfficerPocket #Backmen
   - Underwear # Ganimed
   - Medals #backmen
   - SurvivalSecurity

@@ -4,12 +4,14 @@
   description: job-description-lawyer
   playTimeTracker: JobLawyer
   requirements:
+    - !type:DepartmentTimeRequirement
+      department: Security
+      time: 18000 #5 hrs
     - !type:OverallPlaytimeRequirement
-      time: 36000 # 10 hrs
+      time: 54000 #15 hrs
   startingGear: LawyerGear
-  setPreference: false # Corvax-IAA
   icon: "JobIconLawyer"
-  supervisors: job-supervisors-hop
+  supervisors: job-supervisors-legal
   access:
   - Service
   - Lawyer

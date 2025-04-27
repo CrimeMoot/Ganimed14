@@ -8,7 +8,7 @@
       department: Security
       time: 36000 #10 hrs # Corvax-RoleTime
     - !type:AgeRequirement
-      requiredAge: 21 # cats
+      requiredAge: 20 # Ganimed-MRP
   startingGear: SecurityOfficerGear
   icon: "JobIconSecurityOfficer"
   supervisors: job-supervisors-hos

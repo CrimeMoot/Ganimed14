@@ -11,6 +11,12 @@
           pda-lawyer
     - type: Pda
       id: IAAIDCard
+      penSlot:
+        startingItem: BlackFountainPen
+        priority: -1
+        whitelist:
+          tags:
+          - Write
     - type: PdaBorderColor
       borderColor: "#6f6192"
     - type: Icon
@@ -29,6 +35,12 @@
           pda-seniorofficer
     - type: Pda
       id: PilotIDCard
+      penSlot:
+        startingItem: PenSecurityRed
+        priority: -1
+        whitelist:
+          tags:
+          - Write
     - type: PdaBorderColor
       borderColor: "#A32D26"
       accentVColor: "#DFDFDF"

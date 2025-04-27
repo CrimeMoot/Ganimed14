@@ -3,23 +3,32 @@
   name: job-name-captain
   description: job-description-captain
   playTimeTracker: JobCaptain
+  requireAdminNotify: true
   requirements:
-    - !type:DepartmentTimeRequirement
-      department: Engineering
-      time: 72000 #20 hrs # Corvax-RoleTime
-    - !type:DepartmentTimeRequirement
-      department: Medical
-      time: 72000 #20 hrs # Corvax-RoleTime
+#    - !type:DepartmentTimeRequirement
+#      department: Engineering
+#      time: 54000 #15 hrs
+#    - !type:DepartmentTimeRequirement
+#      department: Medical
+#      time: 54000 #15 hrs
+    - !type:RoleTimeRequirement
+      role: JobHeadOfPersonnel
+      time: 18000 #5 hrs
     - !type:DepartmentTimeRequirement
       department: Security
       time: 72000 #20 hrs # Corvax-RoleTime
-#    - !type:DepartmentTimeRequirement
-#      department: Command
-#      time: 54000 # 15 hours
+    - !type:DepartmentTimeRequirement
+      department: Command
+      time: 90000 # 25 hours
     - !type:OverallPlaytimeRequirement
-      time: 504000 #140 hrs # Corvax-RoleTime
+      time: 360000 #100 hrs
     - !type:AgeRequirement
-      requiredAge: 21 # cats
+      requiredAge: 24 # Ganimed-MRP
+    - !type:TraitsRequirement # Ganimed-MRP: Captain must be proficient in communication
+      inverted: true
+      traits:
+      - Monolingual
+      - Muted
   weight: 20
   startingGear: CaptainGear
   icon: "JobIconCaptain"
@@ -45,12 +54,13 @@
   - !type:AddComponentSpecial
     components:
       - type: CommandStaff
+      - type: AntagImmune # Ganimed-MRP: Loyalty implant
 
 - type: startingGear
   id: CaptainGear
   equipment:
-    eyes: ClothingEyesGlassesSunglasses
     id: CaptainPDA
+    #eyes: ClothingEyesGlassesSunglasses
     ears: ClothingHeadsetAltCommand
   storage:
     back:

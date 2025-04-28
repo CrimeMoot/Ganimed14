@@ -13,12 +13,16 @@
   files:
   - /Audio/Voice/Human/male_cough_1.ogg
   - /Audio/Voice/Human/male_cough_2.ogg
+  - /Audio/Voice/Human/male_cough_3.ogg
+  - /Audio/Voice/Human/male_cough_3.ogg
 
 - type: soundCollection
   id: FemaleCoughs
   files:
   - /Audio/Voice/Human/female_cough_1.ogg
   - /Audio/Voice/Human/female_cough_2.ogg
+  - /Audio/Voice/Human/female_cough_3.ogg
+  - /Audio/Voice/Human/female_cough_4.ogg
 
 - type: soundCollection
   id: CatMeows

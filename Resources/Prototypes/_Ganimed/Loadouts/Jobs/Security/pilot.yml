@@ -18,13 +18,13 @@
     proto: HighRankPilot
 
 # Head
-#- type: loadout
-#  id: PilotHelmet
-#  equipment:
-#    head: ClothingHeadHelmetEGovPilot
-#  effects:
-#  - !type:GroupLoadoutEffect
-#    proto: HighRankPilot
+- type: loadout
+  id: PilotHelmet
+  equipment:
+    head: ClothingHeadHelmetEGovPilot
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: HighRankPilot
 
 # Outerclothing
 - type: loadout

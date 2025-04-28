@@ -407,6 +407,7 @@
   - ResearchDirectorJumpsuit
   - ScientistBackpack
   - ResearchDirectorOuterClothing
+  - ResearchDirectorBelt # Ganimed
   - ResearchDirectorGloves # Ganimed
   - ResearchDirectorGlasses # Ganimed
   - ResearchDirectorShoes
@@ -529,7 +530,7 @@
   - DetectiveBackpack # Ganimed
   - DetectiveOuterClothing
   - DetectiveBelt # Ganimed
-  - SecurityGlasses # Ganimed
+  - DetectiveGlasses # Ganimed
   - DetectiveGloves # Ganimed
   - DetectiveShoes # Ganimed
   - DetectiveRevolver

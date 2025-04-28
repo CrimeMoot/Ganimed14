@@ -180,8 +180,6 @@
     gloves: ClothingHandsGlovesLeatherHoS
   effects:
   - !type:SponsorLoadoutEffect
-  - !type:GroupLoadoutEffect
-    proto: MasterHoS
 
 - type: loadout
   id: HeadofSecurityTacticalMaidGloves

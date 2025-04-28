@@ -9,14 +9,14 @@ connecting-redial = Перезапустить
 connecting-redial-wait = Пожалуйста подождите: { TOSTRING($time, "G3") }
 connecting-in-progress = Подключение к серверу...
 connecting-disconnected = Отключён от сервера:
-connecting-tip = Гоооооол!
+connecting-tip = С возвращением!
 connecting-window-tip = Совет { $numberTip }
-connecting-version = версия 1917
+connecting-version = версия 19.8.4
 connecting-fail-reason =
     Не удалось подключиться к серверу:
     { $reason }
 connecting-state-NotConnecting = Не подключен
 connecting-state-ResolvingHost = Определение хоста
 connecting-state-EstablishingConnection = Установка соединения
-connecting-state-Handshake = Гоооооол...
+connecting-state-Handshake = Подключение...
 connecting-state-Connected = Подключен!

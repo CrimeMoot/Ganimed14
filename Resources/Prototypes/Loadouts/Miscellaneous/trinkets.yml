@@ -68,6 +68,12 @@
     - PlushieVox
 
 - type: loadout # Ganimed
+  id: PlushieArachind
+  storage:
+    back:
+    - PlushieArachind
+
+- type: loadout # Ganimed
   id: PlushieSlime
   storage:
     back:
@@ -177,6 +183,24 @@
   storage:
     back:
     - SmokingPipeFilledTobacco
+  effects:
+  - !type:SponsorLoadoutEffect
+
+# Ganimed: Flasks
+- type: loadout # Ganimed
+  id: VacuumFlask
+  storage:
+    back:
+    - DrinkVacuumFlask
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: TenOverall
+
+- type: loadout # Ganimed
+  id: ShinyFlask
+  storage:
+    back:
+    - DrinkShinyFlask
   effects:
   - !type:SponsorLoadoutEffect
 

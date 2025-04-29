@@ -2,11 +2,13 @@
   id: MaleSneezes
   files:
     - /Audio/Voice/Human/male_sneeze_1.ogg
+    - /Audio/_Ganimed/Voice/Human/sneeze_male.ogg
 
 - type: soundCollection
   id: FemaleSneezes
   files:
     - /Audio/Voice/Human/female_sneeze_1.ogg
+    - /Audio/_Ganimed/Voice/Human/sneeze_female.ogg
 
 - type: soundCollection
   id: MaleCoughs

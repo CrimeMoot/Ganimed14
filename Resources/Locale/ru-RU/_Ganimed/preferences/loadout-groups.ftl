@@ -51,6 +51,7 @@ loadout-group-roboticist-jumpsuit = Комбинезон робототехни�
 loadout-group-roboticist-outerclothing = Верхняя одежда робототехника
 loadout-group-research-director-glasses = Очки научного руководителя
 loadout-group-research-director-gloves = Перчатки научного руководителя
+loadout-group-research-director-belt = Пояс научного руководителя
 loadout-group-scientist-glasses = Очки учёного
 loadout-group-scientist-headset = Научная гарнитура
 # Security
@@ -63,6 +64,7 @@ loadout-group-security-glasses = Очки СБ
 loadout-group-detective-backpack = Рюкзак детектива
 loadout-group-detective-belt = Пояс детектива
 loadout-group-detective-gloves = Перчатки криминалиста
+loadout-group-detective-glasses = Очки детектива
 loadout-group-detective-shoes = Обувь детектива
 loadout-group-pilot-head = Головной убор пилота СБ
 loadout-group-pilot-jumpsuit = Форма пилота СБ

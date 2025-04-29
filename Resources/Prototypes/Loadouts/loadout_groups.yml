@@ -14,6 +14,7 @@
   # Ganimed-Loadouts-Start
   - PlushieMoth
   - PlushieDiona
+  - PlushieArachind
   - PlushieVox
   - PlushieSlime
   - PlushieBee
@@ -32,6 +33,8 @@
   - CigarCase
   - CigarGold
   - SmokingPipe # Ganimed
+  - VacuumFlask # Ganimed
+  - ShinyFlask # Ganimed
 # start-backmen: no pride
 #  - ClothingNeckLGBTPin
 #  - ClothingNeckAutismPin
@@ -523,6 +526,7 @@
   loadouts:
   - BooksBag
   - WaistBag
+  - Clipboard
 
 - type: loadoutGroup
   id: LawyerJumpsuit
@@ -1384,6 +1388,15 @@
   - GlassesSalesman
 
 - type: loadoutGroup # Ganimed
+  id: ResearchDirectorBelt
+  name: loadout-group-research-director-belt
+  minLimit: 0
+  loadouts:
+  - WaistBag
+  - Clipboard
+  - ToolbeltEmpty
+
+- type: loadoutGroup # Ganimed
   id: ResearchDirectorGloves
   name: loadout-group-research-director-gloves
   minLimit: 0
@@ -1833,12 +1846,22 @@
   - WaistBag
 
 - type: loadoutGroup # Ganimed
+  id: DetectiveGlasses
+  name: loadout-group-detective-glasses
+  loadouts:
+  - Sunglasses
+  - SecurityHud
+  - SecurityHudEyepatch
+  - ChemicalAnalysisGoggles
+
+- type: loadoutGroup # Ganimed
   id: DetectiveGloves
   name: loadout-group-detective-gloves
   minLimit: 0
   loadouts:
-  - ForensicGloves
+  # - ForensicGloves
   - LatexGloves
+  - HeadofSecurityLeatherGloves
 
 - type: loadoutGroup # Ganimed
   id: DetectiveShoes

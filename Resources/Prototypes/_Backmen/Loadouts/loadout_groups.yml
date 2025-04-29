@@ -10,10 +10,10 @@
   name: loadout-group-blueshield-jumpsuit
   loadouts:
   - ClothingJumpsuitBlueShield
-  - ClothingUniformBlueShield
   - ClothingSkirtBlueShield
   - ClothingUniformJumpsuitBlueshields # cats
   - ClothingUniformJumpskirtBlueshields # cats
+  - ClothingUniformBlueShield
   - BlueshieldUniformSuit # Ganimed
 
 - type: loadoutGroup

@@ -18,6 +18,8 @@
     - /Audio/Lobby/HumanMusic.ogg
     - /Audio/Lobby/NexMusic.ogg
     - /Audio/Lobby/space_oddity.ogg
+    - /Audio/Lobby/marhaba.ogg
+    - /Audio/Lobby/Monument.ogg
     - /Audio/Corvax/Lobby/title2.ogg # Corvax-LobbyMusic
     - /Audio/Lobby/atomicamnesiammx.ogg
     - /Audio/Lobby/Get-Up-N-FIGHT.ogg
@@ -28,3 +30,18 @@
 #    - /Audio/Corvax/Lobby/NewYear/deck-in-the-halls.ogg # Corvax-NewYearMusic
 #    - /Audio/Corvax/Lobby/NewYear/jingle-bells.ogg # Corvax-NewYearMusic
 #    - /Audio/Corvax/Lobby/NewYear/wish-you-a-merry-christmas.ogg # Corvax-NewYearMusic
+    - /Audio/Lobby/crazy-necross.ogg # Ganimed-LobbyMusic
+    - /Audio/Lobby/evacuate.ogg # Ganimed-LobbyMusic
+    - /Audio/Lobby/Garoad-A-Neon-Glow-Lights-the-Way_1.ogg # Ganimed-LobbyMusic
+    - /Audio/Lobby/Garoad-Safe-Haven.ogg # Ganimed-LobbyMusic
+    - /Audio/Lobby/Garoad-Umemoto.ogg # Ganimed-LobbyMusic
+    - /Audio/Lobby/Garoad-Where-Do-I-Go-from-Here_63.ogg # Ganimed-LobbyMusic
+    - /Audio/Lobby/Garoad-You_ve-Got-Me_1.ogg # Ganimed-LobbyMusic
+    - /Audio/Lobby/glorx-theme.ogg # Ganimed-LobbyMusic
+    - /Audio/Lobby/mass-effect.ogg # Ganimed-LobbyMusic
+    - /Audio/Lobby/morning-on-the-kamchatka.ogg # Ganimed-LobbyMusic
+    - /Audio/Lobby/our-flag-was-still-there.ogg # Ganimed-LobbyMusic
+    - /Audio/Lobby/revolution.ogg # Ganimed-LobbyMusic
+    - /Audio/Lobby/silicon-dreams.ogg # Ganimed-LobbyMusic
+    - /Audio/Lobby/vibe_ace.ogg # Ganimed-LobbyMusic
+    - /Audio/Lobby/hackers.ogg # Ganimed-LobbyMusic

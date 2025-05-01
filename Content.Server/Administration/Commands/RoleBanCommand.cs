@@ -7,6 +7,8 @@ using Content.Shared.Database;
 using Content.Shared.Roles;
 using Robust.Shared.Configuration;
 using Robust.Shared.Console;
+using Content.Server._Ganimed.Discord; // Ganimed Discord Webhook
+
 namespace Content.Server.Administration.Commands;
 
 [AdminCommand(AdminFlags.Ban)]
@@ -15,6 +17,7 @@ public sealed class RoleBanCommand : IConsoleCommand
     [Dependency] private readonly IPlayerLocator _locator = default!;
     [Dependency] private readonly IBanManager _bans = default!;
     [Dependency] private readonly IConfigurationManager _cfg = default!;
+    [Dependency] private readonly DiscordWebhookBanSender _DiscordWebhookBanSender = default!; // Ganimed Discord Webhook
 
     public string Command => "roleban";
     public string Description => Loc.GetString("cmd-roleban-desc");
@@ -87,6 +90,8 @@ public sealed class RoleBanCommand : IConsoleCommand
         var targetHWid = located.LastHWId;
 
         _bans.CreateRoleBan(targetUid, located.Username, shell.Player?.UserId, null, targetHWid, job, minutes, severity, reason, DateTimeOffset.UtcNow);
+
+        _DiscordWebhookBanSender.SendRoleBansMessage(target, targetUid, shell.Player?.Name, shell.Player?.UserId, minutes, reason, new List<string> { job }); // Ganimed Discord Webhook
     }
 
     public CompletionResult GetCompletion(IConsoleShell shell, string[] args)

@@ -21,6 +21,11 @@ public struct WebhookEmbed
     [JsonPropertyName("fields")]
     public List<WebhookEmbedField> Fields { get; set; } = default!;
 
+    // Ganimed webhook ban begin
+    [JsonPropertyName("thumbnail")]
+    public WebhookEmbedThumbnail? Thumbnail { get; set; } = null;
+    // Ganimed webhook ban end
+
     public WebhookEmbed()
     {
     }

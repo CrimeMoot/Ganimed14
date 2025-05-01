@@ -1,3 +1,4 @@
+using Robust.Shared;
 using Robust.Shared.Configuration;
 
 namespace Content.Shared.CCVar;
@@ -72,4 +73,10 @@ public sealed partial class CCVars
     /// </summary>
     public static readonly CVarDef<float> DiscordWatchlistConnectionBufferTime =
         CVarDef.Create("discord.watchlist_connection_buffer_time", 5f, CVar.SERVERONLY);
+
+    /// <summary>
+    /// URL of the discord webhook to relay bans messages.
+    /// </summary>
+    public static readonly CVarDef<string> DiscordBanWebhook =
+        CVarDef.Create("discord.ban_webhook", string.Empty, CVar.SERVERONLY | CVar.CONFIDENTIAL);
 }

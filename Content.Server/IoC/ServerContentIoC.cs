@@ -30,6 +30,7 @@ using Content.Shared.Chat;
 using Content.Shared.Kitchen;
 using Content.Shared.Players.PlayTimeTracking;
 using Content.Shared.Players.RateLimiting;
+using Content.Server._Ganimed.Discord; // Ganimed Discord Webhook
 
 namespace Content.Server.IoC
 {
@@ -37,6 +38,7 @@ namespace Content.Server.IoC
     {
         public static void Register()
         {
+            IoCManager.Register<DiscordWebhookBanSender>(); // Ganimed Discord Webhook
             IoCManager.Register<IChatManager, ChatManager>();
             IoCManager.Register<ISharedChatManager, ChatManager>();
             IoCManager.Register<IChatSanitizationManager, ChatSanitizationManager>();

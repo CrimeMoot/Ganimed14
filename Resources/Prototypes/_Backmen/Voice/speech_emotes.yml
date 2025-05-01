@@ -4,11 +4,10 @@
   category: Vocal
   name: chat-emote-name-ring
   whitelist:
-    components:
-    - Vocal
-  blacklist:
+    requireAll: true
     components:
     - BorgChassis
+    - Vocal
   chatMessages: ["chat-emote-msg-ring"]
   chatTriggers:
     - ring.
@@ -110,8 +109,10 @@
   category: Vocal
   name: chat-emote-name-mews
   whitelist:
+    requireAll: true
     components:
     - Vocal
+    - Felinid
   blacklist:
     components:
     - BorgChassis
@@ -132,8 +133,10 @@
   category: Vocal
   name: chat-emote-name-mew
   whitelist:
+    requireAll: true
     components:
     - Vocal
+    - Felinid
   blacklist:
     components:
     - BorgChassis
@@ -149,8 +152,10 @@
   category: Vocal
   name: chat-emote-name-meows
   whitelist:
+    requireAll: true
     components:
     - Vocal
+    - Felinid
   blacklist:
     components:
     - BorgChassis
@@ -174,8 +179,10 @@
   category: Vocal
   name: chat-emote-name-purrs
   whitelist:
+    requireAll: true
     components:
     - Vocal
+    - Felinid
   blacklist:
     components:
     - BorgChassis

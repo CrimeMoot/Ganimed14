@@ -7,6 +7,11 @@
     - /Audio/Voice/Human/malescream_4.ogg
     - /Audio/Voice/Human/malescream_5.ogg
     - /Audio/Voice/Human/malescream_6.ogg
+    - /Audio/_Ganimed/Voice/Human/malescream_7.ogg
+    - /Audio/_Ganimed/Voice/Human/malescream_8.ogg
+    - /Audio/_Ganimed/Voice/Human/malescream_9.ogg
+    - /Audio/_Ganimed/Voice/Human/malescream_10.ogg
+    - /Audio/_Ganimed/Voice/Human/malescream_11.ogg
 
 - type: soundCollection
   id: FemaleScreams
@@ -16,6 +21,12 @@
     - /Audio/Voice/Human/femalescream_3.ogg
     - /Audio/Voice/Human/femalescream_4.ogg
     - /Audio/Voice/Human/femalescream_5.ogg
+    - /Audio/_Ganimed/Voice/Human/scream_f2.ogg
+    - /Audio/_Ganimed/Voice/Human/femalescream_6.ogg
+    - /Audio/_Ganimed/Voice/Human/femalescream_7.ogg
+    - /Audio/_Ganimed/Voice/Human/femalescream_8.ogg
+    - /Audio/_Ganimed/Voice/Human/femalescream_9.ogg
+    - /Audio/_Ganimed/Voice/Human/femalescream_10.ogg
 
 - type: soundCollection
   id: ZombieScreams

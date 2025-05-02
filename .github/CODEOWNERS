@@ -22,7 +22,7 @@
 # Head Mapper
 /Resources/Maps/** @AltMapper
 /Resources/Prototypes/Maps/** @AltMapper
-/Resources/Prototypes/_Ganimed/Maps/** @AltMapper
+/Resources/Prototypes/*/Maps/** @AltMapper
 
 # Sprites and design (Head Spriter vacant)
 # *.png
@@ -31,10 +31,10 @@
 
 # Unique content
 /Resources/Prototypes/Loadouts/ @HyperB1
-/Resources/Prototypes/_Ganimed/Loadouts/ @HyperB1
+/Resources/Prototypes/*/Loadouts/ @HyperB1
 /Resources/Prototypes/_Ganimed/Entities/Clothing/ @AltMapper
 /Resources/Prototypes/Entities/Objects/Weapons/ @RedSpyy
-/Resources/Prototypes/_Ganimed/Entities/Objects/Weapons/ @RedSpyy
+/Resources/Prototypes/*/Entities/Objects/Weapons/ @RedSpyy
 
 # Lore, Wiki, Guidebook & Rules
 *.xml @HyperB1

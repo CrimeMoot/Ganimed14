@@ -48,12 +48,12 @@ public sealed class DiscordWebhookBanSender
                             Color = minutes != 0 ? 16600397 : 13438992,
                             Description =  $"""
                                 > **Администратор:** {banningAdmin ?? "Консоль"}
-                                >
+
                                 > **Нарушитель:** {targetUsername ?? "Неизвестно"}
-                                >                                                         
+                                                     
                                 > **Выдан:** {DateTimeOffset.Now}
                                 > **Истекает:** {expired}
-                                >
+
                                 > **Причина:** {reason}
                                 """,
                             Footer = new WebhookEmbedFooter
@@ -117,14 +117,14 @@ public sealed class DiscordWebhookBanSender
                             Color = minutes != 0 ? 28927 : 2815,
                             Description =  $"""
                                 > **Администратор:** {banningAdmin ?? "Консоль"}
-                                >
+
                                 > **Нарушитель:** {targetUsername ?? "Неизвестно"}
-                                >
+
                                 > **Выдан:** {DateTimeOffset.Now}
                                 > **Истекает:** {expired}
-                                >
+
                                 > **Роли:** {formattedRolesStr}
-                                >
+
                                 > **Причина:** {reason}
                                 """,
                             Footer = new WebhookEmbedFooter

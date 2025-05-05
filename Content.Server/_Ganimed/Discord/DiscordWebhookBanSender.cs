@@ -44,17 +44,16 @@ public sealed class DiscordWebhookBanSender
                     {
                         new()
                         {
-                            Title = minutes != 0 ? $"Временный бан на {minutes} мин" : "Перманентная блокировка",
+                            Title = minutes != 0 ? $"Временный бан на {minutes} мин (Раунд #{runId})" : $"Перманентная блокировка (Раунд #{runId})",
                             Color = minutes != 0 ? 16600397 : 13438992,
                             Description =  $"""
-                                > **Администратор**
-                                > **Логин:** {banningAdmin ?? "Консоль"}
-                                > **Нарушитель**
-                                > **Логин:** {targetUsername ?? "Неизвестно"}
-                                                               
-                                > **Номер раунда:** {runId}
+                                > **Администратор:** {banningAdmin ?? "Консоль"}
+
+                                > **Нарушитель:** {targetUsername ?? "Неизвестно"}
+                                                     
                                 > **Выдан:** {DateTimeOffset.Now}
                                 > **Истекает:** {expired}
+
                                 > **Причина:** {reason}
                                 """,
                             Footer = new WebhookEmbedFooter
@@ -114,17 +113,18 @@ public sealed class DiscordWebhookBanSender
                     {
                         new()
                         {
-                            Title = minutes != 0 ? $"Временный джоб-бан на {minutes} мин" : "Перманентный джоб-бан",
+                            Title = minutes != 0 ? $"Временный джоб-бан на {minutes} мин (Раунд #{runId})" : $"Перманентный джоб-бан (Раунд #{runId})",
                             Color = minutes != 0 ? 28927 : 2815,
                             Description =  $"""
-                                > **Администратор**
-                                > **Логин:** {banningAdmin ?? "Консоль"}
-                                > **Нарушитель**
-                                > **Логин:** {targetUsername ?? "Неизвестно"}
-                                > **Номер раунда:** {runId}
+                                > **Администратор:** {banningAdmin ?? "Консоль"}
+
+                                > **Нарушитель:** {targetUsername ?? "Неизвестно"}
+
                                 > **Выдан:** {DateTimeOffset.Now}
                                 > **Истекает:** {expired}
+
                                 > **Роли:** {formattedRolesStr}
+
                                 > **Причина:** {reason}
                                 """,
                             Footer = new WebhookEmbedFooter

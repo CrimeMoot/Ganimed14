@@ -20,7 +20,7 @@ public sealed class BanCommand : LocalizedCommands
     [Dependency] private readonly IConfigurationManager _cfg = default!;
     [Dependency] private readonly IPlayerManager _playerManager = default!;
     [Dependency] private readonly ILogManager _logManager = default!;
-    [Dependency] private readonly DiscordWebhookBanSender _discordWebhookBanSender = default!; // Ganimed Discord Webhook
+    [Dependency] private readonly DiscordWebhookBanSender _DiscordWebhookBanSender = default!; // Ganimed Discord Webhook
 
     public override string Command => "ban";
 
@@ -94,7 +94,7 @@ public sealed class BanCommand : LocalizedCommands
 
         _bans.CreateServerBan(targetUid, target, player?.UserId, null, targetHWid, minutes, severity, reason);
 
-        _discordWebhookBanSender.SendBanMessage(target, targetUid, player?.Name, player?.UserId, minutes, reason); // Ganimed Discord Webhook
+        _DiscordWebhookBanSender.SendBanMessage(target, targetUid, player?.Name, player?.UserId, minutes, reason); // Ganimed Discord Webhook
     }
 
     public override CompletionResult GetCompletion(IConsoleShell shell, string[] args)

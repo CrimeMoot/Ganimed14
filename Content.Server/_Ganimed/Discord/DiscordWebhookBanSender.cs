@@ -80,7 +80,7 @@ public sealed class DiscordWebhookBanSender
         }
         catch (Exception e)
         {
-            Logger.Warning($"Discord webhook failed: {e}");
+            _sawmill.Error($"Error while sending ban webhook to Discord: {e}");
         }
     }
 
@@ -151,7 +151,7 @@ public sealed class DiscordWebhookBanSender
         }
         catch (Exception e)
         {
-            Logger.Warning($"Error while sending ban webhook to Discord: {e}");
+            _sawmill.Error($"Error while sending ban webhook to Discord: {e}");
         }
     }
 }

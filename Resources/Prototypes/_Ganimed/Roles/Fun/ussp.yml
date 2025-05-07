@@ -1,22 +1,22 @@
 - type: startingGear
   id: USSPGearSoldier
   equipment:
-    jumpsuit: ClothingUniformJumpsuitUSSP
+    jumpsuit: ADTParatrooperUSSPUniform
     back: ClothingMilitaryBackpack
     shoes: ClothingShoesBootsCombatFilled
-    mask: ClothingMaskGas
-    head: ClothingHeadHelmetMerc
+    mask: ADTClothingMaskGasUSSP
+    head: ADTClothingHeadHelmetUSSPSfera
     eyes: ClothingEyesGlassesSunglasses
     gloves: ClothingHandsGlovesCombat
-    outerClothing: ClothingOuterVestWebMerc
-    suitstorage: WeaponAKMSRifle
-    id: SoldierUSSPPDA
+    outerClothing: ADTClothingOuterVestUSSPKZS1
+    suitstorage: WeaponRifleABZ
+    id: ADTUSSPArmyCard
     ears: ClothingHeadsetUSSP
-    belt: ClothingBeltMercWebbing
-    pocket2: WeaponPistolMakarovsssp
-    underpants: ClothingUnderPantsMilitary
-    undershirt: ClothingUnderShirtBlack
-    socks: ClothingSocksBlack
+    belt: ADTClothingRPSUSSP 
+    pocket2: WeaponPistolCobra
+#    underpants: ClothingUnderPantsMilitary
+#    undershirt: ClothingUnderShirtBlack
+#    socks: ClothingSocksBlack
   storage:
     back:
     - BoxMRE
@@ -28,35 +28,30 @@
     - MagazineLightRifle
     - MagazineLightRifle
     - MagazineLightRifle
-    - MagazinePistol
+    - MagazinePistolCaselessRifle
     - GrenadeShrapnel
-    - ExGrenade
-    outerClothing:
-    - Gauze
-    - Tourniquet
-    - EmergencyMedipen
-    - Flare
+    - ExGrenade    
 
 - type: startingGear
   id: USSPGearOfficer
   equipment:
-    jumpsuit: ClothingUniformJumpsuitUSSPCommander
+    jumpsuit: ADTInfantrymanTUSSPUniform
     back: ClothingMilitaryBackpack
     shoes: ClothingShoesBootsCombatFilled
-    mask: ClothingMaskGas
-    head: ClothingHeadHatBeretUSSP
+    mask: ADTClothingMaskGasUSSP
+    head: ADTClothingHeadHatBeretOfTheArmedForcesoftheUSSP
     eyes: ClothingEyesGlassesSunglasses
     gloves: ClothingHandsGlovesCombat
-    outerClothing: ClothingOuterVestWebMerc
-    suitstorage: WeaponAKMSTacticalRifle
-    id: OfficerUSSPPDA
+    outerClothing: ADTClothingOuterVestUSSPKZS1
+    suitstorage: WeaponRifleABZ
+    id: ADTUSSPArmyOfficerCard
     ears: ClothingHeadsetUSSP
-    belt: ClothingBeltMercWebbing
-    pocket1: ClothingEyesNightVisionGoggles
-    pocket2: WeaponPistolMakarovsssp
-    underpants: ClothingUnderPantsMilitary
-    undershirt: ClothingUnderShirtBlack
-    socks: ClothingSocksBlack
+    belt: ADTClothingRPSUSSP
+    pocket1: MagazinePistolCaselessRifle
+    pocket2: WeaponPistolCobra
+#    underpants: ClothingUnderPantsMilitary
+#    undershirt: ClothingUnderShirtBlack
+#    socks: ClothingSocksBlack
   storage:
     back:
     - BoxMRE
@@ -73,35 +68,30 @@
     - MagazineLightRifle
     - MagazineLightRifle
     - MagazineLightRifle
-    - MagazinePistol
+    - MagazinePistolCaselessRifle
     - GrenadeShrapnel
     - ExGrenade
-    outerClothing:
-    - Gauze
-    - Tourniquet
-    - EmergencyMedipen
-    - Flare
 
 - type: startingGear
   id: USSPGearMedic
   equipment:
-    jumpsuit: ClothingUniformJumpsuitUSSP
+    jumpsuit: ADTParatrooperUSSPUniform
     back: ClothingBackpackDuffelMilitary
     shoes: ClothingShoesBootsCombatFilled
-    mask: ClothingMaskGas
+    mask: ADTClothingMaskGasUSSP
     head: ClothingHeadHelmetMercMedic
     eyes: ClothingEyesGlassesSunglasses
     gloves: ClothingHandsGlovesCombat
-    outerClothing: ClothingOuterVestWebMerc
-    suitstorage: WeaponRifleAKSU
+    outerClothing: ADTClothingOuterVestUSSPKZS1
+    suitstorage: WeaponRifleABZ
     id: MedicUSSPPDA
     ears: ClothingHeadsetUSSP
     belt: ClothingBeltMedicalMarine
-    pocket1: ClothingEyesNightVisionGoggles
-    pocket2: WeaponPistolMakarovsssp
-    underpants: ClothingUnderPantsMilitary
-    undershirt: ClothingUnderShirtBlack
-    socks: ClothingSocksBlack
+    pocket1: MagazinePistolCaselessRifle
+    pocket2: WeaponPistolCobra
+#    underpants: ClothingUnderPantsMilitary
+#    undershirt: ClothingUnderShirtBlack
+#    socks: ClothingSocksBlack
   storage:
     back:
     - BoxMRE
@@ -109,7 +99,7 @@
     - Tourniquet
     - MagazineLightRifle
     - MagazineLightRifle
-    - MagazinePistol
+    - MagazinePistolCaselessRifle
     - DefibrillatorCompact
     - ReliableContainerBruteFilled
     - ReliableContainerBurnFilled
@@ -126,8 +116,3 @@
     - EpinephrineChemistryBottle
     - EpinephrineChemistryBottle
     - SyndiHypo
-    outerClothing:
-    - Gauze
-    - Tourniquet
-    - EmergencyMedipen
-    - Flare

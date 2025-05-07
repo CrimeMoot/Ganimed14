@@ -24,7 +24,6 @@ public sealed class DiscordWebhookBanSender
 
     public DiscordWebhookBanSender()
     {
-        IoCManager.InjectDependencies(this);
         _sawmill = Logger.GetSawmill("discord");
     }
 

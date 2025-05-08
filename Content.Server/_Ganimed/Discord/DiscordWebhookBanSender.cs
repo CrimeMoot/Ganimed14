@@ -22,11 +22,6 @@ public sealed class DiscordWebhookBanSender
 
     private readonly string _thumbnailIconUrl = "https://static.wikia.nocookie.net/ss14andromeda13/images/f/ff/Clown.png/revision/latest?cb=20230217121049&path-prefix=ru";
 
-    public DiscordWebhookBanSender()
-    {
-        _sawmill = Logger.GetSawmill("discord");
-    }
-
     public async void SendBanMessage(string? targetUsername, NetUserId? targetUserId, string? banningAdmin, NetUserId? banningAdminId, uint minutes, string reason)
     {
         try

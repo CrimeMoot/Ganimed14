@@ -8,7 +8,6 @@ using Robust.Shared.Configuration;
 using Robust.Shared.Console;
 using Content.Server._Ganimed.Discord; // Ganimed Discord Webhook
 
-
 namespace Content.Server.Administration.Commands;
 
 [AdminCommand(AdminFlags.Ban)]

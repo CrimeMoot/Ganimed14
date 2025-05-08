@@ -11,8 +11,9 @@
     outerClothing: ADTClothingOuterVestUSSPKZS1
     suitstorage: WeaponRifleABZ
     id: ADTUSSPArmyCard
-    ears: ClothingHeadsetUSSP
-    belt: ADTClothingRPSUSSP 
+    ears: ADTClothingHeadsetUSSP
+    belt: ADTClothingRPSUSSP
+    pocket1: MagazinePistolCaselessRifle
     pocket2: WeaponPistolCobra
 #    underpants: ClothingUnderPantsMilitary
 #    undershirt: ClothingUnderShirtBlack
@@ -45,7 +46,7 @@
     outerClothing: ADTClothingOuterVestUSSPKZS1
     suitstorage: WeaponRifleABZ
     id: ADTUSSPArmyOfficerCard
-    ears: ClothingHeadsetUSSP
+    ears: ADTClothingHeadsetUSSP
     belt: ADTClothingRPSUSSP
     pocket1: MagazinePistolCaselessRifle
     pocket2: WeaponPistolCobra
@@ -85,7 +86,7 @@
     outerClothing: ADTClothingOuterVestUSSPKZS1
     suitstorage: WeaponRifleABZ
     id: MedicUSSPPDA
-    ears: ClothingHeadsetUSSP
+    ears: ADTClothingHeadsetUSSP
     belt: ClothingBeltMedicalMarine
     pocket1: MagazinePistolCaselessRifle
     pocket2: WeaponPistolCobra

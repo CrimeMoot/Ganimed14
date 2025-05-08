@@ -7,7 +7,7 @@
       sprite: _Ganimed/Clothing/Uniforms/USSP/ussp_form.rsi
       state: icon
     - type: RandomHumanoidSpawner
-      settings: USSP1
+      settings: USSP1 
 
 - type: randomHumanoidSettings
   id: USSP1
@@ -18,7 +18,10 @@
     - type: RandomMetadata
       nameSegments:
       - NamesFirstUSSPMilitary
-      - NamesLastUSSPMilitary   
+      - NamesLastUSSPMilitary
+    - type: AutoImplant
+      implants:
+      - NeoRusskiyaTranslatorImplant      
 
 - type: entity
   id: RandomHumanoidSpawnerUSSPofficer
@@ -29,7 +32,7 @@
       sprite: _Ganimed/Clothing/Uniforms/USSP/ussp_form.rsi
       state: icon
     - type: RandomHumanoidSpawner
-      settings: USSP2
+      settings: USSP2  
 
 - type: randomHumanoidSettings
   id: USSP2
@@ -41,7 +44,10 @@
       nameSegments:
       - NamesFirstUSSPMilitaryLeader
       - NamesLastUSSPMilitary
-
+    - type: AutoImplant
+      implants:
+      - NeoRusskiyaTranslatorImplant   
+      
 - type: entity
   id: RandomHumanoidSpawnerUSSPMedic
   name: USSP medic
@@ -52,6 +58,9 @@
       state: icon
     - type: RandomHumanoidSpawner
       settings: USSP3
+    - type: AutoImplant
+      implants:
+      - NeoRusskiyaTranslatorImplant
 
 - type: randomHumanoidSettings
   id: USSP3
@@ -62,4 +71,4 @@
     - type: RandomMetadata
       nameSegments:
       - NamesFirstUSSPMilitary
-      - NamesLastUSSPMilitary
+      - NamesLastUSSPMilitary      

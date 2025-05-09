@@ -1,6 +1,6 @@
-windowIconSet: /Textures/ADT/Logo/icon-adt # Corvax-Theme
-defaultWindowTitle: Space Station 14 - Время Приключений # ADT theme
-splashLogo: /Textures/ADT/Logo/adt_logo.png #ADT theme
+windowIconSet: /Textures/_Ganimed/Logo/icon # Ganimed-Theme
+defaultWindowTitle: Space Station 14 - Enterprise # ADT theme
+splashLogo: /Textures/_Ganimed/Logo/logo-ganimed.png #Ganimed theme
 multiWindow: true
 
 # PJB PLEASE

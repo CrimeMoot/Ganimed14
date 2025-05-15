@@ -33,7 +33,7 @@
   - Maintenance
   - External
 #  - Command
-  - Brig
+#  - Brig
   - Cryogenics
   special:
   - !type:AddImplantSpecial

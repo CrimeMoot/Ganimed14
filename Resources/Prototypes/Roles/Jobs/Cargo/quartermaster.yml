@@ -25,7 +25,7 @@
   startingGear: QuartermasterGear
   icon: "JobIconQuarterMaster"
   supervisors: job-supervisors-captain
-  canBeAntag: true
+  canBeAntag: true # Ganimed-MRP
   access:
   - Cargo
   - Salvage
@@ -36,8 +36,8 @@
   - Brig
   - Cryogenics
   special:
-#  - !type:AddImplantSpecial
-#    implants: [ MindShieldImplant ]
+#  - !type:AddImplantSpecial # Ganimed-MRP
+#    implants: [ MindShieldImplant ] # Ganimed-MRP
   - !type:AddComponentSpecial
     components:
       - type: CommandStaff

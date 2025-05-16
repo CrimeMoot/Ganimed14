@@ -266,3 +266,10 @@ ui-options-chat-window-opacity = Прозрачность окна чата
 ui-options-screen-shake-intensity = Интенсивность дрожания экрана
 ui-options-show-offer-mode-indicators = показывать индикатор передачи предмета
 ui-options-function-offer-item = Передать что-либо
+
+## Ganimed - StackChat
+
+ui-options-chatstack = Автоматически объединять сообщения в чате:
+ui-options-chatstack-count = { $count ->
+    [1] Последнее сообщение
+   *[other] Последние {$count} сообщения

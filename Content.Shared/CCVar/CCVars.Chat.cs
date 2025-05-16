@@ -65,6 +65,11 @@ public sealed partial class CCVars
             "",
             CVar.SERVER | CVar.SERVERONLY | CVar.ARCHIVE,
             "A message broadcast to each player that joins the lobby.");
+
+    // Ganimed, EE - StackChat
+    public static readonly CVarDef<int> ChatStackLastLines =
+        CVarDef.Create("chat.chatstack_last_lines", 1, CVar.CLIENTONLY | CVar.ARCHIVE, "How far into the chat history to look when looking for similiar messages to coalesce them.");
+    // Ganimed, EE - StackChat
     
     /// <summary>
     /// URL of the Discord adminchat info to the channel.
@@ -77,4 +82,5 @@ public sealed partial class CCVars
     /// </summary>
     public static readonly CVarDef<string> OocChatWebhook =
         CVarDef.Create("discord.ooc_webhook", string.Empty, CVar.SERVERONLY | CVar.CONFIDENTIAL);    
+        
 }

@@ -35,7 +35,7 @@
 #  - Command # Ganimed-MRP, test merge
 #  - Brig # Ganimed-MRP, test merge
   - Cryogenics
-  special:
+#  special:
 #  - !type:AddImplantSpecial # Ganimed-MRP
 #    implants: [ MindShieldImplant ] # Ganimed-MRP
 #  - !type:AddComponentSpecial # Ganimed-MRP, test merge

@@ -4,7 +4,7 @@
   suffix: USSP, soldier
   components:
     - type: Sprite
-      sprite: _Ganimed/Clothing/Uniforms/USSP/ussp_form.rsi
+      sprite: _Ganimed/Objects/Misc/mobs_gear_sprite/USSPsoldier_sprite
       state: icon
     - type: RandomHumanoidSpawner
       settings: USSP1 
@@ -29,7 +29,7 @@
   suffix: USSP, officer
   components:
     - type: Sprite
-      sprite: _Ganimed/Clothing/Uniforms/USSP/ussp_form.rsi
+      sprite: _Ganimed/Objects/Misc/mobs_gear_sprite/USSPofficer_sprite
       state: icon
     - type: RandomHumanoidSpawner
       settings: USSP2  
@@ -54,7 +54,7 @@
   suffix: USSP, medic
   components:
     - type: Sprite
-      sprite: _Ganimed/Clothing/Uniforms/USSP/ussp_form.rsi
+      sprite: _Ganimed/Objects/Misc/mobs_gear_sprite/USSPmedic_sprite
       state: icon
     - type: RandomHumanoidSpawner
       settings: USSP3

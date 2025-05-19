@@ -29,7 +29,7 @@
   - type: Pda
     id: SoldierUSSPIDCard
     penSlot:
-      startingItem: PenHearts
+      startingItem: Pen
       priority: -1
       whitelist:
         tags:
@@ -72,7 +72,7 @@
   - type: Pda
     id: OfficerUSSPIDCard
     penSlot:
-      startingItem: PenHearts
+      startingItem: Pen
       priority: -1
       whitelist:
         tags:
@@ -115,7 +115,7 @@
   - type: Pda
     id: MedicalUSSPIDCard
     penSlot:
-      startingItem: PenHearts
+      startingItem: Pen
       priority: -1
       whitelist:
         tags:

@@ -102,8 +102,6 @@
     - MagazineLightRifle
     - MagazinePistolCaselessRifle
     - DefibrillatorCompact
-    - ReliableContainerBruteFilled
-    - ReliableContainerBurnFilled
     belt:
     - MedicatedSuture
     - MedicatedSuture

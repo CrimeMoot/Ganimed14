@@ -3,7 +3,7 @@
   name: loadout-group-inventory
   minLimit: 0
   maxLimit: 5
-  hidden: false # Testmerge troubleshooting
+  hidden: true # Until utilized
   loadouts: []
 
 - type: loadoutGroup

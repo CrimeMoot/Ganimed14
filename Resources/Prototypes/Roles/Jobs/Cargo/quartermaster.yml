@@ -24,23 +24,23 @@
   weight: 10
   startingGear: QuartermasterGear
   icon: "JobIconQuarterMaster"
-  supervisors: job-supervisors-captain
-  canBeAntag: false
+  supervisors: job-supervisors-hop # Ganimed-MRP, test merge
+  canBeAntag: true # Ganimed-MRP
   access:
   - Cargo
   - Salvage
   - Quartermaster
   - Maintenance
   - External
-  - Command
-  - Brig
+#  - Command # Ganimed-MRP, test merge
+#  - Brig # Ganimed-MRP, test merge
   - Cryogenics
-  special:
-  - !type:AddImplantSpecial
-    implants: [ MindShieldImplant ]
-  - !type:AddComponentSpecial
-    components:
-      - type: CommandStaff
+#  special:
+#  - !type:AddImplantSpecial # Ganimed-MRP
+#    implants: [ MindShieldImplant ] # Ganimed-MRP
+#  - !type:AddComponentSpecial # Ganimed-MRP, test merge
+#    components: # Ganimed-MRP, test merge
+#      - type: CommandStaff # Ganimed-MRP, test merge
       # - type: PhantomTyranyTarget # ADT Phantom
 
 - type: startingGear

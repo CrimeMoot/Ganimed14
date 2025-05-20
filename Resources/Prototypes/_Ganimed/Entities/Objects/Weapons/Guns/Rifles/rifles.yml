@@ -15,6 +15,10 @@
     sprite: _Ganimed/Objects/Weapons/Guns/Rifles/abz.rsi
   - type: Gun
     fireRate: 6
+    selectedMode: FullAuto
+    availableModes:
+    - SemiAuto
+    - FullAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/rifle2.ogg
   - type: ChamberMagazineAmmoProvider

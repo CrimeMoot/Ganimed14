@@ -680,6 +680,7 @@
   minLimit: 0
   loadouts:
   - JanitorHead
+  - BotanistHeadBucket # Ganimed
 
 - type: loadoutGroup
   id: JanitorJumpsuit
@@ -1061,6 +1062,7 @@
   minLimit: 0
   loadouts:
   - MercenaryHeadBand
+  - StationEngineerHardhatYellowDark
   - SpaceBearHide
 
 - type: loadoutGroup # Ganimed

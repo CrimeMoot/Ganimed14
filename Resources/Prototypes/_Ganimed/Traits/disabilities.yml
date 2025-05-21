@@ -1,0 +1,6 @@
+- type: trait
+  id: Incognito
+  name: trait-incognito-name
+  description: trait-incognito-desc
+  components:
+    - type: SetIncognito

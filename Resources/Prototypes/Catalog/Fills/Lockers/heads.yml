@@ -19,6 +19,7 @@
     - id: RubberStampDenied
     - id: RubberStampQm
     - id: AstroNavCartridge
+    - id: MailTeleporterMachineCircuitboard
     - id: PrinterDocFlatpack # Corvax-Printer
     # ADT-Economy-Start
     - id: ADTCommandBudgetCard
@@ -206,7 +207,7 @@
   table: !type:AllSelector
     children:
     - id: ClothingMaskGasAtmos
-    - id: ClothingOuterHardsuitEngineeringWhite
+    - id: ADTClothingModsuitBackAdvanced #ADT tweak
     - id: ClothingShoesBootsMagAdv
     - id: JetpackVoidFilled
     - id: OxygenTankFilled
@@ -258,6 +259,7 @@
     - id: RubberStampCMO
     - id: MedTekCartridge
     # ADT tweak Start
+    - id: ADTReagentAnalyzer
     - id: ADTMobileDefibrillator
     - id: ADTBriefcaseBrownHikingCmoFilled
     - id: ADTBriefcaseMedicalFilled
@@ -266,6 +268,7 @@
     - id: ADTBookPCDcmd
     - id: ADTtelescopicBaton
     - id: OpporozidoneBeakerSmall
+    - id: ADTClothingEyesGlassesMedChem
     # ADT tweak End
 
 # Hardsuit table, used for suit storage as well
@@ -324,6 +327,7 @@
     - id: ADTBookSRPrnd
     - id: ADTBookPCDcmd
     - id: ADTtelescopicBaton
+    - id: ADTBoxAICircuitBoard
     # ADT-WikiBooks-End
 
 # Hardsuit table, used for suit storage as well

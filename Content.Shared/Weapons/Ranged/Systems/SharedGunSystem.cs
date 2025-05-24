@@ -129,7 +129,7 @@ public abstract partial class SharedGunSystem : EntitySystem
         if (melee.NextAttack > component.NextFire)
         {
             component.NextFire = melee.NextAttack;
-            EntityManager.DirtyField(uid, component, nameof(MeleeWeaponComponent.NextAttack));
+            EntityManager.DirtyField(uid, component, nameof(GunComponent.NextFire));
         }
     }
 
@@ -261,7 +261,7 @@ public abstract partial class SharedGunSystem : EntitySystem
         {
             return;
         }
-        
+
         ///ADT-Personal-Gun block start
         if (TryComp<DNAGunLockerComponent>(gunUid, out var dnaGunComp) && !dnaGunComp.IsEmagged)
         {
@@ -396,10 +396,7 @@ public abstract partial class SharedGunSystem : EntitySystem
             // If they're firing an existing clip then don't play anything.
             if (shots > 0)
             {
-                if (ev.Reason != null && Timing.IsFirstTimePredicted)
-                {
-                    PopupSystem.PopupCursor(ev.Reason);
-                }
+                PopupSystem.PopupCursor(ev.Reason ?? Loc.GetString("gun-magazine-fired-empty"));
 
                 // Don't spam safety sounds at gun fire rate, play it at a reduced rate.
                 // May cause prediction issues? Needs more tweaking
@@ -426,11 +423,12 @@ public abstract partial class SharedGunSystem : EntitySystem
                 gun.BurstShotsCount = 0;
             }
         }
-
-        // Shoot confirmed - sounds also played here in case it's invalid (e.g. cartridge already spent).
-        Shoot(gunUid, gun, ev.Ammo, fromCoordinates, toCoordinates.Value, out var userImpulse, user, throwItems: attemptEv.ThrowItems);
         var shotEv = new GunShotEvent(user, ev.Ammo, fromCoordinates, toCoordinates.Value); // ADT TWEAK
-        RaiseLocalEvent(gunUid, ref shotEv);
+        RaiseLocalEvent(gunUid, ref shotEv); //ADT tweak
+        // Shoot confirmed - sounds also played here in case it's invalid (e.g. cartridge already spent).
+        Shoot(gunUid, gun, ev.Ammo, fromCoordinates, shotEv.ToCoordinates, out var userImpulse, user, throwItems: attemptEv.ThrowItems); //ADTR tweaked
+        // var shotEv = new GunShotEvent(user, ev.Ammo, fromCoordinates, toCoordinates.Value); // ADT TWEAK
+        // RaiseLocalEvent(gunUid, ref shotEv); //ADT tweak
 
         if (userImpulse && TryComp<PhysicsComponent>(user, out var userPhysics))
         {

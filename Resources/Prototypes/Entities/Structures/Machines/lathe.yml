@@ -203,6 +203,7 @@
     dynamicPacks:
     - AdvancedTools
     - ScienceEquipment
+    - ScienceExplosives
     - ScienceClothing
     - PowerCells
     - ScienceWeapons
@@ -218,6 +219,8 @@
     - ADTRCDPack
     - ADTPKAPack
     - ADTWeaponExperimentalPKAPack
+    - ADTServiceHydroponics
+    - ADTAdvancedMedicalMiscPack
     - ADTTranslatorPack
     - ADTXenoTranslatorPack
     - ADTPhantomPack
@@ -281,7 +284,7 @@
     - MechBoards
     - ShuttleBoards
     # ADT-tweak-start
-    - ADTEnergyBoardsPack 
+    - ADTEnergyBoardsPack
     # ADT-tweak-end
   - type: EmagLatheRecipes
     emagDynamicPacks:
@@ -429,15 +432,19 @@
     - SecurityWeaponsStatic
     - ADTMagazineStaticPack # ADT-tweak
     dynamicPacks:
+    - SalvageSecurityBoards
+    - SalvageSecurityWeapons
     - SecurityEquipment
     - SecurityBoards
     - SecurityExplosives
     - SecurityAmmo
     - SecurityWeapons
+    - SecurityDisablers
     # ADT-tweak-start
     - ADTMagazineUraniumPack
     - ADTAttachmentPack
     - ADT40mmGrenadePack
+    - ADTMechEquipmentSecTechfabPack
     # ADT-tweak-end
   - type: MaterialStorage
     whitelist:
@@ -512,6 +519,10 @@
     - ADTMedicalMiscStaticPack # ADT-Tweak
     dynamicPacks:
     - Chemistry
+    #ADT-Tweak Start
+    - ADTAdvancedMedicalMiscPack
+    - ADTAdvancedMedicalCarePack
+    #ADT-Tweak End
   - type: Machine
     board: MedicalTechFabCircuitboard
   - type: StealTarget
@@ -551,6 +562,7 @@
     - Scarves
     - Carpets
     - Bedsheets
+    - CorvaxClothing # Corvax-Clothing
     # ADT tweak start
     - ADTBackpacks
     - ADTSatchels

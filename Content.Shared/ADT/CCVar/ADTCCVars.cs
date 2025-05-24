@@ -222,5 +222,38 @@ public sealed class ADTCCVars
         CVarDef.Create("supermatter.yell_timer", 60f, CVar.SERVER);
 
     #endregion
+
+    #region Admin
+
+    /// <summary>
+    /// Включает или отключает уведомления администраторов о сообщениях,
+    /// содержащих оскорбительные выражения в адрес родственников.
+    /// </summary>
+    public static readonly CVarDef<bool> ChatFilterAdminAlertEnable =
+        CVarDef.Create("admin.chat_filter_admina_alert", false, CVar.SERVER | CVar.ARCHIVE);
+
+    #endregion
+
+    /// <summary>
+    /// Включает или отключает отображение дополнительной лобби-панели в пользовательском интерфейсе.
+    /// При значении true панель отображается, при false - скрывается.
+    /// </summary>
+    public static readonly CVarDef<bool> ExtraLobbyPanelEnabled =
+        CVarDef.Create("ui.show_lobby_panel", true, CVar.REPLICATED | CVar.SERVER);
+
+    /// <summary>
+    /// Ссылка на канал привязки аккаунта сски к дискорду
+    /// </summary>
+    public static readonly CVarDef<string> DiscordLinkChannel =
+        CVarDef.Create("discord.link_channel", string.Empty, CVar.REPLICATED | CVar.ARCHIVE);
+
+    /// <summary>
+    /// Хранит токен бота Discord для авторизации при взаимодействии с Discord API.
+    /// Этот токен используется для выполнения операций от имени бота, таких как получение информации о пользователях.
+    /// Токен должен быть передан в строковом формате.
+    /// </summary>
+    public static readonly CVarDef<string> DiscordTokenBot =
+        CVarDef.Create("discord.token_bot", string.Empty, CVar.SERVERONLY | CVar.CONFIDENTIAL | CVar.ARCHIVE);
+
 }
 

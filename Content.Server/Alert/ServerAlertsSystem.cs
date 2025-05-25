@@ -4,5 +4,4 @@ namespace Content.Server.Alert;
 
 internal sealed class ServerAlertsSystem : AlertsSystem
 {
-
 }

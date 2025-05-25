@@ -1,80 +1,17 @@
-- type: dataset
-  id: NamesFirstUSSPMilitaryLeader
+- type: localizedDataset
+  id: NamesFirstUSSPMilitaryLeader #Ganimed-MRP
   values:
-  - Старшина
-  - Младший Лейтенант
-  - Лейтенант
-  - Старший Лейтенант 
-  - Капитан
-  
-- type: dataset
-  id: NamesFirstUSSPMilitary
-  values:
-  - Рядовой
-  - Ефрейтор
-  - Младший Сержант
-  - Сержант
-  - Старший Сержант  
+    prefix: names-first-usssp-military-leader-dataset-
+    count: 5 # Ganimed-MRP
 
-- type: dataset
-  id: NamesLastUSSPMilitary
+- type: localizedDataset
+  id: NamesFirstUSSPMilitary #Ganimed-MRP
   values:
-  - Антарес
-  - Андромеда
-  - Альтаир
-  - Афганит  
-  - Бейд
-  - Бетельгейзе
-  - Вега
-  - Водолей
-  - Гинан
-  - Геркулес
-  - Денеб
-  - Дракон
-  - Зосма
-  - Змееносец
-  - Иклил
-  - Йильдун
-  - Канопус
-  - Козерог
-  - Лабр
-  - Лебедь
-  - Стаханов
-  - Союз  
-  - Октябрист
-  - Октябрь   
-  - Прайм
-  - Потёмкин
-  - Персей 
-  - Сол
-  - Титан
-  - Регул
-  - Сириус
-  - Саргас
-  - Табит
-  - Телец
-  - Укдах
-  - Фомальгаут
-  - Феникс
-  - Хадар
-  - Хамелеон
-  - Целена
-  - Центавр
-  - Чау
-  - Шедар
-  - Шаула
-  - Электра
-  - Терра
-  - Сварог
-  - Невский
-  - Леший
-  - Свердлов
-  - Фрунзе
-  - Шариков
-  - Шарий
-  - Розенфельд
-  - Руссо
-  - Рун
-  - Темнейший
-  - Грозный
-  - Водяной
+    prefix: names-first-usssp-military-dataset-
+    count: 5 # Ganimed-MRP 
+
+- type: localizedDataset
+  id: NamesLastUSSPMilitary #Ganimed-MRP
+  values:
+    prefix: names-last-usssp-military-dataset-
+    count: 59 # Ganimed-MRP

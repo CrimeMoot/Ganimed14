@@ -668,7 +668,7 @@ namespace Content.Server.Administration.Systems
                 return;
 
             if (IsSpam(message.UserId, message.Text) && senderAdmin == null)
-                _banManager.CreateServerBan(senderSession.UserId, senderSession.Name, null, null, null, 0, NoteSeverity.High, "Автоматическая блокировка AHELP за спам — если это ошибка, подайте апелляцию.");
+                _banManager.CreateServerBan(senderSession.UserId, senderSession.Name, null, null, null, 0, NoteSeverity.High, "Автоматическая блокировка AHelp за спам — если это случилось по ошибке свяжитесь с администрацией в Discord");
 
             AddToRecentMessages(message.UserId, message.Text, currentTime);
             // ganimed edit stop

@@ -1,66 +1,60 @@
-name: Notify Discord on PR Merge
+- name: Extract PR info and send to Discord
+  env:
+    PR_NUMBER: ${{ github.event.pull_request.number }}
+    BASE_REF: ${{ github.event.pull_request.base.ref }}
+    AUTHOR_LOGIN: ${{ github.event.pull_request.user.login }}
+    AUTHOR_AVATAR: ${{ github.event.pull_request.user.avatar_url }}
+    EMBED_COLOR: 3447003
+  run: |
+    PR_BODY=$(jq -r .pull_request.body "$GITHUB_EVENT_PATH")
 
-on:
-  pull_request:
-    types: [closed]
+    DESCRIPTION=$(echo "$PR_BODY" | awk '/## Описание PR/{flag=1; next} /^## /{flag=0} flag' | sed '/^<!--/,/-->/d' | sed '/^\s*$/d')
+    if [ -z "$DESCRIPTION" ]; then
+      DESCRIPTION="_(нет описания)_"
+    fi
 
-jobs:
-  notify:
-    if: github.event.pull_request.merged == true
-    runs-on: ubuntu-latest
+    CHANGELOG=$(echo "$PR_BODY" | awk '/## Список изменений/{flag=1; next} /^## /{flag=0} flag' | grep -E '^\s*-\s*(add|remove|tweak|fix):')
+    if [ -z "$CHANGELOG" ]; then
+      CHANGELOG="_(нет изменений в changelog)_"
+    fi
 
-    steps:
-      - name: Extract PR info and send to Discord
-        run: |
-          PR_BODY=$(jq -r .pull_request.body "$GITHUB_EVENT_PATH")
-          AUTHOR_LOGIN="${{ github.event.pull_request.user.login }}"
-          AUTHOR_AVATAR="${{ github.event.pull_request.user.avatar_url }}"
+    MEDIA_URL=$(echo "$PR_BODY" | awk '/## Медиа/{flag=1; next} /^## /{flag=0} flag' | grep -oE 'https?://[^ ]+\.(png|jpg|jpeg|gif)' | head -n 1)
 
-          DESCRIPTION=$(echo "$PR_BODY" | awk '/## Описание PR/{flag=1; next} /^## /{flag=0} flag' | sed '/^<!--/,/-->/d' | sed '/^\s*$/d')
-          if [ -z "$DESCRIPTION" ]; then
-            DESCRIPTION="_(нет описания)_"
-          fi
+    ESCAPED_DESCRIPTION=$(echo "$DESCRIPTION" | jq -Rs .)
+    ESCAPED_CHANGELOG=$(echo "$CHANGELOG" | jq -Rs .)
+    ESCAPED_MEDIA_URL=$(echo "$MEDIA_URL" | jq -Rs .)
 
-          CHANGELOG=$(echo "$PR_BODY" | awk '/## Список изменений/{flag=1; next} /^## /{flag=0} flag' | grep -E '^\s*-\s*(add|remove|tweak|fix):')
-          if [ -z "$CHANGELOG" ]; then
-            CHANGELOG="_(нет изменений в changelog)_"
-          fi
+    if [ -n "$MEDIA_URL" ]; then
+      IMAGE_FIELD=",\"image\":{\"url\":$ESCAPED_MEDIA_URL}"
+    else
+      IMAGE_FIELD=""
+    fi
 
-          MEDIA_URL=$(echo "$PR_BODY" | awk '/## Медиа/{flag=1; next} /^## /{flag=0} flag' | grep -oE 'https?://[^ ]+\.(png|jpg|jpeg|gif)' | head -n 1)
+    cat <<EOF > payload.json
+{
+  "content": "**✅ PR #${PR_NUMBER} был замержен в \`${BASE_REF}\`**",
+  "embeds": [
+    {
+      "author": {
+        "name": "${AUTHOR_LOGIN}",
+        "icon_url": "${AUTHOR_AVATAR}"
+      },
+      "title": "Pull Request #${PR_NUMBER}",
+      "color": ${EMBED_COLOR},
+      "fields": [
+        {
+          "name": "Описание",
+          "value": ${ESCAPED_DESCRIPTION}
+        },
+        {
+          "name": "Список изменений",
+          "value": ${ESCAPED_CHANGELOG}
+        }
+      ]${IMAGE_FIELD},
+      "timestamp": "$(date --utc +%Y-%m-%dT%H:%M:%SZ)"
+    }
+  ]
+}
+EOF
 
-          EMBED_COLOR=3447003
-
-          ESCAPED_DESCRIPTION=$(echo "$DESCRIPTION" | jq -Rs .)
-          ESCAPED_CHANGELOG=$(echo "$CHANGELOG" | jq -Rs .)
-          ESCAPED_MEDIA_URL=$(echo "$MEDIA_URL" | jq -Rs .)
-
-          echo '{
-            "content": "**✅ PR #'"${{ github.event.pull_request.number }}"' был замержен в `'"${{ github.event.pull_request.base.ref }}"'`**",
-            "embeds": [
-              {
-                "author": {
-                  "name": "'"$AUTHOR_LOGIN"'",
-                  "icon_url": "'"$AUTHOR_AVATAR"'"
-                },
-                "title": "Pull Request #'"${{ github.event.pull_request.number }}"'",
-                "color": '"$EMBED_COLOR"',
-                "fields": [
-                  {
-                    "name": "Описание",
-                    "value": '"$ESCAPED_DESCRIPTION"'
-                  },
-                  {
-                    "name": "Список изменений",
-                    "value": '"$ESCAPED_CHANGELOG"'
-                  }
-                ],
-                '"${MEDIA_URL:+
-                "\"image\": {\"url\": $ESCAPED_MEDIA_URL},"}'
-                "timestamp": "'"$(date --utc +%Y-%m-%dT%H:%M:%SZ)"'"
-              }
-            ]
-          }' > payload.json
-
-          curl -X POST -H "Content-Type: application/json" \
-            -d @payload.json \
-            "${{ secrets.DISCORD_WEBHOOK }}"
+    curl -X POST -H "Content-Type: application/json" -d @payload.json "${{ secrets.DISCORD_WEBHOOK }}"

@@ -114,12 +114,12 @@
   name: MV power cable
   description: A medium voltage power cable.
   components:
-  - type: Sprite
-    color: Yellow
+  - type: Sprite 
+#    color: Yellow #Ganimed-MRP
     sprite: Structures/Power/Cables/mv_cable.rsi
     state: mvcable_0
   - type: Icon
-    color: Yellow
+#    color: Yellow
     sprite: Structures/Power/Cables/mv_cable.rsi
     state: mvcable_4
   - type: NodeContainer
@@ -167,11 +167,11 @@
   description: A cable used to connect machines to an APC. #APCs aren't area defined anymore so need this cable to connect things to the APC. This description should be dynamic in future.
   components:
   - type: Sprite
-    color: Green
+#    color: Green #Ganimed-MRP
     sprite: Structures/Power/Cables/lv_cable.rsi
     state: lvcable_0
   - type: Icon
-    color: Green
+#    color: Green
     sprite: Structures/Power/Cables/lv_cable.rsi
     state: lvcable_4
   - type: NodeContainer

@@ -664,10 +664,10 @@ namespace Content.Server.Administration.Systems
             // ganimed edit start
             var currentTime = _timing.RealTime;
 
-            if (IsOnCooldown(message.UserId, currentTime))
+            if (IsOnCooldown(message.UserId, currentTime) && senderAdmin == null)
                 return;
 
-            if (IsSpam(message.UserId, message.Text))
+            if (IsSpam(message.UserId, message.Text) && senderAdmin == null)
                 _banManager.CreateServerBan(senderSession.UserId, senderSession.Name, null, null, null, 0, NoteSeverity.High, "Автоматическая блокировка AHELP за спам — если это ошибка, подайте апелляцию.");
 
             AddToRecentMessages(message.UserId, message.Text, currentTime);

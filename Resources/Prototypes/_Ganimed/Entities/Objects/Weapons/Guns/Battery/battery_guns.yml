@@ -26,11 +26,11 @@
   - type: Battery
     maxCharge: 1300
     startingCharge: 1300
-  - type: BatterySelfRecharger
-    autoRecharge: true
-    autoRechargeRate: 20
+#  - type: BatterySelfRecharger
+#    autoRecharge: true
+#    autoRechargeRate: 10
   - type: ProjectileBatteryAmmoProvider
-    proto: BulletDisabler
+    proto: disablerdominator
     fireCost: 100
   - type: EnergyGun
     fireModes:
@@ -76,8 +76,8 @@
     color: "#ff4300"
     radius: 2.0
     energy: 7.0
-  - type: IgniteOnCollide
-    fireStacks: 0.50
+#  - type: IgniteOnCollide
+#    fireStacks: 0.50
   - type: Fixtures
     fixtures:
       projectile:

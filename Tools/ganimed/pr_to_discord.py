@@ -5,84 +5,62 @@ import re
 import requests
 from datetime import datetime
 
-MAX_DESCRIPTION_LENGTH = 6000
+EMOJI_MAP = {
+    "add": "<:newfeature:1376951016058257480>",
+    "remove": "<:deleted:1376951008898580560>",
+    "delete": "<:deleted:1376951008898580560>",
+    "tweak": "<:refactor:1376951019812028506>",
+    "fix": "<:refactor:1376951011888992266>"
+}
 
-def extract_section(text, header):
-    pattern = rf"## {re.escape(header)}\s*(.*?)\s*(?=\n## |\Z)"
-    match = re.search(pattern, text, re.DOTALL | re.IGNORECASE)
-    if match:
-        section = re.sub(r'<!--.*?-->', '', match.group(1), flags=re.DOTALL).strip()
-        return section if section else None
-    return None
+EMOJI_ORDER = ["add", "remove", "delete", "tweak", "fix"]
+DEFAULT_COLOR = 0xE91E63  # Красный цвет эмбеда
 
 def extract_changelog(text):
     match = re.search(r":cl:\s*(.*?)\s*(?:<!--|\Z)", text, re.DOTALL)
-    if match:
-        return match.group(1).strip()
-    return None
-
-def extract_all_image_urls(text):
-    if not text:
-        return []
-    urls = re.findall(r'!\[.*?\]\((https?://[^\s)]+)\)', text)
-    raw_urls = re.findall(r'(https?://\S+)', text)
-    for url in raw_urls:
-        if url.lower().endswith(('.png', '.jpg', '.jpeg', '.gif', '.webp')):
-            if url not in urls:
-                urls.append(url)
-    return urls[:10]
-
-def clean_media_text(media):
-    if not media:
+    if not match:
         return None
-    cleaned = re.sub(r'!\[.*?\]\(.*?\)', '', media)
-    cleaned = re.sub(r'\[.*?\]\(.*?\)', '', cleaned)
-    cleaned = cleaned.strip()
-    return cleaned if cleaned else None
 
-def chunk_text(text, max_len):
-    if len(text) <= max_len:
-        return [text]
-    parts = []
-    lines = text.split('\n')
-    current = ""
-    for line in lines:
-        if len(current) + len(line) + 1 > max_len:
-            parts.append(current.strip())
-            current = line + "\n"
-        else:
-            current += line + "\n"
-    if current.strip():
-        parts.append(current.strip())
-    return parts
+    content = match.group(1).strip()
+    groups = {key: [] for key in EMOJI_MAP.keys()}
 
-def get_color_by_changelog(changelog):
-    if not changelog:
-        return 0xE91E63
-    changelog = changelog.lower()
-    lines = changelog.splitlines()
-    for line in lines:
+    for line in content.splitlines():
         line = line.strip()
-        if line.startswith('add:'):
-            return 0x2ECC71
-        elif line.startswith('fix:'):
-            return 0x3498DB
-        elif line.startswith('tweak:'):
-            return 0xF1C40F
-        elif line.startswith('remove:') or line.startswith('delete:'):
-            return 0xE74C3C
-    return 581478
+        if not line.startswith("-"):
+            continue
+        line_content = line[1:].strip()
+        for key in EMOJI_MAP:
+            if line_content.lower().startswith(f"{key}:"):
+                desc = line_content[len(key)+1:].strip().capitalize()
+                groups[key].append(f"{EMOJI_MAP[key]} {desc}")
+                break
 
-def create_embed(title, description, footer_text, image_url=None, color=5814783):
+    # Если нет валидных строк — возвращаем None
+    if all(len(v) == 0 for v in groups.values()):
+        return None
+
+    grouped_output = []
+    for key in EMOJI_ORDER:
+        if key in groups and groups[key]:
+            grouped_output.extend(groups[key])
+            grouped_output.append("")  # пустая строка для отступа
+
+    if grouped_output and grouped_output[-1] == "":
+        grouped_output.pop()
+
+    return "\n".join(grouped_output)
+
+def create_embed(changelog, author_name, author_avatar, branch):
     embed = {
-        "title": title,
-        "description": description,
-        "color": color,
-        "footer": {"text": footer_text},
-        "timestamp": datetime.utcnow().isoformat()
+        "title": f"⭐ Изменения нашей ветки ({branch})",
+        # Добавляем нулевой символ с переносом строки для отступа после заголовка
+        "description": f"\u200b\n{changelog}",
+        "color": DEFAULT_COLOR,
+        "footer": {
+            "text": f"🆑 {author_name}, {datetime.utcnow().strftime('%d.%m.%Y %H:%M UTC')}",
+            "icon_url": author_avatar
+        }
     }
-    if image_url:
-        embed["image"] = {"url": image_url}
     return embed
 
 def main():
@@ -97,51 +75,30 @@ def main():
         event = json.load(f)
 
     pr = event.get("pull_request")
-    if not pr:
-        print("No pull request data found in event.")
+    if not pr or not pr.get("merged"):
+        print("PR not merged or no pull request data.")
         return
 
-    title = pr.get("title", "No title")
     body = pr.get("body", "")
     author = pr.get("user", {}).get("login", "Unknown")
+    avatar_url = pr.get("user", {}).get("avatar_url", "")
+    branch = pr.get("base", {}).get("ref", "master")
 
-    description = extract_section(body, "Описание PR")
-    media = extract_section(body, "Медиа")
-    changes = extract_section(body, "Список изменений")
     changelog = extract_changelog(body)
 
-    media_text = clean_media_text(media)
-    image_urls = extract_all_image_urls(media)
+    if not changelog:
+        print("No valid changelog found. Skipping PR.")
+        return
 
-    sections = []
-    if description:
-        sections.append(f"📝 **Описание PR:**\n{description}")
-    if media_text:
-        sections.append(f"🖼 **Медиа:**\n{media_text}")
-    if changes:
-        sections.append(f"📌 **Список изменений:**\n{changes}")
-    if changelog:
-        sections.append(f"📋 **Changelog:**\n{changelog}")
-
-    full_text = "\n\n".join(sections) if sections else "Нет описания."
-
-    text_chunks = chunk_text(full_text, MAX_DESCRIPTION_LENGTH)
-
-    color = get_color_by_changelog(changelog or changes)
-
-    embeds = []
-    for i, chunk in enumerate(text_chunks):
-        image_url = image_urls[i] if i < len(image_urls) else None
-        embeds.append(create_embed(title if i == 0 else f"{title} (часть {i+1})", chunk, author, image_url, color))
+    embed = create_embed(changelog, author, avatar_url, branch)
 
     headers = {"Content-Type": "application/json"}
-    for embed in embeds:
-        payload = {"embeds": [embed]}
-        response = requests.post(webhook_url, headers=headers, data=json.dumps(payload))
-        if response.status_code >= 400:
-            print(f"Failed to send webhook: {response.status_code} - {response.text}")
-        else:
-            print("✅ Discord webhook sent successfully.")
+    payload = {"embeds": [embed]}
+    response = requests.post(webhook_url, headers=headers, data=json.dumps(payload))
+    if response.status_code >= 400:
+        print(f"❌ Failed to send webhook: {response.status_code} - {response.text}")
+    else:
+        print("✅ Webhook sent successfully.")
 
 if __name__ == "__main__":
     main()

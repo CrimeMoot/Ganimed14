@@ -6,11 +6,11 @@ import requests
 from datetime import datetime
 
 EMOJI_MAP = {
-    "add": "<:newfeature:1376951016058257480>",
-    "remove": "<:deleted:1376951008898580560>",
-    "delete": "<:deleted:1376951008898580560>",
-    "tweak": "<:refactor:1376951019812028506>",
-    "fix": "<:refactor:1376951011888992266>"
+    "add": "<:new1:1376955864698585248>",
+    "remove": "<:remove1:1376955857438376036>",
+    "delete": "<:remove1:1376955857438376036>",
+    "tweak": "<:tweak:1376955868028993658>",
+    "fix": "<:fix:1376955860030459985>"
 }
 
 EMOJI_ORDER = ["add", "remove", "delete", "tweak", "fix"]

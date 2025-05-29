@@ -13,13 +13,13 @@
     sprite: _Ganimed/Structures/Storage/tanks.rsi
     layers:
       - state: fueltank-2
-      - state: generictank-1-1
+      - state: generictank-1-1 # Ganimed-Tweak
         map: ["enum.SolutionContainerLayers.Fill"]
         visible: false
   - type: Appearance
   - type: SolutionContainerVisuals
     maxFillLevels: 5
-    fillBaseName: generictank-1-
+    fillBaseName: generictank-1- # Ganimed-Tweak
   - type: ExaminableSolution
     solution: tank
   - type: ReagentTank
@@ -32,7 +32,7 @@
   - type: PacifismDangerousAttack
   - type: Explosive
     explosionType: Default
-    totalIntensity: 60 # Mediocre explosion. Not enough to do any meaningful structural damage to anything other then windows, provided you're only using one tank.
+    totalIntensity: 30 # ADT-Tweak
 
 - type: entity
   id: WeldingFuelTankFull
@@ -59,7 +59,7 @@
     sprite: _Ganimed/Structures/Storage/tanks.rsi
     layers:
       - state: highfueltank-2
-      - state: highgenerictank-2-1
+      - state: highgenerictank-2-1 # Ganimed-Tweak
         map: ["enum.SolutionContainerLayers.Fill"]
         visible: false
   - type: SolutionContainerVisuals
@@ -91,7 +91,7 @@
     sprite: _Ganimed/Structures/Storage/tanks.rsi
     layers:
       - state: watertank-2
-      - state: generictank-1-1
+      - state: generictank-1-1 # Ganimed-Tweak
         map: ["enum.SolutionContainerLayers.Fill"]
         visible: false
   - type: Appearance
@@ -175,13 +175,13 @@
     sprite: _Ganimed/Structures/Storage/tanks.rsi
     layers:
       - state: highwatertank-2
-      - state: highgenerictank-2-1
+      - state: highgenerictank-2-1 # Ganimed-Tweak
         map: ["enum.SolutionContainerLayers.Fill"]
         visible: false
   - type: Appearance
   - type: SolutionContainerVisuals
     maxFillLevels: 7
-    fillBaseName: highgenerictank-2-
+    fillBaseName: highgenerictank-2- # Ganimed-Tweak
   - type: SolutionContainerManager
     solutions:
       tank:
@@ -207,12 +207,12 @@
       sprite: _Ganimed/Structures/Storage/tanks.rsi
       layers:
         - state: generictank-1
-        - state: generictank-1-1
+        - state: generictank-1-1 # Ganimed-Tweak
           map: ["enum.SolutionContainerLayers.Fill"]
           visible: false
     - type: Appearance
     - type: SolutionContainerVisuals
       maxFillLevels: 5
-      fillBaseName: generictank-1-
+      fillBaseName: generictank-1- # Ganimed-Tweak
     - type: ExaminableSolution
       solution: tank

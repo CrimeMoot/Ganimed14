@@ -2,6 +2,7 @@ using Content.Shared.ActionBlocker;
 using Content.Shared.Clothing;
 using Content.Shared.Inventory;
 using Robust.Shared.Player;
+using Robust.Shared.Prototypes; // Ganime edit
 using Robust.Shared.Timing;
 
 namespace Content.Shared.Chat.TypingIndicator;
@@ -83,6 +84,7 @@ public abstract class SharedTypingIndicatorSystem : EntitySystem
             return;
         }
 
+        SetTypingOverride(uid.Value, ev.OverrideIndicator); // Ganimed edit
         SetTypingIndicatorState(uid.Value, ev.State); // Corvax-TypingIndicator
     }
 
@@ -100,5 +102,13 @@ public abstract class SharedTypingIndicatorSystem : EntitySystem
             Dirty(uid, component);
         }
         // end-backmen: TypingIndicator
+    }
+
+    /// Ganimed edit 
+    private void SetTypingOverride(EntityUid uid, ProtoId<TypingIndicatorPrototype>? protoId)
+    {
+        var comp = EnsureComp<TypingIndicatorComponent>(uid);
+        comp.TypingIndicatorOverridePrototype = protoId;
+        Dirty(uid, comp);
     }
 }

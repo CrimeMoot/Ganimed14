@@ -21,4 +21,8 @@ public sealed partial class TypingIndicatorComponent : Component
     [AutoNetworkedField]
     public TypingIndicatorState TypingIndicatorState = TypingIndicatorState.None;
     // end-backmen: TypingIndicator
+
+    // Ganimed edit
+    [DataField, AutoNetworkedField]
+    public ProtoId<TypingIndicatorPrototype>? TypingIndicatorOverridePrototype;
 }

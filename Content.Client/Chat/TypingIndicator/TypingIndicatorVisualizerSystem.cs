@@ -44,6 +44,13 @@ public sealed class TypingIndicatorVisualizerSystem : VisualizerSystem<TypingInd
         if (overrideIndicator != null)
             currentTypingIndicator = overrideIndicator.Value;
 
+        // Ganimed edit start
+        if (component.TypingIndicatorOverridePrototype != null)
+        {
+            currentTypingIndicator = component.TypingIndicatorOverridePrototype.Value;
+        }
+        // Ganimed edit end
+
         if (!_prototypeManager.TryIndex(currentTypingIndicator, out var proto))
         {
             Log.Error($"Unknown typing indicator id: {component.TypingIndicatorPrototype}");

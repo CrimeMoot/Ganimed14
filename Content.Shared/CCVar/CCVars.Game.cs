@@ -392,4 +392,11 @@ public sealed partial class CCVars
         public static readonly CVarDef<bool> GameHostnameInTitlebar =
             CVarDef.Create("game.hostname_in_titlebar", true, CVar.SERVER | CVar.REPLICATED);
 
+        /// <summary>
+        /// Ganimed edit
+        /// How long players should have to vote on the round end shuttle being sent
+        /// </summary>
+        public static readonly CVarDef<TimeSpan> EmergencyShuttleVoteTime =
+            CVarDef.Create("shuttle.vote_time", TimeSpan.FromMinutes(1), CVar.SERVER);
+
 }

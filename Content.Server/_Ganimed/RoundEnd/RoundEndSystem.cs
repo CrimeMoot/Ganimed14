@@ -1,6 +1,6 @@
 using Content.Server.Voting.Managers;
 using Content.Server.Voting;
-using Content.Shared.CCVars;
+using Content.Shared.CCVar;
 
 namespace Content.Server.RoundEnd;
 

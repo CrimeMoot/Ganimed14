@@ -8,7 +8,7 @@ using static Content.Shared.Paper.PaperComponent;
 namespace Content.Client.Paper.UI;
 
 [UsedImplicitly]
-public sealed class PaperBoundUserInterface : BoundUserInterface
+public sealed partial class PaperBoundUserInterface : BoundUserInterface // Ganimed edit
 {
     [ViewVariables]
     private PaperWindow? _window;
@@ -23,6 +23,9 @@ public sealed class PaperBoundUserInterface : BoundUserInterface
 
         _window = this.CreateWindow<PaperWindow>();
         _window.OnSaved += InputOnTextEntered;
+        _window.Typing += OnTyping; // Ganimed edit
+        _window.SubmitPressed += OnSubmit; // Ganimed edit
+        _window.OnClose += OnSubmit; // Ganimed edit
 
         if (EntMan.TryGetComponent<PaperComponent>(Owner, out var paper))
         {

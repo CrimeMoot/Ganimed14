@@ -54,3 +54,9 @@
   spritePath: _Ganimed/Typing.rsi
   typingState: vox0
   idleState: vox3
+
+- type: typingIndicator
+  id: paper
+  spritePath: _Ganimed/Typing.rsi
+  typingState: paper0
+  offset: 0, 0.1

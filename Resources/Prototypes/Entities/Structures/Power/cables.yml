@@ -57,7 +57,7 @@
   description: An orange high voltage power cable.
   components:
   - type: Sprite
-    sprite: Structures/Power/Cables/hv_cable.rsi
+    sprite: _Ganimed/Structures/Power/Cables/hv_cable.rsi #Ganimed-resprite
     state: hvcable_0
     drawdepth: ThickWire
   - type: Icon
@@ -116,11 +116,11 @@
   components:
   - type: Sprite 
 #    color: Yellow #Ganimed-Tweak
-    sprite: Structures/Power/Cables/mv_cable.rsi
+    sprite: _Ganimed/Structures/Power/Cables/mv_cable.rsi #Ganimed-resprite
     state: mvcable_0
   - type: Icon
 #    color: Yellow
-    sprite: Structures/Power/Cables/mv_cable.rsi
+    sprite: _Ganimed/Structures/Power/Cables/mv_cable.rsi #Ganimed-resprite
     state: mvcable_4
   - type: NodeContainer
     nodes:
@@ -168,11 +168,11 @@
   components:
   - type: Sprite
 #    color: Green #Ganimed-Tweak
-    sprite: Structures/Power/Cables/lv_cable.rsi
+    sprite: _Ganimed/Structures/Power/Cables/lv_cable.rsi #Ganimed-resprite
     state: lvcable_0
   - type: Icon
 #    color: Green
-    sprite: Structures/Power/Cables/lv_cable.rsi
+    sprite: _Ganimed/Structures/Power/Cables/lv_cable.rsi #Ganimed-resprite
     state: lvcable_4
   - type: NodeContainer
     nodes:

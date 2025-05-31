@@ -1,14 +1,14 @@
 - type: entity
   parent: BaseItem
-  id: FlagHandyElz
-  name: Elizium handheld flag
-  description: "Go to kill xenos!"
+  id: FlagHandyElysium
+  name: Elysium handheld flag
+  description: "Go kill some xenos!"
   components:
   - type: Sprite
-    sprite: _Ganimed/Objects/Misc/Handy_Flags/Elz_handy_flag.rsi
+    sprite: _Ganimed/Objects/Misc/Handy_Flags/Elysium_handy_flag.rsi
     state: icon
   - type: Item
-    sprite: _Ganimed/Objects/Misc/Handy_Flags/Elz_handy_flag.rsi
+    sprite: _Ganimed/Objects/Misc/Handy_Flags/Elysium_handy_flag.rsi
 
 - type: entity
   parent: BaseItem
@@ -17,10 +17,10 @@
   description: "Proletarians of all countries, unite!"
   components:
   - type: Sprite
-    sprite:  _Ganimed/Objects/Misc/Handy_Flags/USSP_handy_flag.rsi
+    sprite: _Ganimed/Objects/Misc/Handy_Flags/USSP_handy_flag.rsi
     state: icon
   - type: Item
-    sprite:  _Ganimed/Objects/Misc/Handy_Flags/USSP_handy_flag.rsi
+    sprite: _Ganimed/Objects/Misc/Handy_Flags/USSP_handy_flag.rsi
 
 - type: entity
   parent: BaseItem
@@ -29,7 +29,7 @@
   description: "It looks technologically advanced."
   components:
   - type: Sprite
-    sprite:  _Ganimed/Objects/Misc/Handy_Flags/TSF_handy_flag.rsi
+    sprite: _Ganimed/Objects/Misc/Handy_Flags/TSF_handy_flag.rsi
     state: icon
   - type: Item
-    sprite:  _Ganimed/Objects/Misc/Handy_Flags/TSF_handy_flag.rsi
+    sprite: _Ganimed/Objects/Misc/Handy_Flags/TSF_handy_flag.rsi

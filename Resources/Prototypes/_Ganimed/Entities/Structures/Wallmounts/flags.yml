@@ -1,13 +1,13 @@
 - type: entity
   parent: BaseFlag
-  id: FlagElizium
+  id: FlagElysium
   name: Elizium flag
-  description: "Go to kill xenos!"
+  description: "Go kill some xenos!"
   components:
   - type: Sprite
     drawdepth: WallTops
     sprite: _Ganimed/Structures/Wallmounts/flags.rsi
-    state: elz
+    state: elysium
 
 - type: entity
   parent: BaseFlag

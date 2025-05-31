@@ -27,7 +27,6 @@
     whitelist:
       tags:
         - SecBeltEquip
-        - BrigmedicBeltEquip
         - CigPack
         - Taser
         - Wrench

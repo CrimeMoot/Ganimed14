@@ -154,6 +154,10 @@
     - 4,0,4,1
     - 6,0,6,1
     maxItemSize: Small
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
   - type: ItemSlots
     slots:
       item:
@@ -184,6 +188,10 @@
   - type: FoldableClothing
     foldedEquippedPrefix: reflected
     foldedHeldPrefix: reflected
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
   - type: Storage
     grid:
     - 0,0,1,1

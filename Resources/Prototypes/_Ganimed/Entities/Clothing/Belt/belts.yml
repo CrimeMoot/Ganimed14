@@ -168,8 +168,8 @@
           - Sidearm
   - type: ContainerContainer
     containers:
-      storagebase: {}
-      item: {}
+      item: !type:ContainerSlot
+        ent: null
 
 
 - type: entity
@@ -227,8 +227,8 @@
   - type: Appearance
   - type: ContainerContainer
     containers:
-      storagebase: {}
-      item: {}
+      item: !type:ContainerSlot
+        ent: null
 
 - type: entity
   parent: ClothingBeltStorageBase

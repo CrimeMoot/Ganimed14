@@ -189,10 +189,6 @@
   - type: FoldableClothing
     foldedEquippedPrefix: reflected
     foldedHeldPrefix: reflected
-  - type: ContainerContainer
-    containers:
-      storagebase: !type:Container
-        ents: []
   - type: Storage
     grid:
     - 0,0,1,1

@@ -154,10 +154,6 @@
     - 4,0,4,1
     - 6,0,6,1
     maxItemSize: Small
-  - type: ContainerContainer
-    containers:
-      storagebase: !type:Container
-        ents: []
   - type: ItemSlots
     slots:
       item:
@@ -170,6 +166,11 @@
         whitelist:
           tags:
           - Sidearm
+  - type: ContainerContainer
+    containers:
+      storagebase: {}
+      item: {}
+
 
 - type: entity
   parent: ClothingBeltStorageBase
@@ -228,6 +229,10 @@
           #tags:
             #- WeaponRevolverPirate
   - type: Appearance
+  - type: ContainerContainer
+    containers:
+      storagebase: {}
+      item: {}
 
 - type: entity
   parent: ClothingBeltStorageBase

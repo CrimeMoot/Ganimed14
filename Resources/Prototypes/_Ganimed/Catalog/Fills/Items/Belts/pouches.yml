@@ -6,9 +6,9 @@
     - type: StorageFill
       contents:
         - id: OintmentAdvanced1
-          amount: 5
+          amount: 4
         - id: BrutepackAdvanced1
-          amount: 5
+          amount: 4
         - id: Tourniquet
           amount: 2
         - id: CombatMedipen
@@ -22,9 +22,9 @@
     - type: StorageFill
       contents:
         - id: OintmentAdvanced1
-          amount: 5
+          amount: 4
         - id: BrutepackAdvanced1
-          amount: 5
+          amount: 4
         - id: Tourniquet
           amount: 2
         - id: CombatMedipen

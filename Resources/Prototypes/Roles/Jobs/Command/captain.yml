@@ -4,15 +4,15 @@
   description: job-description-captain
   playTimeTracker: JobCaptain
   requirements:
-    - !type:RoleTimeRequirement
-      role: JobHeadOfPersonnel
-      time: 18000 #5 hrs Ganimed-RoleTime
 #   - !type:DepartmentTimeRequirement
 #     department: Engineering
 #     time: 72000 #20 hrs # Corvax-RoleTime
 #   - !type:DepartmentTimeRequirement
 #     department: Medical
 #     time: 72000 #20 hrs # Corvax-RoleTime
+    - !type:RoleTimeRequirement
+      role: JobHeadOfPersonnel
+      time: 18000 #5 hrs Ganimed-RoleTime
     - !type:DepartmentTimeRequirement
       department: Security
       time: 72000 #20 hrs # Corvax-RoleTime
@@ -24,14 +24,14 @@
     - !type:TraitsRequirement # Ganimed-MRP: Captain must be proficient in communication
       inverted: true
       traits:
-      - Monolingual
+#     - Monolingual
       - Muted
   # ADT Restrict Start
-  # - !type:SpeciesRequirement
-  #   inverted: true
-  #   species:
-  #   - Resomi
-  #   - Vox
+    - !type:SpeciesRequirement
+      inverted: true
+      species:
+      - Resomi
+      - Vox
   # ADT RESTRICT End
   weight: 20
   startingGear: CaptainGear

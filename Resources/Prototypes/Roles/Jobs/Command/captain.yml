@@ -3,6 +3,7 @@
   name: job-name-captain
   description: job-description-captain
   playTimeTracker: JobCaptain
+  requireAdminNotify: true # Ganimed
   requirements:
 #   - !type:DepartmentTimeRequirement
 #     department: Engineering

@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="Space Station 14" width="650" src="https://github.com/CrimeMoot/Ganimed14/blob/master/Resources/Textures/Logo/logo-ganimed.png" />
+  <img alt="Space Station 14" width="650" src="https://github.com/CrimeMoot/Ganimed14/blob/master/Resources/Textures/_Ganimed/Logo/logo-ganimed.png" />
 </p>
 
 <div align="center">

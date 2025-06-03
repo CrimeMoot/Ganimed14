@@ -3,6 +3,7 @@
   name: job-name-hop
   description: job-description-hop
   playTimeTracker: JobHeadOfPersonnel
+  requireAdminNotify: true # Ganimed
   requirements:
 #    - !type:DepartmentTimeRequirement
 #      department: Engineering
@@ -13,11 +14,11 @@
 #    - !type:DepartmentTimeRequirement
 #      department: Security
 #      time: 18000 #5 hrs # Corvax-RoleTime
+    - !type:OverallPlaytimeRequirement
+      time: 180000 #50 hrs # Corvax-RoleTime
     - !type:DepartmentTimeRequirement
       department: Command
       time: 54000 #15 hrs Ganimed-RoleTime
-    - !type:OverallPlaytimeRequirement
-      time: 180000 #50 hrs # Corvax-RoleTime
     - !type:DepartmentTimeRequirement
       department: Civilian
       time: 36000 #10 hrs Ganimed-RoleTime

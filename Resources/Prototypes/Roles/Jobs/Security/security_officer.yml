@@ -6,13 +6,13 @@
   requirements:
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 54000 #15 hrs # ADT-RoleTime
+      time: 36000 #10 hrs Ganimed-RoleTime
   # ADT Restrict Start
-    - !type:SpeciesRequirement
-      inverted: true
-      species:
-      - Resomi
-      - Vox
+  # - !type:SpeciesRequirement
+  #   inverted: true
+  #   species:
+  #   - Resomi
+  #   - Vox
   # ADT RESTRICT End
   startingGear: SecurityOfficerGear
   icon: "JobIconSecurityOfficer"

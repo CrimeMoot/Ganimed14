@@ -3,25 +3,32 @@
   name: job-name-hos
   description: job-description-hos
   playTimeTracker: JobHeadOfSecurity
+  requireAdminNotify: true #Ganimed
   requirements:
     - !type:RoleTimeRequirement
       role: JobWarden
-      time: 54000 #15 hrs # ADT-RoleTime
-#    - !type:RoleTimeRequirement
-#      role: JobSecurityOfficer
-#      time: 36000 #10 hrs
+      time: 36000 #10 hrs Ganimed-RoleTime
+    - !type:RoleTimeRequirement
+      role: JobSecurityOfficer
+      time: 54000 #15 hrs Ganimed-RoleTime
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 198000 #55 hrs # ADT-RoleTime
-#    - !type:OverallPlaytimeRequirement
-#      time: 144000 #40 hrs
-      # ADT Restrict Start
-    - !type:SpeciesRequirement
+      time: 108000 #30 hrs Ganimed-RoleTime
+    - !type:OverallPlaytimeRequirement
+      time: 180000 #50 hrs Ganimed-RoleTime
+    - !type:TraitsRequirement # Ganimed-MRP: HoS undergoes medical examination
       inverted: true
-      species:
-      - Resomi
-      - Vox
-  # ADT RESTRICT End
+      traits:
+      - Pacifist
+      - Blindness
+      - Muted
+#       ADT Restrict Start
+#    - !type:SpeciesRequirement
+#      inverted: true
+#      species:
+#      - Resomi
+#      - Vox
+#   ADT RESTRICT End
   weight: 10
   startingGear: HoSGear
   icon: "JobIconHeadOfSecurity"
@@ -45,6 +52,7 @@
     components:
       - type: CommandStaff
       # - type: PhantomTyranyTarget # ADT Phantom
+      - type: AntagImmune # Ganimed-MRP: Loyalty implant
 
 - type: startingGear
   id: HoSGear

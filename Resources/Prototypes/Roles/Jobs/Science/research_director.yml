@@ -3,17 +3,22 @@
   name: job-name-rd
   description: job-description-rd
   playTimeTracker: JobResearchDirector
+  requireAdminNotify: true
   requirements:
+   - !type:RoleTimeRequirement
+      role: JobScientist
+      time: 21600 #6 hrs #Ganimed-RoleTime
     - !type:DepartmentTimeRequirement
       department: Science
-      time: 54000 #15 hrs # Corvax-RoleTime
-#    - !type:OverallPlaytimeRequirement
-#      time: 144000 #40 hrs
+      time: 72000 #20 hrs Ganimed-RoleTime
+    - !type:OverallPlaytimeRequirement
+      time: 144000 #40 hrs Ganimed-RoleTime
   weight: 10
   startingGear: ResearchDirectorGear
   icon: "JobIconResearchDirector"
   supervisors: job-supervisors-captain
   canBeAntag: true # Ganimed-MRP
+  antagAdvantage: 5 # Ganimed-MRP
   access:
   - Research
   - Command

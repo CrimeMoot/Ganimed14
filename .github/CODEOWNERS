@@ -3,6 +3,11 @@
 # Ping for all PRs
 * @CrimeMoot
 
+# GitHub stuff
+/.github/ @CrimeMoot @HyperB1
+/Tools/ @CrimeMoot
+*.md @CrimeMoot
+
 # Database
 /Content.*.Database/ @CrimeMoot
 
@@ -22,22 +27,33 @@
 # Head Mapper
 /Resources/Maps/** @AltMapper
 /Resources/Prototypes/Maps/** @AltMapper
-/Resources/Prototypes/_Ganimed/Maps/** @AltMapper
+/Resources/Prototypes/*/Maps/** @AltMapper
 
-# Sprites and design (Head Spriter vacant)
+# Sprites and visual design (Head Spriter & Creative Director vacant)
 # *.png
+# *.webp
 # *meta.json
 # /Resources/Textures/
 
+# Audio and sound design (Design Lead vacant)
+# *.ogg
+# /Resources/Audio/
+
 # Unique content
+/Content.Server/Speech/EntitySystems/ @HyperB1
+/Content.Server/Speech/Components/ @HyperB1
+/Resources/Prototypes/Accents/ @HyperB1
+/Resources/Prototypes/*/Accents/ @HyperB1
 /Resources/Prototypes/Loadouts/ @HyperB1
-/Resources/Prototypes/_Ganimed/Loadouts/ @HyperB1
+/Resources/Prototypes/*/Loadouts/ @HyperB1
+/Resources/Prototypes/Roles/ @HyperB1 @AltMapper @RedSpyy
+/Resources/Prototypes/*/Roles/ @HyperB1 @AltMapper @RedSpyy
 /Resources/Prototypes/_Ganimed/Entities/Clothing/ @AltMapper
 /Resources/Prototypes/Entities/Objects/Weapons/ @RedSpyy
-/Resources/Prototypes/_Ganimed/Entities/Objects/Weapons/ @RedSpyy
+/Resources/Prototypes/*/Entities/Objects/Weapons/ @RedSpyy
 
 # Lore, Wiki, Guidebook & Rules
 *.xml @HyperB1
 /Resources/ServerInfo/ @AltMapper @Yuoko @HyperB1
 /Resources/Prototypes/Guidebook/ @AltMapper @Yuoko @HyperB1
-/Resources/Prototypes/_Ganimed/Guidebook/ @AltMapper @Yuoko @HyperB1
+/Resources/Prototypes/*/Guidebook/ @AltMapper @Yuoko @HyperB1

@@ -2,7 +2,7 @@
   parent: JobIcon
   id: JobIconMagistrat
   icon:
-    sprite: /Textures/ADT/Interface/Misc/job_icons.rsi
+    sprite: /Textures/_Ganimed/Interface/Misc/job_icons.rsi #Ganimed-Tweak
     state: Magistrat
   jobName: job-name-magistrat
 
@@ -10,7 +10,7 @@
   parent: JobIcon
   id: JobIconADTBlueShieldOfficer
   icon:
-    sprite: /Textures/ADT/Interface/Misc/job_icons.rsi
+    sprite: /Textures/_Ganimed/Interface/Misc/job_icons.rsi #Ganimed-Tweak
     state: ADTBlueShieldOfficer
   jobName: job-name-ADTBlueShieldOfficer
 
@@ -18,7 +18,7 @@
   parent: JobIcon
   id: JobIconADTPathologist
   icon:
-    sprite: /Textures/ADT/Interface/Misc/job_icons.rsi
+    sprite: /Textures/_Ganimed/Interface/Misc/job_icons.rsi #Ganimed-Tweak
     state: ADTPathologist
   jobName: job-name-ADTPathologist
 
@@ -26,7 +26,7 @@
   parent: JobIcon
   id: JobIconADTGuardOfficer
   icon:
-    sprite: /Textures/ADT/Interface/Misc/job_icons.rsi
+    sprite: /Textures/_Ganimed/Interface/Misc/job_icons.rsi #Ganimed-Tweak
     state: GuardOfficer
   jobName: job-name-guard-officer
 
@@ -34,7 +34,7 @@
   parent: JobIcon
   id: JobIconADTUSSPArmyOfficer
   icon:
-    sprite: /Textures/ADT/Interface/Misc/job_icons.rsi
+    sprite: /Textures/_Ganimed/Interface/Misc/job_icons.rsi #Ganimed-Tweak
     state: JobIconUSSPArmyOfficer
   jobName: job-name-ussp-army-officer
 
@@ -42,7 +42,7 @@
   parent: JobIcon
   id: JobIconADTUSSPArmyPrivate
   icon:
-    sprite: /Textures/ADT/Interface/Misc/job_icons.rsi
+    sprite: /Textures/_Ganimed/Interface/Misc/job_icons.rsi #Ganimed-Tweak
     state: JobIconUSSPArmyPrivate
   jobName: job-name-ussp-army-private
 
@@ -92,6 +92,6 @@
   parent: JobIcon
   id: JobIconADTBarber
   icon:
-    sprite: /Textures/ADT/Interface/Misc/job_icons.rsi
+    sprite: /Textures/_Ganimed/Interface/Misc/job_icons.rsi #Ganimed-Tweak
     state: ADTHairdresser
   jobName: job-name-ADTbarber

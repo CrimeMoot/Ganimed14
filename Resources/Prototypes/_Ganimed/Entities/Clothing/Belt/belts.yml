@@ -1,4 +1,26 @@
 - type: entity
+  id: BaseHolsterSlot
+  name: holster_slot_parent
+  abstract: true #костыль для дебаг теста, используется ТОЛЬКО для наследования
+  components:
+  - type: ItemSlots
+    slots:
+      item:
+        name: Sidearm
+        insertVerbText: holster-insert-verb-text
+        ejectVerbText: holster-eject-verb-text
+        #insertSound: /..
+        ejectSound: /Audio/_Ganimed/Items/holster_eject.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - Sidearm
+  - type: ContainerContainer
+    containers:
+      item: !type:ContainerSlot
+        ent: null
+
+- type: entity
   parent: ClothingBeltMedical
   id: ClothingBeltMilitaryWebbingCMO
   name: chief medical officer's chest rig
@@ -131,7 +153,7 @@
         - Knife
 
 - type: entity
-  parent: ClothingBeltStorageBase
+  parent: [ClothingBeltStorageBase, BaseHolsterSlot] #костыль для прохождения дебаг теста
   id: ClothingBeltTacticalHolster
   name: pistol holster belt
   description: Can hold various pistol equipment.
@@ -173,7 +195,7 @@
 
 
 - type: entity
-  parent: ClothingBeltStorageBase
+  parent: [ClothingBeltStorageBase, BaseHolsterSlot] #костыль для прохождения дебаг теста
   id: ClothingBeltRevolverHolster
   name: revolver holster belt
   description: Can hold various revolver equipment.

@@ -15,10 +15,6 @@
         whitelist:
           tags:
           - Sidearm
-  - type: ContainerContainer
-    containers:
-      item: !type:ContainerSlot
-        ent: null
 
 - type: entity
   parent: ClothingBeltMedical
@@ -188,11 +184,6 @@
         whitelist:
           tags:
           - Sidearm
-  - type: ContainerContainer
-    containers:
-      item: !type:ContainerSlot
-        ent: null
-
 
 - type: entity
   parent: [ClothingBeltStorageBase, BaseHolsterSlot] #костыль для прохождения дебаг теста
@@ -247,10 +238,6 @@
           #tags:
             #- WeaponRevolverPirate
   - type: Appearance
-  - type: ContainerContainer
-    containers:
-      item: !type:ContainerSlot
-        ent: null
 
 - type: entity
   parent: ClothingBeltStorageBase

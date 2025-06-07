@@ -1,5 +1,5 @@
 - type: entity
-  id: BaseHolsterSlot
+  id: HolsterSlotUniversal
   name: holster_slot_parent
   abstract: true #костыль для дебаг теста, используется ТОЛЬКО для наследования
   components:
@@ -15,6 +15,24 @@
         whitelist:
           tags:
           - Sidearm
+
+- type: entity
+  id: HolsterSlotRevolver
+  name: holster_slot_parent
+  abstract: true #костыль для дебаг теста, используется ТОЛЬКО для наследования
+  components:
+  - type: ItemSlots
+    slots:
+      item:
+        name: Sidearm
+        insertVerbText: holster-insert-verb-text
+        ejectVerbText: holster-eject-verb-text
+        #insertSound: /..
+        ejectSound: /Audio/_Ganimed/Items/holster_eject.ogg
+        priority: 2
+        whitelist:
+          components:
+            - RevolverAmmoProvider
 
 - type: entity
   parent: ClothingBeltMedical
@@ -149,7 +167,7 @@
         - Knife
 
 - type: entity
-  parent: [ClothingBeltStorageBase, BaseHolsterSlot] #костыль для прохождения дебаг теста
+  parent: [ClothingBeltStorageBase, HolsterSlotUniversal] #костыль для прохождения дебаг теста
   id: ClothingBeltTacticalHolster
   name: pistol holster belt
   description: Can hold various pistol equipment.
@@ -172,21 +190,9 @@
     - 4,0,4,1
     - 6,0,6,1
     maxItemSize: Small
-  - type: ItemSlots
-    slots:
-      item:
-        name: Sidearm
-        insertVerbText: holster-insert-verb-text
-        ejectVerbText: holster-eject-verb-text
-        #insertSound: /..
-        ejectSound: /Audio/_Ganimed/Items/holster_eject.ogg
-        priority: 2
-        whitelist:
-          tags:
-          - Sidearm
 
 - type: entity
-  parent: [ClothingBeltStorageBase, BaseHolsterSlot] #костыль для прохождения дебаг теста
+  parent: [ClothingBeltStorageBase, HolsterSlotRevolver] #костыль для прохождения дебаг теста
   id: ClothingBeltRevolverHolster
   name: revolver holster belt
   description: Can hold various revolver equipment.
@@ -207,18 +213,6 @@
     - 0,0,1,1
     - 3,0,4,1
     maxItemSize: Small
-  - type: ItemSlots
-    slots:
-      item:
-        name: Sidearm
-        insertVerbText: holster-insert-verb-text
-        ejectVerbText: holster-eject-verb-text
-        #insertSound: /..
-        ejectSound: /Audio/_Ganimed/Items/holster_eject.ogg
-        priority: 2
-        whitelist:
-          components:
-            - RevolverAmmoProvider
   - type: ItemMapper #в данный момент реализован только один спрайт в кобуре, для отображения других револьверов требуются изменения в их прототипах и тегах. Скорее всего это будет реализовано в другом PR.
     mapLayers:
       filled-inspector:

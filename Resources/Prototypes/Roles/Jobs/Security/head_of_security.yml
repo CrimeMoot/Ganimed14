@@ -22,13 +22,14 @@
       - Pacifist
       - Blindness
      # - Muted
-#   ADT Restrict Start
+  # ADT Restrict Start
     - !type:SpeciesRequirement
       inverted: true
       species:
       - Resomi
       - Vox
-#   ADT RESTRICT End
+      - Shadekin
+  # ADT RESTRICT End
   weight: 10
   startingGear: HoSGear
   icon: "JobIconHeadOfSecurity"

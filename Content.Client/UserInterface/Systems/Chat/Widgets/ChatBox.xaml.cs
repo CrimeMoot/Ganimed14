@@ -63,7 +63,7 @@ public partial class ChatBox : UIWidget
     private void UpdateChatStack(int value)
     {
         _chatStackAmount = value >= 0 ? value : 0;
-        Repopulate()
+        Repopulate();
     }
 
     private void OnTextEntered(LineEditEventArgs args)

@@ -25,17 +25,6 @@
   - type: Sprite
     sprite: _Ganimed/Structures/Storage/SupplyPods/supply_pod_cult.rsi
 
-# Gondola
-- type: entity
-  parent: BaseSupplyPod
-  id: SupplyPodCapsuleGondola
-  suffix: Empty, Gondola
-  components:
-  - type: Sprite
-    sprite: _Ganimed/Structures/Storage/SupplyPods/supply_pod_gondola.rsi
-  - type: Construction
-    node: SupplyPodGondola
-
 # Orange
 - type: entity
   parent: BaseSupplyPod

@@ -266,12 +266,3 @@
     - type: TimedSpawner
       prototypes:
         - SupplyPodNPCGondola
-
-- type: entity
-  parent: SupplyPodCapsuleGondola
-  categories: [ HideSpawnMenu ]
-  id: SupplyPodNPCGondola
-  components:
-    - type: StorageFill
-      contents:
-        - id: MobGondola

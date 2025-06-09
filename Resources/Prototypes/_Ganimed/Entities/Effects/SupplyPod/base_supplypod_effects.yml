@@ -60,7 +60,7 @@
     prototype: SmallExplosionInstant
   - type: EmitSoundOnSpawn
     sound:
-      path: /Audio/_White/Weapons/mortar_long_whistle.ogg
+      path: /Audio/_Ganimed/Weapons/mortar_long_whistle.ogg
       params:
         variation: 0.3
         volume: 4

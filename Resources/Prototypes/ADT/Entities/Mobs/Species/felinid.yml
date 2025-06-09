@@ -223,7 +223,6 @@
           sprite: Objects/Misc/handcuffs.rsi
           state: body-overlay-2
           visible: false
-        - map: [ "id" ]
         - map: [ "gloves" ]
         - map: [ "shoes" ]
         - map: [ "ears" ]

@@ -133,7 +133,7 @@ public sealed class DoAfterOverlay : Overlay
                 // ganimed edit end
 
                 // Draw the underlying bar texture
-                handle.DrawTexture(_barTexture, position);
+                // handle.DrawTexture(_barTexture, position); // Ganimed edit
                 handle.DrawTexture(cogTexture, cogPos); // Ganimed edit
 
                 Color color;

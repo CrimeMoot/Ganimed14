@@ -74,7 +74,7 @@
   parent: ClothingNeckBase
   id: ClothingNeckCloakMed
   name: medical cloak
-  description: Worn by the most skilled professional surgery.
+  description: Worn by the most skilled professional surgeons.
   components:
   - type: Sprite
     sprite: _Ganimed/Clothing/Neck/Cloaks/med.rsi
@@ -82,8 +82,8 @@
 - type: entity
   parent: ClothingNeckBase
   id: ClothingNeckCloakChaplainBlack
-  name: чёрная мантия священника
-  description: Чёрная мантия, скрывает тайны?
+  name: black chaplain's cloak
+  description: Black mantle of the cleric. It hold mysteries?
   components:
   - type: Sprite
     sprite: _Ganimed/Clothing/Neck/Cloaks/chaplain_black.rsi
@@ -91,8 +91,8 @@
 - type: entity
   parent: ClothingNeckBase
   id: ClothingNeckCloakChaplainWhite
-  name: белая мантия священника
-  description: Белая официальная мантия священника.
+  name: white chaplain's cloak
+  description: Formal holy white vestment.
   components:
   - type: Sprite
     sprite: _Ganimed/Clothing/Neck/Cloaks/chaplain_white.rsi
@@ -101,7 +101,7 @@
   parent: ClothingNeckBase
   id: ClothingNeckCloakSanabi
   name: чёрный плащ "Санаби"
-  description: Чёрный плащ с красной оконтовкой и маленькой именной биркой.
+  description: Чёрный плащ с красной окантовкой и маленькой именной биркой.
   components:
   - type: Sprite
     sprite: _Ganimed/Clothing/Neck/Cloaks/sanabi.rsi

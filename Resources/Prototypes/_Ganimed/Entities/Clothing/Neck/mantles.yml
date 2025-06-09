@@ -20,7 +20,7 @@
 
 - type: entity
   parent: ClothingNeckBase
-  id: ClothingNeckBlackMantle
+  id: ClothingNeckBridgeOfficerMantle
   name: bridge officer mantle
   description: Elegant mantle in black colors.
   components:

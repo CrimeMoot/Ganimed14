@@ -1,7 +1,7 @@
 - type: entity
   parent: ClothingOuterWinterCoatToggleable
   id: ClothingOuterWinterSeniorPhysician
-  name: зимняя куртка ведущего врача
+  name: senior physician's winter coat
   components:
   - type: Sprite
     sprite: _Ganimed/Clothing/OuterClothing/WinterCoats/wintercoatseniorphysican.rsi
@@ -20,7 +20,7 @@
 - type: entity
   parent: ClothingOuterWinterCoatToggleable
   id: ClothingOuterWinterSeniorResearcher
-  name: зимняя куртка ведущего учёного
+  name: senior researcher's winter coat
   components:
   - type: Sprite
     sprite: _Ganimed/Clothing/OuterClothing/WinterCoats/wintercoatseniorresearcher.rsi
@@ -38,7 +38,7 @@
 - type: entity
   parent: ClothingOuterWinterCoatToggleable
   id: ClothingOuterWinterSeniorEngineer
-  name: зимняя куртка ведущего инженера
+  name: senior engineer's winter coat
   components:
   - type: Sprite
     sprite: _Ganimed/Clothing/OuterClothing/WinterCoats/wintercoatseniorengineer.rsi
@@ -56,7 +56,7 @@
 - type: entity
   parent: ClothingOuterWinterCoatToggleable
   id: ClothingOuterWinterSeniorOfficer
-  name: зимняя куртка инструктора службы безопастности
+  name: senior officer's winter coat
   components:
   - type: Sprite
     sprite: _Ganimed/Clothing/OuterClothing/WinterCoats/wintercoatseniorofficer.rsi
@@ -91,7 +91,7 @@
         Slash: 0.70
         Piercing: 0.70
         Heat: 0.80
-#       Stun: 0.9
+    staminaModifier: 0.8
 
 - type: entity
   parent: ClothingOuterStorageBase

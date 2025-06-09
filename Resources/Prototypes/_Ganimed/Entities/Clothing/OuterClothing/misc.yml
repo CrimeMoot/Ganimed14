@@ -11,9 +11,9 @@
 
 - type: entity
   parent: ClothingOuterStorageBase
-  id: ClothingOuterWitchHunter
-  name: накидка охотника за ведьмами
-  description: Убей этих ведьм!
+  id: ClothingOuterRobesWitchHunter
+  name: witch hunter's robes
+  description: Reminiscent of the robes of medieval inquisitors.
   components:
   - type: Sprite
     sprite: _Ganimed/Clothing/OuterClothing/Misc/witch_hunter_robe.rsi

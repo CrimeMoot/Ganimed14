@@ -1,3 +1,9 @@
+ent-ClothingBeltWhiteSheath = белые сабельные ножны
+   .desc = Стиль, блеск, всё для лучших сабель во вселенной.
+
+ent-ClothingBeltSheriffSheath = сабельные ножны шерифа
+   .desc = Практичность, прочность, сабля точно не окажется в вашей ноге.
+
 ent-ClothingBeltMilitaryWebbingCMO = пояс главного врача
     .desc = Медицинский нагрудник с глубокими карманами, предназначенный для использования парамедиками и медицинскими работниками.
 ent-ClothingBeltMilitaryWebbingCMOFilled = { ent-ClothingBeltMilitaryWebbingCMO }
@@ -5,9 +11,15 @@ ent-ClothingBeltMilitaryWebbingCMOFilled = { ent-ClothingBeltMilitaryWebbingCMO 
     .suffix = Заполненный
 
 ent-ClothingBeltMilitaryWebbingCorpsman = пояс бригмедика
-    .desc = Медицинский нагрудник с глубокими карманами, предназначенный для использования парамедиками и медицинскими работниками.
+    .desc = Боевая медицинская разгрузка с множеством стерильных карманов и подсумков.
 ent-ClothingBeltMilitaryWebbingCorpsmanFilled = { ent-ClothingBeltMilitaryWebbingCorpsman }
     .desc = { ent-ClothingBeltMilitaryWebbingCorpsman }
+    .suffix = Заполненный
+
+ent-ClothingBeltOfficerBlackWebbing = РПС офицера мостика
+    .desc = Это довольно удобный и не стесняющий движений РПС.
+ent-ClothingBeltOfficerBlackWebbingFilled = { ent-ClothingBeltOfficerBlackWebbing }
+    .desc = { ent-ClothingBeltOfficerBlackWebbing }
     .suffix = Заполненный
 
 ent-ClothingBeltPouchMedical = медицинский подсумок

@@ -29,20 +29,6 @@
             - tool: Screwing
               doAfter: 1
 
-    - node: SupplyPodGondola
-      entity: SupplyPodCapsuleGondola
-      edges:
-        - to: start
-          completed:
-            - !type:SpawnPrototype
-              prototype: FoodMeatGondola
-              amount: 1
-            - !type:EmptyAllContainers
-            - !type:DeleteEntity {}
-          steps:
-            - tool: Cutting
-              doAfter: 3
-
     - node: SupplyPodOrange
       entity: SupplyPodCapsuleOrange
       edges:

@@ -4,10 +4,10 @@
   name: фуражка офицера СБ
   description: Фуражка сотрудника СБ, имеет эмблему НТ.
   components:
-    - type: Sprite
-      sprite: _Ganimed/Clothing/Head/Hats/seccap.rsi
-    - type: Clothing
-      sprite: _Ganimed/Clothing/Head/Hats/seccap.rsi
+  - type: Sprite
+    sprite: _Ganimed/Clothing/Head/Hats/seccap.rsi
+  - type: Clothing
+    sprite: _Ganimed/Clothing/Head/Hats/seccap.rsi
 
 - type: entity
   parent: ClothingHeadBase
@@ -54,9 +54,9 @@
 
 - type: entity
   parent: ClothingHeadBase
-  id: ClothingBlackBeret
-  name: берет офицера мостика
-  description: Это, пожалуй, единственный предмет одежды офицера, который не приносит особой пользы.
+  id: ClothingHeadHatBeretBridgeOfficer
+  name: bridge officer's beret
+  description: It is perhaps the sole article of an officer's attire that offers no particular benefits.
   components:
   - type: Sprite
     sprite: _Ganimed/Clothing/Head/Hats/bridge_officer_beret.rsi
@@ -82,13 +82,13 @@
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadHatWitchHunter
-  name: шляпа охотника за ведьмами
-  description: Шляпа охотника за мифическими существами, а именно ведьмами в стиле средневековья
+  name: witch hunter's hat
+  description: A wide-brimmed medieval style inquisitor's hat.
   components:
-    - type: Sprite
-      sprite: _Ganimed/Clothing/Head/Hats/witchunterhat.rsi
-    - type: Clothing
-      sprite: _Ganimed/Clothing/Head/Hats/witchunterhat.rsi
+  - type: Sprite
+    sprite: _Ganimed/Clothing/Head/Hats/witchunterhat.rsi
+  - type: Clothing
+    sprite: _Ganimed/Clothing/Head/Hats/witchunterhat.rsi
 
 - type: entity
   parent: ClothingHeadHatUshanka

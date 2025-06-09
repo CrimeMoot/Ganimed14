@@ -257,12 +257,3 @@
     - type: TimedSpawner
       prototypes:
         -  SupplyPodFallingAnimationNPCGondola
-
-- type: entity
-  parent: SupplyPodGondolaFallingAnimation
-  categories: [ HideSpawnMenu ]
-  id: SupplyPodFallingAnimationNPCGondola
-  components:
-    - type: TimedSpawner
-      prototypes:
-        - SupplyPodNPCGondola

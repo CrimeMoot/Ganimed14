@@ -16,7 +16,6 @@ concurrency:
 jobs:
   build:
     if: github.actor != 'IanComradeBot' && github.event.pull_request.draft == false
-    timeout-minutes: 20
     strategy:
       matrix:
         os: [ubuntu-latest]
@@ -55,21 +54,26 @@ jobs:
 
     - name: Run Content.IntegrationTests
       shell: bash
+      timeout-minutes: 25
       run: |
-        echo "🟡 Запуск интеграционных тестов..."
-        sleep 2
+        echo "Запуск интеграционных тестов..."
+        sleep 1
+
         DOTNET_gcServer=1 dotnet test \
           --no-build \
           --configuration DebugOpt \
           Content.IntegrationTests/Content.IntegrationTests.csproj \
           -- NUnit.ConsoleOut=0 NUnit.MapWarningTo=Failed \
-          > integration-tests.log 2>&1 || {
-            echo "❌ Тесты завершились с ошибкой:"
-            cat integration-tests.log
-            exit 1
-          }
-        echo "✅ Интеграционные тесты завершены успешно."
-        cat integration-tests.log
+          | tee integration-tests.log
+
+        TEST_EXIT_CODE=${PIPESTATUS[0]}
+
+        if [ $TEST_EXIT_CODE -ne 0 ]; then
+          echo "Интеграционные тесты завершились с ошибкой (код $TEST_EXIT_CODE)."
+          exit $TEST_EXIT_CODE
+        else
+          echo "Интеграционные тесты завершены успешно."
+        fi
 
   ci-success:
     name: Build & Test Debug

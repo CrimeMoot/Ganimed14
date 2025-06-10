@@ -137,7 +137,7 @@ public sealed partial class MindTests
 
         // ganimed edit start
         var protoMan = server.ResolveDependency<IPrototypeManager>();
-        if (protoMan.EnumeratePrototypes<EntityPrototype>().Any(p => p.ID.Contains("MobRandom")))
+        if (protoMan.EnumeratePrototypes<IPrototype>().Any(p => p.ID.Contains("MobRandom")))
         {
             Assert.Ignore("Skipping TestGhostOnDelete because MobRandom prototypes are present.");
         }

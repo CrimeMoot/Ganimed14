@@ -16,4 +16,4 @@ role-timer-role-too-high = Требуется на [color=yellow]{ $time }[/colo
 role-timer-role-insufficient = Требуется ещё [color=yellow]{ $time }[/color] игры в качестве [color={ $departmentColor }]{ $job }[/color] для этой роли ({role-timer-role-minutes}).
 # ADT changes end
 # ADT Timer for minutes:
-role-timer-role-minutes = Ровно [color=yellow]{ $timeminutes }[/color] минут
+role-timer-role-minutes = Ровно [color=yellow]{ $timeminutes }[/color]

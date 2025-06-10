@@ -55,8 +55,11 @@ jobs:
     - name: Run Content.IntegrationTests
       shell: pwsh
       run: |
-        $env:DOTNET_gcServer=1
+        Write-Host "🟡 Запуск интеграционных тестов..."
+        Start-Sleep -Seconds 2
+        $env:DOTNET_gcServer = "1"
         dotnet test --no-build --configuration DebugOpt Content.IntegrationTests/Content.IntegrationTests.csproj -- NUnit.ConsoleOut=0 NUnit.MapWarningTo=Failed
+        Write-Host "✅ Интеграционные тесты завершены."
   ci-success:
     name: Build & Test Debug
     needs:

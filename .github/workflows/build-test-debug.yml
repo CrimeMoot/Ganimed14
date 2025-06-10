@@ -53,7 +53,8 @@ jobs:
       run: dotnet test --no-build --configuration Release Content.Tests/Content.Tests.csproj -- NUnit.ConsoleOut=0
 
     - name: Run Content.IntegrationTests
-      shell: pwsh
+      shell: bash
+      timeout-minutes: 25
       run: |
         $env:DOTNET_gcServer=1
         dotnet test --no-build --configuration Release Content.IntegrationTests/Content.IntegrationTests.csproj -- NUnit.ConsoleOut=0

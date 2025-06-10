@@ -9,6 +9,7 @@ using Robust.Server.GameObjects;
 using Robust.Server.Player;
 using Robust.Shared.GameObjects;
 using Robust.Shared.Map;
+using Robust.Shared.Prototypes; // Ganimed 
 
 namespace Content.IntegrationTests.Tests.Minds;
 
@@ -133,11 +134,13 @@ public sealed partial class MindTests
         await using var pair = await SetupPair(dirty: true);
         var server = pair.Server;
 
+        // ganimed edit start
         var protoMan = server.ResolveDependency<IPrototypeManager>();
         if (protoMan.EnumerateEntityPrototypes().Any(p => p.ID.Contains("MobRandom")))
         {
             Assert.Ignore("Skipping TestGhostOnDelete because MobRandom prototypes are present.");
         }
+        // ganimed edit end
 
         var entMan = server.ResolveDependency<IServerEntityManager>();
         var playerMan = server.ResolveDependency<IPlayerManager>();

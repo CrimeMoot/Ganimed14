@@ -133,6 +133,12 @@ public sealed partial class MindTests
         await using var pair = await SetupPair(dirty: true);
         var server = pair.Server;
 
+        var protoMan = server.ResolveDependency<IPrototypeManager>();
+        if (protoMan.EnumerateEntityPrototypes().Any(p => p.ID.Contains("MobRandom")))
+        {
+            Assert.Ignore("Skipping TestGhostOnDelete because MobRandom prototypes are present.");
+        }
+
         var entMan = server.ResolveDependency<IServerEntityManager>();
         var playerMan = server.ResolveDependency<IPlayerManager>();
 

@@ -53,10 +53,27 @@ jobs:
       run: dotnet test --no-build --configuration DebugOpt Content.Tests/Content.Tests.csproj -- NUnit.ConsoleOut=0
 
     - name: Run Content.IntegrationTests
-      shell: pwsh
+      shell: bash
+      timeout-minutes: 25
       run: |
-        $env:DOTNET_gcServer=1
-        dotnet test --no-build --configuration DebugOpt Content.IntegrationTests/Content.IntegrationTests.csproj -- NUnit.ConsoleOut=0 NUnit.MapWarningTo=Failed
+        echo "🟡 Запуск интеграционных тестов..."
+        sleep 1
+
+        DOTNET_gcServer=1 dotnet test \
+          --no-build \
+          --configuration DebugOpt \
+          Content.IntegrationTests/Content.IntegrationTests.csproj \
+          -- NUnit.ConsoleOut=0 NUnit.MapWarningTo=Failed \
+          | tee integration-tests.log
+
+        TEST_EXIT_CODE=${PIPESTATUS[0]}
+    
+        if [ $TEST_EXIT_CODE -ne 0 ]; then
+          echo "Интеграционные тесты завершились с ошибкой (код $TEST_EXIT_CODE)."
+          exit $TEST_EXIT_CODE
+        else
+          echo "Интеграционные тесты завершены успешно."
+        fi
   ci-success:
     name: Build & Test Debug
     needs:

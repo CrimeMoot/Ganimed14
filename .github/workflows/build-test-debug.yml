@@ -50,25 +50,8 @@ jobs:
     - name: Run Content.IntegrationTests
       shell: pwsh
       run: |
-        $env:DOTNET_gcServer = 1
-
-        $output = dotnet test `
-          --no-build `
-          --configuration DebugOpt `
-          Content.IntegrationTests/Content.IntegrationTests.csproj `
-          --logger:"console;verbosity=normal" 2>&1
-    
-        if ($LASTEXITCODE -ne 0) {
-          if ($output -match "The operation was canceled.") {
-            Write-Host "::warning::Integration tests were canceled (The operation was canceled). Possibly a hanging test."
-            exit 0
-          } else {
-            Write-Host "dotnet test failed with other error:"
-            Write-Host $output
-            exit 1
-          }
-        }
-
+        $env:DOTNET_gcServer=1
+        dotnet test --no-build --configuration DebugOpt Content.IntegrationTests/Content.IntegrationTests.csproj -- NUnit.ConsoleOut=0
   ci-success:
     name: Build & Test Debug
     needs:

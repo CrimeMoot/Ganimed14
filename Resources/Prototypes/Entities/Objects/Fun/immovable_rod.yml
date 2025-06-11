@@ -90,7 +90,6 @@
   parent: ImmovableRodKeepTiles
   id: ImmovableRodKeepTilesStill
   suffix: Keep Tiles, Still
-  abstract: true # Ganimd deit
   components:
   - type: ImmovableRod
     randomizeVelocity: false

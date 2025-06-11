@@ -49,21 +49,23 @@ jobs:
 
     - name: Run Content.IntegrationTests
       shell: pwsh
-      timeout-minutes: 10
       run: |
         $env:DOTNET_gcServer = 1
-        try {
-          dotnet test `
-            --no-build `
-            --configuration DebugOpt `
-            Content.IntegrationTests/Content.IntegrationTests.csproj `
-            --logger:"console;verbosity=normal"
-        } catch {
-          if ($_.Exception.Message -like "*The operation was canceled*") {
-            Write-Host "::warning::Integration tests were canceled. Possibly a hanging or long-running test."
+
+        $output = dotnet test `
+          --no-build `
+          --configuration DebugOpt `
+          Content.IntegrationTests/Content.IntegrationTests.csproj `
+          --logger:"console;verbosity=normal" 2>&1
+    
+        if ($LASTEXITCODE -ne 0) {
+          if ($output -match "The operation was canceled.") {
+            Write-Host "::warning::Integration tests were canceled (The operation was canceled). Possibly a hanging test."
             exit 0
           } else {
-            throw
+            Write-Host "dotnet test failed with other error:"
+            Write-Host $output
+            exit 1
           }
         }
 

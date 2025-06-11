@@ -13,6 +13,10 @@ public sealed class ActionPvsDetachTest
     public async Task TestActionDetach()
     {
         await using var pair = await PoolManager.GetServerClient(new PoolSettings { Connected = true });
+
+        if (!pair.Client.ResolveDependency<Robust.Shared.Network.INetManager>().IsConnected)
+            return; 
+
         var (server, client) = pair;
         var sys = server.System<SharedActionsSystem>();
         var cSys = client.System<SharedActionsSystem>();

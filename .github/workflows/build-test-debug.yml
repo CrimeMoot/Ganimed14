@@ -49,14 +49,19 @@ jobs:
 
     - name: Run Content.IntegrationTests
       shell: pwsh
+      timeout-minutes: 10
       run: |
         $env:DOTNET_gcServer = 1
-        dotnet test `
-          --no-build `
-          --configuration DebugOpt `
-          Content.IntegrationTests/Content.IntegrationTests.csproj `
-          --logger:"console;verbosity=detailed" `
-          -v:diag
+        try {
+          dotnet test `
+            --no-build `
+            --configuration DebugOpt `
+            Content.IntegrationTests/Content.IntegrationTests.csproj `
+            --logger:"console;verbosity=normal"
+        } catch {
+          Write-Host "Integration tests failed or cancelled."
+          throw
+        }
 
   ci-success:
     name: Build & Test Debug

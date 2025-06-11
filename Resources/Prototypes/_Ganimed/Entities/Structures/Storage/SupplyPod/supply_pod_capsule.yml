@@ -65,7 +65,7 @@
 
 # Syndicate
 - type: entity
-  parent: BaseSupplyPod
+  parent: [BaseSupplyPod, BaseSyndicateContraband ]
   id: SupplyPodCapsuleSyndicate
   suffix: Empty, Syndicate
   components:

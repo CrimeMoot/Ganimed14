@@ -12,25 +12,7 @@ public sealed class ActionPvsDetachTest
     [Test]
     public async Task TestActionDetach()
     {
-        TestPair pair;
-
-        try
-        {
-            pair = await PoolManager.GetServerClient(new PoolSettings { Connected = false });
-        }
-        catch
-        {
-            Assert.Ignore("Тест пропущен: не удалось получить пару сервер-клиент.");
-            return;
-        }
-
-        if (!pair.Client.ResolveDependency<Robust.Shared.Network.INetManager>().IsConnected)
-        {
-            await pair.CleanReturnAsync();
-            Assert.Ignore("Тест пропущен: клиент не подключён.");
-            return;
-        }
-
+        await using var pair = await PoolManager.GetServerClient(new PoolSettings { Connected = true });
         var (server, client) = pair;
         var sys = server.System<SharedActionsSystem>();
         var cSys = client.System<SharedActionsSystem>();
@@ -42,22 +24,25 @@ public sealed class ActionPvsDetachTest
         await pair.RunTicksSync(5);
         var cEnt = pair.ToClientUid(ent);
 
+        // Verify that both the client & server agree on the number of actions
         var initActions = sys.GetActions(ent).Count();
         Assert.That(initActions, Is.GreaterThan(0));
         Assert.That(initActions, Is.EqualTo(cSys.GetActions(cEnt).Count()));
 
         // PVS-detach action entities
+        // We do this by just giving them the ghost layer
         var visSys = server.System<VisibilitySystem>();
         server.Post(() =>
         {
             var enumerator = server.Transform(ent).ChildEnumerator;
             while (enumerator.MoveNext(out var child))
             {
-                visSys.AddLayer(child, (int)VisibilityFlags.Ghost);
+                visSys.AddLayer(child, (int) VisibilityFlags.Ghost);
             }
         });
         await pair.RunTicksSync(5);
 
+        // Client's actions have left been detached / are out of view, but action comp state has not changed
         Assert.That(sys.GetActions(ent).Count(), Is.EqualTo(initActions));
         Assert.That(cSys.GetActions(cEnt).Count(), Is.EqualTo(initActions));
 
@@ -71,7 +56,6 @@ public sealed class ActionPvsDetachTest
             }
         });
         await pair.RunTicksSync(5);
-
         Assert.That(sys.GetActions(ent).Count(), Is.EqualTo(initActions));
         Assert.That(cSys.GetActions(cEnt).Count(), Is.EqualTo(initActions));
 

@@ -56,7 +56,7 @@
   - Cargo
   - Atmospherics
   - Medical
-  - Quartermaster #Ganimed-Tweak
+  - Quartermaster #Ganimed-Tweak, test merge
   special:
 #  - !type:AddImplantSpecial # Ganimed-MRP
 #    implants: [ MindShieldImplant ] # Ganimed-MRP

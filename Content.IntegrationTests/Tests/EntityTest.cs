@@ -42,8 +42,6 @@ namespace Content.IntegrationTests.Tests
                     .Where(p => !p.ID.StartsWith("ImmovableRod")) // Ganimed edit
                     .Where(p => !p.ID.StartsWith("MobRandom")) // Ganimed edit
                     .Where(p => !p.Components.ContainsKey("RoomFill")) // This comp can delete all entities, and spawn others
-                    .Where(p => !p.ID.Contains("ADTAlwaysPoweredShuttle")) // Ganimed edit
-                    .Where(p => !p.ID.Contains("ImmovableRod")) // Ganimed edit
                     .Select(p => p.ID)
                     .ToList();
 
@@ -109,8 +107,6 @@ namespace Content.IntegrationTests.Tests
                     .Where(p => !p.ID.StartsWith("ImmovableRod")) // Ganimed edit
                     .Where(p => !p.ID.StartsWith("MobRandom")) // Ganimed edit
                     .Where(p => !p.Components.ContainsKey("RoomFill")) // This comp can delete all entities, and spawn others
-                    .Where(p => !p.ID.Contains("ADTAlwaysPoweredShuttle")) // Ganimed edit
-                    .Where(p => !p.ID.Contains("ImmovableRod")) // Ganimed edit
                     .Select(p => p.ID)
                     .ToList();
                 foreach (var protoId in protoIds)

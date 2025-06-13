@@ -1,16 +1,21 @@
-name: Build & Test Debug
+name: Build & Test Debug Linux # ADT-Tweak
 
 on:
   push:
-    branches: [ master, staging, trying ]
+    branches: [ master, staging, stable ]
   merge_group:
   pull_request:
     types: [ opened, reopened, synchronize, ready_for_review ]
-    branches: [ master ]
+    branches: [ master, staging, stable ]
+  workflow_dispatch: # ручной запуск ADT Tweak
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
+  cancel-in-progress: false
 
 jobs:
   build:
-    if: github.actor != 'PJBot' && github.event.pull_request.draft == false && github.actor != 'DeltaV-Bot' && github.actor != 'SimpleStation14'
+    if: github.actor != 'IanComradeBot' && github.event.pull_request.draft == false
     strategy:
       matrix:
         os: [ubuntu-latest]
@@ -19,7 +24,7 @@ jobs:
 
     steps:
     - name: Checkout Master
-      uses: actions/checkout@v3.6.0
+      uses: actions/checkout@v4.2.2
 
     - name: Setup Submodule
       run: |
@@ -34,7 +39,7 @@ jobs:
         git submodule update --init --recursive
 
     - name: Setup .NET Core
-      uses: actions/setup-dotnet@v3.2.0
+      uses: actions/setup-dotnet@v4.1.0
       with:
         dotnet-version: 9.0.x
 
@@ -49,10 +54,25 @@ jobs:
 
     - name: Run Content.IntegrationTests
       shell: pwsh
-      shell: pwsh
       run: |
-        $env:DOTNET_gcServer=1
-        dotnet test --no-build --configuration DebugOpt Content.IntegrationTests/Content.IntegrationTests.csproj -- NUnit.ConsoleOut=0
+        echo "🟡 Запуск интеграционных тестов..."
+        sleep 1
+
+        DOTNET_gcServer=1 dotnet test \
+          --no-build \
+          --configuration DebugOpt \
+          Content.IntegrationTests/Content.IntegrationTests.csproj \
+          -- NUnit.ConsoleOut=0 NUnit.MapWarningTo=Failed \
+          | tee integration-tests.log
+
+        TEST_EXIT_CODE=${PIPESTATUS[0]}
+    
+        if [ $TEST_EXIT_CODE -ne 0 ]; then
+          echo "Интеграционные тесты завершились с ошибкой (код $TEST_EXIT_CODE)."
+          exit $TEST_EXIT_CODE
+        else
+          echo "Интеграционные тесты завершены успешно."
+        fi
   ci-success:
     name: Build & Test Debug
     needs:

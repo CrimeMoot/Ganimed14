@@ -8,6 +8,10 @@ on:
     types: [ opened, reopened, synchronize, ready_for_review ]
     branches: [ master ]
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
+  cancel-in-progress: false
+
 jobs:
   build:
     if: github.actor != 'PJBot' && github.event.pull_request.draft == false && github.actor != 'DeltaV-Bot' && github.actor != 'SimpleStation14'

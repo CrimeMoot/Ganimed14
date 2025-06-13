@@ -15,15 +15,7 @@ public sealed class ActionPvsDetachTest
     [Test]
     public async Task TestActionDetach()
     {
-        var pair = await PoolManager.GetServerClient();
-
-        var netMan = pair.Client.ResolveDependency<INetManager>();
-        if (!netMan.IsConnected)
-        {
-            await pair.CleanReturnAsync();
-            Assert.Ignore("Пропущено: клиент не подключён.");
-        }
-
+        await using var pair = await PoolManager.GetServerClient(new PoolSettings { Connected = true });
         var (server, client) = pair;
         var sys = server.System<SharedActionsSystem>();
         var cSys = client.System<SharedActionsSystem>();

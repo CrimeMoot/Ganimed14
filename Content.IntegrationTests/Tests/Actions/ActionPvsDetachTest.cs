@@ -26,6 +26,7 @@ public sealed class ActionPvsDetachTest
         await pair.RunTicksSync(5);
         var cEnt = pair.ToClientUid(ent);
 
+        // Verify that both the client & server agree on the number of actions
         var initActions = sys.GetActions(ent).Count();
         Assert.That(initActions, Is.GreaterThan(0));
         Assert.That(initActions, Is.EqualTo(cSys.GetActions(cEnt).Count()));
@@ -37,10 +38,12 @@ public sealed class ActionPvsDetachTest
             while (enumerator.MoveNext(out var child))
             {
                 visSys.AddLayer(child, (int) VisibilityFlags.Ghost);
+                visSys.AddLayer(child, (int) VisibilityFlags.Ghost);
             }
         });
         await pair.RunTicksSync(5);
 
+        // Client's actions have left been detached / are out of view, but action comp state has not changed
         Assert.That(sys.GetActions(ent).Count(), Is.EqualTo(initActions));
         Assert.That(cSys.GetActions(cEnt).Count(), Is.EqualTo(initActions));
 
@@ -53,7 +56,6 @@ public sealed class ActionPvsDetachTest
             }
         });
         await pair.RunTicksSync(5);
-
         Assert.That(sys.GetActions(ent).Count(), Is.EqualTo(initActions));
         Assert.That(cSys.GetActions(cEnt).Count(), Is.EqualTo(initActions));
 
@@ -61,3 +63,4 @@ public sealed class ActionPvsDetachTest
         await pair.CleanReturnAsync();
     }
 }
+

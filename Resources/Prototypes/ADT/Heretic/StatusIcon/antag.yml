@@ -7,7 +7,7 @@
       - Ghoul
       - Heretic
   icon:
-    sprite: /Textures/ADT/Interface/Misc/job_icons.rsi
+    sprite: /Textures/_Ganimed/Interface/Misc/job_icons.rsi # Ganime edit
     state: Ghoul
 
 - type: factionIcon
@@ -18,5 +18,5 @@
       - ShowAntagIcons
       - Ghoul
   icon:
-    sprite: /Textures/ADT/Interface/Misc/job_icons.rsi
+    sprite: /Textures/_Ganimed/Interface/Misc/job_icons.rsi # Ganime edit
     state: HereticMaster

@@ -1,0 +1,69 @@
+- type: entity
+  parent: ADTClothingHeadHelmetModsuitBase
+  id: GanimedClothingHeadHelmetModsuitCMO
+  name: chief medical officer MOD helmet
+  description: A helmet for a MODsuit.
+  components:
+  - type: Sprite
+    sprite: _Ganimed/Clothing/Head/Modsuit/cmo.rsi
+    layers:
+    - state: icon
+  - type: Clothing
+    sprite: _Ganimed/Clothing/Head/Modsuit/cmo.rsi
+    clothingVisuals:
+      head:
+      - state: equipped-head
+  - type: ShowHealthBars
+    damageContainers:
+    - Biological
+  - type: ShowHealthIcons
+    damageContainers:
+    - Biological
+
+- type: entity
+  parent: ADTClothingHeadHelmetModsuitBase
+  id: GanimedClothingHeadHelmetModsuitRD
+  name: Research director MOD helmet
+  description: A helmet for a MODsuit.
+  components:
+  - type: Sprite
+    sprite: _Ganimed/Clothing/Head/Modsuit/rd.rsi
+    layers:
+    - state: icon
+  - type: Clothing
+    sprite: _Ganimed/Clothing/Head/Modsuit/rd.rsi
+    clothingVisuals:
+      head:
+      - state: equipped-head
+
+- type: entity
+  parent: ADTClothingHeadHelmetModsuitBase
+  id: GanimedClothingHeadHelmetModsuitMagnate
+  name: Magnate MOD helmet
+  description: A helmet for a MODsuit.
+  components:
+  - type: Sprite
+    sprite: _Ganimed/Clothing/Head/Modsuit/captain.rsi
+    layers:
+    - state: icon
+  - type: Clothing
+    sprite: _Ganimed/Clothing/Head/Modsuit/captain.rsi
+    clothingVisuals:
+      head:
+      - state: off-equipped-HELMET
+
+- type: entity
+  parent: ADTClothingHeadHelmetModsuitBase
+  id: GanimedClothingHeadHelmetModsuitCorporate
+  name: Corporate MOD helmet
+  description: A helmet for a MODsuit.
+  components:
+  - type: Sprite
+    sprite: _Ganimed/Clothing/Head/Modsuit/corporate.rsi
+    layers:
+    - state: icon
+  - type: Clothing
+    sprite: _Ganimed/Clothing/Head/Modsuit/corporate.rsi
+    clothingVisuals:
+      head:
+      - state: equipped-head

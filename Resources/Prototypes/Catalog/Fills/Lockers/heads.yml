@@ -86,7 +86,7 @@
   id: FillCaptainHardsuit
   table: !type:AllSelector
     children:
-    - id: ClothingOuterHardsuitCap
+    - id: GanimedClothingModsuitBackMagnate
     - id: ClothingMaskGasCaptain
     - id: JetpackCaptainFilled
     - id: OxygenTankFilled
@@ -277,7 +277,7 @@
   id: FillChiefMedicalOfficerHardsuit
   table: !type:AllSelector
     children:
-    - id: ClothingMaskBreathMedical
+    - id: GanimedClothingModsuitBackCMO
     - id: ClothingOuterHardsuitMedical
     - id: OxygenTankFilled
 
@@ -337,7 +337,7 @@
   table: !type:AllSelector
     children:
     - id: ClothingMaskBreath
-    - id: ClothingOuterHardsuitRd
+    - id: GanimedClothingModsuitBackRD
     - id: OxygenTankFilled
 
 # No hardsuit locker

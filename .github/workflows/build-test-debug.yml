@@ -54,40 +54,9 @@ jobs:
 
     - name: Run Content.IntegrationTests
       shell: pwsh
-      continue-on-error: true
-      env:
-        DOTNET_gcServer: "1"
       run: |
-        $output = dotnet test --no-build --configuration Release Content.IntegrationTests/Content.IntegrationTests.csproj -- NUnit.ConsoleOut=0 2>&1
-
-        Write-Host $output
-
-        $errorLines = ($output -split "`n") | Where-Object {
-          ($_ -match '(?i)\bERROR\b') -and
-          ($_ -notmatch 'The operation was canceled') -and
-          ($_ -notmatch 'System\.OperationCanceledException')
-        }
-
-        if ($errorLines.Count -gt 0) {
-          Write-Host "❌ Found unexpected ERROR(s) in the output:"
-          $errorLines | ForEach-Object { Write-Host $_ }
-          exit 1
-        }
-
-        if ($LASTEXITCODE -ne 0) {
-          if ($output -match 'The operation was canceled' -or $output -match 'System\.OperationCanceledException') {
-            Write-Host "⚠️ Test runner canceled, but no critical errors. Marking as success."
-            exit 0
-          }
-          else {
-            Write-Host "❌ dotnet test failed with exit code $LASTEXITCODE and no cancellation marker."
-            exit $LASTEXITCODE
-          }
-        }
-
-        Write-Host "✅ Test completed without critical ERRORs."
-        exit 0
-
+        $env:DOTNET_gcServer=1
+        dotnet test --no-build --configuration Release Content.IntegrationTests/Content.IntegrationTests.csproj -- NUnit.ConsoleOut=0
   ci-success:
     name: Build & Test Debug
     needs:

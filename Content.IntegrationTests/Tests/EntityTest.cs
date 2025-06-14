@@ -246,34 +246,6 @@ namespace Content.IntegrationTests.Tests
                 "AnnounceOnSpawn",
             };
 
-            var badPrototypes = new HashSet<string>
-            {
-                "StandardNanotrasenStation",
-                "ActionActivateDeathAcidifier",
-                "ActionActivateDnaScramblerImplant",
-                "ActionActivateEmpImplant",
-                "ActionActivateFreedomImplant",
-                "ActionActivateHonkImplant",
-                "ActionActivateMicroBomb",
-                "ActionActivateScramImplant",
-                "ActionAGhostShowCargo",
-                "ActionAGhostShowCommunications",
-                "ActionAGhostShowCrewMonitoring",
-                "ActionAGhostShowRadar",
-                "ActionAGhostShowSolar",
-                "ActionAGhostShowStationRecords",
-                "ActionAIViewLaws",
-                "ActionAncientGoliathTentacle",
-                "ActionAnimalLayEgg",
-                "AbominationCube",
-                "AccessBreaker",
-                "AccessBreakerUnlimited",
-                "AccessConfigurator",
-                "AccessConfiguratorUniversal",
-                "AccordionInstrument",
-                "AcousticGuitarInstrument"
-            };
-
             Assert.That(server.CfgMan.GetCVar(CVars.NetPVS), Is.False);
 
             var protoIds = server.ProtoMan
@@ -281,7 +253,6 @@ namespace Content.IntegrationTests.Tests
                 .Where(p => !p.Abstract)
                 .Where(p => !pair.IsTestPrototype(p))
                 .Where(p => !excluded.Any(p.Components.ContainsKey))
-                .Where(p => !badPrototypes.Contains(p.ID))
                 .Where(p => p.Categories.All(x => x.ID != SpawnerCategory))
                 .Select(p => p.ID)
                 .ToList();

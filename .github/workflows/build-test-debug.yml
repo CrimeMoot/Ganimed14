@@ -55,8 +55,9 @@ jobs:
     - name: Run Content.IntegrationTests
       shell: pwsh
       continue-on-error: true
+      env:
+        DOTNET_gcServer: "1"
       run: |
-        $env:DOTNET_gcServer = "1"
         $output = dotnet test --no-build --configuration Release Content.IntegrationTests/Content.IntegrationTests.csproj -- NUnit.ConsoleOut=0 2>&1
 
         Write-Host $output

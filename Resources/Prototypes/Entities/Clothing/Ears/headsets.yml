@@ -74,6 +74,8 @@
       - EncryptionKeyCargo
 #      - EncryptionKeyCommand # Ganimed-MRP, test merge
       - EncryptionKeyCommon
+  - type: Headset # ganimed edit
+    radioTextIncrease: 2
 
 - type: entity
   parent: [ ClothingHeadset, BaseCentcommContraband ]
@@ -90,6 +92,8 @@
     sprite: Clothing/Ears/Headsets/centcom.rsi
   - type: Clothing
     sprite: Clothing/Ears/Headsets/centcom.rsi
+  - type: Headset # ganimed edit
+    radioTextIncrease: 4
 
 - type: entity
   parent: [ClothingHeadset, BaseCommandContraband]
@@ -105,6 +109,8 @@
     sprite: Clothing/Ears/Headsets/command.rsi
   - type: Clothing
     sprite: Clothing/Ears/Headsets/command.rsi
+  - type: Headset # ganimed edit
+    radioTextIncrease: 4
 
 - type: entity
   parent: ClothingHeadset
@@ -134,6 +140,8 @@
       - EncryptionKeyEngineering
       - EncryptionKeyCommand
       - EncryptionKeyCommon
+  - type: Headset # ganimed edit
+    radioTextIncrease: 2
 
 - type: entity
   parent: ClothingHeadset
@@ -163,6 +171,8 @@
       - EncryptionKeyMedical
       - EncryptionKeyCommand
       - EncryptionKeyCommon
+  - type: Headset # ganimed edit
+    radioTextIncrease: 2
 
 - type: entity
   parent: ClothingHeadset
@@ -224,6 +234,8 @@
       - EncryptionKeyScience
       - EncryptionKeyCommand
       - EncryptionKeyCommon
+  - type: Headset # ganimed edit
+    radioTextIncrease: 2
 
 - type: entity
   parent: [ClothingHeadset, BaseSecurityLawyerContraband]

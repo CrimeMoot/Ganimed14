@@ -166,10 +166,6 @@
         whitelist:
           tags:
           - Sidearm
-  - type: ContainerContainer
-    containers:
-      item: !type:ContainerSlot
-        ent: null
 
 
 - type: entity
@@ -212,7 +208,7 @@
         whitelist:
           components: #tags
             - RevolverAmmoProvider #WeaponRevolverInspector
-      #filled-mateba: #будет реализовано позже, спрайты уже есть в meta.json и тут
+     #filled-mateba: #будет реализовано позже, спрайты уже есть в meta.json и тут
         #whitelist:
           #tags:
             #- WeaponRevolverMateba
@@ -224,11 +220,6 @@
         #whitelist:
           #tags:
             #- WeaponRevolverPirate
-  - type: Appearance
-  - type: ContainerContainer
-    containers:
-      item: !type:ContainerSlot
-        ent: null
 
 - type: entity
   parent: ClothingBeltStorageBase

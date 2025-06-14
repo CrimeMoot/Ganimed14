@@ -1,6 +1,6 @@
 - type: entity
   parent: ADTClothingHeadHelmetModsuitBase
-  id: GanimedClothingHeadHelmetModsuitCMO
+  id: ClothingHeadHelmetModsuitCMO
   name: chief medical officer MOD helmet
   suffix: Ganimed
   description: A helmet for a MODsuit.
@@ -23,7 +23,7 @@
 
 - type: entity
   parent: ADTClothingHeadHelmetModsuitBase
-  id: GanimedClothingHeadHelmetModsuitRD
+  id: ClothingHeadHelmetModsuitRD
   name: Research director MOD helmet
   suffix: Ganimed
   description: A helmet for a MODsuit.
@@ -40,7 +40,7 @@
 
 - type: entity
   parent: ADTClothingHeadHelmetModsuitBase
-  id: GanimedClothingHeadHelmetModsuitMagnate
+  id: ClothingHeadHelmetModsuitMagnate
   name: Magnate MOD helmet
   suffix: Ganimed
   description: A helmet for a MODsuit.
@@ -57,7 +57,7 @@
 
 - type: entity
   parent: ADTClothingHeadHelmetModsuitBase
-  id: GanimedClothingHeadHelmetModsuitCorporate
+  id: ClothingHeadHelmetModsuitCorporate
   name: Corporate MOD helmet
   suffix: Ganimed
   description: A helmet for a MODsuit.

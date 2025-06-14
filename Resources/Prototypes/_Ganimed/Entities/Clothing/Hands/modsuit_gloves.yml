@@ -1,6 +1,6 @@
 - type: entity
   parent: ADTClothingHandsModsuitBase
-  id: GanimedClothingHandsModsuitCMO
+  id: ClothingHandsModsuitCMO
   name: Chief medical officer MOD gauntlets
   suffix: Ganimed
   components:
@@ -17,7 +17,7 @@
 
 - type: entity
   parent: ADTClothingHandsModsuitBase
-  id: GanimedClothingHandsModsuitRD
+  id: ClothingHandsModsuitRD
   name: Research director MOD gauntlets
   suffix: Ganimed
   components:
@@ -34,7 +34,7 @@
 
 - type: entity
   parent: ADTClothingHandsModsuitBase
-  id: GanimedClothingHandsModsuitCorporate
+  id: ClothingHandsModsuitCorporate
   name: Corporate MOD gauntlets
   suffix: Ganimed
   components:
@@ -49,7 +49,7 @@
 
 - type: entity
   parent: ADTClothingHandsModsuitBase
-  id: GanimedClothingHandsModsuitMagnate
+  id: ClothingHandsModsuitMagnate
   name: Magnate MOD gauntlets
   suffix: Ganimed
   components:

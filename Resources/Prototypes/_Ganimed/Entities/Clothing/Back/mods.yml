@@ -3,6 +3,7 @@
   parent: ADTClothingModsuitBackBase
   id: GanimedClothingModsuitBackCMO
   name: Chief medical officer MOD control unit
+  suffix: Ganimed
   description: An advanced version of DeForest Medical Corporation's medical suit, designed for quick rescue of bodies from the most dangerous environments.
   components:
   - type: Sprite
@@ -23,6 +24,7 @@
   parent: ADTClothingModsuitBackBase
   id: GanimedClothingModsuitBackRD
   name: Research director MOD control unit
+  suffix: Ganimed
   description: A private military EOD suit by Aussec Armory, intended for explosive research. Bulky, but expansive.
   components:
   - type: Sprite
@@ -52,6 +54,7 @@
   parent: ADTClothingModsuitBackBase
   id: GanimedClothingModsuitBackMagnate
   name: Magnate MOD control unit
+  suffix: Ganimed
   description: A fancy, very protective suit for Nanotrasen's captains. Shock, fire and acid-proof while also having a large capacity and high speed.
   components:
   - type: Sprite
@@ -74,6 +77,7 @@
   parent: ADTClothingModsuitBackBase
   id: GanimedClothingModsuitBackCorporate
   name: Corporate MOD control unit
+  suffix: Ganimed
   description: A fancy, high-tech suit for Nanotrasen's high ranking officers.
   components:
   - type: Sprite

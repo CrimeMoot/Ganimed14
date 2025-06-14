@@ -2,6 +2,7 @@
   parent: ADTClothingHeadHelmetModsuitBase
   id: GanimedClothingHeadHelmetModsuitCMO
   name: chief medical officer MOD helmet
+  suffix: Ganimed
   description: A helmet for a MODsuit.
   components:
   - type: Sprite
@@ -24,6 +25,7 @@
   parent: ADTClothingHeadHelmetModsuitBase
   id: GanimedClothingHeadHelmetModsuitRD
   name: Research director MOD helmet
+  suffix: Ganimed
   description: A helmet for a MODsuit.
   components:
   - type: Sprite
@@ -40,6 +42,7 @@
   parent: ADTClothingHeadHelmetModsuitBase
   id: GanimedClothingHeadHelmetModsuitMagnate
   name: Magnate MOD helmet
+  suffix: Ganimed
   description: A helmet for a MODsuit.
   components:
   - type: Sprite
@@ -56,6 +59,7 @@
   parent: ADTClothingHeadHelmetModsuitBase
   id: GanimedClothingHeadHelmetModsuitCorporate
   name: Corporate MOD helmet
+  suffix: Ganimed
   description: A helmet for a MODsuit.
   components:
   - type: Sprite

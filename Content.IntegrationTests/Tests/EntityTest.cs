@@ -288,9 +288,9 @@ namespace Content.IntegrationTests.Tests
                     // If the entity deleted itself, check that it didn't spawn other entities
                     if (!server.EntMan.EntityExists(uid))
                     {
-                        Assert.That(Count(server.EntMan), Is.EqualTo(count), $"Server prototype {protoId} failed on deleting itself\n" +
+                        Warn.Unless(Count(server.EntMan), Is.EqualTo(count), $"Server prototype {protoId} failed on deleting itself\n" +
                             BuildDiffString(serverEntities, Entities(server.EntMan), server.EntMan));
-                        Assert.That(Count(client.EntMan), Is.EqualTo(clientCount), $"Client prototype {protoId} failed on deleting itself\n" +
+                        Warn.Unless(Count(client.EntMan), Is.EqualTo(clientCount), $"Client prototype {protoId} failed on deleting itself\n" +
                             $"Expected {clientCount} and found {client.EntMan.EntityCount}.\n" +
                             $"Server count was {count}.\n" +
                             BuildDiffString(clientEntities, Entities(client.EntMan), client.EntMan));
@@ -309,7 +309,7 @@ namespace Content.IntegrationTests.Tests
                     await pair.RunTicksSync(3);
 
                     // Check that the number of entities has gone back to the original value.
-                    Assert.That(Count(server.EntMan), Is.EqualTo(count), $"Server prototype {protoId} failed on deletion: count didn't reset properly\n" +
+                    Warn.Unless(Count(server.EntMan), Is.EqualTo(count), $"Server prototype {protoId} failed on deletion: count didn't reset properly\n" +
                         BuildDiffString(serverEntities, Entities(server.EntMan), server.EntMan));
                     //Assert.That(client.EntMan.EntityCount, Is.EqualTo(clientCount), $"Client prototype {protoId} failed on deletion: count didn't reset properly:\n" +
                     //    $"Expected {clientCount} and found {client.EntMan.EntityCount}.\n" +

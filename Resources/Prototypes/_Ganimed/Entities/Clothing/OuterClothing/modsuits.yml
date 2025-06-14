@@ -2,6 +2,7 @@
   parent: ADTClothingOuterModsuitBodyBase
   id: GanimedClothingOuterModsuitBodyCMO
   name: chief medical officer MOD chestplate
+  suffix: Ganimed
   description: A chestplate for a MODsuit.
   components:
   - type: Sprite
@@ -25,6 +26,7 @@
   parent: ADTClothingOuterModsuitBodyBase
   id: GanimedClothingOuterModsuitBodyRD
   name: Research director MOD chestplate
+  suffix: Ganimed
   description: A chestplate for a MODsuit.
   components:
   - type: Sprite
@@ -57,6 +59,7 @@
   parent: ADTClothingOuterModsuitBodyBase
   id: GanimedClothingOuterModsuitBodyMagnate
   name: Magnate MOD chestplate
+  suffix: Ganimed
   description: A chestplate for a MODsuit.
   components:
   - type: Sprite
@@ -86,6 +89,7 @@
   parent: ADTClothingOuterModsuitBodyBase
   id: GanimedClothingOuterModsuitBodyCorporate
   name: Corporate MOD chestplate
+  suffix: Ganimed
   description: A chestplate for a MODsuit.
   components:
   - type: Sprite

@@ -68,7 +68,7 @@ public sealed partial class ChatSystem : SharedChatSystem
     [Dependency] private readonly EntityWhitelistSystem _whitelistSystem = default!;
     [Dependency] private readonly ExamineSystemShared _examineSystem = default!;
     [Dependency] private readonly LanguageSystem _language = default!;  // ADT Languages
-    [Dependency] private readonly IGameTiming _gameTiming = default!; // Ganime edit
+    [Dependency] private readonly IGameTiming _gameTiming = default!; // Ganimed edit
 
 
     public const int VoiceRange = 10; // how far voice goes in world units

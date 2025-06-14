@@ -277,9 +277,6 @@ namespace Content.IntegrationTests.Tests
             {
                 foreach (var protoId in protoIds)
                 {
-                    Console.WriteLine($"Testing prototype: {protoId}");
-                    TestContext.Progress.WriteLine($"Testing prototype: {protoId}");
-
                     var count = Count(server.EntMan);
                     var clientCount = Count(client.EntMan);
                     var serverEntities = new HashSet<EntityUid>(Entities(server.EntMan));

@@ -23,7 +23,6 @@ public sealed class ActionPvsDetachTest
             await pair.CleanReturnAsync();
             Assert.Ignore("Пропущено: клиент не подключён.");
         }
-
         var (server, client) = pair;
         var sys = server.System<SharedActionsSystem>();
         var cSys = client.System<SharedActionsSystem>();

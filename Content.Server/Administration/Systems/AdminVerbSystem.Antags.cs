@@ -67,7 +67,7 @@ public sealed partial class AdminVerbSystem
         {
             Text = traitorName,
             Category = VerbCategory.Antag,
-            Icon = new SpriteSpecifier.Rsi(new ResPath("/Textures/Interface/Misc/job_icons.rsi"), "Syndicate"),
+            Icon = new SpriteSpecifier.Rsi(new ResPath("/Textures/_Ganimed/Interface/Misc/job_icons.rsi"), "Syndicate"), // Ganimed edit
             Act = () =>
             {
                 _antag.ForceMakeAntag<TraitorRuleComponent>(targetPlayer, DefaultTraitorRule);
@@ -82,7 +82,7 @@ public sealed partial class AdminVerbSystem
         {
             Text = initialInfectedName,
             Category = VerbCategory.Antag,
-            Icon = new SpriteSpecifier.Rsi(new("/Textures/Interface/Misc/job_icons.rsi"), "InitialInfected"),
+            Icon = new SpriteSpecifier.Rsi(new("/Textures/_Ganimed/Interface/Misc/job_icons.rsi"), "InitialInfected"), // Ganimed edit
             Act = () =>
             {
                 _antag.ForceMakeAntag<ZombieRuleComponent>(targetPlayer, DefaultInitialInfectedRule);
@@ -97,7 +97,7 @@ public sealed partial class AdminVerbSystem
         {
             Text = zombieName,
             Category = VerbCategory.Antag,
-            Icon = new SpriteSpecifier.Rsi(new("/Textures/Interface/Misc/job_icons.rsi"), "Zombie"),
+            Icon = new SpriteSpecifier.Rsi(new("/Textures/_Ganimed/Interface/Misc/job_icons.rsi"), "Zombie"),
             Act = () =>
             {
                 _zombie.ZombifyEntity(args.Target);
@@ -143,7 +143,7 @@ public sealed partial class AdminVerbSystem
         {
             Text = headRevName,
             Category = VerbCategory.Antag,
-            Icon = new SpriteSpecifier.Rsi(new("/Textures/Interface/Misc/job_icons.rsi"), "HeadRevolutionary"),
+            Icon = new SpriteSpecifier.Rsi(new("/Textures/_Ganimed/Interface/Misc/job_icons.rsi"), "HeadRevolutionary"),
             Act = () =>
             {
                 _antag.ForceMakeAntag<RevolutionaryRuleComponent>(targetPlayer, DefaultRevsRule);
@@ -205,7 +205,7 @@ public sealed partial class AdminVerbSystem
         {
             Text = paradoxCloneName,
             Category = VerbCategory.Antag,
-            Icon = new SpriteSpecifier.Rsi(new("/Textures/Interface/Misc/job_icons.rsi"), "ParadoxClone"),
+            Icon = new SpriteSpecifier.Rsi(new("/Textures/_Ganimed/Interface/Misc/job_icons.rsi"), "ParadoxClone"),
             Act = () =>
             {
                 var ruleEnt = _gameTicker.AddGameRule(_paradoxCloneRuleId);

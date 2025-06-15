@@ -7,7 +7,7 @@
     - Zombie
     - InitialInfected
   icon:
-    sprite: /Textures/Interface/Misc/job_icons.rsi
+    sprite: /Textures/_Ganimed/Interface/Misc/job_icons.rsi # Ganime edit
     state: Zombie
 
 - type: factionIcon
@@ -19,7 +19,7 @@
     - InitialInfected
     - Zombie
   icon:
-    sprite: /Textures/Interface/Misc/job_icons.rsi
+    sprite: /Textures/_Ganimed/Interface/Misc/job_icons.rsi # Ganime edit
     state: InitialInfected
 
 - type: factionIcon
@@ -31,7 +31,7 @@
       - ShowAntagIcons
       - Revolutionary
   icon:
-    sprite: /Textures/Interface/Misc/job_icons.rsi
+    sprite: /Textures/_Ganimed/Interface/Misc/job_icons.rsi # Ganime edit
     state: Revolutionary
 
 - type: factionIcon
@@ -43,7 +43,7 @@
       - ShowAntagIcons
       - Revolutionary
   icon:
-    sprite: /Textures/Interface/Misc/job_icons.rsi
+    sprite: /Textures/_Ganimed/Interface/Misc/job_icons.rsi # Ganime edit
     state: HeadRevolutionary
 
 - type: factionIcon
@@ -51,5 +51,5 @@
   priority: 0
   locationPreference: Right # Corvax-TypingIndicator
   icon:
-    sprite: /Textures/Interface/Misc/job_icons.rsi
+    sprite: /Textures/_Ganimed/Interface/Misc/job_icons.rsi # Ganime edit
     state: Syndicate

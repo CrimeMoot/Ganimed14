@@ -219,7 +219,7 @@
       #filled-pirate:
         #whitelist:
           #tags:
-            #- WeaponRevolverPirate
+            #- WeaponRevolverPirateф
 
 - type: entity
   parent: ClothingBeltStorageBase

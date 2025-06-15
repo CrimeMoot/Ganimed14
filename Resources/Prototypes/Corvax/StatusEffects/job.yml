@@ -2,7 +2,7 @@
   parent: JobIcon
   id: JobIconIAA
   icon:
-    sprite: /Textures/Interface/Misc/job_icons.rsi
+    sprite: /Textures/_Ganimed/Interface/Misc/job_icons.rsi #Ganimed-Tweak
     state: IAA
   jobName: job-name-iaa
 
@@ -10,6 +10,6 @@
   parent: JobIcon
   id: JobIconPilot
   icon:
-    sprite: /Textures/Interface/Misc/job_icons.rsi
+    sprite: /Textures/_Ganimed/Interface/Misc/job_icons.rsi #Ganimed-Tweak
     state: Pilot
   jobName: job-name-pilot

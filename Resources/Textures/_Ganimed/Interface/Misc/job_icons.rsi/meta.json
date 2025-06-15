@@ -1,0 +1,243 @@
+{
+    "version": 1,
+    "license": "Do not distribute without the permission of Yuoko",
+    "copyright": "Аll icons resprite by Yuoko for Enterprise",
+    "size": {
+        "x": 8,
+        "y": 8
+    },
+    "states": [
+        {
+            "name": "Detective"
+        },
+        {
+            "name": "QuarterMaster"
+        },
+        {
+            "name": "Botanist"
+        },
+        {
+            "name": "Borg"
+        },
+        {
+            "name": "Boxer"
+        },
+        {
+            "name": "AtmosphericTechnician"
+        },
+        {
+            "name": "Nanotrasen"
+        },
+        {
+            "name": "Prisoner"
+        },
+        {
+            "name": "Janitor"
+        },
+        {
+            "name": "Chemist"
+        },
+        {
+            "name": "StationEngineer"
+        },
+        {
+            "name": "SecurityOfficer"
+        },
+        {
+            "name": "NoId"
+        },
+        {
+            "name": "ChiefMedicalOfficer"
+        },
+        {
+            "name": "Roboticist"
+        },
+        {
+            "name": "Chaplain"
+        },
+        {
+            "name": "Lawyer"
+        },
+        {
+            "name": "Unknown"
+        },
+        {
+            "name": "Librarian"
+        },
+        {
+            "name": "CargoTechnician"
+        },
+        {
+            "name": "Scientist"
+        },
+        {
+            "name": "ResearchAssistant"
+        },
+        {
+            "name": "Geneticist"
+        },
+        {
+            "name": "Clown"
+        },
+        {
+            "name": "Captain"
+        },
+        {
+            "name": "HeadOfPersonnel"
+        },
+        {
+            "name": "Virologist"
+        },
+        {
+            "name": "ShaftMiner"
+        },
+        {
+            "name": "Passenger"
+        },
+        {
+            "name": "ChiefEngineer"
+        },
+        {
+            "name": "Bartender"
+        },
+        {
+            "name": "HeadOfSecurity"
+        },
+        {
+            "name": "Brigmedic"
+        },
+        {
+            "name": "Pilot"
+        },
+        {
+            "name": "MedicalDoctor"
+        },
+        {
+            "name": "Paramedic"
+        },
+        {
+            "name": "Chef"
+        },
+        {
+            "name": "Warden"
+        },
+        {
+            "name": "ResearchDirector"
+        },
+        {
+            "name": "Mime"
+        },
+        {
+            "name": "Musician"
+        },
+        {
+            "name": "Reporter"
+        },
+        {
+            "name": "Psychologist"
+        },
+        {
+            "name": "MedicalIntern"
+        },
+        {
+            "name": "TechnicalAssistant"
+        },
+        {
+            "name": "ServiceWorker"
+        },
+        {
+            "name": "SecurityCadet"
+        },
+        {
+            "name": "IAA"
+        },
+        {
+            "name": "Zombie"
+        },
+        {
+            "name": "Zookeeper"
+        },
+        {
+            "name": "SeniorEngineer"
+        },
+        {
+            "name": "SeniorResearcher"
+        },
+        {
+            "name": "SeniorPhysician"
+        },
+        {
+            "name": "SeniorOfficer"
+        },
+        {
+            "name": "Revolutionary"
+        },
+        {
+            "name": "HeadRevolutionary"
+        },
+        {
+            "name": "MindShield",
+            "delays":
+            [
+                [1.0,1.0]
+            ]
+        },
+        {
+            "name": "StationAi"
+        },
+        {
+            "name": "Syndicate"
+        },
+        {
+            "name": "Visitor"
+        },
+        {
+            "name": "InitialInfected"
+        },
+        {
+            "name": "Admin"
+        },
+        {
+            "name": "USSPOfficer"
+        },
+        {
+            "name": "USSPMedical"
+        },
+        {
+            "name": "USSPSoldier"
+        },
+        {
+            "name": "ParadoxClone"
+        },
+        {
+            "name": "Magistrat"
+        },
+        {
+            "name": "ADTPathologist"
+        },
+        {
+            "name": "ADTBlueShieldOfficer"
+        },
+        {
+            "name": "GuardOfficer"
+        },
+        {
+            "name": "HereticMaster"
+        },
+        {
+            "name": "Ghoul"
+        },
+        {
+            "name": "JobIconUSSPArmyPrivate"
+        },
+        {
+            "name": "JobIconUSSPArmyOfficer"
+        },
+        {
+            "name": "ADTHairdresser"
+        },
+        {
+            "name": "Taumaturg"
+        }
+    ]
+}

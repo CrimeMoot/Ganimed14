@@ -211,7 +211,7 @@ public sealed partial class EncryptionKeySystem : EntitySystem
             }
         }
 
-        // Ganime edit start
+        // Ganimed edit start
         if (TryComp<HeadsetComponent>(uid, out var headset))
         {
             if (headset.RadioTextIncrease > 0)
@@ -225,7 +225,7 @@ public sealed partial class EncryptionKeySystem : EntitySystem
                 args.PushMarkup(status);
             }
         }
-        // Ganime edit end
+        // Ganimed edit end
     }
 
     private void OnKeyExamined(EntityUid uid, EncryptionKeyComponent component, ExaminedEvent args)

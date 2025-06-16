@@ -5,42 +5,42 @@ using Robust.Client.UserInterface.Controls;
 using Robust.Client.UserInterface.RichText;
 using Robust.Shared.Utility;
 
-namespace Content.Client._Ganimed.UI.RichText
-{
-    public sealed class TextureTag : IMarkupTag
-    {
-        public string Name => "tex";
+namespace Content.Client._Ganimed.UserInterface.RichText;
 
-        public bool TryGetControl(MarkupNode node, [NotNullWhen(true)] out Control? control)
+public sealed class TextureTag : IMarkupTag
+{
+    public string Name => "tex";
+
+    public bool TryGetControl(MarkupNode node, [NotNullWhen(true)] out Control? control)
+    {
+        if (!node.Attributes.TryGetValue("path", out var rawPath))
         {
             control = null;
-
-            if (!node.Attributes.TryGetValue("path", out var rawPath))
-            {
-                return false;
-            }
-
-            if (!node.Attributes.TryGetValue("scale", out var scale) || !scale.TryGetLong(out var scaleValue))
-            {
-                scaleValue = 1;
-            }
-
-            var textureRect = new TextureRect();
-
-            var path = SanitizeString(rawPath.ToString());
-
-            textureRect.TexturePath = path;
-            textureRect.TextureScale = new Vector2(scaleValue.Value, scaleValue.Value);
-
-            control = textureRect;
-            return true;
+            return false;
         }
 
-        private static string SanitizeString(string input)
+        if (!node.Attributes.TryGetValue("scale", out var scale) || !scale.TryGetLong(out var scaleValue))
         {
-            return input.Replace("=", "")
-                        .Replace(" ", "")
-                        .Replace("\"", "");
+            scaleValue = 1;
         }
+
+        var texture = new TextureRect();
+
+        var path = ClearString(rawPath.ToString());
+
+        texture.TexturePath = path;
+        texture.TextureScale = new Vector2(scaleValue.Value, scaleValue.Value);
+
+        control = texture;
+        return true;
+    }
+
+    private static string ClearString(string str)
+    {
+        str = str.Replace("=", "");
+        str = str.Replace(" ", "");
+        str = str.Replace("\"", "");
+
+        return str;
     }
 }

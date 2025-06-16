@@ -44,8 +44,8 @@ public sealed class RadioSystem : EntitySystem
     private EntityQuery<TelecomExemptComponent> _exemptQuery;
 
     private const string NoIdIconPath = "/Textures/Interface/Misc/job_icons.rsi/NoId.png"; // Ganimed edit
-    private const string StationAiIconPath = "/Textures/Interface/Misc/job_icons.rsi/StationAi.png";
-    private const string BorgIconPath = "/Textures/Interface/Misc/job_icons.rsi/Borg.png";
+    private const string StationAiIconPath = "/Textures/Interface/Misc/job_icons.rsi/StationAi.png"; // Ganimed edit
+    private const string BorgIconPath = "/Textures/Interface/Misc/job_icons.rsi/Borg.png"; // Ganimed edit
 
     public override void Initialize()
     {

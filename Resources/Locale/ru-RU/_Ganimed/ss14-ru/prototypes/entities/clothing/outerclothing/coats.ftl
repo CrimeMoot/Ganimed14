@@ -15,3 +15,16 @@ ent-ClothingUniformJumpsuitGoldenEra = короткое пальто золот�
 
 ent-ClothingOuterCoatLabCoroner = лабораторный халат патологоанатома
     .desc = Несколько более устойчивый к сырости халат, сделанный не для светлых лабораторий, но для мрачных подвалов.
+
+# Wintercoats
+ent-ClothingOuterWinterSeniorPhysician = зимняя куртка заведующего врача
+    .desc = { ent-ClothingOuterWinterCoatToggleable.desc }
+
+ent-ClothingOuterWinterSeniorResearcher = зимняя куртка ведущего учёного
+    .desc = { ent-ClothingOuterWinterCoatToggleable.desc }
+
+ent-ClothingOuterWinterSeniorEngineer = зимняя куртка ведущего инженера
+    .desc = { ent-ClothingOuterWinterCoatToggleable.desc }
+
+ent-ClothingOuterWinterSeniorOfficer = зимняя куртка инструктора службы безопастности
+    .desc = { ent-ClothingOuterWinterCoatToggleable.desc }

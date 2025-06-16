@@ -45,8 +45,8 @@
 - type: entity # Backmen
   parent: ClothingUniformSkirtBase
   id: ClothingJumpskirtDetectiveGrayAlt
-  name: серая юбка-костюм детектива
-  description: Серая юбка с рубашкой, тахнет тайной!
+  name: grey detective's skirt-suit
+  description: A gray detective skirt suit, smells of mystery!
   components:
   - type: Sprite
     sprite: _Ganimed/Clothing/Uniforms/Jumpskirt/dec.rsi

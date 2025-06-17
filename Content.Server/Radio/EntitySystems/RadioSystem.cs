@@ -113,7 +113,8 @@ public sealed class RadioSystem : EntitySystem
         // ganimed edit start
         int radioFontSize = speech.FontSize;
         if (TryComp<WearingHeadsetComponent>(messageSource, out var wearingHeadset) &&
-            TryComp<HeadsetComponent>(wearingHeadset.Headset, out var headsetComp))
+            TryComp<HeadsetComponent>(wearingHeadset.Headset, out var headsetComp) &&
+            headsetComp.RadioBoostEnabled)
         {
             radioFontSize += headsetComp.RadioTextIncrease ?? 0;
         }
@@ -236,7 +237,6 @@ public sealed class RadioSystem : EntitySystem
         _messages.Remove(message);
     }
 
-    /// <inheritdoc cref="TelecomServerComponent"/>
     private bool HasActiveServer(MapId mapId, string channelId)
     {
         var servers = EntityQuery<TelecomServerComponent, EncryptionKeyHolderComponent, ApcPowerReceiverComponent, TransformComponent>();

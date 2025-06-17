@@ -6,6 +6,8 @@ using Content.Shared.Chat;
 using Content.Shared.Database;
 using Content.Shared.Radio;
 using Content.Shared.Radio.Components;
+using Content.Shared.Silicons.Borgs.Components; // Ganimed edit
+using Content.Shared.Silicons.StationAi; // Ganimed edit
 using Content.Shared.Speech;
 using Robust.Shared.Map;
 using Robust.Shared.Network;
@@ -37,6 +39,13 @@ public sealed class RadioSystem : EntitySystem
 
     private EntityQuery<TelecomExemptComponent> _exemptQuery;
 
+<<<<<<< revert-191-fonts
+=======
+    private const string NoIdIconPath = "/Textures/Interface/Misc/job_icons.rsi/NoId.png"; // Ganimed edit
+    private const string StationAiIconPath = "/Textures/Interface/Misc/job_icons.rsi/StationAi.png"; // Ganimed edit
+    private const string BorgIconPath = "/Textures/Interface/Misc/job_icons.rsi/Borg.png"; // Ganimed edit
+
+>>>>>>> master
     public override void Initialize()
     {
         base.Initialize();
@@ -100,6 +109,19 @@ public sealed class RadioSystem : EntitySystem
         var name = evt.VoiceName;
         name = FormattedMessage.EscapeText(name);
 
+<<<<<<< revert-191-fonts
+=======
+        // Ganimed edit START
+        var tag = Loc.GetString(
+            "radio-icon-tag",
+            ("path", GetIdCardSprite(messageSource)),
+            ("scale", "3")
+        );
+
+        var formattedName = $"{tag} {name}";
+        // Ganimed edit END
+
+>>>>>>> master
         SpeechVerbPrototype speech;
         if (evt.SpeechVerb != null && _prototype.TryIndex(evt.SpeechVerb, out var evntProto))
             speech = evntProto;
@@ -113,7 +135,8 @@ public sealed class RadioSystem : EntitySystem
         // ganimed edit start
         int radioFontSize = speech.FontSize;
         if (TryComp<WearingHeadsetComponent>(messageSource, out var wearingHeadset) &&
-            TryComp<HeadsetComponent>(wearingHeadset.Headset, out var headsetComp))
+            TryComp<HeadsetComponent>(wearingHeadset.Headset, out var headsetComp) &&
+            headsetComp.RadioBoostEnabled)
         {
             radioFontSize += headsetComp.RadioTextIncrease ?? 0;
         }
@@ -236,7 +259,56 @@ public sealed class RadioSystem : EntitySystem
         _messages.Remove(message);
     }
 
+<<<<<<< revert-191-fonts
     /// <inheritdoc cref="TelecomServerComponent"/>
+=======
+    // Ganimed edit START
+
+    private string GetIdCardSprite(EntityUid senderUid)
+    {
+        if (HasComp<BorgChassisComponent>(senderUid))
+            return BorgIconPath;
+
+        if (HasComp<StationAiHeldComponent>(senderUid))
+            return StationAiIconPath;
+
+        var protoId = GetIdCard(senderUid)?.JobIcon;
+        var sprite = NoIdIconPath;
+
+        if (_prototype.TryIndex(protoId, out var prototype))
+        {
+            switch (prototype.Icon)
+            {
+                case SpriteSpecifier.Texture tex:
+                    sprite = tex.TexturePath.CanonPath;
+                    break;
+                case SpriteSpecifier.Rsi rsi:
+                    sprite = rsi.RsiPath.CanonPath + "/" + rsi.RsiState + ".png";
+                    break;
+            }
+        }
+
+        return sprite;
+    }
+    private IdCardComponent? GetIdCard(EntityUid senderUid)
+    {
+        if (!_inventorySystem.TryGetSlotEntity(senderUid, "id", out var idUid))
+            return null;
+
+        if (EntityManager.TryGetComponent(idUid, out PdaComponent? pda) && pda.ContainedId is not null)
+        {
+            if (TryComp<IdCardComponent>(pda.ContainedId, out var idComp))
+                return idComp;
+        }
+        else if (EntityManager.TryGetComponent(idUid, out IdCardComponent? id))
+        {
+            return id;
+        }
+
+        return null;
+    }
+    // Ganimed edit END
+>>>>>>> master
     private bool HasActiveServer(MapId mapId, string channelId)
     {
         var servers = EntityQuery<TelecomServerComponent, EncryptionKeyHolderComponent, ApcPowerReceiverComponent, TransformComponent>();

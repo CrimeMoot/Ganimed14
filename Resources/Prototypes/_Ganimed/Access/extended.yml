@@ -1,7 +1,6 @@
 - type: accessGroup
   id: ExtendedAccess
   tags:
-  - Command
   - Cryogenics
   - Security
   - Detective

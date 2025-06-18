@@ -17,7 +17,7 @@ EMOJI_ORDER = ["add", "remove", "delete", "tweak", "fix"]
 DEFAULT_COLOR = 0xE91E63
 
 CHANGELOG_RE = re.compile(
-    r"(?<!<!--\s)^:cl:(?: *(\S.+?))?\s+((?:- ?(?:add|remove|delete|tweak|fix): ?.+\s*)+)(?!\s*-->)(?:<!--|\Z)",
+    r"^:cl:(?:\s*([\w.,;@\- ]+))?\s+((?:- ?(?:add|remove|delete|tweak|fix): ?.+\s*)+)(?=\Z|<!--)",
     re.IGNORECASE | re.MULTILINE
 )
 

@@ -43,7 +43,7 @@
     - type: Damageable
       damageContainer: StructuralInorganic
       damageModifierSet: StructuralMetallic
-    - type: Construction # Ganimed edit
+    - type: construction # Ganimed edit
       graph: FloorDrainGraph
       node: floorDrain
     - type: Destructible

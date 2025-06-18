@@ -154,15 +154,20 @@ def main():
         return
 
     alias = match.group(1)
-    author_display = alias.strip() if alias else author_login
+    if alias:
+        author_names = re.split(r"[.,; ]+", alias.strip())
+        author_display = author_names[0]
+        coauthor_profiles = [{"name": name.strip(), "avatar": None} for name in author_names[1:] if name.strip()]
+    else:
+        author_display = author_login
+        coauthor_profiles = []
+
     changelog = extract_changelog(body)
     if not changelog:
         print("No valid changelog after extraction. Skipping PR.")
         return
 
     coauthors_raw = extract_coauthors(body)
-    coauthor_profiles = []
-
     if token and coauthors_raw:
         for name, email in coauthors_raw:
             user_req = requests.get(

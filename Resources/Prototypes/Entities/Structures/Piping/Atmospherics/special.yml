@@ -62,6 +62,9 @@
     airBlockedDirection:
       - South
   - type: Clickable
+  - type: Construction # Ganimed edit
+    graph: FloorDrainGraph
+    node: floorDrain
   - type: Tag
     tags:
       - SpreaderIgnore

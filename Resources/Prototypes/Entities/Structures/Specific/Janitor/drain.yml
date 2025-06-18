@@ -43,6 +43,9 @@
     - type: Damageable
       damageContainer: StructuralInorganic
       damageModifierSet: StructuralMetallic
+    - type: Construction # Ganimed edit
+      graph: FloorDrainGraph
+      node: floorDrain
     - type: Destructible
       thresholds:
         - trigger:

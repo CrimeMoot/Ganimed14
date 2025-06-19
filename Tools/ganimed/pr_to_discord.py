@@ -8,16 +8,15 @@ from datetime import datetime
 EMOJI_MAP = {
     "add": "<:new1:1376955864698585248>",
     "remove": "<:remove1:1376955857438376036>",
-    "delete": "<:remove1:1376955857438376036>",
     "tweak": "<:tweak:1376955868028993658>",
     "fix": "<:fix:1376955860030459985>"
 }
 
-EMOJI_ORDER = ["add", "remove", "delete", "tweak", "fix"]
+EMOJI_ORDER = ["add", "remove", "tweak", "fix"]
 DEFAULT_COLOR = 0xE91E63
 
 CHANGELOG_RE = re.compile(
-    r"^:cl:(?:\s*([\w.,;@\- ]+))?\s+((?:- ?(?:add|remove|delete|tweak|fix): ?.+\s*)+)(?=\Z|<!--)",
+    r"^:cl:(?:\s*([^\n<>]{2,}))?\s+((?:- ?(?:add|remove|tweak|fix): ?.+\s*)+)(?=\Z|<!--)",
     re.IGNORECASE | re.MULTILINE
 )
 

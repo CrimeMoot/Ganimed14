@@ -21,6 +21,8 @@ using System.Linq;
 using Robust.Shared.Physics;
 using Content.Shared.Movement.Pulling.Components;
 using Content.Shared.Movement.Pulling.Systems;
+using Content.Server.Medical.SuitSensors;
+using Content.Shared.Medical.SuitSensor;
 
 namespace Content.Server.Heretic.Ritual;
 
@@ -140,6 +142,7 @@ public partial class RitualSacrificeBehavior : RitualCustomBehavior
     // sacrifice function to safely teleport them away -space
     private void SafeSacrifice(RitualData args, EntityUid uid)
     {
+        var suitSensorSystem = args.EntityManager.System<SuitSensorSystem>();
         var transformSystem = args.EntityManager.System<TransformSystem>();
         var inventorySystem = args.EntityManager.System<InventorySystem>();
         var sharedMindSystem = args.EntityManager.System<SharedMindSystem>();
@@ -147,14 +150,6 @@ public partial class RitualSacrificeBehavior : RitualCustomBehavior
         var mobStateSystem = args.EntityManager.System<MobStateSystem>();
         var damageSystem = args.EntityManager.System<DamageableSystem>();
         var chatManager = IoCManager.Resolve<IChatManager>();
-
-        if (args.EntityManager.TryGetComponent<InventoryComponent>(uid, out var comp2))
-        {
-            foreach (var item in inventorySystem.GetHandOrInventoryEntities(uid))
-            {
-                transformSystem.DropNextTo(item, uid);
-            }
-        }
 
         if (!args.EntityManager.TryGetComponent<MobStateComponent>(uid, out var mobstate))
             return;
@@ -184,15 +179,7 @@ public partial class RitualSacrificeBehavior : RitualCustomBehavior
             args.EntityManager.EnsureComponent<SacrificedComponent>(uid);
         }
 
-        // remove all damage -space
-
-        if (!args.EntityManager.TryGetComponent<DamageableComponent>(uid, out var damageable))
-            return;
-
-        damageSystem.SetAllDamage(uid, damageable, 0);
-        mobStateSystem.ChangeMobState(uid, MobState.Alive);
-        bloodSystem.TryModifyBloodLevel(uid, 1000);
-        bloodSystem.TryModifyBleedAmount(uid, -1000);
+        suitSensorSystem.SetAllSensors(uid, SuitSensorMode.SensorCords);
 
     }
 

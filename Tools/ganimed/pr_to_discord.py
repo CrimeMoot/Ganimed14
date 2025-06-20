@@ -16,13 +16,22 @@ EMOJI_ORDER = ["add", "remove", "tweak", "fix"]
 DEFAULT_COLOR = 0xE91E63
 
 CHANGELOG_RE = re.compile(
-    r"^:cl:(?:\s*([^\n<>]{2,}))?\s+((?:- ?(?:add|remove|tweak|fix): ?.+\s*)+)(?=\Z|<!--)",
+    r"^[ \t]*:cl:(?:\s*([^\n<>]{2,}))?\s*\n((?:[ \t]*- ?(?:add|remove|tweak|fix): ?.+\n?)+)(?=\Z)",
     re.IGNORECASE | re.MULTILINE
 )
 
+def is_inside_comment(text, match_start):
+    comment_starts = [m.start() for m in re.finditer(r'<!--', text)]
+    comment_ends = [m.start() for m in re.finditer(r'-->', text)]
+    for start in comment_starts:
+        end_candidates = [e for e in comment_ends if e > start]
+        if end_candidates and start < match_start < end_candidates[0]:
+            return True
+    return False
+
 def extract_changelog(text):
     match = CHANGELOG_RE.search(text)
-    if not match:
+    if not match or is_inside_comment(text, match.start()):
         return None
 
     changelog_body = match.group(2).strip()
@@ -148,15 +157,15 @@ def main():
     branch = pr.get("base", {}).get("ref", "master")
 
     match = CHANGELOG_RE.search(body)
-    if not match:
+    if not match or is_inside_comment(body, match.start()):
         print("No valid changelog found. Skipping PR.")
         return
 
     alias = match.group(1)
-    if alias:
-        author_names = re.split(r"[.,; ]+", alias.strip())
+    if alias and len(alias.strip()) >= 2:
+        author_names = [name.strip() for name in alias.split(",") if name.strip()]
         author_display = author_names[0]
-        coauthor_profiles = [{"name": name.strip(), "avatar": None} for name in author_names[1:] if name.strip()]
+        coauthor_profiles = [{"name": name, "avatar": None} for name in author_names[1:]]
     else:
         author_display = author_login
         coauthor_profiles = []

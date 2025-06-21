@@ -1,18 +1,12 @@
 using System.Linq;
 using Content.Server.Chat.Systems;
 using Content.Server.Station.Systems;
-using Content.Server._Ganimed.AlertLevel;
+using Content.Server._Ganimed.AlertLevel; // Ganimed edit
 using Content.Shared.CCVar;
-using Content.Shared.Access.Components; // Ganimed edit
-using Content.Shared.Access.Systems; // Ganimed edit
-using Content.Shared.Access; // Ganimed edit
-using Content.Shared._Ganimed.Access.AlertLevelAccess; // Ganimed edit
-using Content.Shared.Popups; // Ganimed edit
 using Robust.Shared.Audio;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Configuration;
 using Robust.Shared.Prototypes;
-using Robust.Shared.GameObjects; // Ganimed edit
 
 namespace Content.Server.AlertLevel;
 
@@ -170,9 +164,10 @@ public sealed class AlertLevelSystem : EntitySystem
 
         if (Loc.TryGetString($"alert-level-{level}", out var locName))
         {
-            name = locName;
+            name = locName; // ADT-Tweak
         }
 
+        // Announcement text. Is passed into announcementFull.
         var announcement = detail.Announcement;
 
         if (Loc.TryGetString(detail.Announcement, out var locAnnouncement))

@@ -585,9 +585,6 @@
       whitelist:
         components:
         - IdCard
-      blacklist:
-        components:
-        - AlertLevelAccess
     targetIdSlot:
       name: id-card-console-target-id
       ejectSound: /Audio/Machines/id_swipe.ogg
@@ -597,9 +594,6 @@
       whitelist:
         components:
         - IdCard
-      blacklist:
-        components:
-        - AlertLevelAccess
   - type: ActivatableUI
     key: enum.IdCardConsoleUiKey.Key
   - type: UserInterface

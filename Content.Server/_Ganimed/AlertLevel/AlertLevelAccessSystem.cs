@@ -32,7 +32,7 @@ namespace Content.Server._Ganimed.AlertLevel
                     alertAccessComp.BaseTags = new HashSet<ProtoId<AccessLevelPrototype>>(accessComp.Tags);
                 }
 
-                HashSet<ProtoId<AccessLevelPrototype>>? tagsToSet = alertLevel.ToLowerInvariant() switch
+                HashSet<ProtoId<AccessLevelPrototype>>? levelTags = alertLevel.ToLowerInvariant() switch
                 {
                     "blue" => alertAccessComp.Blue,
                     "violet" => alertAccessComp.Violet,
@@ -43,10 +43,22 @@ namespace Content.Server._Ganimed.AlertLevel
                     _ => null
                 };
 
-                if (tagsToSet == null)
+                if (levelTags == null)
                     continue;
 
-                _accessSystem.TrySetTags(uid, tagsToSet, accessComp);
+                HashSet<ProtoId<AccessLevelPrototype>> combinedTags;
+
+                if (alertLevel.ToLowerInvariant() == "green")
+                {
+                    combinedTags = new HashSet<ProtoId<AccessLevelPrototype>>(alertAccessComp.BaseTags);
+                }
+                else
+                {
+                    combinedTags = new HashSet<ProtoId<AccessLevelPrototype>>(alertAccessComp.BaseTags);
+                    combinedTags.UnionWith(levelTags);
+                }
+
+                _accessSystem.TrySetTags(uid, combinedTags, accessComp);
             }
         }
 

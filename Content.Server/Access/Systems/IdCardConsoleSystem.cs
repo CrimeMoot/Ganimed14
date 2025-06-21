@@ -13,6 +13,7 @@ using Robust.Shared.Prototypes;
 using System.Linq;
 using static Content.Shared.Access.Components.IdCardConsoleComponent;
 using Content.Shared.Access;
+using Content.Shared._Ganimed.Access.AlertLevelAccess; // Ganimed edit
 
 namespace Content.Server.Access.Systems;
 
@@ -168,6 +169,13 @@ public sealed class IdCardConsoleSystem : SharedIdCardConsoleSystem
         var addedTags = newAccessList.Except(oldTags).Select(tag => "+" + tag).ToList();
         var removedTags = oldTags.Except(newAccessList).Select(tag => "-" + tag).ToList();
         _access.TrySetTags(targetId, newAccessList);
+
+        // Ganimed edit start
+        if (TryComp<AlertLevelAccessComponent>(targetId, out var alertAccessComp))
+        {
+            alertAccessComp.BaseTags = new HashSet<ProtoId<AccessLevelPrototype>>(newAccessList);
+        }
+        // Ganimed edit stop
 
         /*TODO: ECS SharedIdCardConsoleComponent and then log on card ejection, together with the save.
         This current implementation is pretty shit as it logs 27 entries (27 lines) if someone decides to give themselves AA*/

@@ -3,7 +3,7 @@ import re
 import sys
 
 LOCALE_DIR = "Resources/Locale"
-LANGS = ["en-EN", "ru-RU"]
+LANGS = ["en-US", "ru-RU"]
 
 KEY_RE = re.compile(r"^([\w\-]+)\s*=\s*(.*)")
 

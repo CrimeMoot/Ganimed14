@@ -11,17 +11,39 @@ def read_ftl_file(path):
     keys = {}
     duplicates = set()
     with open(path, encoding="utf-8") as f:
-        for line in f:
-            line = line.strip()
-            if not line or line.startswith("#"):
-                continue
-            m = KEY_RE.match(line)
-            if not m:
-                continue
-            key, val = m.groups()
+        lines = f.readlines()
+
+    i = 0
+    while i < len(lines):
+        line = lines[i].rstrip('\n')
+        if not line.strip() or line.strip().startswith("#"):
+            i += 1
+            continue
+
+        m = KEY_RE.match(line)
+        if m:
+            key = m.group(1)
+            val = m.group(2).strip()
+
+            if val == "":
+                val_lines = []
+                i += 1
+                while i < len(lines):
+                    next_line = lines[i]
+                    if next_line.strip() and not next_line.startswith((" ", "\t")):
+                        break
+                    val_lines.append(next_line.rstrip('\n'))
+                    i += 1
+                val = "\n".join(val_lines).strip()
+            else:
+                i += 1
+
             if key in keys:
                 duplicates.add(key)
             keys[key] = val
+        else:
+            i += 1
+
     return keys, duplicates
 
 def check_locales():

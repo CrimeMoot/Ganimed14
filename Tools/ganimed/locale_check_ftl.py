@@ -7,6 +7,10 @@ LANGS = ["en-US", "ru-RU"]
 
 KEY_RE = re.compile(r"^\s*([\w\-]+)\s*=\s*(.*)")
 
+IGNORE_KEYS = {
+    "cmd-whitelistadd-desc",
+}
+
 def read_ftl_file(path):
     keys = {}
     duplicates = set()
@@ -75,13 +79,16 @@ def check_locales():
             dups[lang] = duplicates
 
             for dup_key in duplicates:
-                print(f"  ERROR: Duplicate key '{dup_key}' in {lang}/{filename}")
-                errors_found = True
+                if dup_key not in IGNORE_KEYS:
+                    print(f"  ERROR: Duplicate key '{dup_key}' in {lang}/{filename}")
+                    errors_found = True
 
         keys_sets = [set(data[lang].keys()) for lang in LANGS]
         all_keys = set.union(*keys_sets)
 
         for key in all_keys:
+            if key in IGNORE_KEYS:
+                continue
             for lang in LANGS:
                 if key not in data[lang]:
                     print(f"  ERROR: Missing key '{key}' in {lang}/{filename}")

@@ -5,7 +5,7 @@ import sys
 LOCALE_DIR = "Resources/Locale"
 LANGS = ["en-US", "ru-RU"]
 
-KEY_RE = re.compile(r"^([\w\-]+)\s*=\s*(.*)")
+KEY_RE = re.compile(r"^\s*([\w\-]+)\s*=\s*(.*)")
 
 def read_ftl_file(path):
     keys = {}

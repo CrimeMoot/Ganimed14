@@ -58,3 +58,5 @@ baby-jail-account-reason-overall =
         [one] минуты
        *[other] минут
     }.
+
+hwid-required

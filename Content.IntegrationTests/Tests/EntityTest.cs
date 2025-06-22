@@ -20,6 +20,13 @@ namespace Content.IntegrationTests.Tests
     {
         private static readonly ProtoId<EntityCategoryPrototype> SpawnerCategory = "Spawner";
 
+        // TODO: Fix all of these
+        private readonly string[] _excludedIds =
+        [
+            "ImmovableRod",
+            "MobRandom", // Polymorph test failure
+        ];
+
         [Test]
         public async Task SpawnAndDeleteAllEntitiesOnDifferentMaps()
         {
@@ -40,9 +47,8 @@ namespace Content.IntegrationTests.Tests
                     .EnumeratePrototypes<EntityPrototype>()
                     .Where(p => !p.Abstract)
                     .Where(p => !pair.IsTestPrototype(p))
+                    .Where(p => !_excludedIds.Contains(p.ID))
                     .Where(p => !p.Components.ContainsKey("MapGrid")) // This will smash stuff otherwise.
-                    .Where(p => !p.ID.StartsWith("ImmovableRod")) // Ganimed edit
-                    .Where(p => !p.ID.StartsWith("MobRandom")) // Ganimed edit
                     .Where(p => !p.Components.ContainsKey("RoomFill")) // This comp can delete all entities, and spawn others
                     .Select(p => p.ID)
                     .ToList();
@@ -106,8 +112,6 @@ namespace Content.IntegrationTests.Tests
                     .Where(p => !p.Abstract)
                     .Where(p => !pair.IsTestPrototype(p))
                     .Where(p => !p.Components.ContainsKey("MapGrid")) // This will smash stuff otherwise.
-                    .Where(p => !p.ID.StartsWith("ImmovableRod")) // Ganimed edit
-                    .Where(p => !p.ID.StartsWith("MobRandom")) // Ganimed edit
                     .Where(p => !p.Components.ContainsKey("RoomFill")) // This comp can delete all entities, and spawn others
                     .Select(p => p.ID)
                     .ToList();
@@ -169,8 +173,6 @@ namespace Content.IntegrationTests.Tests
                 .Where(p => !p.Abstract)
                 .Where(p => !pair.IsTestPrototype(p))
                 .Where(p => !p.Components.ContainsKey("MapGrid")) // This will smash stuff otherwise.
-                .Where(p => !p.ID.StartsWith("ImmovableRod")) // Ganimed edit
-                .Where(p => !p.ID.StartsWith("MobRandom")) // Ganimed edit
                 .Select(p => p.ID)
                 .ToList();
 

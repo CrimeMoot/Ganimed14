@@ -8,11 +8,11 @@
    - !type:RoleTimeRequirement
       role: JobScientist
       time: 21600 #6 hrs #Ganimed-RoleTime
-    - !type:DepartmentTimeRequirement
+   - !type:DepartmentTimeRequirement
       department: Science
       time: 72000 #20 hrs Ganimed-RoleTime
-    - !type:OverallPlaytimeRequirement
-      time: 144000 #40 hrs Ganimed-RoleTime
+   - !type:OverallPlaytimeRequirement
+      time:  126000 #35 hrs Ganimed-RoleTime
   weight: 10
   startingGear: ResearchDirectorGear
   icon: "JobIconResearchDirector"

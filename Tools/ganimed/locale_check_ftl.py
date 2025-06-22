@@ -41,6 +41,7 @@ def read_ftl_file(path):
             if key in keys:
                 duplicates.add(key)
             keys[key] = val
+            print(f"Loaded key '{key}' with value start: '{val[:30]}'")
         else:
             i += 1
 

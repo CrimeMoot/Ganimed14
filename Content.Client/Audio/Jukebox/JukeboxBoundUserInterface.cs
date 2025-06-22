@@ -100,9 +100,13 @@ public sealed class JukeboxBoundUserInterface : BoundUserInterface
         SendMessage(new JukeboxSetTimeMessage(sentTime));
     }
     /// <summary>
-    ///  Ganimed edit
+    /// Ganimed edit
+    /// Sets the playback volume.
+    /// First applies the volume locally for prediction (if components are available),
+    /// then sends a message to the server for synchronization.
+    /// Uses MapToRange to convert the slider value to the actual audio component volume range.
     /// </summary>
-    /// <param name="volume"></param>
+    /// <param name="volume">Volume value from the UI slider (typically from 0 to 1).</param>
     public void SetVolume(float volume)
     {
         var sentVolume = volume;

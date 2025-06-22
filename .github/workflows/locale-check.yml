@@ -20,4 +20,4 @@ jobs:
           python-version: "3.x"
 
       - name: Run localization check
-        run: python3 locale_check_ftl.py
+        run: python3 Tools/ganimed/locale_check_ftl.py

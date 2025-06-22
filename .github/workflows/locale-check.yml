@@ -17,10 +17,5 @@ jobs:
         with:
           python-version: "3.x"
 
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-
       - name: Run localization check
-        run: |
-          python3 Tools/ganimed/locale_check_ftl.py
+        run: python3 locale_check_ftl.py

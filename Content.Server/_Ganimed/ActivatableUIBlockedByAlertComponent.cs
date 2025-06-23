@@ -11,7 +11,7 @@ namespace Content.Server._Ganimed
         /// Ganimed
         /// Блокирует доступ к UI. Если не указана, то только при Red тревоге. Но можно указать любой имеющийся.
         /// </summary>
-        [DataField("blockedAlertLevelCode")]
+        [DataField("BlockedAlertLevelCode")]
         public string BlockedAlertLevelCode = "red";
     }
 }

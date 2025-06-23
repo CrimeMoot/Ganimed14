@@ -156,7 +156,6 @@ public sealed class AlertLevelSystem : EntitySystem
         component.IsLevelLocked = locked;
 
         _alertLevelAccessSystem.UpdateCardsAccessByAlertLevel(station, level); // Ganimed edit
-        _alertLevelAccessSystem.ShowAccessUpdatedPopup(station, oldLevel, level); // Ganimed edit
 
         var stationName = dataComponent.EntityName;
 

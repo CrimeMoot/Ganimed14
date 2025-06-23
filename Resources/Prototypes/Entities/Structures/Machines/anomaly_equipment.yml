@@ -298,8 +298,8 @@
         acts: ["Breakage"]
   - type: ActivatableUI
     key: enum.AnomalyGeneratorUiKey.Key
-  - type: ActivatableUIBlockedByAlert # Ganimed edit
-    BlockedAlertLevelCode: red
+#  - type: ActivatableUIBlockedByAlert # Ganimed edit
+#    BlockedAlertLevelCode: red
   - type: ActivatableUIRequiresAccess
   - type: ActivatableUIRequiresPower
   - type: UserInterface

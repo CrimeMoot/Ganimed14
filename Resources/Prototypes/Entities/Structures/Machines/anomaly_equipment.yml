@@ -299,7 +299,7 @@
   - type: ActivatableUI
     key: enum.AnomalyGeneratorUiKey.Key
   - type: ActivatableUIBlockedByAlert # Ganimed edit
-    allowedAlertLevelCode: red
+    BlockedAlertLevelCode: red
   - type: ActivatableUIRequiresAccess
   - type: ActivatableUIRequiresPower
   - type: UserInterface

@@ -8,8 +8,4 @@ namespace Content.Shared.Roles.Jobs;
 [RegisterComponent, NetworkedComponent]
 public sealed partial class JobRoleComponent : BaseMindRoleComponent
 {
-    // Ganimed-JobAlt
-    [DataField]
-    public string? AlternateTitleId { get; set; }
-
 }

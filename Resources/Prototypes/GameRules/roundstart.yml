@@ -111,6 +111,8 @@
     #Once the issues are fixed the species should be removed from this list to be enabled.
     #Balance concerns are not a valid reason to disable a species, except for high-impact Nukie-specific exploits.
     #- Vox
+  - type: SetJammerOnSpawn
+    duration: 1200 # 20 минут - Ganimed edit
 
 - type: entity
   parent: BaseNukeopsRule
@@ -176,6 +178,8 @@
         - Syndicate
       mindRoles:
       - MindRoleNukeops
+  - type: SetJammerOnSpawn
+    duration: 1200 # 20 минут - Ganimed edit
 
 - type: entity
   abstract: true

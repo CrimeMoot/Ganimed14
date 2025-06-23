@@ -300,6 +300,7 @@
     earliestStart: 30
     reoccurrenceDelay: 60
     minimumPlayers: 1000  #ADT-Tweak - де факто отключаем визарда 10 > 1000
+  - type: SetJammerOnSpawn # 10 минут - ganimed edit
   - type: AntagSelection
     agentName: wizard-round-end-name
     definitions:
@@ -577,6 +578,7 @@
     gridPath: /Maps/Shuttles/ShuttleEvent/striker.yml
   - type: NukeopsRule
     roundEndBehavior: Nothing
+  - type: SetJammerOnSpawn # 10 минут - ganimed edit
   - type: AntagSelection
     definitions:
     - spawnerPrototype: SpawnPointLoneNukeOperative
@@ -655,6 +657,7 @@
     startAudio:
       path: /Audio/Corvax/Adminbuse/i-storm1.ogg
   - type: IonStormRule
+  - type: SetJammerOnSpawn # 10 минут - ganimed edit
 
 - type: entity
   id: MimicVendorRule

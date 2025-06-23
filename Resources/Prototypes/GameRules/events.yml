@@ -651,7 +651,7 @@
   - type: StationEvent
     weight: 8
     reoccurrenceDelay: 40
-    MaxOccurrences: 2 # Ganimed edit
+    maxOccurrences: 2 # Ganimed edit
     duration: 1
     startAnnouncement: station-event-ion-storm-start-announcement # Ganimed edit
     startAudio:

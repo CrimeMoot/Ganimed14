@@ -3,5 +3,6 @@
   name: trait-incognito-name
   description: trait-incognito-desc
   category: invisible
+  sponsorOnly: true
   components:
     - type: SetIncognito

@@ -116,9 +116,10 @@
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
-  - type: IconSmooth
-    key: walls
-    mode: NoSprite
+#  Ganimed edit
+#  - type: IconSmooth
+#    key: walls
+#    mode: NoSprite
   - type: Construction
     graph: Airlock
     node: highSecDoor

@@ -8,4 +8,5 @@ namespace Content.Shared.Roles.Jobs;
 [RegisterComponent, NetworkedComponent]
 public sealed partial class JobRoleComponent : BaseMindRoleComponent
 {
+    
 }

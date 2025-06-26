@@ -33,4 +33,7 @@ jobs:
       - name: Commit and push changes if any
         run: |
           git add Resources/Locale/ru-RU
-          git diff --cached --quiet || (git commit -m "Auto-translate missing locale strings" && git push)
+          git diff --cached --quiet || (
+            git commit -m "Auto-translate missing locale strings"
+            git push origin HEAD:refs/heads/${{ github.head_ref }}
+          )

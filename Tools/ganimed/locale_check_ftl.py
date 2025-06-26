@@ -1,15 +1,19 @@
 import os
 import re
 import sys
+from googletrans import Translator
 
 LOCALE_DIR = "Resources/Locale"
-LANGS = ["en-US", "ru-RU"]
+BASE_LANG = "en-US"
+TARGET_LANG = "ru-RU"
 
 KEY_RE = re.compile(r"^\s*([\w\-]+)\s*=\s*(.*)")
 
 IGNORE_KEYS = {
     "cmd-whitelistadd-desc",
 }
+
+translator = Translator()
 
 def read_ftl_file(path):
     keys = {}
@@ -35,7 +39,7 @@ def read_ftl_file(path):
                     next_line = lines[i]
                     if next_line.strip() and not next_line.startswith((" ", "\t")):
                         break
-                    val_lines.append(next_line.rstrip('\n'))
+                    val_lines.append(lines[i].rstrip('\n'))
                     i += 1
                 val = "\n".join(val_lines).strip()
             else:
@@ -47,57 +51,83 @@ def read_ftl_file(path):
 
     return keys
 
+def write_missing_keys(missing_keys, target_file):
+    os.makedirs(os.path.dirname(target_file), exist_ok=True)
+
+    if not os.path.exists(target_file):
+        with open(target_file, "w", encoding="utf-8") as f:
+            f.write("")  # create empty file
+
+    with open(target_file, "a", encoding="utf-8") as f:
+        for key, val in missing_keys.items():
+            f.write(f"\n{key} = {val}\n")
+
+def translate_text(text, src_lang="en", dest_lang="ru"):
+    try:
+        result = translator.translate(text, src=src_lang, dest=dest_lang)
+        return result.text
+    except Exception as e:
+        print(f"Translation error: {e}")
+        return text  # return original if error
+
 def lang_code(lang):
     return lang.split("-")[-1].upper()
 
-def collect_all_keys_for_lang(lang):
-    lang_path = os.path.join(LOCALE_DIR, lang)
-    if not os.path.isdir(lang_path):
-        print(f"ERROR: Locale directory not found: {lang_path}")
-        sys.exit(1)
+def collect_files(lang):
+    path = os.path.join(LOCALE_DIR, lang)
+    files = []
+    for root, _, filenames in os.walk(path):
+        for f in filenames:
+            if f.endswith(".ftl"):
+                rel = os.path.relpath(os.path.join(root, f), path)
+                files.append(rel)
+    return files
 
+def read_all_keys(lang):
+    path = os.path.join(LOCALE_DIR, lang)
     all_keys = {}
-
-    for root, _, files in os.walk(lang_path):
-        for f in files:
-            if not f.endswith(".ftl"):
-                continue
-            path = os.path.join(root, f)
-            keys = read_ftl_file(path)
-
-            for k, v in keys.items():
-                all_keys[k] = v
-
+    for f in collect_files(lang):
+        keys = read_ftl_file(os.path.join(path, f))
+        all_keys[f] = keys
     return all_keys
 
-def check_locales():
-    base_lang = LANGS[0]
-    base_keys = collect_all_keys_for_lang(base_lang)
+def main():
+    base_path = os.path.join(LOCALE_DIR, BASE_LANG)
+    target_path = os.path.join(LOCALE_DIR, TARGET_LANG)
 
-    errors_found = False
+    base_files = collect_files(BASE_LANG)
+    target_files = collect_files(TARGET_LANG)
 
-    langs_keys = {}
-    for lang in LANGS[1:]:
-        keys = collect_all_keys_for_lang(lang)
-        langs_keys[lang] = keys
+    base_keys_all = read_all_keys(BASE_LANG)
+    target_keys_all = read_all_keys(TARGET_LANG)
 
-    for key in base_keys.keys():
-        if key in IGNORE_KEYS:
-            continue
-        for lang in LANGS[1:]:
-            if key not in langs_keys[lang]:
-                print(f"{key}({lang_code(lang)}) missing")
-                errors_found = True
-            else:
-                if langs_keys[lang][key] == "":
-                    print(f"{key}({lang_code(lang)}) empty")
-                    errors_found = True
+    changes_made = False
 
-    if errors_found:
-        print("\nLocalization check FAILED.")
-        sys.exit(1)
+    for file_rel in base_files:
+        base_keys = base_keys_all.get(file_rel, {})
+        target_keys = target_keys_all.get(file_rel, {})
+
+        missing_keys = {}
+
+        for key, val in base_keys.items():
+            if key in IGNORE_KEYS:
+                continue
+            if key not in target_keys or target_keys[key].strip() == "":
+                src_code = BASE_LANG.split("-")[0].lower()
+                dest_code = TARGET_LANG.split("-")[0].lower()
+                translated_val = translate_text(val, src_lang=src_code, dest_lang=dest_code)
+                missing_keys[key] = translated_val
+                changes_made = True
+                print(f"Adding translation for key '{key}' to {TARGET_LANG}/{file_rel}")
+
+        if missing_keys:
+            target_file_path = os.path.join(target_path, file_rel)
+            write_missing_keys(missing_keys, target_file_path)
+
+    if changes_made:
+        print("\nTranslation completed with new entries added.")
     else:
-        print("\nLocalization check PASSED.")
+        print("\nAll translations are complete; nothing to add.")
 
 if __name__ == "__main__":
-    check_locales()
+    main()

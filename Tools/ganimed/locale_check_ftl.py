@@ -50,25 +50,32 @@ def read_ftl_file(path):
 
     return keys, duplicates
 
+def lang_code(lang):
+    return lang.split("-")[-1].upper()
+
 def check_locales():
     lang0_path = os.path.join(LOCALE_DIR, LANGS[0])
     if not os.path.isdir(lang0_path):
         print(f"ERROR: Locale directory not found: {lang0_path}")
         sys.exit(1)
 
-    files = [f for f in os.listdir(lang0_path) if f.endswith(".ftl")]
+    files = []
+    for root, _, filenames in os.walk(lang0_path):
+        for f in filenames:
+            if f.endswith(".ftl"):
+                rel_path = os.path.relpath(os.path.join(root, f), lang0_path)
+                files.append(rel_path)
 
     errors_found = False
 
     for filename in files:
-        print(f"\nChecking {filename}:")
         data = {}
         dups = {}
 
         for lang in LANGS:
             path = os.path.join(LOCALE_DIR, lang, filename)
             if not os.path.exists(path):
-                print(f"  ERROR: Missing file for language '{lang}': {filename}")
+                print(f"{filename}({lang_code(lang)}) missing")
                 errors_found = True
                 data[lang] = {}
                 dups[lang] = set()
@@ -80,22 +87,23 @@ def check_locales():
 
             for dup_key in duplicates:
                 if dup_key not in IGNORE_KEYS:
-                    print(f"  ERROR: Duplicate key '{dup_key}' in {lang}/{filename}")
+                    print(f"duplicate key '{dup_key}' ({lang_code(lang)})")
                     errors_found = True
 
-        keys_sets = [set(data[lang].keys()) for lang in LANGS]
-        all_keys = set.union(*keys_sets)
+        all_keys = set()
+        for lang in LANGS:
+            all_keys.update(data[lang].keys())
 
         for key in all_keys:
             if key in IGNORE_KEYS:
                 continue
             for lang in LANGS:
                 if key not in data[lang]:
-                    print(f"  ERROR: Missing key '{key}' in {lang}/{filename}")
+                    print(f"{key}({lang_code(lang)}) missing")
                     errors_found = True
                 else:
                     if data[lang][key] == "":
-                        print(f"  ERROR: Empty value for key '{key}' in {lang}/{filename}")
+                        print(f"{key}({lang_code(lang)}) empty")
                         errors_found = True
 
     if errors_found:

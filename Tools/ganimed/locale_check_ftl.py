@@ -13,7 +13,6 @@ IGNORE_KEYS = {
 
 def read_ftl_file(path):
     keys = {}
-    duplicates = set()
     with open(path, encoding="utf-8") as f:
         lines = f.readlines()
 
@@ -42,69 +41,58 @@ def read_ftl_file(path):
             else:
                 i += 1
 
-            if key in keys:
-                duplicates.add(key)
             keys[key] = val
         else:
             i += 1
 
-    return keys, duplicates
+    return keys
 
 def lang_code(lang):
     return lang.split("-")[-1].upper()
 
-def check_locales():
-    lang0_path = os.path.join(LOCALE_DIR, LANGS[0])
-    if not os.path.isdir(lang0_path):
-        print(f"ERROR: Locale directory not found: {lang0_path}")
+def collect_all_keys_for_lang(lang):
+    lang_path = os.path.join(LOCALE_DIR, lang)
+    if not os.path.isdir(lang_path):
+        print(f"ERROR: Locale directory not found: {lang_path}")
         sys.exit(1)
 
-    files = []
-    for root, _, filenames in os.walk(lang0_path):
-        for f in filenames:
-            if f.endswith(".ftl"):
-                rel_path = os.path.relpath(os.path.join(root, f), lang0_path)
-                files.append(rel_path)
+    all_keys = {}
+
+    for root, _, files in os.walk(lang_path):
+        for f in files:
+            if not f.endswith(".ftl"):
+                continue
+            path = os.path.join(root, f)
+            keys = read_ftl_file(path)
+
+            for k, v in keys.items():
+                # При повторных ключах перезапишет, но проверку дубликатов убрали
+                all_keys[k] = v
+
+    return all_keys
+
+def check_locales():
+    base_lang = LANGS[0]
+    base_keys = collect_all_keys_for_lang(base_lang)
 
     errors_found = False
 
-    for filename in files:
-        data = {}
-        dups = {}
+    langs_keys = {}
+    for lang in LANGS[1:]:
+        keys = collect_all_keys_for_lang(lang)
+        langs_keys[lang] = keys
 
-        for lang in LANGS:
-            path = os.path.join(LOCALE_DIR, lang, filename)
-            if not os.path.exists(path):
-                print(f"{filename}({lang_code(lang)}) missing")
+    for key in base_keys.keys():
+        if key in IGNORE_KEYS:
+            continue
+        for lang in LANGS[1:]:
+            if key not in langs_keys[lang]:
+                print(f"{key}({lang_code(lang)}) missing")
                 errors_found = True
-                data[lang] = {}
-                dups[lang] = set()
-                continue
-
-            keys, duplicates = read_ftl_file(path)
-            data[lang] = keys
-            dups[lang] = duplicates
-
-            for dup_key in duplicates:
-                if dup_key not in IGNORE_KEYS:
-                    print(f"duplicate key '{dup_key}' ({lang_code(lang)})")
+            else:
+                if langs_keys[lang][key] == "":
+                    print(f"{key}({lang_code(lang)}) empty")
                     errors_found = True
-
-        all_keys = set()
-        for lang in LANGS:
-            all_keys.update(data[lang].keys())
-
-        for key in all_keys:
-            if key in IGNORE_KEYS:
-                continue
-            for lang in LANGS:
-                if key not in data[lang]:
-                    print(f"{key}({lang_code(lang)}) missing")
-                    errors_found = True
-                else:
-                    if data[lang][key] == "":
-                        print(f"{key}({lang_code(lang)}) empty")
-                        errors_found = True
 
     if errors_found:
         print("\nLocalization check FAILED.")

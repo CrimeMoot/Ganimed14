@@ -15,3 +15,11 @@ electrify-door-off = Отключить перегрузку
 toggle-light = Переключить свет
 ai-device-not-responding = Устройство не отвечает
 ai-consciousness-download-warning = Ваше сознание начали загружать.
+
+sai-loadout-name-label = Пользовательское название:
+
+sai-loadout-screen-label = Экран:
+
+sai-loadout-lawset-label = Lawcet:
+
+sai-loadout-save-button = Сохраните имя ИИ

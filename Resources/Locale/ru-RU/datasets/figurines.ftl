@@ -134,3 +134,287 @@ figurines-hamlet-5 = Пип!
 figurines-hamlet-6 = Уиип!
 figurines-hamlet-7 = Иип!
 figurines-hamlet-8 = ТОЛЬКО НЕ МИКРОВОЛНОВКА!
+
+figurines-hop-3 = BRB.
+
+figurines-hop-4 = Вы можете получить AA, если заполните форму.
+
+figurines-hop-5 = Я ушел на две секунды ...
+
+figurines-passenger-3 = Помогите Мейнтс !!
+
+figurines-passenger-4 = Я не плод.
+
+figurines-passenger-5 = Сколько для пояс для инструментов?
+
+figurines-greytider-6 = Viva La Revolution.
+
+figurines-clown-6 = Могу я иметь АА?Пожалуйста?
+
+figurines-clown-7 = Я клоун, но ты весь цирк!
+
+figurines-holoclown-2 = Привет, офицер!
+
+figurines-holoclown-3 = Кого ты называешь синим?
+
+figurines-holoclown-4 = Кровь на земле - это хороший взгляд для вас.
+
+figurines-holoclown-5 = Жалкий.
+
+figurines-holoclown-6 = Это не они, о которых вам нужно беспокоиться;это я.
+
+figurines-holoclown-7 = Что такого смешного?
+
+figurines-mime-6 = ...........?
+
+figurines-mime-7 = !!!
+
+figurines-mime-8 = .... ....!
+
+figurines-mime-9 = ???
+
+figurines-musician-3 = Музыка - это искусство.
+
+figurines-musician-4 = Спасибо, я буду здесь всю ночь.
+
+figurines-musician-5 = Я группа с одним человеком.
+
+figurines-boxer-5 = 1V1 я, капитан.
+
+figurines-captain-4 = Куда ушел мой удостоверение личности?
+
+figurines-captain-5 = Все под контролем.
+
+figurines-captain-6 = Диск был в моей сумке в последний раз, когда я проверил.
+
+figurines-captain-7 = Цепочка команды начинается и заканчивается со мной.
+
+figurines-captain-8 = Трудно быть на вершине.
+
+figurines-hos-4 = Клоун теперь Kos.
+
+figurines-hos-5 = Оружейная местность теперь открыта для публики!
+
+figurines-warden-5 = Мыло теперь контрабанды.
+
+figurines-warden-6 = Ты уходишь в течение долгого времени, приятель.
+
+figurines-detective-3 = Хамелеон волокна?Как здесь попал хамелеон?
+
+figurines-detective-4 = Иди, гаджет!
+
+figurines-detective-5 = Конечно, я проверил журналы дверей!
+
+figurines-security-5 = Харббатон?Это конечно, как адский вред!
+
+figurines-security-6 = Космический закон?Никогда не слышал об этом.
+
+figurines-security-7 = Случайный поиск!Передайте это.
+
+figurines-security-8 = Я люблю пончики.
+
+figurines-security-9 = Грейтид это, ублюдок.
+
+figurines-security-10 = Не сопротивляйтесь.
+
+figurines-lawyer-3 = Вы знали, что у вас есть права?
+
+figurines-lawyer-4 = Космический закон говорит!
+
+figurines-lawyer-5 = Сначала подпишите контракт.
+
+figurines-cargotech-4 = Вы стоите 3000 Spesos.Поздравляю.
+
+figurines-cargotech-5 = Овощная щедрость?Никто в любом случае не ест.
+
+figurines-cargotech-6 = Мы секунды !!Все приветствуют Каргонию !!
+
+figurines-salvage-2 = Мы потерялись.Кто -нибудь приносит GPS?
+
+figurines-salvage-3 = У кого -нибудь есть кислород?
+
+figurines-salvage-4 = Я нашел кроваво-красного и электронного слова!
+
+figurines-salvage-5 = Есть медведи в космосе?
+
+figurines-salvage-6 = Дробилка?Я едва ее знаю!
+
+figurines-qm-8 = Куда ушли все наши деньги?
+
+figurines-qm-9 = 99% игроков ушли прямо, прежде чем они ударили его большим!
+
+figurines-ce-6 = Власть снова выходит.
+
+figurines-engineer-4 = Бесплатная инженерная инженерия
+
+figurines-engineer-5 = Куда ушла сила?
+
+figurines-engineer-6 = Кто -то бомбил Медбай ... снова ...
+
+figurines-engineer-7 = Ну, почему бы тебе не прийти и исправить это?
+
+figurines-atmostech-6 = Дистрибуция?Это недолго для утилизации.
+
+figurines-atmostech-7 = TEG: Тепловая энергия?Ушел!
+
+figurines-rd-3 = Теперь, где я покинул свой твердый костюм ...?
+
+figurines-rd-4 = Теперь вы думаете с порталами!
+
+figurines-rd-5 = Торт - ложь!
+
+figurines-rd-6 = Черта, которую я ищу в ученых, - это расходы.
+
+figurines-scientist-6 = Аномалия взорвалась!
+
+figurines-cmo-3 = Кто выпил все химии?
+
+figurines-cmo-4 = Desoxyephedrine?Звучит здорово.
+
+figurines-cmo-5 = Нет, ты не получаешь мой гипоспрок.
+
+figurines-chemist-2 = Нам нужно готовить.
+
+figurines-chemist-3 = Я тот, кто стучит!
+
+figurines-chemist-4 = Скажи мое имя.
+
+figurines-chemist-5 = 99,8% чистота.
+
+figurines-chemist-6 = Адреналин?Разве вы не сказали метамфетамин?
+
+figurines-paramedic-3 = Датчики костюма !!
+
+figurines-paramedic-4 = Мне нужен гипоспробение для спасения людей!
+
+figurines-paramedic-5 = 14 мертвых в комнате клоуна.
+
+figurines-doctor-4 = Спустя всего неделю ...
+
+figurines-doctor-5 = Я знал это...
+
+figurines-librarian-3 = Давным-давно...
+
+figurines-librarian-4 = В мире, где ...
+
+figurines-librarian-5 = Это была темная и бурная ночь ...
+
+figurines-librarian-6 = Давным -давно ...
+
+figurines-librarian-7 = Как идет история ...
+
+figurines-librarian-8 = Представьте себе, если хотите ...
+
+figurines-librarian-9 = Задолго до того, как у времени было имя ...
+
+figurines-librarian-10 = В галактике далеко, далеко ...
+
+figurines-librarian-11 = Как гласит старая поговорка ...
+
+figurines-librarian-12 = Соберите вокруг ...
+
+figurines-librarian-13 = ... это история, как и старое ...
+
+figurines-librarian-14 = ... это все, что она написала.
+
+figurines-chaplain-4 = Это не кровопролитые, я нарисовал их в карандаше.
+
+figurines-chaplain-5 = Кто -нибудь хочет пожертвовать?
+
+figurines-chaplain-6 = Вампиры не настоящие.
+
+figurines-chef-2 = Больше банановых кремовых пирогов?
+
+figurines-chef-3 = Как звучит ротари суши?
+
+figurines-chef-4 = Это будет 1000 Spesos
+
+figurines-chef-5 = Для здесь или пойти?
+
+figurines-chef-6 = Куда каладь?Не знаю ...
+
+figurines-bartender-3 = Я там что -то смешал ...
+
+figurines-bartender-4 = Рецепт?Плазма и рвота.Почему?
+
+figurines-bartender-5 = Мне нужны эти токсины для моих напитков, офицер!
+
+figurines-bartender-6 = Прочитайте комнату.
+
+figurines-bartender-7 = У меня есть дробовик.
+
+figurines-botanist-3 = Это только я, или это сияет сорняки?
+
+figurines-botanist-4 = Еще 50 единиц мутагена.Этого должно быть достаточно.
+
+figurines-botanist-5 = Больше бананов для моего любимого клоуна!
+
+figurines-janitor-3 = Я никогда не видел столько смазки в своей жизни.
+
+figurines-janitor-4 = Еще один день, еще один разлив.
+
+figurines-janitor-5 = Мне даже не платят за это.
+
+figurines-janitor-6 = Эта кровь не была доказательством, верно?
+
+figurines-janitor-7 = Мой единственный друг - моя швабня.
+
+figurines-janitor-8 = Это лучше не быть тем, что я думаю, это ...
+
+figurines-janitor-9 = Еще один день, другое тело.
+
+figurines-nukie-5 = Командир ...?... это воздушный шар ...
+
+figurines-nukie-elite-4 = Береги и ясно!
+
+figurines-nukie-elite-5 = Не оставлять выживших.
+
+figurines-nukie-elite-6 = Хорошая работа, команда.
+
+figurines-nukie-commander-2 = Черт возьми.
+
+figurines-nukie-commander-3 = Синдикат посылает свои пожелания.
+
+figurines-nukie-commander-4 = Неудача не вариант.
+
+figurines-nukie-commander-5 = Упс.
+
+figurines-footsoldier-3 = Слава синдикату!
+
+figurines-footsoldier-4 = Вниз с нанотразеном!
+
+figurines-footsoldier-5 = Я предпочел бы умереть, чем присоединиться к Nanotrasen.
+
+figurines-space-dragon-2 = Дракон определяется, не так.
+
+figurines-space-dragon-3 = Экипаж восхитителен.
+
+figurines-space-dragon-4 = Не смей сделать суши.
+
+figurines-space-dragon-5 = Эта станция не достаточно велика для нас двоих.
+
+figurines-queen-1 = Наш домен должен расти.
+
+figurines-queen-2 = Улей подгоняет.
+
+figurines-queen-3 = Мы потребляем все.
+
+figurines-queen-4 = Мы вершина.
+
+figurines-queen-5 = Ты просто биомасса.
+
+figurines-queen-6 = Мы должны развиваться.
+
+figurines-rat-king-4 = Позвольте мне дать вам предложение, которое вы не можете отказаться, капич?
+
+figurines-rat-king-5 = Ничего личного, капише?
+
+figurines-rat-king-6 = Сейчас я запускаю эту станцию?Нам!
+
+figurines-rat-servant-3 = Босс хочет сказать с тобой.
+
+figurines-rat-servant-4 = Да, я здесь хожу!
+
+figurines-rat-servant-5 = Вы получаете Chedda ', затем мы говорим.
+
+figurines-slime-4 = Хлюпать!

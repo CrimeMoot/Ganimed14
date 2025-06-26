@@ -262,3 +262,7 @@ ghost-role-information-gingerbread-description =
     Распространяйте паточную вкуснятину и хорошее настроение.
 ghost-role-information-wizard-name = Маг
 ghost-role-information-wizard-desc = ВЫ МАГ! Покажите станции, из чего сделана ваша магия.
+
+ghost-role-information-paradox-clone-name = Парадокс клон
+
+ghost-role-information-paradox-clone-description = Аномалия с уродной пространством-временем телепортировала вас в другую реальность!Теперь вы должны найти своего аналога, убить и заменить его.

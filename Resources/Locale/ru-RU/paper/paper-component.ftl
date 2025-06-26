@@ -11,3 +11,7 @@ paper-component-action-stamp-paper-self = Вы ставите печать на 
 paper-ui-fill-level = { $currentLength }/{ $maxLength }
 paper-ui-save-button = Сохранить ({ $keybind })
 paper-tamper-proof-modified-message = Текст на странице был написан с использованием нефальсицицируемых чернил.
+
+paper-component-illiterate = Вы не можете написать.
+
+paper-component-illiterate-mime = Ваша клятва запрещает вам писать.

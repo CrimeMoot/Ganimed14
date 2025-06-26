@@ -1,0 +1,2 @@
+
+ent-ADTMobCreature = существо

@@ -1333,3 +1333,5 @@ names-golem-dataset-1333 = Зорит
 names-golem-dataset-1334 = Цуниит
 names-golem-dataset-1335 = Цусманит
 names-golem-dataset-1336 = Цикаит
+
+names-golem-dataset-1037 = Шрокингер

@@ -55,3 +55,5 @@ humanoid-profile-editor-trait-count-hint = Доступно очков: [{ $curr
 trait-category-disabilities = Ограничения
 trait-category-speech = Черты речи
 #trait-category-quirks = Причуды    # Название фигня, в адт папке лучше
+
+trait-category-quirks = Причуды

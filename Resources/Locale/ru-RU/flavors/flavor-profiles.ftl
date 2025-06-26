@@ -328,3 +328,27 @@ flavor-complex-bottledlightning = как молния в бутылке
 flavor-complex-punishment = как наказание
 flavor-weh = как вех
 flavor-hew = как хев
+
+flavor-complex-caipirinha = как Бразилия
+
+flavor-complex-daiquiri = как ром, лайм и сахар
+
+flavor-complex-deathintheafternoon = как анис и шампанское
+
+flavor-complex-empress75 = Как тирианский фиолетовый
+
+flavor-complex-espressomartini = как водка и кофе
+
+flavor-complex-mayojito = как желудок
+
+flavor-complex-mimeosa = как молчание и апельсины
+
+flavor-complex-mimosa = как ранний бранч
+
+flavor-complex-moscowmule = как водка и имбирный эль
+
+flavor-complex-thesunalsorises = как абсент дайкири
+
+flavor-complex-whiskeysour = как виски и яйцо
+
+flavor-complex-bacchus-blessing = как стена кирпича

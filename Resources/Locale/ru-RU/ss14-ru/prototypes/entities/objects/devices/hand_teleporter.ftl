@@ -3,3 +3,4 @@ ent-HandTeleporter = ручной телепортер
 ent-HandTeleporterAdmemeClassic = блюспейс ручной телепортер
     .desc = Позволяет открывать стабильные портальные врата, не ограниченные расстоянием.
     .suffix = Адмемы, телепорт
+ent-HandTeleporterAdmeme = межпрофессиональный телепорт

@@ -178,3 +178,37 @@ guide-entry-rules-ban-types = Виды банов
 guide-entry-rules-ban-durations = Длительности банов
 guide-entry-writing = Разметка письма
 guide-entry-glossary = Словарь терминов
+
+guide-entry-medication = Лекарство
+
+guide-entry-pizza-recipes = Пицца
+
+guide-entry-savory-recipes = Пикантные продукты
+
+guide-entry-bread-recipes = Хлеб
+
+guide-entry-breakfast-recipes = Завтрак
+
+guide-entry-moth-recipes = Моль продукты
+
+guide-entry-pasta-recipes = Паста и лапша
+
+guide-entry-dessert-recipes = Десерты и выпечка
+
+guide-entry-soup-recipes = Супы и тушеные мясо
+
+guide-entry-pie-recipes = Пироги и Тартс
+
+guide-entry-barsandcookies-recipes = Бары и печенье
+
+guide-entry-cake-recipes = Торты
+
+guide-entry-salad-recipes = Салаты
+
+guide-entry-medicinal-recipes = Лекарственный
+
+guide-entry-other-recipes = Другой
+
+guide-entry-secret-recipes = Секрет
+
+guide-entry-wizard = Волшебник

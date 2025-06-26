@@ -192,3 +192,51 @@ reagent-name-rubberneck = раббернек
 reagent-desc-rubberneck = Популярный напиток среди тех, кто придерживается полностью синтетической диеты.
 reagent-name-zombiecocktail = Зомби
 reagent-desc-zombiecocktail = It gets in your head. Your he-eyeh-ead.
+
+reagent-name-caipirinha = Кайпиринья
+
+reagent-desc-caipirinha = Специальный Сан -Паулу, прямо из старой Бразилии.
+
+reagent-name-daiquiri = дайкири
+
+reagent-desc-daiquiri = Классический ромовый коктейль, который остается популярным даже в холодных натяжениях пространства.
+
+reagent-name-death-in-the-afternoon = Смерть днем
+
+reagent-desc-death-in-the-afternoon = «Вылейте один джигг, абсен, в бокал шампанского. Добавьте шампанское со льдом, пока оно не достигнет правильной опалесциродочной молочной жизни. Выпейте от трех до пяти из них».- Эрнест Хемингуэй
+
+reagent-name-empress-75 = Императрица 75
+
+reagent-desc-empress-75 = Более изысканный взгляд на мимозу.То, что Мария Антуанетта могла бы потянуть перед революцией.
+
+reagent-name-espresso-martini = Эспрессо Мартини
+
+reagent-desc-espresso-martini = Чтобы разбудить тебя и замолчать.Украшены кофейными зернами и ледяной.
+
+reagent-name-mayojito = Майоджито
+
+reagent-desc-mayojito = Оскорбление Богу и Человеку.Не пей это.
+
+reagent-name-mimeosa = Mimeosa
+
+reagent-desc-mimeosa = У него есть апельсиновый танг, настолько кислый, что вы просто не можете его описать.
+
+reagent-name-mimosa = мимоза
+
+reagent-desc-mimosa = Идеально подходит для живого бранча с девушками.
+
+reagent-name-moscow-mule = Московский мул
+
+reagent-desc-moscow-mule = Удивительно сильный и освежающий смешанный напиток, поданный в культовой медной кружке.
+
+reagent-name-the-sun-also-rises = Солнце также поднимается
+
+reagent-desc-the-sun-also-rises = Сильный коктейль, смешанный в мрачную смесь.Секретный фаворит измученных авторов.
+
+reagent-name-whiskey-sour = Виски кислый
+
+reagent-desc-whiskey-sour = Что такое секретный ингредиент?Яйца.Это яйца.
+
+reagent-name-bacchus-blessing = Благословение Вакха
+
+reagent-desc-bacchus-blessing = Вы не думали, что для жидкости было так отвратительно.Вы уверены в этом ...?

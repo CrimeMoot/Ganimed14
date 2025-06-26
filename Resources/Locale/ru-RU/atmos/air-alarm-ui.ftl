@@ -74,3 +74,5 @@ air-alarm-ui-thresholds-upper-warning-bound = Верхняя тревожная 
 air-alarm-ui-thresholds-lower-warning-bound = Нижняя тревожная граница
 air-alarm-ui-thresholds-copy = Скопировать значение границы на все устройства
 air-alarm-ui-thresholds-copy-tooltip = Скопировать значение границы сенсора этого устройства на все устройства на этой вкладке воздушной сигнализации.
+
+air-alarm-ui-window-listing-title = {$ address}: {-air-alarm-state-name (состояние: $ state)}

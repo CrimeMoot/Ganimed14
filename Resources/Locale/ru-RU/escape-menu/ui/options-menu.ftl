@@ -269,3 +269,120 @@ ui-options-chatstack-count = { $count ->
     [1] Последнее сообщение
    *[other] Последние {$count} сообщения
 }
+ui-options-tab-admin = Администратор
+
+ui-options-header-text-cursor = Текст курсор
+
+ui-options-header-text-cursor-select = Текст выбирает
+
+ui-options-header-text-edit = Редактирование текста
+
+ui-options-header-text-chat = Чат
+
+ui-options-header-text-other = Текст ввод другой
+
+ui-options-function-text-cursor-left = Переместите курсор влево
+
+ui-options-function-text-cursor-right = Переместите курсор справа
+
+ui-options-function-text-cursor-up = Переместите курсор
+
+ui-options-function-text-cursor-down = Переместите курсор вниз
+
+ui-options-function-text-cursor-word-left = Переместить курсор, оставленный словом
+
+ui-options-function-text-cursor-word-right = Перемещать курсор прямо по словам
+
+ui-options-function-text-cursor-begin = Переместить курсор на начало
+
+ui-options-function-text-cursor-end = Переместить курсор, чтобы закончить
+
+ui-options-function-text-cursor-select = Выберите текст
+
+ui-options-function-text-cursor-select-left = Развернуть выбор остался
+
+ui-options-function-text-cursor-select-right = Расширить выбор
+
+ui-options-function-text-cursor-select-up = Расширить выбор
+
+ui-options-function-text-cursor-select-down = Расширить выбор вниз
+
+ui-options-function-text-cursor-select-word-left = Развернуть выбор, оставленный словом
+
+ui-options-function-text-cursor-select-word-right = Развернуть выбор прямо по слову
+
+ui-options-function-text-cursor-select-begin = Расширить выбор до начала
+
+ui-options-function-text-cursor-select-end = Расширить выбор, чтобы закончить
+
+ui-options-function-text-backspace = Backspace
+
+ui-options-function-text-delete = Удалить
+
+ui-options-function-text-word-backspace = Слово Backspace
+
+ui-options-function-text-word-delete = Удалить слово
+
+ui-options-function-text-newline = Новая линия
+
+ui-options-function-text-submit = Представлять на рассмотрение
+
+ui-options-function-multiline-text-submit = Отправить многослойно
+
+ui-options-function-text-select-all = Выберите все
+
+ui-options-function-text-copy = Копия
+
+ui-options-function-text-cut = Резать
+
+ui-options-function-text-paste = Вставка
+
+ui-options-function-text-history-prev = Предыдущий из истории
+
+ui-options-function-text-history-next = Далее из истории
+
+ui-options-function-text-release-focus = Выпустить фокус
+
+ui-options-function-text-scroll-to-bottom = Прокрутите вниз
+
+ui-options-function-text-tab-complete = Завершение вкладки
+
+ui-options-function-text-complete-next = Завершите следующий
+
+ui-options-function-text-complete-prev = Завершить предыдущий
+
+ui-options-accessability-header-visuals = Визуальные эффекты
+
+ui-options-accessability-header-content = Содержание
+
+ui-options-speech-bubble-text-opacity = Речевой пузырь текст непрозрачность
+
+ui-options-speech-bubble-speaker-opacity = Речевой пузырь непрозрачность
+
+ui-options-speech-bubble-background-opacity = Речевая пузырьковая фоновая непрозрачность
+
+ui-options-censor-nudity = Цензура нагота персонажа
+
+ui-options-admin-player-panel = Список игроков меню администратора
+
+ui-options-admin-playerlist-separate-symbols = Показать отдельные символы для каждого типа роли ANTAG
+
+ui-options-admin-playerlist-character-color = Цветовые названия антагонистических персонажей
+
+ui-options-admin-playerlist-roletype-color = Цветовые типы ролей
+
+ui-options-admin-overlay-title = Администратор
+
+ui-options-enable-classic-overlay = Вернуть наложение в классический режим
+
+ui-options-enable-overlay-symbols = Добавить символ ANTAG в текст
+
+ui-options-enable-overlay-playtime = Показать время игры
+
+ui-options-enable-overlay-starting-job = Показать стартовую работу
+
+ui-options-overlay-merge-distance = Степень слияния расстояние
+
+ui-options-overlay-ghost-fade-distance = Призрак наложения Fade Lange от мыши
+
+ui-options-overlay-ghost-hide-distance = Призрак наложения шкуры от мыши

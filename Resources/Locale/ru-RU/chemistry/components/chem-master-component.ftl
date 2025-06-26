@@ -33,3 +33,5 @@ chem-master-window-unknown-reagent-text = Неизвестный реагент
 chem-master-window-sort-type-alphabetical = Сортировать по алфавиту
 chem-master-window-sort-type-quantity = Сортировать по количеству
 chem-master-window-sort-type-latest = Сортировать по последнему
+
+chem-master-window-sort-type-none = Сортировка от: самый старый первый

@@ -64,3 +64,39 @@ ent-ChemistryBottleLead = { ent-BaseChemistryBottleFilled }
 ent-ChemistryBottleToxin = { ent-BaseChemistryBottleFilled }
     .suffix = Токсин
     .desc = { ent-BaseChemistryBottleFilled.desc }
+
+ent-EpinephrineChemistryBottle = {ent-basechemistrybottlefilled}
+
+ent-RobustHarvestChemistryBottle = {ent-basechemistrybottlefilled}
+
+ent-EZNutrientChemistryBottle = {ent-basechemistrybottlefilled}
+
+ent-Left4ZedChemistryBottle = {ent-basechemistrybottlefilled}
+
+ent-UnstableMutagenChemistryBottle = {ent-basechemistrybottlefilled}
+
+ent-PotassiumChemistryBottle = {ent-basechemistrybottlefilled}
+
+ent-NitrogenChemistryBottle = {ent-basechemistrybottlefilled}
+
+ent-PhosphorusChemistryBottle = {ent-basechemistrybottlefilled}
+
+ent-HydrogenChemistryBottle = {ent-basechemistrybottlefilled}
+
+ent-EthanolChemistryBottle = {ent-basechemistrybottlefilled}
+
+ent-NocturineChemistryBottle = {ent-basechemistrybottlefilled}
+
+ent-EphedrineChemistryBottle = {ent-basechemistrybottlefilled}
+
+ent-OmnizineChemistryBottle = {ent-basechemistrybottlefilled}
+
+ent-CognizineChemistryBottle = {ent-basechemistrybottlefilled}
+
+ent-PaxChemistryBottle = {ent-basechemistrybottlefilled}
+
+ent-MuteToxinChemistryBottle = {ent-basechemistrybottlefilled}
+
+ent-LeadChemistryBottle = {ent-basechemistrybottlefilled}
+
+ent-ToxinChemistryBottle = {ent-basechemistrybottlefilled}

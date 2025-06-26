@@ -26,3 +26,9 @@ roles-antag-thief-name = Вор
 roles-antag-thief-objective = Пополните свою личную коллекцию имуществом Nanotrasen, не прибегая к насилию.
 roles-antag-dragon-name = Космический дракон
 roles-antag-dragon-objective = Создайте армию карпов для захвата квадранта.
+
+roles-antag-generic-free-agent-name = Свободный агент
+
+roles-antag-generic-team-antagonist-name = Командный антагонист
+
+roles-antag-generic-silicon-antagonist-name = Кремниевый антагонист

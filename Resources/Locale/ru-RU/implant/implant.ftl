@@ -20,3 +20,17 @@ implanter-contained-implant-text = [color=green]{ $desc }[/color]
 scramble-implant-activated-popup = Вы превратились в { $identity }
 deathrattle-implant-dead-message = Зафиксирована смерть { $user } { $position }.
 deathrattle-implant-critical-message = Жизненные показатели { $user } критические, требуется немедленная помощь { $position }.
+
+implanter-draw-failed-catastrophically = Имплантер ничего не находит и катастрофически терпит неудачу, помещая генетическое материал в руку {$ user}!
+
+implanter-set-draw-verb = Набор имплантата
+
+implanter-set-draw-window = Набор имплантата
+
+implanter-set-draw-info = Выберите тип имплантата. Этот имплантер должен удалить:
+
+implanter-set-draw-type = Тип имплантата:
+
+implanter-label-inject = [color = green] {$ implantname} [/color]
+
+implanter-label-draw = [color = red] {$ implantname} [/color]

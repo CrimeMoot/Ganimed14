@@ -40,3 +40,71 @@ wanted-list-status-label = [color=darkgray]статус:[/color] { $status ->
 wanted-list-history-table-time-col = Время
 wanted-list-history-table-reason-col = Преступление
 wanted-list-history-table-initiator-col = Инициатор
+
+nano-task-program-name = Нанозадача
+
+log-probe-print-button = Печатные журналы
+
+log-probe-printout-device = Отсканированное устройство: {$ name}
+
+log-probe-printout-header = Последние журналы:
+
+log-probe-printout-entry = #{$ number} / {$ Time} / {$ Accessor}
+
+nano-task-ui-heading-high-priority-tasks = {$ сумма ->
+[Zero] Нет высоких приоритетных задач
+[один] 1 задача высокого приоритета
+*[Другое] {$ сумма} Высокие приоритетные задачи
+}
+
+nano-task-ui-heading-medium-priority-tasks = {$ сумма ->
+[Zero] Нет средних приоритетных задач
+[один] 1 Средний приоритетный задача
+*[Другое] {$ сумма} Средние приоритетные задачи
+}
+
+nano-task-ui-heading-low-priority-tasks = {$ сумма ->
+[Zero] Нет низких приоритетных задач
+[один] 1 задача с низким приоритетом
+*[Другое] {$ сумма} Низкие приоритетные задачи
+}
+
+nano-task-ui-done = Сделанный
+
+nano-task-ui-revert-done = Отменить
+
+nano-task-ui-priority-low = Низкий
+
+nano-task-ui-priority-medium = Середина
+
+nano-task-ui-priority-high = Высокий
+
+nano-task-ui-cancel = Отмена
+
+nano-task-ui-print = Печать
+
+nano-task-ui-delete = Удалить
+
+nano-task-ui-save = Сохранять
+
+nano-task-ui-new-task = Новая задача
+
+nano-task-ui-description-label = Описание:
+
+nano-task-ui-description-placeholder = Получите что -нибудь важное
+
+nano-task-ui-requester-label = Запрашивающая:
+
+nano-task-ui-requester-placeholder = Джон Нанотразен
+
+nano-task-ui-item-title = Редактировать задачу
+
+nano-task-printed-description = Описание: {$ Описание}
+
+nano-task-printed-requester = Запись: {$ requester}
+
+nano-task-printed-high-priority = Приоритет: высокий
+
+nano-task-printed-medium-priority = Приоритет: средний
+
+nano-task-printed-low-priority = Приоритет: низкий

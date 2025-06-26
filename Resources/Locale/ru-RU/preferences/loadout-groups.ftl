@@ -168,3 +168,7 @@ loadout-group-reporter-jumpsuit = Репортёр, комбинезон
 loadout-group-psychologist-jumpsuit = Психолог, комбинезон
 loadout-group-boxer-jumpsuit = Боксёр, комбинезон
 loadout-group-boxer-gloves = Боксёр, перчатки
+
+loadout-group-vox-tank = Vox-специфичный бензобак
+
+loadout-group-librarian-backpack = Библиотекарь, рюкзак

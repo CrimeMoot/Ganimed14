@@ -21,3 +21,25 @@
 ##    .desc = { ent-PartMoth.desc }
 ##ent-RightFootMoth = правая стопа ниана
 ##    .desc = { ent-PartMoth.desc }
+
+ent-PartMoth = часть тела моли
+
+ent-TorsoMoth = Моль торс
+
+ent-HeadMoth = голова мотына
+
+ent-LeftArmMoth = левая рука моли
+
+ent-RightArmMoth = правая рука моли
+
+ent-LeftHandMoth = левая рука мотыльки
+
+ent-RightHandMoth = Правая рука моли
+
+ent-LeftLegMoth = оставить ногу моли
+
+ent-RightLegMoth = правая нога мотылька
+
+ent-LeftFootMoth = левая бабочка
+
+ent-RightFootMoth = Правая мотылька

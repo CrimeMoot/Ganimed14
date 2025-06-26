@@ -59,7 +59,7 @@ public sealed partial class LoadoutGroupContainer : BoxContainer
 
         if (protoMan.TryIndex(loadout.Role, out var roleProto) && roleProto.Points != null && loadout.Points != null)
         {
-            RestrictionsContainer.AddChild(new Label // Ganimed sponsor
+            RestrictionsContainer.AddChild(new Label()
             {
                 Text = Loc.GetString("loadouts-points-limit", ("count", loadout.Points.Value), ("max", roleProto.Points.Value)),
                 Margin = new Thickness(5, 0, 5, 5),

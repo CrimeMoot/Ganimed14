@@ -1,7 +1,7 @@
 - type: job
   id: IAA
   name: job-name-iaa
-  description: job-description-iaa
+  description: job-description-magistrate
   playTimeTracker: JobIAA
   requirements:
   - !type:DepartmentTimeRequirement

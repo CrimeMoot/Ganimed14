@@ -76,10 +76,9 @@
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
-# Ganimed edit
-#  - type: IconSmooth
-#    key: walls
-#    mode: NoSprite
+  - type: IconSmooth
+    key: walls
+    mode: NoSprite
   - type: DoorSignalControl
   - type: DeviceNetwork
     deviceNetId: Wireless

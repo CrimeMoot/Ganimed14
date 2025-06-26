@@ -159,10 +159,9 @@
     - board
   - type: PlacementReplacement
     key: walls
-# Ganimed edit
-#  - type: IconSmooth
-#    key: walls
-#    mode: NoSprite
+  - type: IconSmooth
+    key: walls
+    mode: NoSprite
   - type: PaintableAirlock
     group: Standard
     department: Civilian

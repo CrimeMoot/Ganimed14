@@ -66,7 +66,6 @@ def collect_all_keys_for_lang(lang):
             keys = read_ftl_file(path)
 
             for k, v in keys.items():
-                # При повторных ключах перезапишет, но проверку дубликатов убрали
                 all_keys[k] = v
 
     return all_keys

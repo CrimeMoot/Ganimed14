@@ -24,3 +24,13 @@ jobs:
 
       - name: Run localization check
         run: python3 Tools/ganimed/locale_check_ftl.py
+
+      - name: Configure Git user
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Commit and push changes if any
+        run: |
+          git add Resources/Locale/ru-RU
+          git diff --cached --quiet || (git commit -m "Auto-translate missing locale strings" && git push)

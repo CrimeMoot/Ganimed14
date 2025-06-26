@@ -1,6 +1,7 @@
 import os
 import re
 import sys
+import subprocess
 from googletrans import Translator
 
 LOCALE_DIR = "Resources/Locale"
@@ -91,6 +92,15 @@ def read_all_keys(lang):
         all_keys[f] = keys
     return all_keys
 
+def git_commit_and_push(files_to_commit, commit_message="Auto: add missing translations"):
+    try:
+        subprocess.run(["git", "add"] + files_to_commit, check=True)
+        subprocess.run(["git", "commit", "-m", commit_message], check=True)
+        subprocess.run(["git", "push"], check=True)
+        print("Git commit and push done.")
+    except subprocess.CalledProcessError as e:
+        print(f"Git command failed: {e}")
+
 def main():
     base_path = os.path.join(LOCALE_DIR, BASE_LANG)
     target_path = os.path.join(LOCALE_DIR, TARGET_LANG)
@@ -102,6 +112,7 @@ def main():
     target_keys_all = read_all_keys(TARGET_LANG)
 
     changes_made = False
+    changed_files = []
 
     for file_rel in base_files:
         base_keys = base_keys_all.get(file_rel, {})
@@ -123,9 +134,11 @@ def main():
         if missing_keys:
             target_file_path = os.path.join(target_path, file_rel)
             write_missing_keys(missing_keys, target_file_path)
+            changed_files.append(target_file_path)
 
     if changes_made:
         print("\nTranslation completed with new entries added.")
+        git_commit_and_push(changed_files)
     else:
         print("\nAll translations are complete; nothing to add.")
 

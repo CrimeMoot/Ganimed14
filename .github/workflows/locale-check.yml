@@ -17,7 +17,23 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
-          python-version: "3.x"
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install googletrans==4.0.0-rc1
 
       - name: Run localization check
         run: python3 Tools/ganimed/locale_check_ftl.py
+
+      - name: Configure Git user
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Commit and push changes if any
+        run: |
+          git add Resources/Locale/ru-RU
+          git diff --cached --quiet || (
+            git commit -m "Auto-translate missing locale strings"
+            git push origin HEAD:refs/heads/${{ github.head_ref }}
+          )

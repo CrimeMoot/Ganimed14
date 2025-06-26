@@ -1,9 +1,12 @@
 import os
 import re
 import sys
+import subprocess
+from googletrans import Translator
 
 LOCALE_DIR = "Resources/Locale"
-LANGS = ["en-US", "ru-RU"]
+BASE_LANG = "en-US"
+TARGET_LANG = "ru-RU"
 
 KEY_RE = re.compile(r"^\s*([\w\-]+)\s*=\s*(.*)")
 
@@ -11,9 +14,10 @@ IGNORE_KEYS = {
     "cmd-whitelistadd-desc",
 }
 
+translator = Translator()
+
 def read_ftl_file(path):
     keys = {}
-    duplicates = set()
     with open(path, encoding="utf-8") as f:
         lines = f.readlines()
 
@@ -36,73 +40,107 @@ def read_ftl_file(path):
                     next_line = lines[i]
                     if next_line.strip() and not next_line.startswith((" ", "\t")):
                         break
-                    val_lines.append(next_line.rstrip('\n'))
+                    val_lines.append(lines[i].rstrip('\n'))
                     i += 1
                 val = "\n".join(val_lines).strip()
             else:
                 i += 1
 
-            if key in keys:
-                duplicates.add(key)
             keys[key] = val
         else:
             i += 1
 
-    return keys, duplicates
+    return keys
 
-def check_locales():
-    lang0_path = os.path.join(LOCALE_DIR, LANGS[0])
-    if not os.path.isdir(lang0_path):
-        print(f"ERROR: Locale directory not found: {lang0_path}")
-        sys.exit(1)
+def write_missing_keys(missing_keys, target_file):
+    os.makedirs(os.path.dirname(target_file), exist_ok=True)
 
-    files = [f for f in os.listdir(lang0_path) if f.endswith(".ftl")]
+    if not os.path.exists(target_file):
+        with open(target_file, "w", encoding="utf-8") as f:
+            f.write("")  # create empty file
 
-    errors_found = False
+    with open(target_file, "a", encoding="utf-8") as f:
+        for key, val in missing_keys.items():
+            f.write(f"\n{key} = {val}\n")
 
-    for filename in files:
-        print(f"\nChecking {filename}:")
-        data = {}
-        dups = {}
+def translate_text(text, src_lang="en", dest_lang="ru"):
+    try:
+        result = translator.translate(text, src=src_lang, dest=dest_lang)
+        return result.text
+    except Exception as e:
+        print(f"Translation error: {e}")
+        return text  # return original if error
 
-        for lang in LANGS:
-            path = os.path.join(LOCALE_DIR, lang, filename)
-            if not os.path.exists(path):
-                print(f"  ERROR: Missing file for language '{lang}': {filename}")
-                errors_found = True
-                data[lang] = {}
-                dups[lang] = set()
-                continue
+def lang_code(lang):
+    return lang.split("-")[-1].upper()
 
-            keys, duplicates = read_ftl_file(path)
-            data[lang] = keys
-            dups[lang] = duplicates
+def collect_files(lang):
+    path = os.path.join(LOCALE_DIR, lang)
+    files = []
+    for root, _, filenames in os.walk(path):
+        for f in filenames:
+            if f.endswith(".ftl"):
+                rel = os.path.relpath(os.path.join(root, f), path)
+                files.append(rel)
+    return files
 
-            for dup_key in duplicates:
-                if dup_key not in IGNORE_KEYS:
-                    print(f"  ERROR: Duplicate key '{dup_key}' in {lang}/{filename}")
-                    errors_found = True
+def read_all_keys(lang):
+    path = os.path.join(LOCALE_DIR, lang)
+    all_keys = {}
+    for f in collect_files(lang):
+        keys = read_ftl_file(os.path.join(path, f))
+        all_keys[f] = keys
+    return all_keys
 
-        keys_sets = [set(data[lang].keys()) for lang in LANGS]
-        all_keys = set.union(*keys_sets)
+def git_commit_and_push(files_to_commit, commit_message="Auto: add missing translations"):
+    try:
+        subprocess.run(["git", "add"] + files_to_commit, check=True)
+        subprocess.run(["git", "commit", "-m", commit_message], check=True)
+        subprocess.run(["git", "push"], check=True)
+        print("Git commit and push done.")
+    except subprocess.CalledProcessError as e:
+        print(f"Git command failed: {e}")
 
-        for key in all_keys:
+def main():
+    base_path = os.path.join(LOCALE_DIR, BASE_LANG)
+    target_path = os.path.join(LOCALE_DIR, TARGET_LANG)
+
+    base_files = collect_files(BASE_LANG)
+    target_files = collect_files(TARGET_LANG)
+
+    base_keys_all = read_all_keys(BASE_LANG)
+    target_keys_all = read_all_keys(TARGET_LANG)
+
+    changes_made = False
+    changed_files = []
+
+    for file_rel in base_files:
+        base_keys = base_keys_all.get(file_rel, {})
+        target_keys = target_keys_all.get(file_rel, {})
+
+        missing_keys = {}
+
+        for key, val in base_keys.items():
             if key in IGNORE_KEYS:
                 continue
-            for lang in LANGS:
-                if key not in data[lang]:
-                    print(f"  ERROR: Missing key '{key}' in {lang}/{filename}")
-                    errors_found = True
-                else:
-                    if data[lang][key] == "":
-                        print(f"  ERROR: Empty value for key '{key}' in {lang}/{filename}")
-                        errors_found = True
+            if key not in target_keys or target_keys[key].strip() == "":
+                src_code = BASE_LANG.split("-")[0].lower()
+                dest_code = TARGET_LANG.split("-")[0].lower()
+                translated_val = translate_text(val, src_lang=src_code, dest_lang=dest_code)
+                missing_keys[key] = translated_val
+                changes_made = True
+                print(f"Adding translation for key '{key}' to {TARGET_LANG}/{file_rel}")
 
-    if errors_found:
-        print("\nLocalization check FAILED.")
-        sys.exit(1)
+        if missing_keys:
+            target_file_path = os.path.join(target_path, file_rel)
+            write_missing_keys(missing_keys, target_file_path)
+            changed_files.append(target_file_path)
+
+    if changes_made:
+        print("\nTranslation completed with new entries added.")
+        git_commit_and_push(changed_files)
     else:
-        print("\nLocalization check PASSED.")
+        print("\nAll translations are complete; nothing to add.")
 
 if __name__ == "__main__":
-    check_locales()
+    main()

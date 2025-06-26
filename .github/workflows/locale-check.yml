@@ -19,5 +19,8 @@ jobs:
         with:
           python-version: "3.x"
 
+      - name: Install dependencies
+        run: pip install googletrans==4.0.0-rc1
+
       - name: Run localization check
         run: python3 Tools/ganimed/locale_check_ftl.py

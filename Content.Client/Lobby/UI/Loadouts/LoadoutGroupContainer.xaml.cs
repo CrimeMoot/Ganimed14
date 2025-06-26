@@ -20,15 +20,7 @@ public sealed partial class LoadoutGroupContainer : BoxContainer
     public event Action<ProtoId<LoadoutPrototype>>? OnLoadoutPressed;
     public event Action<ProtoId<LoadoutPrototype>>? OnLoadoutUnpressed;
 
-    // Ganimed sponsor start
-    public LoadoutGroupContainer(
-        HumanoidCharacterProfile profile,
-        RoleLoadout loadout,
-        LoadoutGroupPrototype groupProto,
-        ICommonSession session,
-        IDependencyCollection collection,
-        bool isSponsor)
-    // Ganimed sponsor end
+    public LoadoutGroupContainer(HumanoidCharacterProfile profile, RoleLoadout loadout, LoadoutGroupPrototype groupProto, ICommonSession session, IDependencyCollection collection, bool isSponsor)
     {
         RobustXamlLoader.Load(this);
         _groupProto = groupProto;
@@ -38,14 +30,10 @@ public sealed partial class LoadoutGroupContainer : BoxContainer
         RefreshLoadouts(profile, loadout, session, collection, isSponsor);
     }
 
-    // Ganimed sponsor start
-    public void RefreshLoadouts(
-        HumanoidCharacterProfile profile,
-        RoleLoadout loadout,
-        ICommonSession session,
-        IDependencyCollection collection,
-        bool isSponsor)
-    // Ganimed sponsor end
+    /// <summary>
+    /// Updates button availabilities and buttons.
+    /// </summary>
+    public void RefreshLoadouts(HumanoidCharacterProfile profile, RoleLoadout loadout, ICommonSession session, IDependencyCollection collection, bool isSponsor)
     {
         var protoMan = collection.Resolve<IPrototypeManager>();
         var loadoutSystem = collection.Resolve<IEntityManager>().System<LoadoutSystem>();
@@ -53,7 +41,7 @@ public sealed partial class LoadoutGroupContainer : BoxContainer
 
         if (_groupProto.MinLimit > 0)
         {
-            RestrictionsContainer.AddChild(new Label // Ganimed sponsor
+            RestrictionsContainer.AddChild(new Label()
             {
                 Text = Loc.GetString("loadouts-min-limit", ("count", _groupProto.MinLimit)),
                 Margin = new Thickness(5, 0, 5, 5),
@@ -62,7 +50,7 @@ public sealed partial class LoadoutGroupContainer : BoxContainer
 
         if (_groupProto.MaxLimit > 0)
         {
-            RestrictionsContainer.AddChild(new Label // Ganimed sponsor
+            RestrictionsContainer.AddChild(new Label()
             {
                 Text = Loc.GetString("loadouts-max-limit", ("count", _groupProto.MaxLimit)),
                 Margin = new Thickness(5, 0, 5, 5),
@@ -79,6 +67,7 @@ public sealed partial class LoadoutGroupContainer : BoxContainer
         }
 
         LoadoutsContainer.DisposeAllChildren();
+        // Didn't use options because this is more robust in future.
 
         // Ganimed sponsor start
         IEnumerable<ProtoId<LoadoutPrototype>> groupLoadouts = _groupProto.Loadouts;

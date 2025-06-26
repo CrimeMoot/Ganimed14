@@ -471,13 +471,13 @@ public sealed partial class AntagSelectionSystem : GameRuleSystem<AntagSelection
                 mindComp = Comp<MindComponent>(curMind.Value); // Ganimed edit Incognito
             }
 
-            // Ganiemd edit Incognito start
+            // Ganimed edit Incognito start
             if (HasComp<SetIncognitoComponent>(antagEnt))
             {
                 mindComp.Incognito = true;
                 Dirty(curMind.Value, mindComp);
             }
-            // Ganiemd edit Incognito end
+            // Ganimed edit Incognito end
 
             _mind.TransferTo(curMind.Value, antagEnt, ghostCheckOverride: true);
             _role.MindAddRoles(curMind.Value, def.MindRoles, null, true);

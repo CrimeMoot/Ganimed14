@@ -23,7 +23,7 @@ public sealed partial class OreSiloComponent : Component
     /// Default value should be big enough to span a single large department.
     /// </remarks>
     [DataField, AutoNetworkedField]
-    public float Range = 6000f; // Ganimed edit - Сило передаёт ресурсы на всю станцию. При условии - что он подключен.
+    public float Range = 100f; // Ganimed edit - Сило передаёт ресурсы на всю станцию. При условии - что он подключен.
 }
 
 [Serializable, NetSerializable]

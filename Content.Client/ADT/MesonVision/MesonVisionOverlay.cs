@@ -1,17 +1,13 @@
 using System.Numerics;
 using Content.Shared.ADT.MesonVision;
-using Content.Shared.Mobs.Components;
-using Content.Shared.Doors.Components; // Ganimed edit
+using Content.Shared.Doors.Components;
+using Content.Shared.Light.Components;
 using Robust.Client.GameObjects;
 using Robust.Client.Graphics;
 using Robust.Client.Player;
 using Robust.Shared.Enums;
 using Robust.Shared.Map;
-using Content.Client.Markers;
-using Robust.Shared.GameObjects;
-using Content.Shared.StepTrigger.Components;
-using Content.Shared.Item;
-using DrawDepthTag = Robust.Shared.GameObjects.DrawDepth;
+
 namespace Content.Client.ADT.MesonVision;
 
 public sealed class MesonVisionOverlay : Overlay
@@ -20,9 +16,6 @@ public sealed class MesonVisionOverlay : Overlay
     [Dependency] private readonly IPlayerManager _player = default!;
     private readonly SharedTransformSystem _xformSystem;
     private readonly ContainerSystem _container;
-    private readonly EntityQuery<ItemComponent> _item;
-    private readonly EntityQuery<MobStateComponent> _mob;
-    private readonly EntityQuery<MarkerComponent> _marker;
     private readonly EntityQuery<SpriteComponent> _spriteQuery;
     private readonly EntityQuery<TransformComponent> _xformQuery;
 
@@ -34,9 +27,6 @@ public sealed class MesonVisionOverlay : Overlay
         IoCManager.InjectDependencies(this);
         _container = _entity.System<ContainerSystem>();
         _xformSystem = _entity.System<SharedTransformSystem>();
-        _item = _entity.GetEntityQuery<ItemComponent>();
-        _mob = _entity.GetEntityQuery<MobStateComponent>();
-        _marker = _entity.GetEntityQuery<MarkerComponent>();
         _spriteQuery = _entity.GetEntityQuery<SpriteComponent>();
         _xformQuery = _entity.GetEntityQuery<TransformComponent>();
     }
@@ -73,7 +63,7 @@ public sealed class MesonVisionOverlay : Overlay
             if (!worldBounds.Contains(worldPos)) continue;
 
             // Ganimed edit start
-            var isWall = sprite.BaseRSI?.Path.ToString().Contains("/Structures/Walls/") == true; // Я не очень уверен, а это вообще надо :/
+            var isWall = _entity.HasComponent<SunShadowCastComponent>(entity) || _entity.HasComponent<IsRoofComponent>(entity);
             var isDoor = _entity.HasComponent<DoorComponent>(entity);
 
             if (!isWall && !isDoor)

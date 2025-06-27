@@ -24,7 +24,7 @@ public sealed class SponsorsManager : ISponsorsManager // Ganimed-Sponsors
     // Ganimed-Sponsors start
     bool ISponsorsManager.TryGetInfo(Robust.Shared.Network.NetUserId userId, [NotNullWhen(true)] out SponsorInfo? sponsor)
     {
-         sponsor = null;
+        sponsor = null;
         return false;
     }
     // Ganimed-Sponsors end

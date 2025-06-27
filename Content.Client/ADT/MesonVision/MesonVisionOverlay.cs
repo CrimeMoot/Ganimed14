@@ -1,6 +1,7 @@
 using System.Numerics;
 using Content.Shared.ADT.MesonVision;
 using Content.Shared.Mobs.Components;
+using Content.Shared.Doors.Components;
 using Robust.Client.GameObjects;
 using Robust.Client.Graphics;
 using Robust.Client.Player;
@@ -58,15 +59,22 @@ public sealed class MesonVisionOverlay : Overlay
 
         foreach (var entity in _entity.GetEntities())
         {
-            if (_mob.HasComponent(entity) || _marker.HasComponent(entity)) continue;
-            if (!_spriteQuery.TryGetComponent(entity, out var sprite) || sprite.DrawDepth < -2 || sprite.DrawDepth > 7 || sprite.DrawDepth == 0) continue;
-            if (!_xformQuery.TryGetComponent(entity, out var xform)) continue;
-            if (_container.TryGetOuterContainer(entity, xform, out var container)) continue;
-
-            if (xform.MapID != mapId) continue;
+            if (!_spriteQuery.TryGetComponent(entity, out var sprite) ||
+                !_xformQuery.TryGetComponent(entity, out var xform) ||
+                xform.MapID != mapId ||
+                _container.TryGetOuterContainer(entity, xform, out var _))
+            {
+                continue;
+            }
 
             var worldPos = _xformSystem.GetWorldPosition(xform);
             if (!worldBounds.Contains(worldPos)) continue;
+
+            var isWall = sprite.BaseRSI?.Path.ToString().Contains("/Structures/Walls/") == true;
+            var isDoor = _entity.HasComponent<DoorComponent>(entity);
+
+            if (!isWall && !isDoor)
+                continue;
 
             _entries.Add(new MesonVisionRenderEntry(
                 (entity, sprite, xform),

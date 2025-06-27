@@ -67,7 +67,7 @@ namespace Content.Client.IoC
             collection.Register<PlayerRateLimitManager>();
             collection.Register<SharedPlayerRateLimitManager, PlayerRateLimitManager>();
             collection.Register<TitleWindowManager>();
-            collection.Register<SponsorsManager>();
+            collection.Register<SponsorsManager>(); // Corvax-Sponsors
             collection.Register<ISponsorsManager, SponsorsManager>(true); // Ganimed-Sponsors
             collection.Register<JoinQueueManager>(); // Corvax-Queue
             collection.Register<DiscordAuthManager>(); // Corvax-DiscordAuth

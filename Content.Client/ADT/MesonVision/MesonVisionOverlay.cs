@@ -1,7 +1,7 @@
 using System.Numerics;
 using Content.Shared.ADT.MesonVision;
 using Content.Shared.Mobs.Components;
-using Content.Shared.Doors.Components;
+using Content.Shared.Doors.Components; // Ganimed edit
 using Robust.Client.GameObjects;
 using Robust.Client.Graphics;
 using Robust.Client.Player;
@@ -59,6 +59,7 @@ public sealed class MesonVisionOverlay : Overlay
 
         foreach (var entity in _entity.GetEntities())
         {
+            // Ganimed edit start
             if (!_spriteQuery.TryGetComponent(entity, out var sprite) ||
                 !_xformQuery.TryGetComponent(entity, out var xform) ||
                 xform.MapID != mapId ||
@@ -66,15 +67,18 @@ public sealed class MesonVisionOverlay : Overlay
             {
                 continue;
             }
+            // Ganimed edit end
 
             var worldPos = _xformSystem.GetWorldPosition(xform);
             if (!worldBounds.Contains(worldPos)) continue;
 
-            var isWall = sprite.BaseRSI?.Path.ToString().Contains("/Structures/Walls/") == true;
+            // Ganimed edit start
+            var isWall = sprite.BaseRSI?.Path.ToString().Contains("/Structures/Walls/") == true; // Я не очень уверен, а это вообще надо :/
             var isDoor = _entity.HasComponent<DoorComponent>(entity);
 
             if (!isWall && !isDoor)
                 continue;
+            // Ganimed edit end 
 
             _entries.Add(new MesonVisionRenderEntry(
                 (entity, sprite, xform),

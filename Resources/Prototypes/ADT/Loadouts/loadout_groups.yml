@@ -728,8 +728,9 @@
   minLimit: 1
   maxLimit: 1
   loadouts:
-  - LawyerPDA
   - ADTLawyerPDA
+  - LawyerPDA
+
 
 - type: loadoutGroup
   id: ADTBotanistPDA

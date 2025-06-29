@@ -112,6 +112,6 @@ job-name-field-doctor = полевой врач
 
 # Juridical
 
-job-name-adt-lawyer = юрист
+job-name-adt-lawyer = адвокат
 
 # Alternate job names end

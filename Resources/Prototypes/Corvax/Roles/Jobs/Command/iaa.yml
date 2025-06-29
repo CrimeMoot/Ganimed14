@@ -1,7 +1,7 @@
 - type: job
   id: IAA
   name: job-name-iaa
-  description: job-description-magistrate
+  description: job-description-lawyer
   playTimeTracker: JobIAA
   requirements:
   - !type:DepartmentTimeRequirement
@@ -25,7 +25,7 @@
 #ADT tweak end
   startingGear: IAAGear
   icon: "JobIconIAA"
-  supervisors: job-supervisors-centcom
+  supervisors: job-supervisors-magistrate
   canBeAntag: false
   access:
   - Service

@@ -1,7 +1,7 @@
 - type: job
   id: Lawyer
   name: job-name-lawyer
-  description: job-description-magistrate
+  description: job-description-iaa
   playTimeTracker: JobLawyer
   requirements:
     - !type:OverallPlaytimeRequirement
@@ -14,7 +14,7 @@
       #ADT tweak end
   startingGear: LawyerGear
   icon: "JobIconLawyer"
-  supervisors: job-supervisors-hop
+  supervisors: job-supervisors-magistrate
   access:
   - Service
   - Lawyer

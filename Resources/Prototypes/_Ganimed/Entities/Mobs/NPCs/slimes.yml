@@ -9,12 +9,6 @@
     - type: MovementSpeedModifier
       baseWalkSpeed: 3
       baseSprintSpeed: 5 # +.5 from normal movement speed
-    - type: Sprite
-      drawdepth: Mobs
-      sprite: Mobs/Aliens/slimes.rsi
-      layers:
-      - map: [ "enum.DamageStateVisualLayers.Base" ]
-        state: blue_adult_slime
     - type: MobThresholds
       thresholds:
         0: Alive
@@ -27,7 +21,11 @@
     - type: Item
       size: Huge
     - type: Sprite
-      color: "#FFFFFF55"
+      drawdepth: Mobs
+      sprite: Mobs/Aliens/slimes.rsi
+      layers:
+      - map: [ "enum.DamageStateVisualLayers.Base" ]
+        state: blue_adult_slime
     - type: MeleeWeapon
       attackRate: 2
       damage:

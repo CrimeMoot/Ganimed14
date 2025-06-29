@@ -155,7 +155,7 @@
     - ира
     - хето
     - етто
-    font: CarloMelowSans
+  #  font: CarloMelowSans # Ganimed edit
     fontSize: 14
 
 # Spoken by the Lizard race.
@@ -485,7 +485,7 @@
       chat-speech-verb-suffix-exclamation-strong: [ громко констатирует, громко сообщает ]
       chat-speech-verb-suffix-exclamation: [ громко констатирует, громко сообщает ]
       Default: [ констатирует, сообщает, докладывает ]
-    font: Pixelizer
+  #  font: Pixelizer # Ganimed edit
     fontSize: 15
 
 # Borgs
@@ -505,7 +505,7 @@
       chat-speech-verb-suffix-exclamation-strong: [ громко констатирует, громко сообщает ]
       chat-speech-verb-suffix-exclamation: [ громко констатирует, громко сообщает ]
       Default: [ констатирует, сообщает, докладывает ]
-    font: Pixelizer
+  #  font: Pixelizer # Ganimed edit
     fontSize: 14
 
 # Spoken by the Drask race.

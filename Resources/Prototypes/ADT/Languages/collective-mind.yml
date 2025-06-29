@@ -6,7 +6,7 @@
     color: "#3de500"
     showRank: false
     showName: false
-    font: Miroslav
+  #  font: Miroslav # Ganimed edit
     fontSize: 14
 
 - type: language
@@ -35,7 +35,7 @@
     color: "#356bff"
     showRank: true
     showName: false
-    font: Pixelizer
+  #  font: Pixelizer # Ganimed edit
     fontSize: 15
 
 - type: language
@@ -47,5 +47,5 @@
     color: "#b61e19"
     showRank: false
     showName: false
-    font: Specialelite
+  #  font: Specialelite # Ganimed edit
     fontSize: 14

@@ -1,7 +1,7 @@
-ent-ClothingCloakMed = медицинский плащ
+ent-ClothingNeckCloakMed = медицинский плащ
     .desc = Для предпочитающих стиль, вместо практичности.
 
-ent-ClothingCloakSec = плащ охраны
+ent-ClothingNeckCloakSec = плащ охраны
     .desc = Не дает посторонним увидеть кровь на вашей одежде.
 
 ent-ClothingNeckCloakOrange = плащ апельсиновых закатов
@@ -12,6 +12,12 @@ ent-ClothingNeckCloakHieroglyphics = иероглифический плащ
 
 ent-ClothingNeckCaptainWide = широкая шинель капитана
    .desc = Широкая капитанская шинель. Кажется, она не по размеру вам, но как накидка на плечи сойдёт.
+
+ent-ClothingNeckCloakChaplainWhite = белая мантия священника
+    .desc = Белая официальная мантия священника.
+
+ent-ClothingNeckCloakChaplainBlack = чёрная мантия священника
+   .desc = Чёрная мантия, скрывает тайны?
 
 # Old
 ent-ClothingNeckCloakCapOriginal = старомодный плащ капитана

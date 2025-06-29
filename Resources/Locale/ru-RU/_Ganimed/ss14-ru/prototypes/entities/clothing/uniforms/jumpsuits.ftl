@@ -7,6 +7,9 @@ ent-ClothingUniformJumpsuitWhiteCaptain = белый комбинезон кап
 ent-ClothingUniformJumpsuitSheriff = комбинезон шерифа
    .desc = Комбинезон показывающий вашу статусность, как ужасн... великого правителя.
 
+ent-ClothingUniformJumpsuitCaptainParadeMale = парадная форма капитана
+    .desc = Одежда класса люкс для мужчин, достойных руководить станцией, для особых случаев.
+
 ent-ClothingUniformJumpsuitBridgeOfficer = униформа офицера мостика
    .desc = Стиль превыше функции. Контроль превыше всего. Этот формальный костюм служит эталоном власти и профессионализма.
 
@@ -16,8 +19,11 @@ ent-ClothingUniformJumpsuitJumpsuitOfficerDark = тёмная офицерска
 ent-ClothingUniformJumpsuitMilitary = военный комбинезон
    .desc = Вышедший из использования комплект тактического камуфляжа. Говорят, такие дизайны остались в ходу среди социалистов.
 
-ent-ClothingUniformJumpsuitCaptainParadeMale = парадная форма капитана
-    .desc = Одежда класса люкс для мужчин, достойных руководить станцией, для особых случаев.
+ent-ClothingUniformJumpsuitCargoPostal = почтовый комбинезон
+    .desc = Прочная спортивная юбка, выдаваемая сотрудникам грузового отдела для почтовой работы.
+
+ent-ClothingUniformJumpsuitPsychologistOriginal = костюм психолога
+   .desc = Я не теряю вещи. Я кладу вещи в места, которые потом ускользают от меня.
 
 ent-ClothingUniformJumpsuitShortsleeveSuit = брюки и рубашка с коротким рукавом
    .desc = Костюм, соблюдающий баланс между удобством и стилем.
@@ -30,6 +36,12 @@ ent-ClothingUniformJumpsuitCoronerBlack = тёмный комбинезон па
 
 ent-ClothingUniformJumpsuitBrigmedicBlack = тёмный комбинезон бригмедика
     .desc = Полная переработка, многим отличающаяся от стандартной униформы бригмедика. Яркость - не лучшая черта, если вы на поле боя.
+
+ent-ClothingUniformJumpsuitSecEngineer = комбинезон полевого офицера
+   .desc = Комбинезон изготовлен из прочного материала, обеспечивающего надежную защиту.
+
+ent-ClothingUniformJumpsuitDetectiveGrayAlt = серый костюм детектива
+   .desc = Серый костюм детектива, пахнет тайной!
 
 # Old
 ent-ClothingUniformJumpsuitCentcomOfficialOriginal = формальный комбинезон Центком

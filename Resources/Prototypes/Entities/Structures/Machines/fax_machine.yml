@@ -81,8 +81,9 @@
       - state: icon
         map: [ "base" ]
         color: "#bfe3ff"
+  - type: RequiresNoJammer # Ganimed edit
   - type: FaxMachine
-    name: "Central Command"
+    name: "Центральное командование" # Ganimed edit
     notifyAdmins: true
     receiveNukeCodes: true # ADT-NukeCodes
     receiveStationGoal: true # Corvax-StationGoal

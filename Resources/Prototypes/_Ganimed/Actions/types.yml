@@ -9,7 +9,6 @@
       itemIconStyle: BigAction
       useDelay: 10 # prevent spam
       priority: -20
-      instant: true
       checkCanInteract: true
       icon:
         sprite: Mobs/Aliens/slimes.rsi

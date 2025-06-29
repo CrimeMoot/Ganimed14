@@ -4,6 +4,7 @@ using Content.Server.Actions;
 using Content.Server.Popups;
 using Content.Shared._Ganimed.Geras;
 using Robust.Shared.Player;
+using Content.Shared.Humanoid;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Mobs.Systems;
 using Content.Shared.ActionBlocker;
@@ -12,6 +13,7 @@ namespace Content.Server._Ganimed.Geras;
 
 public sealed class GerasSystem : SharedGerasSystem
 {
+    [Dependency] private readonly SharedAppearanceSystem _appearance = default!;
     [Dependency] private readonly PolymorphSystem _polymorphSystem = default!;
     [Dependency] private readonly ActionsSystem _actionsSystem = default!;
     [Dependency] private readonly PopupSystem _popupSystem = default!;
@@ -31,7 +33,11 @@ public sealed class GerasSystem : SharedGerasSystem
 
     private void OnMapInit(EntityUid uid, GerasComponent component, MapInitEvent args)
     {
-        _actionsSystem.AddAction(uid, ref component.GerasActionEntity, component.GerasAction);
+        // try to add geras action to non geras
+        if (!component.NoAction)
+        {
+            _actionsSystem.AddAction(uid, ref component.GerasActionEntity, component.GerasAction);
+        }
     }
 
     private void OnMorphIntoGeras(EntityUid uid, GerasComponent component, MorphIntoGeras args)
@@ -49,6 +55,18 @@ public sealed class GerasSystem : SharedGerasSystem
 
         if (!ent.HasValue)
             return;
+
+        var skinColor = Color.Green;
+
+        if (TryComp<HumanoidAppearanceComponent>(uid, out var humanComp))
+        {
+            skinColor = humanComp.SkinColor;
+        }
+
+        if (TryComp<AppearanceComponent>(ent, out var appearanceComp))
+        {
+            _appearance.SetData(ent.Value, GeraColor.Color, skinColor, appearanceComp);
+        }
 
         _popupSystem.PopupEntity(Loc.GetString("geras-popup-morph-message-others", ("entity", ent.Value)), ent.Value, Filter.PvsExcept(ent.Value), true);
         _popupSystem.PopupEntity(Loc.GetString("geras-popup-morph-message-user"), ent.Value, ent.Value);

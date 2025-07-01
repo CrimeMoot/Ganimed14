@@ -84,11 +84,9 @@ namespace Content.Server.GameTicking
                         }
 
                         _chatManager.SendAdminAnnouncementColor(
-                            "\nВНИМАНИЕ!!!\n" +
-                            $"Зашёл НОВИЧОК {args.Session.Name} первый заход: {firstSeenTime}.\n" +
-                            $"Дата создания аккаунта: {creationDate}\n" +
-                            "Администрации быть внимательней :0, у данного игрока меньше 10ч на нашем сервере.\n" +
-                            "ВНИМАНИЕ!!!",
+                            "\nВнимание!\n" +
+                            $"Зашёл новичок {args.Session.Name} Первый заход: {firstSeenTime}, Дата создания аккаунта: {creationDate}.\n" +
+                            "Администрации быть внимательней, у данного игрока меньше 10ч на нашем сервере.",
                             colorOverrid: Color.White
                         );
 

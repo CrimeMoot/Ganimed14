@@ -38,14 +38,14 @@ public sealed partial class GasLeakRuleComponent : Component
     public bool FoundTile;
     public Gas LeakGas;
     public float MolesPerSecond;
-    public readonly int MinimumMolesPerSecond = 50;
+    public readonly int MinimumMolesPerSecond = 50; // Ganimed-tweak
 
     /// <summary>
     ///     Don't want to make it too fast to give people time to flee.
     /// </summary>
-    public int MaximumMolesPerSecond = 100;
+    public int MaximumMolesPerSecond = 100; // Ganimed-tweak
 
-    public int MinimumGas = 250;
-    public int MaximumGas = 2000;
+    public int MinimumGas = 250; // Ganimed-tweak
+    public int MaximumGas = 2000; // Ganimed-tweak
     public float SparkChance = 0.05f;
 }

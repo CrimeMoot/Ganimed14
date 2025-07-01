@@ -45,7 +45,7 @@ enabled = true
 show_reason = true
 min_account_age = 10
 min_overall_minutes = 0
-deny_vpn = false
+# deny_vpn = false
 enable_without_admins = true
 disable_with_admins = true
 

@@ -216,7 +216,7 @@ namespace Content.IntegrationTests.Tests
                 Assert.That(sEntMan.EntityCount, Is.Zero);
             });
 
-            await pair.CleanReturnAsync();
+        //    await pair.CleanReturnAsync();
         }
 
         /// <summary>

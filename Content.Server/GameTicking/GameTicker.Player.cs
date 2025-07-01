@@ -84,11 +84,11 @@ namespace Content.Server.GameTicking
                         }
 
                         _chatManager.SendAdminAnnouncementColor(
-                            "\nВнимание!\n" +
+                            "Внимание!\n" +
                             $"Зашёл новичок {args.Session.Name} Первый заход: {firstSeenTime}, Дата создания аккаунта: {creationDate}.\n" +
                             "Администрации быть внимательней, у данного игрока меньше 10ч на нашем сервере.",
                             colorOverrid: Color.White
-                        );
+                        ); // Ganimed-edit-AdminAnnouncement
 
                         // Получаем всех администраторов
                         var clients = _adminManager.ActiveAdmins

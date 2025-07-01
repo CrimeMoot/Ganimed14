@@ -781,7 +781,7 @@ namespace Content.Shared.Preferences
                 if (!protoManager.TryIndex(traitProto.Category, out var category))
                     continue;
 
-                // Ganime edit trait points start
+                // Ganimed edit trait points start
                 if (category.MaxTraitPoints < 0)
                 {
                     result.Add(trait);
@@ -790,12 +790,12 @@ namespace Content.Shared.Preferences
 
                 var total = groups.GetOrNew(category.ID);
                 var newTotal = total + traitProto.Cost;
-                // Ganime edit trait points end
+                // Ganimed edit trait points end
 
-                if (newTotal > category.MaxTraitPoints) // Ganime edit trait points
+                if (newTotal > category.MaxTraitPoints) // Ganimed edit trait points
                     continue;
 
-                groups[category.ID] = newTotal; // Ganime edit trait points
+                groups[category.ID] = newTotal; // Ganimed edit trait points
                 result.Add(trait);
             }
 

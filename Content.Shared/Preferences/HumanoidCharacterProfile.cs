@@ -711,7 +711,7 @@ namespace Content.Shared.Preferences
             _antagPreferences.UnionWith(antags);
 
             _traitPreferences.Clear();
-            _traitPreferences.UnionWith(traits); // ganimed save trait
+            _traitPreferences.UnionWith(GetValidTraits(traits, prototypeManager));
 
             // Corvax-TTS-Start
             prototypeManager.TryIndex<TTSVoicePrototype>(Voice, out var voice);

@@ -35,7 +35,9 @@
     ChangelingObjectiveGroupState: 1
     ChangelingObjectiveGroupSteal: 1
     ChangelingObjectiveGroupPersonalitySteal: 1
-  #  ChangelingObjectiveGroupAbsorbDna: 1     # почему ты блять не работаешь
+  # Ganimed-Tweak start
+  # ChangelingObjectiveGroupAbsorbDna: 1     # почему ты блять не работаешь
+  # Ganimed-Tweak end
 
 - type: weightedRandom
   id: ChangelingObjectiveGroupSteal

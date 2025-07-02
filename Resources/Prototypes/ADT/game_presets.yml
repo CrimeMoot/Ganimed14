@@ -4,7 +4,7 @@
   alias:
     - heretic
   name: heretic-title
-  minPlayers: 5
+  minPlayers: 10
   description: heretic-title
   rules:
     - HereticGameRule
@@ -19,7 +19,7 @@
   alias:
     - changeling
   name: changelings-title
-  minPlayers: 5
+  minPlayers: 10
   showInVote: false
   description: changelings-description
   rules:

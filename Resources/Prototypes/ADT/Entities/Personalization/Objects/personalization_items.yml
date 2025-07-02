@@ -1699,7 +1699,7 @@
 - type: entity
   name: Uma stun baton
   parent: [BaseItem, BaseSecurityContraband]
-  id: ADTStunbatonUma
+  id: ADTStunbatonAgzamov
   description: A stun baton for incapacitating people with. Actively harming with this is considered bad tone.
   suffix: Sponsor, Uma
   components:

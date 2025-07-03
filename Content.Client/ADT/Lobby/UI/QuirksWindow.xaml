@@ -10,14 +10,13 @@
                 <RichTextLabel Name="SelectedQuirksLabel" Text="Lelelelele" Margin="5" HorizontalAlignment="Center"/>
             </BoxContainer>
         </PanelContainer>
-
         <ScrollContainer HorizontalExpand="True" VerticalExpand="True" HScrollEnabled="False" Margin="5">
             <PanelContainer VerticalExpand="True" HorizontalExpand="True">
                 <PanelContainer.PanelOverride>
                     <graphics:StyleBoxFlat BackgroundColor="#1B1B1E" />
                 </PanelContainer.PanelOverride>
-                <BoxContainer Name="QuirksContainer" VerticalExpand="True" HorizontalExpand="True" Orientation="Vertical">
-                </BoxContainer>
+                    <BoxContainer Name="QuirksContainer" VerticalExpand="True" HorizontalExpand="True" Orientation="Vertical">
+                    </BoxContainer>
             </PanelContainer>
         </ScrollContainer>
 

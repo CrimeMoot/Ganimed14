@@ -100,24 +100,26 @@ public sealed partial class QuirksWindow : FancyWindow
         else
             SelectedQuirksLabel.SetMessage(Loc.GetString("quirks-window-selected-none"), null, Color.White);
 
-        var protoList = _proto.EnumeratePrototypes<TraitPrototype>()
-            .Where(x => x.Quirk && !x.SpeciesBlacklist.Contains(profile.Species))
-            .ToList();
+        var protoList = _proto.EnumeratePrototypes<TraitPrototype>().Where(x => x.Quirk && !x.SpeciesBlacklist.Contains(profile.Species)).ToList();
         // Ganimed trait start
         protoList = protoList.Where(proto =>
         {
             return _currentFilter switch
             {
-                QuirkFilter.Positive => proto.Cost < 0,
-                QuirkFilter.Negative => proto.Cost > 0,
+                QuirkFilter.Positive => proto.Cost > 0,
+                QuirkFilter.Negative => proto.Cost < 0,
                 QuirkFilter.Neutral => proto.Cost == 0,
                 _ => true,
             };
-        }).ToList();
-        // Ganimed trait end
+        }).OrderBy(x => x.Cost)
+          .ThenBy(x => Loc.GetString(x.Name))
+          .ToList();
 
-        protoList.Sort((x, y) => Loc.GetString(x.Name)[0].CompareTo(Loc.GetString(y.Name)[0]));
-        protoList.Sort((x, y) => x.Cost.CompareTo(y.Cost));
+        protoList = protoList
+            .OrderBy(x => x.Cost)
+            .ThenBy(x => Loc.GetString(x.Name))
+            .ToList();
+        // Ganimed trait end
 
         foreach (var proto in protoList)
         {
@@ -129,7 +131,7 @@ public sealed partial class QuirksWindow : FancyWindow
 
             panel.Panel.Button.OnPressed += _ => QuirkSelected?.Invoke(proto);
             QuirksContainer.AddChild(panel);
-            // Ganimed trait start
+            // Ganimed trait end
         }
     }
 

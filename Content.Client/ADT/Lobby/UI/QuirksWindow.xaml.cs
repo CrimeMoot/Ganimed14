@@ -10,6 +10,9 @@ using Robust.Shared.ContentPack;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility; // Ganimed trait
 using Robust.Client.UserInterface; // Ganimed trait
+using Robust.Client.UserInterface.Controls; // Ganimed trait
+using Robust.Client.UserInterface.CustomControls; // Ganimed trait
+using Robust.Shared.Maths; // Ganimed trait
 
 namespace Content.Client.ADT.Lobby.UI;
 
@@ -20,6 +23,18 @@ public sealed partial class QuirksWindow : FancyWindow
 
     public Action<TraitPrototype>? QuirkSelected;
 
+    // Ganimed trait start
+    private enum QuirkFilter
+    {
+        Positive,
+        Negative,
+        Neutral
+    }
+
+    private QuirkFilter _currentFilter = QuirkFilter.Neutral;
+    private HumanoidCharacterProfile? _currentProfile;
+    // Ganimed trait end
+
     public QuirksWindow(IPrototypeManager proto)
     {
         RobustXamlLoader.Load(this);
@@ -27,8 +42,29 @@ public sealed partial class QuirksWindow : FancyWindow
 
         Title = Loc.GetString("quirks-window-title");
         _proto = proto;
+        // Ganimed trait start
+        PositiveFilterButton.OnPressed += _ => SetFilter(QuirkFilter.Positive);
+        NegativeFilterButton.OnPressed += _ => SetFilter(QuirkFilter.Negative);
+        NeutralFilterButton.OnPressed += _ => SetFilter(QuirkFilter.Neutral);
+
+        NeutralFilterButton.Pressed = true;
     }
-    // Ganimed trait start
+
+    private void SetFilter(QuirkFilter filter)
+    {
+        if (_currentFilter == filter)
+            return;
+
+        _currentFilter = filter;
+
+        PositiveFilterButton.Pressed = filter == QuirkFilter.Positive;
+        NegativeFilterButton.Pressed = filter == QuirkFilter.Negative;
+        NeutralFilterButton.Pressed = filter == QuirkFilter.Neutral;
+
+        if (_currentProfile != null)
+            Populate(_currentProfile);
+    }
+
     private bool CanSelectQuirk(TraitPrototype quirk, HumanoidCharacterProfile profile)
     {
         foreach (var selectedId in profile.TraitPreferences)
@@ -50,6 +86,8 @@ public sealed partial class QuirksWindow : FancyWindow
 
     public void Populate(HumanoidCharacterProfile profile)
     {
+        _currentProfile = profile;
+
         QuirksContainer.RemoveAllChildren();
         PointsLabel.Text = Loc.GetString("quirks-window-points-label", ("points", profile.GetQuirkPoints()));
 
@@ -62,10 +100,20 @@ public sealed partial class QuirksWindow : FancyWindow
         else
             SelectedQuirksLabel.SetMessage(Loc.GetString("quirks-window-selected-none"), null, Color.White);
 
-        // Ganimed trait start
         var protoList = _proto.EnumeratePrototypes<TraitPrototype>()
             .Where(x => x.Quirk && !x.SpeciesBlacklist.Contains(profile.Species))
             .ToList();
+        // Ganimed trait start
+        protoList = protoList.Where(proto =>
+        {
+            return _currentFilter switch
+            {
+                QuirkFilter.Positive => proto.Cost < 0,
+                QuirkFilter.Negative => proto.Cost > 0,
+                QuirkFilter.Neutral => proto.Cost == 0,
+                _ => true,
+            };
+        }).ToList();
         // Ganimed trait end
 
         protoList.Sort((x, y) => Loc.GetString(x.Name)[0].CompareTo(Loc.GetString(y.Name)[0]));
@@ -81,7 +129,7 @@ public sealed partial class QuirksWindow : FancyWindow
 
             panel.Panel.Button.OnPressed += _ => QuirkSelected?.Invoke(proto);
             QuirksContainer.AddChild(panel);
-            // Ganimed trait end
+            // Ganimed trait start
         }
     }
 

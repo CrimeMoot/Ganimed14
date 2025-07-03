@@ -10,14 +10,21 @@
                 <RichTextLabel Name="SelectedQuirksLabel" Text="Lelelelele" Margin="5" HorizontalAlignment="Center"/>
             </BoxContainer>
         </PanelContainer>
+
         <ScrollContainer HorizontalExpand="True" VerticalExpand="True" HScrollEnabled="False" Margin="5">
             <PanelContainer VerticalExpand="True" HorizontalExpand="True">
                 <PanelContainer.PanelOverride>
                     <graphics:StyleBoxFlat BackgroundColor="#1B1B1E" />
                 </PanelContainer.PanelOverride>
-                    <BoxContainer Name="QuirksContainer" VerticalExpand="True" HorizontalExpand="True" Orientation="Vertical">
-                    </BoxContainer>
+                <BoxContainer Name="QuirksContainer" VerticalExpand="True" HorizontalExpand="True" Orientation="Vertical">
+                </BoxContainer>
             </PanelContainer>
         </ScrollContainer>
+
+        <BoxContainer Orientation="Horizontal" HorizontalExpand="True" SeparationOverride="10" Margin="5 10 5 5" HorizontalAlignment="Center">
+            <Button Name="PositiveFilterButton" Text="{Loc 'quirks-filter-positive'}" ToggleMode="True" MinSize="120 30" />
+            <Button Name="NegativeFilterButton" Text="{Loc 'quirks-filter-negative'}" ToggleMode="True" MinSize="120 30" />
+            <Button Name="NeutralFilterButton" Text="{Loc 'quirks-filter-neutral'}" ToggleMode="True" MinSize="120 30" />
+        </BoxContainer>
     </BoxContainer>
 </controls:FancyWindow>

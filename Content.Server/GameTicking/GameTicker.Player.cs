@@ -84,8 +84,8 @@ namespace Content.Server.GameTicking
                         }
 
                         _chatManager.SendAdminAnnouncementColor(
-                            "Внимание!\n" +
-                            $"Зашёл новичок {args.Session.Name} Первый заход: {firstSeenTime}, Дата создания аккаунта: {creationDate}.\n" +
+                            "Внимание! Зашёл новичок {args.Session.Name}\n" +
+                            $"Первый заход: {firstSeenTime}, Дата создания аккаунта: {creationDate}\n" +
                             "Администрации быть внимательней, у данного игрока меньше 10ч на нашем сервере.",
                             colorOverrid: Color.White
                         ); // Ganimed-edit-AdminAnnouncement

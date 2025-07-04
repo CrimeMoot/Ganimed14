@@ -194,6 +194,17 @@
 
 - type: entity
   parent: ClothingNeckBase
+  id: ClothingNeckCloakCmoTurquoise
+  name: chief medical officer's turquoise cloak
+  description: A sterile turquoise cloak with three white crosses. It's stain resistant because it's too elegant to get blood on it.
+  components:
+  - type: Sprite
+    sprite: _Ganimed/Clothing/Neck/Cloaks/turquoise_cmo.rsi
+  - type: StealTarget
+    stealGroup: HeadCloak
+
+- type: entity
+  parent: ClothingNeckBase
   id: ClothingNeckCloakQmAlt
   name: quartermaster's leather cloak
   description: A solid leather cape with a reflective stripe, worn by reputable logistics officers. It signifies mastery of red tape and bargaining.

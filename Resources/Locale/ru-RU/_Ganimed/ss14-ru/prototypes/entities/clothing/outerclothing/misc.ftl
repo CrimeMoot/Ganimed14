@@ -1,7 +1,7 @@
 ent-ClothingOuterUnathiRobe = халат из грубой ткани
     .desc = Традиционная одежда Унатхов.
 
-ent-ClothingOuterWitchHunter = накидка охотника за ведьмами
+ent-ClothingOuterRobesWitchHunter = накидка охотника за ведьмами
     .desc = Напоминают одеяния средневековых инквизиторов.
 
 ent-ClothingOuterNightDress = платье глубоководной аквилегии

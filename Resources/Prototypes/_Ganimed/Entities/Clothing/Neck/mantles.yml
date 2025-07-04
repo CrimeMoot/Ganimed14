@@ -1,16 +1,5 @@
 - type: entity
   parent: ClothingNeckBase
-  id: ClothingNeckMantleRDOriginal
-  name: royal mantle
-  description: A mantle of royal purple. No other royal thing about it, though.
-  components:
-  - type: Sprite
-    sprite: _Ganimed/Clothing/Neck/Mantles/original_rdmantle.rsi
-  - type: Clothing
-    sprite: _Ganimed/Clothing/Neck/Mantles/original_rdmantle.rsi
-
-- type: entity
-  parent: ClothingNeckBase
   id: ClothingNeckWhiteMantleCaptain
   name: white captain mantle
   description: Captain mantle, with white down.
@@ -48,3 +37,46 @@
     sprite: _Ganimed/Clothing/Neck/Mantles/unathimantle.rsi
   - type: Clothing
     sprite: _Ganimed/Clothing/Neck/Mantles/unathimantle.rsi
+
+# Old/Original
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckMantleRDOriginal
+  name: royal mantle
+  description: A mantle of royal purple. No other royal thing about it, though.
+  components:
+  - type: Sprite
+    sprite: _Ganimed/Clothing/Neck/Mantles/original_rdmantle.rsi
+  - type: Clothing
+    sprite: _Ganimed/Clothing/Neck/Mantles/original_rdmantle.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckMantleCEOriginal
+  name: technological mantle
+  description: This hi-tech mantle is the pinnacle of engineering design, a reminder that the future is already here.
+  components:
+  - type: Sprite
+    sprite: _Ganimed/Clothing/Neck/Mantles/original_cemantle.rsi
+  - type: Clothing
+    sprite: _Ganimed/Clothing/Neck/Mantles/original_cemantle.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckMantleCMOOriginal
+  name: master physician's mantle
+  description: A mantle in colors symbolizing exceptional expertise in various medical fields be it surgery or chemistry.
+  components:
+  - type: Sprite
+    sprite: _Ganimed/Clothing/Neck/Mantles/original_cmomantle.rsi
+  - type: Clothing
+    sprite: _Ganimed/Clothing/Neck/Mantles/original_cmomantle.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckMantleCaptainAlt
+  name: captain's shoulder mantle
+  description: Only a few can be honored to wear such a shoulder covering. Others stand on the shoulders of giants. You're the giant they stand on.
+  components:
+  - type: Sprite
+    sprite: _Ganimed/Clothing/Neck/Mantles/alt_capmantle.rsi

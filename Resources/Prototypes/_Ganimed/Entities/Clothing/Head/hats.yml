@@ -1,8 +1,8 @@
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadHatCapSec
-  name: фуражка офицера СБ
-  description: Фуражка сотрудника СБ, имеет эмблему НТ.
+  name: security officer's cap
+  description: Nanotrasen security cap, worn by higher ranking officers on the station.
   components:
   - type: Sprite
     sprite: _Ganimed/Clothing/Head/Hats/seccap.rsi
@@ -90,6 +90,7 @@
   - type: Clothing
     sprite: _Ganimed/Clothing/Head/Hats/witchunterhat.rsi
 
+# Old/Original
 - type: entity
   parent: ClothingHeadHatUshanka
   id: ClothingHeadHatUshankaOriginal
@@ -100,3 +101,14 @@
     sprite: _Ganimed/Clothing/Head/Hats/original_ushanka.rsi
   - type: Clothing
     sprite: _Ganimed/Clothing/Head/Hats/original_ushanka.rsi
+
+- type: entity
+  parent: ClothingHeadHatBeretCmo
+  id: ClothingHeadHatBeretCmoOriginal
+  name: classic chief medical officer's beret
+  description: Cerulean beret with a green cross on the front. The sight of it calms you down and makes it clear that you will be cured.
+  components:
+  - type: Sprite
+    sprite: _Ganimed/Clothing/Head/Hats/original_beret_cmo.rsi
+  - type: Clothing
+    sprite: _Ganimed/Clothing/Head/Hats/original_beret_cmo.rsi

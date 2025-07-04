@@ -19,7 +19,18 @@
     sprite: _Ganimed/Clothing/OuterClothing/Misc/witch_hunter_robe.rsi
   - type: Clothing
     sprite: _Ganimed/Clothing/OuterClothing/Misc/witch_hunter_robe.rsi
-    
+
+- type: entity
+  parent: ClothingOuterBase
+  id: ClothingOuterNightDress
+  name: deep blue aquilegia dress 
+  description: A dress of futuristic dark neon tones and high royal court designs. Truly a dangerous mix of different times.
+  components:
+  - type: Sprite
+    sprite: _Ganimed/Clothing/OuterClothing/Misc/nightdress.rsi
+  - type: Clothing
+    sprite: _Ganimed/Clothing/OuterClothing/Misc/nightdress.rsi
+
 - type: entity
   parent: ClothingOuterBase
   id: ClothingOuterRobesCultWhite

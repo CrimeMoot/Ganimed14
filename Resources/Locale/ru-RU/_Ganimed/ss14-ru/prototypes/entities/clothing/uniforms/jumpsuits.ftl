@@ -10,7 +10,7 @@ ent-ClothingUniformJumpsuitSheriff = комбинезон шерифа
 ent-ClothingUniformJumpsuitCaptainParadeMale = парадная форма капитана
     .desc = Одежда класса люкс для мужчин, достойных руководить станцией, для особых случаев.
 
-ent-ClothingUniformJumpsuitBridgeOfficer = униформа офицера мостика
+ent-ClothingUniformJumpsuitBridgeOfficer = униформа офицера командования
     .desc = Стиль превыше функции. Контроль превыше всего. Этот формальный костюм служит эталоном власти и профессионализма.
 
 ent-ClothingUniformJumpsuitJumpsuitOfficerDark = тёмная офицерская форма

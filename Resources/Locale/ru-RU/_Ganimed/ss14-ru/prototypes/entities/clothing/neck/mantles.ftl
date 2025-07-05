@@ -1,13 +1,13 @@
-ent-ClothingNeckWhiteMantleCaptain = белая мантия капитана
-   .desc = Мантия капитана, с белым пухом.
+ent-ClothingNeckMantleCaptainWhite = белая мантия капитана
+    .desc = Мантия капитана, с белым пухом.
 
-ent-ClothingNeckBridgeOfficerMantle= мантия офицера мостика
+ent-ClothingNeckMantleBridgeOfficer = мантия офицера командования
     .desc = Элегантная мантия в черных цветах.
 
-ent-ClothingNeckOldMantle = старая накидка
+ent-ClothingNeckMantleOld = старая накидка
     .desc = Изношенная тканевая обёртка, выцветшая с годами. Слабо пахнет сигарами.
 
-ent-ClothingNeckUnathiMantle = плащ из шкур
+ent-ClothingNeckMantleUnathi = плащ из шкур
     .desc = Довольно жуткая подборка высушенных шкур и кожи, сшитых вместе, чтобы создать рваный плащ.
 
 ent-ClothingNeckMantleCaptainAlt = роскошная наплечная мантия капитана

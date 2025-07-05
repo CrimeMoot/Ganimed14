@@ -1,8 +1,8 @@
-ent-ClothingBackpackCluwneRemoveable = трясушкин фон трясхертон
-    .desc = Это рюкзак, изготовленный компанией «Jonk! Co».
+ent-ClothingBackpackCluwneRemoveable = { ent-ClothingBackpackCluwne }
+    .desc = { ent-ClothingBackpackCluwne.desc }
     .suffix = Снимаемый
 
-ent-ClothingBackpackOfficerBlack = рюкзак офицера мостика
+ent-ClothingBackpackOfficerBlack = чёрный офицерский рюкзак
     .desc = Тёмный рюкзак, используемый офицерами командования. Выглядит новым.
 
 ent-ClothingBackpackSecurityEngineer = рюкзак полевого инженера

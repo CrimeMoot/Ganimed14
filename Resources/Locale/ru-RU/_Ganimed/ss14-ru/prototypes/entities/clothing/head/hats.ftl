@@ -1,4 +1,4 @@
-ent-ClothingHeadHatBeretBridgeOfficer = берет офицера мостика
+ent-ClothingHeadHatBeretBridgeOfficer = чёрный берет офицера командования
     .desc = Это, пожалуй, единственный предмет одежды офицера, который не приносит особой пользы.
 
 ent-ClothingHeadHatBeretCaptainWhite = белый берет капитана

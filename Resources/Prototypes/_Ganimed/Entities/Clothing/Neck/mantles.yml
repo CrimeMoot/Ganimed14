@@ -1,6 +1,6 @@
 - type: entity
   parent: ClothingNeckBase
-  id: ClothingNeckWhiteMantleCaptain
+  id: ClothingNeckMantleCaptainWhite
   name: white captain mantle
   description: Captain mantle, with white down.
   components:
@@ -9,7 +9,7 @@
 
 - type: entity
   parent: ClothingNeckBase
-  id: ClothingNeckBridgeOfficerMantle
+  id: ClothingNeckMantleBridgeOfficer
   name: bridge officer mantle
   description: Elegant mantle in black colors.
   components:
@@ -18,7 +18,7 @@
 
 - type: entity
   parent: ClothingNeckBase
-  id: ClothingNeckOldMantle
+  id: ClothingNeckMantleOld
   name: old wrap
   description: A tattered fabric wrap, faded over the years. Smells faintly of cigars.
   components:
@@ -29,7 +29,7 @@
 
 - type: entity
   parent: ClothingNeckBase
-  id: ClothingNeckUnathiMantle
+  id: ClothingNeckMantleUnathi
   name: hide mantle
   description: A rather grisly selection of cured hides and skin, sewn together to form a ragged mantle.
   components:

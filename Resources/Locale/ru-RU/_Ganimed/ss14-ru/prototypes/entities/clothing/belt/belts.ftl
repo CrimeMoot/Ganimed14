@@ -11,13 +11,13 @@ ent-ClothingBeltMilitaryWebbingCMOFilled = { ent-ClothingBeltMilitaryWebbingCMO 
     .suffix = Заполненный
 
 ent-ClothingBeltMilitaryWebbingCorpsman = пояс бригмедика
-    .desc = Боевая медицинская разгрузка с множеством стерильных карманов и подсумков.
+    .desc = Боевая медицинская разгрузка с множеством герметичных карманов и подсумков.
 ent-ClothingBeltMilitaryWebbingCorpsmanFilled = { ent-ClothingBeltMilitaryWebbingCorpsman }
     .desc = { ent-ClothingBeltMilitaryWebbingCorpsman }
     .suffix = Заполненный
 
-ent-ClothingBeltOfficerBlackWebbing = РПС офицера мостика
-    .desc = Это довольно удобный и не стесняющий движений РПС.
+ent-ClothingBeltOfficerBlackWebbing = чёрная офицерская РПС
+    .desc = Это довольно удобная и не стесняющая движений РПС.
 ent-ClothingBeltOfficerBlackWebbingFilled = { ent-ClothingBeltOfficerBlackWebbing }
     .desc = { ent-ClothingBeltOfficerBlackWebbing }
     .suffix = Заполненный

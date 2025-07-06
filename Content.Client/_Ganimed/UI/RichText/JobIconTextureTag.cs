@@ -20,20 +20,24 @@ namespace Content.Client._Ganimed.UI.RichText
                 return false;
             }
 
-            if (!node.Attributes.TryGetValue("scale", out var scale) || !scale.TryGetLong(out var scaleValue))
-            {
-                scaleValue = 1;
-            }
-
-            var textureRect = new TextureRect();
-
             var path = SanitizeString(rawPath.ToString());
+            control = DrawIcon(path);
 
-            textureRect.TexturePath = path;
-            textureRect.TextureScale = new Vector2(scaleValue.Value, scaleValue.Value);
-
-            control = textureRect;
             return true;
+        }
+
+        private Control DrawIcon(string path)
+        {
+            var textureRect = new TextureRect
+            {
+                TexturePath = path,
+                Stretch = TextureRect.StretchMode.Scale,
+                MinSize = new Vector2(20, 20),
+                MaxSize = new Vector2(20, 20),
+                TextureScale = Vector2.One
+            };
+
+            return textureRect;
         }
 
         private static string SanitizeString(string input)

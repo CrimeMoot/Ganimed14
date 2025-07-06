@@ -113,8 +113,7 @@ public sealed class RadioSystem : EntitySystem
         // Ganimed edit START
         var tag = Loc.GetString(
             "radio-icon-tag",
-            ("path", GetIdCardSprite(messageSource)),
-            ("scale", "3")
+            ("path", GetIdCardSprite(messageSource))
         );
 
         var formattedName = $"{tag} {name}";

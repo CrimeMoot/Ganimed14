@@ -24,23 +24,22 @@ namespace Content.Client._Ganimed.UI.RichText
                 return false;
             }
 
-            if (!node.Attributes.TryGetValue("scale", out var scaleStr) || !scaleStr.TryGetLong(out var scaleValue))
-            {
-                scaleValue = 1;
-            }
+            var path = ClearString(rawPath.ToString());
+            control = DrawIcon(path);
 
-            control = DrawIcon(rawPath.ToString(), scaleValue.Value);
             return true;
         }
 
-        private Control DrawIcon(string path, long scale)
+        private Control DrawIcon(string path)
         {
-            var textureRect = new TextureRect();
-
-            path = ClearString(path);
-
-            textureRect.TexturePath = path;
-            textureRect.TextureScale = new Vector2(scale, scale);
+            var textureRect = new TextureRect
+            {
+                TexturePath = path,
+                Stretch = TextureRect.StretchMode.Scale,
+                MinSize = new Vector2(20, 20),
+                MaxSize = new Vector2(20, 20),
+                TextureScale = Vector2.One
+            };
 
             return textureRect;
         }

@@ -24,7 +24,6 @@
           pda-tsf
   - type: Pda
     id: TSFIDCard
-    state: pda-tsf
     penSlot:
       startingItem: BlackFountainPen
       priority: -1

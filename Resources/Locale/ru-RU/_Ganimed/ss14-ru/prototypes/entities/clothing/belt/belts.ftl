@@ -25,11 +25,11 @@ ent-ClothingBeltOfficerBlackWebbingFilled = { ent-ClothingBeltOfficerBlackWebbin
 ent-ClothingBeltPouchMedical = медицинский подсумок
     .desc = Тактический подсумок для хранения медикаментов.
 ent-ClothingBeltPouchMedicalERTFilled = { ent-ClothingBeltPouchMedical }
+    .desc = { ent-ClothingBeltPouchMedical.desc }
     .suffix = Заполненный, ОБР
-    .desc = { ent-ClothingBeltPouchMedical.desc }
 ent-ClothingBeltPouchMedicalCBURNFilled = { ent-ClothingBeltPouchMedical }
-    .suffix = Заполненный, РХБЗЗ
     .desc = { ent-ClothingBeltPouchMedical.desc }
+    .suffix = Заполненный, РХБЗЗ
 
 ent-ClothingBeltPouchUtility = универсальный подсумок
     .desc = Тактический подсумок для хранения различной мелочёвки.
@@ -47,14 +47,14 @@ ent-ClothingBeltRevolverHolster = кобура для револьвера
     .desc = Немного потрёпанная кожанная кобура, подходящая ко множеству не слишком громоздких револьверов. На ремне, с противположный от кобуры распологяется два маленьких подмсумка. При желании можно передвинуть кобуру под левую руку если это требуется пользователю.
 
 ent-ClothingBeltShellShotgun = бандольер для патронов 12х70
-    .desc = Тактический бандольер для хранения ваших тактических патронов 12х70. Вы ведь умейте их быстро выхватывать и заряжать да?
+    .desc = Тактический бандольер для хранения ваших тактических патронов 12х70. Вы ведь умеете их быстро выхватывать и заряжать, да?
 
 ent-ClothingBeltMedicalMarine = медицинская разгрузка
     .desc = Военная разгрузка с глубокими карманам, предназначенная для оказания медицинской помощи прямо на передовой.
 
 ent-ClothingBeltMedicalFilledSurgical = { ent-ClothingBeltMedical }
+    .desc = { ent-ClothingBeltMedical.desc }
     .suffix = Заполненный, хирургические инструменты
-    .desc = { ent-ClothingBeltMedical.desc }
 ent-ClothingBeltMedicalFilledMedication = { ent-ClothingBeltMedical }
-    .suffix = Заполненный, медикаменты
     .desc = { ent-ClothingBeltMedical.desc }
+    .suffix = Заполненный, медикаменты

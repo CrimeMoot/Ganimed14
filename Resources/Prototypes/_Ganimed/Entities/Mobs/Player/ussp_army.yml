@@ -24,7 +24,7 @@
       - NeoRusskiyaTranslatorImplant      
 
 - type: entity
-  id: RandomHumanoidSpawnerUSSPofficer
+  id: RandomHumanoidSpawnerUSSPOfficer
   name: USSP soldier
   suffix: USSP, officer
   components:

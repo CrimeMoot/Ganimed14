@@ -5,7 +5,7 @@ ent-ClothingHeadHatBeretCaptainWhite = белый берет капитана
     .desc = Белый берет капитана, икона стиля.
 
 ent-ClothingHeadHatBeretSheriff = берет шерифа
-    .desc = Берет - фаворит, местных шерифов.
+    .desc = Берет - фаворит местных шерифов.
 
 ent-ClothingHeadHatCapcapWhite = белая фуражка капитана
     .desc = Стильная белая фуражка капитана.
@@ -17,7 +17,13 @@ ent-ClothingHeadHatCapSec = фуражка офицера СБ
     .desc = Фуражка сотрудника СБ, имеет эмблему НТ.
 
 ent-ClothingHeadHatWitchHunter = шляпа охотника за ведьмами
-    .desc = Шляпа охотника за колдунами, а именно ведьмами в стиле средневековья.
+    .desc = Шляпа охотника за колдунами в стиле средневековья.
+
+ent-ClothingHeadHatTSFNavyOfficerCap = фуражка флота
+    .desc = Фуражка офицера флота ТСФ. Лучше любых погон подчеркнет ваш статус и звание.
+
+ent-ClothingHeadHatBeretUSSP = берет СССП
+    .desc = Берет, иногда входящий в униформу НРА СССП. На нём красуется большая красная стрела.
 
 # Old/Original
 ent-ClothingHeadHatBeretCmoOriginal = классический берет главного врача

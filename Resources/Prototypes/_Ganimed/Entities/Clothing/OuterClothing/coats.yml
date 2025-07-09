@@ -91,6 +91,20 @@
 #  - type: StealTarget
 #    stealGroup: ReflectiveCoat
 
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatGoldenEraShortcoat
+  name: golden era shortcoat
+  description: A shortened version of an official black coat is made of durable fabric with gilded golden patterns.
+  components:
+  - type: Sprite
+    sprite: _Ganimed/Clothing/OuterClothing/Coats/goldenera_shortcoat.rsi
+  - type: Clothing
+    sprite: _Ganimed/Clothing/OuterClothing/Coats/goldenera_shortcoat.rsi
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+
 # Old/Original
 - type: entity
   parent: ClothingOuterStorageBase
@@ -115,7 +129,7 @@
     staminaModifier: 0.8
 
 - type: entity
-  parent: ClothingOuterStorageBase
+  parent: ClothingOuterCoatRobo
   id: ClothingOuterCoatRoboOriginal
   name: roboticist lab coat
   description: A lab coat with black accents. Sure helps to further differentiate you from the masses. Comes with red shoulder pads.
@@ -124,10 +138,6 @@
     sprite: _Ganimed/Clothing/OuterClothing/Coats/original_labcoat_robo.rsi
   - type: Clothing
     sprite: _Ganimed/Clothing/OuterClothing/Coats/original_labcoat_robo.rsi
-  - type: Armor
-    modifiers:
-      coefficients:
-        Caustic: 0.75
 
 - type: entity
   parent: ClothingOuterStorageFoldableBaseOpened

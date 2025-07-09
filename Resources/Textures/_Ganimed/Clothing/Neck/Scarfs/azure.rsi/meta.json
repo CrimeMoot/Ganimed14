@@ -1,18 +1,18 @@
 {
   "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Made by Cultamore (Discord cultappreciator)",
+  "license": "CC-BY-NC-SA-4.0",
+  "copyright": "Made by swaiper5 (Discord), modified by HyperB1 (Github) for Ganimed/Enterprise server.",
   "size": {
     "x": 32,
     "y": 32
   },
   "states": [
     {
-      "name": "icon"
+      "name": "equipped-NECK",
+      "directions": 4
     },
     {
-      "name": "equipped-HELMET",
-      "directions": 4
+      "name": "icon"
     },
     {
       "name": "inhand-left",

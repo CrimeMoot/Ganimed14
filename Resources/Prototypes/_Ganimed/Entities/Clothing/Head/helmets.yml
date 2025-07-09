@@ -55,9 +55,9 @@
   description: A robust, evil-looking cult helmet.
   components:
   - type: Sprite
-    sprite: _Ganimed/Clothing/Head/Helmets/white_cult
+    sprite: _Ganimed/Clothing/Head/Helmets/white_cult.rsi
   - type: Clothing
-    sprite: _Ganimed/Clothing/Head/Helmets/white_cult
+    sprite: _Ganimed/Clothing/Head/Helmets/white_cult.rsi
   - type: IngestionBlocker
   - type: Armor
     modifiers:

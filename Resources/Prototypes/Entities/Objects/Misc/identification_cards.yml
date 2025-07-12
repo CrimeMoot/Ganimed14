@@ -99,6 +99,7 @@
     layers:
     - state: default
     - state: idintern-cadet
+  - type: AlertLevelAccess # Ganimed
 
 - type: entity
   parent: PassengerIDCard
@@ -145,6 +146,7 @@
     - state: idsecurityofficer
   - type: PresetIdCard
     job: SecurityOfficer
+  - type: AlertLevelAccess # Ganimed
 
 - type: entity
   parent: IDCardStandard
@@ -461,6 +463,7 @@
     job: HeadOfSecurity
   - type: StealTarget
     stealGroup: CommandIDCard
+  - type: AlertLevelAccess # Ganimed
 
 - type: entity
   parent: IDCardStandard
@@ -488,6 +491,7 @@
     - state: idbrigmedic
   - type: PresetIdCard # ADT rework
     job: Brigmedic     #
+  - type: AlertLevelAccess # Ganimed
 
 - type: entity
   parent: IDCardStandard
@@ -818,6 +822,7 @@
     - state: iddetective
   - type: PresetIdCard
     job: Detective
+  - type: AlertLevelAccess # Ganimed
 
 - type: entity
   parent: CentcomIDCard
@@ -886,6 +891,7 @@
     layers:
     - state: default
     - state: idseniorofficer
+  - type: AlertLevelAccess # Ganimed
 
 - type: entity
   parent: IDCardStandard

@@ -367,13 +367,28 @@
   canRotate: true
 
 - type: construction
+  name: fire sensor
+  id: FireSensor
+  graph: FireSensor
+  startNode: start
+  targetNode: sensor
+  category: construction-category-structures
+  description: A modified air sensor that automatically sets its alarm to danger if its tile happens to be on fire. Useful for automation!
+  icon:
+    sprite: Structures/Specific/Atmospherics/sensor.rsi
+    state: gsensor1
+  placementMode: SnapgridCenter
+  objectType: Structure
+  canRotate: true
+
+- type: construction
   name: gas pipe sensor
   id: GasPipeSensor
   graph: GasPipeSensor
   startNode: start
   targetNode: sensor
   category: construction-category-structures
-  description: Reports on the status of the gas within the attached pipe network. 
+  description: Reports on the status of the gas within the attached pipe network.
   icon:
     sprite: Structures/Piping/Atmospherics/gas_pipe_sensor.rsi
     state: icon

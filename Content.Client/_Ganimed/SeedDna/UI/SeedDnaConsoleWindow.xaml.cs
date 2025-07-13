@@ -186,7 +186,7 @@ public sealed partial class SeedDnaConsoleWindow : DefaultWindow
                         title: title,
                         seedPresent: _seedIsPresent,
                         dnaDiskPresent: _dnaDiskIsPresent,
-                         getterSeedValue: () => _seedDataDto!.Chemicals![chemicalName],
+                        getterSeedValue: () => _seedDataDto!.Chemicals![chemicalName],
                         setterSeedValue: obj => { _seedDataDto!.Chemicals![chemicalName] = (SeedChemQuantityDto)obj!; },
                         getterDnaDiskValue: () =>
                         {
@@ -333,7 +333,7 @@ public sealed partial class SeedDnaConsoleWindow : DefaultWindow
             seedPresent: _seedIsPresent,
             dnaDiskPresent: _dnaDiskIsPresent,
             getterSeedValue: () => _seedDataDto?.NutrientConsumption,
-                        setterSeedValue: obj => { _seedDataDto!.NutrientConsumption = (float)obj!; },
+            setterSeedValue: obj => { _seedDataDto!.NutrientConsumption = (float)obj!; },
             getterDnaDiskValue: () => _dnaDiskDataDto?.NutrientConsumption,
             setterDnaDiskValue: obj => { _dnaDiskDataDto!.NutrientConsumption = (float)obj!; },
             flagUpdateImmediately: () => _flagUpdateImmediately,
@@ -501,7 +501,7 @@ public sealed partial class SeedDnaConsoleWindow : DefaultWindow
             seedPresent: _seedIsPresent,
             dnaDiskPresent: _dnaDiskIsPresent,
             getterSeedValue: () => _seedDataDto?.HarvestRepeat,
-                        setterSeedValue: obj => { _seedDataDto!.HarvestRepeat = (SharedHarvestTypeDto)obj!; },
+            setterSeedValue: obj => { _seedDataDto!.HarvestRepeat = (SharedHarvestTypeDto)obj!; },
             getterDnaDiskValue: () => _dnaDiskDataDto?.HarvestRepeat,
             setterDnaDiskValue: obj => { _dnaDiskDataDto!.HarvestRepeat = (SharedHarvestTypeDto)obj!; },
             flagUpdateImmediately: () => _flagUpdateImmediately,

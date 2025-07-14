@@ -1,0 +1,8 @@
+- type: loadout
+  id: Agzamovstunbatonloadout
+  equipment:
+    back: StunbatonAgzamov
+  effects:
+    - !type:SponsorLoadoutEffect
+      tier: 3
+  whitelistJobs: [ Detective, HeadOfSecurity, SecurityCadet, SecurityOfficer, Warden ]

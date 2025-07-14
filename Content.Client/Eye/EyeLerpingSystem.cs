@@ -124,7 +124,7 @@ public sealed class EyeLerpingSystem : EntitySystem
     private Vector2 UpdateZoom(EntityUid uid, float frameTime, EyeComponent? eye = null, ContentEyeComponent? content = null)
     {
         if (!Resolve(uid, ref content, ref eye, false))
-            return Vector2.One;
+            return new Vector2(0.7f, 0.7f);
 
         var diff = content.TargetZoom - eye.Zoom;
 

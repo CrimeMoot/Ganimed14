@@ -27,13 +27,10 @@
     bluntStaminaDamageFactor: 2.0
     angle: 60
     animation: WeaponArcThrust
-    sound: /Audio/Weapons/egloves.ogg
   - type: StaminaDamageOnCollide
     damage: 15
     sound: /Audio/Weapons/egloves.ogg
   - type: LandAtCursor # it deals stamina damage when thrown
-    heldPrefix: off
-    size: Small
   - type: ItemToggleSize
     activatedSize: Normal
   - type: Clothing

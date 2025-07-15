@@ -5,4 +5,5 @@
   effects:
     - !type:SponsorLoadoutEffect
       tier: 3
-  whitelistJobs: [ Detective, HeadOfSecurity, SecurityCadet, SecurityOfficer, Warden ]
+    - !type:JobRestrictedLoadoutEffect
+      whitelistJobs: [ Detective, HeadOfSecurity, SecurityCadet, SecurityOfficer, Warden ]

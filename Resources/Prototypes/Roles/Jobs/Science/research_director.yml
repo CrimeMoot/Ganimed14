@@ -3,21 +3,21 @@
   name: job-name-rd
   description: job-description-rd
   playTimeTracker: JobResearchDirector
-  requireAdminNotify: true
+  requireAdminNotify: true # Ganimed
   requirements:
-   - !type:RoleTimeRequirement
-      role: JobScientist
-      time: 21600 #6 hrs #Ganimed-RoleTime
-   - !type:DepartmentTimeRequirement
-      department: Science
-      time: 72000 #20 hrs Ganimed-RoleTime
-   - !type:OverallPlaytimeRequirement
-      time:  126000 #35 hrs Ganimed-RoleTime
+  - !type:RoleTimeRequirement
+    role: JobScientist
+    time: 21600 #6 hrs #Ganimed-RoleTime
+  - !type:DepartmentTimeRequirement
+    department: Science
+    time: 72000 #20 hrs Ganimed-RoleTime
+  - !type:OverallPlaytimeRequirement
+    time:  126000 #35 hrs Ganimed-RoleTime
   weight: 10
   startingGear: ResearchDirectorGear
   icon: "JobIconResearchDirector"
   supervisors: job-supervisors-captain
-  canBeAntag: true # Ganimed-MRP
+  canBeAntag: true # Ganimed-MRP: Heads can be antags
   antagAdvantage: 5 # Ganimed-MRP
   access:
   - Research
@@ -27,7 +27,7 @@
   - Brig
   - Cryogenics
   special:
-#  - !type:AddImplantSpecial # Ganimed-MRP
+#  - !type:AddImplantSpecial # Ganimed-MRP: Heads can be antags
 #    implants: [ MindShieldImplant ] # Ganimed-MRP
   - !type:AddComponentSpecial
     components:

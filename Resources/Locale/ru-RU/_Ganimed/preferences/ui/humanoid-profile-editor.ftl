@@ -1,1 +1,1 @@
-trait-category-invisible = Инкогнито
+trait-category-account= Аккаунт

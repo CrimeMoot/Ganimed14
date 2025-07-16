@@ -1,6 +1,6 @@
 - type: entity
   name: Agzamov stun baton
-  parent: [Stunbaton]
+  parent: Stunbaton
   id: StunbatonAgzamov
   description: A stun baton for incapacitating people with. Actively harming with this is considered bad tone.
   suffix: Sponsor, Agzamov

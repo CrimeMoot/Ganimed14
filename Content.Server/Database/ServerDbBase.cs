@@ -236,6 +236,17 @@ namespace Content.Server.Database
                 }
             }
 
+            // Ganimed-JobAlt-start
+            var altTitles = new Dictionary<ProtoId<JobPrototype>, ProtoId<JobAlternateTitlePrototype>>();
+
+            foreach (var role in profile.AltTitles)
+            {
+                altTitles.Add(
+                    new ProtoId<JobPrototype>(role.RoleName),
+                    new ProtoId<JobAlternateTitlePrototype>(role.AlternateTitle)
+                );
+            }
+            // Ganimed-JobAlt-end
             var loadouts = new Dictionary<string, RoleLoadout>();
 
             foreach (var role in profile.Loadouts)
@@ -287,7 +298,8 @@ namespace Content.Server.Database
                 ),
                 spawnPriority,
                 jobs,
-                (PreferenceUnavailableMode) profile.PreferenceUnavailable,
+                altTitles, // Ganimed-JobAlt
+                (PreferenceUnavailableMode)profile.PreferenceUnavailable,
                 antags.ToHashSet(),
                 traits.ToHashSet(),
                 loadouts,
@@ -345,6 +357,20 @@ namespace Content.Server.Database
                 humanoid.TraitPreferences
                         .Select(t => new Trait {TraitName = t})
             );
+
+            // Ganimed-JobAlt-start
+            profile.AltTitles.Clear();
+            foreach (var (role, title) in humanoid.JobAlternateTitles)
+            {
+                var newTitle = new DBJobAlternateTitle()
+                {
+                    RoleName = role.Id,
+                    AlternateTitle = title.Id
+                };
+
+                profile.AltTitles.Add(newTitle);
+            }
+            // Ganimed-JobAlt-end
 
             profile.Loadouts.Clear();
 

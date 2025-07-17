@@ -62,9 +62,8 @@ public sealed class PresetIdCardSystem : EntitySystem
 
     private void SetupIdName(EntityUid uid, PresetIdCardComponent id)
     {
-        if (id.IdName == null)
-            return;
-        _cardSystem.TryChangeFullName(uid, id.IdName);
+        if (id.IdName != null) // Ganimed-JobAlt
+            _cardSystem.TryChangeFullName(uid, id.IdName);
     }
 
     private void SetupIdAccess(EntityUid uid, PresetIdCardComponent id, bool extended)
@@ -72,7 +71,7 @@ public sealed class PresetIdCardSystem : EntitySystem
         if (id.JobName == null)
             return;
 
-        if (!_prototypeManager.TryIndex(id.JobName, out JobPrototype? job))
+        if (!_prototypeManager.TryIndex(id.JobName.Value, out JobPrototype? job)) // Ganimed-JobAlt
         {
             Log.Error($"Invalid job id ({id.JobName}) for preset card");
             return;
@@ -80,12 +79,22 @@ public sealed class PresetIdCardSystem : EntitySystem
 
         _accessSystem.SetAccessToJob(uid, job, extended);
 
-        var card = Comp<IdCardComponent>(uid); // ADT tweak
+        var card = Comp<IdCardComponent>(uid);
 
-        if (card.JobTitle == null) // ADT tweak start: only set job title if id card doesnt have one already
-            _cardSystem.TryChangeJobTitle(uid, job.LocalizedName);
+        // Ganimed-JobAlt-start
+        if (id.AlternateTitleId != null &&
+            _prototypeManager.TryIndex(id.AlternateTitleId.Value, out JobAlternateTitlePrototype? altTitle))
+        {
+            _cardSystem.TryChangeJobTitle(uid, altTitle.LocalizedName);
+        }
+        else
+        {
+            if (string.IsNullOrEmpty(card.JobTitle))
+                _cardSystem.TryChangeJobTitle(uid, job.LocalizedName);
+        }
+        // Ganimed-JobAlt-end
+
         _cardSystem.TryChangeJobDepartment(uid, job);
-        // ADT tweak end
 
         if (_prototypeManager.TryIndex(job.Icon, out var jobIcon))
             _cardSystem.TryChangeJobIcon(uid, jobIcon);

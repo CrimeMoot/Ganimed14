@@ -28,11 +28,13 @@
     angle: 60
     animation: WeaponArcThrust
   - type: StaminaDamageOnCollide
-    damage: 15
+    damage: 25
     sound: /Audio/Weapons/egloves.ogg
   - type: LandAtCursor # it deals stamina damage when thrown
+  - type: Item
+    size: Small
   - type: ItemToggleSize
-    activatedSize: Normal
+    activatedSize: Huge
   - type: Clothing
     sprite: _Ganimed/Personalization/agzamov_stunbaton.rsi
     quickEquip: false

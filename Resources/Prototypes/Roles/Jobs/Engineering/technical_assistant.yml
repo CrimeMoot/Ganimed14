@@ -5,7 +5,7 @@
   playTimeTracker: JobTechnicalAssistant
   requirements:
     - !type:OverallPlaytimeRequirement
-      time: 14400 # ADT-PlaytimeRequirement = 4 hrs
+      time: 3600 # 1h Ganimed-RoleTime
 # ADT-Tweak
     # - !type:DepartmentTimeRequirement
     #   department: Engineering
@@ -16,7 +16,7 @@
   startingGear: TechnicalAssistantGear
   icon: "JobIconTechnicalAssistant"
   supervisors: job-supervisors-engineering
-  canBeAntag: false
+  canBeAntag: true # Ganimed-MRP: Available not only for newbies
   access:
   - Maintenance
   - Engineering

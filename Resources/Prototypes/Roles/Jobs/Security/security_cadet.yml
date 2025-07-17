@@ -11,11 +11,11 @@
 #      time: 72000 #20 hrs # Corvax-RoleTime
 #      inverted: true # stop playing intern if you're good at security!
 #    ADT Restrict Start
-#    - !type:SpeciesRequirement
-#      inverted: true
-#      species:
-#      - Resomi
-#      - Vox
+    - !type:SpeciesRequirement
+      inverted: true
+      species:
+      - Resomi
+      - Vox
 #      - Shadekin
 #    ADT RESTRICT End
   startingGear: SecurityCadetGear

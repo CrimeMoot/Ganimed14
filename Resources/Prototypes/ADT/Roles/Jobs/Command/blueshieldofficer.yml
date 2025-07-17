@@ -4,15 +4,15 @@
   description: job-description-ADTBlueShieldOfficer
   playTimeTracker: JobADTBlueShieldOfficer
   requirements:
-    - !type:RoleTimeRequirement
-      role: JobCaptain
-      time: 36000 #10 hrs
-    - !type:RoleTimeRequirement
-      role: JobHeadOfSecurity
-      time: 36000 #10 hrs
-    - !type:RoleTimeRequirement
-      role: JobChiefMedicalOfficer
-      time: 18000 #5 hrs
+    - !type:DepartmentTimeRequirement
+      department: Command
+      time: 36000 #10 hrs Ganimed-RoleTime
+    - !type:DepartmentTimeRequirement
+      department: Security
+      time: 36000 #10 hrs Ganimed-RoleTime
+    - !type:DepartmentTimeRequirement
+      department: Medical
+      time: 18000 #5 hrs Ganimed-RoleTime
     - !type:AgeRequirement
       requiredAge: 21
     # ADT Restrict Start

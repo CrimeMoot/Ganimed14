@@ -21,14 +21,14 @@
       traits:
       - Pacifist
       - Blindness
-     # - Muted
+      - Muted
   # ADT Restrict Start
     - !type:SpeciesRequirement
       inverted: true
       species:
       - Resomi
       - Vox
-      - Shadekin
+#      - Shadekin
   # ADT RESTRICT End
   weight: 10
   startingGear: HoSGear

@@ -16,7 +16,7 @@
       species:
       - Resomi
       - Vox
-      - Shadekin
+#      - Shadekin
   # ADT RESTRICT End
   startingGear: WardenGear
   icon: "JobIconWarden"

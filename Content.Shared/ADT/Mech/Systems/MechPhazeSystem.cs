@@ -4,6 +4,7 @@ using Content.Shared.Physics;
 using Robust.Shared.Physics.Systems;
 using System.Linq;
 using Robust.Shared.Physics;
+using Robust.Shared.Physics.Components;
 using Content.Shared.ADT.Mech.Components;
 using Robust.Shared.Network;
 using Robust.Shared.Serialization;
@@ -45,17 +46,23 @@ public sealed class MechPhazeSystem : EntitySystem
         if (!Resolve(uid, ref mech))
             return;
 
-        if (TryComp<FixturesComponent>(uid, out var fixtures))
-        {
-            var fixture = fixtures.Fixtures.First();
-            var collisionGroup = comp.Phazed ? CollisionGroup.MidImpassable : CollisionGroup.GhostImpassable;
-            _physics.SetCollisionMask(uid, fixture.Key, fixture.Value, (int)collisionGroup, fixtures);
-            comp.Phazed = !comp.Phazed;
-            if (_netMan.IsServer)
-                _appearance.SetData(uid, MechPhazingVisuals.Phazing, comp.Phazed);
-        }
-    }
+        if (!TryComp<FixturesComponent>(uid, out var fixtures) || fixtures.FixtureCount == 0)
+            return;
+        if (!TryComp<PhysicsComponent>(uid, out var physics))
+            return;
 
+        var fixturePair = fixtures.Fixtures.First();
+        var fixtureId = fixturePair.Key;
+        var fixture = fixturePair.Value;
+
+        _physics.SetCollisionLayer(uid, fixtureId, fixture, (int)CollisionGroup.None, fixtures);
+        _physics.SetCollisionMask(uid, fixtureId, fixture, (int)CollisionGroup.None, fixtures);
+
+        comp.Phazed = !comp.Phazed;
+
+        if (_netMan.IsServer)
+            _appearance.SetData(uid, MechPhazingVisuals.Phazing, comp.Phazed);
+    }
     public override void Update(float frameTime)
     {
         base.Update(frameTime);

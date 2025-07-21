@@ -224,7 +224,7 @@ namespace Content.IntegrationTests.Tests
 
             await pair.CleanReturnAsync();
         }
-        
+
         // ADT-Revert-Start
         /// <summary>
         /// This test checks that spawning and deleting an entity doesn't somehow create other unrelated entities.
@@ -240,7 +240,7 @@ namespace Content.IntegrationTests.Tests
         /// Note that this isn't really a strict requirement, and there are probably quite a few edge cases. Its a pretty
         /// crude test to try catch issues like this, and possibly should just be disabled.
         /// </remarks>
-         [Test]
+        [Test]
         public async Task SpawnAndDeleteEntityCountTest()
         {
             var settings = new PoolSettings { Connected = true, Dirty = true };
@@ -283,7 +283,7 @@ namespace Content.IntegrationTests.Tests
             await pair.RunTicksSync(3);
 
             // We consider only non-audio entities, as some entities will just play sounds when they spawn.
-            int Count(IEntityManager ent) =>  ent.EntityCount - ent.Count<AudioComponent>();
+            int Count(IEntityManager ent) => ent.EntityCount - ent.Count<AudioComponent>();
 
             foreach (var protoId in protoIds)
             {
@@ -291,10 +291,10 @@ namespace Content.IntegrationTests.Tests
                 // Currently ninja fails to equip their own loadout.
                 if (protoId == "MobHumanSpaceNinja")
                     continue;
-                
+
                 //ADT-Test-Fix?
                 if (protoId == "StandardNanotrasenStation")
-                    continue;                
+                    continue;
                 //ADT-Test-Fix?
 
                 var count = Count(server.EntMan);
@@ -400,7 +400,7 @@ namespace Content.IntegrationTests.Tests
             return false;
         }
         // ADT-Revert-End
-        
+
         [Test]
         public async Task AllComponentsOneToOneDeleteTest()
         {

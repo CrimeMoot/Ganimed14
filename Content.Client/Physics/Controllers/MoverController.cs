@@ -114,7 +114,7 @@ public sealed class MoverController : SharedMoverController
     {
         return _timing is { IsFirstTimePredicted: true, InSimulation: true };
     }
-    
+
     public override void SetSprinting(Entity<InputMoverComponent> entity, ushort subTick, bool walking)
     {
         // Logger.Info($"[{_gameTiming.CurTick}/{subTick}] Sprint: {enabled}");

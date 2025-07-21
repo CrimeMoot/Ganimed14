@@ -91,11 +91,6 @@ public sealed class ClientAlertsSystem : AlertsSystem
         UpdateHud(alerts);
     }
 
-    private void ClientAlertsHandleState(Entity<AlertsComponent> alerts, ref AfterAutoHandleStateEvent args)
-    {
-        UpdateHud(alerts);
-    }
-
     private void UpdateHud(Entity<AlertsComponent> entity)
     {
         if (_playerManager.LocalEntity == entity.Owner)

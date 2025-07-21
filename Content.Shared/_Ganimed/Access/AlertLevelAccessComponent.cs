@@ -1,0 +1,163 @@
+using Content.Shared.Access;
+using Robust.Shared.Prototypes;
+
+namespace Content.Shared._Ganimed.Access.AlertLevelAccess;
+
+[RegisterComponent]
+public sealed partial class AlertLevelAccessComponent : Component
+{
+    [DataField]
+    public string ResetOnLevel = "green";
+    [DataField]
+    public HashSet<ProtoId<AccessLevelPrototype>> Blue = new()
+    {
+        "Cargo",
+        "Salvage",
+        "Engineering",
+        "Medical",
+        "Paramedic",
+        "Research",
+        "Bar",
+        "Kitchen",
+        "Hydroponics",
+        "Service",
+        "Janitor",
+        "Theatre",
+        "Chapel",
+        "Lawyer",
+        "External",
+        "Salvage",
+        "Security",
+        "Brig"
+    };
+    [DataField]
+    public HashSet<ProtoId<AccessLevelPrototype>> Violet = new()
+    {
+        "Cargo",
+        "Salvage",
+        "Engineering",
+        "Medical",
+        "Paramedic",
+        "Research",
+        "Bar",
+        "Kitchen",
+        "Hydroponics",
+        "Service",
+        "Janitor",
+        "Theatre",
+        "Chapel",
+        "Lawyer",
+        "External",
+        "Salvage",
+        "Security",
+        "Brig"
+    };
+    [DataField]
+    public HashSet<ProtoId<AccessLevelPrototype>> Red = new()
+    {
+        "Cargo",
+        "Salvage",
+        "Engineering",
+        "Medical",
+        "Paramedic",
+        "Research",
+        "Bar",
+        "Kitchen",
+        "Hydroponics",
+        "Service",
+        "Janitor",
+        "Chemistry",
+        "Theatre",
+        "Chapel",
+        "Lawyer",
+        "External",
+        "Salvage",
+        "Security",
+        "Brig",
+        "Atmospherics",
+        "Armory",
+        "Detective",
+        "IAA"
+    };
+    [DataField]
+    public HashSet<ProtoId<AccessLevelPrototype>> Gamma = new()
+    {
+        "Cargo",
+        "Salvage",
+        "Command",
+        "Engineering",
+        "Atmospherics",
+        "Medical",
+        "Chemistry",
+        "Paramedic",
+        "Research",
+        "Bar",
+        "Kitchen",
+        "Hydroponics",
+        "Service",
+        "Janitor",
+        "Theatre",
+        "Chapel",
+        "Lawyer",
+        "Armory",
+        "Brig",
+        "Detective",
+        "Captain",
+        "ChiefEngineer",
+        "ChiefMedicalOfficer",
+        "Cryogenics",
+        "External",
+        "HeadOfPersonnel",
+        "HeadOfSecurity",
+        "Maintenance",
+        "Quartermaster",
+        "ResearchDirector",
+        "Security",
+        "IAA",
+        "BlueShield",
+        "Magistrate"
+    };
+    [DataField]
+    public HashSet<ProtoId<AccessLevelPrototype>> Delta = new()
+    {
+        "Cargo",
+        "Salvage",
+        "Command",
+        "Engineering",
+        "Atmospherics",
+        "Medical",
+        "Chemistry",
+        "Paramedic",
+        "Research",
+        "Bar",
+        "Kitchen",
+        "Hydroponics",
+        "Service",
+        "Janitor",
+        "Theatre",
+        "Chapel",
+        "Lawyer",
+        "Armory",
+        "Brig",
+        "Detective",
+        "Captain",
+        "ChiefEngineer",
+        "ChiefMedicalOfficer",
+        "Cryogenics",
+        "External",
+        "HeadOfPersonnel",
+        "HeadOfSecurity",
+        "Maintenance",
+        "Quartermaster",
+        "ResearchDirector",
+        "Security",
+        "IAA",
+        "BlueShield",
+        "Magistrate"
+    };
+    [DataField]
+    public HashSet<ProtoId<AccessLevelPrototype>> AddedAccess = new();
+
+    [DataField("baseTags")]
+    public HashSet<ProtoId<AccessLevelPrototype>> BaseTags = new();
+}

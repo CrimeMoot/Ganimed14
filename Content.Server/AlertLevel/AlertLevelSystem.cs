@@ -1,6 +1,7 @@
 using System.Linq;
 using Content.Server.Chat.Systems;
 using Content.Server.Station.Systems;
+using Content.Server._Ganimed.AlertLevel; // Ganimed edit
 using Content.Shared.CCVar;
 using Robust.Shared.Audio;
 using Robust.Shared.Audio.Systems;
@@ -16,6 +17,7 @@ public sealed class AlertLevelSystem : EntitySystem
     [Dependency] private readonly ChatSystem _chatSystem = default!;
     [Dependency] private readonly SharedAudioSystem _audio = default!;
     [Dependency] private readonly StationSystem _stationSystem = default!;
+    [Dependency] private readonly AlertLevelAccessSystem _alertLevelAccessSystem = default!; // Ganimed edit
 
     // Until stations are a prototype, this is how it's going to have to be.
     public const string DefaultAlertLevelSet = "stationAlerts";
@@ -149,8 +151,11 @@ public sealed class AlertLevelSystem : EntitySystem
             component.ActiveDelay = true;
         }
 
+        var oldLevel = component.CurrentLevel; // Ganimed edit
         component.CurrentLevel = level;
         component.IsLevelLocked = locked;
+
+        _alertLevelAccessSystem.UpdateCardsAccessByAlertLevel(station, level); // Ganimed edit
 
         var stationName = dataComponent.EntityName;
 

@@ -27,11 +27,27 @@ namespace Content.Shared.Localizations
         public void Initialize()
         {
             var culture = new CultureInfo(Culture);
-            var fallbackCulture = new CultureInfo(FallbackCulture); // Corvax-Localization
+            var fallbackCulture = new CultureInfo(FallbackCulture);
 
-            _loc.LoadCulture(culture);
-            _loc.LoadCulture(fallbackCulture); // Corvax-Localization
-            _loc.SetFallbackCluture(fallbackCulture); // Corvax-Localization
+            try
+            {
+                _loc.LoadCulture(culture);
+            }
+            catch (Exception e)
+            {
+                Console.Error.WriteLine($"Ошибка загрузки локали {Culture}: {e}");
+            }
+        
+            try
+            {
+                _loc.LoadCulture(fallbackCulture);
+            }
+            catch (Exception e)
+            {
+                Console.Error.WriteLine($"Ошибка загрузки локали {FallbackCulture}: {e}");
+            }
+        
+            _loc.SetFallbackCluture(fallbackCulture);
             _loc.Initialize();
             _loc.AddFunction(culture, "MANY", FormatMany); // Corvax-Localization: To prevent problems in auto-generated locale files
             _loc.AddFunction(culture, "PRESSURE", FormatPressure);

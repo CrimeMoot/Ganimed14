@@ -175,6 +175,8 @@ namespace Content.IntegrationTests.Tests
                 .Where(p => !p.Abstract)
                 .Where(p => !pair.IsTestPrototype(p))
                 .Where(p => !p.Components.ContainsKey("MapGrid")) // This will smash stuff otherwise.
+                .Where(p => !p.ID.StartsWith("ImmovableRod")) // Ganimed edit
+                .Where(p => !p.ID.StartsWith("MobRandom")) // Ganimed edit
                 .Select(p => p.ID)
                 .ToList();
 

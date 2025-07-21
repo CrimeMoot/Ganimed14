@@ -151,6 +151,7 @@
         acts: [ "Destruction" ]
   - type: CableVisualizer
     statePrefix: mvcable_
+    extraLayerPrefix: mvstripes_
 
 - type: entity
   id: CableMVUncuttable

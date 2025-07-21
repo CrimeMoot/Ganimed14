@@ -224,7 +224,8 @@ namespace Content.IntegrationTests.Tests
 
         //    await pair.CleanReturnAsync();
         }
-
+        
+        // ADT-Revert-Start
         /// <summary>
         /// This test checks that spawning and deleting an entity doesn't somehow create other unrelated entities.
         /// </summary>
@@ -239,7 +240,7 @@ namespace Content.IntegrationTests.Tests
         /// Note that this isn't really a strict requirement, and there are probably quite a few edge cases. Its a pretty
         /// crude test to try catch issues like this, and possibly should just be disabled.
         /// </remarks>
-        [Test]
+         [Test]
         public async Task SpawnAndDeleteEntityCountTest()
         {
             var settings = new PoolSettings { Connected = true, Dirty = true };
@@ -309,26 +310,35 @@ namespace Content.IntegrationTests.Tests
                         continue;
                     }
 
-                    // Check that the number of entities has increased.
-                    Assert.That(Count(server.EntMan), Is.GreaterThan(count), $"Server prototype {protoId} failed on spawning as entity count didn't increase\n" +
-                        BuildDiffString(serverEntities, Entities(server.EntMan), server.EntMan));
-                    Assert.That(Count(client.EntMan), Is.GreaterThan(clientCount), $"Client prototype {protoId} failed on spawning as entity count didn't increase\n" +
-                        $"Expected at least {clientCount} and found {client.EntMan.EntityCount}. " +
-                        $"Server count was {count}.\n" +
-                        BuildDiffString(clientEntities, Entities(client.EntMan), client.EntMan));
-
-                    await server.WaitPost(() => server.EntMan.DeleteEntity(uid));
-                    await pair.RunTicksSync(3);
-
-                    // Check that the number of entities has gone back to the original value.
-                    Warn.Unless(Count(server.EntMan), Is.EqualTo(count), $"Server prototype {protoId} failed on deletion: count didn't reset properly\n" +
-                        BuildDiffString(serverEntities, Entities(server.EntMan), server.EntMan));
-                    //Assert.That(client.EntMan.EntityCount, Is.EqualTo(clientCount), $"Client prototype {protoId} failed on deletion: count didn't reset properly:\n" +
-                    //    $"Expected {clientCount} and found {client.EntMan.EntityCount}.\n" +
-                    //    $"Server count was {count}.\n" +
-                    //    BuildDiffString(clientEntities, Entities(client.EntMan), client.EntMan));
+                // Check that the number of entities has increased.
+                if (Count(server.EntMan) <= count)
+                {
+                    Assert.Fail($"Server prototype {protoId} failed on spawning as entity count didn't increase");
                 }
-            });
+
+                if (Count(client.EntMan) <= clientCount)
+                {
+                    Assert.Fail($"Client prototype {protoId} failed on spawning as entity count didn't increase" +
+                                $"Expected at least {clientCount} and found {Count(client.EntMan)}. " +
+                                $"Server was {count}");
+                }
+
+                await server.WaitPost(() => server.EntMan.DeleteEntity(uid));
+                await pair.RunTicksSync(3);
+
+                // Check that the number of entities has gone back to the original value.
+                if (Count(server.EntMan) != count)
+                {
+                    Assert.Fail($"Server prototype {protoId} failed on deletion count didn't reset properly");
+                }
+
+                if (Count(client.EntMan) != clientCount)
+                {
+                    Assert.Fail($"Client prototype {protoId} failed on deletion count didn't reset properly:\n" +
+                                $"Expected {clientCount} and found {Count(client.EntMan)}.\n" +
+                                $"Server was {count}.");
+                }
+            }
 
             await pair.CleanReturnAsync();
         }
@@ -379,7 +389,8 @@ namespace Content.IntegrationTests.Tests
             }
             return false;
         }
-
+        // ADT-Revert-End
+        
         [Test]
         public async Task AllComponentsOneToOneDeleteTest()
         {

@@ -194,7 +194,6 @@
         - Ingot
         - PhantomEctoplasm
   - type: OreSiloClient
-
   - type: Lathe
     idleState: icon
     runningState: building
@@ -459,6 +458,8 @@
         - RawMaterial
         - Ingot
   - type: OreSiloClient
+  - type: LatheAnnouncing
+    channels: [Security]
 
 - type: entity
   id: AmmoTechFab
@@ -536,6 +537,8 @@
   - type: StealTarget
     stealGroup: MedicalTechFabCircuitboard
   - type: OreSiloClient
+  - type: LatheAnnouncing
+    channels: [Medical]
 
 - type: entity
   parent: BaseLathe
@@ -718,6 +721,7 @@
       tags:
       - Raw
       - Wooden
+      - Boll
   - type: Lathe
     idleState: base_machine
     runningState: base_machine_processing

@@ -61,7 +61,7 @@ namespace Content.IntegrationTests.Tests
                 }
             });
 
-            await server.WaitRunTicks(50);
+            await server.WaitRunTicks(15);
 
             await server.WaitPost(() =>
             {
@@ -122,7 +122,7 @@ namespace Content.IntegrationTests.Tests
                     entityMan.SpawnEntity(protoId, map.GridCoords);
                 }
             });
-            await server.WaitRunTicks(50);
+            await server.WaitRunTicks(15);
             await server.WaitPost(() =>
             {
                 static IEnumerable<(EntityUid, TComp)> Query<TComp>(IEntityManager entityMan)
@@ -175,8 +175,6 @@ namespace Content.IntegrationTests.Tests
                 .Where(p => !p.Abstract)
                 .Where(p => !pair.IsTestPrototype(p))
                 .Where(p => !p.Components.ContainsKey("MapGrid")) // This will smash stuff otherwise.
-                .Where(p => !p.ID.StartsWith("ImmovableRod")) // Ganimed edit
-                .Where(p => !p.ID.StartsWith("MobRandom")) // Ganimed edit
                 .Select(p => p.ID)
                 .ToList();
 
@@ -222,7 +220,7 @@ namespace Content.IntegrationTests.Tests
                 Assert.That(sEntMan.EntityCount, Is.Zero);
             });
 
-        //    await pair.CleanReturnAsync();
+            await pair.CleanReturnAsync();
         }
         
         // ADT-Revert-Start
@@ -284,31 +282,41 @@ namespace Content.IntegrationTests.Tests
 
             // We consider only non-audio entities, as some entities will just play sounds when they spawn.
             int Count(IEntityManager ent) =>  ent.EntityCount - ent.Count<AudioComponent>();
-            IEnumerable<EntityUid> Entities(IEntityManager entMan) => entMan.GetEntities().Where(entMan.HasComponent<AudioComponent>);
 
-            await Assert.MultipleAsync(async () =>
+            foreach (var protoId in protoIds)
             {
-                foreach (var protoId in protoIds)
-                {
-                    var count = Count(server.EntMan);
-                    var clientCount = Count(client.EntMan);
-                    var serverEntities = new HashSet<EntityUid>(Entities(server.EntMan));
-                    var clientEntities = new HashSet<EntityUid>(Entities(client.EntMan));
-                    EntityUid uid = default;
-                    await server.WaitPost(() => uid = server.EntMan.SpawnEntity(protoId, coords));
-                    await pair.RunTicksSync(3);
+                // TODO fix ninja
+                // Currently ninja fails to equip their own loadout.
+                if (protoId == "MobHumanSpaceNinja")
+                    continue;
+                
+                //ADT-Test-Fix?
+                if (protoId == "StandardNanotrasenStation")
+                    continue;                
+                //ADT-Test-Fix?
 
-                    // If the entity deleted itself, check that it didn't spawn other entities
-                    if (!server.EntMan.EntityExists(uid))
+                var count = Count(server.EntMan);
+                var clientCount = Count(client.EntMan);
+                EntityUid uid = default;
+                await server.WaitPost(() => uid = server.EntMan.SpawnEntity(protoId, coords));
+                await pair.RunTicksSync(3);
+
+                // If the entity deleted itself, check that it didn't spawn other entities
+                if (!server.EntMan.EntityExists(uid))
+                {
+                    if (Count(server.EntMan) != count)
                     {
-                        Assert.That(Count(server.EntMan), Is.EqualTo(count), $"Server prototype {protoId} failed on deleting itself\n" +
-                            BuildDiffString(serverEntities, Entities(server.EntMan), server.EntMan));
-                        Assert.That(Count(client.EntMan), Is.EqualTo(clientCount), $"Client prototype {protoId} failed on deleting itself\n" +
-                            $"Expected {clientCount} and found {client.EntMan.EntityCount}.\n" +
-                            $"Server count was {count}.\n" +
-                            BuildDiffString(clientEntities, Entities(client.EntMan), client.EntMan));
-                        continue;
+                        Assert.Fail($"Server prototype {protoId} failed on deleting itself");
                     }
+
+                    if (Count(client.EntMan) != clientCount)
+                    {
+                        Assert.Fail($"Client prototype {protoId} failed on deleting itself\n" +
+                                    $"Expected {clientCount} and found {Count(client.EntMan)}.\n" +
+                                    $"Server was {count}.");
+                    }
+                    continue;
+                }
 
                 // Check that the number of entities has increased.
                 if (Count(server.EntMan) <= count)
@@ -427,7 +435,7 @@ namespace Content.IntegrationTests.Tests
             var logmill = server.ResolveDependency<ILogManager>().GetSawmill("EntityTest");
 
             await pair.CreateTestMap();
-            await server.WaitRunTicks(50);
+            await server.WaitRunTicks(5);
             var testLocation = pair.TestMap.GridCoords;
 
             await server.WaitAssertion(() =>

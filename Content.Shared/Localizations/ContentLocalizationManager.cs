@@ -1,5 +1,6 @@
 using System.Globalization;
 using System.Linq;
+using System.Reflection;
 using System.Text.RegularExpressions;
 using Robust.Shared.Utility;
 
@@ -28,6 +29,14 @@ namespace Content.Shared.Localizations
         {
             var culture = new CultureInfo(Culture);
             var fallbackCulture = new CultureInfo(FallbackCulture);
+
+            // Костыль: руками создаём _locLoadErrors, чтобы избежать NullReferenceException
+            var field = _loc.GetType().GetField("_locLoadErrors", BindingFlags.NonPublic | BindingFlags.Instance);
+            if (field != null && field.GetValue(_loc) == null)
+            {
+                field.SetValue(_loc, new List<string>());
+            }
+
             try
             {
                 _loc.LoadCulture(culture);

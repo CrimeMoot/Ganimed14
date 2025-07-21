@@ -32,10 +32,12 @@
       shader: unshaded
     state: base
   - type: PointLight
-    color: "#FFE4CE" # 5000K color temp
-    energy: 0.8
-    radius: 10
-    softness: 1
+    # ADT-Sound-Update-Start
+    color: "#FAFFFF" # 5000K color temp
+    energy: 0.9
+    radius: 7
+    softness: 2.1
+    # ADT-Sound-Update-End
     offset: "0, -0.5"
   - type: Damageable
     damageContainer: Inorganic
@@ -268,6 +270,17 @@
       enabled: true
     - type: Physics
       bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeAabb
+            bounds: "-0.1,0.5,0.1,0.255"
+          density: 190
+          mask:
+          - None
+          layer:
+          - TabletopMachineLayer
     - type: Damageable
       damageContainer: Inorganic
     - type: Destructible

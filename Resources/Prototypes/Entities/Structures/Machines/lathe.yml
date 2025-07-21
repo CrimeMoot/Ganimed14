@@ -113,6 +113,7 @@
         - RawMaterial
         - Ingot
   - type: StationAiWhitelist #ADT-Tweak
+  - type: OreSiloClient
   - type: Lathe
     idleState: icon
     runningState: building
@@ -297,6 +298,7 @@
         - Sheet
         - RawMaterial
         - Ingot
+  - type: OreSiloClient
   - type: RequireProjectileTarget
 
 - type: entity
@@ -355,6 +357,7 @@
       - Sheet
       - RawMaterial
       - Ingot
+  - type: OreSiloClient
   - type: GuideHelp
     guides:
     - Robotics
@@ -490,6 +493,7 @@
           - Sheet
           - RawMaterial
           - Ingot
+    - type: OreSiloClient
 
 - type: entity
   id: MedicalTechFab
@@ -589,6 +593,7 @@
         - Sheet
         - RawMaterial
         - Ingot
+  - type: OreSiloClient
 
 - type: entity
   id: Biogenerator
@@ -758,3 +763,4 @@
         - Wooden
         - RawMaterial
         - Plastic
+  - type: OreSiloClient

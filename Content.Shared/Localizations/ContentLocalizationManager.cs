@@ -28,7 +28,6 @@ namespace Content.Shared.Localizations
         {
             var culture = new CultureInfo(Culture);
             var fallbackCulture = new CultureInfo(FallbackCulture);
-
             try
             {
                 _loc.LoadCulture(culture);
@@ -37,7 +36,6 @@ namespace Content.Shared.Localizations
             {
                 Console.Error.WriteLine($"Ошибка загрузки локали {Culture}: {e}");
             }
-        
             try
             {
                 _loc.LoadCulture(fallbackCulture);
@@ -46,7 +44,6 @@ namespace Content.Shared.Localizations
             {
                 Console.Error.WriteLine($"Ошибка загрузки локали {FallbackCulture}: {e}");
             }
-        
             _loc.SetFallbackCluture(fallbackCulture);
             _loc.Initialize();
             _loc.AddFunction(culture, "MANY", FormatMany); // Corvax-Localization: To prevent problems in auto-generated locale files

@@ -21,7 +21,7 @@
       traits:
       - Pacifist
       - Blindness
-      - Deaf
+      - ADTDeaf
       - Frail
     - !type:AgeRequirement # Ganimed-MRP
       requiredAge: 24

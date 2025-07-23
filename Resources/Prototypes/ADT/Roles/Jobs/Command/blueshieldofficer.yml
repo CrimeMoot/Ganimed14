@@ -3,6 +3,7 @@
   name: job-name-ADTBlueShieldOfficer
   description: job-description-ADTBlueShieldOfficer
   playTimeTracker: JobADTBlueShieldOfficer
+  requireAdminNotify: true # Ganimed Rules Tweak
   requirements:
     - !type:DepartmentTimeRequirement
       department: Command

@@ -3,7 +3,7 @@
   name: job-name-rd
   description: job-description-rd
   playTimeTracker: JobResearchDirector
-  requireAdminNotify: true # Ganimed
+  requireAdminNotify: true # Ganimed Rules Tweak
   requirements:
   - !type:RoleTimeRequirement
     role: JobScientist

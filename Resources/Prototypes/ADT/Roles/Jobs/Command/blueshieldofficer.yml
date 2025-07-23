@@ -185,6 +185,7 @@
                     dropItems: false
                   - !type:ComboPopupEffect
                     localeText: combo-leg-sweep-end
+        - type: AntagImmune # Ganimed-MRP: Loyalty implant
 
 - type: startingGear
   id: ADTBlueShieldOfficerGear

@@ -12,7 +12,7 @@
     department: Science
     time: 72000 #20 hrs Ganimed-RoleTime
   - !type:OverallPlaytimeRequirement
-    time:  126000 #35 hrs Ganimed-RoleTime
+    time: 126000 #35 hrs Ganimed-RoleTime
   weight: 10
   startingGear: ResearchDirectorGear
   icon: "JobIconResearchDirector"

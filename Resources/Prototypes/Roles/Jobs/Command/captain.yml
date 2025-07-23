@@ -3,7 +3,7 @@
   name: job-name-captain
   description: job-description-captain
   playTimeTracker: JobCaptain
-  requireAdminNotify: true # Ganimed
+  requireAdminNotify: true # Ganimed Rules Tweak
   requirements:
 #   - !type:DepartmentTimeRequirement
 #     department: Engineering
@@ -27,6 +27,7 @@
       traits:
 #     - Monolingual
       - Muted
+      - Deaf
   # ADT Restrict Start
     - !type:SpeciesRequirement
       inverted: true

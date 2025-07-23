@@ -3,6 +3,7 @@
   name: job-name-magistrat
   description: job-description-magistrat
   playTimeTracker: JobMagistrat
+  requireAdminNotify: true # Ganimed Rules Tweak
   requirements:
 # ADT-Tweak-start
     - !type:DepartmentTimeRequirement

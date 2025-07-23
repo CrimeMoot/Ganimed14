@@ -35,6 +35,8 @@
   - Service
   - External
   - Cryogenics
+#  extendedAccess: # Ganimed Tweak
+#  - Detective
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]

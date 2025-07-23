@@ -23,6 +23,8 @@
       - Blindness
       - Deaf
       - Frail
+    - !type:AgeRequirement # Ganimed-MRP
+      requiredAge: 24
   # ADT Restrict Start
     - !type:SpeciesRequirement
       inverted: true

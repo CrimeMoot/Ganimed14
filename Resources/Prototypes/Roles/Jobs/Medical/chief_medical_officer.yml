@@ -18,6 +18,8 @@
       time: 72000 #20 hrs Ganimed-RoleTime
     - !type:OverallPlaytimeRequirement
       time: 126000 #35 hrs Ganimed-RoleTime
+    - !type:AgeRequirement # Ganimed-MRP
+      requiredAge: 21
   weight: 10
   startingGear: CMOGear
   icon: "JobIconChiefMedicalOfficer"

@@ -17,8 +17,8 @@
   startingGear: ResearchDirectorGear
   icon: "JobIconResearchDirector"
   supervisors: job-supervisors-captain
-  canBeAntag: true # Ganimed-MRP: Heads can be antags
-  antagAdvantage: 5 # Ganimed-MRP
+  canBeAntag: true # Ganimed-MRP
+  antagAdvantage: 5 # Ganimed-MRP: Heads can be antags
   access:
   - Research
   - Command
@@ -27,7 +27,7 @@
   - Brig
   - Cryogenics
   special:
-#  - !type:AddImplantSpecial # Ganimed-MRP: Heads can be antags
+#  - !type:AddImplantSpecial # Ganimed-MRP
 #    implants: [ MindShieldImplant ] # Ganimed-MRP
   - !type:AddComponentSpecial
     components:

@@ -23,6 +23,7 @@
   icon: "JobIconChiefMedicalOfficer"
   supervisors: job-supervisors-captain
   canBeAntag: true # Ganimed-MRP
+  antagAdvantage: 5 # Ganimed-MRP
   access:
   - Medical
   - Command

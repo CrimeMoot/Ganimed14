@@ -4,8 +4,8 @@
   description: job-description-lawyer
   playTimeTracker: JobLawyer
   requirements:
-  - !type:OverallPlaytimeRequirement
-    time: 54000 # 15 hrs Ganimed-RoleTime
+    - !type:OverallPlaytimeRequirement
+      time: 54000 # 15 hrs Ganimed-RoleTime
 #  - !type:DepartmentTimeRequirement
 #    department: Security
 #    time: 18000 #5 hrs Ganimed-RoleTime

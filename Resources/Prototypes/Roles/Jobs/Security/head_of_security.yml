@@ -3,7 +3,7 @@
   name: job-name-hos
   description: job-description-hos
   playTimeTracker: JobHeadOfSecurity
-  requireAdminNotify: true # Ganimed
+  requireAdminNotify: true # Ganimed Rules Tweak
   requirements:
     - !type:RoleTimeRequirement
       role: JobWarden
@@ -21,14 +21,15 @@
       traits:
       - Pacifist
       - Blindness
-      - Muted
+      - Deaf
+      - Frail
   # ADT Restrict Start
     - !type:SpeciesRequirement
       inverted: true
       species:
       - Resomi
       - Vox
-#      - Shadekin
+      - Shadekin
   # ADT RESTRICT End
   weight: 10
   startingGear: HoSGear

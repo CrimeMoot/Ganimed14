@@ -22,6 +22,8 @@
 #      species:
 #      - Vox
 #       ADT tweak end
+    - !type:AgeRequirement # Ganimed-MRP
+      requiredAge: 21
   weight: 10
   startingGear: ChiefEngineerGear
   icon: "JobIconChiefEngineer"

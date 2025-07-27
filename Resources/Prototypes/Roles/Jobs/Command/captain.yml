@@ -5,12 +5,15 @@
   playTimeTracker: JobCaptain
   requireAdminNotify: true # Ganimed Rules Tweak
   requirements:
-#   - !type:DepartmentTimeRequirement
-#     department: Engineering
-#     time: 72000 #20 hrs # Corvax-RoleTime
-#   - !type:DepartmentTimeRequirement
-#     department: Medical
-#     time: 72000 #20 hrs # Corvax-RoleTime
+#    - !type:DepartmentTimeRequirement
+#      department: Engineering
+#      time: 14400 # 4 hours
+#    - !type:DepartmentTimeRequirement
+#      department: Medical
+#      time: 14400 # 4 hours
+#    - !type:DepartmentTimeRequirement
+#      department: Science
+#      time: 14400 # 4 hours
     - !type:RoleTimeRequirement
       role: JobHeadOfPersonnel
       time: 18000 #5 hrs Ganimed-RoleTime

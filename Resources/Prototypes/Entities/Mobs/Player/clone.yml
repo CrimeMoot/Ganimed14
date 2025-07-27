@@ -59,6 +59,7 @@
   - StutteringAccent
   - TTS # Corvax-TTS
 # Ganimed-Traits-Fix-Start
+  - LanguageSpeaker
   - SpeechBarks
   - SizeAttribute
   - Hemophilia

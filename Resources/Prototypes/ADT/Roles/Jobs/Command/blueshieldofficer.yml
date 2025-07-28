@@ -23,6 +23,12 @@
       - Resomi
       - Vox
   # ADT RESTRICT End
+    - !type:TraitsRequirement # Ganimed-MRP: BSO undergoes medical examination
+      inverted: true
+      traits:
+      - Pacifist
+      - Blindness
+      - Frail
   weight: 15
   startingGear: ADTBlueShieldOfficerGear
   icon: "JobIconADTBlueShieldOfficer"

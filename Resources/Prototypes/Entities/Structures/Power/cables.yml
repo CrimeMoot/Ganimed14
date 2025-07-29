@@ -61,7 +61,7 @@
     state: hvcable_0
     drawdepth: ThickWire
   - type: Icon
-    sprite: Structures/Power/Cables/hv_cable.rsi
+    sprite: _Ganimed/Structures/Power/Cables/hv_cable.rsi
     state: hvcable_4
   - type: NodeContainer
     nodes:
@@ -115,13 +115,12 @@
   description: A medium voltage power cable.
   components:
   - type: Sprite
-    sprite: Structures/Power/Cables/mv_cable.rsi
+    sprite:  _Ganimed/Structures/Power/Cables/mv_cable.rsi
     layers:
     - state: mvcable_0
       color: Yellow
-    - state: mvstripes_0
   - type: Icon
-    sprite: Structures/Power/Cables/mv_cable.rsi
+    sprite: _Ganimed/Structures/Power/Cables/mv_cable.rsi
     state: mvcable_4
   - type: NodeContainer
     nodes:

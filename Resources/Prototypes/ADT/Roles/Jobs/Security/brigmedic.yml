@@ -25,7 +25,7 @@
   - Brig
   - Maintenance
   - External
-  extendedAccess:
+  extendedAccess: # Ganimed-Tweak
   - Cryogenics
   special:
   - !type:AddImplantSpecial

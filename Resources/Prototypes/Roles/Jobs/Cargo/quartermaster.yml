@@ -7,10 +7,10 @@
   requirements:
     - !type:RoleTimeRequirement
       role: JobCargoTechnician
-      time: 18000 #5 hrs # Ganimed-RoleTime
+      time: 21600 #6 hrs # Ganimed-RoleTime
     - !type:RoleTimeRequirement
       role: JobSalvageSpecialist
-      time: 36000 #10 hrs # Corvax-RoleTime
+      time: 21600 #6 hrs # Ganimed-RoleTime
     - !type:DepartmentTimeRequirement
       department: Cargo
       time: 72000 #20 hours # Ganimed-RoleTime

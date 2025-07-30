@@ -15,7 +15,7 @@
       department: Engineering
       time: 72000 #20 hrs Ganimed-RoleTime
     - !type:OverallPlaytimeRequirement
-      time: 126000 #35 hrs Ganimed-RoleTime
+      time: 144000 #40 hrs Ganimed-RoleTime
 #       ADT tweak start
 #    - !type:SpeciesRequirement
 #      inverted: true

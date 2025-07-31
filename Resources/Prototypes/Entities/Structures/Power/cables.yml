@@ -61,7 +61,7 @@
     state: hvcable_0
     drawdepth: ThickWire
   - type: Icon
-    sprite: _Ganimed/Structures/Power/Cables/hv_cable.rsi
+    sprite: Structures/Power/Cables/hv_cable.rsi
     state: hvcable_4
   - type: NodeContainer
     nodes:
@@ -114,13 +114,13 @@
   name: MV power cable
   description: A medium voltage power cable.
   components:
-  - type: Sprite
-    sprite:  _Ganimed/Structures/Power/Cables/mv_cable.rsi
-    layers:
-    - state: mvcable_0
-      color: Yellow
+  - type: Sprite 
+#    color: Yellow #Ganimed-Tweak
+    sprite: _Ganimed/Structures/Power/Cables/mv_cable.rsi #Ganimed-resprite
+    state: mvcable_0
   - type: Icon
-    sprite: _Ganimed/Structures/Power/Cables/mv_cable.rsi
+#    color: Yellow
+    sprite: _Ganimed/Structures/Power/Cables/mv_cable.rsi #Ganimed-resprite
     state: mvcable_4
   - type: NodeContainer
     nodes:
@@ -151,7 +151,6 @@
         acts: [ "Destruction" ]
   - type: CableVisualizer
     statePrefix: mvcable_
-    extraLayerPrefix: mvstripes_
 
 - type: entity
   id: CableMVUncuttable

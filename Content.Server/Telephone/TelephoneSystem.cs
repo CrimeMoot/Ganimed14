@@ -124,7 +124,7 @@ public sealed class TelephoneSystem : SharedTelephoneSystem
             EnsureComp<TTSComponent>(speaker, out var ttsTelephone);
             ttsTelephone.VoicePrototypeId = ttsSpeaker.VoicePrototypeId;
         }
-        else if(TryComp<SpeechBarksComponent>(args.MessageSource, out var barkSpeaker))
+        if(TryComp<SpeechBarksComponent>(args.MessageSource, out var barkSpeaker))
         {
             EnsureComp<SpeechBarksComponent>(speaker, out var barkTelephone);
             barkTelephone.Data = barkSpeaker.Data;
@@ -165,10 +165,12 @@ public sealed class TelephoneSystem : SharedTelephoneSystem
             {
                 // Try to play ring tone if ringing
                 case TelephoneState.Ringing:
-                    if (_timing.CurTime > telephone.StateStartTime + TimeSpan.FromSeconds(telephone.RingingTimeout))
-                        EndTelephoneCalls(entity);
+                    // Ganimed edit start
+                    // if (_timing.CurTime > telephone.StateStartTime + TimeSpan.FromSeconds(telephone.RingingTimeout))
+                    //    EndTelephoneCalls(entity);
+                    // Ganimed edit start end
 
-                    else if (telephone.RingTone != null &&
+                    if (telephone.RingTone != null &&
                         _timing.CurTime > telephone.NextRingToneTime)
                     {
                         _audio.PlayPvs(telephone.RingTone, uid);
@@ -179,15 +181,19 @@ public sealed class TelephoneSystem : SharedTelephoneSystem
 
                 // Try to hang up if there has been no recent in-call activity
                 case TelephoneState.InCall:
-                    if (_timing.CurTime > telephone.StateStartTime + TimeSpan.FromSeconds(telephone.IdlingTimeout))
-                        EndTelephoneCalls(entity);
+                    // Ganimed edit start
+                    // if (_timing.CurTime > telephone.StateStartTime + TimeSpan.FromSeconds(telephone.IdlingTimeout))
+                    //    EndTelephoneCalls(entity);
+                    // Ganimed edit start end
 
                     break;
 
                 // Try to terminate if the telephone has finished hanging up
                 case TelephoneState.EndingCall:
-                    if (_timing.CurTime > telephone.StateStartTime + TimeSpan.FromSeconds(telephone.HangingUpTimeout))
-                        TerminateTelephoneCalls(entity);
+                    // Ganimed edit start
+                    // if (_timing.CurTime > telephone.StateStartTime + TimeSpan.FromSeconds(telephone.HangingUpTimeout))
+                    //    TerminateTelephoneCalls(entity);
+                    // Ganimed edit start end
 
                     break;
             }

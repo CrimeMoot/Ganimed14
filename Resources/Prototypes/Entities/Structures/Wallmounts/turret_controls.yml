@@ -191,6 +191,7 @@
     - BasicSilicon
     - Borg
   - type: DeployableTurretController
+    accessGroups:
     - Silicon
     accessLevels:
     - BasicSilicon

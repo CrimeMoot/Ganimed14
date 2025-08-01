@@ -175847,7 +175847,7 @@ entities:
       - invalid
       deviceLists:
       - 28399
-- proto: WeaponEnergyTurretStationControlPanel
+- proto: WeaponEnergyTurretCommandControlPanel
   entities:
   - uid: 27988
     components:

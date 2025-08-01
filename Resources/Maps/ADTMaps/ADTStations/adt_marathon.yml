@@ -141514,7 +141514,7 @@ entities:
     - type: Transform
       pos: -38.42729,60.595303
       parent: 2
-- proto: WeaponEnergyTurretAI
+- proto: WeaponEnergyTurretStation
   entities:
   - uid: 37
     components:

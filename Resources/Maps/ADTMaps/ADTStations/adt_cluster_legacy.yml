@@ -62031,7 +62031,7 @@ entities:
     - type: Transform
       pos: 15.558934,-17.394512
       parent: 2
-- proto: WeaponEnergyTurretAI
+- proto: WeaponEnergyTurretStation
   entities:
   - uid: 5793
     components:

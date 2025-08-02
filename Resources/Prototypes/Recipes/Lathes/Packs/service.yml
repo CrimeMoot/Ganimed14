@@ -6,8 +6,8 @@
   - Mousetrap  # ADT Tweak
   - TrashBag  # ADT Tweak
   - ADTPlantAnalyzer # ADT Tweak
-  - BotanicDNADisk # Ganimed
   - Bucket
+  - Ashtray
   - DrinkMug
   - DrinkMugMetal
   - DrinkGlass
@@ -55,6 +55,7 @@
   id: Instruments
   recipes:
   - SynthesizerInstrument
+  - PushHorn
 
 - type: latheRecipePack
   id: ServiceBoards

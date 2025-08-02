@@ -1,0 +1,17 @@
+- type: entity
+  parent: BaseItem
+  id: FireSensorAssembly
+  name: fire sensor assembly
+  description: Fire sensor assembly. An assembly of fire sensors?
+  components:
+  - type: Item
+    size: Small
+  - type: Anchorable
+  - type: Construction
+    graph: FireSensor
+    node: assembly
+  - type: Sprite
+    drawdepth: FloorObjects
+    sprite: Structures/Specific/Atmospherics/sensor.rsi
+    layers:
+    - state: gsensor0

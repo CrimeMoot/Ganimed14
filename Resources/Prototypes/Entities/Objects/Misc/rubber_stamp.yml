@@ -51,9 +51,9 @@
   - type: Stamp
     stampedName: stamp-component-stamped-name-captain
     stampedColor: "#3681bb"
-    stampState: "paper_stamp-cap"
+    stampState: "paper_stamp-ce"
   - type: Sprite
-    state: stamp-cap
+    state: stamp-ce
 
 - type: entity
   name: CentComm rubber stamp
@@ -158,9 +158,9 @@
   - type: Stamp
     stampedName: stamp-component-stamped-name-hos
     stampedColor: "#cc0000"
-    stampState: "paper_stamp-hos"
+    stampState: "paper_stamp-cap"
   - type: Sprite
-    state: stamp-hos
+    state: stamp-cap
 
 - type: entity
   name: mime's rubber stamp

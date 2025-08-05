@@ -197,6 +197,16 @@
     sprite: _Ganimed/Objects/Fun/toys.rsi
     state: bex
 
+- type: entity
+  parent: BasePlushie
+  id: PlushieParamedic
+  name: paramedic plushie
+  description: A stuffed toy that resembles an emergency medical technician. For some reason, you can't take off his glasses.
+  components:
+  - type: Sprite
+    sprite: _Ganimed/Objects/Fun/toys.rsi
+    state: andrew
+
 #- type: entity
 #  name: Ganimed Plushies Spawner
 #  id: GanimedPlushiesSpawner

@@ -50,7 +50,7 @@
   components:
   - type: Stamp
     stampedName: stamp-component-stamped-name-captain
-    stampedColor: "#3681bb"
+    stampedColor: "#c69b17"
     stampState: "paper_stamp-ce"
   - type: Sprite
     state: stamp-ce
@@ -157,7 +157,7 @@
   components:
   - type: Stamp
     stampedName: stamp-component-stamped-name-hos
-    stampedColor: "#cc0000"
+    stampedColor: "#3681bb"
     stampState: "paper_stamp-cap"
   - type: Sprite
     state: stamp-cap
@@ -285,7 +285,7 @@
   components:
   - type: Stamp
     stampedName: stamp-component-stamped-name-greytide
-    stampedColor: "#323232"
+    stampedColor: "#101010"
     stampState: "paper_stamp-greytide"
   - type: Sprite
     state: stamp-greytide

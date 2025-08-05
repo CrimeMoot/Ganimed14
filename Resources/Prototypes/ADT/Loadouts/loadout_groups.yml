@@ -654,7 +654,7 @@
   name: loadout-group-medical-intern-id-adt
   loadouts:
   - MedicalInternPDA
-  - ADTPracticalNursePDA
+  # - ADTPracticalNursePDA
   - ADTResidentPDA
 
 - type: loadoutGroup

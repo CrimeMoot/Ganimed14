@@ -1,7 +1,8 @@
 - type: loadout
   id: Agzamovstunbatonloadout
-  equipment:
-    back: StunbatonAgzamov
+  storage:
+    back:
+    - StunbatonAgzamov
   effects:
     - !type:SponsorLoadoutEffect
       tier: 3

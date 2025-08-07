@@ -4,8 +4,8 @@ meta:
   engineVersion: 255.1.0
   forkId: ""
   forkVersion: ""
-  time: 08/04/2025 08:45:28
-  entityCount: 6213
+  time: 08/07/2025 18:41:40
+  entityCount: 6205
 maps:
 - 1
 grids:
@@ -2253,6 +2253,8 @@ entities:
         chunkSize: 4
     - type: GasTileOverlay
     - type: RadiationGridResistance
+    - type: BecomesStation
+      id: ENT_Salud
   - uid: 4
     mapInit: true
     paused: true
@@ -3002,13 +3004,6 @@ entities:
     components:
     - type: Transform
       pos: -20.692902,18.365637
-      parent: 2
-- proto: ADTCommandBudgetCard
-  entities:
-  - uid: 156
-    components:
-    - type: Transform
-      pos: 7.4294167,-11.3172035
       parent: 2
 - proto: ADTComputerShuttleSalvage
   entities:
@@ -4618,7 +4613,7 @@ entities:
       pos: 16.5,12.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -22045.951
+      secondsUntilStateChange: -22105.441
       state: Opening
     - type: DeviceLinkSource
       lastSignals:

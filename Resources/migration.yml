@@ -715,3 +715,6 @@ ADTIconAdventureTime: null
 #Ganimed 2025-06-14
 ADTPoweredShuttleLight: AlwaysPoweredWallLight
 ADTPoweredShuttleLightLED: AlwaysPoweredWallLight
+
+#Gamimed 2025-08-09
+BookSpaceLaw: ADTBookSpaceLaw

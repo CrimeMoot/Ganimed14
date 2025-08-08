@@ -1,8 +1,8 @@
 - type: entity
   id: ADTBookSpaceLaw
   parent: BaseItem
-  name: space law
-  description: A set of Nanotrasen guidelines for keeping law and order on their space stations.
+  name: Корпоративный закон
+  description: Набор правил NanoTrasen для поддержания закона и порядка на своих космических станциях.
   components:
   - type: Sprite
     sprite: ADT/Objects/Misc/books.rsi

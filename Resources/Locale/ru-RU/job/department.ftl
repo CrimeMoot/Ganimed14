@@ -1,7 +1,7 @@
 department-Cargo = Отдел снабжения
 department-Civilian = Сервисный отдел
 department-Command = Командование
-department-CentralCommand = Центральное командование
+department-CentralCommand = Секторальный комитет
 department-Engineering = Инженерный отдел
 department-Medical = Медицинский отдел
 department-Security = Милиция

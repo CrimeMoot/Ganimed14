@@ -277,6 +277,10 @@ namespace Content.Server.Forensics
             return Convert.ToHexString(fingerprint);
         }
 
+        /// <summary>
+        /// Generates a random 16-character DNA string composed of the bases A, C, G, and T.
+        /// </summary>
+        /// <returns>A 16-character string where each character is one of 'A', 'C', 'G', or 'T'.</returns>
         public string GenerateDNA()
         {
             var letters = new[] { "A", "C", "G", "T" };
@@ -290,6 +294,17 @@ namespace Content.Server.Forensics
             return DNA;
         }
 
+        /// <summary>
+        /// Applies trace forensic evidence from <paramref name="user"/> onto <paramref name="target"/>.
+        /// </summary>
+        /// <remarks>
+        /// Ensures the target has a <see cref="ForensicsComponent"/> and then:
+        /// - If the target does not have <see cref="IgnoresFingerprintsComponent"/>, attempts to copy the user's fingerprint (if present and accessible) into the target's fingerprint list.
+        /// - If the user is wearing gloves with a <see cref="FiberComponent"/> that specifies a material, adds a localized fiber description (including color when available) to the target's fibers list.
+        /// The fingerprint value may be an empty string if the user's fingerprint component exists but has no value.
+        /// </remarks>
+        /// <param name="user">The entity applying the evidence (source of fingerprint/fibers).</param>
+        /// <param name="target">The entity receiving the evidence.</param>
         public void ApplyEvidence(EntityUid user, EntityUid target) // Ganimed edit
         {
             if (HasComp<IgnoresFingerprintsComponent>(target))

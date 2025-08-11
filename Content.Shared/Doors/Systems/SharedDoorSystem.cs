@@ -352,7 +352,13 @@ public abstract partial class SharedDoorSystem : EntitySystem
     /// <param name="door"> The doorcomponent of the door</param>
     /// <param name="user"> The user (if any) opening the door</param>
     /// <param name="predicted">Whether the interaction would have been
-    /// predicted. See comments in the PlaySound method on the Server system for details</param>
+    /// <summary>
+    /// Begins the process of opening the specified door: transitions its state to Opening, schedules its next state change, plays the open sound (predicted for the client or server-broadcast), and, if the door was previously emagged, toggles bolts as appropriate.
+    /// </summary>
+    /// <param name="uid">The entity id of the door.</param>
+    /// <param name="door">Optional resolved DoorComponent for the entity; if not supplied it will be resolved. If resolution fails the method is a no-op.</param>
+    /// <param name="user">Optional user entity who initiated the open (used for predicted audio).</param>
+    /// <param name="predicted">If true, play predicted (client-side) audio; otherwise play server-side PVS audio when running on the server.</param>
     public virtual void StartOpening(EntityUid uid, DoorComponent? door = null, EntityUid? user = null, bool predicted = false) // Ganimed edit
     {
         if (!Resolve(uid, ref door))
@@ -426,7 +432,18 @@ public abstract partial class SharedDoorSystem : EntitySystem
     /// </summary>
     /// <param name="uid"> The uid of the door</param>
     /// <param name="door"> The doorcomponent of the door</param>
-    /// <param name="user"> The user (if any) opening the door</param>
+    /// <summary>
+    /// Determines whether the door can begin or continue closing.
+    /// </summary>
+    /// <remarks>
+    /// Checks that the door component exists, that the door is not welded or already closed,
+    /// raises <see cref="BeforeDoorClosedEvent"/> (which can cancel the action), verifies access,
+    /// and — if a collision check is required — ensures no entities are currently colliding with the door.
+    /// </remarks>
+    /// <param name="uid">The door entity.</param>
+    /// <param name="user">The user (if any) attempting to close the door.</param>
+    /// <param name="partial">If true, the check is for a partial close operation.</param>
+    /// <returns>True if the door may close; false otherwise.</returns>
     public bool CanClose(EntityUid uid, DoorComponent? door = null, EntityUid? user = null, bool partial = false)
     {
         if (!Resolve(uid, ref door))
@@ -448,6 +465,18 @@ public abstract partial class SharedDoorSystem : EntitySystem
         return !ev.PerformCollisionCheck || !GetColliding(uid).Any();
     }
 
+    /// <summary>
+    /// Begin the door closing sequence for the given entity.
+    /// </summary>
+    /// <remarks>
+    /// Attempts to resolve the <see cref="DoorComponent"/> and set the door's target state to <see cref="DoorState.Closing"/>.
+    /// If the component cannot be resolved or the state change is refused, the method returns without side effects.
+    /// Plays the appropriate close sound: predicted audio when <paramref name="predicted"/> is true, otherwise server-side PVS audio.
+    /// </remarks>
+    /// <param name="uid">The entity id of the door.</param>
+    /// <param name="door">Optional resolved <see cref="DoorComponent"/>; if null the method will try to resolve it.</param>
+    /// <param name="user">Optional user entity used as the audio prediction origin/target.</param>
+    /// <param name="predicted">If true, play predicted (client-side) audio; otherwise play server-side PVS audio.</param>
     public virtual void StartClosing(EntityUid uid, DoorComponent? door = null, EntityUid? user = null, bool predicted = false) // Ganimed edit
     {
         if (!Resolve(uid, ref door))

@@ -9,7 +9,6 @@ using Content.Shared.FixedPoint;
 using Content.Shared.Inventory;
 using Content.Shared.Inventory.Events;
 using Robust.Shared.Containers;
-using Content.Shared._Ganimed.Components; //ganimed - immersive spacing
 
 namespace Content.Server.Atmos.EntitySystems
 {
@@ -247,12 +246,6 @@ namespace Content.Server.Atmos.EntitySystems
                     }
 
                     _alertsSystem.ShowAlert(uid, barotrauma.LowPressureAlert, 2);
-                    // <Ganimed - immersive spacing>
-                    if (HasComp<SpaceAudioVulnerableComponent>(uid))
-                    {
-                        EnsureComp<SpacedAudioComponent>(uid);
-                    }
-                    // </Ganimed - immersive spacing>
                 }
                 else if (pressure >= Atmospherics.HazardHighPressure)
                 {
@@ -277,12 +270,7 @@ namespace Content.Server.Atmos.EntitySystems
                         barotrauma.TakingDamage = false;
                         _adminLogger.Add(LogType.Barotrauma, $"{ToPrettyString(uid):entity} stopped taking pressure damage");
                     }
-                    // <Ganimed - immersive spacing>
-                    if (HasComp<SpacedAudioComponent>(uid))
-                    {
-                        RemComp<SpacedAudioComponent>(uid);
-                    }
-                    // </Ganimed - immersive spacing>
+
                     // Set correct alert.
                     switch (pressure)
                     {

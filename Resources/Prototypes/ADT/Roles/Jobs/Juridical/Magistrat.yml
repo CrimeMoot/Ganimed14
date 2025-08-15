@@ -44,6 +44,10 @@
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
+  - !type:AddComponentSpecial
+    components:
+      - type: CommandStaff
+      - type: AntagImmune # Ganimed-MRP: Loyalty implant
 
 - type: startingGear
   id: MagistratGear
@@ -53,17 +57,19 @@
     shoes: ClothingShoesBootsLaceup
     #mask: Ну что за косипор оставляет пустуе значения?
     #outerClothing: ClothingOuterRobesJudge
-    eyes: ClothingEyesGlassesSunglasses
+    eyes: ClothingEyesGlassesCommand
     #head: ClothingHeadHatPwig
     id: MagistratPDA
     #gloves:
     ears: ClothingHeadsetMagistrat
-    #belt:
-    neck: ClothingNeckLawyerbadge
+    belt: ClothingBeltStorageWaistbag
+    #neck: ClothingNeckLawyerbadge
     pocket2: RubberStampMagisrat
   storage:
     back:
     - Flash
+    - WeaponDisabler
+    - Zipties
   # ADT-TelescopicBaton
     - ADTtelescopicBaton
   # ADT-TelescopicBaton

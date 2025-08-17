@@ -70,7 +70,7 @@ public sealed class JukeboxSystem : SharedJukeboxSystem
                 Volume = 1f
             };
 
-            component.AudioStream = Audio.PlayPvs(jukeboxProto.Path, uid, audioParams)?.Entity;
+            component.AudioStream = Audio.PlayPvs(jukeboxProto.Path, uid, AudioParams.Default.WithMaxDistance(10f).WithVolume(MapToRange(component.Volume, component.MinSlider, component.MaxSlider, component.MinVolume, component.MaxVolume)))?.Entity;
             // Ganimed edit end
             Dirty(uid, component);
         }

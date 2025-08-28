@@ -145,9 +145,9 @@
   - type: SlimeHair # ADT-SlimeHair
   - type: SizeAttributeWhitelist # Frontier
     tall: true
-    tallscale: 1.05
+    tallscale: 1
     short: true
-    shortscale: 0.95
+    shortscale: 0.9
   #- type: Geras - до переработки
   - type: Uncloneable
   - type: Temperature

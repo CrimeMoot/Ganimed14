@@ -85,7 +85,7 @@ public sealed class JukeboxSystem : SharedJukeboxSystem
             audioComp.Playing)
         {
             var position = audioComp.PlaybackPosition;
-            var volume = audioComp.Volume;
+            var volume = MapToRange(ent.Comp.Volume, ent.Comp.MinSlider, ent.Comp.MaxSlider, ent.Comp.MinVolume, ent.Comp.MaxVolume);
             var songId = ent.Comp.SelectedSongId;
 
             ent.Comp.AudioStream = Audio.Stop(ent.Comp.AudioStream);

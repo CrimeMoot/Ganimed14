@@ -63,7 +63,15 @@ public sealed class JukeboxSystem : SharedJukeboxSystem
                 return;
             }
 
-            component.AudioStream = Audio.PlayPvs(jukeboxProto.Path, uid, AudioParams.Default.WithMaxDistance(10f).WithVolume(MapToRange(component.Volume, component.MinSlider, component.MaxSlider, component.MinVolume, component.MaxVolume)))?.Entity;
+            component.AudioStream = Audio.PlayPvs(
+                jukeboxProto.Path,
+                uid,
+                new AudioParams
+                {
+                    MaxDistance = 10f,
+                    Loop = component.Loop,
+                    Volume = MapToRange(component.Volume, component.MinSlider, component.MaxSlider, component.MinVolume, component.MaxVolume)
+                })?.Entity;
             Dirty(uid, component);
         }
     }
@@ -77,9 +85,10 @@ public sealed class JukeboxSystem : SharedJukeboxSystem
             audioComp.Playing)
         {
             var position = audioComp.PlaybackPosition;
+            var volume = audioComp.Volume;
             var songId = ent.Comp.SelectedSongId;
 
-            Audio.Stop(ent.Comp.AudioStream);
+            ent.Comp.AudioStream = Audio.Stop(ent.Comp.AudioStream);
 
             if (_protoManager.TryIndex(songId, out var jukeboxProto))
             {
@@ -87,10 +96,10 @@ public sealed class JukeboxSystem : SharedJukeboxSystem
                 {
                     MaxDistance = 10f,
                     Loop = ent.Comp.Loop,
-                    Volume = audioComp.Volume
+                    Volume = volume
                 };
 
-                ent.Comp.AudioStream = Audio.PlayPvs(jukeboxProto.Path, ent, audioParams)?.Entity;
+                ent.Comp.AudioStream = Audio.PlayPvs(jukeboxProto.Path, ent.Owner, audioParams)?.Entity;
 
                 if (ent.Comp.AudioStream != null)
                 {
@@ -191,7 +200,6 @@ public sealed class JukeboxSystem : SharedJukeboxSystem
         Dirty(uid, component);
     }
     /// ADT-Tweak end
-    
     private void OnComponentShutdown(EntityUid uid, JukeboxComponent component, ComponentShutdown args)
     {
         component.AudioStream = Audio.Stop(component.AudioStream);

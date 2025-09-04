@@ -50,6 +50,7 @@ namespace Content.Server.Database
                 .Include(p => p.Profiles).ThenInclude(h => h.Jobs)
                 .Include(p => p.Profiles).ThenInclude(h => h.Antags)
                 .Include(p => p.Profiles).ThenInclude(h => h.Traits)
+                .Include(p => p.Profiles).ThenInclude(h => h.AltTitles) // Ganimed-JobAlt: ensure loaded on login
                 // ADT Start
                 .Include(p => p.Profiles).ThenInclude(h => h.Languages)
                 .Include(p => p.Profiles)
@@ -108,6 +109,7 @@ namespace Content.Server.Database
                 .Include(p => p.Jobs)
                 .Include(p => p.Antags)
                 .Include(p => p.Traits)
+                .Include(p => p.AltTitles) // Ganimed-JobAlt: ensure tracked for proper Clear()
                 // ADT Start
                 .Include(p => p.Languages)
                 .Include(p => p.Loadouts)
@@ -237,15 +239,15 @@ namespace Content.Server.Database
             }
 
             // Ganimed-JobAlt-start
-            var altTitles = new Dictionary<ProtoId<JobPrototype>, ProtoId<JobAlternateTitlePrototype>>();
-
-            foreach (var role in profile.AltTitles)
-            {
-                altTitles.Add(
-                    new ProtoId<JobPrototype>(role.RoleName),
-                    new ProtoId<JobAlternateTitlePrototype>(role.AlternateTitle)
+            // Может быть несколько записей на одну роль — выбираем последнюю по Id
+            var altTitles = profile.AltTitles
+                .GroupBy(r => r.RoleName)
+                .ToDictionary(
+                    g => new ProtoId<JobPrototype>(g.Key),
+                    g => new ProtoId<JobAlternateTitlePrototype>(g
+                        .OrderByDescending(x => x.Id)
+                        .First().AlternateTitle)
                 );
-            }
             // Ganimed-JobAlt-end
             var loadouts = new Dictionary<string, RoleLoadout>();
 

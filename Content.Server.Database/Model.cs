@@ -48,6 +48,7 @@ namespace Content.Server.Database
 		public DbSet<BookPrinterEntry> BookPrinterEntry { get; set; } = null!; // ADT-BookPrinter
         public DbSet<DiscordUser> DiscordUser { get; set; } = null!; // ADT-Discord
         public DbSet<IPIntelCache> IPIntelCache { get; set; } = null!;
+        public DbSet<DBJobAlternateTitle> DBJobAlternateTitle { get; set; } = null!; // Ganimed-JobAlt
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -129,6 +130,17 @@ namespace Content.Server.Database
                 .HasIndex(j => new { j.ProfileId, j.JobName })
                 .IsUnique();
 
+            // Ganimed-JobAlt start
+            modelBuilder.Entity<DBJobAlternateTitle>()
+                .HasOne(e => e.Profile)
+                .WithMany(e => e.AltTitles)
+                .HasForeignKey(e => e.ProfileId)
+                .IsRequired();
+
+            modelBuilder.Entity<DBJobAlternateTitle>()
+                .HasIndex(p => new { p.ProfileId, p.RoleName, p.AlternateTitle })
+                .IsUnique();
+            // Ganimed-JobAlt end
             modelBuilder.Entity<AssignedUserId>()
                 .HasIndex(p => p.UserName)
                 .IsUnique();
@@ -456,7 +468,7 @@ namespace Content.Server.Database
         public List<Antag> Antags { get; } = new();
         public List<Trait> Traits { get; } = new();
 
-        public List<DBJobAlternateTitle> AltTitles = new(); // Ganimed-JobAlt
+        public List<DBJobAlternateTitle> AltTitles { get; } = new(); // Ganimed-JobAlt
         public List<Language> Languages { get; } = new(); // ADT Languages
 
         public List<ProfileRoleLoadout> Loadouts { get; } = new();

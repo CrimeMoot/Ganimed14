@@ -98,57 +98,56 @@ public sealed partial class RequirementsSelector : BoxContainer
 
         Help.Visible = guides != null;
         _guides = guides;
-        
         // Ganimed edit start
         TitleContent.MinSize = new Vector2(titleSize, 0f);
 
         if (altTitles != null && altTitles.Count > 0 && protoMan != null)
         {
-            _altTitles = new List<ProtoId<JobAlternateTitlePrototype>>();
-            foreach (var entry in altTitles)
+            _altTitles = new List<ProtoId<JobAlternateTitlePrototype>>(altTitles);
+
+            var titleOptions = new OptionButton
             {
-                _altTitles.Add(entry);
-            }
+                ToolTip = description
+            };
 
-            var titleOptions = new OptionButton();
-            titleOptions.ToolTip = description;
-
-            var defaultTitle = new JobAlternateTitlePrototype();
-
-            if (defaultAltTitle != null)
-            {
-                if (protoMan.TryIndex(defaultAltTitle, out defaultTitle))
-                {
-                    titleOptions.AddItem(defaultTitle.LocalizedName);
-                }
-            }
             titleOptions.AddItem(title);
 
-            foreach (var id in altTitles)
+            foreach (var id in _altTitles)
             {
-                if (defaultTitle != null && id == defaultTitle.ID)
-                    continue;
-
                 var altTitle = protoMan.Index(id);
                 titleOptions.AddItem(altTitle.LocalizedName);
             }
             TitleContent.AddChild(titleOptions);
 
+            if (defaultAltTitle != null)
+            {
+                var index = _altTitles.FindIndex(x => x == defaultAltTitle);
+                if (index >= 0)
+                    titleOptions.SelectId(index + 1);
+                else
+                    titleOptions.SelectId(0);
+            }
+            else
+            {
+                titleOptions.SelectId(0);
+            }
+
             titleOptions.OnItemSelected += args =>
             {
                 titleOptions.SelectId(args.Id);
-                if (args.Id - 1 < 0)
+                if (args.Id == 0)
                     OnSelectedTitle?.Invoke(null);
                 else
                     OnSelectedTitle?.Invoke(_altTitles[args.Id - 1]);
             };
-
         }
         else
         {
-            var titleLabel = new Label();
-            titleLabel.ToolTip = description;
-            titleLabel.Text = title;
+            var titleLabel = new Label
+            {
+                ToolTip = description,
+                Text = title
+            };
             TitleContent.AddChild(titleLabel);
         }
         // Ganimed edit end

@@ -1,11 +1,15 @@
+using Content.Shared.ADT.Crawling; // Ganimed edit
+using Content.Shared.Standing; // Ganimed edit
 using Content.Shared.Bed.Sleep;
 using Content.Shared.StatusEffect;
 using Robust.Shared.Random;
+using Content.Shared.Buckle.Components; // Ganimed edit
 
 namespace Content.Server.Traits.Assorted;
 
 /// <summary>
-/// This handles narcolepsy, causing the affected to fall asleep uncontrollably at a random interval.
+/// Handles narcolepsy, causing the affected to fall asleep uncontrollably at random intervals.
+/// Now respects StrapComponent: sleeping while buckled does not break walking speed.
 /// </summary>
 public sealed class NarcolepsySystem : EntitySystem
 {
@@ -14,8 +18,8 @@ public sealed class NarcolepsySystem : EntitySystem
 
     [Dependency] private readonly StatusEffectsSystem _statusEffects = default!;
     [Dependency] private readonly IRobustRandom _random = default!;
+    [Dependency] private readonly StandingStateSystem _standing = default!; // Ganimed edit
 
-    /// <inheritdoc/>
     public override void Initialize()
     {
         SubscribeLocalEvent<NarcolepsyComponent, ComponentStartup>(SetupNarcolepsy);
@@ -56,8 +60,16 @@ public sealed class NarcolepsySystem : EntitySystem
             // Make sure the sleep time doesn't cut into the time to next incident.
             narcolepsy.NextIncidentTime += duration;
 
-            _statusEffects.TryAddStatusEffect<ForcedSleepingComponent>(uid, StatusEffectKey,
-                TimeSpan.FromSeconds(duration), false);
+            // Ganimed edit start
+            _statusEffects.TryAddStatusEffect<ForcedSleepingComponent>(uid, StatusEffectKey, TimeSpan.FromSeconds(duration), false);
+
+            if (TryComp<StrapComponent>(uid, out var strap) && strap.BuckledEntities.Count > 0)
+            {
+                continue;
+            }
+
+            _standing.Down(uid, dropHeldItems: false);
+            // Ganimed edit end
         }
     }
 }

@@ -1,8 +1,11 @@
-ent-ClothingOuterUnathiRobe = увы
+ent-ClothingOuterUnathiRobe = халат из грубой ткани
     .desc = Традиционная одежда Унатхов.
 
-ent-ClothingOuterWitchHunter = накидка охотника за ведьмами
-    .desc = Убей этих ведьм!
+ent-ClothingOuterRobesWitchHunter = накидка охотника за ведьмами
+    .desc = Напоминают одеяния средневековых инквизиторов.
 
 ent-ClothingOuterNightDress = платье глубоководной аквилегии
     .desc = Футуристичные тона тёмного неона и фасоны богатых имперских домов. Воистину опасная смесь времен и эпох.
+
+ent-ClothingOuterRobesCultWhite = белая роба культа
+    .desc = Не бывает культов без классических красных/алых роб... Стоп, она ведь наполовину белая!

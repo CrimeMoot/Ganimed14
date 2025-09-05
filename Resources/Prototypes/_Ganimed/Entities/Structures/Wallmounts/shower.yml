@@ -8,7 +8,7 @@
     - Wallmount
   components:
     - type: Sprite
-      sprite: _Backmen/Structures/Furniture/shower.rsi
+      sprite: _Ganimed/Structures/Furniture/shower.rsi
       drawdepth: WallMountedItems
       layers:
       - state: shower
@@ -54,9 +54,6 @@
             Quantity: 5
       - type: DrainableSolution
         solution: showerWater
-    - type: Construction
-      graph: Shower
-      node: shower
     - type: Destructible
       thresholds:
         - trigger:

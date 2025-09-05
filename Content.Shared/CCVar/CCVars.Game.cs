@@ -387,6 +387,12 @@ public sealed partial class CCVars
         CVarDef.Create("game.contraband_examine", false, CVar.SERVER | CVar.REPLICATED); ///ADT no wizard cringe
 
     /// <summary>
+    ///     If true, contraband examination is only possible while wearing an item with `ShowContrabandDetailsComponent`. Requires `ContrabandExamine` to be true as well.
+    /// </summary>
+    public static readonly CVarDef<bool> ContrabandExamineOnlyInHUD =
+        CVarDef.Create("game.contraband_examine_only_in_hud", false, CVar.SERVER | CVar.REPLICATED);
+
+    /// <summary>
     ///     Size of the lookup area for adding entities to the context menu
     /// </summary>
     public static readonly CVarDef<float> GameEntityMenuLookup =
@@ -397,4 +403,11 @@ public sealed partial class CCVars
     /// </summary>
     public static readonly CVarDef<bool> GameHostnameInTitlebar =
         CVarDef.Create("game.hostname_in_titlebar", true, CVar.SERVER | CVar.REPLICATED);
+
+    /// <summary>
+    ///     Should automatic map and preset votes be created in the lobby when a round restarts?
+    /// </summary>
+    public static readonly CVarDef<bool> LobbyAutoVotes =
+        CVarDef.Create("game.lobby_auto_votes", true);
+
 }

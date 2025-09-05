@@ -79,24 +79,46 @@ public sealed class PresetIdCardSystem : EntitySystem
 
         _accessSystem.SetAccessToJob(uid, job, extended);
 
-        var card = Comp<IdCardComponent>(uid);
-
         // Ganimed-JobAlt-start
+        if (!TryComp<IdCardComponent>(uid, out var card))
+        {
+            Log.Warning($"Entity {uid} does not have IdCardComponent, skipping title setup.");
+            return;
+        }
+
+        string? titleToSet = null;
+
         if (id.AlternateTitleId != null &&
             _prototypeManager.TryIndex(id.AlternateTitleId.Value, out JobAlternateTitlePrototype? altTitle))
         {
-            _cardSystem.TryChangeJobTitle(uid, altTitle.LocalizedName);
+            titleToSet = altTitle.LocalizedName;
+        }
+        else if (job.AlternateTitles != null && job.AlternateTitles.Count > 0)
+        {
+            JobAlternateTitlePrototype? altFromJob = null;
+            foreach (var altId in job.AlternateTitles)
+            {
+                if (_prototypeManager.TryIndex(altId, out var proto))
+                {
+                    altFromJob = proto;
+                    break;
+                }
+            }
+
+            titleToSet = altFromJob?.LocalizedName ?? job.LocalizedName;
         }
         else
         {
-            if (string.IsNullOrEmpty(card.JobTitle))
-                _cardSystem.TryChangeJobTitle(uid, job.LocalizedName);
+            titleToSet = job.LocalizedName;
         }
+
+        if (!string.IsNullOrEmpty(titleToSet))
+            _cardSystem.TryChangeJobTitle(uid, titleToSet);
         // Ganimed-JobAlt-end
 
         _cardSystem.TryChangeJobDepartment(uid, job);
 
-        if (_prototypeManager.TryIndex(job.Icon, out var jobIcon))
+        if (!string.IsNullOrEmpty(job.Icon) && _prototypeManager.TryIndex(job.Icon, out var jobIcon)) // Ganimed-JobAlt
             _cardSystem.TryChangeJobIcon(uid, jobIcon);
     }
 }

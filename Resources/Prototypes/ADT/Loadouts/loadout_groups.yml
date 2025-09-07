@@ -422,6 +422,9 @@
   minLimit: 0
   loadouts:
   - ADTMaskGasAtmosian
+  - ClothingMaskGasAtmos # Ganimed-Loadouts
+  - ClothingMaskGas # Ganimed-Loadouts
+
 
 - type: loadoutGroup
   id: ADTAtmosphericTechnicianHead
@@ -487,6 +490,7 @@
   - ADTNeckSecBadgeSilver
   - ADTNeckSecBadgeGold
   - BrigmedicBedsheet # Ganimed-Loadouts
+  - Stethoscope # Ganimed-Loadouts
 
   #back
 - type: loadoutGroup

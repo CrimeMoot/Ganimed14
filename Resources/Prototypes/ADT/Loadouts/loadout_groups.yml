@@ -422,6 +422,9 @@
   minLimit: 0
   loadouts:
   - ADTMaskGasAtmosian
+  - ClothingMaskGasAtmos # Ganimed-Loadouts
+  - ClothingMaskGas # Ganimed-Loadouts
+
 
 - type: loadoutGroup
   id: ADTAtmosphericTechnicianHead

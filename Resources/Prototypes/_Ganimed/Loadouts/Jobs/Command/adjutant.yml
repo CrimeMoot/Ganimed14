@@ -15,7 +15,7 @@
 - type: loadout
   id: BridgeOfficerBeret
   equipment:
-    head: ClothingBlackBeret
+    head: ClothingHeadHatBeretBridgeOfficer
 
 # Jumpsuit
 - type: loadout
@@ -26,7 +26,7 @@
 - type: loadout
   id: BridgeOfficerBlackJumpsuit
   equipment:
-    jumpsuit: ClothingUniformJumpsuitJumpsuitOfficerDark
+    jumpsuit: ClothingUniformJumpsuitOfficerDark
 
 - type: loadout
   id: GenericCommandJumpsuit
@@ -48,4 +48,4 @@
 - type: loadout
   id: BridgeOfficerWebbing
   equipment:
-    belt: ClothingBlackWebbing
+    belt: ClothingBeltOfficerBlackWebbing # TODO: Make a filled option

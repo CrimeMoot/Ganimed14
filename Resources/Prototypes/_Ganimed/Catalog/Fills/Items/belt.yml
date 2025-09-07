@@ -61,7 +61,7 @@
       - id: PillCanisterKelotane
       - id: PillCanisterIron #- PillCanisterDexalin #- SyringeSaline
       - id: PillCanisterDylovene
-      - id: EpinephrineChemistryBottle
+      - id: ChemistryBottleEpinephrine
       - id: Syringe
 
 # Pouches

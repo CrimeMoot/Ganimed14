@@ -54,7 +54,7 @@
     sprite: _Ganimed/Clothing/Uniforms/Jumpskirt/dec.rsi
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: ClothingUniformSkirtBase
   id: ClothingUniformJumpskirtCentcomOfficialRegular
   name: dark-green Centcom suit
   description: Regular dark-mint uniform, worn by mid-ranking Central Command officials. Respectable, but not at all glamorous.

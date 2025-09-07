@@ -149,10 +149,10 @@
   equipment:
     neck: BedsheetCentcom
 
-- type: loadout
-  id: CentcomTie
-  equipment:
-    neck: ClothingNeckTieCentCom
+#- type: loadout
+#  id: CentcomTie
+#  equipment:
+#    neck: ClothingNeckTieCentCom
 
 # Gloves
 - type: loadout

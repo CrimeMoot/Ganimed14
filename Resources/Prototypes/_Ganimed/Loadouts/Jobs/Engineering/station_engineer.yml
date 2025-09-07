@@ -50,6 +50,11 @@
   equipment:
     shoes: ClothingShoesColorOrange
 
+- type: loadout
+  id: JackBootsEmpty
+  equipment:
+    shoes: ClothingShoesBootsJack
+
 - type: loadout # TODO: Whitelist restriction
   id: EngineeringMagBoots
   effects:

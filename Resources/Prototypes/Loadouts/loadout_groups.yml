@@ -1047,6 +1047,7 @@
   - WorkBoots
   - EngineeringWinterBoots
   # Ganimed-Loadouts-Start
+  - JackBootsEmpty
   - BlackShoes
   - OrangeShoes
   - EngineeringMagBoots
@@ -1105,6 +1106,7 @@
   # Ganimed-Loadouts-Start
   - YellowShoes
   - BlueShoes
+  - JackBootsEmpty
   - WorkBoots
   # Ganimed-Loadouts-End
   - EngineeringWinterBoots

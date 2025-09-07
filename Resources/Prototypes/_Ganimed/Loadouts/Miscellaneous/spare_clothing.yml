@@ -1644,7 +1644,7 @@
   - !type:SponsorLoadoutEffect
 
 - type: loadout # TODO: Whitelist restriction
-  id: SpareRaindowBedsheet
+  id: SpareRainbowBedsheet
   storage:
     back:
     - BedsheetRainbow

@@ -433,7 +433,7 @@
 - type: loadout
   id: HoSStockings
   equipment:
-    socks: ClothingUnderSocksStockingsHOS
+    socks: ClothingUnderSocksStockingsHoS
   effects:
   - !type:SponsorLoadoutEffect
 

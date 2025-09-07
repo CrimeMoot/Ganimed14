@@ -84,13 +84,24 @@
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitCentcomOfficialRegular
-  name: dark-green centcom suit
+  name: dark-green Centcom suit
   description: Regular dark-mint uniform, worn by mid-ranking Central Command officials. Respectable, but not at all glamorous.
   components:
   - type: Sprite
     sprite: _Ganimed/Clothing/Uniforms/Jumpsuit/centcom_uni.rsi
   - type: Clothing
     sprite: _Ganimed/Clothing/Uniforms/Jumpsuit/centcom_uni.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitCentcomOfficerAlt
+  name: Centcom officer uniform
+  description: Central Command officer's uniform. There are ranks visible on the shoulder straps.
+  components:
+  - type: Sprite
+    sprite: _Ganimed/Clothing/Uniforms/Jumpsuit/alt_centcom_officer.rsi
+  - type: Clothing
+    sprite: _Ganimed/Clothing/Uniforms/Jumpsuit/alt_centcom_officer.rsi
 
 #- type: entity
 #  parent: ClothingUniformBase
@@ -277,6 +288,30 @@
     sprite: _Ganimed/Clothing/Uniforms/Jumpsuit/alt_psychologist.rsi
   - type: Clothing
     sprite: _Ganimed/Clothing/Uniforms/Jumpsuit/alt_psychologist.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, BaseFoldable]
+  id: ClothingUniformJumpsuitTwoPieceSuit
+  name: two-piece suit
+  description: A black suit with charcoal pants and a red tie. Very formal.
+  components:
+  - type: Sprite
+    sprite: _Ganimed/Clothing/Uniforms/Jumpsuit/two-piece-suit.rsi
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: open-icon
+      map: ["foldedLayer"]
+      visible: false
+  - type: Clothing
+    sprite: _Ganimed/Clothing/Uniforms/Jumpsuit/two-piece-suit.rsi
+  - type: Appearance
+  - type: Foldable
+    canFoldInsideContainer: true
+    unfoldVerbText: fold-zip-verb
+    foldVerbText: fold-unzip-verb
+  - type: FoldableClothing
+    foldedEquippedPrefix: open
 
 # Old/Original
 - type: entity

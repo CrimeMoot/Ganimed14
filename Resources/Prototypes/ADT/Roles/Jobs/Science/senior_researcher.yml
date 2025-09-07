@@ -18,6 +18,6 @@
   id: SeniorResearcherGear
   equipment:
     id: SeniorResearcherPDA
-    ears: ClothingHeadsetScience
+    # ears: ClothingHeadsetScience # Ganimed-Loadouts
     belt: ClothingBeltUtilityFilled
     pocket1: AnomalyLocatorEmpty

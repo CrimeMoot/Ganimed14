@@ -46,6 +46,9 @@ ent-ClothingUniformJumpsuitDetectiveGrayAlt = серый костюм детек
 ent-ClothingUniformJumpsuitCentcomOfficialRegular = тёмно-зелёный костюм Центком
     .desc = Обычная тёмно-мятная униформа, носимая чинами ЦК среднего ранга. Респектабельно, но вовсе не роскошно.
 
+ent-ClothingUniformJumpsuitCentcomOfficerAlt = офицерская форма Центком
+    .desc = Форма офицера Центрального Командования. На плечах видны погоны.
+
 ent-ClothingUniformJumpsuitSalvageSpecialistAlt = мрачный шахтёрский комбинезон
     .desc = Утилизаторский комбинезон с прочной спецовкой. Он сильно запачкан космической пылью и пеплом.
 
@@ -54,6 +57,9 @@ ent-ClothingUniformJumpsuitRndAlt = костюм профессора наук
 
 ent-ClothingUniformJumpsuitGoldenEra = униформа золотой эпохи
     .desc = Невероятно стильный оранжевый костюм с пальто, украшенный золотом и усиленными бронепластинами.
+
+ent-ClothingUniformJumpsuitTwoPieceSuit = деловой костюм
+    .desc = Весьма строгий чёрный костюм с брюками угольного цвета и красным галстуком.
 
 ent-ClothingUniformJumpsuitTSF = комбинезон флота
     .desc = Форма флота ТСФ. Выглядит технологично.

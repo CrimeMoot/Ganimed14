@@ -48,7 +48,7 @@
  #id: CMOPDA  # ADT Tweak
     ears: ClothingHeadsetCMO
 #    belt: ClothingBeltMedicalFilled ADT tweak
-  storage:
-    back:
-    - Flash
-    - ADTtelescopicBaton #ADT-CustomADTLoadout
+#  storage: # Ganimed-Loadouts
+#    back:
+#    - Flash
+#    - ADTtelescopicBaton #ADT-CustomADTLoadout

@@ -16,6 +16,7 @@ using Content.Shared.Mind.Components;
 using Content.Shared.Mobs.Systems;
 using Robust.Server.Player;
 using Robust.Shared.Prototypes;
+using Content.Shared.Cargo.Prototypes; // Ganimed-Edit
 using Robust.Shared.Random;
 using Content.Shared.Cargo.Components;
 using Content.Shared.Cargo;
@@ -75,7 +76,7 @@ public sealed class BankCardSystem : EntitySystem
     private void PaySalary()
     {
         foreach (var account in _accounts.Where(account =>
-                     account.Mind is {Comp.UserId: not null, Comp.CurrentEntity: not null} &&
+                     account.Mind is { Comp.UserId: not null, Comp.CurrentEntity: not null } &&
                      _playerManager.TryGetSessionById(account.Mind.Value.Comp.UserId!.Value, out _) &&
                      !_mobState.IsDead(account.Mind.Value.Comp.CurrentEntity!.Value)))
         {
@@ -225,5 +226,19 @@ public sealed class BankCardSystem : EntitySystem
 
         return true;
     }
+    // Ganimed-Edit start
+    public bool TryGetDepartmentAccount(string department, out ProtoId<CargoAccountPrototype> proto)
+    {
+        proto = new(department);
+
+        if (!_protoMan.HasIndex(proto))
+        {
+            proto = default;
+            return false;
+        }
+
+        return true;
+    }
+    // Ganimed-Edit end
 }
 

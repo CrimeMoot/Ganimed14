@@ -4,6 +4,7 @@ using Content.Server.Advertise;
 using Content.Server.Advertise.EntitySystems;
 using Content.Server.Cargo.Systems;
 using Content.Server.Emp;
+using Content.Server.Station.Systems; // Ganimed-Edit
 using Content.Server.Power.Components;
 using Content.Server.Power.EntitySystems;
 using Content.Server.Stack;
@@ -30,12 +31,14 @@ using Content.Shared.Throwing;
 using Content.Shared.UserInterface;
 using Content.Shared.VendingMachines;
 using Content.Shared.Wall;
+using Content.Shared.Roles; // Ganimed-Edit
 using Robust.Server.GameObjects;
 using Robust.Shared.Audio;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
+using Content.Shared.Cargo.Components; // Ganimed-Edit
 
 namespace Content.Server.VendingMachines
 {
@@ -56,6 +59,12 @@ namespace Content.Server.VendingMachines
         //ADT-Economy-End
         [Dependency] private readonly SharedPointLightSystem _light = default!;
         [Dependency] private readonly EmagSystem _emag = default!;
+
+        // Ganimed-Edit start
+        [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
+        [Dependency] private readonly StationSystem _station = default!;
+        [Dependency] private readonly CargoSystem _cargo = default!;
+        // Ganimed-Edit end
 
         private const float WallVendEjectDistanceFromWall = 1f;
 
@@ -314,6 +323,36 @@ namespace Content.Server.VendingMachines
             return false;
         }
 
+        // Ganimed-Edit start
+        private bool IsJobFromDepartment(EntityUid user, string? targetDepartment)
+        {
+            if (string.IsNullOrEmpty(targetDepartment))
+                return false;
+
+            foreach (var item in _accessReader.FindPotentialAccessItems(user))
+            {
+                var nextItem = item;
+
+                if (TryComp(item, out PdaComponent? pda) && pda.ContainedId is { Valid: true } id)
+                    nextItem = id;
+
+                ProtoId<JobPrototype>? jobId = null;
+                List<ProtoId<DepartmentPrototype>>? departments = null;
+
+                if (TryComp<IdCardComponent>(nextItem, out var idCard))
+                {
+                    departments = idCard.JobDepartments;
+                }
+
+                if (departments != null && departments.Contains(targetDepartment))
+                    return true;
+
+            }
+
+            return false;
+        }
+        // Ganimed-Edit end
+
         /// <summary>
         /// Tries to eject the provided item. Will do nothing if the vending machine is incapable of ejecting, already ejecting
         /// or the item doesn't exist in its inventory.
@@ -365,28 +404,52 @@ namespace Content.Server.VendingMachines
             if (price > 0 && !vendComponent.AllForFree && sender.HasValue && !_tag.HasTag(sender.Value, "IgnoreBalanceChecks"))
             {
                 var success = false;
-                if (vendComponent.Credits >= price)
+
+                // Ganimed-Edit start
+                // если покупатель из своего департамента → бесплатно
+                if (IsJobFromDepartment(sender.Value, vendComponent.AccountTarget))
                 {
-                    vendComponent.Credits -= price;
                     success = true;
                 }
                 else
                 {
-                    var items = _accessReader.FindPotentialAccessItems(sender.Value);
-                    foreach (var item in items)
+                    // пробуем оплату локальными кредитами
+                    if (vendComponent.Credits >= price)
                     {
-                        var nextItem = item;
-                        if (TryComp(item, out PdaComponent? pda) && pda.ContainedId is { Valid: true } id)
-                            nextItem = id;
-
-                        if (!TryComp<BankCardComponent>(nextItem, out var bankCard) || !bankCard.AccountId.HasValue
-                            || !_bankCard.TryGetAccount(bankCard.AccountId.Value, out var account)
-                            || account.Balance < price)
-                            continue;
-
-                        _bankCard.TryChangeBalance(bankCard.AccountId.Value, -price);
+                        vendComponent.Credits -= price;
                         success = true;
-                        break;
+                    }
+                    else
+                    {
+                        var items = _accessReader.FindPotentialAccessItems(sender.Value);
+                        foreach (var item in items)
+                        {
+                            var nextItem = item;
+                            if (TryComp(item, out PdaComponent? pda) && pda.ContainedId is { Valid: true } id)
+                                nextItem = id;
+
+                            if (!TryComp<BankCardComponent>(nextItem, out var bankCard) || !bankCard.AccountId.HasValue
+                                || !_bankCard.TryGetAccount(bankCard.AccountId.Value, out var account)
+                                || account.Balance < price)
+                                continue;
+
+                            _bankCard.TryChangeBalance(bankCard.AccountId.Value, -price);
+
+                            if (!string.IsNullOrEmpty(vendComponent.AccountTarget) &&
+                                _bankCard.TryGetDepartmentAccount(vendComponent.AccountTarget, out var deptProto))
+                            {
+                                var station = _station.GetOwningStation(uid);
+                                if (station != null && TryComp(station, out StationBankAccountComponent? stationAcc) && stationAcc != null)
+                                {
+                                    if (station is { } s)
+                                        _cargo.UpdateBankAccount((s, stationAcc), price, deptProto);
+                                }
+                            }
+
+                            success = true;
+                            break;
+                        }
+                    // Ganimed-Edit end
                     }
                 }
 

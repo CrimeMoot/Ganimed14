@@ -1666,6 +1666,7 @@
     offState: off
     brokenState: broken
     normalState: normal-unshaded
+    accountTarget: "Cargo"
   - type: Advertise
     pack: CargoDrobeAds
   - type: SpeakOnUIClosed
@@ -1684,8 +1685,6 @@
     radius: 1.5
     energy: 1.6
     color: "#b89e2a"
-  - type: AccessReader
-    access: [["Cargo"]]
 
 - type: entity
   parent: VendingMachine

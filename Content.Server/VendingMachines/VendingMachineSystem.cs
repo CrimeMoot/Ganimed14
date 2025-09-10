@@ -323,36 +323,6 @@ namespace Content.Server.VendingMachines
             return false;
         }
 
-        // Ganimed-Edit start
-        private bool IsJobFromDepartment(EntityUid user, string? targetDepartment)
-        {
-            if (string.IsNullOrEmpty(targetDepartment))
-                return false;
-
-            foreach (var item in _accessReader.FindPotentialAccessItems(user))
-            {
-                var nextItem = item;
-
-                if (TryComp(item, out PdaComponent? pda) && pda.ContainedId is { Valid: true } id)
-                    nextItem = id;
-
-                ProtoId<JobPrototype>? jobId = null;
-                List<ProtoId<DepartmentPrototype>>? departments = null;
-
-                if (TryComp<IdCardComponent>(nextItem, out var idCard))
-                {
-                    departments = idCard.JobDepartments;
-                }
-
-                if (departments != null && departments.Contains(targetDepartment))
-                    return true;
-
-            }
-
-            return false;
-        }
-        // Ganimed-Edit end
-
         /// <summary>
         /// Tries to eject the provided item. Will do nothing if the vending machine is incapable of ejecting, already ejecting
         /// or the item doesn't exist in its inventory.
@@ -405,15 +375,12 @@ namespace Content.Server.VendingMachines
             {
                 var success = false;
 
-                // Ganimed-Edit start
-                // если покупатель из своего департамента → бесплатно
-                if (IsJobFromDepartment(sender.Value, vendComponent.AccountTarget))
+                if (TryComp<JobVendingComponent>(uid, out var jobVend) && TryComp<IdCardComponent>(sender.Value, out var idCard) && idCard.JobTitle == jobVend.Job)
                 {
                     success = true;
                 }
                 else
                 {
-                    // пробуем оплату локальными кредитами
                     if (vendComponent.Credits >= price)
                     {
                         vendComponent.Credits -= price;
@@ -421,9 +388,9 @@ namespace Content.Server.VendingMachines
                     }
                     else
                     {
-                        var items = _accessReader.FindPotentialAccessItems(sender.Value);
+                       var items = _accessReader.FindPotentialAccessItems(sender.Value);
                         foreach (var item in items)
-                        {
+                       {
                             var nextItem = item;
                             if (TryComp(item, out PdaComponent? pda) && pda.ContainedId is { Valid: true } id)
                                 nextItem = id;
@@ -449,7 +416,6 @@ namespace Content.Server.VendingMachines
                             success = true;
                             break;
                         }
-                    // Ganimed-Edit end
                     }
                 }
 

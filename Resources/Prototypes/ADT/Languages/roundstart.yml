@@ -873,27 +873,34 @@
     whisperColor: "#d1f069"
     replacement:
     - ja
+    - si
     - ne
     - in
     - er
     - sie
     - ber
     - flu
+    - cos
     - en
     - hi
     - ge
     - im
     - i
+    - e
+    - y
     - und
     - mir
     - ka
-    - die
-    - zah
+    - di
+    - los
     - den
-    - ble
+    - idad
     - ie
     - vi
+    - il
+    - erra
     - aus
     - das
-    - son
+    - sol
     - mal
+    - ale

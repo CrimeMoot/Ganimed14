@@ -10,10 +10,10 @@ namespace Content.Server.ADT.SizeAttribute
         public bool Short = false;
 
         [DataField("shortscale")]
-        public float ShortScale = 0f;
+        public float ShortScale = 1f;
 
         [DataField("shortDensity")]
-        public float ShortDensity = 0f;
+        public float ShortDensity = 185f;
 
         [DataField("shortPseudoItem")]
         public bool ShortPseudoItem = false;
@@ -26,10 +26,10 @@ namespace Content.Server.ADT.SizeAttribute
         public bool Tall = false;
 
         [DataField("tallscale")]
-        public float TallScale = 0f;
+        public float TallScale = 1f;
 
         [DataField("tallDensity")]
-        public float TallDensity = 0f;
+        public float TallDensity = 185f;
 
         [DataField("tallPseudoItem")]
         public bool TallPseudoItem = false;

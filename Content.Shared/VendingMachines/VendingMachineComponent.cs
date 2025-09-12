@@ -205,6 +205,10 @@ namespace Content.Shared.VendingMachines
 
         public int NextItemCount = 1;
         //ADT-Economy-End
+        // Ganimed-Edit
+        [DataField("accountTarget")]
+        public string? AccountTarget;
+        // Ganimed-Edit end
     }
 
     [Serializable, NetSerializable]

@@ -25,5 +25,5 @@
   id: SeniorPhysicianGear
   equipment:
     id: SeniorPhysicianPDA
-    ears: ClothingHeadsetMedical
-    eyes: ADTClothingEyesGlassesMedChem
+    # ears: ClothingHeadsetMedical # Ganimed-Loadouts
+    # eyes: ADTClothingEyesGlassesMedChem # Ganimed-Loadouts

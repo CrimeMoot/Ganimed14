@@ -99,6 +99,6 @@ loadout-group-medical-intern-id-adt = Интерн, ID
 loadout-group-psychologist-id-adt = Психолог, ID
 
 # Juridical
-loadout-group-lawyer-id-adt = Адвокат, ID
-loadout-group-lawyer-gloves = Адвокат, перчатки
+loadout-group-lawyer-id-adt = Юрист, ID
+loadout-group-lawyer-gloves = Юрист, перчатки
 loadout-group-lawyer-backpack = Магистрат, рюкзак

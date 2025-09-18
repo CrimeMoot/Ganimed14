@@ -42,9 +42,9 @@
 - type: startingGear
   id: IAAGear
   equipment:
-    shoes: ClothingShoesColorBlack
+    # shoes: ClothingShoesColorBlack # Ganimed-Loadouts
     id: IAAPDA
-    eyes: ClothingEyesGlassesSunglasses
+    # eyes: ClothingEyesGlassesSunglasses # Ganimed-Loadouts
     ears: ClothingHeadsetIAA
     pocket2: BookSpaceLaw
   inhand:

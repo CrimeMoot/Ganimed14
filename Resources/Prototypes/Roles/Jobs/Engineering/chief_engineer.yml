@@ -55,8 +55,8 @@
     ears: ClothingHeadsetCE
 # ADT-Tweak-start по причине того, что ассистент и остальной состав ИО спавнится с двумя поясами, если их выбрать в лоудауте
     # belt: ClothingBeltUtilityEngineering
-# ADT-Tweak-end
-  storage:
-    back:
-    - Flash
-    - ADTtelescopicBaton #ADT-CustomADTLoadout
+# ADT-Tweak-end # Ganimed-Loadouts
+#  storage:
+#    back:
+#    - Flash
+#    - ADTtelescopicBaton #ADT-CustomADTLoadout

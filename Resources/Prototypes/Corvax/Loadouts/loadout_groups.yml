@@ -19,14 +19,19 @@
   loadouts:
   - BrigmedicSecurityHat
   - BrigmedicHat
+  - ADTHeadHatBeretBrigmedic # Ganimed-Loadouts
   - BrigmedicHelmet
+  - CorpsmanHelmet # Ganimed-Loadouts
 
 - type: loadoutGroup
   id: BrigmedicMask
   name: loadout-group-brigmedic-mask
+  minLimit: 0 # Ganimed-Loadouts
   loadouts:
-  - BrigmedicGasSecurity
+  - SterileMask # Ganimed-Loadouts
+  - MedicalBreathMask # Ganimed-Loadouts
   - BrigmedicMedicalSecurity
+  - BrigmedicGasSecurity # Ganimed-Loadouts
 
 - type: loadoutGroup
   id: BrigmedicJumpsuit
@@ -34,6 +39,15 @@
   loadouts:
   - BrigmedicJumpsuit
   - BrigmedicJumpskirt
+  # Ganimed-Loadouts-Start
+  - ADTUniformBrigmedicJumpsuitTurtleneck
+  - ADTUniformSkirtBrigmedicJumpskirtTurtleneck
+  - OriginalBrigmedicJumpsuit
+  - OriginalBrigmedicJumpskirt
+  - BlackBrigmedicJumpsuit
+  - BlackBrigmedicJumpskirt
+  - JumpskirtOfLife
+  # Ganimed-Loadouts-End
 
 - type: loadoutGroup
   id: BrigmedicGloves
@@ -56,15 +70,16 @@
   name: loadout-group-brigmedic-clothing
   loadouts:
   - BrigmedicCoatLab
-  - BrigmedicVest
   - BrigmedicCoatAMG
-  - BrigmedicOuterWinterSec
+  - ADTOuterCoatBrigmedicWB # Ganimed-Loadouts
+  - BrigmedicVest
   - BrigmedicVestArmor
+  - SecurityBioSuit # Ganimed-Loadouts
 
 - type: loadoutGroup
   id: BrigmedicShoes
   name: loadout-group-brigmedic-shoes
   loadouts:
-  - BrigmedicJackSec
-  - BrigmedicCombat
-  - BrigmedicWinterSec
+  - JackSecBoots # Ganimed-Loadouts
+  - SecurityWinterBoots # Ganimed-Loadouts
+  - RedShoes # Ganimed-Loadouts

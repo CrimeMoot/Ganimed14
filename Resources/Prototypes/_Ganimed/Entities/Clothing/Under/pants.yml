@@ -510,7 +510,7 @@
 
 - type: entity
   parent: Clothing
-  id: ClothingUnderCloth
+  id: ClothingClothWraps
   name: cloth wraps
   description: A roll of treated canvas used as a substitute garment.
   components:
@@ -527,6 +527,9 @@
     - UNDERWEART
     - UNDERWEARB
     - SOCKS
+  - type: Construction
+    graph: ADTFootWrapsWhite
+    node: WrapsWhite
   - type: Butcherable
     butcheringType: Knife
     spawned:
@@ -537,10 +540,10 @@
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 10
+        maxVol: 15
         reagents:
         - ReagentId: Fiber
-          Quantity: 10
+          Quantity: 15
   - type: Tag
     tags:
       - ClothMade

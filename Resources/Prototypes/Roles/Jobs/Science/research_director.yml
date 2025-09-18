@@ -41,7 +41,7 @@
   equipment:
  #id: RnDPDA # ADT Tweak
     ears: ClothingHeadsetRD
-  storage:
-    back:
-    - Flash
-    - ADTtelescopicBaton #ADT-CustomADTLoadout
+#  storage: # Ganimed-Loadouts
+#    back:
+#    - Flash
+#    - ADTtelescopicBaton #ADT-CustomADTLoadout

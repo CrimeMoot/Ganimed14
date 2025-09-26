@@ -34,7 +34,6 @@ public sealed class ObjectiveSecCountSystem : EntitySystem
     {
         base.Initialize();
         
-
         if (_prototypeManager.TryIndex<DepartmentPrototype>("Security", out var secDept))
         {
             _securityDepartment = secDept;
@@ -45,11 +44,9 @@ public sealed class ObjectiveSecCountSystem : EntitySystem
         }
         
         SubscribeLocalEvent<ObjectiveSecCountComponent, ObjectiveAfterAssignEvent>(OnObjectiveAfterAssign);
-        
         SubscribeLocalEvent<PrototypesReloadedEventArgs>(OnPrototypesReloaded);
     }
     
-
     private void OnPrototypesReloaded(PrototypesReloadedEventArgs ev)
     {
         if (_prototypeManager.TryIndex<DepartmentPrototype>("Security", out var secDept))
@@ -135,18 +132,19 @@ public sealed class ObjectiveSecCountSystem : EntitySystem
             }
             
             // Получаем должность
-            JobPrototype? job = null;
-            if (_jobSystem.MindTryGetJob(entity, out job) && job != null)
+            if (!_mindSystem.TryGetMind(entity, out var mindId, out _))
+                continue;
+
+            if (!_jobSystem.MindTryGetJob(mindId, out var job) || job == null)
+                continue;
+
+            if (IsJobInSecurityDepartment(job.ID))
             {
-                // Проверяем является ли должность частью департамента Security
-                if (IsJobInSecurityDepartment(job.ID))
-                {
-                    secCount++;
-                    Log.Debug($"Counted security officer: {session.Name} ({job.ID})");
-                }
+                secCount++;
+                Log.Debug($"Counted security officer: {session.Name} ({job.ID})");
             }
         }
-        
+
         return secCount;
     }
 

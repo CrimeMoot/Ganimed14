@@ -6,5 +6,5 @@ namespace Content.Server._Ganimed.Objectives.Components;
 public sealed partial class ObjectiveSecCountComponent : Component
 {
     [DataField]
-    public int MinSec = 2;
+    public int MinSec = 0;
 }

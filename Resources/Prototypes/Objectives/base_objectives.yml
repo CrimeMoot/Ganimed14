@@ -51,6 +51,7 @@
     blacklist:
       components:
       - SocialObjective
+  - type: ObjectiveSecCount # Ganimed edit
   - type: KillPersonCondition
 
 # requires that the player interact socially with someone

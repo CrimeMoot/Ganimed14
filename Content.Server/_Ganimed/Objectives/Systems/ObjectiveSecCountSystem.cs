@@ -16,7 +16,10 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Server._Ganimed.Objectives.Systems;
 
-/// Система блокирует выдачу kill-объективов, если на станции меньше MinSec офицеров СБ.
+/// <summary>
+/// Система проверки количества сотрудников СБ для целей на убийство.
+/// Блокирует выдачу целей убийства при недостаточном количестве офицеров СБ.
+/// </summary>
 public sealed class ObjectiveSecCountSystem : EntitySystem
 {
     [Dependency] private readonly IPlayerManager _playerManager = default!;

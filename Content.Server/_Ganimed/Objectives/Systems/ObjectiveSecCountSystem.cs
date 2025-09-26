@@ -2,7 +2,6 @@ using Content.Server._Ganimed.Objectives.Components;
 using Content.Server.Mind;
 using Content.Server.Objectives.Components;
 using Content.Server.Objectives.Systems;
-using Content.Server.Popups;
 using Content.Server.Station.Systems;
 using Content.Shared.Mobs;
 using Content.Shared.Mobs.Components;
@@ -28,7 +27,6 @@ public sealed class ObjectiveSecCountSystem : EntitySystem
     [Dependency] private readonly StationSystem _stationSystem = default!;
     [Dependency] private readonly SharedJobSystem _jobSystem = default!;
     [Dependency] private readonly MindSystem _mindSystem = default!;
-    [Dependency] private readonly PopupSystem _popupSystem = default!;
     
     private DepartmentPrototype? _securityDepartment;
     

@@ -57,24 +57,23 @@ public sealed class ObjectiveSecCountSystem : EntitySystem
 
     private void OnObjectiveAfterAssign(EntityUid uid, ObjectiveSecCountComponent component, ref ObjectiveAfterAssignEvent args)
     {
-        // Проверяем только kill-объективы
+        // Проверяем только задачи на убийство
         if (!HasComp<KillPersonConditionComponent>(uid))
             return;
 
-        // Получаем цель объектива
+        // Получаем цель убийства
         if (!TryComp<TargetObjectiveComponent>(uid, out var targetComp) || targetComp.Target == null)
             return;
 
-        // Определяем станцию
         EntityUid? station = null;
 
-        // Пытаемся получить станцию от цели
+        // Пытаемся определить станцию - путём того, на кого цель.
         if (TryComp<MindComponent>(targetComp.Target.Value, out var targetMind) && targetMind.OwnedEntity != null)
         {
             station = _stationSystem.GetOwningStation(targetMind.OwnedEntity.Value);
         }
 
-        // Если не удалось - пытаемся получить станцию от владельца объектива
+        // Если по цели не удалось найти станцию, ищем станцию к которой привязан сам убийца
         if (station == null && args.Mind != EntityUid.Invalid)
         {
             if (TryComp<MindComponent>(args.Mind, out var ownerMind) && ownerMind.OwnedEntity != null)

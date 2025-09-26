@@ -2,6 +2,7 @@ using Content.Server._Ganimed.Objectives.Components;
 using Content.Server.Mind;
 using Content.Server.Objectives.Components;
 using Content.Server.Objectives.Systems;
+using Content.Server.Popups;
 using Content.Server.Station.Systems;
 using Content.Shared.Mobs;
 using Content.Shared.Mobs.Components;
@@ -27,6 +28,7 @@ public sealed class ObjectiveSecCountSystem : EntitySystem
     [Dependency] private readonly StationSystem _stationSystem = default!;
     [Dependency] private readonly SharedJobSystem _jobSystem = default!;
     [Dependency] private readonly MindSystem _mindSystem = default!;
+    [Dependency] private readonly PopupSystem _popupSystem = default!;
     
     private DepartmentPrototype? _securityDepartment;
     
@@ -94,7 +96,20 @@ public sealed class ObjectiveSecCountSystem : EntitySystem
         
         if (secCount < component.MinSec)
         {
-            Log.Info($"Kill objective {ToPrettyString(uid)} warning: only {secCount} security officers on station (minimum: {component.MinSec})");
+            Log.Info($"Kill objective {ToPrettyString(uid)} BLOCKED and REMOVED: only {secCount} security officers (minimum: {component.MinSec})");
+
+            if (TryComp<MindComponent>(args.Mind, out var mind))
+            {
+                if (mind.Objectives.Contains(uid))
+                {
+                    mind.Objectives.Remove(uid);
+                    Log.Info($"Removed objective {ToPrettyString(uid)} from mind {ToPrettyString(args.Mind)}");
+                }
+
+                EntityManager.QueueDeleteEntity(uid);
+                Log.Info($"Deleted objective entity {ToPrettyString(uid)}");
+
+            }
         }
     }
 
@@ -111,7 +126,6 @@ public sealed class ObjectiveSecCountSystem : EntitySystem
         
         var secCount = 0;
         
-        // Проходим по всем игрокам
         foreach (var session in _playerManager.Sessions)
         {
             if (session.AttachedEntity == null)

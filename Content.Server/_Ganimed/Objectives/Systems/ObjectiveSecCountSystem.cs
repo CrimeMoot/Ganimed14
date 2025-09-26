@@ -27,13 +27,13 @@ public sealed class ObjectiveSecCountSystem : EntitySystem
     [Dependency] private readonly StationSystem _stationSystem = default!;
     [Dependency] private readonly SharedJobSystem _jobSystem = default!;
     [Dependency] private readonly MindSystem _mindSystem = default!;
-    
+
     private DepartmentPrototype? _securityDepartment;
-    
+
     public override void Initialize()
     {
         base.Initialize();
-        
+
         if (_prototypeManager.TryIndex<DepartmentPrototype>("Security", out var secDept))
         {
             _securityDepartment = secDept;
@@ -42,11 +42,11 @@ public sealed class ObjectiveSecCountSystem : EntitySystem
         {
             Log.Error("Security department prototype not found!");
         }
-        
+
         SubscribeLocalEvent<ObjectiveSecCountComponent, ObjectiveAfterAssignEvent>(OnObjectiveAfterAssign);
         SubscribeLocalEvent<PrototypesReloadedEventArgs>(OnPrototypesReloaded);
     }
-    
+
     private void OnPrototypesReloaded(PrototypesReloadedEventArgs ev)
     {
         if (_prototypeManager.TryIndex<DepartmentPrototype>("Security", out var secDept))
@@ -67,13 +67,13 @@ public sealed class ObjectiveSecCountSystem : EntitySystem
 
         // Определяем станцию
         EntityUid? station = null;
-        
+
         // Пытаемся получить станцию от цели
         if (TryComp<MindComponent>(targetComp.Target.Value, out var targetMind) && targetMind.OwnedEntity != null)
         {
             station = _stationSystem.GetOwningStation(targetMind.OwnedEntity.Value);
         }
-        
+
         // Если не удалось - пытаемся получить станцию от владельца объектива
         if (station == null && args.Mind != EntityUid.Invalid)
         {
@@ -91,7 +91,7 @@ public sealed class ObjectiveSecCountSystem : EntitySystem
 
         // Подсчитываем сотрудников СБ
         var secCount = CountSecurityOfficers(station.Value);
-        
+
         if (secCount < component.MinSec)
         {
             Log.Info($"Kill objective {ToPrettyString(uid)} BLOCKED and REMOVED: only {secCount} security officers (minimum: {component.MinSec})");
@@ -121,28 +121,28 @@ public sealed class ObjectiveSecCountSystem : EntitySystem
             Log.Warning("Security department not loaded, cannot count officers");
             return 0;
         }
-        
+
         var secCount = 0;
-        
+
         foreach (var session in _playerManager.Sessions)
         {
             if (session.AttachedEntity == null)
                 continue;
-                
+
             var entity = session.AttachedEntity.Value;
-            
+
             // Проверяем что игрок на нужной станции
             var entityStation = _stationSystem.GetOwningStation(entity);
             if (entityStation != station)
                 continue;
-                
+
             // Проверяем что игрок жив
             if (TryComp<MobStateComponent>(entity, out var mobState))
             {
                 if (mobState.CurrentState != MobState.Alive)
                     continue;
             }
-            
+
             // Получаем должность
             if (!_mindSystem.TryGetMind(entity, out var mindId, out _))
                 continue;

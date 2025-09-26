@@ -40,6 +40,7 @@
   - type: Tag
     tags:
     - ClothMade
+    - HamsterWearable
     - WhitelistChameleon
 
 - type: entity
@@ -180,6 +181,11 @@
     sprite: Clothing/Head/Hats/beret_brigmedic.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/beret_brigmedic.rsi
+  - type: Tag # Ganimed-Resprite
+    tags:
+    - ClothMade
+    - HamsterWearable
+    - WhitelistChameleon
 
 - type: entity
   parent: [ ClothingHeadBase ]

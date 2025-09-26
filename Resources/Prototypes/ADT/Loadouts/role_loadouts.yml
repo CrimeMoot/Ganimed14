@@ -76,7 +76,9 @@
   - GroupTankHarness
   - ADTBlueshieldHead
   - ADTBlueshieldJumpsuit
+  - ADTBlueshieldOuterClothing # ADT tweak
   - ADTBlueshieldNeck
+  - ADTBlueshieldEars # ADT tweak
   - ADTBlueshieldBack
   - SurvivalSecurity
   - Trinkets
@@ -127,7 +129,7 @@
   - RobohandsGloves # ADT-Tweak-senior
   - ScientistBackpack
   - ADTSeniorResearcherOuterClothing # ADT-Tweak-senior
-  - ScientistShoes  
+  - ScientistShoes
   - Survival
   - Trinkets
   # ADT tweak start
@@ -249,6 +251,29 @@
   - Glasses
   - ADTBarberJumpsuit
   - ADTBarberOtherClothing
+  # ADT underwear tweak start
+  - ADTTop
+  - ADTBottom
+  - ADTSocks
+  # ADT underwear tweak end
+  - Survival
+  - Trinkets
+  - GroupSpeciesBreathTool
+  - SpareClothing # Ganimed-Loadouts
+
+- type: roleLoadout
+  id: JobADTMiner
+  groups:
+  - Inventory # Corvax-Loadouts
+  - GroupTankHarness
+  - ADTMinerBackpack
+  - ADTMinerJumpsuit
+  - ADTMinerSpecialistNeck
+  - ADTMinerSpecialistEars
+  - ADTMinerOuterClothing
+  - ADTMinerShoes
+  - Glasses
+  - ADTMinerPDA
   # ADT underwear tweak start
   - ADTTop
   - ADTBottom

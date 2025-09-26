@@ -83,7 +83,7 @@
     # shoes: ClothingShoesColorBrown # Ganimed-Loadouts
     id: HoPPDA
     gloves: ClothingHandsGlovesHop
-    ears: ClothingHeadsetAltCommand
+    # ears: ClothingHeadsetAltCommand # ADT tweak
     # belt: BoxFolderClipboard # Ganimed-Loadouts
 #  storage: # Ganimed-Loadouts
 #    back:

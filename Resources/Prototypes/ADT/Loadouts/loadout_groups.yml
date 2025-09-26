@@ -1,3 +1,76 @@
+# ГАРНИТУРЫ
+- type: loadoutGroup
+  id: ADTQuartermasterEars
+  name: loadout-quartermaster-ears-adt
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - ADTClothingHeadsetQM
+  - ADTClothingHeadsetAltCargo
+
+- type: loadoutGroup
+  id: ADTCaptainEars
+  name: loadout-captain-ears-adt
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - ADTClothingHeadsetCommand
+  - ADTClothingHeadsetAltCommand
+
+- type: loadoutGroup
+  id: ADTHoP
+  name: loadout-HoP-ears-adt
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - ADTClothingHeadsetCommand
+  - ADTClothingHeadsetAltCommand
+
+- type: loadoutGroup
+  id: ADTBlueshieldEars
+  name: loadout-blueshield-ears-adt
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - ADTClothingHeadsetBlueshield
+  - ADTClothingHeadsetAltBlueshield
+
+- type: loadoutGroup
+  id: ADTChiefEngineerEars
+  name: loadout-chief-engineer-ears-adt
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - ADTClothingHeadsetCE
+  - ADTClothingHeadsetAltEngineering
+
+- type: loadoutGroup
+  id: ADTResearchDirectorEars
+  name: loadout-research-director-ears-adt
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - ADTClothingHeadsetRD
+  - ADTClothingHeadsetAltScience
+
+- type: loadoutGroup
+  id: ADTChiefMedicalOfficerEars
+  name: loadout-chief-medical-officer-ears-adt
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - ADTClothingHeadsetCMO
+  - ADTClothingHeadsetAltMedical
+
+- type: loadoutGroup
+  id: ADTSalvageSpecialistEars
+  name: loadout-salvage-specialist-ears-adt
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - ADTClothingHeadsetCargo
+  - ADTClothingHeadsetMining
+
 # MAGISTRATE
 
 - type: loadoutGroup
@@ -26,15 +99,15 @@
   maxLimit: 1
   loadouts:
   - ADTLightBrownGloves
-  - OrangeGloves
   - ADTRedGloves
   - ADTTealGloves
   - ADTGreenGloves
   - ADTWhiteGloves
   - ADTBlackGloves
   - ADTGrayGloves
-  - PurpleGloves
   - ADTBlueGloves
+  - ADTOrangeGloves
+  - ADTPurpleGloves
 
 - type: loadoutGroup
   id: LawyerShoes
@@ -71,7 +144,8 @@
   - CommonBackpack
   - CommonSatchel
   - CommonDuffel
-  - ADTMagistratBackpackSatchel
+  - ADTClothingBackpackSatchelLeather
+
 # PATHOLOGIST
 
 - type: loadoutGroup
@@ -265,7 +339,7 @@
   minLimit: 0
   loadouts:
   - LatexGloves
-  - PurpleGloves
+  - ADTPurpleGloves
   - RobohandsGloves
 
 # SENIOR ENGINEER
@@ -313,7 +387,7 @@
   loadouts:
   - LatexGloves
   # - NitrileGloves # ADT-Tweak (почему у НРа их нет (тем более они медицинские), а у доцента - есть?)
-  - PurpleGloves
+  - ADTPurpleGloves
 
 - type: loadoutGroup
   id: ADTSeniorResearcherOuterClothing
@@ -370,6 +444,15 @@
   - ADTBlueshieldBackpack
   - ADTBlueshieldSatchel
   - ADTBlueshieldDuffel
+
+- type: loadoutGroup
+  id: ADTBlueshieldOuterClothing
+  name: loadout-group-blueshield-outer-clothing
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - ADTClothingOuterWinterBlueshield
+  - ADTClothingBlueshieldArmor
 
 # WARDEN
 
@@ -603,9 +686,77 @@
   maxLimit: 1
   loadouts:
   - ADTClothingUniformJumpsuitSalvageSpecialist
+  - ADTUniformJumpsuitExplorer
   - GrimySalvageJumpsuit # Ganimed-Loadouts
+
+# ШАХТЁР
+- type: loadoutGroup
+  id: ADTMinerJumpsuit
+  name: loadout-miner-jumpsuit-adt
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
   - ADTUniformJumpsuitExplorer
 
+- type: loadoutGroup
+  id: ADTMinerBackpack
+  name: loadout-miner-backpack
+  loadouts:
+  - SalvageSpecialistBackpack
+  - SalvageSpecialistSatchel
+  - SalvageSpecialistDuffel
+
+- type: loadoutGroup
+  id: ADTMinerSpecialistEars
+  name: loadout-miner-ears-adt
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - ADTClothingHeadsetCargo
+  - ADTClothingHeadsetMining
+
+# Плащи
+- type: loadoutGroup
+  id: ADTMinerSpecialistNeck
+  name: loadout-miner-neck-adt
+  minLimit: 0
+  maxLimit: 1
+  loadouts:
+  - ADTNeckSalvageSpecialistCCape
+  - ADTNeckSalvageSpecialistSCape
+  - ADTNeckSalvageSpecialistGCape
+  - ADTNeckSalvageSpecialistPCape
+  - ADTNeckSalvageSpecialistECape
+  - ADTNeckSalvageSpecialistDCape
+  - ADTNeckSalvageSpecialistRCape
+
+- type: loadoutGroup
+  id: ADTMinerOuterClothing
+  name: loadout-miner-outerclothing-adt
+  minLimit: 0
+  maxLimit: 1
+  loadouts:
+  - SalvageSpecialistWintercoat
+  - ADTNeckSalvageSpecialistEBomber
+
+- type: loadoutGroup
+  id: ADTMinerPDA
+  name: loadout-miner-id-adt
+  loadouts:
+  - ADTMinerPDA
+
+- type: loadoutGroup
+  id: ADTMinerShoes
+  name: loadout-miner-shoes-adt
+  loadouts:
+  - SalvageBoots
+  - CargoWinterBoots
+  - ADTFootWrapsW
+  - ADTFootWrapsHighW
+  - ADTFootWrapsBr
+  - ADTFootWrapsHighBr
+  - ADTFootWrapsBl
+  - ADTFootWrapsHighBl
 
 # Плащи
 - type: loadoutGroup
@@ -738,7 +889,6 @@
   maxLimit: 1
   loadouts:
   - SalvagePDA
-  - ADTExcavatorPDA
 
 - type: loadoutGroup
   id: ADTClownPDA
@@ -1007,6 +1157,14 @@
   - ADTUnderwearSocksThigh
   - ADTUnderwearStockings
   - ADTUnderwearSocksComfyBlue
+  - ADTUnderwearSocksComfyGrey
+  - ADTUnderwearSocksComfyRed
+  - ADTUnderwearSocksComfyViolet
+  - ADTUnderwearSocksBee
+  - ADTUnderwearSocksBeeThigh
+  - ADTUnderwearSocksCoder
+  - ADTUnderwearStockingsLace
+  - ADTUnderwearStockingsBlack
   - ADTUnderwearStockingsComfyBlue
   - ADTUnderwearSocksThighBlue
   - ADTUnderwearSocksComfyGrey
@@ -1100,12 +1258,10 @@
   - ADTUnderwearSocksComfyGrey
   - ADTUnderwearSocksComfyRed
   - ADTUnderwearSocksComfyViolet
-  - ADTUnderwearSocksHeart
   - ADTUnderwearSocksBee
   - ADTUnderwearSocksBeeThigh
   - ADTUnderwearSocksCoder
   - ADTUnderwearStockingsLace
-  - ADTUnderwearStockingsHeart
   - ADTUnderwearStockingsBlack
   - ADTUnderwearStockingsComfyBlue
   - ADTUnderwearStockingsComfyGrey
@@ -1137,7 +1293,6 @@
   - ADTUnderwearSocksThighOrange
   - ADTUnderwearSocksPink
   - ADTUnderwearSocksKneePink
-  - ADTUnderwearSocksKneeCreepy
   - ADTUnderwearSocksThighCreepy
   - ADTUnderwearSocksKneeFishnet
   - ADTUnderwearSocksFullFishnet
@@ -1187,12 +1342,10 @@
   - ADTUnderwearSocksComfyGrey
   - ADTUnderwearSocksComfyRed
   - ADTUnderwearSocksComfyViolet
-  - ADTUnderwearSocksHeart
   - ADTUnderwearSocksBee
   - ADTUnderwearSocksBeeThigh
   - ADTUnderwearSocksCoder
   - ADTUnderwearStockingsLace
-  - ADTUnderwearStockingsHeart
   - ADTUnderwearStockingsBlack
   - ADTUnderwearStockingsComfyBlue
   - ADTUnderwearStockingsComfyGrey
@@ -1224,7 +1377,6 @@
   - ADTUnderwearSocksThighOrange
   - ADTUnderwearSocksPink
   - ADTUnderwearSocksKneePink
-  - ADTUnderwearSocksKneeCreepy
   - ADTUnderwearSocksThighCreepy
   - ADTUnderwearSocksKneeFishnet
   - ADTUnderwearSocksFullFishnet
@@ -2178,12 +2330,10 @@
   - ADTUnderwearSocksComfyGrey
   - ADTUnderwearSocksComfyRed
   - ADTUnderwearSocksComfyViolet
-  - ADTUnderwearSocksHeart
   - ADTUnderwearSocksBee
   - ADTUnderwearSocksBeeThigh
   - ADTUnderwearSocksCoder
   - ADTUnderwearStockingsLace
-  - ADTUnderwearStockingsHeart
   - ADTUnderwearStockingsBlack
   - ADTUnderwearStockingsComfyBlue
   - ADTUnderwearStockingsComfyGrey
@@ -2215,7 +2365,6 @@
   - ADTUnderwearSocksThighOrange
   - ADTUnderwearSocksPink
   - ADTUnderwearSocksKneePink
-  - ADTUnderwearSocksKneeCreepy
   - ADTUnderwearSocksThighCreepy
   - ADTUnderwearSocksKneeFishnet
   - ADTUnderwearSocksFullFishnet
@@ -2268,12 +2417,10 @@
   - ADTUnderwearSocksComfyGrey
   - ADTUnderwearSocksComfyRed
   - ADTUnderwearSocksComfyViolet
-  - ADTUnderwearSocksHeart
   - ADTUnderwearSocksBee
   - ADTUnderwearSocksBeeThigh
   - ADTUnderwearSocksCoder
   - ADTUnderwearStockingsLace
-  - ADTUnderwearStockingsHeart
   - ADTUnderwearStockingsBlack
   - ADTUnderwearStockingsComfyBlue
   - ADTUnderwearStockingsComfyGrey
@@ -2305,7 +2452,6 @@
   - ADTUnderwearSocksThighOrange
   - ADTUnderwearSocksPink
   - ADTUnderwearSocksKneePink
-  - ADTUnderwearSocksKneeCreepy
   - ADTUnderwearSocksThighCreepy
   - ADTUnderwearSocksKneeFishnet
   - ADTUnderwearSocksFullFishnet
@@ -2357,12 +2503,10 @@
   - ADTUnderwearSocksComfyGrey
   - ADTUnderwearSocksComfyRed
   - ADTUnderwearSocksComfyViolet
-  - ADTUnderwearSocksHeart
   - ADTUnderwearSocksBee
   - ADTUnderwearSocksBeeThigh
   - ADTUnderwearSocksCoder
   - ADTUnderwearStockingsLace
-  - ADTUnderwearStockingsHeart
   - ADTUnderwearStockingsBlack
   - ADTUnderwearStockingsComfyBlue
   - ADTUnderwearStockingsComfyGrey
@@ -2394,7 +2538,6 @@
   - ADTUnderwearSocksThighOrange
   - ADTUnderwearSocksPink
   - ADTUnderwearSocksKneePink
-  - ADTUnderwearSocksKneeCreepy
   - ADTUnderwearSocksThighCreepy
   - ADTUnderwearSocksKneeFishnet
   - ADTUnderwearSocksFullFishnet
@@ -2446,12 +2589,10 @@
   - ADTUnderwearSocksComfyGrey
   - ADTUnderwearSocksComfyRed
   - ADTUnderwearSocksComfyViolet
-  - ADTUnderwearSocksHeart
   - ADTUnderwearSocksBee
   - ADTUnderwearSocksBeeThigh
   - ADTUnderwearSocksCoder
   - ADTUnderwearStockingsLace
-  - ADTUnderwearStockingsHeart
   - ADTUnderwearStockingsBlack
   - ADTUnderwearStockingsComfyBlue
   - ADTUnderwearStockingsComfyGrey
@@ -2483,7 +2624,6 @@
   - ADTUnderwearSocksThighOrange
   - ADTUnderwearSocksPink
   - ADTUnderwearSocksKneePink
-  - ADTUnderwearSocksKneeCreepy
   - ADTUnderwearSocksThighCreepy
   - ADTUnderwearSocksKneeFishnet
   - ADTUnderwearSocksFullFishnet

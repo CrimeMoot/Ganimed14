@@ -165,6 +165,7 @@
   - CaptainCapWhite
   - CaptainBeretWhite
   # Ganimed-Loadouts-End
+  - ADTClothingAdmiralHat # ADT Loadout
 
 - type: loadoutGroup
   id: CaptainJumpsuit
@@ -197,6 +198,7 @@
   - CaptainCloakFormalAlt # Ganimed-Loadouts
   - ADTClothingCaptainShoulderNeck # ADT Loadout
   - CaptainMantle
+  - ADTClothingAdmiralShoulder # ADT Loadout
   # Ganimed-Loadouts-Start
   - CaptainMantleAlt
   - CaptainCloakLong
@@ -306,6 +308,10 @@
   # - ADTClothingUniformJumpskirtTurtleneckGrey # Ganimed-Loadouts
   # - ADTClothingUniformJumpsuitTurtleneckPink # Ganimed-Loadouts
   # - ADTClothingUniformJumpskirtTurtleneckPink # Ganimed-Loadouts
+  # - ADTClothingUniformJumpsuitHawaiRed # Ganimed-Loadouts
+  # - ADTClothingUniformJumpsuitHawaiBlue # Ganimed-Loadouts
+  # - ADTClothingUniformJumpsuitHawaiYellow # Ganimed-Loadouts
+  # - ADTClothingUniformJumpsuitHawaiBlack # Ganimed-Loadouts
   # ADT tweak end
 
 - type: loadoutGroup
@@ -489,6 +495,7 @@
   - ChaplainNunRobe
   - ChaplainBlackHoodie
   - ChaplainHoodie
+  - ADTChaplainReligiousLeaderRobe # ADT Tweak
   - ChaplainWitchHunterSuit # Ganimed-Loadouts
 
 - type: loadoutGroup
@@ -567,11 +574,12 @@
   loadouts:
   - BotanistHead
   - BotanistBandana
+  - ADTClothingHeadHatFlowerWreath # ADT tweak
   # Ganimed-Loadouts-Start
-  - BotanistStrawHat
   - BotanistPoppy
   - BotanistAmbrosia
-  - BotanistFlowerWreath
+#  - BotanistFlowerWreath
+  - BotanistStrawHat
   - WatermelonHelmet
   - HeadBucket
   # Ganimed-Loadouts-End
@@ -864,6 +872,7 @@
   - CargoTechnicianBackpack
   - CargoTechnicianSatchel
   - CargoTechnicianDuffel
+  - ADTClothingBackpackSatchelLeather # ADT tweak
 
 - type: loadoutGroup
   id: CargoTechnicianOuterClothing
@@ -1241,6 +1250,7 @@
   - ScientistBackpack
   - ScientistSatchel
   - ScientistDuffel
+  - ADTClothingBackpackSatchelLeather # ADT tweak
 
 - type: loadoutGroup
   id: ScientistOuterClothing
@@ -1276,7 +1286,7 @@
   minLimit: 0
   loadouts:
   - LatexGloves
-  - PurpleGloves
+  - ADTPurpleGloves # ADT tweak
 
 - type: loadoutGroup
   id: ScientistPDA
@@ -1710,6 +1720,7 @@
   - MedicalDoctorBackpack
   - MedicalDoctorSatchel
   - MedicalDoctorDuffel
+  - ADTClothingBackpackSatchelLeather # ADT tweak
 
 - type: loadoutGroup
   id: MedicalShoes

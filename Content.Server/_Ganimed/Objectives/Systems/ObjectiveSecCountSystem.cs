@@ -16,17 +16,14 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Server._Ganimed.Objectives.Systems;
 
-/// <summary>
-/// Система проверки количества сотрудников СБ для kill-объективов.
-/// Блокирует выдачу целей убийства при недостаточном количестве офицеров СБ.
-/// </summary>
+/// Система блокирует выдачу kill-объективов, если на станции меньше MinSec офицеров СБ.
 public sealed class ObjectiveSecCountSystem : EntitySystem
 {
     [Dependency] private readonly IPlayerManager _playerManager = default!;
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
     [Dependency] private readonly StationSystem _stationSystem = default!;
     [Dependency] private readonly SharedJobSystem _jobSystem = default!;
-    [Dependency] private readonly MindSystem _mindSystem = default!;
+    [Dependency] private readonly SharedMindSystem _mindSystem = default!;
 
     private DepartmentPrototype? _securityDepartment;
 
@@ -35,84 +32,49 @@ public sealed class ObjectiveSecCountSystem : EntitySystem
         base.Initialize();
 
         if (_prototypeManager.TryIndex<DepartmentPrototype>("Security", out var secDept))
-        {
             _securityDepartment = secDept;
-        }
         else
-        {
             Log.Error("Security department prototype not found!");
-        }
 
-        SubscribeLocalEvent<ObjectiveSecCountComponent, ObjectiveAfterAssignEvent>(OnObjectiveAfterAssign);
+        // Перехватываем убийство ДО выбора цели
+        SubscribeLocalEvent<ObjectiveSecCountComponent, ObjectiveAssignedEvent>(
+            OnObjectiveAssignedPre,
+            before: new[] { typeof(Content.Server.Objectives.Systems.PickObjectiveTargetSystem) });
+
         SubscribeLocalEvent<PrototypesReloadedEventArgs>(OnPrototypesReloaded);
     }
 
     private void OnPrototypesReloaded(PrototypesReloadedEventArgs ev)
     {
         if (_prototypeManager.TryIndex<DepartmentPrototype>("Security", out var secDept))
-        {
             _securityDepartment = secDept;
-        }
     }
 
-    private void OnObjectiveAfterAssign(EntityUid uid, ObjectiveSecCountComponent component, ref ObjectiveAfterAssignEvent args)
+    // Выполняется до подбора цели. Отменяет выдачу цели на убийство при нехватке СБ.
+    private void OnObjectiveAssignedPre(Entity<ObjectiveSecCountComponent> ent, ref ObjectiveAssignedEvent args)
     {
-        // Проверяем только задачи на убийство
-        if (!HasComp<KillPersonConditionComponent>(uid))
+        if (!HasComp<KillPersonConditionComponent>(ent.Owner) || !HasComp<TargetObjectiveComponent>(ent.Owner))
             return;
 
-        // Получаем цель убийства
-        if (!TryComp<TargetObjectiveComponent>(uid, out var targetComp) || targetComp.Target == null)
+        // Определяем станцию по текущему владельцу
+        if (args.Mind.OwnedEntity is not { } owned)
             return;
 
-        EntityUid? station = null;
-
-        // Пытаемся определить станцию - путём того, на кого цель.
-        if (TryComp<MindComponent>(targetComp.Target.Value, out var targetMind) && targetMind.OwnedEntity != null)
-        {
-            station = _stationSystem.GetOwningStation(targetMind.OwnedEntity.Value);
-        }
-
-        // Если по цели не удалось найти станцию, ищем станцию к которой привязан сам убийца
-        if (station == null && args.Mind != EntityUid.Invalid)
-        {
-            if (TryComp<MindComponent>(args.Mind, out var ownerMind) && ownerMind.OwnedEntity != null)
-            {
-                station = _stationSystem.GetOwningStation(ownerMind.OwnedEntity.Value);
-            }
-        }
-
+        var station = _stationSystem.GetOwningStation(owned);
         if (station == null)
-        {
-            Log.Warning($"Cannot determine station for objective {ToPrettyString(uid)}");
             return;
-        }
 
-        // Подсчитываем сотрудников СБ
         var secCount = CountSecurityOfficers(station.Value);
 
-        if (secCount < component.MinSec)
+        if (secCount < ent.Comp.MinSec)
         {
-            Log.Info($"Kill objective {ToPrettyString(uid)} BLOCKED and REMOVED: only {secCount} security officers (minimum: {component.MinSec})");
-
-            if (TryComp<MindComponent>(args.Mind, out var mind))
-            {
-                if (mind.Objectives.Contains(uid))
-                {
-                    mind.Objectives.Remove(uid);
-                    Log.Info($"Removed objective {ToPrettyString(uid)} from mind {ToPrettyString(args.Mind)}");
-                }
-
-                EntityManager.QueueDeleteEntity(uid);
-                Log.Info($"Deleted objective entity {ToPrettyString(uid)}");
-
-            }
+            // Блокируем выдачу ДО назначения цели
+            args.Cancelled = true;
+            Log.Info($"Kill objective blocked before assignment: Security={secCount}/{ent.Comp.MinSec} on {ToPrettyString(station.Value)}");
         }
     }
 
-    /// <summary>
-    /// Подсчитывает количество живых сотрудников СБ на станции
-    /// </summary>
+    // Подсчет живых сотрудников СБ на станции через департамент Security
     private int CountSecurityOfficers(EntityUid station)
     {
         if (_securityDepartment == null)
@@ -125,53 +87,31 @@ public sealed class ObjectiveSecCountSystem : EntitySystem
 
         foreach (var session in _playerManager.Sessions)
         {
-            if (session.AttachedEntity == null)
+            if (session.AttachedEntity is not { } entity)
                 continue;
 
-            var entity = session.AttachedEntity.Value;
-
-            // Проверяем что игрок на нужной станции
+            // На той же станции?
             var entityStation = _stationSystem.GetOwningStation(entity);
             if (entityStation != station)
                 continue;
 
-            // Проверяем что игрок жив
-            if (TryComp<MobStateComponent>(entity, out var mobState))
-            {
-                if (mobState.CurrentState != MobState.Alive)
-                    continue;
-            }
+            // Жив?
+            if (TryComp<MobStateComponent>(entity, out var mobState) &&
+                mobState.CurrentState != MobState.Alive)
+                continue;
 
-            // Получаем должность
+            // Получаем mind и job корректно (MindTryGetJob принимает mind-uid)
             if (!_mindSystem.TryGetMind(entity, out var mindId, out _))
                 continue;
 
             if (!_jobSystem.MindTryGetJob(mindId, out var job) || job == null)
                 continue;
 
-            if (IsJobInSecurityDepartment(job.ID))
-            {
+            // Принадлежит департаменту Security?
+            if (_securityDepartment.Roles.Contains(job.ID))
                 secCount++;
-                Log.Debug($"Counted security officer: {session.Name} ({job.ID})");
-            }
         }
 
         return secCount;
     }
-
-    private bool IsJobInSecurityDepartment(string jobId)
-    {
-        if (_securityDepartment == null)
-            return false;
-
-        return _securityDepartment.Roles.Contains(jobId);
-    }
-
-    public int GetSecurityCount(EntityUid station)
-    {
-        return CountSecurityOfficers(station);
-    }
 }
-
-[ByRefEvent]
-public record struct ObjectiveAfterAssignEvent(EntityUid Mind, EntityUid Objective, EntityUid Agent);

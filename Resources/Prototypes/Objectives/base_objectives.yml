@@ -52,7 +52,6 @@
       components:
       - SocialObjective
   - type: ObjectiveSecCount # Ganimed edit
-    MinSec: 2
   - type: KillPersonCondition
 
 # requires that the player interact socially with someone

@@ -1015,7 +1015,7 @@
   # ADT-Economy-Start
   - type: VendingMachine
     allForFree: false
-  # ADT-Economy-End
+  # ADT-Economy-Endr
 
 - type: entity
   parent: VendingMachine

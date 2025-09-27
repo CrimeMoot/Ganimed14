@@ -104,10 +104,10 @@ job-name-pizzaiolo = пиццайоло
 
 # Security
 
-# job-name-sheriff = шериф
+job-name-sheriff = шериф
 job-name-investigator = следователь
 job-name-field-doctor = полевой врач
 
 # Juridical
 
-job-name-adt-lawyer = юрист
+job-name-adt-lawyer = адвокат

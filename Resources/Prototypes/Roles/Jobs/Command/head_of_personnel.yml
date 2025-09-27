@@ -69,7 +69,6 @@
   - Cargo
   - Atmospherics
   - Medical
-  - Quartermaster #Ganimed-Tweak, test merge
   special:
 #  - !type:AddImplantSpecial # Ganimed-MRP
 #    implants: [ MindShieldImplant ] # Ganimed-MRP
@@ -84,7 +83,7 @@
     shoes: ClothingShoesColorBrown
     id: HoPPDA
     gloves: ClothingHandsGlovesHop
-    ears: ClothingHeadsetAltCommand
+    # ears: ClothingHeadsetAltCommand # ADT tweak
     belt: BoxFolderClipboard
   storage:
     back:

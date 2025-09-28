@@ -423,6 +423,6 @@ public sealed partial class CCVars
     ///     Включает или выключает ограничение по количеству СБ для целей на убийств
     /// </summary>
     public static readonly CVarDef<bool> SecObjectivesLimitEnabled =
-        CVarDef.Create("objectives.sec_limit_enabled", true, CVar.SERVER | CVar.REPLICATED | CVar.ARCHIVE);
+        CVarDef.Create("game.objectives_sec_limit_enabled", true, CVar.SERVER | CVar.REPLICATED | CVar.ARCHIVE);
 
 }

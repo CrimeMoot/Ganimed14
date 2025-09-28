@@ -42,6 +42,22 @@ public sealed class AnomalySpawnRule : StationEventSystem<AnomalySpawnRuleCompon
 
     protected override void Added(EntityUid uid, AnomalySpawnRuleComponent component, GameRuleComponent gameRule, GameRuleAddedEvent args)
     {
+        // Проверка через CVar — если включена, требуем минимум указанное количество учёных
+        if (_cfg.GetCVar(CCVars.AutoEventsAnomalySpawnNeedRnd))
+        {
+            if (!TryGetRandomStation(out var chosenStation))
+                return;
+
+            EntityUid stationUid = chosenStation.Value;
+            var scientistCount = CountScientists(stationUid);
+
+            if (scientistCount < component.MinScientists)
+            {
+                Log.Info($"Anomaly spawn blocked: Scientists={scientistCount}/{component.MinScientists} on {ToPrettyString(stationUid)}");
+                return;
+            }
+        }
+
         if (!TryComp<StationEventComponent>(uid, out var stationEvent))
             return;
 
@@ -58,29 +74,17 @@ public sealed class AnomalySpawnRule : StationEventSystem<AnomalySpawnRuleCompon
 
         if (!TryGetRandomStation(out var chosenStation))
             return;
-        // Ganimed edit start
+
         EntityUid stationUid = chosenStation.Value;
 
-        // Проверка через CVar — если включена, требуем минимум указанное количество учёных
-        if (_cfg.GetCVar(CCVars.AutoEventsAnomalySpawnNeedRnd))
-        {
-            var scientistCount = CountScientists(stationUid);
-            if (scientistCount < component.MinScientists)
-            {
-                Log.Info($"Anomaly spawn blocked: Scientists={scientistCount}/{component.MinScientists} on {ToPrettyString(stationUid)}");
-                return;
-            }
-        }
-        // Ganimed edit end
-
-        if (!TryComp<StationDataComponent>(stationUid, out var stationData)) // Ganimed edit
+        if (!TryComp<StationDataComponent>(stationUid, out var stationData))
             return;
 
-        var gridNullable = StationSystem.GetLargestGrid(stationData); // Ganimed edit
-        if (gridNullable == null) // Ganimed edit
+        var gridNullable = StationSystem.GetLargestGrid(stationData);
+        if (gridNullable == null)
             return;
 
-        EntityUid gridUid = gridNullable.Value; // Ganimed edit
+        EntityUid gridUid = gridNullable.Value;
 
         var amountToSpawn = 1;
         for (var i = 0; i < amountToSpawn; i++)

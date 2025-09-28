@@ -12,4 +12,7 @@ public sealed partial class AnomalySpawnRuleComponent : Component
 {
     [DataField("anomalySpawnerPrototype", customTypeSerializer: typeof(PrototypeIdSerializer<EntityPrototype>))]
     public string AnomalySpawnerPrototype = "RandomAnomalySpawner";
+
+    [DataField("minScientists")]
+    public int MinScientists = 2;
 }

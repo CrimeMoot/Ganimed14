@@ -418,11 +418,4 @@ public sealed partial class CCVars
     public static readonly CVarDef<bool> LobbyAutoVotes =
         CVarDef.Create("game.lobby_auto_votes", true);
 
-    /// <summary>
-    ///     Ganimed edit
-    ///     Включает или выключает ограничение по количеству СБ для целей на убийств
-    /// </summary>
-    public static readonly CVarDef<bool> SecObjectivesLimitEnabled =
-        CVarDef.Create("game.objectives_sec_limit_enabled", true, CVar.SERVER | CVar.REPLICATED | CVar.ARCHIVE);
-
 }

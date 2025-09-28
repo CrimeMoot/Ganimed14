@@ -11,6 +11,7 @@ using Robust.Server.Player;
 using Robust.Shared.Configuration;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
+using Content.Shared.Mobs.Systems;
 // Ganimed edit end
 
 namespace Content.Server.StationEvents.Events;
@@ -23,6 +24,7 @@ public sealed class AnomalySpawnRule : StationEventSystem<AnomalySpawnRuleCompon
     [Dependency] private readonly SharedJobSystem _jobSystem = default!; // Ganimed edit
     [Dependency] private readonly IPrototypeManager _prototypes = default!; // Ganimed edit
     [Dependency] private readonly IConfigurationManager _cfg = default!; // Ganimed edit
+    [Dependency] private readonly MobStateSystem _mobState = default!; // Ganimed edit
 
     private DepartmentPrototype? _scienceDepartment; // Ganimed edit
 
@@ -98,6 +100,9 @@ public sealed class AnomalySpawnRule : StationEventSystem<AnomalySpawnRuleCompon
         foreach (var session in _playerManager.Sessions)
         {
             if (session.AttachedEntity is not { } entity)
+                continue;
+
+            if (!_mobState.IsAlive(entity))
                 continue;
 
             var entityStation = StationSystem.GetOwningStation(entity);

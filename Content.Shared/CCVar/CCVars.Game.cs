@@ -380,11 +380,11 @@ public sealed partial class CCVars
     public static readonly CVarDef<bool> GameTabletopPlace =
         CVarDef.Create("game.tabletop_place", false, CVar.SERVERONLY);
 
-        /// <summary>
-        ///     If true, contraband severity can be viewed in the examine menu
-        /// </summary>
-     public static readonly CVarDef<bool> ContrabandExamine =
-        CVarDef.Create("game.contraband_examine", false, CVar.SERVER | CVar.REPLICATED); ///ADT no wizard cringe
+    /// <summary>
+    ///     If true, contraband severity can be viewed in the examine menu
+    /// </summary>
+    public static readonly CVarDef<bool> ContrabandExamine =
+       CVarDef.Create("game.contraband_examine", false, CVar.SERVER | CVar.REPLICATED); ///ADT no wizard cringe
 
     /// <summary>
     ///     If true, contraband examination is only possible while wearing an item with `ShowContrabandDetailsComponent`. Requires `ContrabandExamine` to be true as well.
@@ -417,4 +417,12 @@ public sealed partial class CCVars
     /// </summary>
     public static readonly CVarDef<bool> LobbyAutoVotes =
         CVarDef.Create("game.lobby_auto_votes", true);
+
+    /// <summary>
+    ///     Ganimed edit
+    ///     Включает или выключает ограничение по количеству СБ для целей на убийств
+    /// </summary>
+    public static readonly CVarDef<bool> SecObjectivesLimitEnabled =
+        CVarDef.Create("objectives.sec_limit_enabled", true, CVar.SERVER | CVar.REPLICATED | CVar.ARCHIVE);
+
 }

@@ -3,6 +3,7 @@ using Content.Server.Mind;
 using Content.Server.Objectives.Components;
 using Content.Server.Objectives.Systems;
 using Content.Server.Station.Systems;
+using Content.Shared.CCVar;
 using Content.Shared.Mobs;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Mind;
@@ -11,6 +12,7 @@ using Content.Shared.Objectives.Components;
 using Content.Shared.Roles;
 using Content.Shared.Roles.Jobs;
 using Robust.Server.Player;
+using Robust.Shared.Configuration;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 
@@ -18,7 +20,7 @@ namespace Content.Server._Ganimed.Objectives.Systems;
 
 /// <summary>
 /// Система проверки количества сотрудников СБ для целей на убийство.
-/// Блокирует выдачу целей убийства при недостаточном количестве офицеров СБ.
+/// Можно отключать через CVar (objectives.sec_limit_enabled = false).
 /// </summary>
 public sealed class ObjectiveSecCountSystem : EntitySystem
 {
@@ -27,6 +29,7 @@ public sealed class ObjectiveSecCountSystem : EntitySystem
     [Dependency] private readonly StationSystem _stationSystem = default!;
     [Dependency] private readonly SharedJobSystem _jobSystem = default!;
     [Dependency] private readonly SharedMindSystem _mindSystem = default!;
+    [Dependency] private readonly IConfigurationManager _cfg = default!;
 
     private DepartmentPrototype? _securityDepartment;
 
@@ -56,6 +59,9 @@ public sealed class ObjectiveSecCountSystem : EntitySystem
     // Выполняется до подбора цели. Отменяет выдачу цели на убийство при нехватке СБ.
     private void OnObjectiveAssignedPre(Entity<ObjectiveSecCountComponent> ent, ref ObjectiveAssignedEvent args)
     {
+        if (!_cfg.GetCVar(CCVars.SecObjectivesLimitEnabled))
+            return;
+
         if (!HasComp<KillPersonConditionComponent>(ent.Owner) || !HasComp<TargetObjectiveComponent>(ent.Owner))
             return;
 

@@ -18,6 +18,8 @@ using Robust.Shared.Player;
 using Robust.Shared.Utility;
 using Content.Server.StationEvents.Components;
 
+namespace Content.Server._Ganimed.StationEvents.Systems;
+
 /// <summary>
 /// Глобальный гейт для игровых правил: если не хватает людей в департаментах — событие не запускается.
 /// Работает для любых игровых событий с DepartmentPlayerLimitComponent.
@@ -95,20 +97,6 @@ public sealed class DepartmentPlayerLimitSystem : EntitySystem
 
         var deptNames = string.Join(", ", comp.Departments);
 
-        // Отменяем событие: убираем анонс и звук, если оно всё таки прошло но отменилась.
-        if (TryComp<StationEventComponent>(uid, out var se))
-        {
-            se.StartAnnouncement = null;
-            se.EndAnnouncement = null;
-            se.StartAudio = null;
-        }
-
-        _chatManager.SendAdminAnnouncementColor(
-            $"[System] Отмена события {ToPrettyString(uid)}: {deptNames} ({have}/{comp.MinLimit})",
-            colorOverrid: Color.White
-        );
-
-        // Удаляем правило, чтобы его Started() не отработал вовсе.
         QueueDel(uid);
     }
 

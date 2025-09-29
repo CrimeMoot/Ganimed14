@@ -1,5 +1,5 @@
 using Content.Server.StationEvents.Components;
-using Content.Shared.GameTicking.Components;
+﻿using Content.Shared.GameTicking.Components;
 using Robust.Shared.Random;
 
 namespace Content.Server.StationEvents.Events;
@@ -11,10 +11,9 @@ public sealed class BluespaceArtifactRule : StationEventSystem<BluespaceArtifact
         if (!TryComp<StationEventComponent>(uid, out var stationEvent))
             return;
 
-        // Ganimed edit - отключаем оповещение, перенесли её именно на ивент. А то событие идёт раньше - чем сам ивент.
-        //var str = Loc.GetString("bluespace-artifact-event-announcement",
-        //    ("sighting", Loc.GetString(RobustRandom.Pick(component.PossibleSighting))));
-        //stationEvent.StartAnnouncement = str;
+        var str = Loc.GetString("bluespace-artifact-event-announcement",
+            ("sighting", Loc.GetString(RobustRandom.Pick(component.PossibleSighting))));
+        stationEvent.StartAnnouncement = str;
 
         base.Added(uid, component, gameRule, args);
     }

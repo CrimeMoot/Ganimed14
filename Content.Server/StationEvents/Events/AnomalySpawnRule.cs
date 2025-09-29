@@ -14,10 +14,9 @@ public sealed class AnomalySpawnRule : StationEventSystem<AnomalySpawnRuleCompon
         if (!TryComp<StationEventComponent>(uid, out var stationEvent))
             return;
 
-        // Ganimed edit - отключаем оповещение, перенесли её именно на ивент.
-        //var str = Loc.GetString("anomaly-spawn-event-announcement",
-        //    ("sighting", Loc.GetString($"anomaly-spawn-sighting-{RobustRandom.Next(1, 6)}")));
-        //stationEvent.StartAnnouncement = str;
+        var str = Loc.GetString("anomaly-spawn-event-announcement",
+            ("sighting", Loc.GetString($"anomaly-spawn-sighting-{RobustRandom.Next(1, 6)}")));
+        stationEvent.StartAnnouncement = str;
 
         base.Added(uid, component, gameRule, args);
     }

@@ -3,7 +3,7 @@ using Robust.Shared.Serialization.Manager.Attributes;
 using Robust.Shared.Prototypes;
 using Content.Shared.Roles;
 
-namespace Content.Shared.StationEvents.Components;
+namespace Content.Shared._Ganimed.StationEvents.Components;
 
 /// <summary>
 /// Ограничитель события по минимальному числу игроков в указанных департаментах.

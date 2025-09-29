@@ -7,7 +7,7 @@ using Content.Shared.Roles;
 using Content.Shared.Mind;
 using Content.Shared._Ganimed.CCVar;
 using Content.Shared.Mind.Components;
-using Content.Shared.StationEvents.Components;
+using Content.Shared._Ganimed.StationEvents.Components;
 using Content.Shared.Roles.Jobs;
 using Content.Shared.GameTicking.Components;
 using Content.Shared.Mobs.Components;

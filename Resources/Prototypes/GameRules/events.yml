@@ -84,7 +84,6 @@
   components:
   - type: StationEvent
     startAnnouncementColor: "#18abf5"
-    startAnnouncement: anomaly-spawn-event-announcement # Ganimed edit
     startAudio:
       path: /Audio/ADT/Announcements/spanomalies.ogg # ADT Tweak
       params:
@@ -107,7 +106,6 @@
       max:  30
   - type: StationEvent
     startAnnouncementColor: "#18abf5"
-    startAnnouncement: bluespace-artifact-event-announcement # Ganimed edit
     startAudio:
       path: /Audio/Corvax/Announcements/blusp_anomalies.ogg # Corvax-Announcements
       params:

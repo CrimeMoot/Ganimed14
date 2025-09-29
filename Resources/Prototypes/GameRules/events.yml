@@ -91,6 +91,10 @@
     weight: 8
     duration: 35
   - type: AnomalySpawnRule
+  - type: DepartmentPlayerLimit
+    departments:
+      - Science          
+    minLimit: 2
 
 - type: entity
   id: BluespaceArtifact

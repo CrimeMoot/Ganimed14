@@ -1,7 +1,7 @@
 ﻿using Content.Server.Anomaly;
 using Content.Server.Station.Components;
 using Content.Server.StationEvents.Components;
-﻿using Content.Shared.GameTicking.Components;
+using Content.Shared.GameTicking.Components;
 
 namespace Content.Server.StationEvents.Events;
 
@@ -14,9 +14,10 @@ public sealed class AnomalySpawnRule : StationEventSystem<AnomalySpawnRuleCompon
         if (!TryComp<StationEventComponent>(uid, out var stationEvent))
             return;
 
-        var str = Loc.GetString("anomaly-spawn-event-announcement",
-            ("sighting", Loc.GetString($"anomaly-spawn-sighting-{RobustRandom.Next(1, 6)}")));
-        stationEvent.StartAnnouncement = str;
+        // Ganimed edit - отключаем оповещение, перенесли её именно на ивент.
+        //var str = Loc.GetString("anomaly-spawn-event-announcement",
+        //    ("sighting", Loc.GetString($"anomaly-spawn-sighting-{RobustRandom.Next(1, 6)}")));
+        //stationEvent.StartAnnouncement = str;
 
         base.Added(uid, component, gameRule, args);
     }

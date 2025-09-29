@@ -16,6 +16,7 @@ using Robust.Shared.Prototypes;
 using Robust.Server.Player;
 using Robust.Shared.Player;
 using Robust.Shared.Utility;
+using Content.Server.StationEvents.Components;
 
 /// <summary>
 /// Глобальный гейт для игровых правил: если не хватает людей в департаментах — событие не запускается.
@@ -39,7 +40,39 @@ public sealed class DepartmentPlayerLimitSystem : EntitySystem
         base.Initialize();
 
         // Вешаемся на добавление любого game rule. Это происходит до его Started().
-        SubscribeLocalEvent<DepartmentPlayerLimitComponent, GameRuleAddedEvent>(OnRuleAdded);
+        SubscribeLocalEvent<DepartmentPlayerLimitComponent, GameRuleAddedEvent>(
+            OnRuleAdded,
+            before: new[] { typeof(ChatSystem), typeof(StationSystem), typeof(GameTicker) }
+        );
+    }
+
+    /// <summary>
+    /// Пре‑чек для планировщика: можно ли запускать правило с прототипом ruleProtoId?
+    /// </summary>
+    public bool CanRunForPrototype(string ruleProtoId,
+                                   out int have, out int need, out string deptNames)
+    {
+        have = 0;
+        need = 0;
+        deptNames = string.Empty;
+
+        if (!_cfg.GetCVar(CCVars.DepartmentLimitEnabled))
+            return true;
+
+        if (!_protos.TryIndex<EntityPrototype>(ruleProtoId, out var proto))
+            return true;
+
+        if (!proto.TryGetComponent(out DepartmentPlayerLimitComponent? limit))
+            return true;
+
+        need = limit.MinLimit;
+        if (need <= 0 || limit.Departments.Count == 0)
+            return true;
+
+        deptNames = string.Join(", ", limit.Departments);
+        have = CountOnlineByDepartments(limit.Departments);
+
+        return have >= need;
     }
 
     private void OnRuleAdded(EntityUid uid, DepartmentPlayerLimitComponent comp, ref GameRuleAddedEvent args)
@@ -56,17 +89,24 @@ public sealed class DepartmentPlayerLimitSystem : EntitySystem
             return;
 
         // Считаем людей по департаментам
-        var onlineByDept = CountOnlineByDepartments(comp.Departments);
-
-        if (onlineByDept >= comp.MinLimit)
+        var have = CountOnlineByDepartments(comp.Departments);
+        if (have >= comp.MinLimit)
             return;
 
         var deptNames = string.Join(", ", comp.Departments);
 
+        // Отменяем событие: убираем анонс и звук, если оно всё таки прошло но отменилась.
+        if (TryComp<StationEventComponent>(uid, out var se))
+        {
+            se.StartAnnouncement = null;
+            se.EndAnnouncement = null;
+            se.StartAudio = null;
+        }
+
         _chatManager.SendAdminAnnouncementColor(
-                            $"[System] Отмена события {ToPrettyString(uid)}: участников {deptNames} меньше {onlineByDept} из {comp.MinLimit} желаемых",
-                            colorOverrid: Color.White
-                        );
+            $"[System] Отмена события {ToPrettyString(uid)}: {deptNames} ({have}/{comp.MinLimit})",
+            colorOverrid: Color.White
+        );
 
         // Удаляем правило, чтобы его Started() не отработал вовсе.
         QueueDel(uid);
@@ -104,12 +144,11 @@ public sealed class DepartmentPlayerLimitSystem : EntitySystem
             if (mind.OwnedEntity is not { } body)
                 continue;
 
-            // Должен быть живой моб
-            if (!TryComp<MobStateComponent>(body, out var mobState) ||
-                mobState.CurrentState != MobState.Alive)
+            // Только живые
+            if (!TryComp<MobStateComponent>(body, out var mob) || mob.CurrentState != MobState.Alive)
                 continue;
 
-            // Должность берём по mind
+            // Должность через mind
             if (!_jobs.MindTryGetJob(mindId, out var job) || job == null)
                 continue;
 

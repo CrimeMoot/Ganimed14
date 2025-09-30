@@ -91,10 +91,10 @@
     weight: 8
     duration: 35
   - type: AnomalySpawnRule
-  - type: DepartmentPlayerLimit
+  - type: DepartmentPlayerLimit # Ganimed edit
     departments:
       - Science          
-    minLimit: 2
+    minLimit: 1
 
 - type: entity
   id: BluespaceArtifact
@@ -458,6 +458,10 @@
     minimumPlayers: 15
     weight: 5
     duration: 60
+  - type: DepartmentPlayerLimit # Ganimed edit
+    departments:
+      - Security          
+    minLimit: 1
   - type: VentCrittersRule
     entries:
     - id: MobAdultSlimesBlueAngry
@@ -500,6 +504,10 @@
     minimumPlayers: 15
     weight: 5
     duration: 60
+  - type: DepartmentPlayerLimit # Ganimed edit
+    departments:
+      - Security          
+    minLimit: 1
   - type: VentCrittersRule
     entries:
 # ADT tweak start Разные пауки
@@ -527,6 +535,10 @@
     minimumPlayers: 20
     weight: 1.5
     duration: 60
+  - type: DepartmentPlayerLimit # Ganimed edit
+    departments:
+      - Security          
+    minLimit: 1
   - type: VentCrittersRule
     entries:
     - id: ADTMobClownSpider # ADT tweak
@@ -622,6 +634,10 @@
       path: /Audio/Announcements/intercept.ogg
     duration: null # the rule has to last the whole round not 1 second
     occursDuringRoundEnd: false
+  - type: DepartmentPlayerLimit # Ganimed edit
+    departments:
+      - Command        
+    minLimit: 1
   - type: AlertLevelInterceptionRule
   - type: AntagSelection
     definitions:

@@ -100,6 +100,10 @@
     minimumPlayers: 25
   - type: MeteorSwarm
     announcementSound: /Audio/Announcements/meteors_start.ogg # Corvax-Announcements
+  - type: DepartmentPlayerLimit # Ganimed edit
+    departments:
+      - Engineering        
+    minLimit: 1
 
 - type: entity
   parent: GameRuleMeteorSwarm

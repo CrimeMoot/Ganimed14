@@ -42,5 +42,6 @@
   contrabandInventory:
     TobaccoSeeds: 2
     FoodSnackSemki: 2
+    CucumberSeeds: 5 # Ganimed-Edit
   emaggedInventory:
     FlyAmanitaSeeds: 1

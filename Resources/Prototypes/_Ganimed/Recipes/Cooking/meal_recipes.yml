@@ -44,6 +44,24 @@
   - Microwave
 
 - type: microwaveMealRecipe
+  id: RecipeSoupSolyanka
+  name: solyanka soup
+  result: FoodSoupSolyanka
+  group: Soup
+  time: 15
+  reagents:
+    Water: 5
+  solids:
+    FoodMeatSnake: 1
+    FoodMeatCutlet: 1
+    FoodPickle: 2
+    FoodLime: 2
+    FoodBowlBig: 1
+  recipeType:
+  - Oven
+  - Microwave
+
+- type: microwaveMealRecipe
   id: RecipeSoupOkroshka
   name: okroshka with kvass
   result: FoodSoupOkroshka
@@ -80,21 +98,3 @@
     FoodBowlBig: 1
   recipeType:
   - Assembler
-
-- type: microwaveMealRecipe
-  id: RecipeSoupSolyanka
-  name: solyanka soup
-  result: FoodSoupSolyanka
-  group: Soup
-  time: 15
-  reagents:
-    Water: 5
-  solids:
-    FoodMeatSnake: 1
-    FoodMeatCutlet: 1
-    FoodPickle: 2
-    FoodLime: 2
-    FoodBowlBig: 1
-  recipeType:
-  - Oven
-  - Microwave

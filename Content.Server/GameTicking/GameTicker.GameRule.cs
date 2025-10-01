@@ -10,13 +10,11 @@ using Robust.Shared.Console;
 using Robust.Shared.Map;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Localization;
-using Content.Server._Ganimed.StationEvents.Systems; // Ganimed edit
 
 namespace Content.Server.GameTicking;
 
 public sealed partial class GameTicker
 {
-    [Dependency] private readonly DepartmentPlayerLimitSystem _deptLimit = default!; // Ganimed edit
     [ViewVariables] private readonly List<(TimeSpan, string)> _allPreviousGameRules = new();
 
     /// <summary>
@@ -343,17 +341,6 @@ public sealed partial class GameTicker
 
                 continue;
             }
-
-            // Ganimed edit start
-            if (!_deptLimit.CanRunForPrototype(rule, out var have, out var need, out var depts))
-            {
-                _chatManager.SendAdminAnnouncementColor(
-                    $"[System] Невозможно добавить событие {rule}: {depts} ({have}/{need})",
-                    colorOverrid: Color.White
-                );
-                continue;
-            }
-            // Ganimed edit end
 
             if (shell.Player != null)
             {

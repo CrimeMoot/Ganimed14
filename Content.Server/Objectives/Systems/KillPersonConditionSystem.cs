@@ -29,48 +29,50 @@ public sealed class KillPersonConditionSystem : EntitySystem
         if (!_target.GetTarget(uid, out var target))
             return;
 
-        args.Progress = GetProgress(target.Value, comp.RequireMaroon);
+        args.Progress = GetProgress(uid, target.Value, comp);
     }
 
     /// <summary>
-    /// Новая логика:
-    /// - смерть цели всегда даёт 100% и прогресс не спадает;
-    /// - если цель жива, то проверяется условие шаттла (maroon).
+    /// Логика цели "убить персонажа":
+    /// - если цель когда-либо была убита, прогресс навсегда = 100%;
+    /// - если цель жива, проверяется условие maroon (шаттл);
+    /// - если цель удалена или gibbed, засчитывается как убитая.
     /// </summary>
-    private float GetProgress(EntityUid target, bool requireMaroon)
+    private float GetProgress(EntityUid uid, EntityUid target, KillPersonConditionComponent comp)
     {
-        // удалена/распилена/иначе потеряна сущность — считается как убитая
+        if (comp.KilledOnce)
+            return 1f;
+
         if (!TryComp<MindComponent>(target, out var mind) || mind.OwnedEntity == null)
-            return 1f;
-
-        // один раз умер — цель выполнена
-        if (_mind.IsCharacterDeadIc(mind))
-            return 1f;
-
-        // проверяем maroon
-        if (requireMaroon)
         {
-            var targetMarooned = !_emergencyShuttle.IsTargetEscaping(mind.OwnedEntity.Value) 
+            comp.KilledOnce = true;
+            return 1f;
+        }
+
+        if (_mind.IsCharacterDeadIc(mind))
+        {
+            comp.KilledOnce = true;
+            return 1f;
+        }
+
+        if (comp.RequireMaroon)
+        {
+            var targetMarooned = !_emergencyShuttle.IsTargetEscaping(mind.OwnedEntity.Value)
                                  || _mind.IsCharacterUnrevivableIc(mind);
 
-            // если шаттлы отключены, maroon недостижим
             if (!_config.GetCVar(CCVars.EmergencyShuttleEnabled))
                 return 0f;
 
-            // шаттл ещё не прибыл → прогресс 0
             if (!_emergencyShuttle.EmergencyShuttleArrived)
                 return 0f;
 
-            // шаттл ещё не улетел → можно дать 50%, если цель уже не на нём
             if (!_emergencyShuttle.ShuttlesLeft)
                 return targetMarooned ? 0.5f : 0f;
 
-            // шаттл улетел → если цели на нём нет, то 100%
             if (_emergencyShuttle.ShuttlesLeft)
                 return targetMarooned ? 1f : 0f;
         }
 
-        // если maroon не требуется и цель жива → провал
         return 0f;
     }
 }

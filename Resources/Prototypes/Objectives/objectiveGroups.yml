@@ -30,7 +30,8 @@
 - type: weightedRandom
   id: TraitorObjectiveGroupKill
   weights:
-    KillRandomPersonObjective: 1
+    # KillRandomPersonObjective: 1 Ganimed edit
+    TeachLessonRandomPersonObjective: 1 # Ganimed edit
     KillRandomHeadObjective: 0.25
 
 - type: weightedRandom

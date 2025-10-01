@@ -20,4 +20,10 @@ public sealed partial class KillPersonConditionComponent : Component
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
     public bool RequireMaroon = false;
+
+    /// <summary>
+    /// Ganimed edit - статус когда умер один раз.
+    /// </summary>
+    [DataField]
+    public bool KilledOnce = false;
 }

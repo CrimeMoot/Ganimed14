@@ -17,7 +17,7 @@
 - type: entity
   parent: [BaseTraitorObjective, BaseTeachLessonObjective]
   id: TeachLessonRandomPersonObjective
-  description: Убейте их и покажите всем, что мы настроены серьезно. Им нужно умереть только один раз.
+  description: teach-lesson-random-person-objective-desc
   components:
   - type: Objective
     difficulty: 1.75

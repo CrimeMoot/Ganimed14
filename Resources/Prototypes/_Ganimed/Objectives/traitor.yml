@@ -17,7 +17,7 @@
 - type: entity
   parent: [BaseTraitorObjective, BaseTeachLessonObjective]
   id: TeachLessonRandomPersonObjective
-  description: teach-lesson-random-person-objective-desc
+  description: Kill them, and show everyone we mean business. They only need to die once.
   components:
   - type: Objective
     difficulty: 1.75

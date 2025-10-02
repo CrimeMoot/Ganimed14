@@ -1,6 +1,7 @@
-using Content.Server.Objectives.Systems;
+using Content.Server._Ganimed.Objectives.Systems;
+using Content.Server.Objectives.Components;
 
-namespace Content.Server.Objectives.Components;
+namespace Content.Server._Ganimed.Objectives.Components;
 
 /// <summary>
 /// Requires that a target dies once and only once.

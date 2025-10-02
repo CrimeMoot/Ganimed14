@@ -58,6 +58,7 @@
     icon:
       sprite: Mobs/Ghosts/ghost_human.rsi
       state: icon
+  - type: CodeCondition
   - type: ObjectiveBlacklistRequirement
     blacklist:
       components:

@@ -50,6 +50,7 @@ namespace Content.Server.Database
                 .Include(p => p.Profiles).ThenInclude(h => h.Jobs)
                 .Include(p => p.Profiles).ThenInclude(h => h.Antags)
                 .Include(p => p.Profiles).ThenInclude(h => h.Traits)
+                .Include(p => p.Profiles).ThenInclude(h => h.AltTitles) // Ganimed-JobAlt: ensure loaded on login
                 // ADT Start
                 .Include(p => p.Profiles).ThenInclude(h => h.Languages)
                 .Include(p => p.Profiles)
@@ -108,6 +109,7 @@ namespace Content.Server.Database
                 .Include(p => p.Jobs)
                 .Include(p => p.Antags)
                 .Include(p => p.Traits)
+                .Include(p => p.AltTitles) // Ganimed-JobAlt: ensure tracked for proper Clear()
                 // ADT Start
                 .Include(p => p.Languages)
                 .Include(p => p.Loadouts)
@@ -236,6 +238,17 @@ namespace Content.Server.Database
                 }
             }
 
+            // Ganimed-JobAlt-start
+            // Может быть несколько записей на одну роль — выбираем последнюю по Id
+            var altTitles = profile.AltTitles
+                .GroupBy(r => r.RoleName)
+                .ToDictionary(
+                    g => new ProtoId<JobPrototype>(g.Key),
+                    g => new ProtoId<JobAlternateTitlePrototype>(g
+                        .OrderByDescending(x => x.Id)
+                        .First().AlternateTitle)
+                );
+            // Ganimed-JobAlt-end
             var loadouts = new Dictionary<string, RoleLoadout>();
 
             foreach (var role in profile.Loadouts)
@@ -287,7 +300,8 @@ namespace Content.Server.Database
                 ),
                 spawnPriority,
                 jobs,
-                (PreferenceUnavailableMode) profile.PreferenceUnavailable,
+                altTitles, // Ganimed-JobAlt
+                (PreferenceUnavailableMode)profile.PreferenceUnavailable,
                 antags.ToHashSet(),
                 traits.ToHashSet(),
                 loadouts,
@@ -345,6 +359,20 @@ namespace Content.Server.Database
                 humanoid.TraitPreferences
                         .Select(t => new Trait {TraitName = t})
             );
+
+            // Ganimed-JobAlt-start
+            profile.AltTitles.Clear();
+            foreach (var (role, title) in humanoid.JobAlternateTitles)
+            {
+                var newTitle = new DBJobAlternateTitle()
+                {
+                    RoleName = role.Id,
+                    AlternateTitle = title.Id
+                };
+
+                profile.AltTitles.Add(newTitle);
+            }
+            // Ganimed-JobAlt-end
 
             profile.Loadouts.Clear();
 

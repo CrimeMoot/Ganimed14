@@ -42,7 +42,7 @@
 - type: startingGear
   id: IAAGear
   equipment:
-    # shoes: ClothingShoesColorBlack # Ganimed-Loadouts
+    # shoes: ClothingShoesColorBlack ADT-Tweak
     id: IAAPDA
     # eyes: ClothingEyesGlassesSunglasses # Ganimed-Loadouts
     ears: ClothingHeadsetIAA

@@ -26,3 +26,4 @@
     title: objective-condition-teach-person-title
   - type: PickRandomPerson
   - type: TeachLessonCondition
+  - type: CodeCondition

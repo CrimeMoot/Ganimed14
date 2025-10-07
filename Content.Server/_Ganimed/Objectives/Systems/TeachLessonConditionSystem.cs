@@ -19,6 +19,12 @@ public sealed class TeachLessonConditionSystem : EntitySystem
         base.Initialize();
 
         SubscribeLocalEvent<MobStateChangedEvent>(OnMobStateChanged);
+        SubscribeLocalEvent<TeachLessonConditionComponent, ComponentInit>(OnTeachLessonConditionInit);
+    }
+
+    private void OnTeachLessonConditionInit(EntityUid uid, TeachLessonConditionComponent comp, ComponentInit args)
+    {
+        _codeCondition.SetCompleted((uid, null), false);
     }
 
     // TODO: subscribe by ref at some point in the future
@@ -33,8 +39,7 @@ public sealed class TeachLessonConditionSystem : EntitySystem
 
         // Get all TeachLessonConditionComponent entities
         var query = EntityQueryEnumerator<TeachLessonConditionComponent, TargetObjectiveComponent>();
-
-        while (query.MoveNext(out var uid, out _, out var targetObjective))
+        while (query.MoveNext(out var uid, out var teachComp, out var targetObjective))
         {
             // Check if this objective's target matches the entity that died
             if (targetObjective.Target != mindId)

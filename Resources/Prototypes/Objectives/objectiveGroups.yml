@@ -31,7 +31,8 @@
   id: TraitorObjectiveGroupKill
   weights:
     KillRandomPersonObjective: 1
-    KillRandomHeadObjective: 0.25
+    TeachLessonRandomPersonObjective: 1 # DeltaV teach a lesson objective
+    KillRandomHeadObjective: 0.4 # Ganimed edit
 
 - type: weightedRandom
   id: TraitorObjectiveGroupState

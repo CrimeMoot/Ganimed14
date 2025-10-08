@@ -8,8 +8,6 @@
     sprite: _Ganimed/Objects/Specific/Hydroponics/plant_bag_bluespace.rsi
     state: icon
   - type: MagnetPickup
-    magnetEnabled: false
-    magnetCanBeEnabled: false
   - type: Clothing
     quickEquip: false
     slots:

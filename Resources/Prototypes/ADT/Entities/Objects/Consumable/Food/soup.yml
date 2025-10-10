@@ -109,7 +109,7 @@
           Quantity: 8
         - ReagentId: Vitamin
           Quantity: 3
-        - ReagentId: Water
+        - ReagentId: Protein
           Quantity: 5
 
 - type: entity

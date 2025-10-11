@@ -328,3 +328,7 @@ ui-options-chatstack-count = { $count ->
     [1] Последнее сообщение
    *[other] Последние {$count} сообщения
 }
+
+## Ganimed - TranslitSystem
+ui-options-toggle-translit-en-to-ru = (Чат) Транслитерирует ваш ввод в латинском алфавите в кириллицу.
+ui-options-toggle-translit-ru-to-en = (Чат) Транслитерирует все в окне чата с кириллицы на латиницу.

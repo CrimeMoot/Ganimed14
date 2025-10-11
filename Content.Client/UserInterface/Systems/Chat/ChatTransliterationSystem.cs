@@ -52,6 +52,7 @@ namespace Content.Client.UserInterface.Systems.Chat
             {"sh","ш"},
             {"yu","ю"},
             {"ya","я"},
+            {"'","ь"},
             {"a","а"},
             {"b","б"},
             {"c","ц"},

@@ -396,5 +396,5 @@ ui-options-admin-overlay-ghost-fade-distance = Ghost overlay fade range from mou
 ui-options-admin-overlay-ghost-hide-distance = Ghost overlay hide range from mouse
 
 ## Ganimed - TranslitSystem
-ui-options-toggle-translit-en-to-ru = (Chat) Transliterates your latin chat input into cyrilic.
-ui-options-toggle-translit-ru-to-en = (Chat) Transliterate everything in the chatbox from cyrilic into latin.
+ui-options-toggle-translit-en-to-ru = (Chat) Transliterates your latin chat input into cyrilic
+ui-options-toggle-translit-ru-to-en = (Chat) Transliterate everything in the chatbox from cyrilic into latin

@@ -31,7 +31,7 @@
                 <CheckBox Name="OpaqueStorageWindowCheckBox" Text="{Loc 'ui-options-opaque-storage-window'}" />
                 <CheckBox Name="StaticStorageUI" Text="{Loc 'ui-options-static-storage-ui'}" />
                 <!-- <CheckBox Name="ToggleWalk" Text="{Loc 'ui-options-hotkey-toggle-walk'}" /> -->
-                <CheckBox Name="TranslitEnToRuCheckBox" Text="{Loc 'ui-options-toggle-translit-en-to-ru '}" /> <!-- Ganimed - transliteration -->
+                <CheckBox Name="TranslitEnToRuCheckBox" Text="{Loc 'ui-options-toggle-translit-en-to-ru'}" /> <!-- Ganimed - transliteration -->
                 <CheckBox Name="TranslitRuToEnCheckBox" Text="{Loc 'ui-options-toggle-translit-ru-to-en'}" /> <!-- Ganimed - transliteration -->
             </BoxContainer>
         </ScrollContainer>

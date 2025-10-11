@@ -190,11 +190,13 @@ public sealed class ChatUIController : UIController
         _net.RegisterNetMessage<MsgDeleteChatMessagesBy>(OnDeleteChatMessagesBy);
         SubscribeNetworkEvent<DamageForceSayEvent>(OnDamageForceSay);
         _config.OnValueChanged(CCVars.ChatEnableColorName, (value) => { _chatNameColorsEnabled = value; });
+        _chatNameColorsEnabled = _config.GetCVar(CCVars.ChatEnableColorName);
         // Start - ganimed transliteration
         _config.OnValueChanged(CCVars.TransliterationEnToRu, (value) => { _translitEnToRuEnabled = value; });
         _config.OnValueChanged(CCVars.TransliterationRuToEn, (value) => { _translitRuToEnEnabled = value; });
+        _translitEnToRuEnabled = _config.GetCVar(CCVars.TransliterationEnToRu);
+        _translitRuToEnEnabled = _config.GetCVar(CCVars.TransliterationRuToEn);
         // End - ganimed transliteration
-        _chatNameColorsEnabled = _config.GetCVar(CCVars.ChatEnableColorName);
 
         _speechBubbleRoot = new LayoutContainer();
 

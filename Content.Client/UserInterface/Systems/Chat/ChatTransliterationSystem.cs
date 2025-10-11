@@ -4,7 +4,7 @@ using System.Text.RegularExpressions;
 
 namespace Content.Client.UserInterface.Systems.Chat
 {
-    public class ChatTransliterationSystem
+    public static class ChatTransliterationSystem
     {
         private static readonly Dictionary<string, string> RuToEn = new Dictionary<string, string>(){ //code quality people, you can сосать мой огромный хуй))))
             {"а","a"},
@@ -41,7 +41,7 @@ namespace Content.Client.UserInterface.Systems.Chat
             {"ю","yu"},
             {"я","ya"}
         };
-        private static readonly Dictionary<string, string> EnToRu = new Dictionary<string, string>(){ //thankfully even for letters like the standard a the russian alphabet has its own utc anal)))ogs which save us from an infinite recursive loop, praise prigozhin inshallah
+        private static readonly Dictionary<string, string> EnToRu = new Dictionary<string, string>(){
             {"ye","е"}, //first in the foreach loop are the complex two letter transliterations
             {"yo","ё"},
             {"zh","ж"},
@@ -80,90 +80,39 @@ namespace Content.Client.UserInterface.Systems.Chat
             {"y","ы"},
             {"z","з"},
         };
-        public static string TransliterateRussianToEnglish(string message)
+        private static string Transliterate(string message, Dictionary<string, string> dictionary)
         {
-            foreach (KeyValuePair<string, string> ele in RuToEn)
+            foreach (var (key, value) in dictionary)
             {
-                var RussianLetter = ele.Key;
-                var EnglishLetter = ele.Value;
-                // Using the same system as ReplacementAccentSystem.cs, performance hit irrelevant due to this running clientside.
-                var maskMessage = message;
-                // RT wont let me use regex.count because MUH SANDBOX VIOLATION, so i instead use the even MORE malware-capable regex.matches :)
-                for (int i = Regex.Matches(message, $"{RussianLetter}", RegexOptions.IgnoreCase).Count; i > 0; i--)
+                var pattern = Regex.Escape(key);
+                message = Regex.Replace(message, pattern, match =>
                 {
-                    // fetch the match again as the character indices may have changed
-                    Match match = Regex.Match(maskMessage, $"{RussianLetter}", RegexOptions.IgnoreCase);
-                    var TempReplacement = EnglishLetter;
+                    var replacement = value;
 
-                    // Intelligently replace capitalization
-                    // two cases where we will do so:
-                    // - the string is all upper case (just uppercase the replacement too)
-                    // - the first letter of the word is capitalized (common, just uppercase the first letter too)
-                    // any other cases are not really useful or not viable, since the match & replacement can be different
-                    // lengths
-
-                    // second expression here is weird--its specifically for single-word capitalization for I or A
-                    // dwarf expands I -> Ah, without that it would transform I -> AH
-                    // so that second case will only fully-uppercase if the replacement length is also 1
-                    if (!match.Value.Any(char.IsLower) && (match.Length > 1 || TempReplacement.Length == 1))
+                    if (!match.Value.Any(char.IsLower) && (match.Length > 1 || replacement.Length == 1))
                     {
-                        TempReplacement = TempReplacement.ToUpperInvariant();
+                        replacement = replacement.ToUpperInvariant();
                     }
-                    else if (match.Length >= 1 && TempReplacement.Length >= 1 && char.IsUpper(match.Value[0]))
+                    else if (match.Length >= 1 && replacement.Length >= 1 && char.IsUpper(match.Value[0]))
                     {
-                        TempReplacement = TempReplacement[0].ToString().ToUpper() + TempReplacement[1..];
+                        replacement = replacement[0].ToString().ToUpper() + replacement[1..];
                     }
 
-                    // In-place replace the match with the transformed capitalization replacement
-                    message = message.Remove(match.Index, match.Length).Insert(match.Index, TempReplacement);
-                    var mask = new string('_', TempReplacement.Length);
-                    maskMessage = maskMessage.Remove(match.Index, match.Length).Insert(match.Index, mask);
-                }
+                    return replacement;
+                }, RegexOptions.IgnoreCase);
             }
 
             return message;
         }
+
+        public static string TransliterateRussianToEnglish(string message)
+        {
+            return Transliterate(message, RuToEn);
+        }
+
         public static string TransliterateEnglishToRussian(string message)
         {
-            foreach (KeyValuePair<string, string> ele in EnToRu)
-            {
-                var EnglishLetter = ele.Key;
-                var RussianLetter = ele.Value;
-                // Using the same system as ReplacementAccentSystem.cs, performance hit irrelevant due to this running clientside.
-                var maskMessage = message;
-                // RT wont let me use regex.count because MUH SANDBOX VIOLATION, so i instead use the even MORE malware-capable regex.matches :)
-                for (int i = Regex.Matches(message, $"{EnglishLetter}", RegexOptions.IgnoreCase).Count; i > 0; i--)
-                {
-                    // fetch the match again as the character indices may have changed
-                    Match match = Regex.Match(maskMessage, $"{EnglishLetter}", RegexOptions.IgnoreCase);
-                    var TempReplacement = RussianLetter;
-
-                    // Intelligently replace capitalization
-                    // two cases where we will do so:
-                    // - the string is all upper case (just uppercase the replacement too)
-                    // - the first letter of the word is capitalized (common, just uppercase the first letter too)
-                    // any other cases are not really useful or not viable, since the match & replacement can be different
-                    // lengths
-
-                    // second expression here is weird--its specifically for single-word capitalization for I or A
-                    // dwarf expands I -> Ah, without that it would transform I -> AH
-                    // so that second case will only fully-uppercase if the replacement length is also 1
-                    if (!match.Value.Any(char.IsLower) && (match.Length > 1 || TempReplacement.Length == 1))
-                    {
-                        TempReplacement = TempReplacement.ToUpperInvariant();
-                    }
-                    else if (match.Length >= 1 && TempReplacement.Length >= 1 && char.IsUpper(match.Value[0]))
-                    {
-                        TempReplacement = TempReplacement[0].ToString().ToUpper() + TempReplacement[1..];
-                    }
-
-                    // In-place replace the match with the transformed capitalization replacement
-                    message = message.Remove(match.Index, match.Length).Insert(match.Index, TempReplacement);
-                    var mask = new string('_', TempReplacement.Length);
-                    maskMessage = maskMessage.Remove(match.Index, match.Length).Insert(match.Index, mask);
-                }
-            }
-            return message;
+            return Transliterate(message, EnToRu);
         }
     }
 }

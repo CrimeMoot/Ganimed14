@@ -41,7 +41,7 @@ namespace Content.Client.UserInterface.Systems.Chat
             {"ю","yu"},
             {"я","ya"}
         };
-        private static readonly Dictionary<string, string> EnToRu = new Dictionary<string, string>(){ //thankfully even for letters like the standard a the russian alphabet has its own utc anal)))ogs which save us from an infinite recursive loop, praise prigozhin inshallah
+        private static readonly Dictionary<string, string> EnToRu = new Dictionary<string, string>(){ 
             {"ye","е"}, //first in the foreach loop are the complex two letter transliterations
             {"yo","ё"},
             {"zh","ж"},

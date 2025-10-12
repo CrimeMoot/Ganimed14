@@ -54,8 +54,8 @@
   components:
   - type: StationEvent
     earliestStart: 30
-    weight: 3
-    reoccurrenceDelay: 30
+    weight: 2 # Ganimed-Tweak (3 to 2)
+    reoccurrenceDelay: 60 # Ganimed-Tweak (30 to 60)
   - type: CentComRandomEvent
 
 - type: entity

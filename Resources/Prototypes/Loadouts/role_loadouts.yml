@@ -5,6 +5,7 @@
   - Inventory # Corvax-Loadouts
   - CaptainHead
   - CaptainNeck
+  - ADTCaptainEars # ADT tweak
   - CaptainJumpsuit
   - CaptainBackpack
   - CaptainGloves # Ganimed-Loadouts
@@ -30,6 +31,7 @@
   - GroupTankHarness
   - HoPHead
   - HoPNeck
+  - ADTHoP # ADT tweak
   - HoPJumpsuit
   - HoPBackpack
   - HoPOuterClothing
@@ -343,6 +345,7 @@
   - Inventory # Corvax-Loadouts
   - GroupTankHarness
   - QuartermasterHead
+  - ADTQuartermasterEars # ADT tweak
   - QuartermasterNeck
   - QuartermasterJumpsuit
   - CargoTechnicianBackpack
@@ -395,6 +398,7 @@
   - ADTSalvageSpecialistJumpsuit #ADT Loadouts
   - SalvageSpecialistBackpack
   - ADTSalvageSpecialistNeck #ADT Loadouts
+  - ADTSalvageSpecialistEars # ADT tweak
   - SalvageSpecialistOuterClothing
   - SalvageSpecialistBelt # Ganimed-Loadouts
   - SalvageSpecialistGloves # Ganimed-Loadouts
@@ -419,6 +423,7 @@
   - GroupTankHarness
   - ChiefEngineerHead
   - ChiefEngineerJumpsuit
+  - ADTChiefEngineerEars # ADT tweak
   - ChiefEngineerBackpack # Corvax-Loadouts
   - ADTEngineeringBelt # ADT-TWEAK
   - ChiefEngineerGlasses # Ganimed-Loadouts
@@ -511,6 +516,7 @@
   - GroupTankHarness
   - ResearchDirectorHead
   - ResearchDirectorNeck
+  - ADTResearchDirectorEars # ADT tweak
   - ResearchDirectorJumpsuit
   - ScientistBackpack
   - ResearchDirectorOuterClothing
@@ -700,6 +706,7 @@
   - ChiefMedicalOfficerBelt # ADT tweak
   - ChiefMedicalOfficerOuterClothing
   - ChiefMedicalOfficerNeck
+  - ADTChiefMedicalOfficerEars # ADT tweak
   - ChiefMedicalOfficerShoes
   - ChiefMedicalOfficerGlasses # Ganimed-Loadouts
   - ADTCMOPDA # ADT tweak

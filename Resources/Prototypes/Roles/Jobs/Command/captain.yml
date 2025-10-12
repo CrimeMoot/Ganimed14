@@ -64,7 +64,7 @@
     # eyes: ClothingEyesGlassesSunglasses # Ganimed-Loadouts
     # gloves: ClothingHandsGlovesCaptain # Ganimed-Loadouts
     id: CaptainPDA
-    ears: ClothingHeadsetAltCommand
+    # ears: ClothingHeadsetAltCommand # ADT tweak
   storage:
     back:
     - Flash

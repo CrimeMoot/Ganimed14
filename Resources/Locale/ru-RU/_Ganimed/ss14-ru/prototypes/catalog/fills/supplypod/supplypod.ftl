@@ -6,44 +6,44 @@ ent-SupplyPodFallingAnimationSurplusCargo = { ent-SupplyPodSyndicateFallingAnima
 ent-SupplyPodSurplusCargo = { ent-SupplyPodCapsuleSyndicate }
     .desc = { ent-SupplyPodCapsuleSyndicate.desc }
 
-ent-SupplyPodCircleSyndicateSurplus5TK = { ent-BaseSupplyPodTargetCircle }
+ent-SupplyPodCircleSyndicateSurplus5TC = { ent-BaseSupplyPodTargetCircle }
     .desc = { ent-BaseSupplyPodTargetCircle.desc }
     .suffix = Припасы Синдиката 5ТК, Синдикат
-ent-SupplyPodFallingAnimationSyndicateSurplus5TK = { ent-SupplyPodSyndicateFallingAnimation }
+ent-SupplyPodFallingAnimationSyndicateSurplus5TC = { ent-SupplyPodSyndicateFallingAnimation }
     .desc = { ent-SupplyPodSyndicateFallingAnimation.desc }
-ent-SupplyPodSyndicateSurplus5TK = { ent-SupplyPodCapsuleSyndicate }
+ent-SupplyPodSyndicateSurplus5TC = { ent-SupplyPodCapsuleSyndicate }
     .desc = { ent-SupplyPodCapsuleSyndicate.desc }
 
-ent-SupplyPodCircleSyndicateSurplus10TK = { ent-BaseSupplyPodTargetCircle }
+ent-SupplyPodCircleSyndicateSurplus10TC = { ent-BaseSupplyPodTargetCircle }
     .desc = { ent-BaseSupplyPodTargetCircle.desc }
     .suffix = Припасы Синдиката 10ТК, Синдикат
-ent-SupplyPodFallingAnimationSyndicateSurplus10TK = { ent-SupplyPodSyndicateFallingAnimation }
+ent-SupplyPodFallingAnimationSyndicateSurplus10TC = { ent-SupplyPodSyndicateFallingAnimation }
     .desc = { ent-SupplyPodSyndicateFallingAnimation.desc }
-ent-SupplyPodSyndicateSurplus10TK = { ent-SupplyPodCapsuleSyndicate }
+ent-SupplyPodSyndicateSurplus10TC = { ent-SupplyPodCapsuleSyndicate }
     .desc = { ent-SupplyPodCapsuleSyndicate.desc }
 
-ent-SupplyPodCircleSyndicateSurplus15TK = { ent-BaseSupplyPodTargetCircle }
+ent-SupplyPodCircleSyndicateSurplus15TC = { ent-BaseSupplyPodTargetCircle }
     .desc = { ent-BaseSupplyPodTargetCircle.desc }
     .suffix = Припасы Синдиката 15ТК, Синдикат
-ent-SupplyPodFallingAnimationSyndicateSurplus15TK = { ent-SupplyPodSyndicateFallingAnimation }
+ent-SupplyPodFallingAnimationSyndicateSurplus15TC = { ent-SupplyPodSyndicateFallingAnimation }
     .desc = { ent-SupplyPodSyndicateFallingAnimation.desc }
-ent-SupplyPodSyndicateSurplus15TK = { ent-SupplyPodCapsuleSyndicate }
+ent-SupplyPodSyndicateSurplus15TC = { ent-SupplyPodCapsuleSyndicate }
     .desc = { ent-SupplyPodCapsuleSyndicate.desc }
 
-ent-SupplyPodCircleSyndicateSurplus20TK = { ent-BaseSupplyPodTargetCircle }
+ent-SupplyPodCircleSyndicateSurplus20TC = { ent-BaseSupplyPodTargetCircle }
     .desc = { ent-BaseSupplyPodTargetCircle.desc }
     .suffix = Припасы Синдиката 20ТК, Синдикат
-ent-SupplyPodFallingAnimationSyndicateSurplus20TK = { ent-SupplyPodSyndicateFallingAnimation }
+ent-SupplyPodFallingAnimationSyndicateSurplus20TC = { ent-SupplyPodSyndicateFallingAnimation }
     .desc = { ent-SupplyPodSyndicateFallingAnimation.desc }
-ent-SupplyPodSyndicateSurplus20TK = { ent-SupplyPodCapsuleSyndicate }
+ent-SupplyPodSyndicateSurplus20TC = { ent-SupplyPodCapsuleSyndicate }
     .desc = { ent-SupplyPodCapsuleSyndicate.desc }
 
-ent-SupplyPodCircleSyndicateSurplus25TK = { ent-BaseSupplyPodTargetCircle }
+ent-SupplyPodCircleSyndicateSurplus25TC = { ent-BaseSupplyPodTargetCircle }
     .desc = { ent-BaseSupplyPodTargetCircle.desc }
     .suffix = Припасы Синдиката 25ТК, Синдикат
-ent-SupplyPodFallingAnimationSyndicateSurplus25TK = { ent-SupplyPodSyndicateFallingAnimation }
+ent-SupplyPodFallingAnimationSyndicateSurplus25TC = { ent-SupplyPodSyndicateFallingAnimation }
     .desc = { ent-SupplyPodSyndicateFallingAnimation.desc }
-ent-SupplyPodSyndicateSurplus25TK = { ent-SupplyPodCapsuleSyndicate }
+ent-SupplyPodSyndicateSurplus25TC = { ent-SupplyPodCapsuleSyndicate }
     .desc = { ent-SupplyPodCapsuleSyndicate.desc }
 
 ent-SupplyPodCircleSyndicateSurplusBundle = { ent-BaseSupplyPodTargetCircle }

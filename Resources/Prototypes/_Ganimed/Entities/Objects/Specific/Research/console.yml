@@ -1,3 +1,4 @@
+# TODO: make a better prototype and localization
 - type: entity
   parent: BaseComputer
   id: ComputerBotanicDNAManipulator

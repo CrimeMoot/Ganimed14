@@ -901,8 +901,8 @@
   minLimit: 1
   maxLimit: 1
   loadouts:
-  - ADTLawyerPDA
   - LawyerPDA
+  - ADTLawyerPDA
 
 
 - type: loadoutGroup

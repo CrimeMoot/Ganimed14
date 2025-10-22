@@ -1,5 +1,5 @@
 - type: entity
-  parent: BaseComputer
+  parent: BaseComputerAiAccess
   id: ComputerPlantDNAManipulator
   name: plant seed DNA manipulator computer
   description: There are seeds scattered on the panel. Apparently, someone doesn't clean up after themselves.

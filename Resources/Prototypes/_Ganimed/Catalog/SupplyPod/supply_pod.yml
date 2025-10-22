@@ -155,7 +155,7 @@
         - SupplyPodSyndicateSurplus25TC
 
 - type: entity
-  parent: [SupplyPodCapsuleSyndicate, CrateSyndicateSurplusBundle ]
+  parent: [ SupplyPodCapsuleSyndicate, CrateSyndicateSurplusBundle ]
   categories: [ HideSpawnMenu ]
   id: SupplyPodSyndicateSurplus25TC
   components:
@@ -182,7 +182,7 @@
         - SupplyPodSyndicateSurplusBundle
 
 - type: entity
-  parent: [SupplyPodCapsuleSyndicate, CrateSyndicateSurplusBundle ]
+  parent: [ SupplyPodCapsuleSyndicate, CrateSyndicateSurplusBundle ]
   categories: [ HideSpawnMenu ]
   id: SupplyPodSyndicateSurplusBundle
   components:

@@ -69,11 +69,3 @@ ent-SupplyPodFallingAnimationCybersunJuggernautBundle = { ent-SupplyPodSyndicate
     .desc = { ent-SupplyPodSyndicateFallingAnimation.desc }
 ent-SupplyPodCybersunJuggernautBundle = { ent-SupplyPodCapsuleSyndicate }
     .desc = { ent-SupplyPodCapsuleSyndicate.desc }
-
-ent-SupplyPodCircleNPCGondola = { ent-BaseSupplyPodTargetCircle }
-    .desc = { ent-BaseSupplyPodTargetCircle.desc }
-    .suffix = Гондола
-ent-SupplyPodFallingAnimationNPCGondola = { ent-SupplyPodGondolaFallingAnimation }
-    .desc = { ent-SupplyPodGondolaFallingAnimation.desc }
-ent-SupplyPodNPCGondola = { ent-SupplyPodCapsuleGondola }
-    .desc = { ent-SupplyPodCapsuleGondola.desc }

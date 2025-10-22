@@ -51,4 +51,4 @@ seed-dna-chemicalProp-PotencyDivisor = Делитель потенции
 seed-dna-chemicalProp-Inherent = Врожденный
 
 # Локализация газов — заполнить по необходимости
-#seed-dna-gas-??? = ???
+# seed-dna-gas-??? = ???

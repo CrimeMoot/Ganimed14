@@ -35,7 +35,7 @@
   components:
     - type: TimedSpawner
       prototypes:
-        -  SupplyPodFallingAnimationSyndicateSurplus5TC
+        - SupplyPodFallingAnimationSyndicateSurplus5TC
 
 - type: entity
   parent: SupplyPodSyndicateFallingAnimation
@@ -62,7 +62,7 @@
   components:
     - type: TimedSpawner
       prototypes:
-        -  SupplyPodFallingAnimationSyndicateSurplus10TC
+        - SupplyPodFallingAnimationSyndicateSurplus10TC
 
 - type: entity
   parent: SupplyPodSyndicateFallingAnimation
@@ -89,7 +89,7 @@
   components:
     - type: TimedSpawner
       prototypes:
-        -  SupplyPodFallingAnimationSyndicateSurplus15TC
+        - SupplyPodFallingAnimationSyndicateSurplus15TC
 
 - type: entity
   parent: SupplyPodSyndicateFallingAnimation
@@ -116,7 +116,7 @@
   components:
     - type: TimedSpawner
       prototypes:
-        -  SupplyPodFallingAnimationSyndicateSurplus20TC
+        - SupplyPodFallingAnimationSyndicateSurplus20TC
 
 - type: entity
   parent: SupplyPodSyndicateFallingAnimation
@@ -143,7 +143,7 @@
   components:
     - type: TimedSpawner
       prototypes:
-        -  SupplyPodFallingAnimationSyndicateSurplus25TC
+        - SupplyPodFallingAnimationSyndicateSurplus25TC
 
 - type: entity
   parent: SupplyPodSyndicateFallingAnimation
@@ -170,7 +170,7 @@
   components:
     - type: TimedSpawner
       prototypes:
-        -  SupplyPodFallingAnimationSyndicateSurplusBundle
+        - SupplyPodFallingAnimationSyndicateSurplusBundle
 
 - type: entity
   parent: SupplyPodSyndicateFallingAnimation
@@ -197,7 +197,7 @@
   components:
     - type: TimedSpawner
       prototypes:
-        -  SupplyPodFallingAnimationSyndicateSuperSurplusBundle
+        - SupplyPodFallingAnimationSyndicateSuperSurplusBundle
 
 - type: entity
   parent: SupplyPodSyndicateFallingAnimation
@@ -224,7 +224,7 @@
   components:
     - type: TimedSpawner
       prototypes:
-        -  SupplyPodFallingAnimationCybersunJuggernautBundle
+        - SupplyPodFallingAnimationCybersunJuggernautBundle
 
 - type: entity
   parent: SupplyPodSyndicateFallingAnimation

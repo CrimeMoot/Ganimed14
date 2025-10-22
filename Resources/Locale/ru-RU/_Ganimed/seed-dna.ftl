@@ -1,3 +1,6 @@
+seed-dna-slot-component-slot-name-disk = ДНК-диск
+seed-dna-slot-component-slot-name-seeds = Семена
+
 seed-dna-window-title = Манипулятор ДНК семян
 seed-dna-window-seed = Семена:
 seed-dna-window-dnadisk = ДНК-диск:

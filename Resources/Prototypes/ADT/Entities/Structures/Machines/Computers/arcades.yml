@@ -101,6 +101,26 @@
     - WhoopieCushion
     - Whistle
     - ADTPlushieSchrodinger
+    # Ganimed-Plushies-Start
+    - PlushieCaptain
+    - PlushieHeadOfSecurity
+    - PlushieInternalAffairsAgent
+    - PlushieChiefMedicalOfficer
+    - PlushieMedicalWorker
+    - PlushieParamedic
+    - PlushieVirologist
+    - PlushieChemist
+    - PlushieChemist
+    - PlushieBartenderSlime
+    - PlushieServiceWorker
+    - PlushieQuartermaster
+    - PlushieLizardQM
+    - PlushieSalvageSpecialist
+    - PlushieLizardBex
+    - PlushieLizardHart
+    - PlushieLizardReesa
+    - PlushieLizardMetaku
+    # Ganimed-Plushies-End
   - type: Computer
     board: MinesweeperCircuitboard
   - type: ActivatableUI

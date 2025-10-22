@@ -13,7 +13,7 @@
   - SeedExtractorMachineCircuitboard
   - HydroponicsTrayMachineCircuitboard
   - ReagentGrinderIndustrialMachineCircuitboard
-  - BotanicDNACircuitboard # Ganimed
+  - PlantDNAManipulatorCircuitboard # Ganimed-Edit
   # ADT Research Console Rework start
   position: 2,-1
   requiredTech:

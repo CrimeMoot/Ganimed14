@@ -1,9 +1,8 @@
-# TODO: make a better prototype and localization
 - type: entity
   parent: BaseItem
-  id: BotanicDNADisk
-  name: диск с ДНК семян
-  description: Диск предназначен для хранения информации о мутациях в семенах.
+  id: PlantDNADisk
+  name: plant seed DNA disk
+  description: This data disk stores information about genetic modifications and mutations in plant seeds.
   components:
     - type: Sprite
       sprite: Objects/Misc/module.rsi

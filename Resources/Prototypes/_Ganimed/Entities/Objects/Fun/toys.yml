@@ -96,7 +96,7 @@
       map: ["foldedLayer"]
       visible: true
   - type: Foldable
-    folded: true
+    folded: true # Folded by default
 
 - type: entity
   parent: BasePlushie
@@ -108,13 +108,16 @@
     sprite: _Ganimed/Objects/Fun/toys.rsi
     state: ocion
   - type: Extractable
-    grindableSolutionName: chemist
+    grindableSolutionName: food
   - type: SolutionContainerManager
     solutions:
-      chemist:
+      food:
+        maxVol: 20
         reagents:
-          - ReagentId: Ephedrine
-            Quantity: 10
+        - ReagentId: Fiber
+          Quantity: 10
+        - ReagentId: Ephedrine
+          Quantity: 10
 
 - type: entity
   parent: BasePlushieToggleable
@@ -239,32 +242,3 @@
   - type: Clothing
     sprite: _Ganimed/Objects/Fun/toys.rsi
     equippedPrefix: reesu
-
-#- type: entity
-#  name: Ganimed Plushies Spawner
-#  id: GanimedPlushiesSpawner
-#  parent: MarkerBase
-#  components:
-#    - type: Sprite
-#      layers:
-#        - state: red
-#        - sprite: _Ganimed/Objects/Fun/toys.rsi
-#          state: mira
-#    - type: RandomSpawner
-#      prototypes:
-#        - PlushieLizardQM
-#        - PlushieBartenderSlime1
-#        - PlushieInternalAffairsAgent
-#        - PlushieMedicalWorker
-#        - PlushieServiceWorker
-#        - PlushieCaptain
-#        - PlushieHeadOfSecurity
-#        - PlushieQuartermaster
-#        - PlushieChiefMedicalOfficer
-#        - PlushieVirologist
-#        - PlushieLizardBex
-#        - PlushieLizardReesa
-#        - PlushieLizardMetaku
-#        - PlushieLizardHart
-#      chance: 1
-#      offset: 0.2

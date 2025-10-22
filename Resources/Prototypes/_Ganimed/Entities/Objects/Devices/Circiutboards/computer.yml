@@ -1,9 +1,8 @@
-# TODO: make a better prototype and localization
 - type: entity
   parent: BaseComputerCircuitboard
-  id: BotanicDNACircuitboard
-  name: печатная плата манипулятора ДНК семян
-  description: Печатная плата для производства манипулятора ДНК семян.
+  id: PlantDNAManipulatorCircuitboard
+  name: plant seed DNA manipulator computer board
+  description: A computer printed circuit board for a plant seed DNA manipulator console.
   components:
     - type: Sprite
       state: cpu_service

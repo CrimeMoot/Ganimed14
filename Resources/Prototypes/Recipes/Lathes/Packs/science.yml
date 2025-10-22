@@ -96,7 +96,7 @@
   - AnomalyVesselCircuitboard
   - AnomalyVesselExperimentalCircuitboard
   - AnomalySynchronizerCircuitboard
-  - BotanicDNACircuitboard # Ganimed
+  - PlantDNAManipulatorCircuitboard # Ganimed-Edit
   - APECircuitboard
   - ArtifactAnalyzerMachineCircuitboard
   - ArtifactCrusherMachineCircuitboard

@@ -77,5 +77,4 @@ public sealed partial class CCVars
     /// </summary>
     public static readonly CVarDef<bool> NestedStorage =
         CVarDef.Create("control.nested_storage", true, CVar.REPLICATED | CVar.SERVER);
-
 }

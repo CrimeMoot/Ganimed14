@@ -78,6 +78,12 @@ public sealed partial class AtmosMonitorComponent : Component
     public bool MonitorsPipeNet = false;
 
     /// <summary>
+    /// Ganimed - KS14 fire sensor port - this variable is self explanatory, checks if the host tile is on fire.
+    /// </summary>
+    [DataField]
+    public bool IsOnFire = false;
+
+    /// <summary>
     /// Specifies the name of the pipe node that this device is monitoring.
     /// </summary>
     [DataField]

@@ -38,6 +38,7 @@
     syncWith:
     - AirAlarm
     - AirSensor
+    - FireSensor #Ganimed
     - GasVent
     - GasScrubber
   - type: AtmosAlarmableVisuals

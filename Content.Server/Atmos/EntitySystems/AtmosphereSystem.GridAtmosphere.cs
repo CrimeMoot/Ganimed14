@@ -246,6 +246,15 @@ public sealed partial class AtmosphereSystem
         tile.Hotspot = new Hotspot();
         args.Handled = true;
 
+        var fireEvent = new TileExtinguishEvent();
+        _entSet.Clear();
+        _lookup.GetLocalEntitiesIntersecting(tile.GridIndex, tile.GridIndices, _entSet, 0f);
+
+        foreach (var entity in _entSet)
+        {
+            RaiseLocalEvent(entity, fireEvent);
+        }
+
         //var ev = new InvalidateTileMethodEvent(uid, args.Tile);
         //GridInvalidateTile(uid, component, ref ev);
         AddActiveTile(component, tile);

@@ -59,6 +59,14 @@
   components:
   - type: Pda
     id: MagistratIDCard
+    # Ganimed-edit-start
+    penSlot:
+      startingItem: BlackFountainPen
+      priority: -1
+      whitelist:
+        tags:
+        - Write
+    # Ganimed-edit-end
   - type: Icon
     sprite: ADT/Objects/Devices/pda.rsi
     state: pda-lawyer
@@ -89,6 +97,14 @@
   components:
   - type: Pda
     id: ADTRoboticistIDCard
+    # Ganimed-edit-start
+    penSlot:
+      startingItem: PenScience
+      priority: -1
+      whitelist:
+        tags:
+        - Write
+    # Ganimed-edit-end
   - type: PdaBorderColor
     borderColor: "#171716"
     accentVColor: "#d90000"
@@ -121,6 +137,14 @@
   components:
   - type: Pda
     id: ADTPathologistIDCard
+    # Ganimed-edit-start
+    penSlot:
+      startingItem: PenMedical1
+      priority: -1
+      whitelist:
+        tags:
+        - Write
+    # Ganimed-edit-end
   - type: PdaBorderColor
     borderColor: "#d7d7d0"
     accentVColor: "#15616b"
@@ -225,6 +249,14 @@
   components:
   - type: Pda
     id: ADTInvestigatorIDCard
+    # Ganimed-edit-start
+    penSlot:
+      startingItem: PenSecurityBlack
+      priority: -1
+      whitelist:
+        tags:
+        - Write
+    # Ganimed-edit-end
   - type: PdaBorderColor
     borderColor: "#774705"
   - type: Icon
@@ -287,6 +319,14 @@
   components:
   - type: Pda
     id: ADTGuardOfficerIDCard
+    # Ganimed-edit-start
+    penSlot:
+      startingItem: PenSecurityRed
+      priority: -1
+      whitelist:
+        tags:
+        - Write
+    # Ganimed-edit-end
   - type: PdaBorderColor
     borderColor: "#774705"
   - type: Icon

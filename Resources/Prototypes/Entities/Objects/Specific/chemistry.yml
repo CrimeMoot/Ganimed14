@@ -273,7 +273,7 @@
         maxVol: 100
   - type: Appearance
   - type: SolutionContainerVisuals
-    maxFillLevels: 6
+    maxFillLevels: 9 # Ganimed-Resprite
     fillBaseName: beakerlarge
     inHandsMaxFillLevels: 4
     inHandsFillBaseName: -fill-

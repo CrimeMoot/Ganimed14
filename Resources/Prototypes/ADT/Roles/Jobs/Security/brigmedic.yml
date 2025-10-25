@@ -40,3 +40,10 @@
     back:
     - Flash
     #- MagazinePistol # Ganimed-Tweak
+
+- type: chameleonOutfit
+  id: BrigmedicChameleonOutfit
+  job: Brigmedic
+  hasMindShield: true
+  equipment:
+    ears: ClothingHeadsetBrigmedic

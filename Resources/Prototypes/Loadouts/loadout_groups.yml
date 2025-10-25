@@ -36,6 +36,11 @@
   - SmokingPipe # Ganimed-Loadouts
   - VacuumFlask # Ganimed-Loadouts
   - ShinyFlask # Ganimed-Loadouts
+  - OffsetCane
+  - OffsetCaneWood
+  - OffsetCaneClown
+  - OffsetCaneMime
+  - OffsetCaneNT
   #ADT start
   # - ClothingNeckLGBTPin
   # - ClothingNeckAromanticPin
@@ -303,6 +308,7 @@
   - GreyJumpskirt
   - AncientJumpsuit
   - RainbowJumpsuit
+  - RainbowJumpskirt
   - RecruitJumpsuit # Ganimed-Loadouts
   # ADT tweak start
   # - ADTClothingUniformJumpsuitTurtleneckGrey # Ganimed-Loadouts
@@ -519,6 +525,17 @@
   # Ganimed-Loadouts-End
 
 - type: loadoutGroup
+  id: ChaplainBible
+  name: loadout-group-chaplain-bible
+  minLimit: 1
+  loadouts:
+  - Bible
+  - BibleDruid
+  - BibleNanoTrasen
+  - BibleSatanic
+  - BibleTanakh
+
+- type: loadoutGroup
   id: JanitorHead
   name: loadout-group-janitor-head
   minLimit: 0
@@ -727,6 +744,7 @@
   loadouts:
   - EmergencyNitrogenMime
   - EmergencyOxygenMime
+  - EmergencySpeciesMothMime
   - LoadoutSpeciesVoxNitrogen
 
 - type: loadoutGroup

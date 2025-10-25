@@ -1,4 +1,4 @@
 - type: latheRecipe
   parent: BaseCircuitboardRecipe
-  id: PlantDNAManipulatorCircuitboard
-  result: PlantDNAManipulatorCircuitboard
+  id: BotanicalSeedDNAManipulatorCircuitboard
+  result: BotanicalSeedDNAManipulatorCircuitboard

@@ -21,7 +21,7 @@
     ADTPlantAnalyzer: 1
     ADTSoilPacked: 2
     # ADT tweak End
-    PlantDNADisk: 10 # Ganimed-Edit
+    BotanicalSeedDNADisk: 10 # Ganimed-Edit
   contrabandInventory:
     ChemistryBottleUnstableMutagen: 1
     Joint: 1

@@ -1,6 +1,6 @@
 - type: entity
   parent: BaseComputerAiAccess
-  id: ComputerPlantDNAManipulator
+  id: ComputerBotanicalSeedDNAManipulator
   name: plant seed DNA manipulator computer
   description: There are seeds scattered on the panel. Apparently, someone doesn't clean up after themselves.
   components:
@@ -44,7 +44,7 @@
     - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
       state: generic_panel_open
   - type: Computer
-    board: PlantDNAManipulatorCircuitboard
+    board: BotanicalSeedDNAManipulatorCircuitboard
   - type: PointLight
     radius: 1.5
     energy: 1.6

@@ -11,7 +11,7 @@
     - state: stunbaton_off
     - state: stunbaton_on
       visible: false
-      map: [ "enum.ToggleVisuals.Layer" ]
+      map: [ "enum.ToggleableVisuals.Layer" ]
     - state: stunbaton_on_light
       shader: unshaded
       visible: false
@@ -38,8 +38,8 @@
     - Belt
   - type: GenericVisualizer
     visuals:
-      enum.ToggleVisuals.Toggled:
-        enum.ToggleVisuals.Layer:
+      enum.ToggleableVisuals.Enabled:
+        enum.ToggleableVisuals.Layer:
           True: { visible: true }
           False: { visible: false }
   - type: ToggleableLightVisuals

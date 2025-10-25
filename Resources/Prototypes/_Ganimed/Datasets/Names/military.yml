@@ -2,17 +2,17 @@
 - type: localizedDataset
   id: NamesFirstUSSPMilitaryLeader
   values:
-    prefix: names-first-usssp-military-leader-dataset-
+    prefix: names-first-ussp-military-leader-dataset-
     count: 5
 
 - type: localizedDataset
   id: NamesFirstUSSPMilitary
   values:
-    prefix: names-first-usssp-military-dataset-
+    prefix: names-first-ussp-military-dataset-
     count: 5
 
 - type: localizedDataset
   id: NamesLastUSSPMilitary
   values:
-    prefix: names-last-usssp-military-dataset-
+    prefix: names-last-ussp-military-dataset-
     count: 59

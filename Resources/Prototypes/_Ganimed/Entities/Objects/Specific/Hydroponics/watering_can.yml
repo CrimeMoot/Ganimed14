@@ -32,7 +32,7 @@
         type: TransferAmountBoundUserInterface
   - type: MeleeWeapon
     soundNoDamage:
-      path: "/Audio/_Ganimed/Weapons/poliw.ogg"
+      path: "/Audio/_Ganimed/Weapons/watering.ogg"
     damage:
       types:
         Blunt: 0
@@ -83,7 +83,7 @@
         type: TransferAmountBoundUserInterface
   - type: MeleeWeapon
     soundNoDamage:
-      path: "/Audio/_Ganimed/Weapons/poliw.ogg"
+      path: "/Audio/_Ganimed/Weapons/watering.ogg"
     damage:
       types:
         Blunt: 0

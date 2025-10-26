@@ -60,7 +60,7 @@ public partial class ChatBox : UIWidget
         // Ganimed, EE - Chat stacking
         _chatStackList = new List<ChatStackData>(_chatStackAmount);
         _cfg.OnValueChanged(CCVars.ChatStackLastLines, UpdateChatStack, true);
-        // Evin-Tweak, End EE - Chat stacking
+        //  Ganimed, EE end - Chat stacking
     }
 
     // Ganimed, EE - Chat stacking

@@ -10,6 +10,7 @@ using Content.Shared.Interaction;
 using Content.Shared.ActionBlocker;
 // using Content.Shared.Throwing; // TODO: Сделать небольшой бросок
 using Content.Shared.Inventory.VirtualItem;
+using Content.Shared.ADT.Shadekin;
 using Content.Shared.Hands.Components;
 using Content.Shared.Hands;
 using Content.Shared.Hands.EntitySystems;
@@ -48,6 +49,7 @@ public abstract class SharedPickupHumansSystem : EntitySystem
         SubscribeLocalEvent<PickupHumansComponent, GetVerbsEvent<AlternativeVerb>>(AddPickupVerb);
         SubscribeLocalEvent<PickupHumansComponent, PickupHumansDoAfterEvent>(OnDoAfter);
         SubscribeLocalEvent<PickupHumansComponent, InteractHandEvent>(OnPickupInteract);
+        SubscribeLocalEvent<PickupHumansComponent, ShadekinTeleportActionEvent>(OnTeleportShadekin);
 
         SubscribeLocalEvent<PickupingHumansComponent, VirtualItemDeletedEvent>(OnVirtualItemDeleted);
         SubscribeLocalEvent<PickupingHumansComponent, MobStateChangedEvent>(OnMobStateChanged);
@@ -113,10 +115,10 @@ public abstract class SharedPickupHumansSystem : EntitySystem
         if (HasComp<PickupingHumansComponent>(args.User) || HasComp<TakenHumansComponent>(args.Target))
             return;
 
-        if (HasComp<CrawlingComponent>(args.User))
+        if (TryComp<StandingStateComponent>(uid, out var stand) && !stand.Standing)
             return;
 
-        if (handComp.CountFreeHands() < component.HandsRequired || handComp.CountFreeHands() > component.HandsRequired)
+        if (handComp.Count < component.HandsRequired || handComp.Count > component.HandsRequired)
             return;
 
         AlternativeVerb verb = new()
@@ -163,7 +165,7 @@ public abstract class SharedPickupHumansSystem : EntitySystem
     /// </summary>
     private void StartPickupDoAfter(EntityUid uid, EntityUid target, PickupHumansComponent comp)
     {
-        if (HasComp<CrawlingComponent>(uid))
+        if (TryComp<StandingStateComponent>(uid, out var stand) && !stand.Standing)
             return;
 
         if (HasComp<PickupingHumansComponent>(target))
@@ -273,7 +275,7 @@ public abstract class SharedPickupHumansSystem : EntitySystem
 
     private bool CanPickup(EntityUid uid, EntityUid target, PickupHumansComponent? pickupComp)
     {
-        if (HasComp<CrawlingComponent>(uid))
+        if (TryComp<StandingStateComponent>(uid, out var stand) && !stand.Standing)
             return false;
 
         if (uid == target)
@@ -293,7 +295,7 @@ public abstract class SharedPickupHumansSystem : EntitySystem
         if (!HasComp<PickupHumansComponent>(uid) || !HasComp<PickupHumansComponent>(target))
             return false;
 
-        if (handComp.CountFreeHands() != pickupComp.HandsRequired)
+        if (handComp.Count != pickupComp.HandsRequired)
         {
             _popup.PopupEntity(Loc.GetString("popup-hands-required"), uid, uid);
             return false;
@@ -315,6 +317,15 @@ public abstract class SharedPickupHumansSystem : EntitySystem
             return;
 
         DropFromHands(pickupHumansComponent.User, pickupHumansComponent.Target);
+    }
+
+
+    private void OnTeleportShadekin(EntityUid uid, PickupHumansComponent comp, ShadekinTeleportActionEvent args)
+    {
+        if (comp.User != EntityUid.Invalid)
+        {
+            DropFromHands(comp.User, uid);
+        }
     }
 
 

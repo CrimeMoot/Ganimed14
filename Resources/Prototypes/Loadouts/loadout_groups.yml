@@ -20,6 +20,11 @@
   - CigPackBlack
   - CigarCase
   - CigarGold
+  - OffsetCane
+  - OffsetCaneWood
+  - OffsetCaneClown
+  - OffsetCaneMime
+  - OffsetCaneNT
   #ADT start
   # - ClothingNeckLGBTPin
   # - ClothingNeckAromanticPin
@@ -62,6 +67,7 @@
   - TowelColorYellow
   # ADT-Tweak-Start
   - AcousticGuitarInstrument
+  - ADTHandheldStationMapUnpowered
   - HarmonicaInstrument
   - ADTModStorageVoucher
   - ADTClothingGeorgeRibbonPin
@@ -132,6 +138,7 @@
   loadouts:
   - CaptainHead
   - CaptainCap
+  - ADTClothingAdmiralHat # ADT Loadout
 
 - type: loadoutGroup
   id: CaptainJumpsuit
@@ -155,6 +162,7 @@
   - CaptainCloakFormal
   - ADTClothingCaptainShoulderNeck # ADT Loadout
   - CaptainMantle
+  - ADTClothingAdmiralShoulder # ADT Loadout
 
 - type: loadoutGroup
   id: CaptainBackpack
@@ -239,11 +247,16 @@
   - GreyJumpskirt
   - AncientJumpsuit
   - RainbowJumpsuit
+  - RainbowJumpskirt
   # ADT tweak start
   - ADTClothingUniformJumpsuitTurtleneckGrey
   - ADTClothingUniformJumpskirtTurtleneckGrey
   - ADTClothingUniformJumpsuitTurtleneckPink
   - ADTClothingUniformJumpskirtTurtleneckPink
+  - ADTClothingUniformJumpsuitHawaiRed
+  - ADTClothingUniformJumpsuitHawaiBlue
+  - ADTClothingUniformJumpsuitHawaiYellow
+  - ADTClothingUniformJumpsuitHawaiBlack
   # ADT tweak end
 
 - type: loadoutGroup
@@ -425,6 +438,7 @@
   - ChaplainNunRobe
   - ChaplainBlackHoodie
   - ChaplainHoodie
+  - ADTChaplainReligiousLeaderRobe # ADT Tweak
 
 - type: loadoutGroup
   id: ChaplainNeck
@@ -438,6 +452,17 @@
   - ADTChaplainSCross
   - ADTChaplainGCross
   # ADT-Loadouts-End
+
+- type: loadoutGroup
+  id: ChaplainBible
+  name: loadout-group-chaplain-bible
+  minLimit: 1
+  loadouts:
+  - Bible
+  - BibleDruid
+  - BibleNanoTrasen
+  - BibleSatanic
+  - BibleTanakh
 
 - type: loadoutGroup
   id: JanitorHead
@@ -468,8 +493,10 @@
   minLimit: 0
   loadouts:
   - JanitorRubberGloves
-  - OrangeGloves
-  - PurpleGloves
+  # ADT tweak start
+  - ADTOrangeGloves
+  - ADTPurpleGloves
+  # ADT tweak end
 
 - type: loadoutGroup
   id: JanitorOuterClothing
@@ -492,6 +519,7 @@
   loadouts:
   - BotanistHead
   - BotanistBandana
+  - ADTClothingHeadHatFlowerWreath # ADT tweak
 
 - type: loadoutGroup
   id: BotanistJumpsuit
@@ -630,6 +658,7 @@
   loadouts:
   - EmergencyNitrogenMime
   - EmergencyOxygenMime
+  - EmergencySpeciesMothMime
   - LoadoutSpeciesVoxNitrogen
 
 - type: loadoutGroup
@@ -767,6 +796,7 @@
   - CargoTechnicianBackpack
   - CargoTechnicianSatchel
   - CargoTechnicianDuffel
+  - ADTClothingBackpackSatchelLeather # ADT tweak
 
 - type: loadoutGroup
   id: CargoTechnicianOuterClothing
@@ -1088,6 +1118,7 @@
   - ScientistBackpack
   - ScientistSatchel
   - ScientistDuffel
+  - ADTClothingBackpackSatchelLeather # ADT tweak
 
 - type: loadoutGroup
   id: ScientistOuterClothing
@@ -1122,7 +1153,7 @@
   minLimit: 0
   loadouts:
   - LatexGloves
-  - PurpleGloves
+  - ADTPurpleGloves # ADT tweak
 
 - type: loadoutGroup
   id: ScientistPDA
@@ -1455,6 +1486,7 @@
   - MedicalDoctorBackpack
   - MedicalDoctorSatchel
   - MedicalDoctorDuffel
+  - ADTClothingBackpackSatchelLeather # ADT tweak
 
 - type: loadoutGroup
   id: MedicalShoes

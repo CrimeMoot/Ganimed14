@@ -49,10 +49,22 @@
   id: QuartermasterGear
   equipment:
     id: QuartermasterPDA
-    ears: ClothingHeadsetQM
+    # ears: ClothingHeadsetQM # ADT tweak
     belt: BoxFolderClipboard
     pocket1: AppraisalTool
   storage:
     back:
     - Flash
     - ADTtelescopicBaton #ADT-CustomADTLoadout
+
+- type: chameleonOutfit
+  id: QuartermasterChameleonOutfit
+  job: Quartermaster
+  hasMindShield: true
+  equipment:
+    head: ClothingHeadHatQMsoft
+    eyes: ClothingEyesGlassesSunglasses
+    mask: ClothingMaskBreath
+    outerClothing: ClothingOuterWinterQM
+    neck: ClothingNeckCloakQm
+    gloves: ClothingHandsKnuckleDustersQM

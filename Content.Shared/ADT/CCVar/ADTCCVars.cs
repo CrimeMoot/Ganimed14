@@ -28,7 +28,7 @@ public sealed class ADTCCVars
         CVarDef.Create("barks.max_delay", 0.6f, CVar.SERVER | CVar.REPLICATED | CVar.ARCHIVE);
 
     public static readonly CVarDef<bool> ReplaceTTSWithBarks =
-        CVarDef.Create("barks.replace_tts", false, CVar.CLIENTONLY | CVar.ARCHIVE);
+        CVarDef.Create("barks.replace_tts", true, CVar.CLIENTONLY | CVar.ARCHIVE);
 
     public static readonly CVarDef<float> BarksVolume =
         CVarDef.Create("barks.volume", 1f, CVar.CLIENTONLY | CVar.ARCHIVE);
@@ -267,5 +267,12 @@ public sealed class ADTCCVars
     /// </summary>
     public static readonly CVarDef<int> MapVoteRecentBanDepth =
         CVarDef.Create("game.map_vote_recent_ban_depth", 3, CVar.SERVER | CVar.ARCHIVE);
+
+
+    public static readonly CVarDef<float> BookPrinterUploadCooldown =
+        CVarDef.Create("bookprinter.upload_cooldown", 3600.0f, CVar.SERVERONLY | CVar.ARCHIVE);
+
+    public static readonly CVarDef<bool> BookPrinterUploadCooldownEnabled =
+        CVarDef.Create("bookprinter.upload_cooldown_enabled", true, CVar.SERVERONLY | CVar.ARCHIVE);
 }
 

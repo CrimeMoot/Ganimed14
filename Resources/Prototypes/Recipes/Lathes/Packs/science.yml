@@ -42,7 +42,7 @@
   - ClothingBackpackHolding
   - ClothingBackpackSatchelHolding
   - ClothingBackpackDuffelHolding
-  - BotanistBagOfHolding # Ganimed
+  - BotanistBagOfHolding # Ganimed-Edit
 
 - type: latheRecipePack
   id: PowerCells

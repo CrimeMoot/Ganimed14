@@ -8,7 +8,7 @@ using Robust.Shared.Localization;
 using Robust.Shared.Prototypes;
 using Content.Shared.Roles;
 
-namespace Content.Shared._Ganimed.Loadouts.Effects;
+namespace Content.Shared._Ganimed.Preferences.Loadouts.Effects;
 
 [DataDefinition]
 public sealed partial class JobRestrictedLoadoutEffect : LoadoutEffect

@@ -331,4 +331,3 @@ ui-options-chatstack-count = { $count ->
     [1] Последнее сообщение
    *[other] Последние {$count} сообщения
 }
-

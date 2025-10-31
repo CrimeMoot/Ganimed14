@@ -88,6 +88,7 @@
     weight: 3 # 10 default
     reoccurrenceDelay: 300
     duration: 1
+    maxOccurrences: 1 # Ganimed edit
   - type: LoadMapRule
     mapPath: /Maps/ADTMaps/Shuttles/Ian.yml
   - type: IanHeroEvent
@@ -104,6 +105,7 @@
     minimumPlayers: 30
     reoccurrenceDelay: 300
     duration: 1
+    maxOccurrences: 1
   - type: LoadMapRule
     mapPath: /Maps/ADTMaps/Shuttles/superhero.yml
   - type: HeroEvent
@@ -122,6 +124,7 @@
     minimumPlayers: 15
     earliestStart: 35
     reoccurrenceDelay: 60
+    maxOccurrences: 2 # Ganimed edit
   - type: RandomSpawnRule
     prototype: ADTEventJaunterPortal
     minCount: 100

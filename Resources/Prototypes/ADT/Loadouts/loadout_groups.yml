@@ -904,7 +904,6 @@
   - LawyerPDA
   - ADTLawyerPDA
 
-
 - type: loadoutGroup
   id: ADTBotanistPDA
   name: loadout-group-botanist-id-adt
